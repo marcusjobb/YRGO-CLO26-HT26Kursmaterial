@@ -1,0 +1,20 @@
+# Kopiera den här filen till repots rot och döp om till .gitignore
+
+# Hemligheter — får ALDRIG committas
+.env
+.env.*
+!.env.example
+
+# C# / .NET
+bin/
+obj/
+*.user
+.vs/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Studentspecifikt: ignorera personliga anteckningar
+notes.md
+scratch/

@@ -1,0 +1,10 @@
+sequenceDiagram
+    participant Du
+    participant Git
+    participant GitHub
+
+    Du->>Git: git add fil.cs
+    Du->>Git: git commit -m "Lägger till klass"
+    Git-->>Du: [main abc1234] Lägger till klass
+    Du->>GitHub: git push
+    GitHub-->>Du: Branch uppdaterad ✓

@@ -1,0 +1,5 @@
+flowchart LR
+    A[Working Directory] -->|git add| B[Staging Area]
+    B -->|git commit| C[Local Repo]
+    C -->|git push| D[GitHub]
+    D -->|git pull| A

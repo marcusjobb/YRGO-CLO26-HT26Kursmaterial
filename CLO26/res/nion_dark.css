@@ -1,0 +1,352 @@
+/* @theme nion-dark */
+/*
+  Nion Education — Dark Mode Marp Theme
+  Av Marcus Ackre Medina · marcus.medina@nionit.com
+*/
+
+/* ─── Typsnitt ─────────────────────────────────────────────── */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500&display=swap');
+
+/* ─── Scroll-snap (en slide i taget vid scroll) ───────────── */
+html {
+  scroll-snap-type: y mandatory;
+}
+
+/* ─── Grundsida ────────────────────────────────────────────── */
+section {
+  background-color: #0f1117;
+  color: #dde3ed;
+  font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
+  font-size: 26px;
+  line-height: 1.55;
+  padding: 48px 64px 72px 64px;
+  position: relative;
+  box-sizing: border-box;
+  border: 1px solid #5a6b85;
+  border-radius: 8px;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+}
+
+/* ─── Attribution (visas på varje sida) ────────────────────── */
+section::after {
+  content: 'Marcus Ackre Medina  ·  Nion Education  ·  marcus.medina@nionit.com';
+  position: absolute;
+  bottom: 14px;
+  left: 64px;
+  right: 64px;
+  font-size: 12px;
+  color: #3d4a5c;
+  border-top: 1px solid #1e2635;
+  padding-top: 7px;
+  letter-spacing: 0.02em;
+}
+
+/* ─── Sidnummer ────────────────────────────────────────────── */
+section[data-marpit-pagination]::after {
+  /* Lägg sidnummer till höger av attribution-raden */
+  content: 'Marcus Ackre Medina  ·  Nion Education  ·  marcus.medina@nionit.com'
+           attr(data-marpit-pagination-total);
+}
+
+/* ─── Rubriker ─────────────────────────────────────────────── */
+h1 {
+  font-size: 2em;
+  font-weight: 700;
+  color: #ffffff;
+  margin-top: 0;
+  margin-bottom: 0.2em;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+}
+
+h2 {
+  font-size: 1.4em;
+  font-weight: 600;
+  color: #a78bfa;
+  margin-top: 0;
+  margin-bottom: 0.5em;
+  border-bottom: 1px solid #1e2635;
+  padding-bottom: 0.25em;
+}
+
+h3 {
+  font-size: 1.1em;
+  font-weight: 600;
+  color: #67e8f9;
+  margin-top: 0.8em;
+  margin-bottom: 0.3em;
+}
+
+/* ─── Titelsiida (första slide) ────────────────────────────── */
+section.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: linear-gradient(135deg, #0f1117 0%, #16213e 60%, #0f1117 100%);
+}
+
+section.title h1 {
+  font-size: 2.4em;
+  color: #ffffff;
+  text-shadow: 0 0 40px rgba(124, 58, 237, 0.4);
+}
+
+section.title h2 {
+  font-size: 1.2em;
+  color: #94a3b8;
+  border-bottom: none;
+  font-weight: 400;
+}
+
+section.title p {
+  color: #64748b;
+  font-size: 0.85em;
+  margin-top: 2em;
+}
+
+/* ─── Löptext & listor ─────────────────────────────────────── */
+p {
+  margin: 0.5em 0;
+}
+
+ul, ol {
+  padding-left: 1.4em;
+  margin: 0.4em 0;
+}
+
+li {
+  margin-bottom: 0.3em;
+}
+
+li::marker {
+  color: #7c3aed;
+}
+
+strong {
+  color: #f1f5f9;
+  font-weight: 600;
+}
+
+em {
+  color: #a78bfa;
+  font-style: italic;
+}
+
+/* ─── Tabeller ─────────────────────────────────────────────── */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 0.88em;
+  margin: 0.8em 0;
+}
+
+th {
+  background-color: #1e2635;
+  color: #a78bfa;
+  padding: 10px 14px;
+  text-align: left;
+  font-weight: 600;
+  border-bottom: 2px solid #7c3aed;
+}
+
+td {
+  padding: 8px 14px;
+  border-bottom: 1px solid #1e2635;
+  color: #cbd5e1;
+}
+
+tr:hover td {
+  background-color: #161d2b;
+}
+
+/* ─── Inlinekod ────────────────────────────────────────────── */
+code {
+  font-family: 'JetBrains Mono', 'Fira Code', 'Consolas', monospace;
+  font-size: 0.85em;
+  background-color: #161d2b;
+  color: #67e8f9;
+  padding: 0.15em 0.45em;
+  border-radius: 4px;
+  border: 1px solid #1e2a3a;
+}
+
+/* ─── Kodblock ─────────────────────────────────────────────── */
+pre {
+  background-color: #0d1117;
+  border: 1px solid #1e2635;
+  border-left: 3px solid #7c3aed;
+  border-radius: 6px;
+  padding: 18px 22px;
+  margin: 0.8em 0;
+  overflow: hidden;
+}
+
+pre code {
+  background: none;
+  border: none;
+  padding: 0;
+  color: #e2e8f0;
+  font-size: 0.82em;
+  line-height: 1.6;
+}
+
+/* Syntax highlight-approximation via klasser (Marp/Shiki) */
+.hljs-keyword    { color: #c084fc; }
+.hljs-string     { color: #86efac; }
+.hljs-comment    { color: #475569; font-style: italic; }
+.hljs-number     { color: #fdba74; }
+.hljs-type       { color: #67e8f9; }
+.hljs-function   { color: #a78bfa; }
+.hljs-variable   { color: #e2e8f0; }
+.hljs-operator   { color: #94a3b8; }
+.hljs-class      { color: #67e8f9; font-weight: 600; }
+
+/* ─── Citat / callouts ─────────────────────────────────────── */
+blockquote {
+  border-left: 3px solid #7c3aed;
+  background-color: #131825;
+  margin: 0.8em 0;
+  padding: 12px 20px;
+  border-radius: 0 6px 6px 0;
+  color: #94a3b8;
+  font-style: italic;
+}
+
+/* ─── Svårighetsgradmarkeringar ────────────────────────────── */
+/* 🟢 Grundläggande — 🟡 Medel — 🔴 Utmaning */
+
+/* ─── Avdelare / hr ────────────────────────────────────────── */
+hr {
+  border: none;
+  border-top: 1px solid #1e2635;
+  margin: 1em 0;
+}
+
+/* ─── Bilder ───────────────────────────────────────────────── */
+img {
+  border-radius: 6px;
+  max-width: 100%;
+}
+
+/* Genererade mermaid-diagram (PNG från render_mermaid.py) —
+   begränsa höjden så stora diagram (t.ex. sekvensdiagram) inte
+   sväller över slidens kant */
+section img[src*="diagrams/"] {
+  display: block;
+  max-height: 420px;
+  margin: 0.8em auto;
+}
+
+/* ─── Mermaid-diagram ──────────────────────────────────────── */
+.mermaid {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  margin: 1em auto !important;
+  padding: 24px !important;
+  background-color: #131825 !important;
+  border-radius: 6px !important;
+  width: 100% !important;
+  max-height: 480px !important;
+  box-sizing: border-box !important;
+  overflow: hidden !important; /* Klipper bort allt som blöder ut */
+}
+
+.mermaid svg,
+.mermaid img {
+  display: block !important;
+  max-width: 100% !important;
+  max-height: 100% !important;
+  width: auto !important;
+  height: auto !important;
+  background: transparent !important;
+  font-family: 'Inter', 'Segoe UI', system-ui, sans-serif !important;
+  border-radius: 0 !important;
+}
+
+/* Noder / rutor (flowchart) */
+.mermaid .node rect,
+.mermaid .node polygon,
+.mermaid .node circle,
+.mermaid .node ellipse {
+  fill: #1e2635 !important;
+  stroke: #7c3aed !important;
+  stroke-width: 1.5px !important;
+}
+
+/* Text i noder och kanter */
+.mermaid .nodeLabel,
+.mermaid .label,
+.mermaid text {
+  fill: #dde3ed !important;
+  color: #dde3ed !important;
+}
+
+/* Pilar / linjer (flowchart) */
+.mermaid .edgePath .path,
+.mermaid .flowchart-link {
+  stroke: #67e8f9 !important;
+}
+
+.mermaid .arrowheadPath,
+.mermaid marker path {
+  fill: #67e8f9 !important;
+  stroke: #67e8f9 !important;
+}
+
+/* Etiketter på kanter */
+.mermaid .edgeLabel rect {
+  fill: #161d2b !important;
+}
+
+/* Cluster/subgraph-rutor */
+.mermaid .cluster rect {
+  fill: #131825 !important;
+  stroke: #3d4a5c !important;
+}
+
+/* Sekvensdiagram – aktörer */
+.mermaid .actor {
+  fill: #1e2635 !important;
+  stroke: #7c3aed !important;
+}
+
+.mermaid .actor-line {
+  stroke: #3d4a5c !important;
+}
+
+/* Sekvensdiagram – meddelandelinjer och pilar */
+.mermaid .messageLine0,
+.mermaid .messageLine1 {
+  stroke: #67e8f9 !important;
+}
+
+.mermaid .messageText {
+  fill: #dde3ed !important;
+}
+
+/* Sekvensdiagram – loop/alt-rutor */
+.mermaid .labelBox {
+  fill: #161d2b !important;
+  stroke: #7c3aed !important;
+}
+
+.mermaid .loopLine {
+  stroke: #3d4a5c !important;
+}
+
+/* Sekvensdiagram – notes */
+.mermaid .note {
+  fill: #131825 !important;
+  stroke: #7c3aed !important;
+}
+
+.mermaid .noteText {
+  fill: #94a3b8 !important;
+}
+
+/* ─── Pagineringsknapp ─────────────────────────────────────── */
+section[data-marpit-pagination] {
+  padding-bottom: 72px;
+}
