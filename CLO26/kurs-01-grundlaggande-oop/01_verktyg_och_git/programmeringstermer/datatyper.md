@@ -3,6 +3,7 @@
 Tänk på en datatyp som en burk. Olika burkar rymmer olika saker och olika mängder. Välj fel burk och du får antingen slöseri med plats eller en burk som spricker när du fyller den för mycket.
 
 ```mermaid
+%%{init: {'theme': 'base', 'themeVariables': {'primaryColor': '#1565c0', 'primaryTextColor': '#fff', 'primaryBorderColor': '#0d47a1'}}}%%
 mindmap
   root((Datatyper))
     Heltal
@@ -24,7 +25,7 @@ mindmap
 
 ## byte
 
-Den minsta vanliga heltalsburken. Rymmer bara **0 till 255** — 256 möjliga värden totalt (en byte är 8 bitar, och 2⁸ = 256).
+Den minsta vanliga heltalsburken. Rymmer bara ett tal med värdet **0 till 255** — 256 möjliga värden totalt (en byte är 8 bitar, och 2⁸ = 256).
 
 ```csharp
 byte ålder = 25;
@@ -63,6 +64,10 @@ stateDiagram-v2
     s254 --> s255: +1
     s255 --> s0: +1 (overflow!)
     s0 --> s1: +1
+    classDef safe fill:#f0f0f0,stroke:#888,color:#111
+    classDef danger fill:#1565c0,stroke:#0d47a1,color:#fff
+    class s254,s0,s1 safe
+    class s255 danger
 ```
 
 </details>
@@ -73,7 +78,7 @@ stateDiagram-v2
 
 ## short
 
-En något större burk: **-32 768 till 32 767**.
+En något större burk: den tål att använda tal **från -32 768 till 32 767**.
 
 ```csharp
 short temperatur = -15;
@@ -93,7 +98,7 @@ Lägg märke till att `short` (till skillnad från `byte`) kan vara negativ — 
 
 ## int
 
-**Standardburken.** Om du inte vet vilken heltalstyp du ska välja — välj `int`. Rymmer **-2 147 483 648 till 2 147 483 647**, vilket räcker för nästan allt du stöter på i vanlig kod (folkmängder, poäng, antal rader i en fil, åldrar, ja allt).
+**Standardburken.** Om du inte vet vilken heltalstyp du ska välja — välj `int`. Rymmer **ett** tal med värdet -2 147 483 648 till 2 147 483 647, vilket räcker för nästan allt du stöter på i vanlig kod (folkmängder, poäng, antal rader i en fil, åldrar, ja allt).
 
 ```csharp
 int poäng = 1500000;
@@ -129,7 +134,7 @@ Samma overflow-fenomen som hos `byte`, bara i större skala — burken spiller �
 
 ## long
 
-Jätteburken. **-9 223 372 036 854 775 808 till 9 223 372 036 854 775 807**. Du tar till `long` när talen blir så stora att `int` helt enkelt inte får plats — folkräkningar i miljarder, filstorlekar i byte, eller stora ID-nummer.
+Jätteburken. Rymmer **ett** tal med värdet -9 223 372 036 854 775 808 till 9 223 372 036 854 775 807. Du tar till `long` när talen blir så stora att `int` helt enkelt inte får plats — folkräkningar i miljarder, filstorlekar i byte, eller stora ID-nummer.
 
 ```csharp
 long världsbefolkning = 8200000000; // 8,2 miljarder — för stort för int
@@ -147,7 +152,7 @@ Om du försökt spara samma tal i en `int` hade du fått ett kompilatorfel direk
 
 ## float
 
-Den mindre precisa flyttalsburken — cirka 6-7 siffrors precision. Snabbare och tar mindre minne än `double`, men det är sällan värt det i vanlig kod nuförtiden. Skrivs med ett `f` efter talet: `3.14f`.
+Den mindre precisa flyttalsburken — rymmer **ett** tal, med cirka 6-7 siffrors precision. Snabbare och tar mindre minne än `double`, men det är sällan värt det i vanlig kod nuförtiden. Skrivs med ett `f` efter talet: `3.14f`.
 
 ```csharp
 float pi = 3.14159265f;
@@ -167,7 +172,7 @@ Lägg märke till att talet redan tappat några decimaler jämfört med vad du s
 
 ## double
 
-**Standardflyttalet** i C#. Dubbel precision jämfört med `float` (namnet är ingen slump) — cirka 15-17 siffrors precision. Om du inte har en specifik anledning att välja något annat flyttal, välj `double`.
+**Standardflyttalet** i C#. Rymmer **ett** tal, med dubbel precision jämfört med `float` (namnet är ingen slump) — cirka 15-17 siffrors precision. Om du inte har en specifik anledning att välja något annat flyttal, välj `double`.
 
 ```csharp
 double a = 0.1;
@@ -194,7 +199,7 @@ Nej — och det är inte ett buggat exempel, det är hur flyttal fungerar i *all
 
 ## decimal
 
-Flyttal byggt specifikt för **pengar och exakta beräkningar** — ingen av `double`s avrundningsknöl. Mindre minneseffektiv och något långsammare, men det spelar ingen roll när du räknar ören. Skrivs med ett `m` efter talet: `19.99m`.
+Flyttal byggt specifikt för **pengar och exakta beräkningar** — rymmer **ett** tal, ingen av `double`s avrundningsknöl. Mindre minneseffektiv och något långsammare, men det spelar ingen roll när du räknar ören. Skrivs med ett `m` efter talet: `19.99m`.
 
 ```csharp
 decimal pris = 19.99m;
@@ -271,6 +276,57 @@ Cecilia
 7
 ```
 
-`string` har ett helt eget universum av metoder (`Trim`, `Replace`, `Split`, string interpolation med `$"{}"`...) — se en egen kategorifil för det, `strangar.md`, när den finns.
+`string` har ett helt eget universum av metoder (`Trim`, `Replace`, `Split`, string interpolation med `$"{}"`...) — se [`strangar.md`](../../02_syntax_och_variabler/programmeringstermer/strangar.md) i vecka 2:s mapp.
 
-**Se även:** [char](#char).
+**Se även:** [char](#char), [Variabler i minnet](#variabler-i-minnet) — varför `namn[0]` faktiskt ger dig "B".
+
+---
+
+## Variabler i minnet
+
+En variabel är egentligen bara en etikett som pekar på **en plats i minnet** där värdet börjar. För enkla typer (`int`, `byte`...) pekar den rakt på själva talet. För en `string` pekar den på var i minnet den **första** bokstaven ligger — och varje bokstav därefter ligger på en känd position räknat därifrån.
+
+Ta `"Batman"`. Varje bokstav får ett index, alltid räknat **från 0**, inte från 1:
+
+```mermaid
+flowchart LR
+    subgraph minne[" Batman i minnet "]
+        direction LR
+        B0["B<br/>index 0"] --- B1["a<br/>index 1"] --- B2["t<br/>index 2"] --- B3["m<br/>index 3"] --- B4["a<br/>index 4"] --- B5["n<br/>index 5"]
+    end
+    style B0 fill:#1565c0,stroke:#0d47a1,color:#fff
+    style B1 fill:#f0f0f0,stroke:#888,color:#111
+    style B2 fill:#f0f0f0,stroke:#888,color:#111
+    style B3 fill:#f0f0f0,stroke:#888,color:#111
+    style B4 fill:#f0f0f0,stroke:#888,color:#111
+    style B5 fill:#f0f0f0,stroke:#888,color:#111
+```
+
+Variabeln pekar på position 0 — där strängen *börjar*. Index 0 är "platsen variabeln pekar på, plus noll". Index 1 är "platsen variabeln pekar på, plus ett steg". Och så vidare. Det är därför `namn[0]` ger dig den **första** bokstaven, inte den andra.
+
+```csharp
+string namn = "Batman";
+Console.WriteLine(namn[0]);
+Console.WriteLine(namn[1]);
+Console.WriteLine(namn[5]);
+```
+
+### Output
+```plaintext
+B
+a
+n
+```
+
+<details><summary>Varför börjar det på 0 och inte 1?</summary>
+
+Räkna det som "antal steg från start", inte "vilken bokstav i ordningen". 
+
+Den första bokstaven kräver **noll** steg från startpositionen — du är redan där. Den andra bokstaven kräver **ett** steg. Det är samma idé som att husnummer 0 på en gata är huset precis vid gatans start, inte ett hus före den.
+
+![1st priority](../../res/memes/number_1.jpg)
+*(källa: [programmerhumor.io](https://programmerhumor.io/programming-memes/1st-priority/))*
+
+
+</details>
+

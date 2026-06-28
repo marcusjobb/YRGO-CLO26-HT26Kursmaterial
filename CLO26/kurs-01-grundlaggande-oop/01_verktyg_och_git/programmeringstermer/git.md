@@ -35,6 +35,10 @@ flowchart LR
     B -->|git commit| C[Repository<br/>sparad historik, lokalt]
     C -->|git push| D[(GitHub<br/>fjärrrepository)]
     D -->|git pull| C
+    style A fill:#f0f0f0,stroke:#888,color:#111
+    style B fill:#f0f0f0,stroke:#888,color:#111
+    style C fill:#1565c0,stroke:#0d47a1,color:#fff
+    style D fill:#1565c0,stroke:#0d47a1,color:#fff
 ```
 
 GitHub är ett **fjärrrepository** — en kopia av historiken som ligger online. Du synkar dit med `git push` (ladda upp) och hämtar med `git pull` (ladda ner).
@@ -68,6 +72,12 @@ flowchart TD
     C --> D[git commit -m '...']
     D --> E[git push]
     E --> A
+    style A fill:#f0f0f0,stroke:#888,color:#111
+    style B fill:#f0f0f0,stroke:#888,color:#111
+    style C fill:#f0f0f0,stroke:#888,color:#111
+    style D fill:#f0f0f0,stroke:#888,color:#111
+    style E fill:#1565c0,stroke:#0d47a1,color:#fff
+    style F fill:#e8f5e9,stroke:#2e7d32,color:#111
 ```
 
 ---
@@ -81,6 +91,13 @@ git add Program.cs    # en specifik fil
 git add .              # alla ändrade filer
 ```
 
+```mermaid
+flowchart LR
+    A[Working Directory] -->|git add| B[Staging Area]
+    style A fill:#f0f0f0,stroke:#888,color:#111
+    style B fill:#1565c0,stroke:#0d47a1,color:#fff
+```
+
 ---
 
 ## git commit
@@ -89,6 +106,13 @@ Tar allt som är stagat och skapar en permanent ögonblicksbild i historiken.
 
 ```bash
 git commit -m "Lägg till validering av e-postadress"
+```
+
+```mermaid
+flowchart LR
+    A[Staging Area] -->|git commit| B[Repository<br/>lokalt]
+    style A fill:#f0f0f0,stroke:#888,color:#111
+    style B fill:#1565c0,stroke:#0d47a1,color:#fff
 ```
 
 <details><summary>Vad gör ett bra commit-meddelande?</summary>
@@ -119,6 +143,14 @@ git push    # ladda upp dina commits
 git pull    # hämta andras commits
 ```
 
+```mermaid
+flowchart LR
+    A[Repository<br/>lokalt] -->|git push| B[(GitHub)]
+    B -->|git pull| A
+    style A fill:#f0f0f0,stroke:#888,color:#111
+    style B fill:#1565c0,stroke:#0d47a1,color:#fff
+```
+
 <details><summary>Varför blir push ibland avvisad?</summary>
 
 Om GitHub har commits du inte har lokalt (t.ex. en kursare pushat före dig) säger Git nej:
@@ -128,6 +160,7 @@ Om GitHub har commits du inte har lokalt (t.ex. en kursare pushat före dig) sä
 ```
 
 ```mermaid
+%%{init: {'theme': 'base', 'themeVariables': {'primaryColor': '#1565c0', 'primaryTextColor': '#fff', 'primaryBorderColor': '#0d47a1', 'lineColor': '#666', 'actorBkg': '#1565c0', 'actorTextColor': '#fff', 'actorBorder': '#0d47a1', 'signalColor': '#333', 'signalTextColor': '#111', 'noteBkgColor': '#f0f0f0', 'noteTextColor': '#111', 'noteBorderColor': '#888'}}}%%
 sequenceDiagram
     participant Du
     participant GitHub
@@ -157,6 +190,17 @@ Hämtar ett befintligt repo från GitHub ner till din dator — en fullständig 
 git clone git@github.com:anvandarnamn/repo-namn.git
 cd repo-namn
 ```
+
+```mermaid
+flowchart LR
+    A[(GitHub)] -->|git clone| B[Repository<br/>lokalt, med historik]
+    B -.->|skapas direkt| C[Working Directory]
+    style A fill:#f0f0f0,stroke:#888,color:#111
+    style B fill:#1565c0,stroke:#0d47a1,color:#fff
+    style C fill:#1565c0,stroke:#0d47a1,color:#fff
+```
+
+Till skillnad från `git add`/`git commit`/`git push` (som flyttar *dina* ändringar framåt steg för steg) går `git clone` motsatt väg — en engångskopia av allt, direkt från GitHub till din dator.
 
 ---
 

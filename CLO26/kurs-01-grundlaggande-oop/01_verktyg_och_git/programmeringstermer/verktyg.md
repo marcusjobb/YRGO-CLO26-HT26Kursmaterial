@@ -45,6 +45,13 @@ flowchart TD
     D --> F
     E --> F
     F --> G[Körbart program]
+    style A fill:#f0f0f0,stroke:#888,color:#111
+    style B fill:#f0f0f0,stroke:#888,color:#111
+    style C fill:#f0f0f0,stroke:#888,color:#111
+    style D fill:#f0f0f0,stroke:#888,color:#111
+    style E fill:#f0f0f0,stroke:#888,color:#111
+    style F fill:#1565c0,stroke:#0d47a1,color:#fff
+    style G fill:#e8f5e9,stroke:#2e7d32,color:#111
 ```
 
 Alla tre vägar leder genom samma SDK till samma resultat — IDE:n är bara gränssnittet du klickar i.

@@ -79,6 +79,10 @@ publish:
   - 01_verktyg_och_git/exercises/diskutera_01_kassaapparaten.md
   - 01_verktyg_och_git/exercises/diskutera_03_kalle.md
   - 01_verktyg_och_git/exercises/logik_01_metropolitanclub.md
+  - 01_verktyg_och_git/programmeringstermer/git.md
+  - 01_verktyg_och_git/programmeringstermer/verktyg.md
+  - 01_verktyg_och_git/programmeringstermer/datatyper.md
+  - 01_verktyg_och_git/programmeringstermer/console.md
 ```
 
 ---

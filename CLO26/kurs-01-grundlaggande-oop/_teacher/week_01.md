@@ -44,6 +44,7 @@ publish:
   - 01_verktyg_och_git/notes/installationsguide.md
   - 01_verktyg_och_git/notes/git_grunder.md
   - 01_verktyg_och_git/notes/git_konflikter.md
+  - 01_verktyg_och_git/examples/fyrkanter.png
   - 01_verktyg_och_git/exercises/gruppovning_01_fyrkanter.md
   - 01_verktyg_och_git/exercises/logik_01_metropolitanclub.md
   - 01_verktyg_och_git/exercises/diskutera_01_kassaapparaten.md
@@ -52,6 +53,10 @@ publish:
   - 01_verktyg_och_git/exercises/ovning_02_forsta_repot.md
   - 01_verktyg_och_git/exercises/ovning_03_hello_world.md
   - 01_verktyg_och_git/exercises/diskutera_03_kalle.md
+  - 01_verktyg_och_git/programmeringstermer/git.md
+  - 01_verktyg_och_git/programmeringstermer/verktyg.md
+  - 01_verktyg_och_git/programmeringstermer/datatyper.md
+  - 01_verktyg_och_git/programmeringstermer/console.md
 ```
 
 ## Inlämning denna vecka
