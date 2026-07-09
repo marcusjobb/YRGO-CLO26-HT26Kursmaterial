@@ -1,19 +1,3 @@
----
-
-title: UML för databasdesign
-author: Marcus Ackre Medina
-type: article
-topic: databaser
-difficulty: 3
-language: csharp
-status: adapted
-marcus_voice: true
-source: "Old_courses/books/csharp_cmyh/C-Sharp/databases/uml_database_design.md"
-description: "UML (Unified Modeling Language) är ett visuellt språk för att modellera system. För databasdesign använder vi främst ER-diagram (Entity-Relationship) och klassdiagram för att planera struktur innan vi"
-tags: ["csharp", "databasdesign", "database", "databaser", "design", "git", "oop", "sql", "uml"]
-week_fit: []
----
-
 # UML för databasdesign
 
 🔴

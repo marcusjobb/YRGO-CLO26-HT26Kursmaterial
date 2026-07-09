@@ -1,19 +1,3 @@
----
-
-title: Övning 3: Bobby Tables - SQL Injection 💉
-author: Marcus Ackre Medina
-type: exercise
-topic: databaser
-difficulty: 3
-language: mixed
-status: adapted
-marcus_voice: true
-source: "Old_courses/2025/2_databases/lectures/ef_core/part2_mysql_docker/exercises/exercise_3_bobby_tables.md"
-description: "Förstå SQL Injection genom att både ATTACKERA och FÖRSVARA dig mot världens vanligaste webbsårbarhet. Du kommer lära dig varför EF Core är så viktigt för säkerhet!"
-tags: ["bash", "bobby", "databaser", "exercise", "injection", "ssh", "tables", "visual-studio", "övning"]
-week_fit: []
----
-
 # Övning 3: Bobby Tables - SQL Injection 💉
 
 🔴

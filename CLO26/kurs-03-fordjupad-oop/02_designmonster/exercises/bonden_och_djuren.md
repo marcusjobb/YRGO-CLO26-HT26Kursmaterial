@@ -1,19 +1,3 @@
----
-
-title: Bonden och djuren
-author: Marcus Ackre Medina
-type: exercise
-topic: oop
-difficulty: 2
-language: csharp
-status: adapted
-marcus_voice: true
-source: "exercises_to_spread_out/Bonden och djuren.md"
-description: "| Bonden och djuren | 15 september 2021 |"
-tags: ["csharp", "enum", "exercise", "klasser", "logik", "oop", "samarbete"]
-week_fit: []
----
-
 | Bonden och djuren | 15 september 2021 |
 | --- | --- |
 

@@ -1,8 +1,3 @@
----
-title: Gruppuppgift V3-V4 — TODO
-status: placeholder
----
-
 # Gruppuppgift — Vecka 3–4
 
 **Status:** Ej definierad ännu.

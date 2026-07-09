@@ -1,19 +1,3 @@
----
-
-title: Hur man skapar Snippets
-author: Marcus Ackre Medina
-type: lecture
-topic: databaser
-difficulty: 2
-language: csharp
-status: adapted
-marcus_voice: true
-source: "exercises_to_spread_out/Hur man skapar Snippets.md"
-description: "I det här experimentet ska vi skapa ett par snippets"
-tags: ["csharp", "databaser", "entity-framework", "productivity", "snippets", "visual-studio"]
-week_fit: []
----
-
 # Snippets
 
 🟡

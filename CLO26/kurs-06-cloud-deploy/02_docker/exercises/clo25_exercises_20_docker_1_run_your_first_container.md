@@ -1,19 +1,3 @@
----
-
-title: Run Your First Container
-author: Marcus Ackre Medina
-type: exercise
-topic: docker
-difficulty: 2
-language: english
-status: adapted
-marcus_voice: true
-source: "Old_courses/Coud_Development_CLO25/exercises/20-docker/1-run-your-first-container.md"
-description: "Getting StartedWeek by WeekIntro To Cloud DevelopmentInfrastructure FundamentalsExercises-"
-tags: ["cloud", "container", "docker", "exercise", "first", "linux", "networking", "run", "your"]
-week_fit: []
----
-
 Navigation :
 Getting StartedWeek by WeekIntro To Cloud DevelopmentInfrastructure FundamentalsExercises-
 Server Foundation-

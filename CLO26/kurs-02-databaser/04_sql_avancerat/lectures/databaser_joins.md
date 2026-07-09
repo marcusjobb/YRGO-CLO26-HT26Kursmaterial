@@ -1,19 +1,3 @@
----
-
-title: INNER JOIN och LEFT JOIN 🔗
-author: Marcus Ackre Medina
-type: lecture
-topic: sql
-difficulty: 1
-language: sql
-status: adapted
-marcus_voice: true
-source: "Old_courses/2025/2_databases/lectures/joins/databaser_joins_marp.md"
-description: "Koppla ihop tabeller och få helhetsbild"
-tags: ["databaser", "inner", "join", "joins", "left", "marp", "sql", "ssh", "visual-studio"]
-week_fit: []
----
-
 # INNER JOIN och LEFT JOIN 🔗
 
 🟢

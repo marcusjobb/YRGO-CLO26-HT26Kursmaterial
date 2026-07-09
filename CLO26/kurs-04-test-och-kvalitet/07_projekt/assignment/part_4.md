@@ -1,19 +1,3 @@
----
-
-title: 🎄 DEL 4: TESTING & SUPER EVIL MAGE MARCUS SPECIAL 🎅
-author: Marcus Ackre Medina
-type: assignment
-topic: testing
-difficulty: 3
-language: csharp
-status: adapted
-marcus_voice: true
-source: "Old_courses/2025/csharp/4_test/Assignments/xmas_adventureawaits/part_4.md"
-description: "_VIKTIGT! Denna guide är uppdelad i flera delar som bygger på varandra. Följ dem i ordning!_"
-tags: ["csharp", "evil", "installation", "mage", "marcus", "part", "special", "super", "testing", "verktyg"]
-week_fit: []
----
-
 # 🎄 DEL 4: TESTING & SUPER EVIL MAGE MARCUS SPECIAL 🎅
 
 🔴

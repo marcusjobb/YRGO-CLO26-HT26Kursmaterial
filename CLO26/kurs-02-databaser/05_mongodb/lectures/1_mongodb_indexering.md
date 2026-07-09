@@ -1,19 +1,3 @@
----
-
-title: 1. Indexering i MongoDB (45 min)
-author: Marcus Ackre Medina
-type: lecture
-topic: databaser
-difficulty: 1
-language: mixed
-status: adapted
-marcus_voice: true
-source: "Old_courses/2025/csharp/2_db/lectures/07_db_nosql_mongodb_advanced/1_mongodb_indexering.md"
-description: "Övergripande frågeställning: Hur kan vi optimera databasförfrågningar i MongoDB genom effektiv indexering?"
-tags: ["databaser", "indexering", "javascript", "min)", "mongodb", "ssh"]
-week_fit: []
----
-
 # 1. Indexering i MongoDB (45 min)
 
 🟢

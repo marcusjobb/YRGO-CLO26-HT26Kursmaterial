@@ -1,19 +1,3 @@
----
-
-title: 1. Designmönster för Databashantering i C#
-author: Marcus Ackre Medina
-type: lecture
-topic: oop
-difficulty: 1
-language: csharp
-status: adapted
-marcus_voice: true
-source: "Old_courses/2025/csharp/3_oop_adv/lectures/02_design_patterns/1_design_patterns_for_database_management_in_c.md"
-description: "Huvudfråga:** Hur kan vi bygga robusta och underhållbara databasapplikationer i C# genom att tillämpa designmönster?"
-tags: ["csharp", "database", "databashantering", "design", "designmönster", "management", "oop", "patterns", "visual-studio"]
-week_fit: []
----
-
 # 1. Designmönster för Databashantering i C#
 
 🟢

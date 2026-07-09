@@ -1,19 +1,3 @@
----
-
-title: Normalisering
-author: Marcus Ackre Medina
-type: article
-topic: databaser
-difficulty: 1
-language: csharp
-status: adapted
-marcus_voice: true
-source: "Old_courses/books/csharp_cmyh/C-Sharp/databases/normalisering.md"
-description: "Normalisering är processen att organisera data i en databas för att minimera redundans och beroenden. Genom att följa normaliseringsregler skapar vi databaser som är effektiva, konsekventa och lätta a"
-tags: ["csharp", "databaser", "git", "java", "normalisering", "oop", "sql"]
-week_fit: []
----
-
 # Normalisering
 
 🟢

@@ -1,19 +1,3 @@
----
-
-title: MongoDB CRUD i C#
-author: Marcus Ackre Medina
-type: lecture
-topic: databaser
-difficulty: 1
-language: mixed
-status: adapted
-marcus_voice: true
-source: "Old_courses/2025/2_databases/lectures/MongoDB/mongodb_crud_marp.md"
-description: "- Läsa connectionstring från fil"
-tags: ["crud", "csharp", "databaser", "marp", "mongodb", "ssh", "visual-studio"]
-week_fit: []
----
-
 # MongoDB CRUD i C#
 
 🟢

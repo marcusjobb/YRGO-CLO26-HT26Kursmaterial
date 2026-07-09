@@ -1,19 +1,3 @@
----
-
-title: INTRODUKTION TILL CONTAINERS & DOCKER
-author: Marcus Ackre Medina
-type: lecture
-topic: docker
-difficulty: 2
-language: swedish
-status: adapted
-marcus_voice: true
-source: "Old_courses/Coud_Development_CLO25/presentations/mini-lectures/introduction-to-containershtml.md"
-description: "Från virtuella maskiner till containrar"
-tags: ["azure", "containers", "containershtml", "docker", "dotnet", "linux", "till"]
-week_fit: []
----
-
 ACD
 
 # INTRODUKTION TILL CONTAINERS & DOCKER

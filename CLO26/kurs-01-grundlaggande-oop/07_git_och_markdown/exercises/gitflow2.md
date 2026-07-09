@@ -1,18 +1,3 @@
----
-title: Git Flow + Issues – organisera arbetet
-author: Marcus Ackre Medina
-type: exercise
-topic: git
-difficulty: 1
-language: bash
-status: adapted
-marcus_voice: true
-source: "Old_courses/2025/csharp/Assignments/OOP/excersises/gitflow/gitflow2.md"
-description: "Bygg vidare på Git Flow med issue tracking på GitHub — skapa issues, koppla branches och stäng automatiskt vid merge."
-tags: ["bash", "git", "gitflow", "issues", "github", "pull-request"]
-week_fit: []
----
-
 # Git Flow + Issues – organisera arbetet
 
 🟢

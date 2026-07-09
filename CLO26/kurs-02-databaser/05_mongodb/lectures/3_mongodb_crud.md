@@ -1,19 +1,3 @@
----
-
-title: 3. Grundläggande CRUD-operationer i MongoDB (45 min)
-author: Marcus Ackre Medina
-type: lecture
-topic: databaser
-difficulty: 1
-language: mixed
-status: adapted
-marcus_voice: true
-source: "Old_courses/2025/csharp/2_db/lectures/06_db_nosql_mongodb/3_mongodb_crud.md"
-description: "Övergripande frågeställning: Hur utför vi grundläggande Create, Read, Update och Delete (CRUD) operationer i MongoDB?"
-tags: ["crud", "crud-operationer", "databaser", "grundläggande", "javascript", "min)", "mongodb", "verktyg"]
-week_fit: []
----
-
 # 3. Grundläggande CRUD-operationer i MongoDB (45 min)
 
 🟢

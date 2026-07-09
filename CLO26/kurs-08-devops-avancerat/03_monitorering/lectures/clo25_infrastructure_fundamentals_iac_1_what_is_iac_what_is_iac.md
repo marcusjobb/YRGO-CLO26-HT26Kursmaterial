@@ -1,19 +1,3 @@
----
-
-title: What Is IaC
-author: Marcus Ackre Medina
-type: lecture
-topic: infrastructure
-difficulty: 2
-language: english
-status: adapted
-marcus_voice: true
-source: "Old_courses/Coud_Development_CLO25/infrastructure-fundamentals/iac/1-what-is-iac/what-is-iac.md"
-description: "Getting StartedWeek by WeekIntro To Cloud DevelopmentInfrastructure Fundamentals-"
-tags: ["azure", "cloud", "git", "iac", "infrastructure", "networking", "what"]
-week_fit: []
----
-
 Navigation :
 Getting StartedWeek by WeekIntro To Cloud DevelopmentInfrastructure Fundamentals-
 Compute-

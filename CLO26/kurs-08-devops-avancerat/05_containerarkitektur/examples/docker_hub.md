@@ -1,19 +1,3 @@
----
-
-title: Deploying images to Docker Hub
-author: Marcus Ackre Medina
-type: example
-topic: integration
-difficulty: 1
-language: bash
-status: adapted
-marcus_voice: true
-source: "Old_courses/2025/java/7_system_integration/05_docker_compose/projects/2_calculator/docker_hub.md"
-description: "docker build -t deskavaenkelt/calculator-app:1.0.0 ."
-tags: ["bash", "deploying", "docker", "git", "hub", "images", "integration"]
-week_fit: []
----
-
 # Deploying images to Docker Hub
 
 🟢

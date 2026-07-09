@@ -1,19 +1,3 @@
----
-
-title: SQL-säkerhet och Bobby Tables
-author: Marcus Ackre Medina
-type: article
-topic: databaser
-difficulty: 1
-language: csharp
-status: adapted
-marcus_voice: true
-source: "Old_courses/books/csharp_cmyh/C-Sharp/databases/sql_security.md"
-description: "SQL-säkerhet är kritiskt för alla databasdrivna applikationer. Den mest kända och farliga sårbarheten är SQL Injection, populariserad genom XKCD-serien 'Bobby Tables'. Denna attack kan ge angripare fu"
-tags: ["bobby", "csharp", "databaser", "entity-framework", "git", "oop", "security", "sql", "sql-säkerhet", "tables"]
-week_fit: []
----
-
 # SQL-säkerhet och Bobby Tables
 
 🟢

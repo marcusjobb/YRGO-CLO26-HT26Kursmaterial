@@ -1,19 +1,3 @@
----
-
-title: Kontext
-author: Marcus Ackre Medina
-type: article
-topic: databaser
-difficulty: 1
-language: csharp
-status: adapted
-marcus_voice: true
-source: "Old_courses/books/CLO22/Docs/entityframework/kontext/index.md"
-description: "Yay, dags att lära oss om databas-kontexten! En databaskontext är en klass som ärver från DbContext och används för att kommunicera med databasen med hjälp av Entity Framework Core."
-tags: ["csharp", "databaser", "design-patterns", "entity-framework", "git", "kontext", "oop", "sql"]
-week_fit: []
----
-
 # Kontext
 
 🟢

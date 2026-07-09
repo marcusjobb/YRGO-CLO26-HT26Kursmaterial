@@ -1,19 +1,3 @@
----
-
-title: Övning 1: Code Smells & Refactoring
-author: Marcus Ackre Medina
-type: exercise
-topic: clean-code
-difficulty: 1
-language: csharp
-status: adapted
-marcus_voice: true
-source: "Old_courses/2025/3_advanced_oop/exercises/refactoring/refactoring_exercise_1.md"
-description: "Du har ärvt legacy kod från en junior utvecklare. Koden fungerar, men är full av code smells. Din uppgift: refactora!"
-tags: ["clean-code", "csharp", "exercise", "refactoring", "smells", "visual-studio", "övning"]
-week_fit: []
----
-
 # Övning 1: Code Smells & Refactoring
 
 🟢

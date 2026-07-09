@@ -1,19 +1,3 @@
----
-
-title: 📞 Telefonkatalog med Dictionary
-author: Marcus Ackre Medina
-type: exercise
-topic: datastrukturer
-difficulty: 1
-language: csharp
-status: adapted
-marcus_voice: true
-source: "Old_courses/2025/datastructures/exercises/dictionary_phonebook.md"
-description: "Lär dig använda Dictionary<TKey, TValue> för att skapa en telefonkatalog. Dictionary är perfekt när du behöver snabb uppslagning baserat på en nyckel (key)."
-tags: ["csharp", "datastrukturer", "dictionary", "exercise", "git", "phonebook", "ssh", "telefonkatalog"]
-week_fit: []
----
-
 # 📞 Telefonkatalog med Dictionary
 
 🟢

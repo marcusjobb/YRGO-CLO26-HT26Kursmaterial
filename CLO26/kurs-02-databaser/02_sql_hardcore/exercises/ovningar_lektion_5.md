@@ -1,19 +1,3 @@
----
-
-title: Övningsuppgifter – Lektion 5
-author: Marcus Ackre Medina
-type: exercise
-topic: sql
-difficulty: 2
-language: sql
-status: adapted
-marcus_voice: true
-source: "exercises_to_spread_out/Övningar - Lektion 5.md"
-description: "ptdeptÖvningsuppgifter – Lektion 5"
-tags: ["aggregate-functions", "as", "exercise", "group-by", "having", "join", "order-by", "select", "sql"]
-week_fit: []
----
-
 ptdeptÖvningsuppgifter – Lektion 5
 
 

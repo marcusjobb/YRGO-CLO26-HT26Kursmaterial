@@ -1,19 +1,3 @@
----
-
-title: Övningar: Publicera API:er på lokala servrar
-author: Marcus Ackre Medina
-type: example
-topic: api
-difficulty: 1
-language: mixed
-status: adapted
-marcus_voice: true
-source: "Old_courses/2025/java/5_api/13_create_jar_files_with_the_mave_and_gradle/2_exercises.md"
-description: "I dessa övningar kommer du att **bygga och testa ett API lokalt** samt konfigurera det för att fungera på ditt nätverk."
-tags: ["api", "api:er", "java", "lokala", "publicera", "servrar", "visual-studio", "övningar:"]
-week_fit: []
----
-
 # **Övningar: Publicera API:er på lokala servrar**  
 
 🟢

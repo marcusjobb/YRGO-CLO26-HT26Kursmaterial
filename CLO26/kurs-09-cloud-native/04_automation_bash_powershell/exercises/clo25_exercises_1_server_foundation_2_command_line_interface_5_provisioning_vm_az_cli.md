@@ -1,19 +1,3 @@
----
-
-title: 5. Provisioning a VM Using AZ CLI, Configuring Nginx, and Allowing HTTP Traffic
-author: Marcus Ackre Medina
-type: exercise
-topic: infrastructure
-difficulty: 2
-language: english
-status: adapted
-marcus_voice: true
-source: "Old_courses/Coud_Development_CLO25/exercises/1-server-foundation/2-command-line-interface/5-provisioning-vm-az-cli.md"
-description: "Getting StartedWeek by WeekIntro To Cloud DevelopmentInfrastructure FundamentalsExercises-"
-tags: ["allowing", "azure", "cli", "cli,", "cloud", "configuring", "docker", "exercise", "git", "http"]
-week_fit: []
----
-
 Navigation :
 Getting StartedWeek by WeekIntro To Cloud DevelopmentInfrastructure FundamentalsExercises-
 Server Foundation--

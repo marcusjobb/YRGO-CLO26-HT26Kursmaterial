@@ -1,19 +1,3 @@
----
-
-title: 📦 Inlämningsinstruktioner - TDD Grupprojekt
-author: Marcus Ackre Medina
-type: assignment
-topic: projekt
-difficulty: 1
-language: bash
-status: adapted
-marcus_voice: true
-source: "Old_courses/2025/4_test_and_quality_assurance/assignment/INLAMNING.md"
-description: "DEADLINE:** Söndag 19 januari 2026, kl. 23:59"
-tags: ["bash", "git", "grupprojekt", "inlamning", "inlämningsinstruktioner", "installation", "projekt", "visual-studio"]
-week_fit: []
----
-
 # 📦 Inlämningsinstruktioner - TDD Grupprojekt
 
 🟢

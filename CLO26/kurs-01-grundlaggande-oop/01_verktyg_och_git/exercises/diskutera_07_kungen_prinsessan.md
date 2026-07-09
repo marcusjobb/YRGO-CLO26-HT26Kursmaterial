@@ -1,6 +1,6 @@
 # Kungen, Prinsessan, Prinsen och Tjuren — Diskutera mera! 💬
 
-*Från ett av mina favoritspel till PSP: Silent Hill: Shattered Memories (2009)*
+_Från ett av mina favoritspel till PSP: Silent Hill: Shattered Memories (2009)_
 
 **Gruppstorlek:** 3–4 personer
 **Tid:** 20–25 minuter
@@ -28,12 +28,12 @@ En tjur laddar mot henne och dödar henne.
 
 Skriv ner din ranking, 1 = störst ansvar, 4 = minst ansvar.
 
-| Karaktär | Din ranking (1–4) |
-|----------|------------------|
-| Kungen | |
-| Prinsen | |
-| Prinsessan | |
-| Tjuren | |
+| Karaktär   | Din ranking (1–4) |
+| ---------- | ----------------- |
+| Kungen     |                   |
+| Prinsen    |                   |
+| Prinsessan |                   |
+| Tjuren     |                   |
 
 ---
 
@@ -44,7 +44,7 @@ Jämför era rankningar. Förmodligen är ni inte överens.
 - Vem hamnade högst hos flest? Varför?
 - Vem hamnade lägst? Är alla eniga om det?
 - Spelar det roll att tjuren inte kan tänka?
-- Spelar det roll att prinsessan *valde* att ignorera varningsskyltarna?
+- Spelar det roll att prinsessan _valde_ att ignorera varningsskyltarna?
 
 ---
 
@@ -67,4 +67,4 @@ Nästa gång ni felsöker ett program som kraschar: vem är skyldig?
 
 ---
 
-*Läraren leder avslutningsdiskussionen.*
+_Läraren leder avslutningsdiskussionen._

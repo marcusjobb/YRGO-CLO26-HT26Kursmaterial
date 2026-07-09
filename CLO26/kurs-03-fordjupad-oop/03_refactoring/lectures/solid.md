@@ -1,19 +1,3 @@
----
-
-title: ![bg left:40%](https://images.pexels.com/photos/1181472/pexels-photo-1181472.jpeg)
-author: Marcus Ackre Medina
-type: lecture
-topic: clean-code
-difficulty: 1
-language: csharp
-status: adapted
-marcus_voice: true
-source: "Old_courses/2025/3_advanced_oop/lectures/solid/solid_marp.md"
-description: "- **S** - Single Responsibility"
-tags: ["![bg", "clean-code", "csharp", "left:40%](https://images.pexels.com/photos/1181472/pexels-photo-1181472.jpeg)", "marp", "solid", "ssh", "visual-studio"]
-week_fit: []
----
-
 # ![bg left:40%](https://images.pexels.com/photos/1181472/pexels-photo-1181472.jpeg)
 
 🟢

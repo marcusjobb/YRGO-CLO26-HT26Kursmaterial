@@ -1,19 +1,3 @@
----
-
-title: Example 1: Docker-based testing for a weather forecasting API
-author: Marcus Ackre Medina
-type: lecture
-topic: testing
-difficulty: 1
-language: csharp
-status: adapted
-marcus_voice: true
-source: "Old_courses/2025/csharp/4_test/lectures/06_isolated_test_environments/2_example.md"
-description: "FROM mcr.microsoft.com/dotnet/sdk:9.0 AS build"
-tags: ["csharp", "docker-based", "forecasting", "installation", "testing", "verktyg", "weather"]
-week_fit: []
----
-
 ### **Exempel 1: Docker-baserad testning för väderprognos-API**
 
 #### Dockerfile

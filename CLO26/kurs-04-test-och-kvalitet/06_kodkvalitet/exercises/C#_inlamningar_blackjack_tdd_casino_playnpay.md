@@ -1,18 +1,3 @@
----
-
-title: Casino Playnpay
-author: Marcus Ackre Medina
-type: exercise
-topic: testing
-difficulty: 3
-language: csharp
-status: adapted
-marcus_voice: true
-source: "Old_courses/Material från Codic/C#/Inlämningar/Blackjack (TDD)/Casino PlayNPay.docx"
-description: "Casinot ”Play’n’Pay” behöver ett backend för blackjack-spelmaskiner"
-tags: ["casino", "csharp", "exercise", "git", "playnpay.docx", "test", "testing"]
-week_fit: []
----
 Casino Play’n’Pay!
 Casinot ”Play’n’Pay” behöver ett backend för blackjack-spelmaskiner
 Ni ska alltså skapa en backend för spelet

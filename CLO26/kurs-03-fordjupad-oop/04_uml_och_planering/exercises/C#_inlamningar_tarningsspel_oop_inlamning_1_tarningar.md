@@ -1,18 +1,3 @@
----
-
-title: Inlämning 1 Tärningar
-author: Marcus Ackre Medina
-type: exercise
-topic: oop
-difficulty: 1
-language: csharp
-status: adapted
-marcus_voice: true
-source: "Old_courses/Material från Codic/C#/Inlämningar/Tärningsspel (OOP)/Inlämning 1 - tärningar.docx"
-description: "INLÄMNINGSUPPGIFT 1 - TÄRNINGAR"
-tags: ["csharp", "exercise", "git", "inlämning", "oop", "test", "tärningar.docx"]
-week_fit: []
----
 OH FORTUNA!
 Tärningar och spel
 

@@ -1,19 +1,3 @@
----
-
-title: Inlämningsuppgift 1 – SQL – Filmuthyrningsdatabas (individuell)
-author: Marcus Ackre Medina
-type: assignment
-topic: databaser
-difficulty: 2
-language: sql
-status: adapted
-marcus_voice: true
-source: "exercises_to_spread_out/Inlämningsuppgift 1 - SQL.md"
-description: "Du ska skapa en relationsdatabas i SQL. Databasen ska planeras och designas med diagram. Sedan ska SQL användas för att skapa tabeller och ställa frågor mot databasen. (SQL kod)"
-tags: ["sql", "databaser", "relational-schema", "normalisering", "n3", "joins", "individuell"]
-week_fit: []
----
-
 Inlämningsuppgift 1
 
 

@@ -1,19 +1,3 @@
----
-
-title: TDD
-author: Marcus Ackre Medina
-type: article
-topic: testing
-difficulty: 1
-language: csharp
-status: adapted
-marcus_voice: true
-source: "Old_courses/books/csharp_cmyh/C-Sharp/quality_control/tdd.md"
-description: "Nu ska vi vända upp och ner på allt du lärt dig hittils om programmering... Bokstavligt talat."
-tags: ["csharp", "git", "oop", "tdd", "testing"]
-week_fit: []
----
-
 # TDD
 
 🟢

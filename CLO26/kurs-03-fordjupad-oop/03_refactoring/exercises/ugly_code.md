@@ -1,19 +1,3 @@
----
-
-title: Pelle Fulkod och den studsande bollen" - En refaktoreringsdialog
-author: Marcus Ackre Medina
-type: exercise
-topic: clean-code
-difficulty: 3
-language: csharp
-status: adapted
-marcus_voice: true
-source: "Old_courses/2025/clean_code/exercises/ugly_code.md"
-description: "Så... jag har något kul att visa dig idag! Träffa **Pelle Fulkod** - han jobbar på samma ställe som oss och är helt övertygad om att han är en 'ninja master of C#'. Han kom till mig häromdagen och sa:"
-tags: [""pelle", "bollen"", "clean-code", "csharp", "exercise", "fulkod", "refaktoreringsdialog", "rider", "ssh", "studsande"]
-week_fit: []
----
-
 # "Pelle Fulkod och den studsande bollen" - En refaktoreringsdialog
 
 🔴

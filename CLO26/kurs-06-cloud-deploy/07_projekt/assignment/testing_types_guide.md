@@ -1,19 +1,3 @@
----
-
-title: 🧪 Testing Types Guide - Unit, BDD, Integration
-author: Marcus Ackre Medina
-type: assignment
-topic: projekt
-difficulty: 1
-language: mixed
-status: adapted
-marcus_voice: true
-source: "Old_courses/2025/4_test_and_quality_assurance/assignment/articles/testing_types_guide.md"
-description: "Förstå skillnaden mellan olika testtyper"
-tags: ["bdd,", "csharp", "installation", "integration", "projekt", "testing", "types", "unit,", "verktyg", "visual-studio"]
-week_fit: []
----
-
 # 🧪 Testing Types Guide - Unit, BDD, Integration
 
 🟢

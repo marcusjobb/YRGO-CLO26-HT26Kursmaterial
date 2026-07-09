@@ -1,19 +1,3 @@
----
-
-title: HTML och Docker
-author: Marcus Ackre Medina
-type: example
-topic: docker
-difficulty: 1
-language: html
-status: adapted
-marcus_voice: true
-source: "Old_courses/2025/java/apiwebservices/lecture_10/1_docker_html/instructions.md"
-description: "Skapa en mappstruktur för projektet."
-tags: ["docker", "html", "instructions"]
-week_fit: []
----
-
 # HTML och Docker
 
 🟢

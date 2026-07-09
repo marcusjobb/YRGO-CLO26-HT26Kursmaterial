@@ -1,19 +1,3 @@
----
-
-title: C# och SQL övningar (updaterad)
-author: Marcus Ackre Medina
-type: exercise
-topic: databaser
-difficulty: 2
-language: mixed
-status: adapted
-marcus_voice: true
-source: "exercises_to_spread_out/C# och SQL övningar (updaterad).md"
-description: "Följande uppgifter kräver en del tänkande och kodande så jag föreslår att ni gör det i era grupper, så kommer vi att kolla på resultatet tillsammans på torsdag."
-tags: ["ado-net", "connection-string", "crud", "databaser", "datatable", "exercise", "klasser", "mockaroo", "sql", "övningar"]
-week_fit: []
----
-
 # C# + SQL Övningar
 
 🟡

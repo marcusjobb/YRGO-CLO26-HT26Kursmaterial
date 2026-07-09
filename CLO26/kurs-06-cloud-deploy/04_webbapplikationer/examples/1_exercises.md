@@ -1,19 +1,3 @@
----
-
-title: 1_exercises
-author: Marcus Ackre Medina
-type: example
-topic: api
-difficulty: 1
-language: mixed
-status: adapted
-marcus_voice: true
-source: "Old_courses/2025/java/5_api/13_create_jar_files_with_the_mave_and_gradle/1_exercises.md"
-description: "Här kommer övningar för **Skapa JAR-filer med IntelliJ IDEA** på olika svårighetsnivåer, enligt dina riktlinjer."
-tags: ["api", "java", "visual-studio"]
-week_fit: []
----
-
 Här kommer övningar för **Skapa JAR-filer med IntelliJ IDEA** på olika svårighetsnivåer, enligt dina riktlinjer.
 
 ---

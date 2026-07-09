@@ -1,19 +1,3 @@
----
-
-title: Git återblick
-author: Marcus Ackre Medina
-type: lecture
-topic: git
-difficulty: 1
-language: python
-status: adapted
-marcus_voice: true
-source: "exercises_to_spread_out/Git återblick.md"
-description: "En liten tillbakablick på föreläsningen och tidigare Github exempel."
-tags: ["branches", "ci-cd", "git", "github", "versionshantering", "workflow", "återblick"]
-week_fit: []
----
-
 # Git återblick
 
 🟢

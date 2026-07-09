@@ -1,19 +1,3 @@
----
-
-title: 4. Datamodellering i MongoDB (45 min)
-author: Marcus Ackre Medina
-type: lecture
-topic: databaser
-difficulty: 1
-language: mixed
-status: adapted
-marcus_voice: true
-source: "Old_courses/2025/csharp/2_db/lectures/07_db_nosql_mongodb_advanced/4_data_modelling.md"
-description: "Övergripande frågeställning: Hur kan vi effektivt modellera data i MongoDB för att optimera prestanda och flexibilitet i vår applikation?"
-tags: ["data", "databaser", "datamodellering", "javascript", "min)", "modelling", "mongodb", "visual-studio"]
-week_fit: []
----
-
 # 4. Datamodellering i MongoDB (45 min)
 
 🟢

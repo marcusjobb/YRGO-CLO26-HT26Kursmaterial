@@ -1,19 +1,3 @@
----
-
-title: 1. Provisioning CosmosDB via Portal
-author: Marcus Ackre Medina
-type: exercise
-topic: cloud
-difficulty: 2
-language: english
-status: adapted
-marcus_voice: true
-source: "Old_courses/Coud_Development_CLO25/exercises/5-cloud-databases/1-portal-interface/1-provisioning-cosmosdb-portal.md"
-description: "Getting StartedWeek by WeekIntro To Cloud DevelopmentInfrastructure FundamentalsExercises-"
-tags: ["azure", "cloud", "cosmosdb", "docker", "dotnet", "exercise", "git", "iac", "networking", "portal"]
-week_fit: []
----
-
 Navigation :
 Getting StartedWeek by WeekIntro To Cloud DevelopmentInfrastructure FundamentalsExercises-
 Server Foundation-

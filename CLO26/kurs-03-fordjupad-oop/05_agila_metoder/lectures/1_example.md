@@ -1,19 +1,3 @@
----
-
-title: 1. Introduktion till Agila Metoder
-author: Marcus Ackre Medina
-type: lecture
-topic: oop
-difficulty: 1
-language: sql
-status: adapted
-marcus_voice: true
-source: "Old_courses/2025/csharp/3_oop_adv/lectures/08_agile_development_kanban/1_example.md"
-description: "// Example 1: Agile Task Management System with MySQL Database"
-tags: ["agila", "git", "metoder", "oop", "till"]
-week_fit: []
----
-
 # 1. Introduktion till Agila Metoder
 
 🟢

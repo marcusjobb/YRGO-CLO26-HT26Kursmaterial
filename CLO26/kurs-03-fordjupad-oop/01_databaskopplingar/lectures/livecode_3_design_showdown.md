@@ -1,19 +1,3 @@
----
-
-title: Live Coding 3: SQL vs MongoDB Design Showdown
-author: Marcus Ackre Medina
-type: lecture
-topic: databaser
-difficulty: 1
-language: mixed
-status: adapted
-marcus_voice: true
-source: "Old_courses/2025/2_databases/lectures/MongoDB/livecode_3_design_showdown.md"
-description: "Verktyg:** Whiteboard/Skärm + Compass"
-tags: ["coding", "databaser", "design", "live", "livecode", "mongodb", "showdown", "sql", "ssh", "verktyg"]
-week_fit: []
----
-
 # Live Coding 3: SQL vs MongoDB Design Showdown
 
 🟢

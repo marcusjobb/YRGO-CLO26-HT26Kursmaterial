@@ -1,18 +1,3 @@
----
-title: Git Flow + Code Reviews – granska innan merge
-author: Marcus Ackre Medina
-type: exercise
-topic: git
-difficulty: 2
-language: bash
-status: adapted
-marcus_voice: true
-source: "Old_courses/2025/csharp/Assignments/OOP/excersises/gitflow/gitflow3.md"
-description: "Lär er granska varandras kod med GitHub code reviews — kommentera, begär ändringar och godkänn innan merge."
-tags: ["bash", "git", "gitflow", "code-review", "github", "pull-request"]
-week_fit: []
----
-
 # Git Flow + Code Reviews – granska innan merge
 
 🟡

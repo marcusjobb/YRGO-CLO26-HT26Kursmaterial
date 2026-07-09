@@ -1,19 +1,3 @@
----
-
-title: Inlamning 2 React Applikation
-author: Marcus Ackre Medina
-type: exercise
-topic: projekt
-difficulty: 3
-language: react
-status: adapted
-marcus_voice: true
-source: "Old_courses/Material från Codic/React/Inlämningar/Inlamning_2_-_React_Applikation.docx"
-description: "Routing & Autentisering - Den studerande påvisar kunskap om hur routing och autentisering"
-tags: ["applikation.docx", "exercise", "git", "inlamning", "oop", "projekt", "react"]
-week_fit: []
----
-
 Inlämningsuppgift 2 – React
 
 Täckta kursplansmål:

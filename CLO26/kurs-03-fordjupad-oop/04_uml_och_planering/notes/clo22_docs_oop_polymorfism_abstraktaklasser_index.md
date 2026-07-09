@@ -1,19 +1,3 @@
----
-
-title: Abstrakta klasser
-author: Marcus Ackre Medina
-type: article
-topic: oop
-difficulty: 1
-language: csharp
-status: adapted
-marcus_voice: true
-source: "Old_courses/books/CLO22/Docs/oop/polymorfism/abstraktaklasser/index.md"
-description: "Abstrakta klasser är klasser som innehåller både kod och abstrakta metoder. Som en slags mellanting mellan en interface och en klass."
-tags: ["abstrakta", "csharp", "git", "klasser", "oop"]
-week_fit: []
----
-
 # Abstrakta klasser
 
 🟢

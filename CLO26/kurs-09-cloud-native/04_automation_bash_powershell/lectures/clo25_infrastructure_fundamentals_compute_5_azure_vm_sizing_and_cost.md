@@ -1,19 +1,3 @@
----
-
-title: Azure VM Sizing and Cost (Azure)
-author: Marcus Ackre Medina
-type: lecture
-topic: infrastructure
-difficulty: 2
-language: english
-status: adapted
-marcus_voice: true
-source: "Old_courses/Coud_Development_CLO25/infrastructure-fundamentals/compute/5-azure-vm-sizing-and-cost.md"
-description: "Getting StartedWeek by WeekIntro To Cloud DevelopmentInfrastructure Fundamentals-"
-tags: ["(azure)", "azure", "cloud", "cost", "infrastructure", "linux", "networking", "sizing"]
-week_fit: []
----
-
 Navigation :
 Getting StartedWeek by WeekIntro To Cloud DevelopmentInfrastructure Fundamentals-
 Compute-- What is a Server?-- Common Server Roles-- Inside a Physical Server-- Inside a Virtual Server-- Azure VM Sizing and Cost (Azure)-

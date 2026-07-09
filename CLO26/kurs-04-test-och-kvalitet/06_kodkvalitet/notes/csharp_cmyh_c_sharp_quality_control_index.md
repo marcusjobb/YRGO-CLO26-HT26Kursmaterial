@@ -1,19 +1,3 @@
----
-
-title: Kvalitetssäkring
-author: Marcus Ackre Medina
-type: article
-topic: testing
-difficulty: 3
-language: csharp
-status: adapted
-marcus_voice: true
-source: "Old_courses/books/csharp_cmyh/C-Sharp/quality_control/index.md"
-description: "Nu ska vi kolla på kvalitetssäkring enligt TDD. Låt oss ställa några"
-tags: ["csharp", "git", "kvalitetssäkring", "oop", "testing"]
-week_fit: []
----
-
 # Kvalitetssäkring
 
 🔴

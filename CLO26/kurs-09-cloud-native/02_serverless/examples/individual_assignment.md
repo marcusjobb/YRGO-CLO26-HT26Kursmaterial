@@ -1,19 +1,3 @@
----
-
-title: Individuell inlämningsuppgift i Molnbaserad Integration
-author: Marcus Ackre Medina
-type: example
-topic: cloud
-difficulty: 1
-language: python
-status: adapted
-marcus_voice: true
-source: "Old_courses/2025/java/8_cloud_integration/assignments/individual_assignment.md"
-description: "Denna uppgift syftar till att visa att du kan drifta och integrera en molnbaserad lösning med en befintlig lösning."
-tags: ["cloud", "individual", "individuell", "inlämningsuppgift", "integration", "molnbaserad"]
-week_fit: []
----
-
 # Individuell inlämningsuppgift i Molnbaserad Integration
 
 🟢

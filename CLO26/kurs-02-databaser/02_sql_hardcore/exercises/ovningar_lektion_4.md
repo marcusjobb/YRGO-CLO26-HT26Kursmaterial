@@ -1,19 +1,3 @@
----
-
-title: Övningar – Lektion 4
-author: Marcus Ackre Medina
-type: exercise
-topic: sql
-difficulty: 2
-language: sql
-status: adapted
-marcus_voice: true
-source: "exercises_to_spread_out/Övningar – Lektion 4.md"
-description: "Vi kommer bland annat använda Salary-databasen vi har jobbat med de två sista övningarna. Om ni inte har skapat hela databasen med värden i tabeller i SQL finns den på Teams under V2 och Lösningsförsl"
-tags: ["aggregate-functions", "alter-table", "distinct", "exercise", "operators", "select", "sql", "where"]
-week_fit: []
----
-
 Övningar – Lektion 4
 
 

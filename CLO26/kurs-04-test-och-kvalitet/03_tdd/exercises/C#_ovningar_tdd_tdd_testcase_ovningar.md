@@ -1,18 +1,3 @@
----
-
-title: Tdd Testcase Övningar
-author: Marcus Ackre Medina
-type: exercise
-topic: testing
-difficulty: 1
-language: csharp
-status: adapted
-marcus_voice: true
-source: "Old_courses/Material från Codic/C#/Övningar/TDD/TDD testcase övningar.docx"
-description: "Ditt team arbetar med att utveckla ett CRM och du har fått i uppdrag att bygga till en importfunktion"
-tags: ["csharp", "exercise", "tdd", "test", "testcase", "testing", "övningar.docx"]
-week_fit: []
----
 TDD – Småupdrag
 Övning 1 - CRM
 Ditt team arbetar med att utveckla ett CRM och du har fått i uppdrag att bygga till en importfunktion

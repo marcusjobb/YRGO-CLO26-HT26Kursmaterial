@@ -1,18 +1,3 @@
----
-
-title: Lösningsförslag Lektion 6
-author: Marcus Ackre Medina
-type: exercise
-topic: databaser
-difficulty: 3
-language: sql
-status: adapted
-marcus_voice: true
-source: "Old_courses/Material från Codic/SQL/Övningar/Lösningsförslag - Lektion 6.sql"
-description: "e.emp_no, e.first_name, e.last_name, dm.dept_no"
-tags: ["6.sql", "databaser", "exercise", "inner", "join", "left", "lektion", "lösningsförslag", "right", "sql"]
-week_fit: []
----
 ```sql
 USE employees;
 

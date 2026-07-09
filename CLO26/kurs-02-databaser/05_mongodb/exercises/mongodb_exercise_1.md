@@ -1,19 +1,3 @@
----
-
-title: Övning 1: MongoDB CRUD - Star Wars Karaktärer
-author: Marcus Ackre Medina
-type: exercise
-topic: databaser
-difficulty: 3
-language: mixed
-status: adapted
-marcus_voice: true
-source: "Old_courses/2025/2_databases/exercises/mongodb/mongodb_exercise_1.md"
-description: "Efter den här övningen kommer du att kunna:"
-tags: ["crud", "databaser", "exercise", "git", "installation", "json", "karaktärer", "mongodb", "star", "visual-studio"]
-week_fit: []
----
-
 # Övning 1: MongoDB CRUD - Star Wars Karaktärer
 
 🔴

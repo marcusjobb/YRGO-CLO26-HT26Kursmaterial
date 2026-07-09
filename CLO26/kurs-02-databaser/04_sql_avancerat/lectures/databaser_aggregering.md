@@ -1,19 +1,3 @@
----
-
-title: GROUP BY, HAVING och aggregering 📊
-author: Marcus Ackre Medina
-type: lecture
-topic: databaser
-difficulty: 1
-language: sql
-status: adapted
-marcus_voice: true
-source: "Old_courses/2025/2_databases/lectures/aggregation/databaser_aggregering_marp.md"
-description: "Räkna, summera och analysera data"
-tags: ["aggregering", "databaser", "group", "having", "marp", "sql", "ssh", "visual-studio"]
-week_fit: []
----
-
 # GROUP BY, HAVING och aggregering 📊
 
 🟢

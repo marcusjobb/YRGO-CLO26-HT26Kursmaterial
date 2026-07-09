@@ -1,18 +1,3 @@
----
-
-title: Solid Övningar
-author: Marcus Ackre Medina
-type: exercise
-topic: clean-code
-difficulty: 1
-language: csharp
-status: adapted
-marcus_voice: true
-source: "Old_courses/Material från Codic/C#/Övningar/SOLID/Solid övningar.docx"
-description: "Här ska vi kolla på lite kod med SOLID mönster"
-tags: ["clean-code", "csharp", "exercise", "git", "oop", "solid", "test", "övningar.docx"]
-week_fit: []
----
 Solid övningar
 Här ska vi kolla på lite kod med SOLID mönster
 

@@ -1,19 +1,3 @@
----
-
-title: 2. Provisioning CosmosDB via AZ CLI
-author: Marcus Ackre Medina
-type: exercise
-topic: cloud
-difficulty: 2
-language: english
-status: adapted
-marcus_voice: true
-source: "Old_courses/Coud_Development_CLO25/exercises/5-cloud-databases/2-command-line-interface/2-provisioning-cosmosdb-az-cli.md"
-description: "Getting StartedWeek by WeekIntro To Cloud DevelopmentInfrastructure FundamentalsExercises-"
-tags: ["azure", "cli", "cloud", "cosmosdb", "devops", "docker", "exercise", "git", "iac", "linux"]
-week_fit: []
----
-
 Navigation :
 Getting StartedWeek by WeekIntro To Cloud DevelopmentInfrastructure FundamentalsExercises-
 Server Foundation-

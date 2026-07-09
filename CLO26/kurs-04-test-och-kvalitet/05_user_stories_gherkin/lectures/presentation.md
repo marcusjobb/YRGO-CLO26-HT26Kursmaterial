@@ -1,19 +1,3 @@
----
-
-title: BDD & Gherkin
-author: Marcus Ackre Medina
-type: lecture
-topic: testing
-difficulty: 1
-language: csharp
-status: adapted
-marcus_voice: true
-source: "Old_courses/2025/4_test_and_quality_assurance/lectures/bdd_gherkin/presentation.md"
-description: "Vi beskriver systemets **beteende** INNAN vi kodar"
-tags: ["csharp", "gherkin", "presentation", "testing", "visual-studio"]
-week_fit: []
----
-
 <!-- _class: lead -->
 
 # BDD & Gherkin

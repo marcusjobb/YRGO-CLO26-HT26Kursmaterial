@@ -1,19 +1,3 @@
----
-
-title: Mordet på Metropolitan Club
-author: Marcus Ackre Medina
-type: exercise
-topic: sql
-difficulty: 2
-language: sql
-status: adapted
-marcus_voice: true
-source: "exercises_to_spread_out/Mordet_pa_Metropolitan_Club.md"
-description: "Vi ska köra en SQL övning genom att lösa ett mord. Bara för att visa att databaser är mer än bara personregister. Det kan användas till mer coola saker."
-tags: ["club", "detective", "exercise", "insert", "metropolitan", "mordet", "problem-solving", "select", "sql", "ssms"]
-week_fit: []
----
-
 # Mordet på Metropolitan Club
 
 🟡

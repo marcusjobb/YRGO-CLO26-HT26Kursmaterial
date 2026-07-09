@@ -1,19 +1,3 @@
----
-
-title: Clean code
-author: Marcus Ackre Medina
-type: lecture
-topic: clean-code
-difficulty: 1
-language: csharp
-status: adapted
-marcus_voice: true
-source: "/home/nionit/git/marcus-yh-claude-assistent/reference/lectures_to_spread_out/Clean code.md"
-description: "- Nyckeln till bra programmering"
-tags: ["api", "clean", "clean-code", "csharp", "oop"]
-week_fit: []
----
-
 ## Slide 1: Clean code
 
 - Nyckeln till bra programmering

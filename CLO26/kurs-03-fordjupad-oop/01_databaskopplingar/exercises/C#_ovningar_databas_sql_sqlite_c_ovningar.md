@@ -1,18 +1,3 @@
----
-
-title: Sqlite C# Övningar
-author: Marcus Ackre Medina
-type: exercise
-topic: databaser
-difficulty: 3
-language: csharp
-status: adapted
-marcus_voice: true
-source: "Old_courses/Material från Codic/C#/Övningar/Databas/SQL/SQLite C# Övningar.docx"
-description: "Alla övningar här bygger på SQLite databasen video_games.db som jag har lagt upp på Teams"
-tags: ["csharp", "databaser", "exercise", "sql", "sqlite", "övningar.docx"]
-week_fit: []
----
 SQLite C# övningar
 Alla övningar här bygger på SQLite databasen video_games.db som jag har lagt upp på Teams
 (Siffror i exemplerna är inte exakta, jag bara visar hur en layout kan se ut!)

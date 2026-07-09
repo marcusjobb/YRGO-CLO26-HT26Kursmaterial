@@ -1,19 +1,3 @@
----
-
-title: Specialpizza (EF övning)
-author: Marcus Ackre Medina
-type: exercise
-topic: databaser
-difficulty: 2
-language: csharp
-status: adapted
-marcus_voice: true
-source: "exercises_to_spread_out/Specialpizza (EF övning).md"
-description: "Den lokala pizzerian går lite dåligt och behöver inspiration för nya pizzor. Du kommer på en alldeles utmärkt idé. Med hjälp av en databas och lite äventyrlighet ska du skapa receptet för en pizza. Då"
-tags: ["csharp", "databaser", "entity-framework", "exercise", "linq", "random", "seeder", "specialpizza", "version"]
-week_fit: []
----
-
 # Specialpizza EF version
 
 🟡

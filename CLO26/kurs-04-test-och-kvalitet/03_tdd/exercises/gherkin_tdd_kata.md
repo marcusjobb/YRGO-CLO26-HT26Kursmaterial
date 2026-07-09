@@ -1,19 +1,3 @@
----
-
-title: Gherkin → TDD Kata - Gift Registry
-author: Marcus Ackre Medina
-type: exercise
-topic: testing
-difficulty: 1
-language: mixed
-status: adapted
-marcus_voice: true
-source: "Old_courses/2025/4_test_and_quality_assurance/exercises/gherkin_tdd_kata.md"
-description: "Vill jag hantera gästers presentönskemål"
-tags: ["exercise", "gherkin", "gift", "kata", "registry", "tdd", "testing", "visual-studio"]
-week_fit: []
----
-
 # Gherkin → TDD Kata - Gift Registry
 
 🟢

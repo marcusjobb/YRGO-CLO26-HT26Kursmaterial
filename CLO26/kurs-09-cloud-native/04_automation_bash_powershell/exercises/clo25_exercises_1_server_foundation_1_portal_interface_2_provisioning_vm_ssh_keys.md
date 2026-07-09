@@ -1,19 +1,3 @@
----
-
-title: 2. Provisioning a VM with SSH Keys and Exploring Linux
-author: Marcus Ackre Medina
-type: exercise
-topic: infrastructure
-difficulty: 2
-language: english
-status: adapted
-marcus_voice: true
-source: "Old_courses/Coud_Development_CLO25/exercises/1-server-foundation/1-portal-interface/2-provisioning-vm-ssh-keys.md"
-description: "Getting StartedWeek by WeekIntro To Cloud DevelopmentInfrastructure FundamentalsExercises-"
-tags: ["azure", "cloud", "docker", "exercise", "exploring", "git", "iac", "infrastructure", "keys", "linux"]
-week_fit: []
----
-
 Navigation :
 Getting StartedWeek by WeekIntro To Cloud DevelopmentInfrastructure FundamentalsExercises-
 Server Foundation--

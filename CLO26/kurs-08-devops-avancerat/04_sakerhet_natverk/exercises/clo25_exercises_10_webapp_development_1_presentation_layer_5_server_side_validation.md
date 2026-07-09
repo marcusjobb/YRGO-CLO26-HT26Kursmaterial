@@ -1,19 +1,3 @@
----
-
-title: 5. Server-Side Validation and Improved Feedback
-author: Marcus Ackre Medina
-type: exercise
-topic: infrastructure
-difficulty: 2
-language: english
-status: adapted
-marcus_voice: true
-source: "Old_courses/Coud_Development_CLO25/exercises/10-webapp-development/1-presentation-layer/5-server-side-validation.md"
-description: "Getting StartedWeek by WeekIntro To Cloud DevelopmentInfrastructure FundamentalsExercises-"
-tags: ["cloud", "docker", "dotnet", "exercise", "feedback", "improved", "infrastructure", "networking", "security", "server"]
-week_fit: []
----
-
 Navigation :
 Getting StartedWeek by WeekIntro To Cloud DevelopmentInfrastructure FundamentalsExercises-
 Server Foundation-

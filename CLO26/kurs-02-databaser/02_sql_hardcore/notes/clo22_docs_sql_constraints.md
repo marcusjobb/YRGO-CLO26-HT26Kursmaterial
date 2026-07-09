@@ -1,19 +1,3 @@
----
-
-title: Constraints
-author: Marcus Ackre Medina
-type: article
-topic: sql
-difficulty: 1
-language: csharp
-status: adapted
-marcus_voice: true
-source: "Old_courses/books/CLO22/Docs/sql/Constraints.md"
-description: "<details open markdown='block'>"
-tags: ["constraints", "csharp", "git", "sql"]
-week_fit: []
----
-
 # Constraints
 
 🟢

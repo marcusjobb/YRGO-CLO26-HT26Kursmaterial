@@ -1,19 +1,3 @@
----
-
-title: API
-author: Marcus Ackre Medina
-type: article
-topic: api
-difficulty: 1
-language: java
-status: adapted
-marcus_voice: true
-source: "Old_courses/books/devbook/Docs/java/api/index.md"
-description: "Nu ska vi prata om API, eller Application Programming Interface, som är ett viktigt gränssnitt för att underlätta kommunikationen med webbapplikationer. API:er fungerar som en slags mellanhand mellan "
-tags: ["api", "design-patterns", "git", "java", "oop"]
-week_fit: []
----
-
 # API
 
 🟢

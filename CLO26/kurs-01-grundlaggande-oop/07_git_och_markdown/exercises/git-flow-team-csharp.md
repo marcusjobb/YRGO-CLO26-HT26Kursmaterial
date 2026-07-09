@@ -1,18 +1,3 @@
----
-title: Git Flow + C#-klasser – bygg tillsammans
-author: Marcus Ackre Medina
-type: exercise
-topic: git
-difficulty: 2
-language: mixed
-status: adapted
-marcus_voice: true
-source: "Old_courses/2025/csharp/Assignments/OOP/excersises/gitflow/gitflow4.md"
-description: "Kombinera Git Flow med C# — varje gruppmedlem skapar en klass via feature branch, code review och merge."
-tags: ["bash", "git", "gitflow", "csharp", "oop", "grupparbete"]
-week_fit: []
----
-
 # Git Flow + C#-klasser – bygg tillsammans
 
 🟡

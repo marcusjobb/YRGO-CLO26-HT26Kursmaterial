@@ -1,19 +1,3 @@
----
-
-title: Dockerfile med Multistage-build för att bygga applikationen direkt från källkoden
-author: Marcus Ackre Medina
-type: example
-topic: integration
-difficulty: 1
-language: bash
-status: adapted
-marcus_voice: true
-source: "Old_courses/2025/java/7_system_integration/07_secure_hosting/projects/2_calculator/ai_chat.md"
-description: "Assistant: Hello! What coding task do you need help with?"
-tags: ["applikationen", "bash", "bygga", "chat", "direkt", "dockerfile", "från", "git", "installation", "integration"]
-week_fit: []
----
-
 Assistant: Hello! What coding task do you need help with?
 
 User: jag har två Dockerfile som ser ut så här:

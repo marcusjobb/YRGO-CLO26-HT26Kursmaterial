@@ -1,19 +1,3 @@
----
-
-title: 2. Relationsmodellen och ER-diagram
-author: Marcus Ackre Medina
-type: lecture
-topic: databaser
-difficulty: 1
-language: mermaid
-status: adapted
-marcus_voice: true
-source: "Old_courses/2025/csharp/2_db/lectures/01_introduction/2_relations_er_diagram.md"
-description: "Relationsmodellen är en metod för att strukturera och organisera data i databaser. Den bygger på koncept från mängdlära och predikatlogik."
-tags: ["databaser", "diagram", "er-diagram", "relations", "relationsmodellen", "ssh", "verktyg", "visual-studio"]
-week_fit: []
----
-
 # 2. Relationsmodellen och ER-diagram
 
 🟢

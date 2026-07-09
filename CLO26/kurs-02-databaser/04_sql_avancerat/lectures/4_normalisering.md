@@ -1,19 +1,3 @@
----
-
-title: 4. Normalisering och UML-diagram (45 min)
-author: Marcus Ackre Medina
-type: lecture
-topic: databaser
-difficulty: 1
-language: sql
-status: adapted
-marcus_voice: true
-source: "Old_courses/2025/csharp/2_db/lectures/02_db_sqlite/4_normalisering.md"
-description: "- Normalisering är processen att organisera data i en databas för att minska redundans och förbättra dataintegritet."
-tags: ["databaser", "min)", "normalisering", "sql", "ssh", "uml-diagram", "visual-studio"]
-week_fit: []
----
-
 # 4. Normalisering och UML-diagram (45 min)
 
 🟢

@@ -1,19 +1,3 @@
----
-
-title: Träningsuppgifter: Training: Docker Basics
-author: Marcus Ackre Medina
-type: exam
-topic: docker
-difficulty: 3
-language: python
-status: adapted
-marcus_voice: true
-source: "Old_courses/2025/2_databases/exam/docker_basics_training.md"
-description: "Välj det bästa svaret för varje fråga. Varje fråga har flera alternativ där ett är korrekt."
-tags: ["docker", "installation", "training", "training:", "träningsuppgifter:", "verktyg", "visual-studio"]
-week_fit: []
----
-
 # Träningsuppgifter: Training: Docker Basics
 
 🔴

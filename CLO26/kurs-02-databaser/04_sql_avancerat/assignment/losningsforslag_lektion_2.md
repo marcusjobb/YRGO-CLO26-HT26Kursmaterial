@@ -1,19 +1,3 @@
----
-
-title: Lösningsförslag - Lektion 2
-author: Marcus Ackre Medina
-type: assignment
-topic: databaser
-difficulty: 1
-language: python
-status: adapted
-marcus_voice: true
-source: "exercises_to_spread_out/Lösningsförslag - Lektion 2.md"
-description: "Lösningsförslag övningar - Lektion 2"
-tags: ["databaser", "relationsschema", "normalisering", "facit", "primary-key", "foreign-key"]
-week_fit: []
----
-
 Lösningsförslag övningar - Lektion 2
 
 

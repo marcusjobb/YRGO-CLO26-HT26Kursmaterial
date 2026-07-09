@@ -1,19 +1,3 @@
----
-
-title: Docker_test_Live
-author: Marcus Ackre Medina
-type: example
-topic: docker
-difficulty: 1
-language: csharp
-status: adapted
-marcus_voice: true
-source: "Old_courses/2025/csharp/livecode/2025/01-07/1311_docker_test_live.md"
-description: "Skapad:** tisdag den 07:e januari, 2025 13:11"
-tags: ["csharp", "docker", "docker_test_live", "git", "live", "test", "verktyg", "visual-studio"]
-week_fit: []
----
-
 # Docker_test_Live
 
 🟢

@@ -1,19 +1,3 @@
----
-
-title: 1. Introduktion till Testdriven utveckling (TDD)
-author: Marcus Ackre Medina
-type: lecture
-topic: testing
-difficulty: 1
-language: csharp
-status: adapted
-marcus_voice: true
-source: "Old_courses/2025/csharp/4_test/lectures/03_tdd/1_example.md"
-description: "// Example 1: Implement a simple calculator using TDD"
-tags: ["(tdd)", "csharp", "testdriven", "testing", "till"]
-week_fit: []
----
-
 # 1. Introduktion till Testdriven utveckling (TDD)
 
 🟢

@@ -1,19 +1,3 @@
----
-
-title: Steg-för-steg: Skapa ditt första Git Repository
-author: Marcus Ackre Medina
-type: exercise
-topic: git
-difficulty: 1
-language: bash
-status: adapted
-marcus_voice: true
-source: "Old_courses/2025/0_installation/install_git/exercises/git-initiera-repository.md"
-description: "📘 Precis som du skriver ditt namn på en bok du lånar, behöver Git veta vem du är. Detta behöver bara göras **en gång per dator**."
-tags: ["ditt", "exercise", "första", "git", "initiera", "repository", "skapa", "steg-för-steg:", "visual-studio"]
-week_fit: []
----
-
 # Steg-för-steg: Skapa ditt första Git Repository
 
 🟢

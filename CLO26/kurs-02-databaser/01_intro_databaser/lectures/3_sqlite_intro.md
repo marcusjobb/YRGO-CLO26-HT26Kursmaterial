@@ -1,19 +1,3 @@
----
-
-title: 3. Introduktion till SQLite
-author: Marcus Ackre Medina
-type: lecture
-topic: databaser
-difficulty: 1
-language: mixed
-status: adapted
-marcus_voice: true
-source: "Old_courses/2025/csharp/2_db/lectures/01_introduction/3_sqlite_intro.md"
-description: "SQLite är en lättviktig, filbaserad relationsdatabas som kräver minimal konfiguration och administration. Den är inbäddningsbar, vilket betyder att den kan integreras direkt i applikationer utan behov"
-tags: ["databaser", "installation", "rider", "sql", "sqlite", "ssh", "till", "verktyg", "visual-studio"]
-week_fit: []
----
-
 # 3. Introduktion till SQLite
 
 🟢

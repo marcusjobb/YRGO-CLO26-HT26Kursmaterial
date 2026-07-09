@@ -1,18 +1,3 @@
----
-
-title: Tdd Övningar Och Csharp
-author: Marcus Ackre Medina
-type: exercise
-topic: testing
-difficulty: 2
-language: csharp
-status: adapted
-marcus_voice: true
-source: "Old_courses/Material från Codic/C#/Övningar/TDD/TDD övningar och CSharp.docx"
-description: "En positiv sak med att öva på Unit testing är att man får världens chans att öva på grundläggande C#, så"
-tags: ["csharp", "csharp.docx", "exercise", "oop", "tdd", "test", "testing", "övningar"]
-week_fit: []
----
 TDD övningar och C# repetition
 En positiv sak med att öva på Unit testing är att man får världens chans att öva på grundläggande C#, så
 det ska vi göra. Vi börjar med en söt liten enkel klass som med constructor som ska innehålla

@@ -1,18 +1,3 @@
----
-
-title: Tdd Övningar 2
-author: Marcus Ackre Medina
-type: exercise
-topic: testing
-difficulty: 1
-language: csharp
-status: adapted
-marcus_voice: true
-source: "Old_courses/Material från Codic/C#/Övningar/TDD/TDD övningar 2.pdf"
-description: "Här kommer en uppsättning med fler enkla metoder som kan vara bra att testa"
-tags: ["2.pdf", "csharp", "exercise", "tdd", "test", "testing", "övningar"]
-week_fit: []
----
 TDD övningar
 Här kommer en uppsättning med fler enkla metoder som kan vara bra att testa
 

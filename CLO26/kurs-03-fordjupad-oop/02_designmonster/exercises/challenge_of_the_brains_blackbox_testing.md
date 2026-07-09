@@ -1,19 +1,3 @@
----
-
-title: Challenge of the brains (Blackbox testing)
-author: Marcus Ackre Medina
-type: exercise
-topic: oop
-difficulty: 3
-language: csharp
-status: adapted
-marcus_voice: true
-source: "exercises_to_spread_out/Challenge of the brains (Blackbox testing).md"
-description: "Skriv en klass som hanterar användarnamn"
-tags: ["annat", "användarnamn", "bankaccount", "blackbox", "csharp", "email", "exercise", "klasser", "oop", "peer-review"]
-week_fit: []
----
-
 # Övningar och annat skoj
 
 🔴

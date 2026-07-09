@@ -1,19 +1,3 @@
----
-
-title: OAuth2 och OpenID Connect
-author: Marcus Ackre Medina
-type: example
-topic: api
-difficulty: 1
-language: mixed
-status: adapted
-marcus_voice: true
-source: "Old_courses/2025/java/5_api/08_more_authentication_and_authorization/2_oauth2_marp.md"
-description: "A[OAuth2] -->|Hanterar| B[Auktorisering]"
-tags: ["api", "connect", "javascript", "marp", "oauth2", "openid", "visual-studio"]
-week_fit: []
----
-
 # OAuth2 och OpenID Connect
 
 🟢

@@ -1,19 +1,3 @@
----
-
-title: Versionskontroll med Git
-author: Marcus Ackre Medina
-type: lecture
-topic: git
-difficulty: 1
-language: bash
-status: adapted
-marcus_voice: true
-source: "Old_courses/2025/0_installation/install_git/lecture/git-introduktion.md"
-description: "📘 Git är som ett 'magiskt filsystem' som kommer ihåg allt du någonsin gjort med dina filer. Tänk dig Git som en superkraftig 'undo'-knapp som inte bara kan ångra det senaste du gjorde, utan kan hoppa "
-tags: ["git", "installation", "versionshantering", "versionskontroll"]
-week_fit: []
----
-
 # Versionskontroll med Git
 
 🟢

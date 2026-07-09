@@ -1,19 +1,3 @@
----
-
-title: Build and Push Your First Image
-author: Marcus Ackre Medina
-type: exercise
-topic: docker
-difficulty: 2
-language: english
-status: adapted
-marcus_voice: true
-source: "Old_courses/Coud_Development_CLO25/exercises/20-docker/2-build-and-push-your-first-image.md"
-description: "Getting StartedWeek by WeekIntro To Cloud DevelopmentInfrastructure FundamentalsExercises-"
-tags: ["azure", "build", "cloud", "docker", "dotnet", "exercise", "first", "git", "image", "linux"]
-week_fit: []
----
-
 Navigation :
 Getting StartedWeek by WeekIntro To Cloud DevelopmentInfrastructure FundamentalsExercises-
 Server Foundation-

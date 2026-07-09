@@ -1,19 +1,3 @@
----
-
-title: 2. Introduktion till BDD och Gherkin-syntax
-author: Marcus Ackre Medina
-type: lecture
-topic: testing
-difficulty: 3
-language: csharp
-status: adapted
-marcus_voice: true
-source: "Old_courses/2025/csharp/4_test/lectures/08_user_story_and_acceptance_criteria/2_introduktion_till_bdd_och_gherkin-syntax.md"
-description: "I föregående avsnitt lärde vi oss om User Stories och acceptanskriterier som kraftfulla verktyg för att fånga användarbehov och definiera önskat beteende i mjukvaruutveckling. Nu tar vi steget vidare "
-tags: ["bdd", "csharp", "gherkin", "gherkin-syntax", "git", "installation", "syntax", "testing", "till"]
-week_fit: []
----
-
 # 2. Introduktion till BDD och Gherkin-syntax
 
 🔴

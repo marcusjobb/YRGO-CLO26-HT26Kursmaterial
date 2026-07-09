@@ -1,16 +1,3 @@
----
-title: Fritt databasprojekt – din data, din app, din lagring
-author: Marcus Ackre Medina
-type: exam
-topic: databases
-difficulty: 3
-language: csharp
-status: new
-marcus_voice: true
-description: "Ett fritt projekt där du väljer ämne, frontend och databasbackend. Bygg ett fullständigt CRUD-system med SQLite (SQL), LocalDB (Entity Framework) eller online JSON (MongoDB) – precis som i arbetslivet där du måste välja rätt verktyg för jobbet."
-tags: ["databases", "crud", "sqlite", "entity-framework", "mongodb"]
----
-
 # Fritt databasprojekt – din data, din app, din lagring
 
 🔴

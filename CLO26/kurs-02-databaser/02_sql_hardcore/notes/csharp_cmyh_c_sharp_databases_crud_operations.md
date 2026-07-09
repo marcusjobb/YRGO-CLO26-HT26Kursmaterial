@@ -1,19 +1,3 @@
----
-
-title: CRUD-operationer
-author: Marcus Ackre Medina
-type: article
-topic: databaser
-difficulty: 3
-language: csharp
-status: adapted
-marcus_voice: true
-source: "Old_courses/books/csharp_cmyh/C-Sharp/databases/crud_operations.md"
-description: "CRUD-operationer utgör grunden för all databasinteraktion och representerar de fyra grundläggande funktionerna för persistent lagring: Create (skapa), Read (läsa), Update (uppdatera) och Delete (ta bo"
-tags: ["crud", "crud-operationer", "csharp", "databaser", "git", "operations", "sql"]
-week_fit: []
----
-
 # CRUD-operationer
 
 🔴

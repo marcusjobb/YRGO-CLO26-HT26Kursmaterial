@@ -1,19 +1,3 @@
----
-
-title: Deployment
-author: Marcus Ackre Medina
-type: exercise
-topic: deployment
-difficulty: 2
-language: english
-status: adapted
-marcus_voice: true
-source: "Old_courses/Coud_Development_CLO25/exercises/3-deployment.md"
-description: "Getting StartedWeek by WeekIntro To Cloud DevelopmentInfrastructure FundamentalsExercises-"
-tags: ["azure", "cloud", "deployment", "devops", "docker", "dotnet", "exercise", "git", "linux", "networking"]
-week_fit: []
----
-
 Navigation :
 Getting StartedWeek by WeekIntro To Cloud DevelopmentInfrastructure FundamentalsExercises-
 Server Foundation-

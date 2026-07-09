@@ -1,19 +1,3 @@
----
-
-title: Övning 1: SRP - Single Responsibility Principle
-author: Marcus Ackre Medina
-type: exercise
-topic: clean-code
-difficulty: 1
-language: csharp
-status: adapted
-marcus_voice: true
-source: "Old_courses/2025/3_advanced_oop/exercises/solid/solid_exercise_1.md"
-description: "Du har fått en legacy 'God Object' klass som gör ALLT. Din uppgift är att refactora enligt SRP."
-tags: ["clean-code", "csharp", "exercise", "principle", "responsibility", "single", "solid", "visual-studio", "övning"]
-week_fit: []
----
-
 # Övning 1: SRP - Single Responsibility Principle
 
 🟢

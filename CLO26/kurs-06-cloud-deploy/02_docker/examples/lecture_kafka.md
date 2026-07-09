@@ -1,19 +1,3 @@
----
-
-title: Introduktion till Apache Kafka
-author: Marcus Ackre Medina
-type: example
-topic: docker
-difficulty: 1
-language: mixed
-status: adapted
-marcus_voice: true
-source: "Old_courses/2025/java/SysInt/information/vecka05 - Kafka/lecture_kafka.md"
-description: "Apache Kafka är en **distribuerad strömningsplattform** som används för att bygga realtidsdataflöden. Den kan hantera höga volymer av data och möjliggör kommunikation mellan producenter och konsumente"
-tags: ["apache", "docker", "installation", "java", "kafka", "till", "verktyg", "visual-studio"]
-week_fit: []
----
-
 # Introduktion till Apache Kafka
 
 🟢

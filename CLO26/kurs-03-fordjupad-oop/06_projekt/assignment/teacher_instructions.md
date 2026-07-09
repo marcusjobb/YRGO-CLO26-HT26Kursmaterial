@@ -1,19 +1,3 @@
----
-
-title: 👨‍🏫 Lärarinstruktioner - Sport League Manager API
-author: Marcus Ackre Medina
-type: assignment
-topic: projekt
-difficulty: 3
-language: csharp
-status: adapted
-marcus_voice: true
-source: "Old_courses/2025/4_test_and_quality_assurance/assignment/teacher_instructions.md"
-description: "Kursdel:** Test och Kvalitetssäkring"
-tags: ["csharp", "git", "installation", "instructions", "league", "lärarinstruktioner", "manager", "projekt", "sport", "teacher"]
-week_fit: []
----
-
 # 👨‍🏫 Lärarinstruktioner - Sport League Manager API
 
 🔴

@@ -1,19 +1,3 @@
----
-
-title: 2. Transaktioner och ACID-egenskaper (45 min)
-author: Marcus Ackre Medina
-type: lecture
-topic: databaser
-difficulty: 1
-language: mixed
-status: adapted
-marcus_voice: true
-source: "Old_courses/2025/csharp/2_db/lectures/05_db_mysql_advanced/2_transaktioner.md"
-description: "Här är den omvandlade versionen för **C# och MySQL** i Visual Studio:"
-tags: ["acid-egenskaper", "databaser", "git", "min)", "sql", "ssh", "transaktioner", "visual-studio"]
-week_fit: []
----
-
 Här är den omvandlade versionen för **C# och MySQL** i Visual Studio:
 
 ---

@@ -1,18 +1,3 @@
----
-title: Git Flow med releases och hotfixes
-author: Marcus Ackre Medina
-type: exercise
-topic: git
-difficulty: 2
-language: bash
-status: adapted
-marcus_voice: true
-source: "Old_courses/2025/3_advanced_oop/exercises/git_flow/git_flow_exercise_1.md"
-description: "Fullt Git Flow-flöde med feature branches, release branches och hotfixes — simulera ett team som levererar en produkt."
-tags: ["bash", "git", "gitflow", "release", "hotfix", "taggar"]
-week_fit: []
----
-
 # Git Flow med releases och hotfixes
 
 🟡

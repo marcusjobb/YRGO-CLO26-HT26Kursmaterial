@@ -1,18 +1,3 @@
----
-
-title: Vanliga molntjänster — vad kan du faktiskt göra?
-author: Marcus Ackre Medina
-type: lecture
-topic: cloud
-difficulty: 1
-language: swedish
-status: adapted
-marcus_voice: true
-source: "Old_courses/Coud_Development_CLO25/intro-cloud-development/1-understanding-cloud-computing/6-common-services.md"
-description: "Molnet är inte bara en server. Det är hundratals tjänster som täcker allt från virtuella maskiner till AI. Här är de viktigaste du borde känna till."
-tags: ["cloud", "compute", "database", "faktiskt", "göra?", "molntjänster", "networking", "storage", "vanliga"]
-week_fit: []
----
 # Vanliga molntjänster — vad kan du faktiskt göra?
 
 ## Molnet är inte bara en grej

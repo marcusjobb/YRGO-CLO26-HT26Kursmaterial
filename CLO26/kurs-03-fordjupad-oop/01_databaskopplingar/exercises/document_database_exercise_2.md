@@ -1,19 +1,3 @@
----
-
-title: Övning 2: Entity Framework Smärtpunkter
-author: Marcus Ackre Medina
-type: exercise
-topic: databaser
-difficulty: 1
-language: csharp
-status: adapted
-marcus_voice: true
-source: "Old_courses/2025/2_databases/exercises/document_database/document_database_exercise_2.md"
-description: "Efter den här övningen kommer du att kunna:"
-tags: ["csharp", "database", "databaser", "document", "entity", "exercise", "framework", "git", "smärtpunkter", "ssh"]
-week_fit: []
----
-
 # Övning 2: Entity Framework Smärtpunkter
 
 🟢

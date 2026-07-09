@@ -1,19 +1,3 @@
----
-
-title: Exempel GitHub Bio:
-author: Marcus Ackre Medina
-type: lecture
-topic: git
-difficulty: 1
-language: bash
-status: adapted
-marcus_voice: true
-source: "Old_courses/2025/0_installation/register_github/lecture/github_registration_marp.md"
-description: "- **Program** som installeras på er dator"
-tags: ["bio:", "exempel", "git", "github", "installation", "marp", "registration", "rider", "ssh", "verktyg"]
-week_fit: []
----
-
 ## **Git vs GitHub - Vad är skillnaden?** 🤔
 
 ### **Git = Verktyget** 🛠️

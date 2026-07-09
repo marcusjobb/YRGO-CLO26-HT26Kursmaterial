@@ -1,18 +1,3 @@
----
-title: Testa Spring Boot REST-API i webbläsaren
-author: Marcus Ackre Medina
-type: exercise
-topic: api
-difficulty: 1
-language: java
-status: adapted
-marcus_voice: true
-source: "Old_courses/2025/java/SysInt/exercises/springapi/04_browser_instructions.md"
-description: "Testa din Spring Boot-applikations REST-endpoints direkt i webbläsaren — addera, subtrahera, multiplicera och dividera via URL:en."
-tags: ["java", "spring", "spring-boot", "rest", "api", "webservice"]
-week_fit: []
----
-
 # Testa Spring Boot REST-API i webbläsaren
 
 🟢

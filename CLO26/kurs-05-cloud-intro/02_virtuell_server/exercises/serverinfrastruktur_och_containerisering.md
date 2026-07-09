@@ -1,18 +1,3 @@
----
-
-title: Serverinfrastruktur och Containerisering
-author: Marcus Ackre Medina
-type: lecture
-topic: server
-difficulty: 1
-status: adapted
-marcus_voice: true
-source: "/home/nionit/git/marcus-yh-claude-assistent/reference/lectures_to_spread_out/Serverinfrastruktur-och-Containerisering.md"
-description: "En genomgång av serverinfrastruktur och containerisering – från molnets kraft till grundläggande infrastruktur, VPS, molnleverantörer och Docker."
-tags: ["server", "infrastructure", "containerization", "docker", "lecture"]
-week_fit: []
----
-
 ## Slide 1
 
 - Serverinfrastruktur och Containerisering

@@ -1,19 +1,3 @@
----
-
-title: GROUP BY, HAVING och aggregering
-author: Marcus Ackre Medina
-type: article
-topic: databaser
-difficulty: 1
-language: csharp
-status: adapted
-marcus_voice: true
-source: "Old_courses/books/csharp_cmyh/C-Sharp/databases/sql/aggregation.md"
-description: "När du behöver räkna, summera eller beräkna medelvärden – då är aggregering rätt verktyg."
-tags: ["aggregation", "aggregering", "csharp", "databaser", "git", "group", "having", "oop", "sql"]
-week_fit: []
----
-
 # GROUP BY, HAVING och aggregering
 
 🟢

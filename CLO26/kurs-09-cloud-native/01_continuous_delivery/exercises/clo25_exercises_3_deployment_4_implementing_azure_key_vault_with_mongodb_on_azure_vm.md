@@ -1,19 +1,3 @@
----
-
-title: 4. Implementing Azure Key Vault with MongoDB on Azure VM
-author: Marcus Ackre Medina
-type: exercise
-topic: deployment
-difficulty: 2
-language: english
-status: adapted
-marcus_voice: true
-source: "Old_courses/Coud_Development_CLO25/exercises/3-deployment/4-implementing-azure-key-vault-with-mongodb-on-azure-vm.md"
-description: "Getting StartedWeek by WeekIntro To Cloud DevelopmentInfrastructure FundamentalsExercises-"
-tags: ["azure", "cloud", "deployment", "devops", "docker", "dotnet", "exercise", "git", "implementing", "key"]
-week_fit: []
----
-
 Navigation :
 Getting StartedWeek by WeekIntro To Cloud DevelopmentInfrastructure FundamentalsExercises-
 Server Foundation-

@@ -1,19 +1,3 @@
----
-
-title: 1. Introduktion till Docker och containrar
-author: Marcus Ackre Medina
-type: example
-topic: integration
-difficulty: 1
-language: mixed
-status: adapted
-marcus_voice: true
-source: "Old_courses/2025/java/7_system_integration/04_docker_basics/1_example.md"
-description: "// Example 1: Spring Boot Weather Service with Docker"
-tags: ["containrar", "docker", "installation", "integration", "python", "till", "visual-studio"]
-week_fit: []
----
-
 # 1. Introduktion till Docker och containrar
 
 🟢

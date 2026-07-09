@@ -1,19 +1,3 @@
----
-
-title: 2. Refactoring Patterns
-author: Marcus Ackre Medina
-type: lecture
-topic: oop
-difficulty: 1
-language: csharp
-status: adapted
-marcus_voice: true
-source: "Old_courses/2025/csharp/3_oop_adv/lectures/04_clean_code/2_refactoring_patterns.md"
-description: "Hur kan vi systematiskt förbättra existerande kod utan att ändra dess beteende, och vilka verktyg och tekniker finns tillgängliga för detta?"
-tags: ["csharp", "oop", "patterns", "refactoring", "ssh", "verktyg", "visual-studio"]
-week_fit: []
----
-
 # 2. Refactoring Patterns
 
 🟢

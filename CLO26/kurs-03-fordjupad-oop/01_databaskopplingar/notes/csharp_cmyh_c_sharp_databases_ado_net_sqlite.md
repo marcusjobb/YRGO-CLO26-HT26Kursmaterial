@@ -1,19 +1,3 @@
----
-
-title: ADO.NET och SQLite i C#
-author: Marcus Ackre Medina
-type: article
-topic: databaser
-difficulty: 1
-language: csharp
-status: adapted
-marcus_voice: true
-source: "Old_courses/books/csharp_cmyh/C-Sharp/databases/ado_net_sqlite.md"
-description: "ADO.NET är Microsofts databasåtkomstteknologi för .NET-applikationer. När du använder ADO.NET med SQLite får du direktkontroll över databasanslutningar, kommandon och datamappning - det 'manuella arbe"
-tags: ["ado", "ado.net", "csharp", "databaser", "design-patterns", "entity-framework", "git", "net", "oop", "sql"]
-week_fit: []
----
-
 # ADO.NET och SQLite i C#
 
 🟢

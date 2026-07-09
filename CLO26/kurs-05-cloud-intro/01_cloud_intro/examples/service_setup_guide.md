@@ -1,19 +1,3 @@
----
-
-title: 🔧 Service-by-Service Setup Guide
-author: Marcus Ackre Medina
-type: example
-topic: cloud
-difficulty: 1
-language: mixed
-status: adapted
-marcus_voice: true
-source: "Old_courses/2025/java/8_cloud_integration/lectures/09_azure_functions_and_api_management/microservices/SERVICE_SETUP_GUIDE.md"
-description: "This guide provides detailed setup and configuration instructions for each service in the microservices architecture. Each service is designed to be independently deployable and maintainable."
-tags: ["bash", "cloud", "installation", "service", "service-by-service", "setup", "ssh", "visual-studio"]
-week_fit: []
----
-
 # 🔧 Service-by-Service Setup Guide
 
 🟢

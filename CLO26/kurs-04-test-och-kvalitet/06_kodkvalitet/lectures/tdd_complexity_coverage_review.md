@@ -1,19 +1,3 @@
----
-
-title: Snabbrepetition
-author: Marcus Ackre Medina
-type: lecture
-topic: testing
-difficulty: 1
-language: mixed
-status: adapted
-marcus_voice: true
-source: "Old_courses/2025/4_test_and_quality_assurance/lectures/quick_review/tdd_complexity_coverage_review.md"
-description: "🔴 RED** - Skriv ett test som fallerar"
-tags: ["complexity", "coverage", "csharp", "git", "review", "snabbrepetition", "tdd", "testing", "verktyg", "visual-studio"]
-week_fit: []
----
-
 # Snabbrepetition
 
 🟢

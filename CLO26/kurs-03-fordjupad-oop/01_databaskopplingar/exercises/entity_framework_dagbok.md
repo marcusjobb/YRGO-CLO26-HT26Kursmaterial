@@ -1,19 +1,3 @@
----
-
-title: Entity Framework Dagbok
-author: Marcus Ackre Medina
-type: exercise
-topic: databaser
-difficulty: 3
-language: csharp
-status: adapted
-marcus_voice: true
-source: "reference/exercises_to_spread_out/Entity Framework Dagbok.md"
-description: "Då vi börjat med Entity Framework är det lika bra att ge sig på det hands on."
-tags: ["code-first", "crud", "csharp", "dagbok", "databaser", "dbcontext", "entity", "entity-framework", "exercise", "framework"]
-week_fit: []
----
-
 # Entity Framework Dagbok
 
 🔴

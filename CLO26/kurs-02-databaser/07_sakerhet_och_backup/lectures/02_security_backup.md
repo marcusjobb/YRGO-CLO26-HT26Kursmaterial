@@ -1,19 +1,3 @@
----
-
-title: Fort Knox Protocol 🔐
-author: Marcus Ackre Medina
-type: lecture
-topic: databaser
-difficulty: 1
-language: mixed
-status: adapted
-marcus_voice: true
-source: "Old_courses/2025/2_databases/lectures/ef_core/part2_mysql_docker/lecture/02_security_backup_marp.md"
-description: "- ✅ Root-användare + SuperSecret123"
-tags: ["backup", "bash", "databaser", "fort", "git", "installation", "knox", "marp", "protocol", "security"]
-week_fit: []
----
-
 # Fort Knox Protocol 🔐
 
 🟢

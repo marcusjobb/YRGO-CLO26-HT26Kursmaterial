@@ -1,19 +1,3 @@
----
-
-title: Övning 5: Backup & Restore 💾
-author: Marcus Ackre Medina
-type: exercise
-topic: databaser
-difficulty: 3
-language: mixed
-status: adapted
-marcus_voice: true
-source: "Old_courses/2025/2_databases/lectures/ef_core/part2_mysql_docker/exercises/exercise_5_backup_restore.md"
-description: "Fort Knox Protocol - Del 5 (FINAL)"
-tags: ["backup", "bash", "databaser", "exercise", "installation", "restore", "ssh", "verktyg", "visual-studio", "övning"]
-week_fit: []
----
-
 # Övning 5: Backup & Restore 💾
 
 🔴

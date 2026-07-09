@@ -1,19 +1,3 @@
----
-
-title: Övning 3: DIP - Dependency Inversion Principle
-author: Marcus Ackre Medina
-type: exercise
-topic: clean-code
-difficulty: 1
-language: csharp
-status: adapted
-marcus_voice: true
-source: "Old_courses/2025/3_advanced_oop/exercises/solid/solid_exercise_3.md"
-description: "Du ska bygga en notification system som kan skicka meddelanden via olika kanaler. Systemet måste vara testbart och utbytbart."
-tags: ["clean-code", "csharp", "dependency", "exercise", "git", "installation", "inversion", "principle", "solid", "övning"]
-week_fit: []
----
-
 # Övning 3: DIP - Dependency Inversion Principle
 
 🟢

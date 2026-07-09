@@ -1,19 +1,3 @@
----
-
-title: 3. UML-diagram för Databasapplikationer
-author: Marcus Ackre Medina
-type: lecture
-topic: git
-difficulty: 1
-language: python
-status: adapted
-marcus_voice: true
-source: "Old_courses/2025/java/3_oop_advanced/lecture_2/lecture/3_quiz.md"
-description: "1. Vad är ett huvudsyfte med att använda UML för databaser?"
-tags: ["databasapplikationer", "git", "quiz", "uml-diagram", "verktyg"]
-week_fit: []
----
-
 # 3. UML-diagram för Databasapplikationer
 
 🟢

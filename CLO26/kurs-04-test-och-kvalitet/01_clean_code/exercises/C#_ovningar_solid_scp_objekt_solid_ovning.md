@@ -1,18 +1,3 @@
----
-
-title: Scp Objekt (solid Övning)
-author: Marcus Ackre Medina
-type: exercise
-topic: clean-code
-difficulty: 1
-language: csharp
-status: adapted
-marcus_voice: true
-source: "Old_courses/Material från Codic/C#/Övningar/SOLID/SCP Objekt (SOLID övning).docx"
-description: "“Alla avvikande föremål, enheter och fenomen som kräver särskilda förvaringsprocedurer tilldelas en"
-tags: ["(solid", "clean-code", "csharp", "exercise", "objekt", "oop", "scp", "test", "övning).docx"]
-week_fit: []
----
 SCP Objekt
 “Alla avvikande föremål, enheter och fenomen som kräver särskilda förvaringsprocedurer tilldelas en
 objektklass. En objektklass är en del av standard SCP-mallen och fungerar som en grov indikator för hur

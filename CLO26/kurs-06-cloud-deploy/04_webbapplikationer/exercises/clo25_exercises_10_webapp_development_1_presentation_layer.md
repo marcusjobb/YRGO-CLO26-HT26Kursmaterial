@@ -1,19 +1,3 @@
----
-
-title: 1. Presentation Layer
-author: Marcus Ackre Medina
-type: exercise
-topic: webapp
-difficulty: 2
-language: english
-status: adapted
-marcus_voice: true
-source: "Old_courses/Coud_Development_CLO25/exercises/10-webapp-development/1-presentation-layer.md"
-description: "Getting StartedWeek by WeekIntro To Cloud DevelopmentInfrastructure FundamentalsExercises-"
-tags: ["cloud", "docker", "dotnet", "exercise", "layer", "networking", "presentation", "security", "webapp"]
-week_fit: []
----
-
 Navigation :
 Getting StartedWeek by WeekIntro To Cloud DevelopmentInfrastructure FundamentalsExercises-
 Server Foundation-

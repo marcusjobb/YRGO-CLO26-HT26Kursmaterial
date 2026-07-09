@@ -1,19 +1,3 @@
----
-
-title: 🐾 Entity Framework 8 – Djursjukhus
-author: Marcus Ackre Medina
-type: exercise
-topic: databaser
-difficulty: 1
-language: mixed
-status: adapted
-marcus_voice: true
-source: "Old_courses/2025/2_databases/exercises/ef/03_05_pethospital.md"
-description: "En workshop där du bygger ett litet **djursjukhus-system** i C# och EF Core 8."
-tags: ["csharp", "databaser", "djursjukhus", "entity", "exercise", "framework", "git", "installation", "pethospital", "ssh"]
-week_fit: []
----
-
 # 🐾 Entity Framework 8 – Djursjukhus
 
 🟢

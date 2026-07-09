@@ -1,18 +1,3 @@
----
-
-title: Blackjack Projekt
-author: Marcus Ackre Medina
-type: exercise
-topic: testing
-difficulty: 1
-language: csharp
-status: adapted
-marcus_voice: true
-source: "Old_courses/Material från Codic/C#/Inlämningar/Blackjack (TDD)/Blackjack projekt.pptx"
-description: " Casinot ”Play’n’Pay” behöver ett backend för"
-tags: ["blackjack", "csharp", "exercise", "oop", "projekt.pptx", "test", "testing"]
-week_fit: []
----
 BLACKJACK
 SPELMOTOR
 

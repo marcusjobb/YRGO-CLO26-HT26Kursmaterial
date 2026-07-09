@@ -1,19 +1,3 @@
----
-
-title: 5. Serialisering och deserialisering av objekt i MongoDB (45 min)
-author: Marcus Ackre Medina
-type: lecture
-topic: databaser
-difficulty: 1
-language: mixed
-status: adapted
-marcus_voice: true
-source: "Old_courses/2025/csharp/2_db/lectures/06_db_nosql_mongodb/5_serializing.md"
-description: "Övergripande frågeställning: Hur hanterar MongoDB serialisering och deserialisering av objekt, och hur påverkar detta datalagring och -hämtning?"
-tags: ["databaser", "deserialisering", "javascript", "min)", "mongodb", "objekt", "serialisering", "serializing", "visual-studio"]
-week_fit: []
----
-
 # 5. Serialisering och deserialisering av objekt i MongoDB (45 min)
 
 🟢

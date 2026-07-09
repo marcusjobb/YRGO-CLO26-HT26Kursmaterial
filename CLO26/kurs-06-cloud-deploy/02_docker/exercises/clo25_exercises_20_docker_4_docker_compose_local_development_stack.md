@@ -1,19 +1,3 @@
----
-
-title: Docker Compose -- Local Development Stack
-author: Marcus Ackre Medina
-type: exercise
-topic: docker
-difficulty: 2
-language: english
-status: adapted
-marcus_voice: true
-source: "Old_courses/Coud_Development_CLO25/exercises/20-docker/4-docker-compose-local-development-stack.md"
-description: "Getting StartedWeek by WeekIntro To Cloud DevelopmentInfrastructure FundamentalsExercises-"
-tags: ["azure", "cloud", "compose", "docker", "dotnet", "exercise", "local", "networking", "stack"]
-week_fit: []
----
-
 Navigation :
 Getting StartedWeek by WeekIntro To Cloud DevelopmentInfrastructure FundamentalsExercises-
 Server Foundation-

@@ -1,19 +1,3 @@
----
-
-title: 3. Skapa och hantera SQLite-databaser i C#
-author: Marcus Ackre Medina
-type: lecture
-topic: oop
-difficulty: 3
-language: csharp
-status: adapted
-marcus_voice: true
-source: "Old_courses/2025/csharp/3_oop_adv/lectures/01_oop_sqlite/3_create_and_manage_sqlite_databases_in_c.md"
-description: "Övergripande frågeställning: Hur kan vi effektivt skapa, strukturera och hantera SQLite-databaser i C# för att bygga robusta och skalbara applikationer?"
-tags: ["and", "create", "csharp", "databases", "hantera", "installation", "manage", "oop", "skapa", "sqlite"]
-week_fit: []
----
-
 # 3. Skapa och hantera SQLite-databaser i C#
 
 🔴

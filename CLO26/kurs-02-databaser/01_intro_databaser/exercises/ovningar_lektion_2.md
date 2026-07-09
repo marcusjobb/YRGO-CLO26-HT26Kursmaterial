@@ -1,19 +1,3 @@
----
-
-title: Övningar – Lektion 2
-author: Marcus Ackre Medina
-type: exercise
-topic: databaser
-difficulty: 1
-language: sql
-status: adapted
-marcus_voice: true
-source: "exercises_to_spread_out/Övningar - Lektion 2.md"
-description: "Relational schema är en översikt över en databas. Databasen är organiserad i en relational schema med rektanglar för varje tabell där titeln på tabellen står överst, alla kolumner är placerade inuti, "
-tags: ["databaser", "er-modell", "exercise", "foreign-key", "mysql", "primary-key", "relational-schema", "sql"]
-week_fit: []
----
-
 Övningar – Lektion 2
 
 

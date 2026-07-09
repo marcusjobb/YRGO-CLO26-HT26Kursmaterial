@@ -1,19 +1,3 @@
----
-
-title: Hur man slipper Update-Database i EF (variant 2)
-author: Marcus Ackre Medina
-type: lecture
-topic: databaser
-difficulty: 2
-language: csharp
-status: adapted
-marcus_voice: true
-source: "exercises_to_spread_out/Hur man slipper Update-Database i EF_.md"
-description: "Update-Database är något man ofta glömmer när man arbetar med Entity Framework. Så hur kan man göra för att databasen ska uppdatera sig själv vid programstart (om det finns nya migrations)."
-tags: ["csharp", "databaser", "dbcontext", "entity-framework", "factory-pattern", "migrations", "slipper", "update-database"]
-week_fit: []
----
-
 # Hur man slipper Update-Database
 
 🟡

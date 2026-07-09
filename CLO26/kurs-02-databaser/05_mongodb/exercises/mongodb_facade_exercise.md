@@ -1,19 +1,3 @@
----
-
-title: MongoDB Facade Pattern - Övning
-author: Marcus Ackre Medina
-type: exercise
-topic: databaser
-difficulty: 1
-language: csharp
-status: adapted
-marcus_voice: true
-source: "Old_courses/2025/2_databases/exercises/mongodb/mongodb_facade_exercise.md"
-description: "Skapa en Facade-klass som förenklar MongoDB-operationer och gör dem återanvändbara."
-tags: ["csharp", "databaser", "exercise", "facade", "git", "mongodb", "pattern", "visual-studio", "övning"]
-week_fit: []
----
-
 # MongoDB Facade Pattern - Övning
 
 🟢

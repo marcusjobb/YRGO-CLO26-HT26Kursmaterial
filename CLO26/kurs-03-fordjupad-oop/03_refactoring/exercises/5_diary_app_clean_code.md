@@ -1,19 +1,3 @@
----
-
-title: Övning: Dagboksapplikation med Clean Code & SRP 📔
-author: Marcus Ackre Medina
-type: exercise
-topic: clean-code
-difficulty: 1
-language: csharp
-status: adapted
-marcus_voice: true
-source: "Old_courses/2025/2_databases/exercises/ado/5_diary_app_clean_code.md"
-description: "Vi ska bygga en dagboksapplikation där du skriver dina dagliga anteckningar. Men istället för att bara 'få det att fungera', ska vi göra det **rätt** från början!"
-tags: ["app", "clean", "clean-code", "csharp", "dagboksapplikation", "diary", "exercise", "installation", "ssh", "visual-studio"]
-week_fit: []
----
-
 # Övning: Dagboksapplikation med Clean Code & SRP 📔
 
 🟢

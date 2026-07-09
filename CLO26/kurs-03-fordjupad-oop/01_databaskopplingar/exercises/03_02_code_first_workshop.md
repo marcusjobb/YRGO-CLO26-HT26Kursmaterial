@@ -1,19 +1,3 @@
----
-
-title: Workshop: Code First-magi med EF Core
-author: Marcus Ackre Medina
-type: exercise
-topic: databaser
-difficulty: 1
-language: mixed
-status: adapted
-marcus_voice: true
-source: "Old_courses/2025/2_databases/exercises/ef/03_02_code_first_workshop.md"
-description: "- `Microsoft.EntityFrameworkCore`"
-tags: ["core", "csharp", "databaser", "exercise", "first", "first-magi", "installation", "verktyg", "visual-studio", "workshop"]
-week_fit: []
----
-
 # Workshop: Code First-magi med EF Core
 
 🟢

@@ -1,19 +1,3 @@
----
-
-title: ![bg left:40%](https://images.pexels.com/photos/2599244/pexels-photo-2599244.jpeg)
-author: Marcus Ackre Medina
-type: lecture
-topic: clean-code
-difficulty: 1
-language: csharp
-status: adapted
-marcus_voice: true
-source: "Old_courses/2025/3_advanced_oop/lectures/refactoring/refactoring_basics_marp.md"
-description: "Förbättra kod UTAN att ändra vad den gör"
-tags: ["![bg", "clean-code", "csharp", "left:40%](https://images.pexels.com/photos/2599244/pexels-photo-2599244.jpeg)", "marp", "refactoring", "rider", "ssh", "verktyg", "visual-studio"]
-week_fit: []
----
-
 # ![bg left:40%](https://images.pexels.com/photos/2599244/pexels-photo-2599244.jpeg)
 
 🟢

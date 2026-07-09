@@ -1,19 +1,3 @@
----
-
-title: 🪴 Vattningslogg – Håll koll på dina växter
-author: Marcus Ackre Medina
-type: exercise
-topic: databaser
-difficulty: 1
-language: mixed
-status: adapted
-marcus_voice: true
-source: "Old_courses/2025/2_databases/exercises/ef/03_09_plantpal.md"
-description: "En workshop där du bygger ett system för att hålla koll på växter — hur ofta de ska vattnas, hur mycket och när det senaste vattningstillfället var."
-tags: ["csharp", "databaser", "ef-core", "datetime", "linq", "relationer"]
-week_fit: []
----
-
 # 🪴 Vattningslogg – Håll koll på dina växter
 
 🟢

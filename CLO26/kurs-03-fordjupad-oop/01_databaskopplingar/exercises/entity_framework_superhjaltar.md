@@ -1,19 +1,3 @@
----
-
-title: Entity Framework Övning - Superhjältar
-author: Marcus Ackre Medina
-type: exercise
-topic: databaser
-difficulty: 3
-language: csharp
-status: adapted
-marcus_voice: true
-source: "exercises_to_spread_out/Entity Framework Övning - Superhjältar.md"
-description: "Vi ska ta en titt på hjältar och deras styrkor, svagheter och annat skoj vi kan komma på"
-tags: ["csharp", "databas", "databaser", "entity", "entity-framework", "exercise", "framework", "many-to-many", "migration", "modeller"]
-week_fit: []
----
-
 # Entity Framework Övning
 
 🔴

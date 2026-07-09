@@ -1,19 +1,3 @@
----
-
-title: Vad är TDD?
-author: Marcus Ackre Medina
-type: lecture
-topic: testing
-difficulty: 1
-language: csharp
-status: adapted
-marcus_voice: true
-source: "Old_courses/2025/4_test_and_quality_assurance/lectures/tdd_intro/tdd_intro_marp.md"
-description: "Test-Driven Development = Testdriven utveckling"
-tags: ["csharp", "marp", "tdd", "tdd?", "testing", "visual-studio"]
-week_fit: []
----
-
 # Vad är TDD?
 
 🟢

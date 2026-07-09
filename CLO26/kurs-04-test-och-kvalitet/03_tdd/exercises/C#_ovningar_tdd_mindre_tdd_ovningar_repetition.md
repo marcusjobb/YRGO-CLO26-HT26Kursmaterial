@@ -1,18 +1,3 @@
----
-
-title: Mindre Tdd Övningar (repetition)
-author: Marcus Ackre Medina
-type: exercise
-topic: testing
-difficulty: 1
-language: csharp
-status: adapted
-marcus_voice: true
-source: "Old_courses/Material från Codic/C#/Övningar/TDD/Mindre TDD övningar (repetition).docx"
-description: "Skapa en klass kallad StringHelper"
-tags: ["(repetition).docx", "csharp", "exercise", "mindre", "tdd", "test", "testing", "övningar"]
-week_fit: []
----
 Mindre TDD övningar
 Skapa en klass kallad StringHelper
 Den ska ha följande publika metoder, skapa inte metoderna än dock… bara tomma metoder som

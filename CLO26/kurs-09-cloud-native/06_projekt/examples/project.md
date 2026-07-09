@@ -1,19 +1,3 @@
----
-
-title: Äventyret Väntar: Slåss mot Monster, Samla Erfarenhetspoäng och Mästra Koden! 🐉🌟
-author: Marcus Ackre Medina
-type: example
-topic: projekt
-difficulty: 2
-language: text
-status: adapted
-marcus_voice: true
-source: "Old_courses/2025/java/3_oop_advanced/lecture_10.5/project.md"
-description: "Välkommen till en utmaning som kommer att testa dina kodningsfärdigheter och hjälpa dig utvecklas som programmerare. I denna två veckors laboration kommer du att skapa ett textbaserat spel som inte ba"
-tags: ["erfarenhetspoäng", "koden!", "monster,", "mästra", "project", "rider", "samla", "slåss", "visual-studio", "väntar:"]
-week_fit: []
----
-
 # Äventyret Väntar: Slåss mot Monster, Samla Erfarenhetspoäng och Mästra Koden! 🐉🌟
 
 🟡

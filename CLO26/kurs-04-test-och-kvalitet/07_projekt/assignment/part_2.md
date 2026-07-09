@@ -1,19 +1,3 @@
----
-
-title: 🎄 DEL 2: SPELDESIGN & GRUNDLÄGGANDE KOD 🎅
-author: Marcus Ackre Medina
-type: assignment
-topic: testing
-difficulty: 3
-language: csharp
-status: adapted
-marcus_voice: true
-source: "Old_courses/2025/csharp/4_test/Assignments/xmas_adventureawaits/part_2.md"
-description: "_VIKTIGT! Denna guide är uppdelad i flera delar som bygger på varandra. Följ dem i ordning!_"
-tags: ["csharp", "grundläggande", "part", "speldesign", "testing", "verktyg", "visual-studio"]
-week_fit: []
----
-
 # 🎄 DEL 2: SPELDESIGN & GRUNDLÄGGANDE KOD 🎅
 
 🔴

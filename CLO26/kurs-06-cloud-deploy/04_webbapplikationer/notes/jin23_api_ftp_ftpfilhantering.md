@@ -1,19 +1,3 @@
----
-
-title: FTP filhantering
-author: Marcus Ackre Medina
-type: article
-topic: api
-difficulty: 1
-language: java
-status: adapted
-marcus_voice: true
-source: "Old_courses/books/JIN23/api/ftp/ftpfilhantering.md"
-description: "När du ansluter till en FTP-server, har du oftast behov av att utföra vissa grundläggande operationer som att lista, skapa, läsa, radera och kopiera filer. Hur gör man det?"
-tags: ["api", "filhantering", "ftpfilhantering", "git", "java"]
-week_fit: []
----
-
 # FTP filhantering
 
 🟢

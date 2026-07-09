@@ -1,19 +1,3 @@
----
-
-title: Interfaces
-author: Marcus Ackre Medina
-type: article
-topic: oop
-difficulty: 1
-language: csharp
-status: adapted
-marcus_voice: true
-source: "Old_courses/books/CLO22/Docs/oop/polymorfism/interfaces/index.md"
-description: "Interfaces är ett kraftfullt verktyg i C# som ger oss möjlighet att skapa flexibla och återanvändbara komponenter i våra program. Genom att använda interfaces kan vi implementera polymorfism och separ"
-tags: ["csharp", "git", "oop"]
-week_fit: []
----
-
 Interfaces är ett kraftfullt verktyg i C# som ger oss möjlighet att skapa flexibla och återanvändbara komponenter i våra program. Genom att använda interfaces kan vi implementera polymorfism och separera implementation och användning av komponenter.
 
 ## Beskrivning

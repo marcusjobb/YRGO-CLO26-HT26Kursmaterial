@@ -1,19 +1,3 @@
----
-
-title: Kapitel 2 – MySQL: den klassiska serversidan
-author: Marcus Ackre Medina
-type: article
-topic: databaser
-difficulty: 1
-language: csharp
-status: adapted
-marcus_voice: true
-source: "Old_courses/books/csharp_cmyh/C-Sharp/databases/brief/02_mysql.md"
-description: "MySQL är en **serverdatabas** – till skillnad från SQLite finns det en process som körs och lyssnar på nätverksanrop. MySQL är en av världens mest använda databaser."
-tags: ["csharp", "databaser", "design-patterns", "entity-framework", "git", "kapitel", "klassiska", "mysql", "mysql:", "oop"]
-week_fit: []
----
-
 # Kapitel 2 – MySQL: den klassiska serversidan
 
 🟢

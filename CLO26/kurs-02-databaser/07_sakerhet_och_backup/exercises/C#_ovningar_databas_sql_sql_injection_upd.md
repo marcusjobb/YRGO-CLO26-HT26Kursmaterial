@@ -1,18 +1,3 @@
----
-
-title: Sql Injection (upd)
-author: Marcus Ackre Medina
-type: exercise
-topic: databaser
-difficulty: 1
-language: csharp
-status: adapted
-marcus_voice: true
-source: "Old_courses/Material från Codic/C#/Övningar/Databas/SQL/SQL Injection (upd).pdf"
-description: "Varför behöver vi parametrar när vi kommunicerar med databasen? Det borde väl vara enklare att bara"
-tags: ["(upd).pdf", "csharp", "databaser", "exercise", "injection", "sql", "test"]
-week_fit: []
----
 SQL-Injections
 Varför behöver vi parametrar när vi kommunicerar med databasen? Det borde väl vara enklare att bara
 skicka in en SQL-sträng, precis som vi gör på SSMS. Varför krånglar vi till det i C#?

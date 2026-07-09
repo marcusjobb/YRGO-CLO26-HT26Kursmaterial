@@ -1,19 +1,3 @@
----
-
-title: Git Workflow 🔄
-author: Marcus Ackre Medina
-type: lecture
-topic: git
-difficulty: 1
-language: bash
-status: adapted
-marcus_voice: true
-source: "Old_courses/2025/git/workflow/workflow.md"
-description: "Git** är som en tidsmaskin för din kod! ⏰"
-tags: ["bash", "git", "installation", "ssh", "versionshantering", "workflow"]
-week_fit: []
----
-
 # Git Workflow 🔄
 
 🟢

@@ -1,19 +1,3 @@
----
-
-title: Övning 2: OCP - Open/Closed Principle
-author: Marcus Ackre Medina
-type: exercise
-topic: clean-code
-difficulty: 1
-language: csharp
-status: adapted
-marcus_voice: true
-source: "Old_courses/2025/3_advanced_oop/exercises/solid/solid_exercise_2.md"
-description: "En webshop har olika discount-regler som ständigt ändras. Din uppgift är att göra systemet utökningsbart utan att ändra befintlig kod."
-tags: ["clean-code", "csharp", "exercise", "open/closed", "principle", "solid", "övning"]
-week_fit: []
----
-
 # Övning 2: OCP - Open/Closed Principle
 
 🟢

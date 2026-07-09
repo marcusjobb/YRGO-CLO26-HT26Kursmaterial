@@ -1,18 +1,3 @@
----
-
-title: Import Av Json Fil
-author: Marcus Ackre Medina
-type: exercise
-topic: testing
-difficulty: 1
-language: csharp
-status: adapted
-marcus_voice: true
-source: "Old_courses/Material från Codic/C#/Övningar/TDD/Import av JSON fil.pdf"
-description: "Import av JSON fil – Vad kan gå fel?"
-tags: ["csharp", "exercise", "fil.pdf", "import", "json", "oop", "test", "testing"]
-week_fit: []
----
 Import av JSON fil – Vad kan gå fel?
 [{"guid":"f8bcfa4a-bd9f-4f92-bd3 c08 b7e3543c74", "age":39,"name ":"Howard Moore","gender":"male","company":"LETPRO","e
 mail":"howardmoore@letpro.com","phone":"+1 (995) 4432936","address":"742 Colonial Road, Chapin, West Virginia, 1726"},{"guid":"f1b7cb47a02b-4477-ab242e6a6040d473","age":26,"name":"Frazier Riddle","gender":"male","company":"INFOTRIPS",

@@ -1,19 +1,3 @@
----
-
-title: OOP Kennel
-author: Marcus Ackre Medina
-type: exercise
-topic: oop
-difficulty: 2
-language: csharp
-status: adapted
-marcus_voice: true
-source: "exercises_to_spread_out/OOP Kennel.md"
-description: "- PrintInformation() skriver ut information om djuret"
-tags: ["arv", "csharp", "djur", "exercise", "klasser", "linq", "lista", "oop", "statistik"]
-week_fit: []
----
-
 # Mer OOP
 
 🟡

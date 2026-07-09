@@ -1,19 +1,3 @@
----
-
-title: Microservices
-author: Marcus Ackre Medina
-type: article
-topic: api
-difficulty: 1
-language: java
-status: adapted
-marcus_voice: true
-source: "Old_courses/books/JIN23/api/microservices.md"
-description: "Välkomna till detta spännande avsnitt där vi kommer att dyka djupare in i vad Microservices är och varför de har blivit en så viktig arkitektonisk stil inom mjukvaruutveckling. Om du någonsin har undr"
-tags: ["api", "git", "java", "microservices", "oop"]
-week_fit: []
----
-
 # Microservices
 
 🟢

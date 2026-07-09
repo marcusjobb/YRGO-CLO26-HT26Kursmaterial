@@ -1,19 +1,3 @@
----
-
-title: 1. Avancerad Databashantering med Repository Pattern
-author: Marcus Ackre Medina
-type: lecture
-topic: oop
-difficulty: 3
-language: csharp
-status: adapted
-marcus_voice: true
-source: "Old_courses/2025/csharp/3_oop_adv/lectures/06_advanced_db_frameworks/summary_06.md"
-description: "Hur kan vi skapa en flexibel och underhållbar databasarkitektur som effektivt hanterar olika typer av data samtidigt som vi följer SOLID-principerna?"
-tags: ["avancerad", "csharp", "databashantering", "oop", "pattern", "repository", "summary", "visual-studio"]
-week_fit: []
----
-
 # 1. Avancerad Databashantering med Repository Pattern
 
 🔴

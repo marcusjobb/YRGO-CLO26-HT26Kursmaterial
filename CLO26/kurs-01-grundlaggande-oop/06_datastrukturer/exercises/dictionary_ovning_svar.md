@@ -1,19 +1,3 @@
----
-
-title: Dictionary övning svår
-author: Marcus Ackre Medina
-type: exercise
-topic: datastrukturer
-difficulty: 2
-language: csharp
-status: adapted
-marcus_voice: true
-source: "reference/exercises_to_spread_out/Dictionary övning svår.md"
-description: "| Dictionary<Svår,Övning> | 16 september 2021 |"
-tags: ["csharp", "cv", "datastrukturer", "dictionary", "exercise", "filhantering", "konsol", "sorteddictionary", "stringbuilder", "system-io"]
-week_fit: []
----
-
 | Dictionary<Svår,Övning> | 16 september 2021 |
 | --- | --- |
 

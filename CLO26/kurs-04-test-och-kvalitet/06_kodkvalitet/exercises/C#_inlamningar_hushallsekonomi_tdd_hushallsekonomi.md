@@ -1,18 +1,3 @@
----
-
-title: Hushållsekonomi
-author: Marcus Ackre Medina
-type: exercise
-topic: testing
-difficulty: 3
-language: csharp
-status: adapted
-marcus_voice: true
-source: "Old_courses/Material från Codic/C#/Inlämningar/Hushållsekonomi (TDD)/Hushållsekonomi.docx"
-description: "Codic Education AB | marcus.medina@codic.se"
-tags: ["csharp", "exercise", "git", "hushållsekonomi.docx", "oop", "test", "testing"]
-week_fit: []
----
 HUSHÅLLSEKONOMI
 KVALITETSSÄKRAT
 

@@ -1,18 +1,3 @@
----
-
-title: Luffarschack Tdd
-author: Marcus Ackre Medina
-type: exercise
-topic: testing
-difficulty: 1
-language: csharp
-status: adapted
-marcus_voice: true
-source: "Old_courses/Material från Codic/C#/Övningar/TDD/Luffarschack TDD.docx"
-description: "Dagens utmaning blir ett luffarschackspel. Lätt och enkelt, eller?"
-tags: ["csharp", "exercise", "luffarschack", "oop", "tdd.docx", "test", "testing"]
-week_fit: []
----
 Luffarschack
 Dagens utmaning blir ett luffarschackspel. Lätt och enkelt, eller?
 Projektet ska delas i klasser, exempelvis (men ej ett krav)

@@ -1,19 +1,3 @@
----
-
-title: 🌿 Git Flow Cheatsheet - Minimal Workflow
-author: Marcus Ackre Medina
-type: assignment
-topic: projekt
-difficulty: 1
-language: bash
-status: adapted
-marcus_voice: true
-source: "Old_courses/2025/4_test_and_quality_assurance/assignment/cheatsheets/git_flow_cheatsheet.md"
-description: "TL;DR:** Använd `main`, `develop`, och `feature/*` branches. Pusha ALDRIG direkt till main eller develop!"
-tags: ["bash", "cheatsheet", "flow", "git", "installation", "minimal", "projekt", "ssh", "visual-studio", "workflow"]
-week_fit: []
----
-
 # 🌿 Git Flow Cheatsheet - Minimal Workflow
 
 🟢

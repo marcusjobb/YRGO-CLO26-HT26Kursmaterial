@@ -1,19 +1,3 @@
----
-
-title: tdd_bdd_ddd
-author: Marcus Ackre Medina
-type: lecture
-topic: testing
-difficulty: 1
-language: csharp
-status: adapted
-marcus_voice: true
-source: "Old_courses/2025/csharp/4_test/lectures/03_tdd/tdd_bdd_ddd.md"
-description: "Att navigera bland utvecklingsmetoder som TDD (Test-Driven Development), DDD (Domain-Driven Design) och BDD (Behavior-Driven Development) kan kännas som att försöka hitta rätt väg i en labyrint. Men o"
-tags: ["bdd", "csharp", "ddd", "rider", "tdd", "testing", "visual-studio"]
-week_fit: []
----
-
 ### **Skillnaden mellan TDD, DDD och BDD – och hur de kompletterar varandra**
 
 Att navigera bland utvecklingsmetoder som TDD (Test-Driven Development), DDD (Domain-Driven Design) och BDD (Behavior-Driven Development) kan kännas som att försöka hitta rätt väg i en labyrint. Men oroa dig inte, vi ska reda ut detta på ett enkelt och strukturerat sätt. Tänk på TDD som att bygga en bil, DDD som att designa trafiksystemet, och BDD som att ta reda på exakt hur våra passagerare vill resa. Låt oss bryta ner det!

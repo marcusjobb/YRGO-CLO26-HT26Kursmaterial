@@ -1,19 +1,3 @@
----
-
-title: 🚀 API:er i C# - En Snäll Guide
-author: Marcus Ackre Medina
-type: assignment
-topic: projekt
-difficulty: 1
-language: mixed
-status: adapted
-marcus_voice: true
-source: "Old_courses/2025/4_test_and_quality_assurance/assignment/articles/api_basics_csharp.md"
-description: "För er som aldrig gjort ett API förut"
-tags: ["api", "api:er", "csharp", "projekt", "snäll", "visual-studio"]
-week_fit: []
----
-
 # 🚀 API:er i C# - En Snäll Guide
 
 🟢

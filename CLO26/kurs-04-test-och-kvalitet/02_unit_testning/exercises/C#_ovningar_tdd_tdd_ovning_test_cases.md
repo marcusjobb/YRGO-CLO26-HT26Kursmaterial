@@ -1,18 +1,3 @@
----
-
-title: Tdd Övning, Test Cases
-author: Marcus Ackre Medina
-type: exercise
-topic: testing
-difficulty: 1
-language: csharp
-status: adapted
-marcus_voice: true
-source: "Old_courses/Material från Codic/C#/Övningar/TDD/TDD övning, Test Cases.docx"
-description: "Ni ska planera testandet av webbsidan för ett gym – ni ska alltså inte programmera något, utan bara läsa"
-tags: ["cases.docx", "csharp", "exercise", "git", "tdd", "test", "testing", "övning"]
-week_fit: []
----
 TDD övning
 Ni ska planera testandet av webbsidan för ett gym – ni ska alltså inte programmera något, utan bara läsa
 på scenariot och se vad som behöver testas.

@@ -1,19 +1,3 @@
----
-
-title: MySQL på Docker
-author: Marcus Ackre Medina
-type: example
-topic: docker
-difficulty: 1
-language: bash
-status: adapted
-marcus_voice: true
-source: "Old_courses/2025/csharp/practice_exercises/docker/mysql.md"
-description: "Nu ska vi docka MySQL och en hanterare till den, nämligen Marcus favoritprogram PHPMyAdmin."
-tags: ["bash", "docker", "mysql"]
-week_fit: []
----
-
 # MySQL på Docker
 
 🟢

@@ -1,19 +1,3 @@
----
-
-title: För att bygga och push:a images till Docker Hub
-author: Marcus Ackre Medina
-type: example
-topic: integration
-difficulty: 1
-language: bash
-status: adapted
-marcus_voice: true
-source: "Old_courses/2025/java/7_system_integration/07_secure_hosting/projects/5_cat_api/docker-compose.md"
-description: "-e DB_PASSWORD=secure_password \"
-tags: ["bash", "bygga", "compose", "docker", "git", "images", "integration", "push:a", "till"]
-week_fit: []
----
-
 # För att bygga och push:a images till Docker Hub
 
 🟢

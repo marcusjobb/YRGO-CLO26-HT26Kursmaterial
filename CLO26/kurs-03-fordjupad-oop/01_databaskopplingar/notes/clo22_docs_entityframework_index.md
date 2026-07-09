@@ -1,19 +1,3 @@
----
-
-title: Entity Framework
-author: Marcus Ackre Medina
-type: article
-topic: databaser
-difficulty: 3
-language: csharp
-status: adapted
-marcus_voice: true
-source: "Old_courses/books/CLO22/Docs/entityframework/index.md"
-description: "Yay! Idag ska vi prata om Entity Framework, ett fantastiskt ORM-ramverk som gör det enkelt att kommunicera med databaser. Vi kommer att fokusera på Entity Framework Core, den senaste versionen av ramv"
-tags: ["csharp", "databaser", "design-patterns", "entity", "entity-framework", "framework", "git", "oop", "sql"]
-week_fit: []
----
-
 # Entity Framework
 
 🔴

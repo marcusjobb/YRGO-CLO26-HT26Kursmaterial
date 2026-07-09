@@ -1,19 +1,3 @@
----
-
-title: 2_oauth2_and_openiod_connect
-author: Marcus Ackre Medina
-type: example
-topic: api
-difficulty: 1
-language: mixed
-status: adapted
-marcus_voice: true
-source: "Old_courses/2025/java/5_api/08_more_authentication_and_authorization/2_oauth2_and_openiod_connect.md"
-description: "- **OAuth2** är som en vakt som bestämmer vad en app får göra"
-tags: ["and", "api", "connect", "javascript", "oauth2", "openiod", "visual-studio"]
-week_fit: []
----
-
 #### Introduktion till OAuth2 och OpenID Connect - För nybörjare som kan JWT
 
 #### Vad är skillnaden mellan OAuth2 och OpenID Connect?

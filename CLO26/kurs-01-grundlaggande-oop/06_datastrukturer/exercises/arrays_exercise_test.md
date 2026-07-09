@@ -1,19 +1,3 @@
----
-
-title: Övning 1: Avengers Team Management System
-author: Marcus Ackre Medina
-type: exercise
-topic: datastrukturer
-difficulty: 1
-language: csharp
-status: adapted
-marcus_voice: true
-source: "Old_courses/2025/arrays/exercises/arrays_exercise_test.md"
-description: "Efter den här övningen kommer du att kunna:"
-tags: ["arrays", "avengers", "csharp", "datastrukturer", "exercise", "management", "ssh", "system", "team", "test"]
-week_fit: []
----
-
 # Övning 1: Avengers Team Management System
 
 🟢

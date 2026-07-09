@@ -1,19 +1,3 @@
----
-
-title: Övningar – Lektion 10
-author: Marcus Ackre Medina
-type: exercise
-topic: sql
-difficulty: 3
-language: sql
-status: adapted
-marcus_voice: true
-source: "exercises_to_spread_out/Övningar - Lektion 10.md"
-description: "https://www.w3resource.com/sql-exercises/subqueries/index.php"
-tags: ["exercise", "join", "sql", "subqueries", "union", "variables", "window-functions"]
-week_fit: []
----
-
 Övningar - Lektion 10
 
 

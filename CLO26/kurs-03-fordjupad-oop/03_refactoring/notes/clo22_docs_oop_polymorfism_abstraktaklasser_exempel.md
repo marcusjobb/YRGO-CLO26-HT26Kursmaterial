@@ -1,19 +1,3 @@
----
-
-title: Exempel - Webscraping
-author: Marcus Ackre Medina
-type: article
-topic: oop
-difficulty: 1
-language: csharp
-status: adapted
-marcus_voice: true
-source: "Old_courses/books/CLO22/Docs/oop/polymorfism/abstraktaklasser/exempel.md"
-description: "I den här artikeln ska vi titta på hur man skapar en abstrakt klass med abstrakta och virtuella metoder i C#."
-tags: ["csharp", "exempel", "git", "oop", "webscraping"]
-week_fit: []
----
-
 # Exempel - Webscraping
 
 🟢

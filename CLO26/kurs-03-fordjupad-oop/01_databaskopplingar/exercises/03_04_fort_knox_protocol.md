@@ -1,19 +1,3 @@
----
-
-title: Fort Knox Protocol: Säkra din EF Core-lösning
-author: Marcus Ackre Medina
-type: exercise
-topic: databaser
-difficulty: 1
-language: mixed
-status: adapted
-marcus_voice: true
-source: "Old_courses/2025/2_databases/exercises/ef/03_04_fort_knox_protocol.md"
-description: "- `Microsoft.Extensions.Logging.Console` (för att se vad som loggas)"
-tags: ["core-lösning", "csharp", "databaser", "exercise", "fort", "git", "knox", "protocol", "protocol:", "ssh"]
-week_fit: []
----
-
 # Fort Knox Protocol: Säkra din EF Core-lösning
 
 🟢

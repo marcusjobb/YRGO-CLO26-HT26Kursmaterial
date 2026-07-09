@@ -1,18 +1,3 @@
----
-
-title: Övning Api
-author: Marcus Ackre Medina
-type: lecture
-topic: api
-difficulty: 1
-language: csharp
-status: adapted
-marcus_voice: true
-source: "Old_courses/Material från Codic/Objektorienterad programmering i C# 2021/API/Övning API.docx"
-description: "Klicka eller tryck här för att ange datum."
-tags: ["api", "api.docx", "csharp", "git", "oop", "test", "övning"]
-week_fit: []
----
 Campus Mölndal .Net 21
 Marcus Medina
 Klicka eller tryck här för att ange datum.

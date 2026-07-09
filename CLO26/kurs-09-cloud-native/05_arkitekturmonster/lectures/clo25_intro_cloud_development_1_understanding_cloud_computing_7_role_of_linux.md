@@ -1,18 +1,3 @@
----
-
-title: Linux i molnet — varför det är standard
-author: Marcus Ackre Medina
-type: lecture
-topic: cloud
-difficulty: 1
-language: swedish
-status: adapted
-marcus_voice: true
-source: "Old_courses/Coud_Development_CLO25/intro-cloud-development/1-understanding-cloud-computing/7-role-of-linux.md"
-description: "Om du kollar på vilka operativsystem som körs på molnservrar världen över ser du ett tydligt mönster — Linux har vunnit. Här är varför."
-tags: ["bash", "cloud", "linux", "molnet", "open-source", "standard", "varför"]
-week_fit: []
----
 # Linux i molnet — varför det är standard
 
 ## Windows funkar också. Men...

@@ -1,18 +1,3 @@
----
-
-title: Sql Crud För Nybörjare
-author: Marcus Ackre Medina
-type: exercise
-topic: databaser
-difficulty: 1
-language: sql
-status: adapted
-marcus_voice: true
-source: "Old_courses/Material från Codic/SQL/Övningar/Nybörjare/SQL CRUD för nybörjare.docx"
-description: "En databas är ett program som lagrar ”data”, alltså information i en fil. Ungefär på samma sätt som Excel men"
-tags: ["crud", "databaser", "exercise", "för", "git", "nybörjare.docx", "oop", "sql"]
-week_fit: []
----
 © 2022, Codic Education AB
 
 SQL-CRUD

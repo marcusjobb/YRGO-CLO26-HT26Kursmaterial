@@ -1,19 +1,3 @@
----
-
-title: 2. Command Line Interface
-author: Marcus Ackre Medina
-type: exercise
-topic: infrastructure
-difficulty: 2
-language: english
-status: adapted
-marcus_voice: true
-source: "Old_courses/Coud_Development_CLO25/exercises/1-server-foundation/2-command-line-interface.md"
-description: "Getting StartedWeek by WeekIntro To Cloud DevelopmentInfrastructure FundamentalsExercises-"
-tags: ["azure", "cloud", "command", "docker", "exercise", "iac", "infrastructure", "interface", "line", "linux"]
-week_fit: []
----
-
 Navigation :
 Getting StartedWeek by WeekIntro To Cloud DevelopmentInfrastructure FundamentalsExercises-
 Server Foundation--

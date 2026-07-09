@@ -1,19 +1,3 @@
----
-
-title: 1. Introduktion till statisk kodanalys
-author: Marcus Ackre Medina
-type: lecture
-topic: testing
-difficulty: 1
-language: csharp
-status: adapted
-marcus_voice: true
-source: "Old_courses/2025/csharp/4_test/lectures/10_static_code_analysis_and_code_quality_tools/1_exercises.md"
-description: "Statisk kodanalys i C# - övningsuppgifter"
-tags: ["csharp", "installation", "kodanalys", "statisk", "testing", "till", "visual-studio"]
-week_fit: []
----
-
 # 1. Introduktion till statisk kodanalys
 
 🟢

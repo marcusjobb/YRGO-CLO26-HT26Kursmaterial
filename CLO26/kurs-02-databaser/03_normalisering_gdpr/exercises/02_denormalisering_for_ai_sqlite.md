@@ -1,19 +1,3 @@
----
-
-title: Workshop: Denormalisering för AI/ML Träningsdata (SQLite-version)
-author: Marcus Ackre Medina
-type: exercise
-topic: databaser
-difficulty: 1
-language: mixed
-status: adapted
-marcus_voice: true
-source: "Old_courses/2025/2_databases/exercises/02_denormalisering_for_ai_sqlite.md"
-description: "Ni jobbar för **WildShop AB** igen, men nu med ett nytt uppdrag! Efter att ni räddade databasen igår vill företaget nu använda sin data för Machine Learning. De vill förutsäga:"
-tags: ["(sqlite-version)", "ai/ml", "databaser", "denormalisering", "exercise", "git", "installation", "sql", "sqlite", "ssh"]
-week_fit: []
----
-
 # Workshop: Denormalisering för AI/ML Träningsdata (SQLite-version)
 
 🟢

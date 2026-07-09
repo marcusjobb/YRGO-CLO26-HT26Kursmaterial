@@ -1,7 +1,6 @@
 ---
 marp: true
-theme: default
-class: invert
+theme: nion-dark
 paginate: true
 ---
 

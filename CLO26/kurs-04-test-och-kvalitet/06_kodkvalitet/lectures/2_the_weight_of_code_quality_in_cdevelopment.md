@@ -1,19 +1,3 @@
----
-
-title: 2. Vikten av kodkvalitet i C#-utveckling
-author: Marcus Ackre Medina
-type: lecture
-topic: testing
-difficulty: 3
-language: csharp
-status: adapted
-marcus_voice: true
-source: "Old_courses/2025/csharp/4_test/lectures/01_introduktion_xunit/2_the_weight_of_code_quality_in_cdevelopment.md"
-description: "I vår föregående lektion introducerade vi grundläggande OOP-koncept och hur de tillämpas i C#. Nu ska vi bygga vidare på denna kunskap och utforska varför kodkvalitet är avgörande i C#-utveckling."
-tags: ["c#-utveckling", "cdevelopment", "csharp", "kodkvalitet", "quality", "testing", "verktyg", "vikten", "visual-studio", "weight"]
-week_fit: []
----
-
 # 2. Vikten av kodkvalitet i C#-utveckling
 
 🔴

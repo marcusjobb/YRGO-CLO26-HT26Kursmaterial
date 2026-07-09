@@ -1,19 +1,3 @@
----
-
-title: Övningar: API-testning: Strategier och bästa praxis
-author: Marcus Ackre Medina
-type: example
-topic: api
-difficulty: 1
-language: mixed
-status: adapted
-marcus_voice: true
-source: "Old_courses/2025/java/5_api/10_api_documenting/02_execises.md"
-description: "Använd Postman för att utforska och testa ett öppet REST API (t.ex. JSONPlaceholder, OpenWeatherMap eller liknande). Lär dig att göra grundläggande CRUD-operationer och analysera svar."
-tags: ["api", "api-testning:", "bästa", "execises", "git", "installation", "java", "praxis", "strategier", "visual-studio"]
-week_fit: []
----
-
 # Övningar: API-testning: Strategier och bästa praxis
 
 🟢

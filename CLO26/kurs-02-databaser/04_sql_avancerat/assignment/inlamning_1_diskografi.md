@@ -1,15 +1,3 @@
----
-title: Inlämning 1 — Din favoritartists diskografi (SQL)
-author: Marcus Ackre Medina
-type: assignment
-topic: databaser
-difficulty: 2
-language: sql
-status: new
-marcus_voice: true
-tags: ["sql", "databaser", "normalisering", "joins", "crud", "individuell"]
----
-
 # Inlämning 1 — Din favoritartists diskografi
 
 **Individuell uppgift**

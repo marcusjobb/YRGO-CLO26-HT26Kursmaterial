@@ -1,18 +1,3 @@
----
-
-title: Dokumentdatabaser
-author: Marcus Ackre Medina
-type: lecture
-topic: databaser
-difficulty: 1
-language: mixed
-status: adapted
-marcus_voice: true
-source: "Old_courses/2025/2_databases/lectures/MongoDB/document_databases_marp.md"
-description: "![bg left:40%](https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg)"
-tags: ["csharp", "databaser", "databases", "document", "dokumentdatabaser", "installation", "marp", "ssh", "verktyg", "visual-studio"]
-week_fit: []
----
 ![bg left:40%](https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg)
 
 # **Dokumentdatabaser**

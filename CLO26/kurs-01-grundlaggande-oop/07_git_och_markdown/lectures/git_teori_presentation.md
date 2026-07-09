@@ -1,19 +1,3 @@
----
-
-title: Git - Versionskontroll som förändrar allt
-author: Marcus Ackre Medina
-type: lecture
-topic: git
-difficulty: 1
-language: bash
-status: adapted
-marcus_voice: true
-source: "Old_courses/2025/0_installation/install_git/lecture/git-teori-presentation.md"
-description: "Git är som en **magisk 'undo'-knapp** för din kod"
-tags: ["allt", "förändrar", "git", "presentation", "ssh", "teori", "verktyg", "versionskontroll", "visual-studio"]
-week_fit: []
----
-
 # Git - Versionskontroll som förändrar allt
 
 🟢

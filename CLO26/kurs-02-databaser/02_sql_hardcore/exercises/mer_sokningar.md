@@ -1,19 +1,3 @@
----
-
-title: Mer sökningar
-author: Marcus Ackre Medina
-type: exercise
-topic: databaser
-difficulty: 2
-language: sql
-status: adapted
-marcus_voice: true
-source: "exercises_to_spread_out/Mer sökningar.md"
-description: "Gå in på Mockaroo.com och skapa en tabell enligt detta"
-tags: ["databaser", "delete", "distinct", "exercise", "mockaroo", "select", "sql", "ssms", "sökningar", "update"]
-week_fit: []
----
-
 # Mer sökningar
 
 🟡

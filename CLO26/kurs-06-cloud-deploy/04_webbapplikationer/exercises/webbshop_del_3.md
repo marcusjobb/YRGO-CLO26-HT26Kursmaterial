@@ -1,19 +1,3 @@
----
-
-title: Webbshop, del 3
-author: Marcus Ackre Medina
-type: exercise
-topic: api
-difficulty: 1
-language: python
-status: adapted
-marcus_voice: true
-source: "/home/nionit/git/marcus-yh-claude-assistent/reference/exercises_to_spread_out/Webbshop, del 3.md"
-description: "Nu ska vi kolla på en UML lösning."
-tags: ["api", "exercise", "webbshop"]
-week_fit: []
----
-
 1.2
 
 

@@ -1,19 +1,3 @@
----
-
-title: 🚀 ASP.NET Core API Quickstart - Med Swagger
-author: Marcus Ackre Medina
-type: assignment
-topic: projekt
-difficulty: 1
-language: mixed
-status: adapted
-marcus_voice: true
-source: "Old_courses/2025/4_test_and_quality_assurance/assignment/cheatsheets/aspnet_quickstart.md"
-description: "För TDD Grupprojekt - REST API Development"
-tags: ["asp.net", "aspnet", "core", "csharp", "installation", "projekt", "quickstart", "swagger", "verktyg", "visual-studio"]
-week_fit: []
----
-
 # 🚀 ASP.NET Core API Quickstart - Med Swagger
 
 🟢

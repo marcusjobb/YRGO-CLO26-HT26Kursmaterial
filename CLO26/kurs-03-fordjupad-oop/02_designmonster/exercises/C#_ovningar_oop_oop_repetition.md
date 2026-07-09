@@ -1,18 +1,3 @@
----
-
-title: Oop Repetition
-author: Marcus Ackre Medina
-type: exercise
-topic: oop
-difficulty: 3
-language: csharp
-status: adapted
-marcus_voice: true
-source: "Old_courses/Material från Codic/C#/Övningar/OOP/OOP repetition.pptx"
-description: "• Varje lägenhet är en class för sig"
-tags: ["csharp", "exercise", "oop", "repetition.pptx", "test"]
-week_fit: []
----
 OOP REPETITION
 MARCUS MEDINA, CODIC EDUCATION
 

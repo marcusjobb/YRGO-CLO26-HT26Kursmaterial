@@ -1,19 +1,3 @@
----
-
-title: 🔥 Blazor Quickstart - Full-Stack C#
-author: Marcus Ackre Medina
-type: assignment
-topic: projekt
-difficulty: 1
-language: mixed
-status: adapted
-marcus_voice: true
-source: "Old_courses/2025/4_test_and_quality_assurance/assignment/cheatsheets/blazor_quickstart.md"
-description: "För TDD Grupprojekt - Modern Web Apps"
-tags: ["blazor", "full-stack", "installation", "projekt", "quickstart", "razor", "visual-studio"]
-week_fit: []
----
-
 # 🔥 Blazor Quickstart - Full-Stack C#
 
 🟢

@@ -1,19 +1,3 @@
----
-
-title: 3. UML-diagram för Databasapplikationer
-author: Marcus Ackre Medina
-type: lecture
-topic: oop
-difficulty: 3
-language: csharp
-status: adapted
-marcus_voice: true
-source: "Old_courses/2025/csharp/3_oop_adv/lectures/02_design_patterns/3_uml_charts_for_database_applications.md"
-description: "Huvudfråga:** Hur kan vi använda UML för att modellera komplexa system på ett sätt som alla intressenter förstår?"
-tags: ["applications", "charts", "csharp", "databasapplikationer", "database", "oop", "ssh", "uml", "uml-diagram", "verktyg"]
-week_fit: []
----
-
 # 3. UML-diagram för Databasapplikationer
 
 🔴

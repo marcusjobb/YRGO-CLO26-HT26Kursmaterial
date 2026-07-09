@@ -1,19 +1,3 @@
----
-
-title: Specialpizza (SQL övning)
-author: Marcus Ackre Medina
-type: exercise
-topic: databaser
-difficulty: 2
-language: sql
-status: adapted
-marcus_voice: true
-source: "exercises_to_spread_out/Specialpizza_SQL_ovning.md"
-description: "Den lokala pizzerian går lite dåligt och behöver inspiration för nya pizzor. Du kommer på en alldeles utmärkt idé. Med hjälp av en databas och lite äventyrlighet ska du skapa receptet för en pizza. Då"
-tags: ["cross-join", "databaser", "exercise", "newid", "random", "specialpizza", "sql"]
-week_fit: []
----
-
 # Specialpizza
 
 🟡

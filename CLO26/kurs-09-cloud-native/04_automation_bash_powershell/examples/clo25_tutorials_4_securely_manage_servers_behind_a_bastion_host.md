@@ -1,19 +1,3 @@
----
-
-title: Securely Manage Servers Behind a Bastion Host
-author: Marcus Ackre Medina
-type: tutorial
-topic: infrastructure
-difficulty: 2
-language: swedish
-status: adapted
-marcus_voice: true
-source: "Old_courses/Coud_Development_CLO25/tutorials/4-securely-manage-servers-behind-a-bastion-host.md"
-description: "Getting StartedWeek by WeekIntro To Cloud DevelopmentInfrastructure FundamentalsExercisesTutorials- How To Write A Tutorial- Configure Azure VM DNS Labels- Securely Manage Servers Behind a Bastion Hos"
-tags: ["azure", "bastion", "behind", "cloud", "git", "host", "infrastructure", "linux", "manage", "networking"]
-week_fit: []
----
-
 Navigation :
 Getting StartedWeek by WeekIntro To Cloud DevelopmentInfrastructure FundamentalsExercisesTutorials- How To Write A Tutorial- Configure Azure VM DNS Labels- Securely Manage Servers Behind a Bastion Host
 

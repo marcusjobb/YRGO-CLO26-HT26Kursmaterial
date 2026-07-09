@@ -1,19 +1,3 @@
----
-
-title: Övning 1: SQL vs Dokumentdatabas - Produktkatalog
-author: Marcus Ackre Medina
-type: exercise
-topic: databaser
-difficulty: 1
-language: json
-status: adapted
-marcus_voice: true
-source: "Old_courses/2025/2_databases/exercises/document_database/document_database_exercise_1.md"
-description: "Efter den här övningen kommer du att kunna:"
-tags: ["database", "databaser", "document", "dokumentdatabas", "exercise", "produktkatalog", "visual-studio", "övning"]
-week_fit: []
----
-
 # Övning 1: SQL vs Dokumentdatabas - Produktkatalog
 
 🟢

@@ -1,19 +1,3 @@
----
-
-title: Planera din kod med flödesscheman
-author: Marcus Ackre Medina
-type: lecture
-topic: clean-code
-difficulty: 1
-language: csharp
-status: adapted
-marcus_voice: true
-source: "Old_courses/2025/clean_code/lectures/flow.md"
-description: "- Kod är lättare att skriva när du har en **plan**."
-tags: ["clean-code", "csharp", "flow", "flödesscheman", "planera", "ssh", "verktyg", "visual-studio"]
-week_fit: []
----
-
 # Planera din kod med flödesscheman
 
 🟢

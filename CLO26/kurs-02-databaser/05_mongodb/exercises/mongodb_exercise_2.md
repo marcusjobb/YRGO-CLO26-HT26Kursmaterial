@@ -1,19 +1,3 @@
----
-
-title: Övning 2: MongoDB från C# - Todo App
-author: Marcus Ackre Medina
-type: exercise
-topic: databaser
-difficulty: 3
-language: mixed
-status: adapted
-marcus_voice: true
-source: "Old_courses/2025/2_databases/exercises/mongodb/mongodb_exercise_2.md"
-description: "Efter den här övningen kommer du att kunna:"
-tags: ["csharp", "databaser", "exercise", "från", "installation", "mongodb", "ssh", "todo", "visual-studio", "övning"]
-week_fit: []
----
-
 # Övning 2: MongoDB från C# - Todo App
 
 🔴

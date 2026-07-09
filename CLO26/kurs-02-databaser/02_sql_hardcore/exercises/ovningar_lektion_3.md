@@ -1,19 +1,3 @@
----
-
-title: Övningar – Lektion 3
-author: Marcus Ackre Medina
-type: exercise
-topic: databaser
-difficulty: 1
-language: sql
-status: adapted
-marcus_voice: true
-source: "exercises_to_spread_out/Övningar - Lektion 3.md"
-description: "- Vi har lärt oss om hur man skapar en databas och tabeller med CREATE i SQL. Vi skall nu skapa databasen Salary i SQL med tabellerna customers, sales, items och companies. Skapa tabellerna och ange k"
-tags: ["constraints", "create", "databaser", "exercise", "foreign-key", "insert", "mysql", "primary-key", "sql"]
-week_fit: []
----
-
 Övningar – Lektion 3
 
 

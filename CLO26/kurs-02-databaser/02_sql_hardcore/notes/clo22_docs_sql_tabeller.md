@@ -1,19 +1,3 @@
----
-
-title: Tabeller
-author: Marcus Ackre Medina
-type: article
-topic: sql
-difficulty: 1
-language: csharp
-status: adapted
-marcus_voice: true
-source: "Old_courses/books/CLO22/Docs/sql/Tabeller.md"
-description: "Tabeller är en grundläggande del av databashantering och används för att lagra och organisera data i en strukturerad form. Varje tabell består av rader och kolumner, där varje kolumn representerar en "
-tags: ["csharp", "git", "sql", "tabeller"]
-week_fit: []
----
-
 # Tabeller
 
 🟢

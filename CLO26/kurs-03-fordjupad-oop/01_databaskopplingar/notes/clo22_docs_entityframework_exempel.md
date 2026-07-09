@@ -1,19 +1,3 @@
----
-
-title: Code-First Dagbok med Entity Framework
-author: Marcus Ackre Medina
-type: article
-topic: databaser
-difficulty: 1
-language: csharp
-status: adapted
-marcus_voice: true
-source: "Old_courses/books/CLO22/Docs/entityframework/exempel.md"
-description: "I den här övningen kommer vi att skapa en enkel dagboksapplikation som låter användare skapa och visa dagboksinlägg från konsolen. Vi kommer att använda Entity Framework och Code-First tillvägagångssä"
-tags: ["code-first", "csharp", "dagbok", "databaser", "design-patterns", "entity", "entity-framework", "exempel", "framework", "git"]
-week_fit: []
----
-
 # Code-First Dagbok med Entity Framework
 
 🟢

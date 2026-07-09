@@ -1,19 +1,3 @@
----
-
-title: Inlämningsuppgift 2 – OOP-program som representerar basgruppen
-author: Marcus Ackre Medina
-type: exam
-topic: oop
-difficulty: 2
-language: csharp
-status: adapted
-marcus_voice: true
-source: "exercises_to_spread_out/Inlämningsuppgift 2.md"
-description: "- Kunskaper kring typer, variabler, operationer, uttryck, villkorssatser och loopar inom programmering."
-tags: ["basgrupp", "csharp", "datastrukturer", "git", "klasser", "meny", "oop", "rapport"]
-week_fit: []
----
-
 Täckta kursplansmål:
 
 - Kunskaper kring typer, variabler, operationer, uttryck, villkorssatser och loopar inom programmering.

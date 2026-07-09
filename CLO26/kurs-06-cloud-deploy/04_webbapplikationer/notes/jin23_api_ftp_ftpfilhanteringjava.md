@@ -1,19 +1,3 @@
----
-
-title: FTP-Filhantering i Java
-author: Marcus Ackre Medina
-type: article
-topic: api
-difficulty: 1
-language: java
-status: adapted
-marcus_voice: true
-source: "Old_courses/books/JIN23/api/ftp/ftpfilhanteringjava.md"
-description: "För att kunna arbeta med FTP behöver du lägga till ett externt bibliotek till ditt projekt. I det här exemplet använder vi Apache Commons Net, som är ett vanligt bibliotek för att arbeta med FTP i Jav"
-tags: ["api", "ftp-filhantering", "ftpfilhanteringjava", "git", "java", "oop"]
-week_fit: []
----
-
 # FTP-Filhantering i Java
 
 🟢

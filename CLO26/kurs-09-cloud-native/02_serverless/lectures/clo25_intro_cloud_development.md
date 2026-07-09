@@ -1,18 +1,3 @@
----
-
-title: Cloud Development CLO25 — Introduktion till molnutveckling
-author: Marcus Ackre Medina
-type: lecture
-topic: cloud
-difficulty: 1
-language: swedish
-status: adapted
-marcus_voice: true
-source: "Old_courses/Coud_Development_CLO25/intro-cloud-development/_index.md"
-description: "Välkommen till molnutveckling! Den här kursen tar dig från grunderna i molnet till Cloud Native-appar. Inga förkunskaper i molnet krävs — bara nyfikenhet."
-tags: ["clo25", "cloud", "molnutveckling", "till"]
-week_fit: []
----
 # Cloud Development CLO25 — Introduktion till molnutveckling
 
 Välkommen till moln-kursen! 

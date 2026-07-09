@@ -1,19 +1,3 @@
----
-
-title: Entity Framework Core
-author: Marcus Ackre Medina
-type: article
-topic: databaser
-difficulty: 3
-language: csharp
-status: adapted
-marcus_voice: true
-source: "Old_courses/books/CLO22/Docs/entityframework/EntityFrameworkCore.md"
-description: "Yay! Idag ska vi prata om Entity Framework Core, en fantastisk ORM (Object Relational Mapper) som hjälper oss att kommunicera med databaser. Entity Framework Core är en del av .NET Core och erbjuder e"
-tags: ["core", "csharp", "databaser", "design-patterns", "entity", "entity-framework", "entityframeworkcore", "framework", "git", "oop"]
-week_fit: []
----
-
 # Entity Framework Core
 
 🔴

@@ -1,19 +1,3 @@
----
-
-title: SFTP-Filhantering i Java
-author: Marcus Ackre Medina
-type: article
-topic: api
-difficulty: 1
-language: java
-status: adapted
-marcus_voice: true
-source: "Old_courses/books/JIN23/api/ftp/sffilhanteringjava.md"
-description: "SFTP står för Secure File Transfer Protocol och är ett säkert sätt att överföra filer över ett nätverk. För att kunna arbeta med SFTP i Java kan vi använda biblioteket JSch. Lägg till det i ditt Maven"
-tags: ["api", "git", "java", "sffilhanteringjava", "sftp-filhantering"]
-week_fit: []
----
-
 # SFTP-Filhantering i Java
 
 🟢

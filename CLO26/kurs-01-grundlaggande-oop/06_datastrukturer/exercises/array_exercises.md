@@ -1,19 +1,3 @@
----
-
-title: Array Övningar 📊
-author: Marcus Ackre Medina
-type: exercise
-topic: datastrukturer
-difficulty: 2
-language: csharp
-status: adapted
-marcus_voice: true
-source: "Old_courses/2025/datastructures/exercises/array-exercises.md"
-description: "Fyll i koden nedan för att skapa en array med 5 superhjältar och skriva ut alla namnen med deras position."
-tags: ["array", "csharp", "datastrukturer", "exercise", "visual-studio", "övningar"]
-week_fit: []
----
-
 # Array Övningar 📊
 
 🟡

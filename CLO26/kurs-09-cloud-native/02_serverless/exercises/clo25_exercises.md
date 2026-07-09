@@ -1,19 +1,3 @@
----
-
-title: Exercise Index
-author: Marcus Ackre Medina
-type: exercise
-topic: cloud
-difficulty: 1
-language: python
-status: adapted
-marcus_voice: true
-source: "Old_courses/Coud_Development_CLO25/exercises.md"
-description: "Getting StartedWeek by WeekIntro To Cloud DevelopmentInfrastructure FundamentalsExercisesTutorials"
-tags: ["cloud", "docker", "exercise", "networking"]
-week_fit: []
----
-
 Navigation :
 Getting StartedWeek by WeekIntro To Cloud DevelopmentInfrastructure FundamentalsExercisesTutorials
 

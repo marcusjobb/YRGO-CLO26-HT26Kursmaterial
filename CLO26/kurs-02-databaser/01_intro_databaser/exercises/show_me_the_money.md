@@ -1,19 +1,3 @@
----
-
-title: Show me the money
-author: Marcus Ackre Medina
-type: exercise
-topic: databaser
-difficulty: 2
-language: sql
-status: adapted
-marcus_voice: true
-source: "exercises_to_spread_out/Show me the money.md"
-description: "Eller 'Hur jag blev kompis med aggregatfunktioner."
-tags: ["aggregat", "avg", "count", "databaser", "exercise", "group-by", "join", "money!", "show", "sql"]
-week_fit: []
----
-
 # Show me the money!
 
 🟡

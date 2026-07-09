@@ -1,19 +1,3 @@
----
-
-title: Övningsuppgifter – Lektion 6
-author: Marcus Ackre Medina
-type: exercise
-topic: sql
-difficulty: 2
-language: sql
-status: adapted
-marcus_voice: true
-source: "exercises_to_spread_out/Övningar – Lektion 6.md"
-description: "- Gå in på SQLZoo och gör övningar och quiz för att träna på SELECT och JOIN  https://sqlzoo.net/wiki/SQL_Tutorial"
-tags: ["aggregate-functions", "cross-join", "exercise", "inner-join", "join", "left-join", "right-join", "sql", "subqueries"]
-week_fit: []
----
-
 Övningsuppgifter – Lektion 6
 
 - Gå in på SQLZoo och gör övningar och quiz för att träna på SELECT och JOIN  https://sqlzoo.net/wiki/SQL_Tutorial

@@ -1,19 +1,3 @@
----
-
-title: MySQL Docker
-author: Marcus Ackre Medina
-type: example
-topic: integration
-difficulty: 1
-language: sql
-status: adapted
-marcus_voice: true
-source: "Old_courses/2025/java/7_system_integration/05_docker_compose/projects/3_mysql_docker/instructions.md"
-description: "Här är en komplett guide som inkluderar steg för hur man kan ansluta till MySQL-databasen med IntelliJ IDEA."
-tags: ["docker", "installation", "instructions", "integration", "mysql", "sql", "ssh", "verktyg", "visual-studio"]
-week_fit: []
----
-
 # MySQL Docker
 
 🟢

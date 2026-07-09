@@ -1,19 +1,3 @@
----
-
-title: 3. SOLID-principerna och testbarhet
-author: Marcus Ackre Medina
-type: lecture
-topic: testing
-difficulty: 1
-language: csharp
-status: adapted
-marcus_voice: true
-source: "Old_courses/2025/csharp/4_test/lectures/03_tdd/3_example.md"
-description: "// Example 1: EmailService with SOLID principles and TDD"
-tags: ["csharp", "solid-principerna", "testbarhet", "testing"]
-week_fit: []
----
-
 # 3. SOLID-principerna och testbarhet
 
 🟢

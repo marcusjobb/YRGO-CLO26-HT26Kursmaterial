@@ -1,18 +1,3 @@
----
-
-title: Bankkonton Och Tdd
-author: Marcus Ackre Medina
-type: exercise
-topic: testing
-difficulty: 3
-language: csharp
-status: adapted
-marcus_voice: true
-source: "Old_courses/Material från Codic/C#/Övningar/BDD/Bankkonton och TDD.docx"
-description: "I dagens TDD övning ska vi simulera bank."
-tags: ["bankkonton", "csharp", "exercise", "tdd.docx", "test", "testing"]
-week_fit: []
----
 Bankkonton och TDD
 I dagens TDD övning ska vi simulera bank.
 Det finns olika sorts bankkonto

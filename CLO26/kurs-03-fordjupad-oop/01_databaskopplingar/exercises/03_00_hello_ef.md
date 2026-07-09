@@ -1,19 +1,3 @@
----
-
-title: Hello Entity Framework Core
-author: Marcus Ackre Medina
-type: exercise
-topic: databaser
-difficulty: 1
-language: mixed
-status: adapted
-marcus_voice: true
-source: "Old_courses/2025/2_databases/exercises/ef/03_00_hello_ef.md"
-description: "En super-enkel första övning för att komma igång med EF Core. Perfekt för absoluta nybörjare!"
-tags: ["core", "csharp", "databaser", "entity", "exercise", "framework", "hello", "installation", "verktyg", "visual-studio"]
-week_fit: []
----
-
 # Hello Entity Framework Core
 
 🟢

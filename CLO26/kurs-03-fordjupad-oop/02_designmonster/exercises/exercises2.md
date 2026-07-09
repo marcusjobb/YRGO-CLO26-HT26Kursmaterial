@@ -1,19 +1,3 @@
----
-
-title: Fler övningar på variabler
-author: Marcus Ackre Medina
-type: exercise
-topic: oop
-difficulty: 3
-language: csharp
-status: adapted
-marcus_voice: true
-source: "Old_courses/2025/csharp/Assignments/OOP/excersises/variables/exercises2.md"
-description: "Bakgrundshistoria:** Han Solo vill beräkna den genomsnittliga hastigheten han behöver för att slutföra Kessel Run på rekordtid. Hjälp honom att skapa variabler för sträckan och tiden det tar och räkna"
-tags: ["csharp", "exercise", "exercises2", "fler", "oop", "variabler", "visual-studio", "övningar"]
-week_fit: []
----
-
 # Fler övningar på variabler
 
 🔴

@@ -1,19 +1,3 @@
----
-
-title: Långbord (KISS)
-author: Marcus Ackre Medina
-type: exercise
-topic: clean-code
-difficulty: 1
-language: csharp
-status: adapted
-marcus_voice: true
-source: "exercises_to_spread_out/Långbord (KISS).md"
-description: "I den här övningen ska vi skapa titta på olika sätt att lösa ett problem på"
-tags: ["clean-code", "csharp", "exercise", "kiss", "långbord", "metoder", "problemlosning", "variabler"]
-week_fit: []
----
-
 # Långbord
 
 🟢

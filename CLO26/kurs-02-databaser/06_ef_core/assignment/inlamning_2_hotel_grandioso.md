@@ -1,15 +1,3 @@
----
-title: Inlämning 2 — Hotel Grandioso (EF Core)
-author: Marcus Ackre Medina
-type: assignment
-topic: databaser
-difficulty: 3
-language: csharp
-status: new
-marcus_voice: true
-tags: ["entity-framework", "ef-core", "databaser", "csharp", "crud", "linq", "individuell"]
----
-
 # Inlämning 2 — Hotel Grandioso
 
 **Individuell uppgift**

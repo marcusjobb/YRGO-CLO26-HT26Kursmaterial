@@ -1,19 +1,3 @@
----
-
-title: {Ditt namn} MongoDB inlämning
-author: Marcus Ackre Medina
-type: assignment
-topic: databaser
-difficulty: 1
-language: mixed
-status: adapted
-marcus_voice: true
-source: "Old_courses/2025/csharp/2_db/Assignments/Assignment_mongodb/samplereport.md"
-description: "Steg för steg genomgång av varje del av uppgiften. Skriv det här inne och exekvera på MongoDBShell."
-tags: ["databaser", "inlämning", "javascript", "mongodb", "namn}", "samplereport", "{ditt"]
-week_fit: []
----
-
 # {Ditt namn} MongoDB inlämning
 
 🟢

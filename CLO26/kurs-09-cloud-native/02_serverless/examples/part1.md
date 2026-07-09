@@ -1,19 +1,3 @@
----
-
-title: Molnbaserad E-commerce Integration - Del 1
-author: Marcus Ackre Medina
-type: example
-topic: cloud
-difficulty: 1
-language: python
-status: adapted
-marcus_voice: true
-source: "Old_courses/2025/java/8_cloud_integration/assignments/part1.md"
-description: "Skapa en molnbaserad integrationslösning bestående av **tre separata tjänster** som kommunicerar via både synkron och asynkron kommunikation. Systemet ska vara deployat på Microsoft Azure med automati"
-tags: ["cloud", "e-commerce", "git", "integration", "molnbaserad", "part1", "ssh", "visual-studio"]
-week_fit: []
----
-
 # Molnbaserad E-commerce Integration - Del 1
 
 🟢

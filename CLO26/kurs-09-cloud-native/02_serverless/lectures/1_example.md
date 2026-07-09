@@ -1,19 +1,3 @@
----
-
-title: Azure fundamentals och molnorganisation
-author: Marcus Ackre Medina
-type: lecture
-topic: cloud
-difficulty: 1
-language: mixed
-status: adapted
-marcus_voice: true
-source: "Old_courses/2025/java/8_cloud_integration/lectures/09_azure_functions_and_api_management/1_example.md"
-description: "RESOURCE_GROUP='UserService-Production"
-tags: ["azure", "cloud", "fundamentals", "installation", "molnorganisation", "python", "ssh", "visual-studio"]
-week_fit: []
----
-
 # Azure fundamentals och molnorganisation
 
 🟢

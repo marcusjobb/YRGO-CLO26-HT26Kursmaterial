@@ -1,18 +1,3 @@
----
-title: Git Flow – gruppövning
-author: Marcus Ackre Medina
-type: exercise
-topic: git
-difficulty: 1
-language: bash
-status: adapted
-marcus_voice: true
-source: "Old_courses/2025/csharp/Assignments/OOP/excersises/gitflow/gitflow1.md"
-description: "En grundläggande Git Flow-övning där ni jobbar i grupp med feature branches, pull requests och merge till dev och main."
-tags: ["bash", "git", "gitflow", "grupparbete", "pull-request"]
-week_fit: []
----
-
 # Git Flow – gruppövning
 
 🟢

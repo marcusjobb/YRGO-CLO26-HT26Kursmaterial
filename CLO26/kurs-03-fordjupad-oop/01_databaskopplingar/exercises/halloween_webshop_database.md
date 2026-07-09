@@ -1,19 +1,3 @@
----
-
-title: Gruppuppgift: Halloween Webshop Database Design
-author: Marcus Ackre Medina
-type: exercise
-topic: databaser
-difficulty: 3
-language: python
-status: adapted
-marcus_voice: true
-source: "Old_courses/2025/2_databases/exercises/groupassignment/halloween-webshop-database.md"
-description: "Tidsdag + kort presentation på onsdag"
-tags: ["database", "databaser", "design", "exercise", "git", "gruppuppgift:", "halloween", "ssh", "verktyg", "visual-studio"]
-week_fit: []
----
-
 # Gruppuppgift: Halloween Webshop Database Design
 
 🔴

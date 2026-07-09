@@ -1,19 +1,3 @@
----
-
-title: Exempel
-author: Marcus Ackre Medina
-type: example
-topic: api
-difficulty: 1
-language: mixed
-status: adapted
-marcus_voice: true
-source: "Old_courses/2025/java/5_api/10_api_documenting/03_example.md"
-description: "Testerna nedan är skrivna i Postman och testar ett användar-API med endpoints för att skapa, hämta, uppdatera och ta bort användare. Testerna är skrivna i JavaScript och använder Postman's inbyggda te"
-tags: ["api", "exempel", "javascript", "ssh", "verktyg"]
-week_fit: []
----
-
 # Exempel
 
 🟢

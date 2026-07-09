@@ -1,19 +1,3 @@
----
-
-title: AUTHENTICATION & AUTHORIZATION
-author: Marcus Ackre Medina
-type: lecture
-topic: auth
-difficulty: 3
-language: english
-status: adapted
-marcus_voice: true
-source: "Old_courses/Coud_Development_CLO25/presentations/auth-authzhtml.md"
-description: "Identity, Access, and ASP.NET Core"
-tags: ["auth", "authentication", "authorization", "authzhtml", "azure", "cloud", "dotnet", "git", "security"]
-week_fit: []
----
-
 ACD • Week 3
 
 # AUTHENTICATION & AUTHORIZATION

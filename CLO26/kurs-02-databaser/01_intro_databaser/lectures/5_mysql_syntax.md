@@ -1,19 +1,3 @@
----
-
-title: 5. Prepared Statements, Views och Indexering
-author: Marcus Ackre Medina
-type: lecture
-topic: databaser
-difficulty: 1
-language: mixed
-status: adapted
-marcus_voice: true
-source: "Old_courses/2025/csharp/2_db/lectures/04_db_mysql/5_mysql_syntax.md"
-description: "Hur kan vi använda Prepared Statements, Views och Indexering för att förbättra säkerhet, prestanda och dataåtkomst i MySQL-databaser?"
-tags: ["databaser", "indexering", "mysql", "prepared", "sql", "statements,", "syntax", "verktyg", "views"]
-week_fit: []
----
-
 # 5. Prepared Statements, Views och Indexering
 
 🟢

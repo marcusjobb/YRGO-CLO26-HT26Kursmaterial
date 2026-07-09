@@ -1,19 +1,3 @@
----
-
-title: Fort Knox Protocol - Live Coding Guide
-author: Marcus Ackre Medina
-type: lecture
-topic: databaser
-difficulty: 1
-language: mixed
-status: adapted
-marcus_voice: true
-source: "Old_courses/2025/2_databases/lectures/ef_core/part2_mysql_docker/lecture/02_security_backup_live.md"
-description: "Förutsättningar:** Fungerande Heroes-app på MySQL från igår"
-tags: ["backup", "bash", "coding", "databaser", "fort", "git", "installation", "knox", "live", "protocol"]
-week_fit: []
----
-
 # Fort Knox Protocol - Live Coding Guide
 
 🟢

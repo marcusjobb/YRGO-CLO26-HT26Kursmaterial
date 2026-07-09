@@ -1,18 +1,3 @@
----
-
-title: Tdd Övningar, Crush Kill Destroy!
-author: Marcus Ackre Medina
-type: exercise
-topic: testing
-difficulty: 1
-language: csharp
-status: adapted
-marcus_voice: true
-source: "Old_courses/Material från Codic/C#/Övningar/TDD/TDD övningar, Crush Kill Destroy!.docx"
-description: "TDD övningar, Crush Kill Destroy!"
-tags: ["crush", "csharp", "destroy!.docx", "exercise", "kill", "oop", "tdd", "test", "testing", "övningar"]
-week_fit: []
----
 TDD övningar, Crush Kill Destroy!
 Skapa metoder och testa sönder dem
 Metod

@@ -1,18 +1,3 @@
----
-
-title: 2010 03 23 Extensions
-author: Marcus Ackre Medina
-type: exercise
-topic: oop
-difficulty: 1
-language: csharp
-status: adapted
-marcus_voice: true
-source: "Old_courses/Material från Codic/C#/Övningar/Extensions/2010-03-23 Extensions.pdf"
-description: "Kluriga kodsnuttar för kreativa kodare"
-tags: ["csharp", "exercise", "extensions.pdf", "oop"]
-week_fit: []
----
 Kluriga kodsnuttar för kreativa kodare
 Extensions
 

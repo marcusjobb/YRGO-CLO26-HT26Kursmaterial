@@ -1,19 +1,3 @@
----
-
-title: Exempel på Pluginsystem med interfaces
-author: Marcus Ackre Medina
-type: article
-topic: oop
-difficulty: 2
-language: csharp
-status: adapted
-marcus_voice: true
-source: "Old_courses/books/CLO22/Docs/oop/polymorfism/interfaces/plugins.md"
-description: "Jag har skapat en artikel baserad på den givna mallen. Här är den:"
-tags: ["csharp", "exempel", "git", "interfaces", "oop", "plugins", "pluginsystem"]
-week_fit: []
----
-
 Jag har skapat en artikel baserad på den givna mallen. Här är den:
 
 # Exempel på Pluginsystem med interfaces

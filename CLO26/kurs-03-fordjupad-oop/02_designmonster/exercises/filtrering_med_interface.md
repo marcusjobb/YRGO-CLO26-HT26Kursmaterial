@@ -1,19 +1,3 @@
----
-
-title: Filtrering med interface
-author: Marcus Ackre Medina
-type: exercise
-topic: oop
-difficulty: 2
-language: csharp
-status: adapted
-marcus_voice: true
-source: "exercises_to_spread_out/Filtrering med interface.md"
-description: "I den här övningen ska vi skapa ett projekt med interfaces för att hitta gemensamma nämnare mellan klasserna."
-tags: ["beskrivning:", "csharp", "exercise", "filtrering", "generics", "interface", "lista", "oop", "polymorfism"]
-week_fit: []
----
-
 | Mer om interfaces |
 | --- |
 

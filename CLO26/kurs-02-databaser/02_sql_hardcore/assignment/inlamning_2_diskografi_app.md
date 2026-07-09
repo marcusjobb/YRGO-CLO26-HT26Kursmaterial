@@ -1,15 +1,3 @@
----
-title: Inlämning 2 — Din diskografi som app (SQLite + Facade)
-author: Marcus Ackre Medina
-type: assignment
-topic: databaser
-difficulty: 3
-language: csharp
-status: new
-marcus_voice: true
-tags: ["sqlite", "csharp", "facade", "databaser", "console", "crud", "individuell"]
----
-
 # Inlämning 2 — Din diskografi som app
 
 **Individuell uppgift**

@@ -1,19 +1,3 @@
----
-
-title: Monster Costume Emporium – Från ADO.NET till Entity Framework 🎃
-author: Marcus Ackre Medina
-type: assignment
-topic: projekt
-difficulty: 1
-language: bash
-status: adapted
-marcus_voice: true
-source: "Old_courses/2025/2_databases/assignment/part_2/monster_costume_emporium.md"
-description: "Systrarna Hexwell i Shadow Hollow behöver din hjälp igen! Den här gången får du ta över en färdig konsolapplikation byggd med **ADO.NET** och **SQLite**. Din uppgift är att förstå hur allt hänger ihop"
-tags: ["ado.net", "bash", "costume", "emporium", "entity", "framework", "från", "git", "monster", "projekt"]
-week_fit: []
----
-
 # Monster Costume Emporium – Från ADO.NET till Entity Framework 🎃
 
 🟢

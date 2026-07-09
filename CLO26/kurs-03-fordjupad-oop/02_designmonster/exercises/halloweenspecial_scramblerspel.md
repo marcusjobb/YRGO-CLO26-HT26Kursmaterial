@@ -1,19 +1,3 @@
----
-
-title: Halloweenspecial - Scramblerspel
-author: Marcus Ackre Medina
-type: exercise
-topic: oop
-difficulty: 3
-language: csharp
-status: adapted
-marcus_voice: true
-source: "exercises_to_spread_out/Halloweenspecial - Scramblerspel.md"
-description: "| Scrambler – blandade bokstäver |  |"
-tags: ["beskrivning:", "csharp", "exercise", "halloween", "klasser", "metoder", "oop", "spel", "string", "swap"]
-week_fit: []
----
-
 | Scrambler – blandade bokstäver |  |
 | --- | --- |
 

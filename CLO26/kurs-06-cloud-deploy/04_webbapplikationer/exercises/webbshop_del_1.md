@@ -1,19 +1,3 @@
----
-
-title: Webbshop, del 1
-author: Marcus Ackre Medina
-type: exercise
-topic: api
-difficulty: 1
-language: python
-status: adapted
-marcus_voice: true
-source: "/home/nionit/git/marcus-yh-claude-assistent/reference/exercises_to_spread_out/Webbshop, del 1.md"
-description: "En webbbutik där vi förmedlar handel av tekniska varor och tjänster, där våra kunder är privatpersoner och inte företag som det vanligen är."
-tags: ["api", "exercise", "oop", "webbshop"]
-week_fit: []
----
-
 1.2
 
 

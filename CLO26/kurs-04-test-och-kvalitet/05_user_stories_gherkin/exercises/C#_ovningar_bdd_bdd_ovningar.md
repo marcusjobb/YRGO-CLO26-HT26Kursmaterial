@@ -1,18 +1,3 @@
----
-
-title: Bdd Övningar
-author: Marcus Ackre Medina
-type: exercise
-topic: testing
-difficulty: 1
-language: csharp
-status: adapted
-marcus_voice: true
-source: "Old_courses/Material från Codic/C#/Övningar/BDD/BDD Övningar.docx"
-description: "Här ska du skapa testscenarios, ingen kod behövs."
-tags: ["bdd", "csharp", "exercise", "test", "testing", "övningar.docx"]
-week_fit: []
----
 BDD Övningar
 Gör uppgifterna gärna i grupp.
 Här ska du skapa testscenarios, ingen kod behövs.

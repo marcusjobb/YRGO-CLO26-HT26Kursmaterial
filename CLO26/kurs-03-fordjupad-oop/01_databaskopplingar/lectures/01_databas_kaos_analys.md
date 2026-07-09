@@ -1,19 +1,3 @@
----
-
-title: Databas-Kaos: Analysera Dålig Design
-author: Marcus Ackre Medina
-type: lecture
-topic: databaser
-difficulty: 1
-language: sql
-status: adapted
-marcus_voice: true
-source: "Old_courses/2025/2_databases/lectures/01_databas_kaos_analys.md"
-description: "- Identifiera symptom på dålig databasdesign"
-tags: ["analys", "analysera", "databas", "databas-kaos:", "databaser", "design", "dålig", "kaos", "sql", "ssh"]
-week_fit: []
----
-
 # Databas-Kaos: Analysera Dålig Design
 
 🟢

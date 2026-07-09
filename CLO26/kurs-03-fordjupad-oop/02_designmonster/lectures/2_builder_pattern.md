@@ -1,19 +1,3 @@
----
-
-title: 2. Builder-mönstret
-author: Marcus Ackre Medina
-type: lecture
-topic: oop
-difficulty: 1
-language: csharp
-status: adapted
-marcus_voice: true
-source: "Old_courses/2025/csharp/1_oop/lectures/08_design_patterns/2_builder_pattern.md"
-description: "- **Introduktion:** Builder-mönstret är ett skapandemönster som används för att konstruera komplexa objekt steg för"
-tags: ["builder", "builder-mönstret", "csharp", "oop", "pattern", "visual-studio"]
-week_fit: []
----
-
 # 2. Builder-mönstret
 
 🟢

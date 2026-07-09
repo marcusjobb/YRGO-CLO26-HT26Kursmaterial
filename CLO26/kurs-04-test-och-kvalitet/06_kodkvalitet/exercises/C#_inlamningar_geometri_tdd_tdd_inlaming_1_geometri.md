@@ -1,18 +1,3 @@
----
-
-title: Tdd Inläming 1 Geometri
-author: Marcus Ackre Medina
-type: exercise
-topic: testing
-difficulty: 3
-language: csharp
-status: adapted
-marcus_voice: true
-source: "Old_courses/Material från Codic/C#/Inlämningar/Geometri (TDD)/TDD Inläming 1 - Geometri.docx"
-description: "För att riktigt komma in i TDD tänkandet ska vi göra en återblick i högstadiets och gymnasiets geometri."
-tags: ["csharp", "exercise", "geometri.docx", "inläming", "oop", "tdd", "test", "testing"]
-week_fit: []
----
 TDD Inläming 1
 För att riktigt komma in i TDD tänkandet ska vi göra en återblick i högstadiets och gymnasiets geometri.
 Uppgiften är alltså att skapa en enkel Facadeklass som ska kunna räkna ut arean och omkretsen.

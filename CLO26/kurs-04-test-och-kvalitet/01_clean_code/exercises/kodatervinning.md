@@ -1,19 +1,3 @@
----
-
-title: Kodåtervinning – förbättra och publicera gamla projekt
-author: Marcus Ackre Medina
-type: exercise
-topic: clean-code
-difficulty: 2
-language: csharp
-status: adapted
-marcus_voice: true
-source: "exercises_to_spread_out/Kodåtervinning.md"
-description: "Inspirationsuppgifter för kommande veckor"
-tags: ["clean-code", "csharp", "dll", "exercise", "github", "kodåtervinning!", "kommentarer", "optimering", "refaktorering", "tester"]
-week_fit: []
----
-
 # Kodåtervinning!
 
 🟡

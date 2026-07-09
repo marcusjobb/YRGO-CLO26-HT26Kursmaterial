@@ -1,19 +1,3 @@
----
-
-title: Dictionary övning lätt
-author: Marcus Ackre Medina
-type: exercise
-topic: datastrukturer
-difficulty: 1
-language: csharp
-status: adapted
-marcus_voice: true
-source: "reference/exercises_to_spread_out/Dictionary övning lätt.md"
-description: "| Dictionary<Lätt,Övning> | 16 september 2021 |"
-tags: ["csharp", "cv", "datastrukturer", "dictionary", "exercise", "foreach", "konsol", "sorteddictionary"]
-week_fit: []
----
-
 | Dictionary<Lätt,Övning> | 16 september 2021 |
 | --- | --- |
 

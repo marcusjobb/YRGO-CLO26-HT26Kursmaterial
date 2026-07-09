@@ -1,19 +1,3 @@
----
-
-title: 1. Portal Interface
-author: Marcus Ackre Medina
-type: exercise
-topic: cloud
-difficulty: 2
-language: english
-status: adapted
-marcus_voice: true
-source: "Old_courses/Coud_Development_CLO25/exercises/5-cloud-databases/1-portal-interface.md"
-description: "Getting StartedWeek by WeekIntro To Cloud DevelopmentInfrastructure FundamentalsExercises-"
-tags: ["azure", "cloud", "docker", "exercise", "iac", "interface", "networking", "portal"]
-week_fit: []
----
-
 Navigation :
 Getting StartedWeek by WeekIntro To Cloud DevelopmentInfrastructure FundamentalsExercises-
 Server Foundation-

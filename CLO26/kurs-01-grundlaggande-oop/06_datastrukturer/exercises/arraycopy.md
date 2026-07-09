@@ -1,19 +1,3 @@
----
-
-title: Plocka ut en del av en array och skapa en ny array av det.
-author: Marcus Ackre Medina
-type: exercise
-topic: datastrukturer
-difficulty: 1
-language: csharp
-status: adapted
-marcus_voice: true
-source: "Old_courses/2025/arrays/exercises/arrayCopy.md"
-description: "I denna övning ska vi skapa en array med 10 heltal och sedan plocka ut de fem första talen från den ursprungliga arrayen för att skapa en ny array."
-tags: ["array", "arraycopy", "csharp", "datastrukturer", "det.", "exercise", "plocka", "skapa", "visual-studio"]
-week_fit: []
----
-
 # Plocka ut en del av en array och skapa en ny array av det.
 
 🟢

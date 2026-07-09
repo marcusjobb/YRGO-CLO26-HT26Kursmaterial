@@ -1,18 +1,3 @@
----
-
-title: Events Och Delegates
-author: Marcus Ackre Medina
-type: exercise
-topic: oop
-difficulty: 1
-language: csharp
-status: adapted
-marcus_voice: true
-source: "Old_courses/Material från Codic/C#/Övningar/Events och Delegates/Events och Delegates.docx"
-description: "Plötsligt händer det, som de säger…"
-tags: ["csharp", "delegates.docx", "events", "exercise", "oop", "sql", "test"]
-week_fit: []
----
 Events
 Plötsligt händer det, som de säger…
 

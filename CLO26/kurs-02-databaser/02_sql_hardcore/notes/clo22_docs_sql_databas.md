@@ -1,19 +1,3 @@
----
-
-title: Databas
-author: Marcus Ackre Medina
-type: article
-topic: sql
-difficulty: 1
-language: csharp
-status: adapted
-marcus_voice: true
-source: "Old_courses/books/CLO22/Docs/sql/Databas.md"
-description: "<details open markdown='block'>"
-tags: ["csharp", "databas", "git", "sql"]
-week_fit: []
----
-
 Databaser
 
 <details open markdown="block">

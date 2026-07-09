@@ -1,19 +1,3 @@
----
-
-title: Lagrade procedurer i MySQL för .NET-utvecklare (45 min)
-author: Marcus Ackre Medina
-type: lecture
-topic: databaser
-difficulty: 1
-language: mixed
-status: adapted
-marcus_voice: true
-source: "Old_courses/2025/csharp/2_db/lectures/05_db_mysql_advanced/3_stored_procedures.md"
-description: "Övergripande frågeställning: Hur kan vi använda lagrade procedurer för att förbättra databashantering, prestanda och säkerhet i MySQL när vi arbetar med .NET-applikationer?"
-tags: [".net-utvecklare", "databaser", "lagrade", "min)", "mysql", "procedurer", "procedures", "sql", "stored"]
-week_fit: []
----
-
 # Lagrade procedurer i MySQL för .NET-utvecklare (45 min)
 
 🟢

@@ -1,19 +1,3 @@
----
-
-title: Pre-Flight Checklist: Förbered din EF Core-miljö
-author: Marcus Ackre Medina
-type: exercise
-topic: databaser
-difficulty: 1
-language: mixed
-status: adapted
-marcus_voice: true
-source: "Old_courses/2025/2_databases/exercises/ef/03_01_pre_flight_checklist.md"
-description: "- `Microsoft.EntityFrameworkCore`"
-tags: ["checklist", "checklist:", "core-miljö", "csharp", "databaser", "exercise", "flight", "förbered", "installation", "pre"]
-week_fit: []
----
-
 # Pre-Flight Checklist: Förbered din EF Core-miljö
 
 🟢

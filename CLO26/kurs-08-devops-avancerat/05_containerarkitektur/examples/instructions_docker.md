@@ -1,19 +1,3 @@
----
-
-title: Dockerisera Spring Boot Calculator-applikation med Maven och Multistage-build
-author: Marcus Ackre Medina
-type: example
-topic: integration
-difficulty: 1
-language: bash
-status: adapted
-marcus_voice: true
-source: "Old_courses/2025/java/7_system_integration/05_docker_compose/projects/5_cat_api/cat_api/instructions_docker.md"
-description: "Skapa en fil med namnet `Dockerfile` i roten av ditt projekt med följande innehåll:"
-tags: ["bash", "boot", "calculator-applikation", "docker", "dockerisera", "instructions", "integration", "maven", "multistage-build", "spring"]
-week_fit: []
----
-
 # Dockerisera Spring Boot Calculator-applikation med Maven och Multistage-build
 
 🟢

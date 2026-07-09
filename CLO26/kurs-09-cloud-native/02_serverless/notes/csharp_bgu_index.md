@@ -1,19 +1,3 @@
----
-
-title: Välkommen till BFU för C#
-author: Marcus Ackre Medina
-type: article
-topic: cloud
-difficulty: 1
-language: csharp
-status: adapted
-marcus_voice: true
-source: "Old_courses/books/csharp_bgu/index.md"
-description: "<p>Här börjar din resa in i programmeringens värld med fokus på C# och objektorienterad programmering.</p>"
-tags: ["cloud", "csharp", "oop"]
-week_fit: []
----
-
 <p><b>Hej!</b></p>
 <p>Här börjar din resa in i programmeringens värld med fokus på C# och objektorienterad programmering.</p>
 

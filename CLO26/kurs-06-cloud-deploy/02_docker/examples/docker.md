@@ -1,19 +1,3 @@
----
-
-title: Installera MySQL och phpMyAdmin med Docker
-author: Marcus Ackre Medina
-type: example
-topic: docker
-difficulty: 1
-language: mixed
-status: adapted
-marcus_voice: true
-source: "Old_courses/2025/java/DAKVS/information/mysql/docker.md"
-description: "Målet är att installera **MySQL** och **phpMyAdmin** på en lokal Docker-miljö. Vi kommer att skapa ett internt nätverk i Docker där phpMyAdmin kan ansluta till MySQL-servern. Vi ska använda standard `"
-tags: ["bash", "docker", "git", "installation", "installera", "mysql", "phpmyadmin", "verktyg", "visual-studio"]
-week_fit: []
----
-
 # Installera MySQL och phpMyAdmin med Docker
 
 🟢

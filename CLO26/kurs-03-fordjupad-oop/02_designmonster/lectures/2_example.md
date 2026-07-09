@@ -1,19 +1,3 @@
----
-
-title: 2. Repository Pattern Implementation
-author: Marcus Ackre Medina
-type: lecture
-topic: oop
-difficulty: 1
-language: csharp
-status: adapted
-marcus_voice: true
-source: "Old_courses/2025/csharp/3_oop_adv/lectures/05_mysql_integration/2_example.md"
-description: "// Example 1: Order Management System using Repository Pattern"
-tags: ["csharp", "implementation", "oop", "pattern", "repository", "visual-studio"]
-week_fit: []
----
-
 # 2. Repository Pattern Implementation
 
 🟢

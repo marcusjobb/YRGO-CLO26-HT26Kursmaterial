@@ -1,19 +1,3 @@
----
-
-title: Plugins
-author: Marcus Ackre Medina
-type: article
-topic: oop
-difficulty: 2
-language: csharp
-status: adapted
-marcus_voice: true
-source: "Old_courses/books/devbook/Docs/csharp/oop/polymorfism/interfaces/plugins.md"
-description: "Ett pluginsystem för att lägga till nya funktioner till en applikation."
-tags: ["csharp", "git", "oop", "plugins"]
-week_fit: []
----
-
 # Plugins
 
 🟡

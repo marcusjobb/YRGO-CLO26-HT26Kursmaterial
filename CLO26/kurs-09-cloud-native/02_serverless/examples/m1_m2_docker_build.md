@@ -1,19 +1,3 @@
----
-
-title: Docker Cross-Platform Build Guide
-author: Marcus Ackre Medina
-type: example
-topic: cloud
-difficulty: 1
-language: bash
-status: adapted
-marcus_voice: true
-source: "Old_courses/2025/java/8_cloud_integration/lectures/15_demo_azure_devops/docs/m1-m2-docker-build.md"
-description: "- M1/M2 Macs har ARM64 (Apple Silicon) arkitektur"
-tags: ["bash", "build", "cloud", "cross-platform", "docker", "git", "installation", "visual-studio"]
-week_fit: []
----
-
 # Docker Cross-Platform Build Guide
 
 🟢

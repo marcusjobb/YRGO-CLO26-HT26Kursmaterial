@@ -1,19 +1,3 @@
----
-
-title: Containerize CloudSoft Recruitment
-author: Marcus Ackre Medina
-type: exercise
-topic: cloud
-difficulty: 2
-language: english
-status: adapted
-marcus_voice: true
-source: "Old_courses/Coud_Development_CLO25/exercises/20-docker/3-containerize-cloudsoft-recruitment.md"
-description: "Getting StartedWeek by WeekIntro To Cloud DevelopmentInfrastructure FundamentalsExercises-"
-tags: ["cloud", "cloudsoft", "containerize", "docker", "dotnet", "exercise", "git", "networking", "recruitment", "security"]
-week_fit: []
----
-
 Navigation :
 Getting StartedWeek by WeekIntro To Cloud DevelopmentInfrastructure FundamentalsExercises-
 Server Foundation-

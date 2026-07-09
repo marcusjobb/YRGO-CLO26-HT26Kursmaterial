@@ -1,19 +1,3 @@
----
-
-title: Bilagor
-author: Marcus Ackre Medina
-type: article
-topic: databaser
-difficulty: 1
-language: csharp
-status: adapted
-marcus_voice: true
-source: "Old_courses/books/csharp_cmyh/C-Sharp/databases/brief/bilagor.md"
-description: "docker logs -f <container_name>"
-tags: ["asp.net", "bilagor", "csharp", "databaser", "design-patterns", "entity-framework", "git", "oop", "sql"]
-week_fit: []
----
-
 # Bilagor
 
 🟢

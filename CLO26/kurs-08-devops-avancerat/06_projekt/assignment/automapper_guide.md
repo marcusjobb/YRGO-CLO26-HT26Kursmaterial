@@ -1,19 +1,3 @@
----
-
-title: 🗺️ AutoMapper - En Snäll Guide
-author: Marcus Ackre Medina
-type: assignment
-topic: projekt
-difficulty: 1
-language: mixed
-status: adapted
-marcus_voice: true
-source: "Old_courses/2025/4_test_and_quality_assurance/assignment/articles/automapper_guide.md"
-description: "Varför och hur man använder AutoMapper i API:er"
-tags: ["automapper", "csharp", "installation", "projekt", "snäll", "ssh", "visual-studio"]
-week_fit: []
----
-
 # 🗺️ AutoMapper - En Snäll Guide
 
 🟢

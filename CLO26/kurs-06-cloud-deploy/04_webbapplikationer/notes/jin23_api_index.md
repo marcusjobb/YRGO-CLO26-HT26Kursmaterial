@@ -1,19 +1,3 @@
----
-
-title: API
-author: Marcus Ackre Medina
-type: article
-topic: api
-difficulty: 1
-language: java
-status: adapted
-marcus_voice: true
-source: "Old_courses/books/JIN23/api/index.md"
-description: "Välkommen till denna spännande artikel där vi kommer att utforska Application Programming Interface (API), ett viktigt gränssnitt som underlättar kommunikationen med webbapplikationer."
-tags: ["api", "design-patterns", "git", "java", "oop"]
-week_fit: []
----
-
 # API
 
 🟢

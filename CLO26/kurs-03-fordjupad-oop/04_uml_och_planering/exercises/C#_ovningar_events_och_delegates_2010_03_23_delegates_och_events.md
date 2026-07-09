@@ -1,18 +1,3 @@
----
-
-title: 2010 03 23 Delegates Och Events
-author: Marcus Ackre Medina
-type: exercise
-topic: oop
-difficulty: 1
-language: csharp
-status: adapted
-marcus_voice: true
-source: "Old_courses/Material från Codic/C#/Övningar/Events och Delegates/2010-03-23 Delegates och Events.pdf"
-description: "Kluriga kodsnuttar för kreativa kodare"
-tags: ["csharp", "delegates", "events.pdf", "exercise", "oop"]
-week_fit: []
----
 Kluriga kodsnuttar för kreativa kodare
 Delegates och events
 

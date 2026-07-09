@@ -1,19 +1,3 @@
----
-
-title: Inlämningsuppgift 3 – Jeopardyprogrammet (gruppuppgift)
-author: Marcus Ackre Medina
-type: assignment
-topic: oop
-difficulty: 2
-language: csharp
-status: adapted
-marcus_voice: true
-source: "exercises_to_spread_out/Inlämningsuppgift 3.md"
-description: "- Kunna planera, designa och implementera gränssnitt utifrån användaren."
-tags: ["arv", "csharp", "filhantering", "git", "gruppuppgift", "oop", "try-catch", "tsv"]
-week_fit: []
----
-
 Täckta kursplansmål:
 
 - Kunna planera, designa och implementera gränssnitt utifrån användaren.

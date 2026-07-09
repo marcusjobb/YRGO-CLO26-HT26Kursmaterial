@@ -1,19 +1,3 @@
----
-
-title: 3. Grundläggande CRUD-operationer i LocalDB och SQLite (45 min)
-author: Marcus Ackre Medina
-type: lecture
-topic: databaser
-difficulty: 3
-language: sql
-status: adapted
-marcus_voice: true
-source: "Old_courses/2025/csharp/2_db/lectures/03_db_h2/3_h2_crud.md"
-description: "Hur kan vi effektivt utföra och optimera grundläggande databasoperationer (CRUD) i LocalDB och SQLite, och vilka unika funktioner erbjuder dessa databaser för att förbättra dessa operationer i .NET-mi"
-tags: ["crud", "crud-operationer", "databaser", "git", "grundläggande", "localdb", "min)", "sql", "sqlite", "ssh"]
-week_fit: []
----
-
 # 3. Grundläggande CRUD-operationer i LocalDB och SQLite (45 min)
 
 🔴

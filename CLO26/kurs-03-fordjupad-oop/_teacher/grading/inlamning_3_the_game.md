@@ -1,19 +1,3 @@
----
-
-title: Inlämning 3 - The Game
-author: Marcus Ackre Medina
-type: exam
-topic: oop
-difficulty: 3
-language: csharp
-status: adapted
-marcus_voice: true
-source: "reference/exercises_to_spread_out/Inlämning 3 - The game.md"
-description: "I den här labben ska ni skapa ett enkelt textbaserat spel, som går ut på att döda monster och få experience points, tills man når level 10 då spelet avslutas."
-tags: ["arv", "csharp", "git", "inheritance", "inlämning", "klasser", "oop", "shop", "spel", "textbaserat"]
-week_fit: []
----
-
 # Inlämning 3
 
 🔴

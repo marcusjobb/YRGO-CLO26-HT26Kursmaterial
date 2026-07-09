@@ -1,19 +1,3 @@
----
-
-title: 3. SonarQube och kodtäckning med dotCover
-author: Marcus Ackre Medina
-type: lecture
-topic: testing
-difficulty: 1
-language: csharp
-status: adapted
-marcus_voice: true
-source: "Old_courses/2025/csharp/4_test/lectures/10_static_code_analysis_and_code_quality_tools/3_exercises.md"
-description: "SonarQube och dotCover övningsuppgifter"
-tags: ["csharp", "dotcover", "installation", "kodtäckning", "sonarqube", "testing", "visual-studio"]
-week_fit: []
----
-
 # 3. SonarQube och kodtäckning med dotCover
 
 🟢

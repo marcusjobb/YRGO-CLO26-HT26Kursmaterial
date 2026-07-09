@@ -1,19 +1,3 @@
----
-
-title: Clone Studiemarerial
-author: Marcus Ackre Medina
-type: exercise
-topic: git
-difficulty: 1
-language: bash
-status: adapted
-marcus_voice: true
-source: "Old_courses/2025/0_installation/install_git/exercises/clone_studiematerial.md"
-description: "Surfa till https://github.com/Campus-Molndal-CLO25/Studiematerial"
-tags: ["clone", "exercise", "git", "studiemarerial", "studiematerial"]
-week_fit: []
----
-
 # Clone Studiemarerial
 
 🟢

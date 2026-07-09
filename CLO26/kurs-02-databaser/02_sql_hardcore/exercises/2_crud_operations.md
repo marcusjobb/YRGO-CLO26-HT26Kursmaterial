@@ -1,19 +1,3 @@
----
-
-title: Övning: CRUD - Skapa, Läsa, Uppdatera, Ta bort 📝
-author: Marcus Ackre Medina
-type: exercise
-topic: databaser
-difficulty: 1
-language: csharp
-status: adapted
-marcus_voice: true
-source: "Old_courses/2025/2_databases/exercises/ado/2_crud_operations.md"
-description: "Nu ska vi lära oss de fyra grundläggande operationerna som alla databasapplikationer behöver:"
-tags: ["bort", "crud", "csharp", "databaser", "exercise", "läsa,", "operations", "skapa,", "ssh", "uppdatera,"]
-week_fit: []
----
-
 # Övning: CRUD - Skapa, Läsa, Uppdatera, Ta bort 📝
 
 🟢

@@ -1,18 +1,3 @@
----
-
-title: Git Övningar
-author: Marcus Ackre Medina
-type: exercise
-topic: git
-difficulty: 1
-language: python
-status: adapted
-marcus_voice: true
-source: "Old_courses/Material från Codic/Git/Övningar/Git övningar.docx"
-description: "1. Skapa ett nytt repo på Github"
-tags: ["exercise", "git", "övningar.docx"]
-week_fit: []
----
 Git övningar
 1. Skapa ett nytt repo på Github
 2. Skapa ett lokalt repo på din dator med samma namn. ex git init

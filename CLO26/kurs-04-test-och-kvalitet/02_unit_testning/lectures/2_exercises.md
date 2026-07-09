@@ -1,19 +1,3 @@
----
-
-title: 2. Mutation testing: Koncept och tillämpning
-author: Marcus Ackre Medina
-type: lecture
-topic: testing
-difficulty: 1
-language: csharp
-status: adapted
-marcus_voice: true
-source: "Old_courses/2025/csharp/4_test/lectures/09_mutation_testing_and_property_based_testing/2_exercises.md"
-description: "Mutation testing övningsuppgifter"
-tags: ["csharp", "koncept", "mutation", "testing", "testing:", "tillämpning", "visual-studio"]
-week_fit: []
----
-
 # 2. Mutation testing: Koncept och tillämpning
 
 🟢

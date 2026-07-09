@@ -1,19 +1,3 @@
----
-
-title: ![bg left:40%](https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg)
-author: Marcus Ackre Medina
-type: lecture
-topic: databaser
-difficulty: 1
-language: sql
-status: adapted
-marcus_voice: true
-source: "Old_courses/2025/2_databases/lectures/crud/databaser_crud_marp.md"
-description: "Tänk er ett bibliotek med perfekt ordning:"
-tags: ["![bg", "crud", "databaser", "installation", "left:40%](https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg)", "marp", "rider", "sql", "ssh", "verktyg"]
-week_fit: []
----
-
 # ![bg left:40%](https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg)
 
 🟢

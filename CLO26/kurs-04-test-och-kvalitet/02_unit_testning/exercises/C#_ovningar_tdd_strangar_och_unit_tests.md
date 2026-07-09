@@ -1,18 +1,3 @@
----
-
-title: Strängar Och Unit Tests
-author: Marcus Ackre Medina
-type: exercise
-topic: testing
-difficulty: 1
-language: csharp
-status: adapted
-marcus_voice: true
-source: "Old_courses/Material från Codic/C#/Övningar/TDD/Strängar och Unit tests.docx"
-description: "Vi ska skapa några metoder och testa vad som kan gå fel"
-tags: ["csharp", "exercise", "oop", "strängar", "test", "testing", "tests.docx", "unit"]
-week_fit: []
----
 Fredagsuppdrag
 Vi ska skapa några metoder och testa vad som kan gå fel
 

@@ -1,19 +1,3 @@
----
-
-title: Git Workflow Övningar 🔄
-author: Marcus Ackre Medina
-type: exercise
-topic: git
-difficulty: 3
-language: bash
-status: adapted
-marcus_voice: true
-source: "Old_courses/2025/git/exercises/git-exercises.md"
-description: "Följ instruktionerna nedan för att skapa ditt första Git repository och genomföra den grundläggande Git-ritualen."
-tags: ["bash", "exercise", "git", "installation", "visual-studio", "workflow", "övningar"]
-week_fit: []
----
-
 # Git Workflow Övningar 🔄
 
 🔴

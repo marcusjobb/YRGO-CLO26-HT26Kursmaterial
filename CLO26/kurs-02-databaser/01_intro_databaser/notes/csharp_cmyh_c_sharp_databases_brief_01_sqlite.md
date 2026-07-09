@@ -1,19 +1,3 @@
----
-
-title: Kapitel 1 – SQLite: din första filbaserade databas
-author: Marcus Ackre Medina
-type: article
-topic: databaser
-difficulty: 1
-language: csharp
-status: adapted
-marcus_voice: true
-source: "Old_courses/books/csharp_cmyh/C-Sharp/databases/brief/01_sqlite.md"
-description: "SQLite är en **filbaserad relationsdatabas** – hela databasen lagras i en enda fil (`.db` eller `.sqlite`)."
-tags: ["csharp", "databas", "databaser", "design-patterns", "entity-framework", "filbaserade", "första", "git", "kapitel", "oop"]
-week_fit: []
----
-
 # Kapitel 1 – SQLite: din första filbaserade databas
 
 🟢

@@ -1,18 +1,3 @@
----
-
-title: Lösningsförslag Lektion 7
-author: Marcus Ackre Medina
-type: exercise
-topic: databaser
-difficulty: 3
-language: sql
-status: adapted
-marcus_voice: true
-source: "Old_courses/Material från Codic/SQL/Övningar/Lösningsförslag - Lektion 7.sql"
-description: "/* 1. Välj alla kolumner från employees som heter Markovitch i efternamn och"
-tags: ["7.sql", "databaser", "exercise", "full", "join", "lektion", "lösningsförslag", "outer", "sql", "test"]
-week_fit: []
----
 ```sql
 USE employees;
 

@@ -1,19 +1,3 @@
----
-
-title: 1. Introduktion till Testdriven utveckling (TDD)
-author: Marcus Ackre Medina
-type: lecture
-topic: testing
-difficulty: 3
-language: java
-status: adapted
-marcus_voice: true
-source: "Old_courses/2025/csharp/4_test/lectures/03_tdd/1_introduktion_till_testdriven_utveckling_tdd.md"
-description: "Tänk dig att du är en utvecklare som just har avslutat ett stort projekt. Koden fungerar, men det är svårt att göra ändringar utan att något går sönder. Varje gång du fixar en bugg, dyker två nya upp."
-tags: ["(tdd)", "java", "tdd", "testdriven", "testing", "till", "verktyg", "visual-studio"]
-week_fit: []
----
-
 # 1. Introduktion till Testdriven utveckling (TDD)
 
 🔴

@@ -1,19 +1,3 @@
----
-
-title: 1. Deploy HTML with SCP
-author: Marcus Ackre Medina
-type: exercise
-topic: deployment
-difficulty: 3
-language: english
-status: adapted
-marcus_voice: true
-source: "Old_courses/Coud_Development_CLO25/exercises/3-deployment/1-deploy-html-with-scp.md"
-description: "Getting StartedWeek by WeekIntro To Cloud DevelopmentInfrastructure FundamentalsExercises-"
-tags: ["azure", "cloud", "deploy", "deployment", "devops", "docker", "dotnet", "exercise", "git", "html"]
-week_fit: []
----
-
 Navigation :
 Getting StartedWeek by WeekIntro To Cloud DevelopmentInfrastructure FundamentalsExercises-
 Server Foundation-

@@ -1,19 +1,3 @@
----
-
-title: 2. Repository Pattern Implementation
-author: Marcus Ackre Medina
-type: lecture
-topic: oop
-difficulty: 1
-language: text
-status: adapted
-marcus_voice: true
-source: "Old_courses/2025/csharp/3_oop_adv/lectures/05_mysql_integration/2_quiz.md"
-description: "1. Vad är huvudsyftet med Repository Pattern?"
-tags: ["implementation", "oop", "pattern", "quiz", "repository", "visual-studio"]
-week_fit: []
----
-
 # 2. Repository Pattern Implementation
 
 🟢

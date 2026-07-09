@@ -1,19 +1,3 @@
----
-
-title: Workshop: Rädda Kaos-Databasen
-author: Marcus Ackre Medina
-type: exercise
-topic: databaser
-difficulty: 1
-language: sql
-status: adapted
-marcus_voice: true
-source: "Old_courses/2025/2_databases/exercises/01_radda_kaos_databasen.md"
-description: "Ni har blivit anlitade som databaskonsulter för att rädda en webbshops databas som är på gränsen till kollaps. Den ursprungliga utvecklaren är borta och databasen har växt vild med dålig design som nu"
-tags: ["databasen", "databaser", "exercise", "kaos", "kaos-databasen", "radda", "rädda", "sql", "ssh", "visual-studio"]
-week_fit: []
----
-
 # Workshop: Rädda Kaos-Databasen
 
 🟢

@@ -1,18 +1,3 @@
----
-
-title: Global närvaro — molnet finns överallt
-author: Marcus Ackre Medina
-type: lecture
-topic: cloud
-difficulty: 1
-language: swedish
-status: adapted
-marcus_voice: true
-source: "Old_courses/Coud_Development_CLO25/intro-cloud-development/1-understanding-cloud-computing/5-global-presence.md"
-description: "En av de coolaste sakerna med molnet är att du kan starta en server i Sydney på tio sekunder — utan att lämna soffan."
-tags: ["availability", "aws", "azure", "cloud", "finns", "global", "molnet", "närvaro", "region", "överallt"]
-week_fit: []
----
 # Global närvaro — molnet finns överallt
 
 ## Du behöver inte ens åka dit

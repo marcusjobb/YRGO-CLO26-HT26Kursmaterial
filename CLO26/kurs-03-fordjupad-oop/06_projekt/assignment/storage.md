@@ -1,19 +1,3 @@
----
-
-title: Alternativ 3: Lagerhanteringssystem
-author: Marcus Ackre Medina
-type: assignment
-topic: projekt
-difficulty: 3
-language: csharp
-status: adapted
-marcus_voice: true
-source: "Old_courses/2025/assignment/storage.md"
-description: "Ett program som simulerar ett lagersystem genom att läsa produktdata och kundordrar från CSV-filer, bearbeta dem och spara det uppdaterade lagersaldot."
-tags: ["alternativ", "csharp", "lagerhanteringssystem", "projekt", "storage", "visual-studio"]
-week_fit: []
----
-
 # Alternativ 3: Lagerhanteringssystem
 
 🔴

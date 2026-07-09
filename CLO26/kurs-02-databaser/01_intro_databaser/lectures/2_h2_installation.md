@@ -1,19 +1,3 @@
----
-
-title: 2. Installation och konfiguration av LocalDB och SQLite Console (45 min)
-author: Marcus Ackre Medina
-type: lecture
-topic: databaser
-difficulty: 1
-language: mixed
-status: adapted
-marcus_voice: true
-source: "Old_courses/2025/csharp/2_db/lectures/03_db_h2/2_h2_installation.md"
-description: "Hur kan vi effektivt installera, konfigurera och använda LocalDB och SQLite i .NET-utvecklingsmiljöer för att skapa och hantera databaser?"
-tags: ["console", "databaser", "installation", "konfiguration", "localdb", "min)", "sql", "sqlite", "ssh", "visual-studio"]
-week_fit: []
----
-
 # 2. Installation och konfiguration av LocalDB och SQLite Console (45 min)
 
 🟢

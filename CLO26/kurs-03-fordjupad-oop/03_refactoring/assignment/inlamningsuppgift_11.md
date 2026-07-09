@@ -1,19 +1,3 @@
----
-
-title: Inlämningsuppgift 1 – Buggar och frågor (debug + TODO)
-author: Marcus Ackre Medina
-type: assignment
-topic: clean-code
-difficulty: 2
-language: csharp
-status: adapted
-marcus_voice: true
-source: "exercises_to_spread_out/Inlämningsuppgift 11.md"
-description: "Uppgiften har två delar och kommer tillsammans med ett färdigt program och källkod som du forkar från klassens GitHub organisation. Sättet att lämna in uppgiften på är lite komplicerat så läs igenom i"
-tags: ["bugg", "clean-code", "csharp", "debugging", "felsökning", "git", "inlämningsuppgift", "pull-request"]
-week_fit: []
----
-
 # Inlämningsuppgift 1
 
 🟡

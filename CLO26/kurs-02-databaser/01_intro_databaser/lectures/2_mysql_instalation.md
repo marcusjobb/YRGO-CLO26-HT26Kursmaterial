@@ -1,19 +1,3 @@
----
-
-title: 2. Installation och konfiguration av MySQL med Docker
-author: Marcus Ackre Medina
-type: lecture
-topic: databaser
-difficulty: 1
-language: mixed
-status: adapted
-marcus_voice: true
-source: "Old_courses/2025/csharp/2_db/lectures/04_db_mysql/2_mysql_instalation.md"
-description: "Övergripande frågeställning: Hur kan vi använda Docker för att effektivt installera, konfigurera och hantera MySQL-databaser?"
-tags: ["bash", "databaser", "docker", "instalation", "installation", "konfiguration", "mysql", "ssh", "verktyg", "visual-studio"]
-week_fit: []
----
-
 # 2. Installation och konfiguration av MySQL med Docker
 
 🟢

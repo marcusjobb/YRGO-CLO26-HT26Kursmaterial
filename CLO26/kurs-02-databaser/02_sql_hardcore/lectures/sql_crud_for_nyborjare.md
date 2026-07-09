@@ -1,19 +1,3 @@
----
-
-title: SQL CRUD för nybörjare
-author: Marcus Ackre Medina
-type: lecture
-topic: databaser
-difficulty: 1
-language: sql
-status: adapted
-marcus_voice: true
-source: "exercises_to_spread_out/SQL CRUD för nybörjare.md"
-description: "En databas är ett program som lagrar 'data', alltså information i en fil. Ungefär på samma sätt som Excel men med lite smartare funktioner för sökning och indexering."
-tags: ["crud", "databaser", "foreign-key", "inner-join", "join", "left-join", "mysql", "right-join", "sql", "sql-crud"]
-week_fit: []
----
-
 # SQL-CRUD
 
 🟢

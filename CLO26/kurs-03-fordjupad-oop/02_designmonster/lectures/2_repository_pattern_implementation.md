@@ -1,19 +1,3 @@
----
-
-title: 2. Repository Pattern Implementation
-author: Marcus Ackre Medina
-type: lecture
-topic: oop
-difficulty: 1
-language: csharp
-status: adapted
-marcus_voice: true
-source: "Old_courses/2025/csharp/3_oop_adv/lectures/05_mysql_integration/2_repository_pattern_implementation.md"
-description: "Hur kan vi skapa ett flexibelt och underhållbart dataåtkomstlager genom att implementera Repository Pattern, och varför är detta mönster viktigt för moderna .NET-applikationer?"
-tags: ["csharp", "git", "implementation", "oop", "pattern", "repository", "visual-studio"]
-week_fit: []
----
-
 # 2. Repository Pattern Implementation
 
 🟢

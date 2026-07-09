@@ -1,19 +1,3 @@
----
-
-title: Polymorfism
-author: Marcus Ackre Medina
-type: article
-topic: oop
-difficulty: 1
-language: csharp
-status: adapted
-marcus_voice: true
-source: "Old_courses/books/CLO22/Docs/oop/polymorfism/index.md"
-description: "Polymorfism kommer från grekiskans poly = många och morphe = form. Det är en av de viktigaste egenskaperna i objektorienterad programmering."
-tags: ["csharp", "git", "oop", "polymorfism"]
-week_fit: []
----
-
 # Polymorfism
 
 🟢

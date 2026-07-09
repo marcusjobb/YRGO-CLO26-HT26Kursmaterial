@@ -1,19 +1,3 @@
----
-
-title: 10. Nginx via Cloud-init (bash) and Custom Script Extension
-author: Marcus Ackre Medina
-type: exercise
-topic: cloud
-difficulty: 2
-language: english
-status: adapted
-marcus_voice: true
-source: "Old_courses/Coud_Development_CLO25/exercises/1-server-foundation/3-arm-and-bicep/10-nginx-cloud-init-custom-script-extension.md"
-description: "Getting StartedWeek by WeekIntro To Cloud DevelopmentInfrastructure FundamentalsExercises-"
-tags: ["(bash)", "azure", "cloud", "cloud-init", "custom", "docker", "exercise", "extension", "iac", "init"]
-week_fit: []
----
-
 Navigation :
 Getting StartedWeek by WeekIntro To Cloud DevelopmentInfrastructure FundamentalsExercises-
 Server Foundation--

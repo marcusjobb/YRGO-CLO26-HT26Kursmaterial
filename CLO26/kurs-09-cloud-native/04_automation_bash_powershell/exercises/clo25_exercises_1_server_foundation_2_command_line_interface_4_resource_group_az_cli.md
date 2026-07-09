@@ -1,19 +1,3 @@
----
-
-title: 4. Creating a Resource Group Using AZ CLI
-author: Marcus Ackre Medina
-type: exercise
-topic: infrastructure
-difficulty: 2
-language: english
-status: adapted
-marcus_voice: true
-source: "Old_courses/Coud_Development_CLO25/exercises/1-server-foundation/2-command-line-interface/4-resource-group-az-cli.md"
-description: "Getting StartedWeek by WeekIntro To Cloud DevelopmentInfrastructure FundamentalsExercises-"
-tags: ["azure", "cli", "cloud", "creating", "docker", "exercise", "group", "iac", "infrastructure", "linux"]
-week_fit: []
----
-
 Navigation :
 Getting StartedWeek by WeekIntro To Cloud DevelopmentInfrastructure FundamentalsExercises-
 Server Foundation--

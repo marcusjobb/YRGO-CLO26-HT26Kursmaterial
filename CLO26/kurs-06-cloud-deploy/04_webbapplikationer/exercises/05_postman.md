@@ -1,19 +1,3 @@
----
-
-title: Testa Spring Boot Kalkylator med Postman
-author: Marcus Ackre Medina
-type: exercise
-topic: api
-difficulty: 1
-language: python
-status: adapted
-marcus_voice: true
-source: "Old_courses/2025/java/SysInt/exercises/springapi/05_postman.md"
-description: "För att testa din Spring Boot-applikations RESTful-tjänster med Postman, följ dessa steg för varje matematisk operation."
-tags: ["api", "boot", "exercise", "installation", "kalkylator", "postman", "spring", "testa", "visual-studio"]
-week_fit: []
----
-
 # Testa Spring Boot Kalkylator med Postman
 
 🟢

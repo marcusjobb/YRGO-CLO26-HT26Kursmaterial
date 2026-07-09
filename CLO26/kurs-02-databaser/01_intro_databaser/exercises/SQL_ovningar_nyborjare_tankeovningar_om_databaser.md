@@ -1,18 +1,3 @@
----
-
-title: Tankeövningar Om Databaser
-author: Marcus Ackre Medina
-type: exercise
-topic: databaser
-difficulty: 1
-language: sql
-status: adapted
-marcus_voice: true
-source: "Old_courses/Material från Codic/SQL/Övningar/Nybörjare/Tankeövningar om databaser.docx"
-description: "Av Marcus Medina, Codic Education"
-tags: ["databaser", "databaser.docx", "exercise", "sql", "tankeövningar"]
-week_fit: []
----
 Tankeövningar om databaser
 
 Av Marcus Medina, Codic Education

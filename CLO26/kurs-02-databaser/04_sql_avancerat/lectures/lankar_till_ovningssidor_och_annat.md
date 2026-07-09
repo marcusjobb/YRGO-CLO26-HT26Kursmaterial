@@ -1,19 +1,3 @@
----
-
-title: Länkar till övningssidor och annat (SQL)
-author: Marcus Ackre Medina
-type: lecture
-topic: databaser
-difficulty: 1
-language: python
-status: adapted
-marcus_voice: true
-source: "exercises_to_spread_out/Länkar till övningssidor och annat.md"
-description: "För denna veckan rekommenderar jag att göra 6 JOIN, 7 More JOIN operations, 8 Using Null inne på SQL Zoo."
-tags: ["databaser", "er-diagram", "joins", "lankar", "normalisering", "resurser", "sql"]
-week_fit: []
----
-
 SQL Zoo
 
 För denna veckan rekommenderar jag att göra 6 JOIN, 7 More JOIN operations, 8 Using Null inne på SQL Zoo.

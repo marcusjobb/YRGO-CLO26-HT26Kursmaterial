@@ -1,19 +1,3 @@
----
-
-title: Kurssammanfattning för Molnintegration
-author: Marcus Ackre Medina
-type: example
-topic: cloud
-difficulty: 1
-language: python
-status: adapted
-marcus_voice: true
-source: "Old_courses/2025/java/8_cloud_integration/summary.md"
-description: "Detta är en 50-poängs kurs i 'Molnintegration (10v)' som fokuserar på att lära ut:"
-tags: ["cloud", "git", "kurssammanfattning", "molnintegration", "ssh", "summary"]
-week_fit: []
----
-
 # Kurssammanfattning för Molnintegration
 
 🟢

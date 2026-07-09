@@ -1,18 +1,3 @@
----
-
-title: Bankkonto Och Tdd
-author: Marcus Ackre Medina
-type: exercise
-topic: testing
-difficulty: 1
-language: csharp
-status: adapted
-marcus_voice: true
-source: "Old_courses/Material från Codic/C#/Övningar/TDD/Bankkonto och TDD.docx"
-description: "I dagens övning ska vi göra en klass som ska representera ett bankkonto"
-tags: ["bankkonto", "csharp", "exercise", "tdd.docx", "test", "testing"]
-week_fit: []
----
 Bankkonto och TDD
 I dagens övning ska vi göra en klass som ska representera ett bankkonto
 Gruppens uppgift blir att se till att bankkontot skyddas mot eventuella problem eller logiska fel som kan

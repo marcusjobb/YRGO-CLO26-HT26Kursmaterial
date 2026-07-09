@@ -1,19 +1,3 @@
----
-
-title: FTP
-author: Marcus Ackre Medina
-type: article
-topic: api
-difficulty: 1
-language: java
-status: adapted
-marcus_voice: true
-source: "Old_courses/books/JIN23/api/ftp/index.md"
-description: "Har du någonsin undrat hur filer överförs mellan datorer över internet? Eller varför FTP är så viktigt för webbplatsadministratörer? FTP, eller File Transfer Protocol, är svaret på dessa frågor. Men h"
-tags: ["api", "git", "java"]
-week_fit: []
----
-
 # FTP
 
 🟢

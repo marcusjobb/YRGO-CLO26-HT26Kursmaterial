@@ -1,19 +1,3 @@
----
-
-title: SQL vs NoSQL 🗄️
-author: Marcus Ackre Medina
-type: article
-topic: databaser
-difficulty: 1
-language: csharp
-status: adapted
-marcus_voice: true
-source: "Old_courses/books/csharp_cmyh/C-Sharp/databases/sql-vs-nosql.md"
-description: "10 projekt-exempel från verkligheten"
-tags: ["csharp", "databaser", "git", "nosql", "oop", "sql"]
-week_fit: []
----
-
 # SQL vs NoSQL 🗄️
 
 🟢

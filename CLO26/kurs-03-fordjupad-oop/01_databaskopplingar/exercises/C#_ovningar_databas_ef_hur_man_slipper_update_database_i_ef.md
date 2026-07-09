@@ -1,18 +1,3 @@
----
-
-title: Hur Man Slipper Update Database I Ef
-author: Marcus Ackre Medina
-type: exercise
-topic: databaser
-difficulty: 1
-language: csharp
-status: adapted
-marcus_voice: true
-source: "Old_courses/Material från Codic/C#/Övningar/Databas/EF/Hur man slipper Update-Database i EF.docx"
-description: "Hur man slipper Update-Database"
-tags: ["csharp", "database", "databaser", "ef.docx", "exercise", "hur", "man", "oop", "slipper", "sql"]
-week_fit: []
----
 Hur man slipper Update-Database
 Update-Database är något man ofta glömmer när man arbetar med Entity Framework. Så hur kan man
 göra för att databasen ska uppdatera sig själv vid programstart (om det finns nya migrations).

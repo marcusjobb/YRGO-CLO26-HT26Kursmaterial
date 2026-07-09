@@ -1,19 +1,3 @@
----
-
-title: Förord
-author: Marcus Ackre Medina
-type: article
-topic: databaser
-difficulty: 1
-language: csharp
-status: adapted
-marcus_voice: true
-source: "Old_courses/books/csharp_cmyh/C-Sharp/databases/brief/00_forord.md"
-description: "Det här häftet är din guide genom databasernas värld – från enkla filbaserade lösningar som SQLite till kraftfulla serverdatabaser som MySQL och SQL Server, och slutligen in i NoSQL-världen med MongoD"
-tags: ["csharp", "databaser", "entity-framework", "forord", "förord", "git", "sql"]
-week_fit: []
----
-
 # Förord
 
 🟢

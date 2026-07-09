@@ -1,19 +1,3 @@
----
-
-title: Sammanfattning av SQL
-author: Marcus Ackre Medina
-type: lecture
-topic: databaser
-difficulty: 1
-language: sql
-status: adapted
-marcus_voice: true
-source: "exercises_to_spread_out/Sammanfattning av SQL.md"
-description: "En databas är ett program som lagrar 'data', alltså information i en fil. Ungefär på samma sätt som Excel men med lite smartare funktioner för sökning och indexering."
-tags: ["crud", "databaser", "foreign-key", "join", "sammanfattning", "sql", "sql-lektionen", "transactions"]
-week_fit: []
----
-
 # Sammanfattning av SQL-lektionen
 
 🟢

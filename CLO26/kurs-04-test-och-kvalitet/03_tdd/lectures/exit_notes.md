@@ -1,19 +1,3 @@
----
-
-title: Exit Notes
-author: Marcus Ackre Medina
-type: lecture
-topic: testing
-difficulty: 1
-language: csharp
-status: adapted
-marcus_voice: true
-source: "/home/nionit/git/marcus-yh-claude-assistent/reference/lectures_to_spread_out/Exit Notes.md"
-description: "- Det ger mig (utbildaren) möjlighet att se hur det går framåt"
-tags: ["api", "csharp", "exit", "notes", "oop", "tdd", "testing"]
-week_fit: []
----
-
 ## Slide 1: EXIT NOTES
 
 - SPUNKI

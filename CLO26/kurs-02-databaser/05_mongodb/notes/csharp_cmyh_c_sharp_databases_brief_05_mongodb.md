@@ -1,19 +1,3 @@
----
-
-title: Kapitel 5 – MongoDB: dokumentens värld
-author: Marcus Ackre Medina
-type: article
-topic: databaser
-difficulty: 1
-language: csharp
-status: adapted
-marcus_voice: true
-source: "Old_courses/books/csharp_cmyh/C-Sharp/databases/brief/05_mongodb.md"
-description: "Välkommen till NoSQL-världen! MongoDB är en **dokumentdatabas** som lagrar data som JSON-liknande dokument istället för tabeller och rader."
-tags: ["csharp", "databaser", "design-patterns", "dokumentens", "entity-framework", "git", "java", "kapitel", "mongodb", "mongodb:"]
-week_fit: []
----
-
 # Kapitel 5 – MongoDB: dokumentens värld
 
 🟢

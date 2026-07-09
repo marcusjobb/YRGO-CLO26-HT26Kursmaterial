@@ -1,19 +1,3 @@
----
-
-title: 2. Installation av MongoDB med Docker (45 min)
-author: Marcus Ackre Medina
-type: lecture
-topic: databaser
-difficulty: 1
-language: mixed
-status: adapted
-marcus_voice: true
-source: "Old_courses/2025/csharp/2_db/lectures/06_db_nosql_mongodb/2_mongodb_installation.md"
-description: "Övergripande frågeställning: Hur kan vi enkelt och effektivt installera och köra MongoDB med hjälp av Docker?"
-tags: ["bash", "databaser", "docker", "git", "installation", "min)", "mongodb", "versionshantering", "visual-studio"]
-week_fit: []
----
-
 # 2. Installation av MongoDB med Docker (45 min)
 
 🟢

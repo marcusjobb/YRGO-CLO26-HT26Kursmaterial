@@ -1,19 +1,3 @@
----
-
-title: Träningsuppgifter: Training: ADO.NET och C# till Databas
-author: Marcus Ackre Medina
-type: exam
-topic: syntax
-difficulty: 1
-language: csharp
-status: adapted
-marcus_voice: true
-source: "Old_courses/2025/2_databases/exam/adonet_training.md"
-description: "Välj det bästa svaret för varje fråga. Varje fråga har flera alternativ där ett är korrekt."
-tags: ["ado.net", "adonet", "csharp", "databas", "git", "ssh", "syntax", "till", "training", "training:"]
-week_fit: []
----
-
 # Träningsuppgifter: Training: ADO.NET och C# till Databas
 
 🟢

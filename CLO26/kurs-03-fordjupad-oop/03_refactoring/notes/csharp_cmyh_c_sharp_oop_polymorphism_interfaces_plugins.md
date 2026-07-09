@@ -1,19 +1,3 @@
----
-
-title: Plugins
-author: Marcus Ackre Medina
-type: article
-topic: oop
-difficulty: 2
-language: csharp
-status: adapted
-marcus_voice: true
-source: "Old_courses/books/csharp_cmyh/C-Sharp/oop/polymorphism/interfaces/plugins.md"
-description: "Jag har skapat en artikel baserad på den givna mallen. Här är den:"
-tags: ["csharp", "git", "oop", "plugins"]
-week_fit: []
----
-
 Jag har skapat en artikel baserad på den givna mallen. Här är den:
 
 # Plugins

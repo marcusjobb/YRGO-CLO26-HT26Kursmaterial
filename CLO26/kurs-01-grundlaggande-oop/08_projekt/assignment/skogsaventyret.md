@@ -1,8 +1,8 @@
 # Slutprojekt — Skogsäventyret 🌲
 
-**Vecka:** 4–5 (v39–v40)  
-**Deadline:** Söndag 4 okt 2026, 23:59  
-**Förlängd deadline:** Fredag 9 okt 2026, 23:59  
+**Vecka:** 4–5  
+**Deadline:** Söndag 28 sep 2026, 23:59  
+**Förlängd deadline:** Fredag 2 okt 2026, 23:59  
 **Gruppstorlek:** 2–3 studerande  
 **Inlämning:** Länk till er gemensamma fork i Google Classroom
 
@@ -12,97 +12,199 @@
 
 Det är kväll. Skogen är tyst.
 
-Din gubbe kliver ut ur byn och in i mörkret. Han vet att det finns monster där ute — men han vet inte hur många, och han vet inte hur farliga de är. Varje monster han dödar ger honom erfarenhet. Varje level gör honom starkare. Men när han når nästa level återställs hans hälsa — kroppen anpassar sig, men det kostar.
+Du kliver ut ur byn och in i mörkret. Det finns monster där ute — hur många och hur farliga vet du inte. Varje monster du dödar ger erfarenhet. Varje dag du överlever är en seger. Men ingenting varar för evigt.
 
-Hur länge kan han överleva? Hur många monster kan han ta?
-
-Det är er uppgift att bygga spelet och ta reda på det.
+Hur länge kan du hålla dig vid liv? Hur mycket XP kan du samla?
 
 ---
 
-## Vad gäller för den här inlämningen
+## Temat är ert
 
-*Som utbildare vill jag att ni...*
+Skogsäventyret är ett standardtema — men ni behöver inte använda det.
 
-- [ ] kan använda arv för att bygga en hierarki av monstertyper
-- [ ] förstår skillnaden mellan basklass och subklass, och varför man väljer det ena framför det andra
-- [ ] kan skriva klasser med properties och privata fält
-- [ ] kan bygga ett enkelt spellopp med game loop, input och output
-- [ ] kan reflektera kring era designbeslut: varför ärver Troll från Monster?
+Mekaniken är densamma oavsett: en spelare, motståndare, val, skada, XP, game over.
+Det är **temat och berättelsen** ni äger.
 
-*Bocka av dem själva innan ni lämnar in.*
+Tidigare grupper har bland annat byggt:
+
+- En Van Helsing som jagar monster i 1800-talets Europa
+- En Sagan om Ringen-värld med orcher, alver och ringen som VG-item
+- Ett spel där man klappar katter — de river ibland, men kurrar när de är besegrade 🐱
+
+Det sista är faktiskt ett av de bästa spelen vi sett. Samma kod, helt annan känsla.
+
+Ni får byta ut allt: namn på klasser, metoder, fiender, platser, items.
+Så länge strukturen är där — `Player`, `Monster` med arv, spelloop, stridsval — spelar temat ingen roll för betyget.
+
+> Välj något ni tycker är roligt att bygga. Det märks i koden.
+
+En liten tradition: i varje kull finns minst en grupp som döper slutbossen till **Marcus**. Det är helt okej. Det uppskattas.
+
+---
+
+## Spelets flöde
+
+### Uppstart
+```
+1) Välj spelarens namn
+2) Börja spela
+```
+
+### Byn (varje dag)
+```
+Vad vill du göra idag?
+1) Ut i skogen och äventyra   (1 dag)
+2) Vila och hela dig           (1 dag)
+3) Arenan                      (7 dagar, kräver hög level) ← VG
+```
+
+### Skogen
+Du möter ett monster. Det anfaller.
+
+```
+1) Försvara dig       → skadan halveras
+2) Anfall tillbaka    → monster.Attack - din försvarsstyrka
+3) Spring             → du tar slumpmässig skada
+```
+
+- Monster dör → du får **10 XP** och kan välja: äventyra vidare eller gå tillbaka till byn
+- Du dör (HP = 0) → **Game over**, poängtavla visas
+
+### Mål
+Överleva flest dagar med mest XP.
 
 ---
 
 ## Krav för Godkänt (G)
 
-**Karaktären**
-- [ ] En `Character`-klass med: namn, HP, maxHP, attack, level, XP, poäng
-- [ ] HP nollställs **inte** vid level-up — den ökar (se nedan)
-- [ ] Level-up när XP når tröskel — ni bestämmer tröskeln
+*Som utbildare vill jag att ni kan...*
+- [ ] bygga ett program med en tydlig game loop
+- [ ] använda if-satser och loopar för att hantera spellogik
+- [ ] skriva klasser med konstruktorer, privata fält och properties
+- [ ] använda arv för att bygga en hierarki av monster
+- [ ] ta emot och hantera input från användaren
+- [ ] reflektera skriftligt kring era designval
 
-**Monstren**
+---
+
+### Spelaren
+
+- [ ] En `Player`-klass med: namn, HP, maxHP, attack, försvar, level, XP, dagar överlevda
+- [ ] `TakeDamage(int skada)` — minskar HP, returnerar `true` om spelaren dör
+- [ ] `Heal()` — återställer HP till maxHP (kostar en dag)
+- [ ] `GainXP(int mängd)` — lägger till XP, utlöser `LevelUp()` vid tröskel
+- [ ] `LevelUp()` — höjer level, ökar maxHP och attack, återställer HP
+
+### Monstren
+
 - [ ] En `Monster`-basklass med: namn, HP, attack, XP-belöning
-- [ ] Minst **2 subklasser** (ex: Goblin, Troll, Drake) som ärver från `Monster`
-- [ ] Varje subklass har egna värden — en Goblin är inte ett Troll
+- [ ] `TakeDamage(int skada)` — minskar HP, returnerar `true` om monstret dör
+- [ ] `Attack(Player spelare)` — angriper spelaren
+- [ ] Minst **3 subklasser** som ärver från `Monster` (ex: Goblin, Troll, Drake)
+- [ ] Varje subklass har egna stats — en Goblin är inte ett Troll
 
-**Level-systemet**
-- [ ] XP ökar när ett monster dödas
-- [ ] Vid level-up: HP *återställs till maxHP* och maxHP ökar
-- [ ] Attack ökar vid level-up
-- [ ] Poängtavla visas när gubben dör
+### Striden
 
-**Spelloopen**
-- [ ] Spelet körs i en loop tills gubben dör
-- [ ] Varje runda: ett monster dyker upp slumpmässigt
-- [ ] Strid sker automatiskt (turbaserad eller direkt — ni väljer)
-- [ ] Tydlig output: vad hände, hur mycket HP har gubben kvar, vilken level
+- [ ] Spelaren väljer 1, 2 eller 3 varje runda
+- [ ] **Försvara:** skadan halveras (`monster.Attack / 2`)
+- [ ] **Anfall:** monstret tar `player.Attack - monster.Forsvar` i skada (minimum 1)
+- [ ] **Spring:** spelaren tar slumpmässig skada (`Random`, 1–monster.Attack)
+- [ ] Tydlig utskrift varje runda: vad hände, HP kvar för båda
 
-**Reflektion** *(lämnas in som `REFLEKTION.md` i repot)*
+### Spelloopen
+
+- [ ] Spelet körs tills spelaren dör
+- [ ] Varje dag i skogen möter spelaren ett slumpmässigt monster
+- [ ] Vila återställer HP och kostar en dag
+- [ ] Poängtavla vid game over: dagar överlevda, level uppnådd, total XP
+
+### Reflektion (`REFLEKTION.md` i repot)
+
 - [ ] Vad var svårast att lösa?
-- [ ] Varför valde ni att ärva monster på det sättet ni gjorde?
-- [ ] Vad skulle ni göra annorlunda om ni fick börja om?
+- [ ] Varför ärver era monster från en basklass — vad tjänar ni på det?
+- [ ] Vad hade ni gjort annorlunda om ni fick börja om?
 
 ---
 
 ## Krav för Väl Godkänt (VG)
 
-*Alla G-krav ska vara uppfyllda. VG-kraven är ett tillägg, inte en ersättning.*
+*Alla G-krav ska vara uppfyllda.*
 
-**Vapenshopen**
-- [ ] En `Weapon`-basklass med: namn, attack-bonus, pris
-- [ ] Minst **2 subklasser** (ex: Sword, Axe, Bow) som ärver från `Weapon`
-- [ ] En `Shop`-klass där gubben kan köpa vapen med poäng
-- [ ] Aktivt vapen påverkar gubbens attack i striden
-- [ ] Shopen visas **mellan strider** — inte mitt i en strid
+VG kräver att ni **använder relevanta datastrukturer och kan motivera varför** — inte bara "för att det funkade".
 
-**VG-reflektionen** *(i samma `REFLEKTION.md`)*
-- [ ] Hur valde ni att lösa vapnarvet? Hade ni kunnat göra det utan arv?
-- [ ] Vad är skillnaden mellan en `Sword` och en `Weapon` i er kod?
+### Vapen
+
+- [ ] En `Weapon`-basklass med: namn, attackBonus, pris (i guldmynt)
+- [ ] Minst **2 subklasser** (ex: Sword, Axe, Bow) med egna värden
+- [ ] Monster tappar guldmynt när de dör (slumpmässigt, ex: 5–15 mynt)
+- [ ] En `Shop` med ett sortiment av vapen — köp **mellan strider**, aldrig mitt i en strid
+- [ ] Aktivt vapen adderas till spelarens attack
+- [ ] Ni väljer datastruktur för sortimentet — `List<Weapon>` eller `Dictionary<string, Weapon>` — och motiverar valet i reflektionen
+
+### Arenan
+
+- [ ] Arenan tar **7 dagar** och kan inte avbrytas
+- [ ] Spelaren möter **7 monster**, sorterade från svagast till starkast
+- [ ] Om spelaren dör i arenan → game over direkt
+- [ ] Om spelaren överlever alla 7 → stor XP-bonus och ärorik seger
+
+### VG-reflektion (i samma `REFLEKTION.md`)
+
+- [ ] Vilken datastruktur valde ni för vapensortimentet och varför?
+- [ ] Hur sorterade ni monstren i arenan?
+- [ ] Hade ni kunnat lösa arenan utan arv?
 
 ---
 
-## Hur ni kommer igång
+## Förslag på klassstruktur
 
-Ni bestämmer själva upplägg — men ett förslag:
+Rita detta på whiteboard innan ni skriver en rad kod:
 
-1. Börja med att rita ett UML-diagram på ett papper. Vilka klasser? Vilka ärver från vilka?
-2. Skapa `Character` och `Monster` — ingen spelloop ännu
-3. Skriv en enkel strid: gubben attackerar, monstret attackerar, kolla om någon dör
-4. Lägg till loop och level-system
-5. VG: Lägg till vapen och shop
+```
+Player
+  ├── namn, hp, maxHp, attack, forsvar, level, xp, dagar, guld
+  ├── TakeDamage()
+  ├── Heal()
+  ├── GainXP()
+  └── LevelUp()
 
-Koda vilt. 🌲
+Monster  (basklass)
+  ├── namn, hp, attack, forsvar, xpBeloning
+  ├── TakeDamage()
+  └── Attack()
+      ├── Goblin   : Monster
+      ├── Troll    : Monster
+      └── Drake    : Monster
+
+Weapon   (basklass, VG)
+  ├── namn, attackBonus, pris
+      ├── Sword  : Weapon
+      └── Axe    : Weapon
+
+Shop     (VG)
+  └── List<Weapon> sortiment
+```
 
 ---
 
-## Vad vi **inte** bedömer
+## Kom igång
 
-- Hur snygg din output ser ut i terminalen
-- Om du har exakt rätt variabelnamn
-- Om monstren är rimligt balanserade (det är ett spel, balans är svårt)
+1. Rita UML på papper — vilka klasser, vad ärver från vad
+2. Bygg `Player` och `Monster` — ingen spelloop ännu
+3. Skriv en enkel strid: välj handling, räkna skada, kolla om någon dör
+4. Lägg till loopen: byn → skog → tillbaka
+5. Lägg till level-systemet
+6. VG: vapen, guld, shop, arena
 
-Vi bedömer om ni **förstår** det ni har byggt och **kan motivera** era val.
+---
+
+## Vad vi inte bedömer
+
+- Hur snygg din terminal-output ser ut
+- Om variabelnamnen är exakt rätt
+- Om monstren är perfekt balanserade — balans är svårt, det vet vi
+
+Vi bedömer om ni **förstår** det ni byggt och **kan motivera** era val.
 
 ---
 
@@ -110,6 +212,4 @@ Vi bedömer om ni **förstår** det ni har byggt och **kan motivera** era val.
 
 Rättning sker veckan efter deadline.  
 Feedback skickas per mail och via kommentar i Google Classroom.  
-Commits efter deadline beaktas inte.
-
-Spara commit-hashen ni lämnar in på — ni kan inte ändra i efterhand.
+Commits efter deadline beaktas inte — spara er commit-hash.

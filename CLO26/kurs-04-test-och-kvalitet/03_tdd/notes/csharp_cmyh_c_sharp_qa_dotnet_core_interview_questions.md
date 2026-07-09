@@ -1,19 +1,3 @@
----
-
-title: .NET Core Intervjufrågor - Från Lätt till Avancerat
-author: Marcus Ackre Medina
-type: article
-topic: testing
-difficulty: 3
-language: csharp
-status: adapted
-marcus_voice: true
-source: "Old_courses/books/csharp_cmyh/C-Sharp/qa/dotnet-core-interview-questions.md"
-description: "25 viktiga frågor för att förbereda dig inför .NET Core-intervjuer, organiserade efter svårighetsgrad."
-tags: [".net", "asp.net", "avancerat", "core", "csharp", "design-patterns", "dotnet", "entity-framework", "från", "git"]
-week_fit: []
----
-
 # .NET Core Intervjufrågor - Från Lätt till Avancerat
 
 🔴

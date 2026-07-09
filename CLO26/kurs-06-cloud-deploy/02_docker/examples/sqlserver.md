@@ -1,19 +1,3 @@
----
-
-title: SQLServer på docker
-author: Marcus Ackre Medina
-type: example
-topic: docker
-difficulty: 1
-language: bash
-status: adapted
-marcus_voice: true
-source: "Old_courses/2025/csharp/practice_exercises/docker/sqlserver.md"
-description: "Ifall ni inte kan köra localdb på era datorer kan ni använda SQLServer på docker istället."
-tags: ["bash", "docker", "installation", "sqlserver", "visual-studio"]
-week_fit: []
----
-
 # SQLServer på docker
 
 🟢
