@@ -24,4 +24,3 @@ Varje sektion har artiklar du läser i din egen takt. Det finns övningar och ex
 
 Inga förkunskaper i molnet krävs. Bara att du är nyfiken och inte rädd för kommandoraden. För kommandoraden — det är där magin händer.
 
-*(Det här är en omarbetad version av CLO25-kursmaterialet, skriven i en mer personlig och tillgänglig ton.)*
