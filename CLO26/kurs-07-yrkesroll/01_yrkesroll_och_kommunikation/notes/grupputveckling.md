@@ -37,6 +37,22 @@ Poängen är inte att varje person är en roll. De flesta av oss rör oss naturl
 
 ---
 
+## Tre grundbehov — FIRO
+
+Will Schutz skapade FIRO-modellen (Fundamental Interpersonal Relations Orientation) på 1950-talet, och den har en irriterande förmåga att stämma. Tanken är enkel: varje person som kliver in i en grupp bär med sig tre grundbehov, och hur väl gruppen hanterar dem avgör om samarbetet fungerar eller fastnar.
+
+**Tillhörighet** — behovet av att vara med, att räknas, att inte bli osynlig. I början av ett nytt projekt eller ett nytt team är alla känsliga för detta. *Hör jag hemma här? Är jag välkommen?* Det är därför de första mötena brukar vara artiga till det osmakliga — alla navigerar tillhörigheten innan de vågar visa vad de faktiskt tycker.
+
+**Kontroll** — behovet av att ha inflytande, att kunna påverka riktningen. Det handlar inte om att vilja styra andra, utan om att inte känna sig maktlös. I ett team där en person alltid fattar besluten utan att konsultera gruppen — eller där ansvaret är otydligt och vem som helst kan överskridas — triggas kontrollbehovet. Konflikterna i fas 2 (IMGD) handlar ofta om just detta.
+
+**Öppenhet** — behovet av äkta kontakt. Att kunna visa sin osäkerhet, be om hjälp, erkänna ett misstag, utan att det kostar för mycket. Det är det svåraste och sista behovet som uppfylls. Ett team som nått öppenhet på riktigt är ovanligt — och märkbart.
+
+FIRO förklarar varför grupper fastnar. En person vars kontrollbehov inte möts slutar bidra aktivt — hen gör vad som sägs men investerar inte. Någon vars tillhörighetsbehov inte möts drar sig undan. Och öppenhet uppstår aldrig om de två första behoven är otillfredsställda.
+
+I en IT-kontext: teamet som aldrig pratar om hur beslut fattas, där pull requests aldrig kommenteras ärligt, där ingen ber om hjälp fast de kör fast — det teamet har troligtvis ett olöst kontroll- eller öppenhetsbehov. Det ser ut som ett tekniskt problem. Det är ett gruppdynamikproblem.
+
+---
+
 ## Fyra faser — Wheellans IMGD-modell
 
 Susan Wheellan forskning visade att grupper inte är statiska. De rör sig igenom faser, och varje fas har sin logik.
