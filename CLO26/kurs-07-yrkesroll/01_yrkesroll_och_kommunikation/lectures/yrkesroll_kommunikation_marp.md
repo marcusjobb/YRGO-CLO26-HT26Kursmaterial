@@ -1,126 +1,235 @@
 ---
 marp: true
-theme: default
-class: invert
+theme: nion-dark
 paginate: true
 ---
 
-# Yrkesroll och Kommunikation
+# Modul 01 — Yrkesroll och kommunikation
 
-**Kurs:** Yrkesroll
-**Modul:** 01 — Kommunikation och Professionalitet
+Självledarskap · Retorik · Kommunikationsmodeller · Gruppdynamik
 
----
-
-## Vad ska vi lära oss idag?
-
-- **Utvecklarens yrkesroll** — förväntningar och ansvar
-- **Kommunikation** — tekniska koncept för icke-tekniska
-- **Code Review** — kultur och teknik
-- **Självledarskap** — ta ansvar för din utveckling
-- **Teamwork** — samarbeta effektivt
+Marcus Ackre Medina · YRGO · CLO26
 
 ---
 
-## Utvecklarens Roll
+# Det räcker inte att kunna koda
 
-En utvecklare gör mer än bara skriva kod:
+Du ska kunna koda.
 
-| Område | Exempel |
-|--------|---------|
-| **Tekniskt** | Skriva kod, felsöka, arkitektur, testa |
-| **Kommunikation** | Förklara tekniska beslut, skriva dokumentation |
-| **Samarbete** | Code review, parprogrammering, möten |
-| **Planering** | Estimera, bryta ner tasks, prioritera |
-| **Lärande** | Hålla sig uppdaterad, lära nytt på jobbet |
-| **Leverans** | CI/CD, deployment, drift |
+Men kunden väljer inte bara någon som kan koda.
+
+De väljer någon de kan **lita på**.
 
 ---
 
-## Kommunikation med Intressenter
+# Vad innebär yrkesrollen egentligen?
 
-**Intressenter** = alla som påverkas av projektet.
+Konsultmässighet är inte en personlighetstyp. Det är ett **beteende**.
 
-| Intressent | Bryr sig om | Undvik |
-|------------|-------------|--------|
-| Kund/PO | Funktion, deadline, kostnad | Tekniska detaljer |
-| Chef | Resurser, risker, framsteg | Kodnivå-diskussioner |
-| Team | Implementation, arkitektur | Byråkrati |
-| Användare | Att det fungerar | Hur det fungerar internt |
-
-**Gyllene regeln:** Anpassa språket efter mottagaren.
+- **Punktlighet och tillförlitlighet** — du levererar det du lovat, när du lovat
+- **Kommunikation** — kunden vet alltid var saker står, även när de inte går som planerat
+- **Initiativförmåga** — du ser vad som behövs och gör det, utan att vänta på order
+- **Affärsmässighet** — du förstår att kunden betalar för värde, inte närvaro
 
 ---
 
-## Förklara Teknik för Icke-Tekniska
+# Ett konkret scenario
 
-**Dåligt:** "Vi måste byta från Entity Framework till Dapper för att vi har N+1-problem med lazy loading och Change Tracker orsakar prestandaproblem i vår mikroservices-arkitektur."
+Du ska leverera en feature på fredag.
 
-**Bra:** "Appen är långsam när den hämtar kunddata. Med en annan databasteknik kan vi göra den snabbare. Det tar ungefär 3 dagar att byta."
+Onsdag kväll inser du att det tar till måndag.
 
----
-
-## Code Review — Kultur
-
-Code review är INTE:
-- ❌ En chans att visa dig smartare
-- ❌ Personlig kritik
-- ❌ En formalitet som måste godkännas
-
-Code review ÄR:
-- ✅ Kollektivt ägande av koden
-- ✅ Kunskapsdelning
-- ✅ En chans att hitta buggar och förbättringar
-- ✅ En lärande-möjlighet
+**Vad gör du?**
 
 ---
 
-## Code Review — Praktiska Tips
+# Vad som händer om du inte säger något
 
-**Som granskare:**
-- Fokusera på logik och design, inte kodstil
-- Fråga: "Varför gjorde du så här?" istället för "Det är fel"
-- Om du inte förstår koden — be om förtydligande
-- Godkänn om det är bra nog, inte perfekt
+Fredag: "Vi hinner inte."
 
-**Som skribent:**
-- Gör PR:er små (max 200-300 rader)
-- Skriv en bra PR-beskrivning
-- Kommentera din egen kod om den är otydlig
-- Ta inte kritik personligt
+Kunden: "Okej — men ni visste det på onsdag?"
+
+Förtroendet går inte att köpa tillbaka.
 
 ---
 
-## Självledarskap
+# Kommunikation är inte e-post
 
-**Du äger din egen utveckling.**
+Det handlar om att hålla rätt person informerad, på rätt sätt, vid rätt tidpunkt.
 
-- **Be om hjälp när du fastnat** (men försök först i 20 min)
-- **Säg när du inte kan** — bättre tidigt än sent
-- **Lär dig av misstag** — gör en post-mortem för dig själv
-- **Dokumentera** vad du lärt dig
-- **Sätt upp mål** — vad vill du kunna om 6 månader?
+En Slack-pingis på tisdagen är bättre än ett mejl på fredagen.
 
 ---
 
-## Time Management
+# Vad händer när vi kommunicerar?
 
-| Teknik | Beskrivning |
-|--------|-------------|
-| **Pomodoro** | 25 min fokus → 5 min paus → upprepa |
-| **Time-boxing** | Sätt en timer på en uppgift — sluta när den ringer |
-| **Eisenhower-matris** | Prioritera: Viktigt+Bråttom göra först |
-| **"Eat the Frog"** | Gör den jobbigaste uppgiften först på morgonen |
-| **Deep Work** | Blocka kalendern för fokuserat arbete |
+```
+Sändare → Budskap → Kanal → Mottagare
+                ↑
+              Brus
+                ↑
+            Feedback ←
+```
+
+Det ser enkelt ut.
+
+Det är det inte.
+
+---
+
+# Shannon-Weaver-modellen
+
+**Sändare** — den som vill säga något  
+**Budskap** — det som faktiskt sägs  
+**Kanal** — hur det skickas (mejl, Zoom, Slack, muntligt)  
+**Brus** — allt som stör  
+**Mottagare** — den som tar emot  
+**Feedback** — hur mottagaren svarar  
 
 ---
 
-## Sammanfattning
+# Brus är inte bara dålig uppkoppling
 
-- ✅ Utvecklarens roll = kod + kommunikation + samarbete
-- ✅ Anpassa språket efter mottagaren
-- ✅ Code review = lärande, inte kritik
-- ✅ Självledarskap = äg din utveckling
-- ✅ Time management = planera och fokusera
+Brus är **allt** som stör förståelsen:
+
+- Tekniska problem (ja, det också)
+- Jargong och fackspråk
+- Stress och tidspress
+- Dina egna antaganden om vad de redan vet
+- Kroppsspråk som säger en sak, orden en annan
 
 ---
+
+# Konkret: Du förklarar en försening
+
+**Situation:** Sprinten är inte klar. Kunden har möte med sin chef om en timme.
+
+❌ **Vad vi brukar säga:**
+"Vi hade teknikproblem med databasen och CI/CD-pipelinen bröt."
+
+✅ **Vad som faktiskt fungerar:**
+"Vi hittade ett problem i testfasen som vi inte ville skicka vidare. Det är fixat nu, men det tog en dag extra. Ny leverans imorgon kl 10."
+
+---
+
+# Varför funkar den andra?
+
+Kunden vill veta tre saker:
+
+1. Vad hände?
+2. Är det under kontroll?
+3. När kan jag räkna med det?
+
+De vill **inte** veta hur CI/CD fungerar.
+
+---
+
+# Retorik — tre ben
+
+Aristoteles. 350 f.Kr. Fortfarande aktuellt.
+
+**Ethos** — Din trovärdighet. Vem är du att säga detta?  
+**Logos** — Din logik. Vilket bevis stöder det?  
+**Pathos** — Din känsla. Varför ska de bry sig?  
+
+Alla tre behövs. Saknar du ett tror inte folk på dig — även om du har rätt.
+
+---
+
+# Aktiv lyssning
+
+Du har två öron och en mun.
+Det är inte ett misstag.
+
+Lyssna för att **förstå** — inte för att svara.
+
+De flesta tänker redan på nästa replik medan den andra pratar.
+Det märks.
+
+---
+
+# Parafrasering — din bästa vän i möten
+
+**Vad det är:**
+Upprepa det du hörde med egna ord — och fråga om du förstod rätt.
+
+**Varför det funkar:**
+- Bekräftar att du lyssnade
+- Fångar upp missförstånd tidigt
+- Visar respekt för det som sades
+
+---
+
+# Gruppdynamik — varför det spelar roll
+
+Du kommer att hoppa in i befintliga team.
+
+Ibland ett team som precis formats. Ibland mitt i ett kaos ingen pratar om.
+
+Att kunna **läsa var ett team är** — och bidra till att det rör sig framåt — är en kompetens som syns.
+
+---
+
+# IMGD — fyra stadier
+
+Susan Wheelan, psykolog och gruppforskare.
+
+| Stadium | Karaktäristik |
+|---------|---------------|
+| 1 — Tillhörighet | Alla vill bli accepterade. Ingen krånglar. |
+| 2 — Opposition | Åsikter börjar synas. Friktion uppstår. |
+| 3 — Tillit | Roller klarnar. Arbetsformer etableras. |
+| 4 — Arbete | Gruppen levererar. Hanterar konflikter konstruktivt. |
+
+De flesta grupper når aldrig stadium 4.
+
+---
+
+# Stadium 2 är inte ett problem
+
+Det finns två sorters konflikter:
+
+**Sakkonflikt** — vi är oense om hur vi ska lösa problemet.  
+**Personkonflikt** — vi tycker illa om varandra.  
+
+Sakkonflikter är **nödvändiga**. De leder till bättre beslut.
+
+Personkonflikter börjar ofta som sakkonflikter som ingen hanterade.
+
+---
+
+# Psykologisk trygghet — Googles viktigaste fynd
+
+Project Aristotle, 2012. Google studerade sina egna team.
+
+De tittade på kompetens, personlighet, mix av seniorer, teamstorlek.
+
+**Inget av det var faktor nummer ett.**
+
+Faktor nummer ett: kan du ta risker inför dina kollegor utan att vara rädd för att bli dömd?
+
+---
+
+# Vad du kan göra redan nu
+
+Du behöver inte vara teamledare för att göra skillnad.
+
+- Ställ frågor som skapar trygghet: *"Förstod jag rätt?"*
+- Håll sakkonflikter på plats: *"Vi verkar vara oense om metoden — ska vi gå igenom det?"*
+- Ge äkta feedback: *"Det där funkade verkligen bra."*
+- Ta ansvar utan att bli tillfrågad
+
+Varje person i ett team bidrar till kulturen. Även du.
+
+---
+
+# Sammanfattning
+
+- Konsultmässighet = ett beteende, inte en personlighetstyp
+- Kommunikationsmodellen: sändare, budskap, kanal, brus, mottagare, feedback
+- Retorik: ethos (trovärdighet), logos (logik), pathos (känsla)
+- Aktiv lyssning: lyssna för att förstå, inte för att svara
+- IMGD: fyra stadier — de flesta grupper fastnar i 1–2
+- Psykologisk trygghet är den viktigaste faktorn för ett välfungerande team
+
+➡️ Nästa modul: Kundmöten och konsultarbete
