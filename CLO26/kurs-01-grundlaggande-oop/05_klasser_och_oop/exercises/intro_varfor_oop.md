@@ -1,4 +1,4 @@
-# Övning 2 — Varför finns OOP?
+# Intro — Varför finns OOP?
 
 🟢 Grundnivå
 

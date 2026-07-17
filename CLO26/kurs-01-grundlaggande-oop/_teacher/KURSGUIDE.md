@@ -102,6 +102,19 @@ Presentationer är inbyggda i dagen — grupper visar vad de gjort löpande.
 
 ---
 
+## Icke-standardmappar i modulerna
+
+Följande mappar finns i vissa moduler men ingår inte i CLAUDE.md-standarden — de är medvetna tillägg:
+
+| Mapp | Syfte |
+|------|-------|
+| `programmeringstermer/` | Ordlistor per ämne — bra att ha separata från noter för snabbreferens |
+| `tentafragor/` | Övningsfrågor inför tenta i flervals-format — studentsynliga, inte examensfrågor |
+
+Examensfrågor hanteras alltid i `exam/` och publiceras aldrig i förväg.
+
+---
+
 ## Inlämningar
 
 - **Vecka 1:** Ingen inlämning

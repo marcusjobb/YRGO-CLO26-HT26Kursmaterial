@@ -25,7 +25,7 @@ d. En klass kan bara finnas i en fil, ett objekt kan finnas i flera
   - ❌ **d) En fil vs flera** - FEL: Både klasser och objekt kan finnas var som helst
 </details>
 
-<div style="text-align: center; margin: 2em 0;"><img src="separator_cool.png" alt="Separator" style="max-width: 400px; height: auto;"></div>
+---
 
 ### Fråga 2
 
@@ -49,7 +49,7 @@ d. Den skriver ut alla fält
   - ❌ **d) Skriver ut** - FEL: En konstruktor kan innehålla utskrifter, men dess huvudsakliga jobb är att initiera objektet
 </details>
 
-<div style="text-align: center; margin: 2em 0;"><img src="separator_cool.png" alt="Separator" style="max-width: 400px; height: auto;"></div>
+---
 
 ### Fråga 3
 
@@ -73,7 +73,7 @@ d. Ingenting — alla fält är privata som standard
   - ❌ **d) Standard** - FEL: I C# är fält `private` som standard om du inte skriver något — men var tydlig ändå!
 </details>
 
-<div style="text-align: center; margin: 2em 0;"><img src="separator_cool.png" alt="Separator" style="max-width: 400px; height: auto;"></div>
+---
 
 ### Fråga 4
 
@@ -97,7 +97,7 @@ d. Ingen kan läsa eller ändra
   - ❌ **d) Ingen kan något** - FEL: En property med `private set` är fullt läsbar utifrån
 </details>
 
-<div style="text-align: center; margin: 2em 0;"><img src="separator_cool.png" alt="Separator" style="max-width: 400px; height: auto;"></div>
+---
 
 ### Fråga 5
 
@@ -121,7 +121,7 @@ d. Att göra koden snabbare
   - ❌ **d) Snabbare kod** - FEL: Inkapsling påverkar kodorganisering, inte prestanda
 </details>
 
-<div style="text-align: center; margin: 2em 0;"><img src="separator_cool.png" alt="Separator" style="max-width: 400px; height: auto;"></div>
+---
 
 ### Fråga 6
 
@@ -162,7 +162,7 @@ a. 500<br>b. 1000<br>c. 1500<br>d. 0
   - ❌ **d) 0** - FEL: Saldo startar på 1000 via konstruktorn
 </details>
 
-<div style="text-align: center; margin: 2em 0;"><img src="separator_cool.png" alt="Separator" style="max-width: 400px; height: auto;"></div>
+---
 
 ### Fråga 7
 
@@ -186,7 +186,7 @@ d. Ingenting — värdet ignoreras tyst
   - ❌ **d) Ignoreras tyst** - FEL: C# är typsäkert — den låter dig inte skriva kod som inte fungerar
 </details>
 
-<div style="text-align: center; margin: 2em 0;"><img src="separator_cool.png" alt="Separator" style="max-width: 400px; height: auto;"></div>
+---
 
 ### Fråga 8
 
@@ -210,7 +210,7 @@ d. Samma som `base`
   - ❌ **d) Samma som base** - FEL: `base` används för att nå basklassen vid arv, `this` är det egna objektet
 </details>
 
-<div style="text-align: center; margin: 2em 0;"><img src="separator_cool.png" alt="Separator" style="max-width: 400px; height: auto;"></div>
+---
 
 ### Fråga 9
 
@@ -231,7 +231,7 @@ a. För att spara minne<br>b. För att förhindra att kod utifrån sätter ogilt
   - ❌ **d) Snabbare** - FEL: Ingen prestandaskillnad mellan private och public
 </details>
 
-<div style="text-align: center; margin: 2em 0;"><img src="separator_cool.png" alt="Separator" style="max-width: 400px; height: auto;"></div>
+---
 
 ### Fråga 10
 
@@ -255,4 +255,4 @@ d. `var konto1 = BankAccount; var konto2 = BankAccount;`
   - ❌ **d) `var` utan `new`** - FEL: `var konto1 = BankAccount;` försöker tilldela själva klassen som värde — det går inte
 </details>
 
-<div style="text-align: center; margin: 2em 0;"><img src="separator_cool.png" alt="Separator" style="max-width: 400px; height: auto;"></div>
+---

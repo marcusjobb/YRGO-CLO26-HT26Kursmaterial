@@ -38,17 +38,15 @@ Objekt = konto1, konto2 ← de faktiska husen
 ┌─────────────────────────────┐
 │         BankAccount         │
 ├─────────────────────────────┤
-│ - owner : string            │
-│ - balance : decimal         │
-│ - accountNumber : string    │
+│ - ägare : string            │
+│ - saldo : double            │
+│ - ärAktivt : bool           │
 ├─────────────────────────────┤
-│ + Owner : string (get)      │
-│ + Balance : decimal (get)   │
-├─────────────────────────────┤
-│ + BankAccount(...)          │
-│ + Deposit(amount)           │
-│ + Withdraw(amount) : bool   │
-│ + PrintInfo()               │
+│ + BankAccount(ägare,        │
+│     startSaldo)             │
+│ + SättIn(belopp)            │
+│ + TaUt(belopp) : bool       │
+│ + Presentera()              │
 └─────────────────────────────┘
 ```
 
@@ -61,20 +59,21 @@ Objekt = konto1, konto2 ← de faktiska husen
 ```csharp
 public class BankAccount
 {
-    private string owner;
-    private decimal balance;
-    private string accountNumber;
+    private string ägare;
+    private double saldo;
+    private bool ärAktivt;
 
-    public BankAccount(string owner, string accountNumber, decimal startBalance)
+    public BankAccount(string ägare, double startSaldo)
     {
-        this.owner = owner;
-        this.accountNumber = accountNumber;
-        this.balance = startBalance;
+        this.ägare = ägare;
+        this.saldo = startSaldo;
+        this.ärAktivt = true;
     }
 }
 ```
 
 *Vi kodar resten live. Häng med.*
+*Imorgon skriver vi om det här med properties och `private set`.*
 
 ---
 
@@ -82,10 +81,10 @@ public class BankAccount
 
 ```csharp
 // ❌ Publikt fält — ingen kontroll
-public decimal balance;
+public double saldo;
 
 // ✅ Property — vi bestämmer vad som syns utåt
-public decimal Balance { get; private set; }
+public double Saldo { get; private set; }
 ```
 
 Utifrån kan du läsa `Balance`.  
@@ -97,13 +96,13 @@ Bara klassen själv får ändra den.
 ## Varför spelar det roll?
 
 ```csharp
-// Om balance vore publik:
-konto.balance = -999999;   // inga hinder
-konto.balance = 0.000001m; // fortfarande inga hinder
+// Om saldo vore publikt:
+konto.saldo = -999999;    // inga hinder
+konto.saldo = 0.000001;   // fortfarande inga hinder
 
-// Med private + Withdraw():
-bool success = konto.Withdraw(500);
-// Withdraw() kontrollerar att pengarna finns
+// Med private + TaUt():
+bool lyckades = konto.TaUt(500);
+// TaUt() kontrollerar att pengarna finns
 // Ogiltiga värden stoppas inuti klassen
 ```
 
@@ -115,8 +114,8 @@ bool success = konto.Withdraw(500);
 
 ```csharp
 // new = bygg ett objekt från ritningen
-BankAccount konto1 = new BankAccount("Anna", "SE123", 5000m);
-BankAccount konto2 = new BankAccount("Bo", "SE456", 200m);
+BankAccount konto1 = new BankAccount("Alex", 1000);
+BankAccount konto2 = new BankAccount("Sam", 500);
 ```
 
 `konto1` och `konto2` är **separata objekt**.  
@@ -127,7 +126,7 @@ De delar ritning — men inte data.
 ## Vanliga misstag
 
 - Glömmer `private` → allt är publikt → inkapsling försvinner
-- Sätter `this.owner = owner` i fel ordning → parametern skriver över sig själv
+- Sätter `this.ägare = ägare` i fel ordning → parametern skriver över sig själv
 - Gör properties som både `get` och `set` publika → ingen kontroll
 
 ---

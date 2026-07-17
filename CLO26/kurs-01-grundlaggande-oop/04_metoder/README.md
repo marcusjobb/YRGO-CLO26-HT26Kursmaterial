@@ -37,6 +37,13 @@
 
 | Fil | Nivå | Vad |
 |-----|------|-----|
-| `exercises/calculator_methods.md` | 🟢 | Bygg en miniräknare med separata metoder per operation |
-| `exercises/string_methods.md` | 🟡 | Skapa hjälpmetoder för stränghantering |
-| `exercises/grade_calculator.md` | 🟡 | Beräkna betyg med metoder och returvärden |
+| `exercises/calculator_methods.md` | 🟢 Grundläggande | Bygg en miniräknare med separata metoder per operation |
+| `exercises/string_methods.md` | 🟡 Medel | Skapa hjälpmetoder för stränghantering |
+| `exercises/grade_calculator.md` | 🟡 Medel | Beräkna betyg med metoder och returvärden |
+| `exercises/basic_algorithms.md` | 🔴 Utmaning | Medelvärde, min/max och sifferanalys med `params` och tuples |
+
+## Tentaförberedelse
+
+| Fil | Vad |
+|-----|-----|
+| `tentafragor/fragor.md` | Övningsfrågor i tentaformat — bra att köra igenom inför tentan |

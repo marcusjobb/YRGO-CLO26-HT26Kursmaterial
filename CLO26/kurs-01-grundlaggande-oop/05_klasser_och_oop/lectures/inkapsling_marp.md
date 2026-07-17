@@ -235,9 +235,9 @@ Det är inte bara teknik. Det är design.
 
 **Övningar idag:**
 
-🟢 `exercises/ovning_car.md` — bygg `Car` med privata fält och properties
+🟢 `exercises/ovning_01_car.md` — bygg `Car` med privata fält och properties
 
-🟡 `exercises/ovning_spaceship.md` — samma struktur, ny rymdtema — lite mer att tänka på
+🟡 `exercises/ovning_02_spaceship.md` — samma struktur, nytt rymdtema — lite mer att tänka på
 
 ---
 

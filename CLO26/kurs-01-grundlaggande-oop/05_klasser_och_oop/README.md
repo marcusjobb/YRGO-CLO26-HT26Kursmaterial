@@ -45,9 +45,21 @@
 
 | Fil | Nivå | Vad |
 |-----|------|-----|
-| `exercises/intro_varfor_oop.md` | 🟢 Grundläggande | Varför OOP? Reflektionsövning |
+| `exercises/intro_varfor_oop.md` | 🟢 Intro | Varför OOP? Bygg från lösa variabler till en klass |
 | `exercises/ovning_01_car.md` | 🟢 Grundläggande | Skapa en enkel `Car`-klass med konstruktor och metod |
-| `exercises/ovning_spaceship.md` | 🟡 Medel | Bygg en `Spaceship`-klass med inkapsling och properties |
+| `exercises/ovning_02_spaceship.md` | 🟡 Medel | Bygg en `Spaceship`-klass med inkapsling och properties |
+
+## Träning
+
+| Fil | Vad |
+|-----|-----|
+| `exercises/training_vecka3.md` | 10 flervalsfrågor om klasser, inkapsling och properties |
+
+## Tentaförberedelse
+
+| Fil | Vad |
+|-----|-----|
+| `tentafragor/fragor.md` | Övningsfrågor i tentaformat — bra att köra igenom inför tentan |
 
 ## Inlämning
 
