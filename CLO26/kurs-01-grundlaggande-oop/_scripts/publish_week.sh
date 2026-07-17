@@ -15,6 +15,11 @@ PLAN="_teacher/week_${WEEK}.md"
 STUDENT_REMOTE="studerande"
 WORK_BRANCH="publish/week_${WEEK}"
 
+# Prefix från git-root till kursmappen (ex: CLO26/kurs-01-grundlaggande-oop/)
+GIT_PREFIX=$(git rev-parse --show-prefix)
+# Kursens mappnamn i student-repot (ex: kurs-01-grundlaggande-oop)
+COURSE_DIR=$(basename "$(pwd)")
+
 if [ ! -f "$PLAN" ]; then
   echo "Fel: Hittade inte $PLAN"
   exit 1
@@ -35,28 +40,40 @@ echo ""
 # Verifiera att studerande-remote finns
 if ! git remote get-url "$STUDENT_REMOTE" &>/dev/null; then
   echo "Fel: Remote '$STUDENT_REMOTE' saknas."
-  echo "Lägg till den med: git remote add studerande git@github:nionit/kurs-csharp-student.git"
+  echo "Lägg till den med: git remote add studerande git@github-jobb:marcusjobb/CLO26-Coursematerial.git"
   exit 1
 fi
 
-# Skapa en temporär branch baserad på studerande-remotens main
+# Skapa ett temporärt worktree för student-branchen
+# (undviker att byta branch i den aktiva working tree)
 git fetch "$STUDENT_REMOTE"
-git checkout -B "$WORK_BRANCH" "$STUDENT_REMOTE/main"
+WORKTREE=$(mktemp -d)
+git worktree add "$WORKTREE" -B "$WORK_BRANCH" "$STUDENT_REMOTE/main"
 
-# Kopiera filer från main
+PUBLISHED_FILES=()
+
+copy_file() {
+  local src_key="$1"   # sökväg i teacher-repot (med prefix)
+  local dest_rel="$2"  # relativ sökväg i student-repot under COURSE_DIR/
+
+  local dest="$WORKTREE/$COURSE_DIR/$dest_rel"
+  mkdir -p "$(dirname "$dest")"
+  git show "main:${src_key}" > "$dest"
+  PUBLISHED_FILES+=("$COURSE_DIR/$dest_rel")
+}
+
+# Kopiera filer från main-branchen i lärarrepot
 while IFS= read -r file; do
   file=$(echo "$file" | xargs)
   [ -z "$file" ] && continue
 
-  # Blockera lärarfiler — publiceras aldrig direkt
   if [[ "$file" == *_teacher.md ]]; then
     echo "  🔒 Blockerad (lärarfil): $file"
     continue
   fi
 
-  if [ -e "../$(git rev-parse --show-toplevel)/$file" ] || git show "main:$file" &>/dev/null; then
-    mkdir -p "$(dirname "$file")"
-    git checkout main -- "$file"
+  if git show "main:${GIT_PREFIX}${file}" &>/dev/null; then
+    copy_file "${GIT_PREFIX}${file}" "$file"
     echo "  ✅ $file"
   else
     echo "  ⚠️  Hittades inte: $file"
@@ -73,25 +90,29 @@ if [ "$PUBLISH_FACIT" = true ]; then
     [[ "$file" == *_teacher.md ]] && continue
     teacher_file="${file%.md}_teacher.md"
     facit_file="${file%.md}_facit.md"
-    if git show "main:$teacher_file" &>/dev/null; then
-      mkdir -p "$(dirname "$facit_file")"
-      git checkout main -- "$teacher_file"
-      mv "$teacher_file" "$facit_file"
+    if git show "main:${GIT_PREFIX}${teacher_file}" &>/dev/null; then
+      copy_file "${GIT_PREFIX}${teacher_file}" "$facit_file"
       echo "  ✅ $facit_file"
     fi
   done <<< "$FILES"
 fi
 
-git add -A
-git commit -m "Publicerar vecka ${WEEK}${PUBLISH_FACIT:+ (med facit)}" || echo "(Inga ändringar att committa)"
-git push "$STUDENT_REMOTE" "${WORK_BRANCH}:main"
+# Committa och pusha från worktree
+(
+  cd "$WORKTREE"
+  if [ ${#PUBLISHED_FILES[@]} -gt 0 ]; then
+    git add "${PUBLISHED_FILES[@]}"
+  fi
+  git commit -m "Publicerar vecka ${WEEK}${PUBLISH_FACIT:+ (med facit)}" || echo "(Inga ändringar att committa)"
+  git push "$STUDENT_REMOTE" "${WORK_BRANCH}:main"
+)
 
-# Återgå till main
-git checkout main
-git branch -D "$WORK_BRANCH"
+# Städa upp worktree och branch
+git worktree remove "$WORKTREE" --force
+git branch -D "$WORK_BRANCH" 2>/dev/null || true
 
 echo ""
-echo "Klart! Vecka $WEEK är publicerad."
+echo "Klart! Vecka $WEEK är publicerad till $COURSE_DIR/ i student-repot."
 
 # Generera dayplanners för kommande vecka
 DAYPLAN_DIR="_teacher/dayplanners"
@@ -100,13 +121,12 @@ mkdir -p "$DAYPLAN_DIR"
 if command -v dayplanner &>/dev/null; then
   echo ""
   echo "Genererar dayplanners för vecka $WEEK..."
-  KURS=$(basename "$(pwd)")
   for dag in 1 2 3; do
     outfile="${DAYPLAN_DIR}/vecka_${WEEK}_dag${dag}.md"
-    dayplanner "$WEEK" "$dag" "$KURS" > "$outfile" 2>/dev/null && echo "  📅 $outfile" || echo "  ⚠️  Dag $dag saknar veckoplan"
+    dayplanner "$WEEK" "$dag" "$COURSE_DIR" > "$outfile" 2>/dev/null && echo "  📅 $outfile" || echo "  ⚠️  Dag $dag saknar veckoplan"
   done
   echo ""
-  echo "Dayplanners klara — öppna $_teacher/dayplanners/ måndag morgon."
+  echo "Dayplanners klara — öppna _teacher/dayplanners/ måndag morgon."
 else
-  echo "  (dayplanner-scriptet hittades inte i PATH — kör 'dayplanner $WEEK 1' manuellt)"
+  echo "  (dayplanner hittades inte i PATH — kör 'dayplanner $WEEK 1' manuellt)"
 fi
