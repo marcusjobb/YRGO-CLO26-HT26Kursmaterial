@@ -1,6 +1,8 @@
-# Array Övningar 📊
+# Array Övningar
 
 🟡
+
+> Fastnar du i mer än 15 minuter? Fråga klassen → AI → Marcus. I den ordningen.
 
 
 ## Övning 1: Grundläggande Array (Lätt)
@@ -8,8 +10,6 @@
 Fyll i koden nedan för att skapa en array med 5 superhjältar och skriva ut alla namnen med deras position.
 
 ```csharp
-
-**15-minutersregeln:** Fastnar du i mer än 15 minuter — fråga klassen, sen AI, sen mig. I den ordningen.
 using System;
 
 class Program

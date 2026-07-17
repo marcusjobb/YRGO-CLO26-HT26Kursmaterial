@@ -11,11 +11,11 @@ I denna övning ska vi skapa en array med 10 heltal och sedan plocka ut de fem f
 2. Skapa en ny array som innehåller de fem första talen i den första arrayen.
 3. Skriv ut den nya arrayen.
 
+> Fastnar du i mer än 15 minuter? Fråga klassen → AI → Marcus. I den ordningen.
+
 ## Kodexempel
 
 ```csharp
-
-**15-minutersregeln:** Fastnar du i mer än 15 minuter — fråga klassen, sen AI, sen mig. I den ordningen.
 using System;
 
 public class MainClass
@@ -103,15 +103,4 @@ public class MainClass
 
 I facit-lösningen ovan skapar vi först en array med 10 heltal. Sedan skriver vi ut den ursprungliga arrayen genom att använda hjälpmetoden `PrintArray`. Därefter skapar vi en ny array `femForsta` med en storlek på 5 och kopierar de fem första talen från den ursprungliga arrayen till den nya arrayen med hjälp av `Array.Copy`-metoden. Slutligen skriver vi ut den nya arrayen genom att använda `PrintArray` igen.
 
-Det är viktigt att notera att detta bara är en av flera sätt att lösa uppgiften. Det finns andra metoder och tekniker som kan användas för att plocka ut en del av en array i C#. Använd gärna detta exempel som en grund och utforska olika sätt att lösa problemet på egen hand.
-
-Jag hoppas att denna artikel har varit till hjälp för dig att förstå hur man plockar ut en del av en array och skapar en ny array av det i C#. Om du har fler frågor eller behöver ytterligare hjälp, tveka inte att fråga!
-
-## Obligatorisk Dad-joke
-
-Varför gick arrayen till terapi?
-
-För att den hade för många olösta issues med indexering!
-
----
-Nu har du verktygen. Använd dem, missbruka dem, lär dig av misstagen. Det är vägen.
+Det här är ett av flera sätt att lösa uppgiften — `Array.Copy` är bekvämt, men du kan också lösa det med en vanlig for-loop. Prova gärna båda.

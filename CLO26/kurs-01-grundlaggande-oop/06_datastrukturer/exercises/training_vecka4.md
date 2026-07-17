@@ -25,7 +25,7 @@ d. En typ av loop
   - ❌ **d) En loop** - FEL: En array lagrar data, en loop (som `for`/`foreach`) låter dig gå igenom datan
 </details>
 
-<div style="text-align: center; margin: 2em 0;"><img src="separator_cool.png" alt="Separator" style="max-width: 400px; height: auto;"></div>
+---
 
 ### Fråga 2
 
@@ -46,7 +46,7 @@ a. 1<br>b. 0<br>c. -1<br>d. Det beror på
   - ❌ **d) Det beror på** - FEL: Array-index börjar ALLTID på 0 i C#
 </details>
 
-<div style="text-align: center; margin: 2em 0;"><img src="separator_cool.png" alt="Separator" style="max-width: 400px; height: auto;"></div>
+---
 
 ### Fråga 3
 
@@ -70,7 +70,7 @@ d. En array kan bara innehålla text
   - ❌ **d) Array bara text** - FEL: Arrayer kan vara av alla typer: `int[]`, `double[]`, `string[]`, etc.
 </details>
 
-<div style="text-align: center; margin: 2em 0;"><img src="separator_cool.png" alt="Separator" style="max-width: 400px; height: auto;"></div>
+---
 
 ### Fråga 4
 
@@ -91,7 +91,7 @@ a. `list.Put(element)`<br>b. `list.Insert(element)`<br>c. `list.Add(element)`<br
   - ❌ **d) Push** - FEL: `Push` finns på Stack, inte på List
 </details>
 
-<div style="text-align: center; margin: 2em 0;"><img src="separator_cool.png" alt="Separator" style="max-width: 400px; height: auto;"></div>
+---
 
 ### Fråga 5
 
@@ -112,7 +112,7 @@ a. `3`<br>b. `2`<br>c. `Length`<br>d. `Count` används inte för listor
   - ❌ **d) Används inte** - FEL: `Count` är den primära egenskapen för att få antalet element i en List
 </details>
 
-<div style="text-align: center; margin: 2em 0;"><img src="separator_cool.png" alt="Separator" style="max-width: 400px; height: auto;"></div>
+---
 
 ### Fråga 6
 
@@ -136,7 +136,7 @@ d. Att sortera data automatiskt
   - ❌ **d) Sortera** - FEL: Dictionary sorterar inte automatiskt
 </details>
 
-<div style="text-align: center; margin: 2em 0;"><img src="separator_cool.png" alt="Separator" style="max-width: 400px; height: auto;"></div>
+---
 
 ### Fråga 7
 
@@ -157,7 +157,7 @@ a. Du får `null` tillbaka<br>b. Programmet kastar ett undantag (kraschar)<br>c.
   - ❌ **d) Varning** - FEL: Det är ett runtime-fel, inte en varning. Programmet stoppas
 </details>
 
-<div style="text-align: center; margin: 2em 0;"><img src="separator_cool.png" alt="Separator" style="max-width: 400px; height: auto;"></div>
+---
 
 ### Fråga 8
 
@@ -178,7 +178,7 @@ a. `foreach (string key in poäng)`<br>b. `foreach (KeyValuePair<K, V> par in po
   - ✅ **d) Alla tre fungerar** - **RÄTT**: Välj efter behov. `KeyValuePair` är vanligast när du behöver både nyckel och värde
 </details>
 
-<div style="text-align: center; margin: 2em 0;"><img src="separator_cool.png" alt="Separator" style="max-width: 400px; height: auto;"></div>
+---
 
 ### Fråga 9
 
@@ -199,7 +199,7 @@ a. En typ av loop<br>b. En uppsättning namngivna konstanter<br>c. En sorts arra
   - ❌ **d) En metod** - FEL: enum är en typdeklaration, inte en metod
 </details>
 
-<div style="text-align: center; margin: 2em 0;"><img src="separator_cool.png" alt="Separator" style="max-width: 400px; height: auto;"></div>
+---
 
 ### Fråga 10
 
@@ -223,7 +223,7 @@ d. Alla ovanstående
   - ❌ **c) Bara minne** - DELVIS: Stämmer men inte hela sanningen
 </details>
 
-<div style="text-align: center; margin: 2em 0;"><img src="separator_cool.png" alt="Separator" style="max-width: 400px; height: auto;"></div>
+---
 
 ### Fråga 11
 
@@ -247,7 +247,7 @@ d. List är alltid bättre än array
   - ❌ **d) Alltid bättre** - FEL: Array är bättre när storleken är känd och fix — t.ex. veckans dagar
 </details>
 
-<div style="text-align: center; margin: 2em 0;"><img src="separator_cool.png" alt="Separator" style="max-width: 400px; height: auto;"></div>
+---
 
 ### Fråga 12
 
@@ -271,4 +271,4 @@ d. Skriver ut "Alex" poäng
   - ❌ **d) Skriver ut** - FEL: `ContainsKey` returnerar `true`/`false`, den skriver inte ut något
 </details>
 
-<div style="text-align: center; margin: 2em 0;"><img src="separator_cool.png" alt="Separator" style="max-width: 400px; height: auto;"></div>
+---

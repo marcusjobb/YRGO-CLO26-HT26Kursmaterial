@@ -46,9 +46,20 @@
 | Fil | Nivå | Vad |
 |-----|------|-----|
 | `exercises/arraycopy.md` | 🟢 Grundläggande | Kopiera och skriv ut element i en array |
-| `exercises/array_exercises.md` | 🟡 Medel | Fler arrayövningar med loopar och index |
-| `exercises/dictionary_ovning_latt.md` | 🟢 Grundläggande | Skapa och slå upp värden i ett `Dictionary` |
-| `exercises/dictionary_phonebook.md` | 🟡 Medel | Bygg en enkel telefonbok med `Dictionary` |
+| `exercises/array_exercises.md` | 🟡 Medel | Arrayövningar: slumptal, min/max, sökning |
+| `exercises/dictionary_phonebook.md` | 🟡 Medel | Bygg en telefonbok med `Dictionary` — lägg till, sök, ta bort |
+
+## Träning
+
+| Fil | Vad |
+|-----|-----|
+| `exercises/training_vecka4.md` | Flervalsfrågor om arrayer, listor och Dictionary |
+
+## Tentaförberedelse
+
+| Fil | Vad |
+|-----|-----|
+| `tentafragor/fragor.md` | Övningsfrågor i tentaformat — bra att köra igenom inför tentan |
 
 ## Inlämning
 
