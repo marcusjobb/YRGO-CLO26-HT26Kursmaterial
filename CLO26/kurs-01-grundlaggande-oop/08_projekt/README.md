@@ -1,7 +1,7 @@
 # Modul 8 — Skogsäventyret (Grupprojekt)
 
 **Tema:** Tillämpa klasser, List, enum och OOP i ett textäventyr
-**Inlämning:** `assignment/skogsaventyret.md` — senast söndag 28 sep 23:59
+**Inlämning:** `assignment/skogsaventyret.md` — senast söndag 27 sep 23:59
 
 > Det här är inga föreläsningar den här veckan — det är projektvecka. Marcus finns tillgänglig för handledning.
 
@@ -14,7 +14,7 @@
 
 ## Grupper
 
-Grupper om 2–3 personer. Gruppindelning sker på tisdag vecka 4.
+Grupper om 2–3 personer. Gruppindelning sker på tisdag vecka 7.
 
 ## Inlämning
 

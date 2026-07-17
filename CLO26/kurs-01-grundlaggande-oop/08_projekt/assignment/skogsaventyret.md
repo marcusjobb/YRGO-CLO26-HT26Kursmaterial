@@ -1,7 +1,8 @@
 # Slutprojekt — Skogsäventyret 🌲
 
-**Vecka:** 4–5  
-**Deadline:** Söndag 28 sep 2026, 23:59  
+**Vecka:** 7–8  
+**Deadline:** Söndag 27 sep 2026, 23:59  
+**Presentation:** Onsdag 30 sep 2026 — förmiddag tenta, eftermiddag redovisning  
 **Förlängd deadline:** Fredag 2 okt 2026, 23:59  
 **Gruppstorlek:** 2–3 studerande  
 **Inlämning:** Länk till er gemensamma fork i Google Classroom
