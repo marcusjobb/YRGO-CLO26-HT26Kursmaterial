@@ -1,7 +1,9 @@
+---
+marp: true
+theme: nion-dark
+---
+
 # Git återblick
-
-🟢
-
 
 En liten tillbakablick på föreläsningen och tidigare Github exempel.
 

@@ -1,3 +1,8 @@
+---
+marp: true
+theme: nion-dark
+---
+
 ## **Git vs GitHub - Vad är skillnaden?** 🤔
 
 ### **Git = Verktyget** 🛠️

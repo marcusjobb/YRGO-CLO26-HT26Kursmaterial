@@ -1,6 +1,9 @@
-# Versionskontroll med Git
+---
+marp: true
+theme: nion-dark
+---
 
-🟢
+# Versionskontroll med Git
 
 
 ## Vad är Git?

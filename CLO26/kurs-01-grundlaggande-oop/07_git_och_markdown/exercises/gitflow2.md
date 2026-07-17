@@ -1,6 +1,6 @@
 # Git Flow + Issues – organisera arbetet
 
-🟢
+🟡
 
 **Scenario:** Förra övningen funkade, men ni hade ingen koll på vad som skulle göras. Nu inför ni issues — varje uppgift blir en issue, varje branch kopplas till sin issue, och allt stängs automatiskt när PR:n mergas.
 

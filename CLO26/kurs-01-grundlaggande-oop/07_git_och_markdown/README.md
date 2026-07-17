@@ -17,29 +17,23 @@
 
 | Fil | Vad |
 |-----|-----|
-| `lectures/git_introduktion.md` | Git från grunden — repo, commit, push, pull |
-| `lectures/git_aterblick.md` | Återblick och fördjupning: branches och merge |
-| `lectures/workflow.md` | Git-flöde i team |
-| `lectures/github_registration.md` | Registrera och konfigurera GitHub |
-| `lectures/git_teori_presentation.md` | Teorigenomgång: hur Git lagrar data |
-
-### Lästexer
-
-| Fil | Vad |
-|-----|-----|
-| `notes/jin23_github_index.md` | Översikt — GitHub-workflow |
-| `notes/jin23_github_code_index.md` | Kodrelaterade Git-kommandon |
-| `notes/jin23_github_code_commits.md` | Commit-hygien och commit-meddelanden |
-| `notes/jin23_github_code_history.md` | Läsa och navigera historiken |
+| `lectures/git_teori_presentation.md` | Git från grunden — repo, commit, push, pull |
+| `lectures/workflow.md` | Git-flöde i team — add, commit, push-ritualen |
+| `lectures/git_introduktion.md` | Fördjupning: hur Git lagrar data och tänker |
+| `lectures/github_registration.md` | Registrera GitHub + Student Pack |
+| `lectures/git_aterblick.md` | Kommandoreferens: återblick och stash-kommandon |
 
 ## Övningar
 
 | Fil | Nivå | Vad |
 |-----|------|-----|
-| `exercises/git_exercises.md` | 🟢 Grundläggande | Grundkommandon: init, add, commit, log |
-| `exercises/gitflow1.md` | 🟡 Medel | Branches: skapa, byta och slå ihop |
-| `exercises/gitflow2.md` | 🟡 Medel | Merge conflict — skapa och lösa en |
-| `exercises/gitflow3.md` | 🔴 Utmaning | Team-flöde: branches och pull requests |
+| `exercises/git_exercises.md` | 🟢 Grundläggande | Grundkommandon: init, add, commit, log — plus branches och merge conflict |
+| `exercises/git_initiera_repository.md` | 🟢 Grundläggande | Steg-för-steg: konfigurera Git och skapa ditt första repo |
+| `exercises/gitflow1.md` | 🟡 Medel | Git Flow i grupp: feature branches, PR, merge |
+| `exercises/gitflow2.md` | 🟡 Medel | Git Flow + Issues: koppla branches till issues, stäng automatiskt |
+| `exercises/git-flow-team-csharp.md` | 🟡 Medel | Bygg ett C#-klassbibliotek tillsammans via Git Flow |
+| `exercises/git_flow_exercise_1.md` | 🔴 Utmaning | Git Flow med releases och hotfixes — feature → release → tag → hotfix |
+| `exercises/gitflow3.md` | 🔴 Utmaning | Code reviews: kommentera, godkänn och begär ändringar innan merge |
 
 ## Inlämning
 

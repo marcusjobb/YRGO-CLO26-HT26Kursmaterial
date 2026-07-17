@@ -1,7 +1,8 @@
-# Git Workflow Övningar 🔄
+# Git Workflow Övningar
 
-🔴
+🟢
 
+> **15-minutersregeln:** Fastnar du i mer än 15 minuter — fråga klassen, sen AI, sen mig. I den ordningen.
 
 ## Övning 1: Grundläggande Git Workflow (Lätt)
 
@@ -9,8 +10,6 @@ Följ instruktionerna nedan för att skapa ditt första Git repository och genom
 
 ### Kommandoskelett:
 ```bash
-
-**15-minutersregeln:** Fastnar du i mer än 15 minuter — fråga klassen, sen AI, sen mig. I den ordningen.
 # TODO: Skapa ny katalog för ditt projekt
 mkdir "MinProjektNamn"
 

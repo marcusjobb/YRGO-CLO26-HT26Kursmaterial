@@ -1,6 +1,6 @@
 # Git Flow + Code Reviews – granska innan merge
 
-🟡
+🔴
 
 **Scenario:** Ni mergar till develop, men koden granskas inte. Buggar smyger sig in. Nu inför ni code reviews — ingen PR mergas förrän någon annan har godkänt.
 

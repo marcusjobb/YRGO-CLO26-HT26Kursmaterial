@@ -1,10 +1,10 @@
+---
+marp: true
+theme: nion-dark
+---
+
 # Git - Versionskontroll som förändrar allt
 
-🟢
-
-
-**Marcus Medina**
-*Campus Mölndal*
 ---
 
 # Vad är Git? 🤔
@@ -250,9 +250,6 @@ Nu ska vi **praktisera** Git tillsammans:
 # Frågor? 🤔
 
 *"Inga dumma frågor - bara odokumenterade lösningar!"*
-
-**Marcus Medina**
-📧 marcus@campusmolndal.se
 
 ---
 Sådärja. Nu har du koll på det här. Nästa steg — testa själv. Det är då det fastnar.

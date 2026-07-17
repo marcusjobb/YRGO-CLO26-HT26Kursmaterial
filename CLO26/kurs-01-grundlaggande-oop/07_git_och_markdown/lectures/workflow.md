@@ -1,12 +1,12 @@
+---
+marp: true
+theme: nion-dark
+---
+
 # Git Workflow 🔄
-
-🟢
-
 
 ## Ritualen som alla utvecklare måste behärska
 
-**CLO25 - Versionshantering**
-*Marcus Medina • Campus Mölndal*
 ---
 
 # Vad är Git? 🤔
@@ -157,121 +157,14 @@ git pull origin main       # Hämta från specifik branch
 
 **Grundregel:** Alltid `git pull` innan du börjar jobba!
 
-**Conflict märken:**
+**Conflict-märken ser ut så här:**
 
 ```
-Din kod här```
-
----
-
-# Praktisk Demo 💻
-
-```bash
-# Nytt projekt setup
-mkdir SuperHeroApp
-cd SuperHeroApp
-git init
-echo "# SuperHero App" > README.md
-
-# Första commit
-git add README.md
-git commit -m "Initial commit with README"
-
-# Koppla till GitHub
-git remote add origin https://github.com/username/superheroapp.git
-git push -u origin main
-
-# Feature development
-git checkout -b feature/hero-list
-# ... gör ändringar i kod ...
-git add .
-git commit -m "Add hero list functionality"
-git push origin feature/hero-list
-```
-
----
-
-# Git Best Practices 🎯
-
-## Commit Messages ✍️
-
-```bash
-# BRA messages
-git commit -m "Add user authentication system"
-git commit -m "Fix bug in password validation"
-git commit -m "Update dependencies to latest versions"
-
-# DÅLIGA messages
-git commit -m "stuff"
-git commit -m "fix"
-git commit -m "wip"
-```
-
-## Commit Frequency 📅
-
-- **Commit ofta** - små, logiska ändringar
-- **En feature** per commit
-- **Fungerande kod** - commit inte trasig kod
-
----
-
-# Emergency Commands 🚨
-
-```bash
-# Ångra senaste commit (behåll ändringar)
-git reset HEAD~1
-
-# Ångra senaste commit (kasta bort ändringar)
-git reset --hard HEAD~1
-
-# Se vem som ändrade vad
-git blame filename.cs
-
-# Stash - göm ändringar tillfälligt
-git stash                  # Göm ändringar
-git stash pop              # Ta tillbaka ändringar
-
-# Hämta specifik commit
-git checkout abc1234       # Hoppa till specifik commit
-git checkout main          # Tillbaka till main
-```
-
-**VARNING:** `--hard` raderar ändringar permanent!
-
----
-
-# Visual Git Workflow 🎨
-
-```
-Working Dir  →  Staging Area  →  Local Repo  →  Remote Repo
-    📝             📦              📚            ☁️
-
-git add    →   git commit   →   git push
-           ←   git checkout ←   git pull
-```
-
-**Stages:**
-
-1. **Working Directory** - där du editerar
-2. **Staging Area** - förbereder för commit
-3. **Local Repository** - lokala commits
-4. **Remote Repository** - GitHub/GitLab
-
----
-
-# Key Takeaways 🎓
-
-1. **Git Ritual**: `add` → `commit` → `push`
-2. **Commit ofta** med beskrivande meddelanden
-3. **Branch för features** - håll main ren
-4. **Pull före push** - hämta andras ändringar först
-5. **Merge conflicts** är normala - fixa och fortsätt
-
-## 🚀 Nästa steg:
-
-- **Praktisera ritualen** dagligen
-- **Skapa branches** för alla features
-- **Läs Git log** för att förstå historik
+<<<<<<< HEAD
+Din kod här
+=======
+Annans kod
+>>>>>>> branch-namn
 ```
 
 ---
@@ -385,7 +278,8 @@ git add    →   git commit   →   git push
 - **Skapa branches** för alla features
 - **Läs Git log** för att förstå historik
 
->>>>>>> 82c8a305a6d0a4e7b36f82a8127909cf1c968f36
+---
+
 **Git är din bästa vän som utvecklare! 🤝**
 
 ---

@@ -1,6 +1,6 @@
 # Git Flow – gruppövning
 
-🟢
+🟡
 
 **Scenario:** Ni är ett team som bygger ett gemensamt projekt. Alla jobbar på varsin feature, och ingen ska kliva på någon annans tår. Lösningen heter Git Flow.
 
