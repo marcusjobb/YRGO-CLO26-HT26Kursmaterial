@@ -11,9 +11,9 @@ for arg in "$@"; do
   [[ "$arg" == "--facit" ]] && PUBLISH_FACIT=true
 done
 
-PLAN="_teacher/vecka_${WEEK}.md"
+PLAN="_teacher/week_${WEEK}.md"
 STUDENT_REMOTE="studerande"
-WORK_BRANCH="publish/vecka_${WEEK}"
+WORK_BRANCH="publish/week_${WEEK}"
 
 if [ ! -f "$PLAN" ]; then
   echo "Fel: Hittade inte $PLAN"
