@@ -45,8 +45,9 @@
 
 | Fil | Nivå | Vad |
 |-----|------|-----|
+| `exercises/array_avengers.md` | 🟢 Grundläggande | Bygg ett hjälteregister — skapa, loopa, sök i en array |
 | `exercises/arraycopy.md` | 🟢 Grundläggande | Kopiera och skriv ut element i en array |
-| `exercises/array_exercises.md` | 🟡 Medel | Arrayövningar: slumptal, min/max, sökning |
+| `exercises/array_exercises.md` | 🟡 Medel | Arrayövningar: slumptal, min/max, sökning med metoder |
 | `exercises/dictionary_phonebook.md` | 🟡 Medel | Bygg en telefonbok med `Dictionary` — lägg till, sök, ta bort |
 
 ## Träning
