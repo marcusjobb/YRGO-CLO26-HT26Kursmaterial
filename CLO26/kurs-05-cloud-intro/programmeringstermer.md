@@ -60,3 +60,43 @@ Exempel: en webbserver i VNet:et ansluter säkert till Azure SQL Database via en
 Azures DNS-tjänst för din domän. Du hostar dina DNS-poster i Azure tillsammans med resten av infrastrukturen.
 Exempel: din domän example.com ligger på Azure DNS.
 
+**App Service-miljö (App Service Environment)**
+En dedikerad miljö för att köra Azure App Service-appar med hög prestanda och säkerhet.
+Exempel: ett företag kör sina kritiska webbappar i en App Service-miljö för att få större kontroll och isolation.
+
+**Azure Kubernetes Service (AKS)**
+En hanterad Kubernetes-tjänst för att köra behållarbaserade applikationer i skala.
+Exempel: ett startup använder AKS för att köra mikrotjänster i Docker-behållare.
+
+**VM-skalningsuppsättningar (Virtual Machine Scale Sets)**
+En grupp identiska virtuella datorer som skalas automatiskt baserat på efterfrågan.
+Exempel: en webbapp behöver 2 datorer vid låg last och 10 vid högsta last — skalningsuppsättningar hanterar det automatiskt.
+
+**Azure SQL-databaser**
+Molnbaserad relationsdatabas som är helt hanterad av Azure.
+Exempel: en app lagrar användardata i en Azure SQL Database istället för att köra egen databasserver.
+
+**Lagringskonton (Storage Accounts)**
+En Azure-tjänst för att lagra data — filer, blobbar, köer, tabeller.
+Exempel: en app sparar användarfoton i Azure Blob Storage som en del av ett lagringskonto.
+
+**Microsofts stamnätverk (Microsoft Backbone Network)**
+Microsofts globala, privata nätverksinfrastruktur som förbinder Azure-datacenter världen över.
+Exempel: när två peer-kopplade Azure-nätverk kommunicerar, använder de Microsofts privata stamnätverk, inte Internet.
+
+**Krypterad anslutning**
+En säker kommunikationsväg där data är krypterad så att endast avsändare och mottagare kan läsa det.
+Exempel: en VPN-anslutning från ditt hem till Azure använder kryptering så att ingen kan läsa vad du skickar.
+
+**Inkommande och utgående säkerhetsregler**
+Regler som definierar vilken trafik som får in och ut ur en resurs.
+Exempel: en NSG-regel kan säga "tillåt inkommande HTTP från Internet" men "blockera all utgående trafik till Internet".
+
+**WAN-optimering (Wide Area Network)**
+Teknik för att förbättra prestanda och effektivitet i långväga nätverkskommunikation.
+Exempel: en virtuell nätverksinstallation optimerar trafik mellan ett kontor i Sverige och ett datacenter i USA.
+
+**Protokoll (Network Protocol)**
+En standard för hur datorer kommunicerar — bestämmer format, ordning och vilka åtgärder som krävs.
+Exempel: HTTP är ett protokoll för webbkommunikation, TCP/IP är grundprotokollet för Internet.
+

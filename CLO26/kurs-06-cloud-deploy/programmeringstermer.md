@@ -90,3 +90,71 @@ Exempel: en domän prod.internal som bara dina interna Azure-resurser kan nå.
 En DNS-post som automatiskt pekar till en Azure-resurs. Om resursen byter IP uppdateras posten automatiskt.
 Exempel: API-alias api.example.com pekar alltid till rätt Application Gateway oavsett dess IP.
 
+**Offentlig IP-adress (Public IP)**
+En IP-adress som är synlig på Internet och kan nås från vilken plats som helst.
+Exempel: en webbserver får en offentlig IP så att användare från hela världen kan nå den.
+
+**Offentlig lastbalanserare (Public Load Balancer)**
+En Azure-tjänst som fördelar inkommande trafik mellan flera servrar. Gör att du kan hantera mycket trafik.
+Exempel: en populär webbplats använder en lastbalanserare för att fördela förfrågningar mellan 10 webbbservrar.
+
+**App Service-miljö (App Service Environment)**
+En dedikerad miljö för att köra Azure App Service-appar med större isolation och kontroll.
+Exempel: ett företag kör sina känsliga affärsappar i en App Service Environment för extra säkerhet.
+
+**Azure Kubernetes Service (AKS)**
+En hanterad Kubernetes-tjänst för att köra och hantera behållarbaserade applikationer i skala.
+Exempel: ett SaaS-företag använder AKS för att köra hundratals mikrotjänster i Docker-behållare.
+
+**VM-skalningsuppsättningar (Virtual Machine Scale Sets)**
+En grupp identiska virtuella datorer som automatiskt skalas upp eller ner baserat på efterfrågan.
+Exempel: en e-commerce-sajt behöver 5 servrar på normal dag och 100 servrar på Black Friday — skalningsuppsättningar hanterar det automatiskt.
+
+**Azure SQL-databaser**
+En hanterad relationsdatabas i molnet. Du behöver inte hantera servern — Azure gör det.
+Exempel: en app lagrar kunddata i Azure SQL Database istället för att sätta upp egen databasserver.
+
+**Lagringskonton (Storage Accounts)**
+En molntjänst för att lagra filer, blobbar, köer och tabeller. Otroligt skalbar och hållbar.
+Exempel: en mobil-app sparar användarfoton i Azure Blob Storage för att de ska vara åtkomliga överallt.
+
+**Microsofts stamnätverk (Microsoft Backbone Network)**
+Microsofts globala privata nätverksinfrastruktur som förbinder alla Azure-regioner och datacenter.
+Exempel: när två VNet:s i olika länder peer-kopplas, använder de Microsofts stamnätverk för att kommunicera privat.
+
+**Krypterad anslutning**
+En säker kommunikationskanal där data är krypterad så att endast avsändare och mottagare kan läsa den.
+Exempel: VPN-anslutningar använder kryptering för att skydda data från avlyssning.
+
+**Inkommande och utgående säkerhetsregler (Inbound/Outbound Rules)**
+Regler som definierar vilken trafik som får in och ut ur en nätverksresurs.
+Exempel: "Tillåt inkommande HTTP från Internet" och "Blockera all utgående trafik utom till Azure-tjänster".
+
+**WAN-optimering (Wide Area Network Optimization)**
+Teknik för att förbättra hastighet och effektivitet i långväga nätverkskommunikation.
+Exempel: en virtuell nätverksinstallation optimerar data som skickas mellan Stockholm och Tokyo.
+
+**Protokoll (Network Protocol)**
+En standard för hur datorer kommunicerar — definierar format, ordning och regler för utbyte av information.
+Exempel: HTTP för webbar, SMTP för e-post, DNS för namnuppslagning.
+
+**Virtuell nätverkspeering (Virtual Network Peering)**
+En direkt anslutning mellan två VNet:s så de kan kommunicera privat utan att gå via Internet.
+Exempel: ett företag har ett VNet i Sverige och ett i USA — peering låter dem kommunicera säkert via Microsofts stamnätverk.
+
+**Nätverkstrafik (Network Traffic)**
+Data som flödar mellan resurser i ett nätverk. Kan filtreras och dirigeras enligt regler.
+Exempel: HTTP-trafik från en klient till en webbserver är ett exempel på nätverkstrafik.
+
+**Border Gateway Protocol (BGP)**
+Ett dynamiskt routningsprotokoll som utbyter väginformation mellan nätverksenheter automatiskt.
+Exempel: när du lägger till ett nytt undernät i ditt VNet sprids denna information automatiskt via BGP.
+
+**Isolering och segmentering**
+Principen att separera resurser i olika nätverk eller undernät för att begränsa kommunikation och förbättra säkerhet.
+Exempel: produktion och testmiljö ligger i separata VNet:s för att förhindra konfigurationsmisstag.
+
+**Namnmatchning (DNS)**
+Processen att översätta ett namn (t.ex. "database.internal") till en IP-adress som datorn kan förstå.
+Exempel: en webbserver frågar "vad är IP-adressen till database.internal?" och får svaret 10.0.2.5.
+
