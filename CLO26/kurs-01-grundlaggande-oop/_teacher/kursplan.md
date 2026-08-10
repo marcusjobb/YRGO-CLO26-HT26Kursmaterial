@@ -1,6 +1,6 @@
 # Kurskarta — OOP i C# Grund (kurs-01)
 
-**Kalender:** V36–V40 | **31 aug – 4 okt 2026**  
+**Kalender:** V35–V39 | **24 aug – 27 sep 2026**  
 **Schema:** Mån–tis campus, ons online, fre eget arbete
 
 ---
@@ -30,11 +30,11 @@
 
 | Vecka | Datum | Tema | Inlämning |
 |-------|-------|------|-----------|
-| 1 | v36, 31 aug–5 sep | Git, verktyg, miljö | Nej |
-| 2 | v37, 7–12 sep | C# repetition + tänkverktyg | Nej |
-| 3 | v38, 14–19 sep | Klasser och objekt | **Inlämning 1** sön 21 sep |
-| 4 | v39, 21–26 sep | Samlingar, datastrukturer, enums | **Skogsäventyret** sön 28 sep |
-| 5 | v40, 28 sep–4 okt | Tenta + ikapp-kod | **Tenta** tis 29 sep |
+| 1 | v35, 24–29 aug | Git, verktyg, miljö | Nej |
+| 2 | v36, 31 aug–5 sep | C# repetition + tänkverktyg | Nej |
+| 3 | v37, 7–12 sep | Klasser och objekt | **Inlämning 1** sön 13 sep |
+| 4 | v38, 14–19 sep | Samlingar, datastrukturer, enums | **Skogsäventyret** sön 20 sep |
+| 5 | v39, 21–27 sep | Tenta + ikapp-kod | **Tenta** tis 22 sep |
 
 ---
 
@@ -123,7 +123,7 @@ Föreläsning: `BankAccount` (tydlig, neutral)
 
 Se `05_klasser_och_oop/assignment/spellistan.md`
 
-**Deadline:** Söndag 21 sep 23:59
+**Deadline:** Söndag 13 sep 23:59
 
 ---
 
@@ -149,7 +149,7 @@ Grupper sätts ihop tisdag — 2–3 studerande per grupp.
 
 Se `08_projekt/assignment/skogsaventyret.md`
 
-**Deadline:** Söndag 28 sep 23:59
+**Deadline:** Söndag 20 sep 23:59
 
 ---
 

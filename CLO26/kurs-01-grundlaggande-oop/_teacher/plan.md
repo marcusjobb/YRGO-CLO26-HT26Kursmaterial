@@ -1,23 +1,23 @@
 # Lektionsplan — OOP i C# Grund
-**Kalender:** v36–40 | **Datum:** 31 aug – 4 okt 2026
+**Kalender:** v35–39 | **Datum:** 24 aug – 27 sep 2026
 
 ## Veckans ämnen
 
 | Kursvecka | Kalendervecka | Tema | Inlämning |
 |-----------|--------------|------|-----------|
-| 1 | v36 | Introduktion, installation och Git | Nej |
-| 2 | v37 | C# repetition — variabler, villkor, loopar, metoder | Nej |
-| 3 | v38 | Klasser och objekt — grundläggande OOP | Ja (deadline sön 21 sep) |
-| 4 | v39 | Samlingar, datastrukturer och enums | Ja (deadline sön 28 sep) |
-| 5 | v40 | Tenta + fri tid att koda ikapp | Tenta |
+| 1 | v35 | Introduktion, installation och Git | Nej |
+| 2 | v36 | C# repetition — variabler, villkor, loopar, metoder | Nej |
+| 3 | v37 | Klasser och objekt — grundläggande OOP | Ja (deadline sön 13 sep) |
+| 4 | v38 | Samlingar, datastrukturer och enums | Ja (deadline sön 20 sep) |
+| 5 | v39 | Tenta + fri tid att koda ikapp | Tenta |
 
 ---
 
-## Vecka 1 (v36) — 31 aug–5 sep 2026
+## Vecka 1 (v35) — 24–29 aug 2026
 *Tema: Installation, Git och Git Bash*
 *Ingen inlämning denna vecka*
 
-### Dag 1 — måndag 31 aug — SKOLINTRODAG
+### Dag 1 — måndag 24 aug — SKOLINTRODAG
 *UL (utbildningsledare) presenterar skolan. Teambuilding-lekar. Marcus är med men kör inte eget material.*
 *Exakt schema bekräftas måndag — anpassa efter vad UL lämnar för tid.*
 
@@ -30,7 +30,7 @@
 > Håll "Om utbildaren"-sliden redo men kör den bara om det finns tid kvar.
 > Annars tar dag 2 kursintron som första punkt.
 
-### Dag 2 — tisdag 1 sep — KURSSTART + INSTALLATION
+### Dag 2 — tisdag 25 aug — KURSSTART + INSTALLATION
 
 | Tid | Innehåll |
 |-----|----------|
@@ -47,7 +47,7 @@
 | 14:00–14:30 | Övning: Klona repo och göra första commit |
 | 14:30–14:45 | Q&A och info om vecka 2 |
 
-### Dag 3 — onsdag 2 sep
+### Dag 3 — onsdag 26 aug
 
 | Tid | Innehåll |
 |-----|----------|
@@ -64,7 +64,7 @@
 | 14:00–14:30 | Fri kodning / färdigställ installation |
 | 14:30–14:45 | Sammanfattning av veckan |
 
-### Dag 3 — onsdag 2 sep
+### Dag 3 — onsdag 26 aug
 
 | Tid | Innehåll |
 |-----|----------|
@@ -72,11 +72,11 @@
 
 ---
 
-## Vecka 2 (v37) — 7–12 sep 2026
+## Vecka 2 (v36) — 31 aug–5 sep 2026
 *Tema: C# repetition — variabler, villkor, loopar, metoder, klasser*
 *Ingen inlämning denna vecka*
 
-### Dag 1 — måndag 7 sep
+### Dag 1 — måndag 31 aug
 
 | Tid | Innehåll |
 |-----|----------|
@@ -93,7 +93,7 @@
 | 14:00–14:30 | Övning 2 — metoder |
 | 14:30–14:45 | Info om inlämning v3 + Q&A |
 
-### Dag 2 — tisdag 8 sep
+### Dag 2 — tisdag 1 sep
 
 | Tid | Innehåll |
 |-----|----------|
@@ -110,7 +110,7 @@
 | 14:00–14:30 | Inlämning Q&A |
 | 14:30–14:45 | Fri kodning |
 
-### Dag 3 — onsdag 9 sep
+### Dag 3 — onsdag 2 sep
 
 | Tid | Innehåll |
 |-----|----------|
@@ -118,11 +118,11 @@
 
 ---
 
-## Vecka 3 (v38) — 14–19 sep 2026
+## Vecka 3 (v37) — 7–12 sep 2026
 *Tema: Klasser och objekt — grundläggande OOP*
-*Inlämning: deadline söndag 21 sep 23:59*
+*Inlämning: deadline söndag 13 sep 23:59*
 
-### Dag 1 — måndag 14 sep
+### Dag 1 — måndag 7 sep
 
 | Tid | Innehåll |
 |-----|----------|
@@ -139,7 +139,7 @@
 | 14:00–14:30 | Övning 2 |
 | 14:30–14:45 | Inlämning presenteras + Q&A |
 
-### Dag 2 — tisdag 15 sep
+### Dag 2 — tisdag 8 sep
 
 | Tid | Innehåll |
 |-----|----------|
@@ -156,7 +156,7 @@
 | 14:00–14:30 | Inlämning Q&A |
 | 14:30–14:45 | Fri kodning |
 
-### Dag 3 — onsdag 16 sep
+### Dag 3 — onsdag 9 sep
 
 | Tid | Innehåll |
 |-----|----------|
@@ -164,19 +164,19 @@
 
 ---
 
-## Vecka 4 (v39) — 21–26 sep 2026
+## Vecka 4 (v38) — 14–19 sep 2026
 *Tema: Samlingar, datastrukturer och enums*
-*Inlämning: deadline söndag 28 sep 23:59*
+*Inlämning: deadline söndag 20 sep 23:59*
 
 > Samma dagstruktur som vecka 3 — fyll i ämne och innehåll.
 
 ---
 
-## Vecka 5 (v40) — 28 sep – 4 okt 2026
+## Vecka 5 (v39) — 21–27 sep 2026
 *Sista veckan — tenta + tid att koda ikapp*
 *Ingen ny inlämning*
 
-### Dag 1 — måndag 28 sep
+### Dag 1 — måndag 21 sep
 
 | Tid | Innehåll |
 |-----|----------|
@@ -186,13 +186,13 @@
 | 12:00–13:00 | Lunch |
 | 13:00–15:00 | Handledning och Q&A |
 
-### Dag 2 — tisdag 29 sep — TENTA
+### Dag 2 — tisdag 22 sep — TENTA
 
 | Tid | Innehåll |
 |-----|----------|
 | 9:00–12:00 | Tenta |
 
-### Dag 3 — onsdag 30 sep
+### Dag 3 — onsdag 23 sep
 
 | Tid | Innehåll |
 |-----|----------|

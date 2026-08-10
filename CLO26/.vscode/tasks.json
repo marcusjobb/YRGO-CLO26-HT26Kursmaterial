@@ -1,0 +1,57 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Marp: Rendera mermaid-diagram",
+      "type": "shell",
+      "command": "python3 ${workspaceFolder}/res/_scripts/render_mermaid.py ${fileDirname}",
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Marp: Exportera till PDF",
+      "type": "shell",
+      "command": "marp ${file} --html --theme-set ${workspaceFolder}/res/nion_dark.css --pdf -o ${fileDirname}/${fileBasenameNoExtension}.pdf",
+      "group": "build",
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Marp: Exportera till HTML",
+      "type": "shell",
+      "command": "marp ${file} --html --theme-set ${workspaceFolder}/res/nion_dark.css -o ${fileDirname}/${fileBasenameNoExtension}.html",
+      "group": "build",
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Marp: Presentera",
+      "type": "shell",
+      "command": "curl -s -o /dev/null http://localhost:53280 || setsid -f env PORT=53280 marp -s ${workspaceFolder} --theme-set ${workspaceFolder}/res/nion_dark.css > /tmp/marp_server.log 2>&1 < /dev/null; for i in $(seq 1 10); do curl -s -o /dev/null http://localhost:53280 && break; sleep 0.5; done; flatpak run com.google.Chrome \"http://localhost:53280/${relativeFile}\"",
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Marp: Stoppa server",
+      "type": "shell",
+      "command": "pkill -f 'marp -s' && echo 'Marp-servern stoppad.' || echo 'Ingen marp-server kördes.'",
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      },
+      "problemMatcher": []
+    }
+  ]
+}

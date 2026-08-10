@@ -1,7 +1,7 @@
 # CLO26 — Cloud-utvecklare, YRGO
 
 Kursmaterial för utbildningen **Cloud-utvecklare (400 YH-poäng)** vid YRGO.
-Omgång CLO26 (start höst 2025).
+Omgång CLO26. Kurs 1 (grundläggande OOP) startar höst 2026, v.35 (24 augusti).
 
 Materialet täcker kurserna 1–4 (grundläggande programmering till testutveckling).
 Kurserna 5–12 (cloud, Kubernetes, examensarbete m.m.) hanteras av separat lärare.
