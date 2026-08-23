@@ -53,10 +53,10 @@ publish:
   - 01_verktyg_och_git/exercises/ovning_02_forsta_repot.md
   - 01_verktyg_och_git/exercises/ovning_03_hello_world.md
   - 01_verktyg_och_git/exercises/diskutera_03_kalle.md
-  - 01_verktyg_och_git/programmeringstermer/git.md
-  - 01_verktyg_och_git/programmeringstermer/verktyg.md
-  - 01_verktyg_och_git/programmeringstermer/datatyper.md
-  - 01_verktyg_och_git/programmeringstermer/console.md
+  - termer/git.md
+  - termer/verktyg.md
+  - termer/datatyper.md
+  - termer/console.md
 ```
 
 ## Inlämning denna vecka
