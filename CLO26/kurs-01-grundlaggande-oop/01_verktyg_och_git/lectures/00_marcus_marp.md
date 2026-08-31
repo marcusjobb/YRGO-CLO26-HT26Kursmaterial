@@ -57,12 +57,21 @@ Klassens community — ställ frågor, dela kod, hjälp varandra
 
 # WiFi
 
-Anslut till **goteborgfree** i första hand.
-
-Funkar det inte — fråga mig om lösenord till **guest-molndal**.
+Anslut till **goteborgfree** i första hand — öppet nät, ingen inloggning.
 
 <p style="text-align: center">
 <img src="./qr_wifi.png" width="320">
+</p>
+
+---
+
+# WiFi — reserv
+
+Funkar inte goteborgfree? Använd **GUEST-MOLNDAL** — även öppet,
+men du får klicka dig igenom en inloggningssida efter anslutning.
+
+<p style="text-align: center">
+<img src="./qr_wifi_guest_molndal.png" width="320">
 </p>
 
 ---
