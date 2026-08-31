@@ -14,16 +14,17 @@ YRGO · Cloud Developer CLO26
 
 - Konsult — Nion IT / Nion Education
 - Ämnen: C#, cloud, clean code, testning, Python, Java
+- Frontend: Dramatisk kaos
+- Backend: Yeah!
 
-> C# är min favorit. Python är cool! Java tolereras. Det kommer ni märka.
+> C# är min favorit. Python är cool! Java är OK.
 
 ---
 
 # Den här kursen
 
-- Första gången jag undervisar cloud på djupet
-- Lär mig parallellt med er — nyfiken lärare, inte autopilot
-- Har arbetat med Azure i konsultuppdrag
+- C# från grunden
+- Vid Cloud tar min kollega Zane över
 
 ---
 
@@ -38,10 +39,20 @@ YRGO · Cloud Developer CLO26
 
 # Erfarenhet
 
+- Började med ZX-81 (1982) --> C64 (1984)
+- Utbildade mig till marknadsförare 1992, astråkigt
 - Programmerat professionellt sedan **1999**
 - Visual Basic → PHP → .NET (2008) → C# hela vägen
 - Leker med Python på sidan om
 - Java är OK men... eww.. Spring gör att det går att acceptera
+
+---
+
+# Campus Mölndal
+
+- Började här som konsult 2019
+- Blev anställd 2022
+- Tillbaka som konsult 2026
 
 ---
 
