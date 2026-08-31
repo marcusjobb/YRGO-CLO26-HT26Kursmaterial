@@ -181,6 +181,22 @@ En webbläsare öppnas och du loggar in på GitHub. Klart — Git kommer ihåg d
 > SSH-nycklar tar vi senare i kursen — de behövs när man hanterar
 > flera GitHub-konton på samma dator.
 
+### GitHub Student Developer Pack (valfritt)
+
+Gratis tillgång till GitHub Pro, Copilot, Azure-krediter, JetBrains-verktyg m.m.
+Helt frivilligt, men rekommenderat.
+
+**Viktigt:** Skapa **inte** ett nytt GitHub-konto för det här. Koppla din
+skol-epost (`@skola.goteborg.se`) till kontot du redan skapade ovan:
+
+1. Logga in på ditt GitHub-konto → **Settings → Emails → Add email address**
+2. Lägg till din `@skola.goteborg.se`-adress och verifiera den (kolla skolmailen för länken)
+3. Gå till **education.github.com/pack**
+4. Klicka **"Get student benefits"** — logga in med samma GitHub-konto
+5. Verifiera med skol-eposten — det brukar gå igenom snabbare än att ladda upp studiebevis
+
+Kan ta några dagar om GitHub ändå vill granska manuellt. Fungerar utan detta också — det är en bonus, inte ett krav.
+
 ---
 
 ## 5. VS Code (oavsett IDE-val)

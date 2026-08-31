@@ -41,3 +41,9 @@ Svaret de ska komma till: Kungen = arkitekten/designern. Tjuren = koden. Prinses
 ## Kopplingen till Silent Hill
 
 Berättelsen kommer från Dr. Kaufmanns fabel i Silent Hill: Shattered Memories (PSP, 2009). Marcus nämner det gärna -- det visar att bra tankelekar om ansvar och konsekvenser dyker upp överallt, inte bara i läroböcker.
+
+Spelets egen "skuld-mätare" (figurer av Tjuren, Kungen, Prinsen och Prinsessan längs en skala Most Guilty → Least Guilty):
+
+![Silent Hill: Shattered Memories — skuld-mätaren](images/silent_hill_kungen_prinsessan_meter.webp)
+
+Visa den här **efter** diskussionen, inte innan — annars blir spelets ranking uppfattad som "facit" istället för ett fjärde perspektiv bland flera.
