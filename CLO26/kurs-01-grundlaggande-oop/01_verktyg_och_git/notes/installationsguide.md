@@ -87,7 +87,9 @@ Du behöver en av dessa tre. Välj den du är bekväm med — eller fråga lära
 2. Ladda ner och kör installationsfilen
 3. I **Workloads**-steget — markera:
    - ✅ **.NET desktop development**
-4. Klicka **Install** — det tar en stund (3–7 GB)
+   - ✅ **ASP.NET and web development**
+   - ✅ **Data storage and processing**
+4. Klicka **Install** — det tar en stund (5–10 GB)
 
 **Verifiera:** Starta Visual Studio → File → New → Project → Console App (.NET)
 Om projektet skapas utan fel är allt klart.

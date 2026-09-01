@@ -84,7 +84,10 @@ Vi kopplar kontot till skolan senare under kursen.
 
 **Visual Studio Community** (gratis)
 - windows.microsoft.com → sök "Visual Studio Community"
-- Välj komponenten **".NET desktop development"**
+- Välj dessa workloads:
+  - ✅ **.NET desktop development**
+  - ✅ **ASP.NET and web development**
+  - ✅ **Data storage and processing**
 
 **JetBrains Rider** (betald, men gratis med studentlicens)
 - jetbrains.com/rider
