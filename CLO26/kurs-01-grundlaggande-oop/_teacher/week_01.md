@@ -53,6 +53,7 @@ publish:
   - 01_verktyg_och_git/exercises/ovning_02_forsta_repot.md
   - 01_verktyg_och_git/exercises/ovning_03_hello_world.md
   - 01_verktyg_och_git/exercises/diskutera_03_kalle.md
+  - 01_verktyg_och_git/exercises/training_vecka1.md
   - termer/git.md
   - termer/verktyg.md
   - termer/datatyper.md
