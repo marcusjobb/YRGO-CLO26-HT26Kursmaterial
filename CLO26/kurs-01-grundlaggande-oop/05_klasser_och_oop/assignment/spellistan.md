@@ -28,6 +28,8 @@ Vi dömer inte. Vi tittar på koden.
 - [ ] kan skilja på vad som är `private` och vad som är `public` — och förklara varför
 - [ ] kan skapa objekt och anropa metoder på dem
 - [ ] kan reflektera kring dina designval
+- [ ] använder Git med meningsfulla commits under arbetets gång
+- [ ] skriver kod med tydliga namn och kommentarer där de behövs
 
 *Bocka av dem själv innan du lämnar in.*
 
@@ -47,9 +49,18 @@ Vi dömer inte. Vi tittar på koden.
 - [ ] `Describe()` anropas på varje artist
 - [ ] `Perform()` anropas på minst en artist
 
+**Git**
+- [ ] Minst **5 commits** med beskrivande meddelanden (inte bara "fix" eller "update")
+- [ ] Commit-historiken ska spegla att du arbetat stegvis — en commit per logisk del
+
+**Kodkvalitet**
+- [ ] Variabel- och metodnamn är självförklarande — ingen behöver gissa vad `x` eller `m` är
+- [ ] Kommentarer där koden inte är uppenbar — förklara *varför*, inte *vad*
+
 **Reflektion** — lämnas in som `REFLEKTION.md` i ditt repo
 - [ ] Varför är fälten privata? Vad händer om de är publika?
 - [ ] Vad är skillnaden mellan klassen `MusicArtist` och ett objekt av den klassen?
+- [ ] Beskriv tre markdown-element du använt i det här dokumentet och vad de gör
 
 ---
 

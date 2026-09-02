@@ -119,11 +119,22 @@ Du möter ett monster. Det anfaller.
 - [ ] Vila återställer HP och kostar en dag
 - [ ] Poängtavla vid game over: dagar överlevda, level uppnådd, total XP
 
+### Git
+
+- [ ] Minst **8 commits** med beskrivande meddelanden — en per logisk del (Player klar, stridssystem klart osv.)
+- [ ] Alla gruppmedlemmar syns i commit-historiken
+
+### Kodkvalitet
+
+- [ ] Variabel-, klass- och metodnamn är självförklarande
+- [ ] Kommentarer där logiken inte är uppenbar — förklara *varför*, inte *vad*
+
 ### Reflektion (`REFLEKTION.md` i repot)
 
 - [ ] Vad var svårast att lösa?
 - [ ] Varför ärver era monster från en basklass — vad tjänar ni på det?
 - [ ] Vad hade ni gjort annorlunda om ni fick börja om?
+- [ ] Beskriv tre markdown-element ni använt i det här dokumentet och vad de gör
 
 ---
 
