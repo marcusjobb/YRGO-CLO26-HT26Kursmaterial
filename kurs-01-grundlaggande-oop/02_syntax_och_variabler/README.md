@@ -47,7 +47,6 @@
 | [story_03_sherlock.md](exercises/stories/story_03_sherlock.md) | 🟢 | Berättelseprogrammering — Sherlock |
 | [story_04_arsene_lupin.md](exercises/stories/story_04_arsene_lupin.md) | 🟡 | Berättelseprogrammering — Arsene Lupin |
 | [story_05_harry_potter.md](exercises/stories/story_05_harry_potter.md) | 🟡 | Berättelseprogrammering — Harry Potter |
-| [basic_algorithms.md](exercises/classes/basic_algorithms.md) | 🟢 | Grundläggande algoritmer med variabler |
 | [console_gui.md](exercises/classes/console_gui.md) | 🟢 | Formatera utskrifter i konsolen |
 | [nice_debug.md](exercises/classes/nice_debug.md) | 🟡 | Felsökning och snygg debug-utskrift |
 | [discuss_02_jenny.md](exercises/discuss/discuss_02_jenny.md) | 🟢 | Diskussionsövning — Jennys kod |
