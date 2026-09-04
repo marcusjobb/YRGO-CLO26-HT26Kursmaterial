@@ -1,34 +1,10 @@
-# Träningsuppgifter: Vecka 1 — Verktyg, Git och Git Bash
+# Träningsuppgifter: Vecka 1 — Verktyg och Git
 
 ## Instruktioner
 
 Välj det bästa svaret för varje fråga. Klicka på 'Visa svar' för att se det rätta svaret och förklaringar.
 
 ### Fråga 1
-
-Vilken terminal använder vi genom hela kursen?
-
-a. cmd.exe<br>
-b. PowerShell<br>
-c. Git Bash<br>
-d. Windows Terminal
-
-<details>
-  <summary>Visa svar</summary>
-
-  **Rätt svar:** Git Bash
-
-  **Förklaringar:**
-
-  - ❌ **a) cmd.exe** - FEL: cmd är Windows gamla terminal, vi använder den inte
-  - ❌ **b) PowerShell** - FEL: PowerShell är kraftfullt men vi använder Git Bash för att alla ska ha samma kommandon oavsett OS
-  - ✅ **c) Git Bash** - **RÄTT**: Git Bash följer med Git for Windows och fungerar likadant på Windows, Mac och Linux
-  - ❌ **d) Windows Terminal** - FEL: Windows Terminal är en *gränssnittsapp* som kan köra olika terminaler, men vi använder specifikt Git Bash inuti den
-</details>
-
-<div style="text-align: center; margin: 2em 0;"><img src="separator_cool.png" alt="Separator" style="max-width: 400px; height: auto;"></div>
-
-### Fråga 2
 
 Vilket Git-kommando visar vilka filer som har ändrats?
 
@@ -50,9 +26,9 @@ d. git diff
   - ❌ **d) git diff** - FEL: `git diff` visar *exakt vad* som ändrats rad för rad, medan `git status` bara visar *vilka filer* som ändrats
 </details>
 
-<div style="text-align: center; margin: 2em 0;"><img src="separator_cool.png" alt="Separator" style="max-width: 400px; height: auto;"></div>
+---
 
-### Fråga 3
+### Fråga 2
 
 Vad är rätt ordning i Git-ritualen?
 
@@ -74,9 +50,9 @@ d. add → push → commit → status
   - ❌ **d) add → push → commit** - FEL: Du måste committa innan du pushar
 </details>
 
-<div style="text-align: center; margin: 2em 0;"><img src="separator_cool.png" alt="Separator" style="max-width: 400px; height: auto;"></div>
+---
 
-### Fråga 4
+### Fråga 3
 
 Vad gör `git add .` ?
 
@@ -98,9 +74,9 @@ d. Pushar all kod till GitHub
   - ❌ **d) Pushar kod** - FEL: `git push` skickar till GitHub, `git add` förbereder lokalt
 </details>
 
-<div style="text-align: center; margin: 2em 0;"><img src="separator_cool.png" alt="Separator" style="max-width: 400px; height: auto;"></div>
+---
 
-### Fråga 5
+### Fråga 4
 
 Vad är ett bra commit-meddelande?
 
@@ -122,9 +98,9 @@ d. "grejer"
   - ❌ **d) "grejer"** - FEL: Alldeles för vagt — vad för grejer?
 </details>
 
-<div style="text-align: center; margin: 2em 0;"><img src="separator_cool.png" alt="Separator" style="max-width: 400px; height: auto;"></div>
+---
 
-### Fråga 6
+### Fråga 5
 
 Vad ska en `.gitignore`-fil innehålla?
 
@@ -146,9 +122,9 @@ d. Alla .cs-filer i projektet
   - ❌ **d) Alla .cs-filer** - FEL: `.gitignore` listar vad som ska *ignoreras*, inte vad som ska spåras
 </details>
 
-<div style="text-align: center; margin: 2em 0;"><img src="separator_cool.png" alt="Separator" style="max-width: 400px; height: auto;"></div>
+---
 
-### Fråga 7
+### Fråga 6
 
 Vad är Git Bash?
 
@@ -170,9 +146,9 @@ d. Ett GitHub-konto
   - ❌ **d) Ett GitHub-konto** - FEL: Git Bash är programvara på din dator, inte ett konto
 </details>
 
-<div style="text-align: center; margin: 2em 0;"><img src="separator_cool.png" alt="Separator" style="max-width: 400px; height: auto;"></div>
+---
 
-### Fråga 8
+### Fråga 7
 
 Vad gör `git clone`?
 
@@ -194,9 +170,9 @@ d. Kopierar en fil i ditt repo
   - ❌ **d) Kopierar en fil** - FEL: `git clone` kopierar hela repot, inte en enskild fil
 </details>
 
-<div style="text-align: center; margin: 2em 0;"><img src="separator_cool.png" alt="Separator" style="max-width: 400px; height: auto;"></div>
+---
 
-### Fråga 9
+### Fråga 8
 
 Vad är rätt kommando för att verifiera att .NET SDK är installerat?
 
@@ -218,9 +194,9 @@ d. sdk --version
   - ❌ **d) sdk --version** - FEL: Kommandot heter `dotnet`, inte `sdk`
 </details>
 
-<div style="text-align: center; margin: 2em 0;"><img src="separator_cool.png" alt="Separator" style="max-width: 400px; height: auto;"></div>
+---
 
-### Fråga 10
+### Fråga 9
 
 Vad gör git pull?
 
@@ -239,9 +215,9 @@ a. Skickar din kod till GitHub<br>b. Hämtar senaste ändringarna från GitHub<b
   - ❌ **d) Skapar nytt repo** - FEL: Det gör du på GitHub.com eller med `git init`
 </details>
 
-<div style="text-align: center; margin: 2em 0;"><img src="separator_cool.png" alt="Separator" style="max-width: 400px; height: auto;"></div>
+---
 
-### Fråga 11
+### Fråga 10
 
 Vad är en merge-konflikt?
 
@@ -263,9 +239,9 @@ d. När du glömt spara en fil
   - ❌ **d) Glömt spara** - FEL: Git jobbar med sparade filer, osparade ändringar påverkar inte Git
 </details>
 
-<div style="text-align: center; margin: 2em 0;"><img src="separator_cool.png" alt="Separator" style="max-width: 400px; height: auto;"></div>
+---
 
-### Fråga 12
+### Fråga 11
 
 Vad ser du om du kör `git commit -m "fix"`?
 
@@ -287,4 +263,4 @@ d. En varning från Git
   - ❌ **d) En varning** - FEL: Git varnar inte för dåliga meddelanden. Det är upp till dig som utvecklare att skriva bra sådana
 </details>
 
-<div style="text-align: center; margin: 2em 0;"><img src="separator_cool.png" alt="Separator" style="max-width: 400px; height: auto;"></div>
+---

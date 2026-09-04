@@ -28,13 +28,13 @@ Kör gärna live-kodning där den studerande gissar vad som händer innan du kö
 ```
 publish:
   - 02_syntax_och_variabler/README.md
-  - 02_syntax_och_variabler/lectures/01_variabler_och_typer.md
-  - 02_syntax_och_variabler/lectures/02_villkor_och_loopar.md
-  - 02_syntax_och_variabler/lectures/03_metoder.md
-  - 02_syntax_och_variabler/lectures/04_klasser_intro.md
-  - 02_syntax_och_variabler/exercises/ovning_01_variabler.md
-  - 02_syntax_och_variabler/exercises/ovning_02_loopar.md
-  - 02_syntax_och_variabler/exercises/ovning_03_metoder.md
+  - 02_syntax_och_variabler/lectures/konsol_marp.md
+  - 02_syntax_och_variabler/lectures/variabler_marp.md
+  - 02_syntax_och_variabler/notes/variabler.md
+  - 02_syntax_och_variabler/notes/datatyper.md
+  - 02_syntax_och_variabler/notes/konsol.md
+  - 01_verktyg_och_git/examples/fyrkanter.png
+  - 01_verktyg_och_git/exercises/gruppovning_01_fyrkanter.md
 ```
 
 ## Inlämning denna vecka

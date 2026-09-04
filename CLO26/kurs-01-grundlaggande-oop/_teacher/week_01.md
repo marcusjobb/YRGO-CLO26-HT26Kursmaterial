@@ -44,8 +44,6 @@ publish:
   - 01_verktyg_och_git/notes/installationsguide.md
   - 01_verktyg_och_git/notes/git_grunder.md
   - 01_verktyg_och_git/notes/git_konflikter.md
-  - 01_verktyg_och_git/examples/fyrkanter.png
-  - 01_verktyg_och_git/exercises/gruppovning_01_fyrkanter.md
   - 01_verktyg_och_git/exercises/logik_01_metropolitanclub.md
   - 01_verktyg_och_git/exercises/diskutera_01_kassaapparaten.md
   - 01_verktyg_och_git/exercises/ovning_01_git_setup.md
