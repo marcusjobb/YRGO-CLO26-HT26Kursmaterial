@@ -41,6 +41,10 @@ publish:
   - 01_verktyg_och_git/lectures/om_utbildaren_marp.md
   - 01_verktyg_och_git/lectures/installationsguide_marp.md
   - 01_verktyg_och_git/lectures/git_grunder_marp.md
+  - 01_verktyg_och_git/lectures/flödesscheman_marp.md
+  - 01_verktyg_och_git/lectures/diagrams/flödesscheman_marp_1.png
+  - 01_verktyg_och_git/lectures/diagrams/flödesscheman_marp_2.png
+  - 01_verktyg_och_git/lectures/diagrams/flödesscheman_marp_3.png
   - 01_verktyg_och_git/notes/installationsguide.md
   - 01_verktyg_och_git/notes/git_grunder.md
   - 01_verktyg_och_git/notes/git_konflikter.md
@@ -52,6 +56,10 @@ publish:
   - 01_verktyg_och_git/exercises/ovning_03_hello_world.md
   - 01_verktyg_och_git/exercises/diskutera_03_kalle.md
   - 01_verktyg_och_git/exercises/training_vecka1.md
+  - 01_verktyg_och_git/exercises/ovning_flödesscheman_debug.md
+  - 01_verktyg_och_git/exercises/ovning_flödesscheman_debug_marp.md
+  - 01_verktyg_och_git/exercises/diagrams/ovning_flödesscheman_debug_1.png
+  - 01_verktyg_och_git/exercises/diagrams/ovning_flödesscheman_debug_marp_1.png
   - termer/git.md
   - termer/verktyg.md
   - termer/datatyper.md

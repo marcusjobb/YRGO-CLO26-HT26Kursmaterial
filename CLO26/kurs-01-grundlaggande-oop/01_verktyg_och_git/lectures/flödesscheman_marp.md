@@ -26,7 +26,7 @@ Problem → Plan → Kod
 Det är mycket lättare att rätta till en plan på papper
 än att rätta till kod som inte fungerar.
 
-> 💬 _"Mäta två gånger, såga en gång."_
+> 💬 _"Planera två gånger, koda en gång."_
 
 ---
 
@@ -36,13 +36,9 @@ Ett flödesschema visar **vad programmet gör, steg för steg**.
 
 Fyra grundformer:
 
-```
-╭──────────╮    ┌──────────────┐    ◇──────────────◇    →
-│  Start   │    │   Handling   │    │   Beslut?    │
-│  Slut    │    │  (gör något) │    │   Ja / Nej   │
-╰──────────╯    └──────────────┘    ◇──────────────◇
-  Oval              Rektangel           Romb           Pil
-```
+![Diagram w:550px](diagrams/flödesscheman_marp_1.png)
+
+<!-- mermaid: diagrams/flödesscheman_marp_1.mmd -->
 
 - **Oval** — start och slut
 - **Rektangel** — en handling (beräkna, skriva ut, spara)
@@ -53,29 +49,9 @@ Fyra grundformer:
 
 ## Exempel: Ska jag ta med paraply?
 
-```
-        ╭─────────╮
-        │  Start  │
-        ╰────┬────╯
-             ↓
-     ◇───────────────◇
-     │  Regnar det?  │
-     ◇───────────────◇
-       ↓ Ja      ↓ Nej
-  ┌──────────┐  ┌────────────────┐
-  │ Ta med   │  │ Lämna paraplyt │
-  │ paraply  │  │ hemma          │
-  └────┬─────┘  └──────┬─────────┘
-       └────────┬───────┘
-                ↓
-          ╭───────────╮
-          │   Gå ut   │
-          ╰─────┬─────╯
-                ↓
-           ╭─────────╮
-           │  Slut   │
-           ╰─────────╯
-```
+![Diagram h:380px](diagrams/flödesscheman_marp_2.png)
+
+<!-- mermaid: diagrams/flödesscheman_marp_2.mmd -->
 
 ---
 
@@ -149,29 +125,9 @@ _Det finns inget rätt svar på hur man ritar — bara tydliga och otydliga._
 
 En loop är en pil som **går tillbaka**.
 
-```
-        ╭─────────╮
-        │  Start  │
-        ╰────┬────╯
-             ↓
-      ┌──────────────┐
-      │  antal = 0   │
-      └──────┬───────┘
-             ↓  ←──────────────────┐
-     ◇────────────────◇            │
-     │  antal < 5?   │            │
-     ◇────────────────◇            │
-       ↓ Ja      ↓ Nej            │
-  ┌──────────┐  ╭──────╮          │
-  │ Skriv ut │  │ Slut │          │
-  │ antal    │  ╰──────╯          │
-  └────┬─────┘                    │
-       ↓                          │
-  ┌──────────────┐                │
-  │ antal = antal│────────────────┘
-  │ + 1          │
-  └──────────────┘
-```
+![Diagram h:380px](diagrams/flödesscheman_marp_3.png)
+
+<!-- mermaid: diagrams/flödesscheman_marp_3.mmd -->
 
 ---
 
