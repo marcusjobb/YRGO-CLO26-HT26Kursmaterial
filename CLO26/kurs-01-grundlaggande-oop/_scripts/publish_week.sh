@@ -103,7 +103,8 @@ fi
   if [ ${#PUBLISHED_FILES[@]} -gt 0 ]; then
     git add "${PUBLISHED_FILES[@]}"
   fi
-  git commit -m "Publicerar vecka ${WEEK}${PUBLISH_FACIT:+ (med facit)}" || echo "(Inga ändringar att committa)"
+  FACIT_SUFFIX=$( [ "$PUBLISH_FACIT" = true ] && echo " (med facit)" || echo "" )
+  git commit -m "Publicerar vecka ${WEEK}${FACIT_SUFFIX}" || echo "(Inga ändringar att committa)"
   git push "$STUDENT_REMOTE" "${WORK_BRANCH}:main"
 )
 
