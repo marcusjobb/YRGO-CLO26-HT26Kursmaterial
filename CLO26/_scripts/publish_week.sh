@@ -52,11 +52,11 @@ if [ -d "${SRC_MODUL}/examples" ]; then
   echo "  💻 ${MODUL}/examples/ ($(ls "${SRC_MODUL}/examples" | wc -l) filer)"
 fi
 
-# tentafragor/
+# tentafrågor/ (kursnivå — alla modulers frågor samlas i en central mapp)
 if [ -d "${SRC_MODUL}/tentafragor" ]; then
-  mkdir -p "${DST_MODUL}/tentafragor"
-  cp -r "${SRC_MODUL}/tentafragor/." "${DST_MODUL}/tentafragor/"
-  echo "  📋 ${MODUL}/tentafragor/ ($(ls "${SRC_MODUL}/tentafragor" | wc -l) filer)"
+  mkdir -p "${STUDENT_REPO}/${KURS}/tentafrågor"
+  cp -r "${SRC_MODUL}/tentafragor/." "${STUDENT_REPO}/${KURS}/tentafrågor/"
+  echo "  📋 tentafrågor/ ($(ls "${SRC_MODUL}/tentafragor" | wc -l) filer kopierade från ${MODUL}/tentafragor/)"
 fi
 
 # termer/ (på kursnivå, inte modullnivå)

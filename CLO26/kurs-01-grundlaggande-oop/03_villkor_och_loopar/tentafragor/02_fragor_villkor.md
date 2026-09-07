@@ -31,18 +31,18 @@ D) Det är ett Java-specifikt nyckelord som råkade hamna i C# av misstag 😄
 
 När är `switch` ett bättre val än `if`?
 
-A) När du jämför en variabel mot ett antal kända, fasta värden<br>
-B) När du behöver jämföra två olika variabler med varandra<br>
+A) När du behöver jämföra två olika variabler med varandra<br>
+B) När du jämför en variabel mot ett antal kända, fasta värden<br>
 C) När villkoret innehåller en beräkning, till exempel `x * 2 > 10`<br>
 D) När du vill imponera på din handledare med ovanlig syntax 😄
 
 <details>
 <summary>Visa svar och förklaring</summary>
 
-**Rätt svar: A**
+**Rätt svar: B**
 
-**A)** Rätt — `switch` passar perfekt när du vet vilka möjliga värden som finns, till exempel veckodagar eller menyval.<br>
-**B)** Fel — `switch` jämför en enda variabel mot fasta värden, inte två variabler mot varandra.<br>
+**A)** Fel — `switch` jämför en enda variabel mot fasta värden, inte två variabler mot varandra.<br>
+**B)** Rätt — `switch` passar perfekt när du vet vilka möjliga värden som finns, till exempel veckodagar eller menyval.<br>
 **C)** Fel — `switch` fungerar inte med uttryck som `x * 2 > 10`, det kräver konkreta värden att matcha mot.<br>
 **D)** Handledaren är säkert imponerad oavsett — men det är inte ett kriterium för att välja `switch`.
 
@@ -54,19 +54,19 @@ D) När du vill imponera på din handledare med ovanlig syntax 😄
 
 Vad är den största risken med en `while`-loop?
 
-A) Att den aldrig slutar köra för att villkoret alltid förblir sant<br>
-B) Att den körs en gång för lite jämfört med en `for`-loop<br>
-C) Att den inte kan använda en räknarvariabel<br>
+A) Att den körs en gång för lite jämfört med en `for`-loop<br>
+B) Att den inte kan använda en räknarvariabel<br>
+C) Att den aldrig slutar köra för att villkoret alltid förblir sant<br>
 D) Att datorn blir trött och börjar protestera med felmeddelanden 😄
 
 <details>
 <summary>Visa svar och förklaring</summary>
 
-**Rätt svar: A**
+**Rätt svar: C**
 
-**A)** Rätt — om villkoret aldrig blir falskt kör loopen för evigt, vilket kallas en oändlig loop.<br>
-**B)** Fel — `while` och `for` kör lika många gånger om de är skrivna rätt; det handlar inte om antal.<br>
-**C)** Fel — du kan absolut använda en räknarvariabel i en `while`-loop, du deklarerar den bara utanför.<br>
+**A)** Fel — `while` och `for` kör lika många gånger om de är skrivna rätt; det handlar inte om antal.<br>
+**B)** Fel — du kan absolut använda en räknarvariabel i en `while`-loop, du deklarerar den bara utanför.<br>
+**C)** Rätt — om villkoret aldrig blir falskt kör loopen för evigt, vilket kallas en oändlig loop.<br>
 **D)** Datorn protesterar inte — den kör bara på tills programmet avslutas utifrån eller kraschar.
 
 </details>
@@ -77,18 +77,18 @@ D) Att datorn blir trött och börjar protestera med felmeddelanden 😄
 
 Vad är den viktigaste skillnaden mellan `for` och `foreach`?
 
-A) `for` använder ett index och räknar, `foreach` går igenom varje element utan att du hanterar indexet<br>
-B) `foreach` är snabbare än `for` och bör alltid användas istället<br>
+A) `foreach` är snabbare än `for` och bör alltid användas istället<br>
+B) `for` använder ett index och räknar, `foreach` går igenom varje element utan att du hanterar indexet<br>
 C) `for` fungerar bara med tal, `foreach` fungerar bara med strängar<br>
 D) `foreach` uppfanns för att `for` var för lätt att stava fel till 😄
 
 <details>
 <summary>Visa svar och förklaring</summary>
 
-**Rätt svar: A**
+**Rätt svar: B**
 
-**A)** Rätt — `for` ger dig kontroll över index och antal steg, `foreach` ger dig varje element direkt utan att du behöver tänka på positionen.<br>
-**B)** Fel — det är inte en generell sanning; vilket som är bättre beror på situationen.<br>
+**A)** Fel — det är inte en generell sanning; vilket som är bättre beror på situationen.<br>
+**B)** Rätt — `for` ger dig kontroll över index och antal steg, `foreach` ger dig varje element direkt utan att du behöver tänka på positionen.<br>
 **C)** Fel — `for` fungerar med allt som kan räknas, och `foreach` fungerar med alla samlingar, inte bara strängar.<br>
 **D)** Stavningen av `for` är nog inte vad som avgjorde designbesluten i C#.
 
@@ -128,19 +128,19 @@ for (int i = 0; i < 3; i++)
     Console.WriteLine(i);
 ```
 
-A) 0, 1, 2 (tre rader)<br>
-B) 1, 2, 3 (tre rader)<br>
-C) 0, 1, 2, 3 (fyra rader)<br>
+A) 1, 2, 3 (tre rader)<br>
+B) 0, 1, 2, 3 (fyra rader)<br>
+C) 0, 1, 2 (tre rader)<br>
 D) Tre rader med texten "i" — datorn vet ju inte vad i är för värde 😄
 
 <details>
 <summary>Visa svar och förklaring</summary>
 
-**Rätt svar: A**
+**Rätt svar: C**
 
-**A)** Rätt — `i` börjar på 0, loopen kör så länge `i < 3`, alltså för värdena 0, 1 och 2.<br>
-**B)** Fel — `i` startar på 0, inte 1. Loopen skriver ut 0 första gången.<br>
-**C)** Fel — villkoret är `i < 3`, så 3 skrivs aldrig ut. Loopen stannar innan dess.<br>
+**A)** Fel — `i` startar på 0, inte 1. Loopen skriver ut 0 första gången.<br>
+**B)** Fel — villkoret är `i < 3`, så 3 skrivs aldrig ut. Loopen stannar innan dess.<br>
+**C)** Rätt — `i` börjar på 0, loopen kör så länge `i < 3`, alltså för värdena 0, 1 och 2.<br>
 **D)** `i` är en variabel med ett riktigt heltalsvärde — C# skriver ut det, inte variabelns namn.
 
 </details>

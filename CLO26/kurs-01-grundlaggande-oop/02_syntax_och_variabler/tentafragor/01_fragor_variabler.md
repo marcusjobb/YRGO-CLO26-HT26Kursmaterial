@@ -9,18 +9,18 @@
 Vilket alternativ deklarerar en heltalsvariabel på rätt sätt i C#?
 
 A) `integer tal = 42;`<br>
-B) `Int tal = 42;`<br>
-C) `int tal = 42;`<br>
+B) `int tal = 42;`<br>
+C) `Int tal = 42;`<br>
 D) `tal = 42;` — kompilatorn fattar nog vad man menar 😄
 
 <details>
 <summary>Visa svar och förklaring</summary>
 
-**Rätt svar: C**
+**Rätt svar: B**
 
 **A)** `integer` är inte ett nyckelord i C# — det är Java som inte heller använder det. Heltal heter `int`.<br>
-**B)** `Int` med stort I är en klass i .NET, men man använder nyckelordet `int` (liten bokstav) i vanlig kod.<br>
-**C)** Rätt. `int tal = 42;` — explicit typ, rätt syntax, tydlig avsikt.<br>
+**B)** Rätt. `int tal = 42;` — explicit typ, rätt syntax, tydlig avsikt.<br>
+**C)** `Int` med stort I är en klass i .NET, men man använder nyckelordet `int` (liten bokstav) i vanlig kod.<br>
 **D)** Kompilatorn fattar faktiskt inte — en variabel måste deklareras med en typ innan den används.
 
 </details>
@@ -31,19 +31,19 @@ D) `tal = 42;` — kompilatorn fattar nog vad man menar 😄
 
 Vilken datatyp används för att lagra decimaltal i C#?
 
-A) `decimal` — men bara för pengar<br>
+A) `double` är standardvalet för decimaltal<br>
 B) `float` är den vanligaste typen för decimaltal<br>
-C) `double` är standardvalet för decimaltal<br>
+C) `decimal` — men bara för pengar<br>
 D) `int` med ett komma i, typ `int tal = 3,14;` 😄
 
 <details>
 <summary>Visa svar och förklaring</summary>
 
-**Rätt svar: C**
+**Rätt svar: A**
 
-**A)** `decimal` finns och är precis — men den används främst för ekonomiberäkningar, inte som standardval.<br>
+**A)** Rätt. `double tal = 3.14;` — `double` är 64-bitars och standardvalet för decimaltal i C#.<br>
 **B)** `float` är en 32-bitars typ med lägre precision än `double`. Den används när precision är mindre viktig.<br>
-**C)** Rätt. `double tal = 3.14;` — `double` är 64-bitars och standardvalet för decimaltal i C#.<br>
+**C)** `decimal` finns och är precis — men den används främst för ekonomiberäkningar, inte som standardval.<br>
 **D)** `int` kan bara hålla hela tal — ett kommatecken i värdet är ett kompileringsfel.
 
 </details>
@@ -100,19 +100,19 @@ D) `3.5` men bara om det är tisdag 😄
 
 Vilken namngivningskonvention används för variabler i C#?
 
-A) `PascalCase` — stor bokstav på varje ord, även det första<br>
-B) `snake_case` — ord separeras med understreck<br>
-C) `camelCase` — liten bokstav på första ordet, stor bokstav på efterföljande<br>
+A) `camelCase` — liten bokstav på första ordet, stor bokstav på efterföljande<br>
+B) `PascalCase` — stor bokstav på varje ord, även det första<br>
+C) `snake_case` — ord separeras med understreck<br>
 D) `SCREAMING_SNAKE_CASE` — för att visa att man menar allvar 😄
 
 <details>
 <summary>Visa svar och förklaring</summary>
 
-**Rätt svar: C**
+**Rätt svar: A**
 
-**A)** `PascalCase` används i C# — men för klasser, metoder och properties, inte variabler.<br>
-**B)** `snake_case` används i språk som Python och Ruby. I C# är det ovanligt och ses som dålig stil.<br>
-**C)** Rätt. Variabler i C# skrivs med `camelCase`: `int antalPoang`, `string fornamn`, `bool arAktiv`.<br>
+**A)** Rätt. Variabler i C# skrivs med `camelCase`: `int antalPoang`, `string fornamn`, `bool arAktiv`.<br>
+**B)** `PascalCase` används i C# — men för klasser, metoder och properties, inte variabler.<br>
+**C)** `snake_case` används i språk som Python och Ruby. I C# är det ovanligt och ses som dålig stil.<br>
 **D)** `SCREAMING_SNAKE_CASE` används för konstanter i en del språk — i C# används `PascalCase` även för konstanter.
 
 </details>
@@ -124,18 +124,18 @@ D) `SCREAMING_SNAKE_CASE` — för att visa att man menar allvar 😄
 Vad är en `bool`?
 
 A) En typ som kan hålla heltal mellan 0 och 1<br>
-B) En typ som representerar sant (`true`) eller falskt (`false`)<br>
-C) En typ för korta textsträngar, max ett tecken<br>
+B) En typ för korta textsträngar, max ett tecken<br>
+C) En typ som representerar sant (`true`) eller falskt (`false`)<br>
 D) En typ uppkallad efter matematikern George Boole, fast han stavade det annorlunda 😄
 
 <details>
 <summary>Visa svar och förklaring</summary>
 
-**Rätt svar: B**
+**Rätt svar: C**
 
 **A)** Det låter som `int` med begränsat värde — `bool` håller inte siffror, bara logiska tillstånd.<br>
-**B)** Rätt. `bool arInloggad = true;` — används för villkor, flaggor och logiska uttryck.<br>
-**C)** Det är `char` som håller ett enskilt tecken — `bool` har ingenting med text att göra.<br>
+**B)** Det är `char` som håller ett enskilt tecken — `bool` har ingenting med text att göra.<br>
+**C)** Rätt. `bool arInloggad = true;` — används för villkor, flaggor och logiska uttryck.<br>
 **D)** Det stämmer faktiskt — George Boole är upphovsmannen, och typen är uppkallad efter honom. Men det är inte svaret på vad en `bool` *är*.
 
 </details>
