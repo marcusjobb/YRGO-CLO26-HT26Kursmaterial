@@ -1,5 +1,7 @@
 # Övning — Piratskatten
 
+> 🗺️ **Rita ett flödesschema innan du kodar.** Skissa upp programflödet på papper — vilka steg tas? Vilka beslut fattas? Rita klart, lägg ner pennan, öppna sedan VS Code.
+
 🟡
 
 Du styr en pirat som letar skatt på fyra platser. Programmet frågar efter en plats i taget — du väljer var du letar. Loopen fortsätter tills du hittar skatten eller har sökt igenom alla platser.

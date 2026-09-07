@@ -1,5 +1,7 @@
 # Övning — Den saknade kronan
 
+> 🗺️ **Rita ett flödesschema innan du kodar.** Skissa upp programflödet på papper — vilka steg tas? Vilka beslut fattas? Rita klart, lägg ner pennan, öppna sedan VS Code.
+
 Alex, Sam och Kim beställer en pizza på Pizzeria Napoli. Den kostar 125 kr. <br>
 Ingen har Swish — de betalar kontant. Var och en lägger fram sin 50-lapp. <br>
 

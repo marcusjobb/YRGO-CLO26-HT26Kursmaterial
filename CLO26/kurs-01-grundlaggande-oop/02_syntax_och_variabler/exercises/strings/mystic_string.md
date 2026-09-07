@@ -1,5 +1,7 @@
 # Bonus: Mystic string
 
+> 🗺️ **Rita ett flödesschema innan du kodar.** Skissa upp programflödet på papper — vilka steg tas? Vilka beslut fattas? Rita klart, lägg ner pennan, öppna sedan VS Code.
+
 Det finns ett hemligt meddelande gömt i strängen nedan. Extrahera det med hjälp av
 indexering.
 

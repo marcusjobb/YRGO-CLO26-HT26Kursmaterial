@@ -1,5 +1,7 @@
 # Arsène Lupin och Bankvalvets Gåta
 
+> 🗺️ **Rita ett flödesschema innan du kodar.** Skissa upp programflödet på papper — vilka steg tas? Vilka beslut fattas? Rita klart, lägg ner pennan, öppna sedan VS Code.
+
 ## 🎯 Mål med övningen
 
 Efter den här övningen kommer du att kunna:

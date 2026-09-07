@@ -1,5 +1,7 @@
 # Övning — Karaktärsklass
 
+> 🗺️ **Rita ett flödesschema innan du kodar.** Skissa upp programflödet på papper — vilka steg tas? Vilka beslut fattas? Rita klart, lägg ner pennan, öppna sedan VS Code.
+
 🟡
 
 Du skapar ett litet rollspelssystem i Sagan om Ringen-stil. En spelare väljer ett nummer (1–5) och får sin karaktärsklass med tillhörande stats.

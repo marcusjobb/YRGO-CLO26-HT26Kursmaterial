@@ -1,5 +1,7 @@
 # Övning — Temperaturkollen
 
+> 🗺️ **Rita ett flödesschema innan du kodar.** Skissa upp programflödet på papper — vilka steg tas? Vilka beslut fattas? Rita klart, lägg ner pennan, öppna sedan VS Code.
+
 🟢
 
 Du ska skriva ett program som avgör vad man ska ha på sig beroende på temperaturen. Steg 1 bygger grunden. Steg 2 utökar den med ett extra villkor.

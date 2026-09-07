@@ -1,5 +1,7 @@
 # Intro — Varför finns OOP?
 
+> 🗺️ **Rita ett flödesschema innan du kodar.** Skissa upp programflödet på papper — vilka steg tas? Vilka beslut fattas? Rita klart, lägg ner pennan, öppna sedan VS Code.
+
 🟢 Grundnivå
 
 > Fastnar du i mer än 15 minuter? Fråga klassen → AI → Marcus. I den ordningen.

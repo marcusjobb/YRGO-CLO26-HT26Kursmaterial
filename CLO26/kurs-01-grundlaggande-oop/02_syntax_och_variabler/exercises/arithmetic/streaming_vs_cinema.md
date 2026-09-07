@@ -1,5 +1,7 @@
 # Övning — Streaming vs bio
 
+> 🗺️ **Rita ett flödesschema innan du kodar.** Skissa upp programflödet på papper — vilka steg tas? Vilka beslut fattas? Rita klart, lägg ner pennan, öppna sedan VS Code.
+
 Du betalar varje månad för ett gäng streamingtjänster utan att tänka på det.
 Men vad kostar det egentligen — och hur förhåller det sig till en biobiljett på Filmstaden?
 

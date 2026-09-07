@@ -1,5 +1,7 @@
 # Övning — Rabattkoden
 
+> 🗺️ **Rita ett flödesschema innan du kodar.** Skissa upp programflödet på papper — vilka steg tas? Vilka beslut fattas? Rita klart, lägg ner pennan, öppna sedan VS Code.
+
 Du vill köpa en jacka på Zara. Den kostar 799 kr men det är 30% rea.
 Du har också ett presentkort på 150 kr som du fick i julklapp och aldrig använt.
 

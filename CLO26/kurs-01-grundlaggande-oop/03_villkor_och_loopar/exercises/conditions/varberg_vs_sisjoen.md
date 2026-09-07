@@ -1,5 +1,7 @@
 # Övning — Varberg vs Sisjön
 
+> 🗺️ **Rita ett flödesschema innan du kodar.** Skissa upp programflödet på papper — vilka steg tas? Vilka beslut fattas? Rita klart, lägg ner pennan, öppna sedan VS Code.
+
 Du bor i Mölndal och vill köpa en Samsung 65" TV.
 
 NetOnNet i Varberg säljer den för 9 490 kr. Elgiganten på Sisjön säljer samma TV för 9 590 kr.

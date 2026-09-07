@@ -1,5 +1,7 @@
 # Övning — Spaceship-klassen
 
+> 🗺️ **Rita ett flödesschema innan du kodar.** Skissa upp programflödet på papper — vilka steg tas? Vilka beslut fattas? Rita klart, lägg ner pennan, öppna sedan VS Code.
+
 🟡
 
 Samma upplägg som bil-övningen — klassen har fler fält den här gången, men strukturen är identisk. Properties med `private set`, konstruktor, metoder med validering.

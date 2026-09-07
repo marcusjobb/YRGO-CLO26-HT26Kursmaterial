@@ -1,5 +1,7 @@
 # Övning — Nedräkning
 
+> 🗺️ **Rita ett flödesschema innan du kodar.** Skissa upp programflödet på papper — vilka steg tas? Vilka beslut fattas? Rita klart, lägg ner pennan, öppna sedan VS Code.
+
 🟢
 
 Två korta loopar. Steg 1 räknar ned med en `for`-loop. Steg 2 räknar jämna tal med en `while`-loop.

@@ -1,5 +1,7 @@
 # Övning — ConsoleGUI
 
+> 🗺️ **Rita ett flödesschema innan du kodar.** Skissa upp programflödet på papper — vilka steg tas? Vilka beslut fattas? Rita klart, lägg ner pennan, öppna sedan VS Code.
+
 Du ska bygga en klass som ritar en snygg box i konsolen och placerar text på
 valfria positioner. Klassen används av `NiceDebug` och flera andra övningar —
 så den måste fungera exakt som specen säger.
