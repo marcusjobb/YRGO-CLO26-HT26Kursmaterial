@@ -8,19 +8,19 @@
 
 Vad gör kommandot `git add`?
 
-A) Det sparar ändringarna permanent i historiken
-B) Det förbereder (stagear) filer för nästa commit
-C) Det laddar upp filerna till GitHub
+C) Det sparar ändringarna permanent i historiken
+A) Det förbereder (stagear) filer för nästa commit
+B) Det laddar upp filerna till GitHub
 D) Det skapar en backup på skrivbordet 😄
 
 <details>
 <summary>Visa svar och förklaring</summary>
 
-**Rätt svar: B**
+**Rätt svar: A**
 
-**A)** Det är vad `git commit` gör — `git add` är steget innan, det väljer ut vad som ska ingå.
-**B)** Rätt. `git add` lägger filer i "staging area", en sorts förberedelsezon inför commit.
-**C)** Det är `git push` som skickar commits till en fjärr-repo, inte `git add`.
+**C)** Det är vad `git commit` gör — `git add` är steget innan, det väljer ut vad som ska ingå.
+**A)** Rätt. `git add` lägger filer i "staging area", en sorts förberedelsezon inför commit.
+**B)** Det är `git push` som skickar commits till en fjärr-repo, inte `git add`.
 **D)** Git rör inte skrivbordet — men det hade varit ett intressant filsystem.
 
 </details>
@@ -31,9 +31,9 @@ D) Det skapar en backup på skrivbordet 😄
 
 Vad är skillnaden mellan `git commit` och `git push`?
 
-A) `commit` och `push` gör samma sak men `push` är snabbare
+C) `commit` och `push` gör samma sak men `push` är snabbare
 B) `commit` sparar ändringarna lokalt, `push` skickar dem till fjärr-repot
-C) `commit` skickar till GitHub, `push` skickar till GitLab
+A) `commit` skickar till GitHub, `push` skickar till GitLab
 D) `push` skickar koden till Marcus direkt 😄
 
 <details>
@@ -41,9 +41,9 @@ D) `push` skickar koden till Marcus direkt 😄
 
 **Rätt svar: B**
 
-**A)** De gör helt olika saker — `commit` skapar en snapshot lokalt, `push` synkar med servern.
+**C)** De gör helt olika saker — `commit` skapar en snapshot lokalt, `push` synkar med servern.
 **B)** Rätt. Du kan göra hundra commits offline och sedan pusha alla på en gång.
-**C)** Båda kommandon fungerar mot vilken Git-server som helst — GitHub, GitLab, Gitea, du väljer.
+**A)** Båda kommandon fungerar mot vilken Git-server som helst — GitHub, GitLab, Gitea, du väljer.
 **D)** Marcus kollar GitHub som alla andra — det finns ingen direktlänk till hans inkorg.
 
 </details>
@@ -54,19 +54,19 @@ D) `push` skickar koden till Marcus direkt 😄
 
 Vad är ett repository (repo)?
 
-A) En mapp med källkod, utan versionshistorik
-B) En samling commits som Git håller koll på, lokalt eller på en server
-C) En automatisk backup som skapas varje gång du sparar en fil
+B) En mapp med källkod, utan versionshistorik
+C) En samling commits som Git håller koll på, lokalt eller på en server
+A) En automatisk backup som skapas varje gång du sparar en fil
 D) En speciell typ av USB-minne för kod 😄
 
 <details>
 <summary>Visa svar och förklaring</summary>
 
-**Rätt svar: B**
+**Rätt svar: C**
 
-**A)** En vanlig mapp är inte ett repo — det krävs att Git är initierat (`.git`-mappen måste finnas).
-**B)** Rätt. Ett repo är hela projektets historik: alla commits, grenar och taggar.
-**C)** Det är inte hur Git fungerar — du bestämmer själv när du committar, inget sker automatiskt.
+**B)** En vanlig mapp är inte ett repo — det krävs att Git är initierat (`.git`-mappen måste finnas).
+**C)** Rätt. Ett repo är hela projektets historik: alla commits, grenar och taggar.
+**A)** Det är inte hur Git fungerar — du bestämmer själv när du committar, inget sker automatiskt.
 **D)** Kul idé, men nej. Repo är ett begrepp, inte en hårdvara.
 
 </details>
@@ -77,8 +77,8 @@ D) En speciell typ av USB-minne för kod 😄
 
 Vad visar `git status`?
 
-A) Vilka commits som finns i historiken
-B) Skillnaden (diff) mellan två filer
+B) Vilka commits som finns i historiken
+A) Skillnaden (diff) mellan två filer
 C) Vilka filer som är ändrade, stagade eller ospårade sedan senaste commit
 D) En statusrapport om hur det går för projektet, med omdömen 😄
 
@@ -87,8 +87,8 @@ D) En statusrapport om hur det går för projektet, med omdömen 😄
 
 **Rätt svar: C**
 
-**A)** Det är `git log` som visar commit-historiken.
-**B)** Det är `git diff` som visar exakt vad som ändrats rad för rad.
+**B)** Det är `git log` som visar commit-historiken.
+**A)** Det är `git diff` som visar exakt vad som ändrats rad för rad.
 **C)** Rätt. `git status` ger en tydlig översikt: vad är stageat, vad är ändrat men inte stageat, och vad vet Git inte om än.
 **D)** Git är opartisk — den ger inga betyg, bara fakta.
 
@@ -100,9 +100,9 @@ D) En statusrapport om hur det går för projektet, med omdömen 😄
 
 Vad händer när du klonar ett repo med `git clone`?
 
-A) Du skapar en ny tom mapp och kopplar den till GitHub
+C) Du skapar en ny tom mapp och kopplar den till GitHub
 B) Du laddar ner repot med hela dess historik till din dator
-C) Du kopierar bara senaste versionen av filerna, utan historik
+A) Du kopierar bara senaste versionen av filerna, utan historik
 D) Du kör `git yolo` i bakgrunden 😄
 
 <details>
@@ -110,9 +110,9 @@ D) Du kör `git yolo` i bakgrunden 😄
 
 **Rätt svar: B**
 
-**A)** Det är `git init` + `git remote add` som sätter upp en ny tom koppling — inte clone.
+**C)** Det är `git init` + `git remote add` som sätter upp en ny tom koppling — inte clone.
 **B)** Rätt. `git clone` hämtar hela repot: alla filer, alla commits, alla grenar.
-**C)** Det stämmer inte — du får hela historiken på köpet, det är en av Gits styrkor.
+**A)** Det stämmer inte — du får hela historiken på köpet, det är en av Gits styrkor.
 **D)** `git yolo` är tyvärr inte ett riktigt kommando. Ännu.
 
 </details>
@@ -123,19 +123,19 @@ D) Du kör `git yolo` i bakgrunden 😄
 
 Vad är syftet med en `.gitignore`-fil?
 
-A) Den listar vilka filer Git ska ta bort automatiskt
-B) Den talar om för Git vilka filer och mappar som inte ska spåras
-C) Den innehåller inloggningsuppgifter till GitHub
+C) Den listar vilka filer Git ska ta bort automatiskt
+A) Den talar om för Git vilka filer och mappar som inte ska spåras
+B) Den innehåller inloggningsuppgifter till GitHub
 D) Den ignorerar alla commits gjorda på en måndag 😄
 
 <details>
 <summary>Visa svar och förklaring</summary>
 
-**Rätt svar: B**
+**Rätt svar: A**
 
-**A)** Git tar inte bort filer på eget bevåg — `.gitignore` gör att Git helt enkelt inte ser dem.
-**B)** Rätt. Typiska exempel är `bin/`, `obj/`, `.env` och andra filer som inte ska in i repot.
-**C)** Inloggningsuppgifter ska absolut inte vara i repot alls — varken i `.gitignore` eller någon annan fil.
+**C)** Git tar inte bort filer på eget bevåg — `.gitignore` gör att Git helt enkelt inte ser dem.
+**A)** Rätt. Typiska exempel är `bin/`, `obj/`, `.env` och andra filer som inte ska in i repot.
+**B)** Inloggningsuppgifter ska absolut inte vara i repot alls — varken i `.gitignore` eller någon annan fil.
 **D)** Git är tyvärr blind för veckodagar. Måndagscommits gäller lika fullt.
 
 </details>
