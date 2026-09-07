@@ -35,6 +35,9 @@ publish:
   - 02_syntax_och_variabler/notes/konsol.md
   - 01_verktyg_och_git/examples/fyrkanter.png
   - 01_verktyg_och_git/exercises/gruppovning_01_fyrkanter.md
+  - 01_verktyg_och_git/exercises/ovning_flödesscheman_debug.md
+  - 01_verktyg_och_git/exercises/diagrams/ovning_flödesscheman_debug_1.mmd
+  - 01_verktyg_och_git/exercises/diagrams/ovning_flödesscheman_debug_1.png
 ```
 
 ## Inlämning denna vecka
