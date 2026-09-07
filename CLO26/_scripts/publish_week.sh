@@ -1,6 +1,6 @@
 #!/bin/bash
 # Publicerar en modul till studerande-repot.
-# Publicerar: notes/, exercises/, termer/ (kursnivå), README.md
+# Publicerar: notes/, exercises/, examples/, tentafragor/, termer/ (kursnivå), README.md
 # Publicerar INTE: lectures/, _teacher/
 #
 # Användning:
@@ -50,6 +50,13 @@ if [ -d "${SRC_MODUL}/examples" ]; then
   mkdir -p "${DST_MODUL}/examples"
   cp -r "${SRC_MODUL}/examples/." "${DST_MODUL}/examples/"
   echo "  💻 ${MODUL}/examples/ ($(ls "${SRC_MODUL}/examples" | wc -l) filer)"
+fi
+
+# tentafragor/
+if [ -d "${SRC_MODUL}/tentafragor" ]; then
+  mkdir -p "${DST_MODUL}/tentafragor"
+  cp -r "${SRC_MODUL}/tentafragor/." "${DST_MODUL}/tentafragor/"
+  echo "  📋 ${MODUL}/tentafragor/ ($(ls "${SRC_MODUL}/tentafragor" | wc -l) filer)"
 fi
 
 # termer/ (på kursnivå, inte modullnivå)
