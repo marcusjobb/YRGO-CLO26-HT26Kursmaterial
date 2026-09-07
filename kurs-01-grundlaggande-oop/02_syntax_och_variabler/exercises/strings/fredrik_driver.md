@@ -1,5 +1,7 @@
 # Övning — Fredrik Åkare och fröken Cecilia Lind
 
+> 🗺️ **Rita ett flödesschema innan du kodar.** Skissa upp programflödet på papper — vilka steg tas? Vilka beslut fattas? Rita klart, lägg ner pennan, öppna sedan VS Code.
+
 > Inspirerad av visan om herr Fredrik Åkare och den söta fröken Cecilia Lind, skriven av den underbare Cornelis Vreeswijk på 1960-talet. Av respekt för hans text citerar vi inte balladen — vi skriver vår egen rad i samma anda. Du kommer snart förstå varför det inte gör något att vi bytte ut texten.
 
 ## Flödesschema

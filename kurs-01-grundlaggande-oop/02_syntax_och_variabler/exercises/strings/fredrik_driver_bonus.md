@@ -1,5 +1,7 @@
 # 🥷 Ninja-bonus — Fredrik Åkare slumpar visan själv
 
+> 🗺️ **Rita ett flödesschema innan du kodar.** Skissa upp programflödet på papper — vilka steg tas? Vilka beslut fattas? Rita klart, lägg ner pennan, öppna sedan VS Code.
+
 > Klar med [`fredrik_akare.md`](fredrik_akare.md)? Då har du redan bytt ut adjektiv, namn och reaktion för hand. Den här bonusövningen låter **programmet** göra bytet slumpmässigt istället.
 
 ## Flödesschema

@@ -1,5 +1,7 @@
 # Övning — Katten Mjukis
 
+> 🗺️ **Rita ett flödesschema innan du kodar.** Skissa upp programflödet på papper — vilka steg tas? Vilka beslut fattas? Rita klart, lägg ner pennan, öppna sedan VS Code.
+
 Din katt heter Mjukis. Han väger 12 kg.
 
 En normalviktig katt väger 4–5 kg.

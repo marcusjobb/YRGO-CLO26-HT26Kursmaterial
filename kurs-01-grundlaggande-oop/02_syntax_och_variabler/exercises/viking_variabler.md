@@ -1,5 +1,7 @@
 # Vikingakaraktären 🪓
 
+> 🗺️ **Rita ett flödesschema innan du kodar.** Skissa upp programflödet på papper — vilka steg tas? Vilka beslut fattas? Rita klart, lägg ner pennan, öppna sedan VS Code.
+
 🟢
 
 Du ska skapa en vikingakaraktär med hjälp av variabler.

@@ -1,5 +1,7 @@
 # 🧙‍♂️ Trolldomsmission: Lär dig variabler med Harry Potter!
 
+> 🗺️ **Rita ett flödesschema innan du kodar.** Skissa upp programflödet på papper — vilka steg tas? Vilka beslut fattas? Rita klart, lägg ner pennan, öppna sedan VS Code.
+
 ## 🎯 Mål med övningen
 Lär dig om grundläggande variabler i C# och hur man lagrar information för att använda den i programmet.
 
