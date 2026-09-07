@@ -16,6 +16,13 @@ _Kurs 01 · Vecka 1 · Nion Education_
 
 ## Varför planera?
 
+"If you fail to plan, you plan to fail"
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;_- Taylor Swift_
+
+---
+
+## Varför planera?
+
 En bra programmerare skriver inte direkt kod.
 De **tänker igenom problemet först**.
 
@@ -99,8 +106,18 @@ else
 }
 ```
 
-Strukturen är **exakt densamma**.
+Strukturen är **densamma**.
 Pseudokoden blev kod — ord för ord.
+
+---
+
+## Regeln för kodplanening
+
+Precis som när man ska baka en kladdkaka
+1. Ta in värden (hämta ingredienser)
+2. Kontrollera att allt är användbart (kolla att alla ingredienser är OK)
+3. Bearbeta information (baka kakan)
+4. Ge användaren tillbaka resultatet (servera kakan)
 
 ---
 
