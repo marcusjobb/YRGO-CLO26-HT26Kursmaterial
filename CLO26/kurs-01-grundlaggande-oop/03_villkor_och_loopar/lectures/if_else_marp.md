@@ -63,12 +63,12 @@ Om `ålder` är 17 — händer ingenting.
 > — Taylor Swift, Gorgeous
 
 ```csharp
-int ålder = 15;
+bool hasGirlfriend = true;
 
-if (ålder >= 18)
-    Console.WriteLine("Du får rösta!");
+if (hasGirlfriend)
+    Console.WriteLine("I'm jealous of her.");
 else
-    Console.WriteLine("Du är för ung.");
+    Console.WriteLine("That's honestly worse.");
 ```
 
 `else` körs när villkoret är **falskt**.
