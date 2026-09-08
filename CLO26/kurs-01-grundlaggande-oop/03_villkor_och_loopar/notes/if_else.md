@@ -168,4 +168,29 @@ else
 
 Nästling fungerar, men var försiktig. Mer än två nivåer djup brukar vara ett tecken på att koden kan förenklas — antingen med `&&`, eller genom att bryta ut logiken i en egen metod. Djup nästling är svår att läsa och ännu svårare att felsöka.
 
+---
+
+## Fördjupning — Labyrinth och logiska operatorer
+
+I filmen *Labyrinth* (1986) vaktar två karaktärer två dörrar. En talar alltid sanning, en ljuger alltid — men du vet inte vem som är vem. Du får bara ställa en fråga.
+
+Den klassiska lösningen: *"Om jag frågade den andre vakten vilken dörr som leder till slottet, vad skulle hen svara?"* — och välj sedan motsatsen.
+
+Det fungerar för att `!(!x)` är samma som `x`. Lögnarens svar är `!sanning`, och om du vänder på det igen (`!`) får du tillbaka sanningen.
+
+I kod:
+
+```csharp
+bool vaktenTalarSanning = false; // vi vet inte om detta är sant
+bool dörrenÄrRätt = true;
+
+// Vaktens svar om den ljuger:
+bool svar = vaktenTalarSanning ? dörrenÄrRätt : !dörrenÄrRätt;
+
+// Välj alltid motsatsen till vad den tillfrågade vakten säger:
+bool rättVal = !svar;
+```
+
+Se scenen: [youtu.be/ReFhu8KYbmU](https://www.youtube.com/watch?v=ReFhu8KYbmU)
+
 **Se även:** [switch.md](switch.md) för ett alternativ när du har många fasta värden att jämföra, och `operatorer.md` i `programmeringstermer/` för en fullständig genomgång av operatorer.

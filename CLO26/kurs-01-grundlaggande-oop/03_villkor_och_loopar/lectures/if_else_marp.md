@@ -16,18 +16,12 @@ _Kurs 01 · Vecka 3 · Nion Education_
 
 ## Vad är ett villkor?
 
-Ett villkor är ett uttryck som antingen är **sant** eller **falskt**.
+![w:400](res/boolean_meme.jpg)
 
-```csharp
-bool harRåd = true;
-bool ärVuxen = false;
-```
+Ett Ouija-bräde har bara två svar: **YES** eller **NO**.
+I C# kallas det `true` eller `false` — det är en `bool`.
 
-I C# kallas det ett `bool`-värde — kort för *boolean*.
-
-Villkor är grunden för all logik i kod. Utan dem gör programmet alltid samma sak, oavsett vad som händer.
-
-> 💬 _"Du har redan träffat bool. Nu börjar vi använda den för riktiga beslut."_
+> 💬 _"Allt i en if-sats kokar ner till ett enda bool-värde."_
 
 ---
 
@@ -119,21 +113,6 @@ Det första som stämmer körs — resten hoppas över.
 | `>=` | större eller lika | `poäng >= 70` |
 
 Obs: `=` tilldelar ett värde. `==` jämför två värden.
-
----
-
-## Logiska operatorer
-
-> 🎬 *Labyrinth* (1986) — två dörrar, två vakter.
-> En talar alltid sanning. En ljuger alltid.
-> Ställ rätt fråga så hittar du rätt dörr.
-> [youtu.be/ReFhu8KYbmU](https://www.youtube.com/watch?v=ReFhu8KYbmU)
-
-```csharp
-bool vaktenTalarSanning = true;
-if (!vaktenTalarSanning) // vänd om svaret
-    välj = !välj;
-```
 
 ---
 
