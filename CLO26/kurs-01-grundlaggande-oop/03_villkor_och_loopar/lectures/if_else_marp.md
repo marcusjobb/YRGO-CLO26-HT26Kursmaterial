@@ -1,5 +1,6 @@
 ---
 marp: true
+html: true
 theme: nion-dark
 paginate: true
 ---
@@ -16,7 +17,7 @@ _Kurs 01 · Vecka 3 · Nion Education_
 
 ## Vad är ett villkor?
 
-![w:400](res/boolean_meme.jpg)
+![w:260](res/boolean_meme.jpg)
 
 Ett Ouija-bräde har bara två svar: **YES** eller **NO**.
 I C# kallas det `true` eller `false` — det är en `bool`.
@@ -36,14 +37,11 @@ if (ålder >= 18)
 
 Koden inuti `if` körs **bara om villkoret är sant**.
 
-```
-Flöde:
-         [ålder >= 18?]
-               |
-        Sant ──┘── Falskt
-         |              |
-  Skriv ut "Du        (hoppa över)
-   får rösta!"
+```mermaid
+flowchart TD
+    A([ålder = 20]) --> B{ålder >= 18?}
+    B -- Sant --> C[Du får rösta!]
+    B -- Falskt --> D[hoppa över]
 ```
 
 Om `ålder` är 17 — händer ingenting.
@@ -67,12 +65,10 @@ else
 
 `else` körs när villkoret är **falskt**.
 
-```
-[ålder >= 18?]
-      |
-  Sant │ Falskt
-      │       │
- "rösta!"  "för ung."
+```mermaid
+flowchart TD
+    A{hasGirlfriend?} -- Sant --> B["I'm jealous of her."]
+    A -- Falskt --> C["That's honestly worse."]
 ```
 
 En av de två vägarna körs alltid — aldrig båda.

@@ -106,12 +106,13 @@ while (nedräkning > 0) {
 }
 ```
 
-`nedräkning` ändras aldrig → villkoret är alltid sant → programmet fastnar.
-
-**En infinite loop är ett av de vanligaste misstagen med while.**
+`nedräkning` ändras aldrig → villkoret alltid sant → programmet fastnar.
 
 Kom ihåg: något **inuti loopen** måste förändra villkoret.
-Här är det `nedräkning--` som är nyckeln.
+
+---
+
+## Infinite loop — känner du igen den?
 
 > 🎬 *Groundhog Day* (1993) — Bill Murray vaknar upp och lever exakt samma dag, om och om igen. Ingen avslutningsvillkor.
 > *Happy Death Day* (2017) — samma grej, men med en mördare.

@@ -106,7 +106,13 @@ switch (betyg) {
 }
 ```
 
-Det enda undantaget: tomma case-grenar kan staplas:
+> 💬 _"C# skyddar dig här — det är ett medvetet designbeslut."_
+
+---
+
+## Fall-through — det enda undantaget
+
+Tomma case-grenar kan staplas — det är OK:
 
 ```csharp
 case 4:
@@ -114,6 +120,9 @@ case 5:
     Console.WriteLine("Högt betyg!");   // körs för 4 och 5
     break;
 ```
+
+Stackade case-grenar utan kod emellan är tillåtna.
+Det används när flera värden ska göra exakt samma sak.
 
 ---
 
@@ -198,6 +207,10 @@ string resultat = variabel switch {
     _      => "..."
 };
 ```
+
+---
+
+## Sammanfattning
 
 Tre regler:
 1. Glöm inte `break` i klassisk switch
