@@ -58,6 +58,10 @@ Om `ålder` är 17 — händer ingenting.
 
 ## if / else
 
+> 🎵 *"If you've got a girlfriend, I'm jealous of her*
+> *But if you're single, that's honestly worse"*
+> — Taylor Swift, Gorgeous
+
 ```csharp
 int ålder = 15;
 
@@ -120,6 +124,21 @@ Obs: `=` tilldelar ett värde. `==` jämför två värden.
 
 ## Logiska operatorer
 
+> 🎬 *Labyrinth* (1986) — två dörrar, två vakter.
+> En talar alltid sanning. En ljuger alltid.
+> Ställ rätt fråga så hittar du rätt dörr.
+> [youtu.be/ReFhu8KYbmU](https://www.youtube.com/watch?v=ReFhu8KYbmU)
+
+```csharp
+bool vaktenTalarSanning = true;
+if (!vaktenTalarSanning) // vänd om svaret
+    välj = !välj;
+```
+
+---
+
+## Logiska operatorer — `&&` `||` `!`
+
 Kombinera villkor med `&&`, `||` och `!`:
 
 ```csharp
@@ -141,6 +160,12 @@ if (!ärInloggad)
 ---
 
 ## Nästlade if — när det går snett
+
+![w:340](res/spaghetti_code.jpg)
+
+---
+
+## Nästlade if — i kod
 
 ```csharp
 // Svårt att följa — undvik djup nästling

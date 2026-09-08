@@ -36,6 +36,16 @@ Eller 10 000?
 
 ## while — kör så länge villkoret är sant
 
+![w:480](res/netflix_while.png)
+
+```csharp
+// while (!trött) { titta(); }
+```
+
+---
+
+## while — i kod
+
 ```csharp
 int nedräkning = 5;
 
@@ -103,11 +113,21 @@ while (nedräkning > 0) {
 Kom ihåg: något **inuti loopen** måste förändra villkoret.
 Här är det `nedräkning--` som är nyckeln.
 
+> 🎬 *Groundhog Day* (1993) — Bill Murray vaknar upp och lever exakt samma dag, om och om igen. Ingen avslutningsvillkor.
+> *Happy Death Day* (2017) — samma grej, men med en mördare.
+> Det är en infinite loop. Datorn är Bill Murray.
+
 > 💬 _"Om programmet verkar hänga — tryck Ctrl+C för att avbryta. Leta sedan efter vad som aldrig förändras."_
 
 ---
 
 ## for — när du vet exakt hur många gånger
+
+![w:300](res/the_count.jpg)
+
+---
+
+## for — i kod
 
 ```csharp
 for (int i = 1; i <= 10; i++)
