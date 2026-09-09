@@ -138,7 +138,7 @@ if (jamesDykerUppVidGrinden)
 if (bettyForlaterJames && jamesDykerUppVidGrinden)
     Console.WriteLine("Betty tar hans hand. De dansar igen.");
 else if (jamesDykerUppVidGrinden)
-    Console.WriteLine("Betty stänger grinden. \"Gå härifrån, James.\"");
+    Console.WriteLine("Betty stänger grinden. \"Go F**k yourself James.\"");
 ```
 
 </details>
