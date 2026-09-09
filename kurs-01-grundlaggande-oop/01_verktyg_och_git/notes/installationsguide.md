@@ -117,7 +117,7 @@ Om projektet skapas utan fel är allt klart.
 2. Ladda ner och installera
 3. Vid första start — logga in med ditt JetBrains-konto
 4. Aktivera Rider via studentlicensen
-
+5. Viktigt: När Rider frågar dig om att lägga till undantag i Windows Defender, tillåt det!
 **Verifiera:** New Solution → Console Application → skapa projektet.
 Om det fungerar är allt klart.
 
