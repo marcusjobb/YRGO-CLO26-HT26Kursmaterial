@@ -55,6 +55,21 @@ while (nedräkning > 0)
 
 Programmet låser sig och måste avslutas med tvång. Kontrollera alltid att din loop har ett sätt att nå sitt slutvillkor.
 
+En variant av samma misstag: räknaren rör sig åt **fel håll**.
+
+```csharp
+// Varning: detta är ett exempel på ett fel
+int check = 5;
+
+while (check > 0)
+{
+    check++; // borde vara check-- — nu ökar värdet bort från 0, aldrig mot det
+    Console.WriteLine($"Checking {check}");
+}
+```
+
+Villkoret `check > 0` är alltid sant eftersom `check` bara blir större. Resultatet är detsamma — en oändlig loop — men orsaken är subtilare: koden ändrar räknaren, men i fel riktning.
+
 ---
 
 ## for — för ett exakt antal iterationer
