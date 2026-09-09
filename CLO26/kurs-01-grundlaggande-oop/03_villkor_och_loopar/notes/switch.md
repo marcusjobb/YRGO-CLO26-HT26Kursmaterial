@@ -101,12 +101,7 @@ Console.WriteLine(text);
 
 `_` är wildcard och spelar samma roll som `default`. Denna syntax är kompakt och lämplig när du bara vill mappar ett värde till ett annat.
 
-<details>
-<summary>Djupare: när är switch expression ett bättre val?</summary>
-
 Switch expression passar bäst när du omvandlar ett värde till ett annat — till exempel betyg till text, en kod till ett meddelande, eller en enum-variant till en färg. Om du behöver köra mer komplex kod (flera satser, loopar, metodanrop) är den klassiska `switch`-satsen tydligare. Försök inte pressa in komplex logik i en switch expression — det minskar läsbarheten snarare än ökar den.
-
-</details>
 
 ---
 
