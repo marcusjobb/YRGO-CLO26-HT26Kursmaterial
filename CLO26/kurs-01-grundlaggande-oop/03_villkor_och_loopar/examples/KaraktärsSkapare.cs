@@ -15,6 +15,7 @@ Console.WriteLine("2 - Trollkarl");
 Console.WriteLine("3 - Lömsk");       // Typ Han Solo? Scoundrel?
 Console.WriteLine("4 - Dvärg");
 Console.WriteLine("5 - Hobbit");
+Console.WriteLine("6 - Människa");
 Console.WriteLine("0 - Avsluta");
 
 int raceChoice = int.Parse(Console.ReadLine()); // farligt men coolt just nu
@@ -65,7 +66,7 @@ switch (raceChoice)
         intelligence = 7;
         agility = 8;
         break;
-    case 6: // Human — inte i menyn, men handlar om att visa att case-nummer inte behöver följa ordning
+    case 6:
         race = "Human";
         strength = 4;
         intelligence = 3; // ← Politiker
