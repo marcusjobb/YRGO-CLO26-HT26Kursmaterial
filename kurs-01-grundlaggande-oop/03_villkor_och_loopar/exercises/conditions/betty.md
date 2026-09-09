@@ -25,6 +25,7 @@ bool jamesLamnarAugustine  = true;
 bool bettyForlaterJames    = true;
 
 // Konsekvenskedjan — tilldelas från andra bools
+// Man kan se det som så, varje val har konsekvens
 bool jamesSerDem              = bettyDansarMedNagon;
 bool augustinePickarUppJames  = jamesSerDem;
 bool jamesOchAugustineHookupp = augustinePickarUppJames;
