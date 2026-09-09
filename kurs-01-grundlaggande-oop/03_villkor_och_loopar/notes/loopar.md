@@ -128,10 +128,11 @@ Läs det som: "för varje `dag` i `veckodagar`, gör det här". Variabeln `dag` 
 
 Om du är osäker: börja med `foreach` om du har en samling, annars `for`. `while` är bäst när antalet varv styrs av något som ändras under körning — till exempel användarinput eller en nätverksfråga.
 
-<details>
-<summary>Djupare: do-while — kör minst en gång</summary>
+---
 
-`do-while` liknar `while`, men villkoret kontrolleras **efter** blocket. Det betyder att koden alltid körs minst en gång, oavsett om villkoret är sant eller falskt från start.
+## do-while — kör alltid minst en gång
+
+`do-while` liknar `while`, men med en avgörande skillnad: villkoret kontrolleras **efter** blocket, inte innan. Det innebär att koden inuti alltid körs minst en gång — oavsett om villkoret är sant eller falskt från start.
 
 ```csharp
 string svar;
@@ -146,9 +147,29 @@ while (svar != "ja");
 Console.WriteLine("Bra! Du fortsätter.");
 ```
 
-Det är ett bra mönster för menyval och inmatningsvalidering, där du alltid vill visa alternativet minst en gång. `do-while` används mer sällan än de andra tre — du behöver den inte för G — men det är bra att känna igen den.
+Skillnaden mot `while` är ordningen:
 
-</details>
+| Loop | Ordning |
+|------|---------|
+| `while` | Kontrollera villkor → kör blocket → upprepa |
+| `do-while` | Kör blocket → kontrollera villkor → upprepa |
+
+Det gör `do-while` till ett naturligt val för menyval och inmatningsvalidering — du vill alltid visa frågan minst en gång innan du vet vad användaren svarat.
+
+```csharp
+int val;
+
+do
+{
+    Console.WriteLine("1 - Starta spelet");
+    Console.WriteLine("2 - Avsluta");
+    Console.Write("Ditt val: ");
+    val = int.Parse(Console.ReadLine());
+}
+while (val != 1 && val != 2);
+
+Console.WriteLine("Du valde: " + val);
+```
 
 ---
 
