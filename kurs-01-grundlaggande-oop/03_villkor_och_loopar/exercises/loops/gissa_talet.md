@@ -39,3 +39,46 @@ Rätt! Du klarade det på 1 försök.
 ```
 
 Tänk på: "1 försök" — inte "1 försöks".
+
+## Tips
+
+- Slumpa med `int hemligt = new Random().Next(1, 21);` — Next(1, 21) ger 1–20.
+- `do { ... } while (gissning != hemligt);` — kör minst en gång, fortsätter tills rätt.
+- Räkna försök med `int forsok = 0;` och öka med `forsok++;` inne i loopen.
+
+<details><summary>Flödesschema — förslag</summary>
+
+![Diagram](diagrams/gissa_talet_1.png)
+
+<!-- mermaid: diagrams/gissa_talet_1.mmd -->
+
+</details>
+
+<details><summary>Lösningsförslag</summary>
+
+```csharp
+int hemligt = new Random().Next(1, 21);
+int forsok = 0;
+int gissning;
+
+Console.WriteLine("Gissa ett tal mellan 1 och 20!");
+Console.WriteLine();
+
+do
+{
+    Console.Write("Din gissning: ");
+    gissning = int.Parse(Console.ReadLine());
+    forsok++;
+
+    if (gissning > hemligt)
+        Console.WriteLine("För högt!");
+    else if (gissning < hemligt)
+        Console.WriteLine("För lågt!");
+    else
+        Console.WriteLine($"Rätt! Du klarade det på {forsok} försök.");
+
+    Console.WriteLine();
+} while (gissning != hemligt);
+```
+
+</details>

@@ -19,13 +19,9 @@ På hemvägen börjar Alex räkna: <br>
 
 ## Flödeschema
 
-```mermaid
-flowchart LR
-    A[Definiera variabler] --> B[Beräkna]
-    B --> C[Utvärdera]
-    C --> D[Korrigera]
-    D --> E[Presentera resultat]
-```
+![Diagram](diagrams/missing_crown_1.png)
+
+<!-- mermaid: diagrams/missing_crown_1.mmd -->
 
 ## Kod
 

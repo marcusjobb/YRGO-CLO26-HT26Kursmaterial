@@ -32,3 +32,54 @@ Lägg till lite liv — välj slumpmässigt bland två möjliga "ingen reaktion"
 - `int asteroid = 1; asteroid <= 4; asteroid++`
 - Asteroidnamn via `switch (asteroid) { case 1: namn = "CLO-Alpha"; ... }`
 - `new Random().Next(2)` ger 0 eller 1
+
+<details><summary>Flödesschema — förslag</summary>
+
+![Diagram](diagrams/astro_naut_1.png)
+
+<!-- mermaid: diagrams/astro_naut_1.mmd -->
+
+</details>
+
+<details><summary>Lösningsförslag</summary>
+
+```csharp
+Random slump = new Random();
+int fynd = 0;
+
+for (int asteroid = 1; asteroid <= 4; asteroid++)
+{
+    string namn = asteroid switch
+    {
+        1 => "CLO-Alpha",
+        2 => "CLO-Beta",
+        3 => "CLO-Gamma",
+        4 => "CLO-Delta",
+        _ => "Okänd"
+    };
+
+    bool reaktion = slump.Next(2) == 1;
+
+    if (reaktion)
+    {
+        string mineral = slump.Next(2) == 0 ? "neonit-kristaller" : "en kärna av cloudium";
+        Console.WriteLine($"Asteroid {asteroid} — {namn}: Sensorn piper! Astro hittar {mineral}.");
+        fynd++;
+    }
+    else
+    {
+        string tystnad = slump.Next(2) == 0 ? "Bara sten och damm." : "Tomrum och tystnad.";
+        Console.WriteLine($"Asteroid {asteroid} — {namn}: Ingen reaktion. {tystnad}");
+    }
+}
+
+Console.WriteLine();
+Console.WriteLine($"Fynd: {fynd} av 4");
+
+if (fynd >= 2)
+    Console.WriteLine("Uppdraget lyckat — hemfärd godkänd!");
+else
+    Console.WriteLine("För få fynd — uppdraget misslyckat.");
+```
+
+</details>

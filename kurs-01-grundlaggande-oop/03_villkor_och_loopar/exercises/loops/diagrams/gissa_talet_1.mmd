@@ -1,0 +1,12 @@
+flowchart TD
+    A([Start]) --> B[Slumpa hemligt tal 1-20]
+    B --> C[forsok = 0]
+    C --> D[Läs in gissning, forsok++]
+    D --> E{gissning == hemligt?}
+    E -->|Nej| F{gissning > hemligt?}
+    F -->|Ja| G[För högt!]
+    F -->|Nej| H[För lågt!]
+    G --> D
+    H --> D
+    E -->|Ja| I[Rätt! X försök]
+    I --> Z([Slut])

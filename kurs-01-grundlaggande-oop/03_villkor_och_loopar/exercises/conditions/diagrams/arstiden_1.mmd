@@ -1,0 +1,16 @@
+flowchart TD
+    A([Start]) --> B[Läs in månadstal 1-12]
+    B --> C{12, 1 eller 2?}
+    C -->|Ja| D[Vinter]
+    C -->|Nej| E{3, 4 eller 5?}
+    E -->|Ja| F[Vår]
+    E -->|Nej| G{6, 7 eller 8?}
+    G -->|Ja| H[Sommar]
+    G -->|Nej| I{9, 10 eller 11?}
+    I -->|Ja| J[Höst]
+    I -->|Nej| K[Okänd månad]
+    D --> Z([Slut])
+    F --> Z
+    H --> Z
+    J --> Z
+    K --> Z

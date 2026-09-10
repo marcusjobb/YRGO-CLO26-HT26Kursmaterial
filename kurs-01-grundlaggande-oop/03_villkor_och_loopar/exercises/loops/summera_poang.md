@@ -34,3 +34,41 @@ Ange poäng för rundan (0 = avsluta): 0
 
 Totalt: 0 poäng på 0 rundor.
 ```
+
+## Tips
+
+- Deklarera `int summa = 0;` och `int rundor = 0;` innan loopen.
+- Kontrollera inmatningen i `while`-villkoret: `while (poang != 0)`.
+- Uppdatera `summa += poang;` och `rundor++;` inne i loopen.
+
+<details><summary>Flödesschema — förslag</summary>
+
+![Diagram](diagrams/summera_poang_1.png)
+
+<!-- mermaid: diagrams/summera_poang_1.mmd -->
+
+</details>
+
+<details><summary>Lösningsförslag</summary>
+
+```csharp
+int summa = 0;
+int rundor = 0;
+
+Console.Write("Ange poäng för rundan (0 = avsluta): ");
+int poang = int.Parse(Console.ReadLine());
+
+while (poang != 0)
+{
+    summa += poang;
+    rundor++;
+
+    Console.Write("Ange poäng för rundan (0 = avsluta): ");
+    poang = int.Parse(Console.ReadLine());
+}
+
+Console.WriteLine();
+Console.WriteLine($"Totalt: {summa} poäng på {rundor} rundor.");
+```
+
+</details>

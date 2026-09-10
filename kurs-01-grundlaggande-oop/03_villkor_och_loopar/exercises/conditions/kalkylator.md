@@ -46,3 +46,54 @@ Operator (+, -, *, /): %
 Andra talet: 2
 Okänd operator: %
 ```
+
+## Tips
+
+- Läs in operatorn som `string op = Console.ReadLine();` och använd `switch (op)`.
+- Hantera division med noll inuti `case "/":`-grenen med en `if`-sats.
+- Tänk på att `double` behövs för decimaler — använd `double.Parse(Console.ReadLine())`.
+
+<details><summary>Flödesschema — förslag</summary>
+
+![Diagram](diagrams/kalkylator_1.png)
+
+<!-- mermaid: diagrams/kalkylator_1.mmd -->
+
+</details>
+
+<details><summary>Lösningsförslag</summary>
+
+```csharp
+Console.Write("Första talet: ");
+double tal1 = double.Parse(Console.ReadLine());
+
+Console.Write("Operator (+, -, *, /): ");
+string op = Console.ReadLine();
+
+Console.Write("Andra talet: ");
+double tal2 = double.Parse(Console.ReadLine());
+
+switch (op)
+{
+    case "+":
+        Console.WriteLine($"Svar: {tal1} + {tal2} = {tal1 + tal2}");
+        break;
+    case "-":
+        Console.WriteLine($"Svar: {tal1} - {tal2} = {tal1 - tal2}");
+        break;
+    case "*":
+        Console.WriteLine($"Svar: {tal1} * {tal2} = {tal1 * tal2}");
+        break;
+    case "/":
+        if (tal2 == 0)
+            Console.WriteLine("Kan inte dela med noll.");
+        else
+            Console.WriteLine($"Svar: {tal1} / {tal2} = {tal1 / tal2}");
+        break;
+    default:
+        Console.WriteLine($"Okänd operator: {op}");
+        break;
+}
+```
+
+</details>

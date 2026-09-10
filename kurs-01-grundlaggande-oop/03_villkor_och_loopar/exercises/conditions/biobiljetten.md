@@ -14,14 +14,9 @@ Filmstaden har tre prisklasser. Programmet ska ta emot en ålder och skriva ut r
 
 ## Flödesschema
 
-```mermaid
-flowchart TD
-    A[Ålder] --> B{Under 15?}
-    B -- Ja --> C[Barnpris: 99 kr]
-    B -- Nej --> D{65 eller äldre?}
-    D -- Ja --> E[Pensionärspris: 119 kr]
-    D -- Nej --> F[Vuxenpris: 169 kr]
-```
+![Diagram](diagrams/biobiljetten_1.png)
+
+<!-- mermaid: diagrams/biobiljetten_1.mmd -->
 
 ## Kodning
 

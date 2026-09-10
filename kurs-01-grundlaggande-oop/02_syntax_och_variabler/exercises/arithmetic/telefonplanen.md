@@ -8,11 +8,9 @@ Du letar efter ett nytt mobilabonnemang. Tre operatörer erbjuder var sitt paket
 
 ## Flödesschema
 
-```mermaid
-flowchart LR
-    A[Definiera variabler] --> B[Beräkna årskostad]
-    B --> C[Presentera resultat]
-```
+![Diagram](diagrams/telefonplanen_1.png)
+
+<!-- mermaid: diagrams/telefonplanen_1.mmd -->
 
 ## Kodning
 

@@ -25,7 +25,7 @@ d. Den skriver ut 25 på skärmen
   - ❌ **d) Skriver ut** - FEL: `int ålder = 25` skriver inte ut något. För utskrift krävs `Console.WriteLine()`
 </details>
 
-<div style="text-align: center; margin: 2em 0;"><img src="separator_cool.png" alt="Separator" style="max-width: 400px; height: auto;"></div>
+---
 
 ### Fråga 2
 
@@ -49,7 +49,7 @@ d. string
   - ❌ **d) string** - FEL: string lagrar text. Du kan skriva "99.50" men då kan du inte räkna med det
 </details>
 
-<div style="text-align: center; margin: 2em 0;"><img src="separator_cool.png" alt="Separator" style="max-width: 400px; height: auto;"></div>
+---
 
 ### Fråga 3
 
@@ -80,7 +80,7 @@ d. 1
   - ❌ **d) 1** - FEL: 1 är resten, inte kvoten. Resten får du med `%`-operatorn: `7 % 2` = 1
 </details>
 
-<div style="text-align: center; margin: 2em 0;"><img src="separator_cool.png" alt="Separator" style="max-width: 400px; height: auto;"></div>
+---
 
 ### Fråga 4
 
@@ -104,7 +104,7 @@ d. `=` används bara för text, `==` för siffror
   - ❌ **d) Text vs siffror** - FEL: `=` och `==` funkar likadant oavsett datatyp
 </details>
 
-<div style="text-align: center; margin: 2em 0;"><img src="separator_cool.png" alt="Separator" style="max-width: 400px; height: auto;"></div>
+---
 
 ### Fråga 5
 
@@ -137,7 +137,7 @@ a. A<br>b. B<br>c. C<br>d. F
   - ❌ **d) F** - FEL: else-körs bara om INGET villkor är sant
 </details>
 
-<div style="text-align: center; margin: 2em 0;"><img src="separator_cool.png" alt="Separator" style="max-width: 400px; height: auto;"></div>
+---
 
 ### Fråga 6
 
@@ -161,7 +161,7 @@ d. Villkoren måste vara olika
   - ❌ **d) Olika** - FEL: `&&` handlar om båda är sanna, inte om de är olika
 </details>
 
-<div style="text-align: center; margin: 2em 0;"><img src="separator_cool.png" alt="Separator" style="max-width: 400px; height: auto;"></div>
+---
 
 ### Fråga 7
 
@@ -185,7 +185,7 @@ d. Loopar för evigt
   - ❌ **d) För evigt** - FEL: En for-loop tar slut när villkoret blir falskt. (Om du inte glömmer uppdatera räknaren!)
 </details>
 
-<div style="text-align: center; margin: 2em 0;"><img src="separator_cool.png" alt="Separator" style="max-width: 400px; height: auto;"></div>
+---
 
 ### Fråga 8
 
@@ -206,7 +206,7 @@ a. while<br>b. for<br>c. foreach<br>d. do-while
   - ❌ **d) do-while** - FEL: do-while kör minst en gång och används för helt andra situationer
 </details>
 
-<div style="text-align: center; margin: 2em 0;"><img src="separator_cool.png" alt="Separator" style="max-width: 400px; height: auto;"></div>
+---
 
 ### Fråga 9
 
@@ -227,7 +227,7 @@ a. Startar om metoden<br>b. Skickar ett värde tillbaka till den som anropade me
   - ❌ **d) Stänger av** - FEL: `return` avslutar bara metoden, inte hela programmet
 </details>
 
-<div style="text-align: center; margin: 2em 0;"><img src="separator_cool.png" alt="Separator" style="max-width: 400px; height: auto;"></div>
+---
 
 ### Fråga 10
 
@@ -248,7 +248,7 @@ a. skrivHälsning<br>b. SkrivHälsning<br>c. skriv_hälsning<br>d. SKRIVHÄLSNIN
   - ❌ **d) SKRIVHÄLSNING** - FEL: Alla versaler används för konstanter, inte metoder
 </details>
 
-<div style="text-align: center; margin: 2em 0;"><img src="separator_cool.png" alt="Separator" style="max-width: 400px; height: auto;"></div>
+---
 
 ### Fråga 11
 
@@ -269,7 +269,7 @@ a. En variabel som metoden tar emot som indata<br>b. Det värde metoden returner
   - ❌ **d) Global variabel** - FEL: Parametrar är lokala för metoden, inte globala
 </details>
 
-<div style="text-align: center; margin: 2em 0;"><img src="separator_cool.png" alt="Separator" style="max-width: 400px; height: auto;"></div>
+---
 
 ### Fråga 12
 
@@ -299,4 +299,4 @@ a. 20<br>b. True<br>c. 18<br>d. Myndig
   - ❌ **d) Myndig** - FEL: Metoden returnerar `true`, inte texten "Myndig"
 </details>
 
-<div style="text-align: center; margin: 2em 0;"><img src="separator_cool.png" alt="Separator" style="max-width: 400px; height: auto;"></div>
+---

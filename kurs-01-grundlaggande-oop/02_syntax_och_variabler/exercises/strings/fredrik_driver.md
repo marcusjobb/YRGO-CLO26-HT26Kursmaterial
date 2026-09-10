@@ -6,13 +6,9 @@
 
 ## Flödesschema
 
-```mermaid
-flowchart LR
-    A[Skriv statisk text] --> B[Gör texten dynamisk]
-    B --> C[Byt värde på adjektivet]
-    C --> D[Återanvänd tricket för namnet]
-    D --> E[Utmaning: byt ut reaktionen]
-```
+![Diagram](diagrams/fredrik_driver_1.png)
+
+<!-- mermaid: diagrams/fredrik_driver_1.mmd -->
 
 ## Kodning
 

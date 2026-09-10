@@ -14,11 +14,9 @@ Din uppgift: räkna ut vad Mjukis kostar att mata — och hur lång tid dieten t
 
 ## Flödesschema
 
-```mermaid
-flowchart LR
-    A[Definiera variabler] --> B[Beräkna]
-    B --> C[Presentera resultat]
-```
+![Diagram](diagrams/cat_diet_1.png)
+
+<!-- mermaid: diagrams/cat_diet_1.mmd -->
 
 ## Kodning
 

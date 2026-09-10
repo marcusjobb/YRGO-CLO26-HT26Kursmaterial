@@ -46,3 +46,33 @@ Vilket tal vill du se tabellen för? 3
 3 × 9 = 27
 3 × 10 = 30
 ```
+
+## Tips
+
+- En for-loop: `for (int i = 1; i <= 10; i++)` räknar från 1 till 10.
+- Produkten beräknas inne i loopen: `int produkt = tal * i;`
+- Skriv ut med `×`-tecknet i en interpolerad sträng: `$"{tal} × {i} = {produkt}"`
+
+<details><summary>Flödesschema — förslag</summary>
+
+![Diagram](diagrams/multiplikationstabellen_1.png)
+
+<!-- mermaid: diagrams/multiplikationstabellen_1.mmd -->
+
+</details>
+
+<details><summary>Lösningsförslag</summary>
+
+```csharp
+Console.Write("Vilket tal vill du se tabellen för? ");
+int tal = int.Parse(Console.ReadLine());
+Console.WriteLine();
+
+for (int i = 1; i <= 10; i++)
+{
+    int produkt = tal * i;
+    Console.WriteLine($"{tal} × {i} = {produkt}");
+}
+```
+
+</details>

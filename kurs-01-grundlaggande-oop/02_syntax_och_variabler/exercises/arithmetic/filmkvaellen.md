@@ -8,12 +8,9 @@ Du och fyra kompisar ska ha filmkväll hemma hos dig. Någon måste hålla koll 
 
 ## Flödesschema
 
-```mermaid
-flowchart LR
-    A[Definiera variabler] --> B[Räkna per person]
-    B --> C[Räkna totalt]
-    C --> D[Presentera kvittot]
-```
+![Diagram](diagrams/filmkvaellen_1.png)
+
+<!-- mermaid: diagrams/filmkvaellen_1.mmd -->
 
 ## Kodning
 

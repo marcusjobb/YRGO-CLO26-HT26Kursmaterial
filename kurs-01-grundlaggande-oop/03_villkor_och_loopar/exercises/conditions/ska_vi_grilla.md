@@ -14,14 +14,9 @@ Det är fredag och du ska bestämma vad ni ska äta ikväll. Allt beror på väd
 
 ## Flödesschema
 
-```mermaid
-flowchart TD
-    A[Kolla vädret] --> B{Regnar det?}
-    B -- Ja --> C[Beställ pizza]
-    B -- Nej --> D{Blåser det?}
-    D -- Ja --> E[Tacos inomhus]
-    D -- Nej --> F[Grilldags!]
-```
+![Diagram](diagrams/ska_vi_grilla_1.png)
+
+<!-- mermaid: diagrams/ska_vi_grilla_1.mmd -->
 
 ## Kodning
 

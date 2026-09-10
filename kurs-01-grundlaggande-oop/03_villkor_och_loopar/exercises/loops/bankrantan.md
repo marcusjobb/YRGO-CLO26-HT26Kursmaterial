@@ -37,3 +37,40 @@ Ränta totalt:     938,43 kr
 - Saldot varje år: `saldo = saldo * (1 + ranta / 100)`
 - Använd `double` för alla beräkningar
 - Formatera med `{saldo:N2}` för två decimaler och tusentalsavgränsare
+
+<details><summary>Flödesschema — förslag</summary>
+
+![Diagram](diagrams/bankrantan_1.png)
+
+<!-- mermaid: diagrams/bankrantan_1.mmd -->
+
+</details>
+
+<details><summary>Lösningsförslag</summary>
+
+```csharp
+Console.Write("Startbelopp (kr): ");
+double saldo = double.Parse(Console.ReadLine());
+
+Console.Write("Ränta (%): ");
+double ranta = double.Parse(Console.ReadLine());
+
+Console.Write("Antal år: ");
+int antalAr = int.Parse(Console.ReadLine());
+
+double startbelopp = saldo;
+
+for (int ar = 1; ar <= antalAr; ar++)
+{
+    saldo = saldo * (1 + ranta / 100);
+    Console.WriteLine($"År {ar}: {saldo:N2} kr");
+}
+
+double totalRanta = saldo - startbelopp;
+Console.WriteLine();
+Console.WriteLine($"Insatt belopp:  {startbelopp:N2} kr");
+Console.WriteLine($"Slutsaldo:      {saldo:N2} kr");
+Console.WriteLine($"Ränta totalt:   {totalRanta:N2} kr");
+```
+
+</details>

@@ -7,11 +7,9 @@ Men vad kostar det egentligen — och hur förhåller det sig till en biobiljett
 
 ## Flödesschema
 
-```mermaid
-flowchart LR
-    A[Definiera variabler] --> B[Beräkna]
-    B --> C[Presentera resultat]
-```
+![Diagram](diagrams/streaming_vs_cinema_1.png)
+
+<!-- mermaid: diagrams/streaming_vs_cinema_1.mmd -->
 
 ## Kodning
 

@@ -44,3 +44,46 @@ Välkommen in!
 ```
 
 Inga "försök kvar"-meddelanden behövs om man lyckas direkt.
+
+## Tips
+
+- `for (int i = 3; i > 0; i--)` ger nedräkning — `i` visar försök kvar.
+- Använd `break` inuti `if (losenord == ratt)` för att hoppa ur loopen när rätt lösenord skrivits.
+- En bool-flagga `bool inloggad = false;` gör det enkelt att kolla om man lyckades efter loopen.
+
+<details><summary>Flödesschema — förslag</summary>
+
+![Diagram](diagrams/lossenordsforsoket_1.png)
+
+<!-- mermaid: diagrams/lossenordsforsoket_1.mmd -->
+
+</details>
+
+<details><summary>Lösningsförslag</summary>
+
+```csharp
+string ratt = "kodord123";
+bool inloggad = false;
+
+for (int forsok = 3; forsok > 0; forsok--)
+{
+    Console.Write("Ange lösenord: ");
+    string inmatat = Console.ReadLine();
+
+    if (inmatat == ratt)
+    {
+        inloggad = true;
+        break;
+    }
+
+    Console.WriteLine($"Fel lösenord. {forsok - 1} försök kvar.");
+    Console.WriteLine();
+}
+
+if (inloggad)
+    Console.WriteLine("Välkommen in!");
+else
+    Console.WriteLine("Kontot är spärrat.");
+```
+
+</details>

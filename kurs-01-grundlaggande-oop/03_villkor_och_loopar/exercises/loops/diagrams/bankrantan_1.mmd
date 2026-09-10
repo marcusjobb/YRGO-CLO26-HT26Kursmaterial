@@ -1,0 +1,10 @@
+flowchart TD
+    A([Start]) --> B[Läs in startbelopp, ränta, antal år]
+    B --> C[saldo = startbelopp]
+    C --> D{år <= antal år?}
+    D -->|Ja| E[saldo = saldo * 1 + ränta/100]
+    E --> F[Skriv ut år och saldo]
+    F --> G[år++]
+    G --> D
+    D -->|Nej| H[Skriv ut sammanfattning]
+    H --> Z([Slut])

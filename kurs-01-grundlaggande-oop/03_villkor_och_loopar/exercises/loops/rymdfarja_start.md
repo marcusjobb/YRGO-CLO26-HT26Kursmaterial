@@ -35,3 +35,54 @@ Kontrollerar delsystem 5: Livsstöd ... OK
 
 Uppskjutning avbruten. 2 fel hittades.
 ```
+
+## Tips
+
+- Namnge systemen med en switch inuti for-loopen på `i`: `case 1: namn = "Framdrivning"; break;` osv.
+- `new Random().Next(1, 11)` ger 1–10. Värde >= 4 → OK, annars → FEL.
+- Räkna fel med `int antalFel = 0;` och `if (resultat < 4) antalFel++;`.
+
+<details><summary>Flödesschema — förslag</summary>
+
+![Diagram](diagrams/rymdfarja_start_1.png)
+
+<!-- mermaid: diagrams/rymdfarja_start_1.mmd -->
+
+</details>
+
+<details><summary>Lösningsförslag</summary>
+
+```csharp
+Random slump = new Random();
+int antalFel = 0;
+
+for (int i = 1; i <= 5; i++)
+{
+    string system = i switch
+    {
+        1 => "Framdrivning",
+        2 => "Navigering",
+        3 => "Kommunikation",
+        4 => "Bränslesystem",
+        5 => "Livsstöd",
+        _ => "Okänt"
+    };
+
+    int resultat = slump.Next(1, 11);
+    string status = resultat >= 4 ? "OK" : "FEL";
+
+    Console.WriteLine($"Kontrollerar delsystem {i}: {system} ... {status}");
+
+    if (status == "FEL")
+        antalFel++;
+}
+
+Console.WriteLine();
+
+if (antalFel == 0)
+    Console.WriteLine("Uppskjutning godkänd! T-minus 10 sekunder.");
+else
+    Console.WriteLine($"Uppskjutning avbruten. {antalFel} fel hittades.");
+```
+
+</details>

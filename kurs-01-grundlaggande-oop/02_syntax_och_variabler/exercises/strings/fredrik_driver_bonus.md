@@ -6,12 +6,9 @@
 
 ## Flödesschema
 
-```mermaid
-flowchart LR
-    A[Skapa arrays med ordval] --> B[Skapa en Random-instans]
-    B --> C[Slumpa ett index per array]
-    C --> D[Bygg meningen med slumpade ord]
-```
+![Diagram](diagrams/fredrik_driver_bonus_1.png)
+
+<!-- mermaid: diagrams/fredrik_driver_bonus_1.mmd -->
 
 ## Kodning
 

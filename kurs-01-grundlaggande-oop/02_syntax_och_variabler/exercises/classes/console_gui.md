@@ -12,13 +12,9 @@ Det gör koden återanvändbar och lättare att ändra sen.
 
 ## Flödesschema
 
-```mermaid
-flowchart LR
-    A[PrintAt + SetPos] --> B[DrawBox]
-    B --> C[CenterTextAt]
-    C --> D[CleanLineAt]
-    D --> E[DrawPillar]
-```
+![Diagram](diagrams/console_gui_1.png)
+
+<!-- mermaid: diagrams/console_gui_1.mmd -->
 
 ## Kodning
 

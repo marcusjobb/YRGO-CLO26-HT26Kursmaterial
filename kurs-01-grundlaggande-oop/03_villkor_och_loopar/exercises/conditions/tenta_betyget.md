@@ -16,14 +16,9 @@ Tentan har 100 poäng totalt.
 
 ## Flödesschema
 
-```mermaid
-flowchart TD
-    A[Poäng] --> B{75 eller mer?}
-    B -- Ja --> C[VG]
-    B -- Nej --> D{50 eller mer?}
-    D -- Ja --> E[G]
-    D -- Nej --> F[Underkänd]
-```
+![Diagram](diagrams/tenta_betyget_1.png)
+
+<!-- mermaid: diagrams/tenta_betyget_1.mmd -->
 
 ## Kodning
 

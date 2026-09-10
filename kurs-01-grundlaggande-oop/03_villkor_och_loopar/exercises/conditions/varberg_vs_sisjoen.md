@@ -11,12 +11,9 @@ Bensinpriset är 17 kr/litern. Bilen drar 15 liter tur och retur till Varberg, o
 
 ## Flödesschema
 
-```mermaid
-flowchart LR
-    A[Definiera variabler] --> B[Beräkna]
-    B --> C[Utvärdera]
-    C --> D[Presentera resultat]
-```
+![Diagram](diagrams/varberg_vs_sisjoen_1.png)
+
+<!-- mermaid: diagrams/varberg_vs_sisjoen_1.mmd -->
 
 ## Kodning
 

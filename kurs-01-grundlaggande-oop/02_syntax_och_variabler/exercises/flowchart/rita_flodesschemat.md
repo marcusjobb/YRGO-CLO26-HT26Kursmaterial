@@ -45,6 +45,14 @@ Rita ett flödesschema för hur en kaffeautomat fungerar.
 
 Tänk på: vad händer om mynten inte räcker? Vad händer om drycken är slut?
 
+<details><summary>Flödesschema — förslag</summary>
+
+![Diagram](diagrams/rita_flodesschemat_1.png)
+
+<!-- mermaid: diagrams/rita_flodesschemat_1.mmd -->
+
+</details>
+
 ---
 
 ## Uppgift 3 — Busskorten

@@ -14,11 +14,9 @@ nästa anrop.
 
 ## Flödesschema
 
-```mermaid
-flowchart LR
-    A[Properties] --> B[DebugThis]
-    B --> C[Reset]
-```
+![Diagram](diagrams/nice_debug_1.png)
+
+<!-- mermaid: diagrams/nice_debug_1.mmd -->
 
 ## Kodning
 

@@ -9,12 +9,9 @@ Problemet: du har bara 500 kr på kontot.
 
 ## Flödesschema
 
-```mermaid
-flowchart LR
-    A[Definiera variabler] --> B[Beräkna]
-    B --> C[Utvärdera]
-    C --> D[Presentera resultat]
-```
+![Diagram](diagrams/discount_code_1.png)
+
+<!-- mermaid: diagrams/discount_code_1.mmd -->
 
 ## Kodning
 

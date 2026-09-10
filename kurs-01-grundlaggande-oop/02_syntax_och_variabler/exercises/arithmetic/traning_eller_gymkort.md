@@ -8,12 +8,9 @@ Nyårslöfte: träna mer. Men gymkortet kostar pengar — är det värt det jäm
 
 ## Flödesschema
 
-```mermaid
-flowchart LR
-    A[Definiera kostnader] --> B[Beräkna per träningspass]
-    B --> C[Beräkna på ett år]
-    C --> D[Jämför alternativen]
-```
+![Diagram](diagrams/traning_eller_gymkort_1.png)
+
+<!-- mermaid: diagrams/traning_eller_gymkort_1.mmd -->
 
 ## Kodning
 
