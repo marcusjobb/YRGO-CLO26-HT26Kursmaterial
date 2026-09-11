@@ -253,6 +253,5 @@ foreach (string frukt in frukter)
 ### Övningar finns i `exercises/`
 
 🟢 `loops/countdown.md` — bygg en nedräkning med while  
-🟡 `loops/pirate_game.md` — håll ett spel igång med loop och villkor
 
 _Ta det steg för steg. Använd tipsen om du fastnar._
