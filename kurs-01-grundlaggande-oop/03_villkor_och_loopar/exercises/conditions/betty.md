@@ -150,6 +150,75 @@ else
 
 </details>
 
+<details><summary>Flödesschema — hela berättelsen</summary>
+
+```mermaid
+flowchart TD
+    S([Start]) --> D1
+
+    D1{bettyDansarMedNagon?}
+    D1 -->|true| N1A["Betty dansar med någon annan på festen."]
+    D1 -->|false| N1B["Betty stannade hemma. Ingenting hände."]
+    N1A --> D2
+    N1B --> D2
+
+    D2{jamesSerDem?}
+    D2 -->|true| N2A["James ser dem. Hjärtat brister."]
+    D2 -->|false| N2B["James märker ingenting. Han har kul på festen."]
+    N2A --> D3
+    N2B --> D3
+
+    D3{augustinePickarUppJames?}
+    D3 -->|true| N3A["Augustine hittar James ensam utanför.\n'Du ser ledsen ut.'"]
+    D3 -->|false| N3B["Augustine är ensam hela kvällen.\nIngen att prata med."]
+    N3A --> D4
+    N3B --> D4
+
+    D4{jamesOchAugustineHookupp?}
+    D4 -->|true| N4A["De tillbringar sommaren tillsammans\n— James och Augustine."]
+    D4 -->|false| N4B["James nobbar Augustine.\nHan är inte intresserad."]
+    N4A --> D5
+    N4B --> D5
+
+    D5{inezSerDem?}
+    D5 -->|true| N5A["Inez ser dem.\nHon kan inte hålla tyst."]
+    D5 -->|false| N5B["Inez vet ingenting.\nDet finns inget att berätta."]
+    N5A --> D6
+    N5B --> D6
+
+    D6{inezBeratterForBetty?}
+    D6 -->|true| N6A["Betty får reda på allt. Via Inez. Såklart."]
+    D6 -->|false| N6B["Betty anar ingenting. Livet går vidare."]
+    N6A --> D7
+    N6B --> D7
+
+    D7{jamesLamnarAugustine?}
+    D7 -->|true| N7A["James lämnar Augustine. Han ångrar sig."]
+    D7 -->|false| N7B["James stannar kvar hos Augustine."]
+    N7A --> D8
+    N7B --> D8
+
+    D8{jamesDykerUppVidGrinden?}
+    D8 -->|true| N8A["James dyker upp vid Bettys grind.\nHan är nervös."]
+    D8 -->|false| N8B["James dyker aldrig upp.\nHan är har gått vidare."]
+    N8A --> D9
+    N8B --> D9
+
+    D9{"jamesDykerUppVidGrinden\n&& jamesOchAugustineHookupp\n&& bettyForlaterJames?"}
+    D9 -->|true| E1["Betty tar hans hand. De dansar igen. 💃"]
+    D9 -->|false| D10
+
+    D10{"jamesDykerUppVidGrinden\n&& jamesOchAugustineHookupp?"}
+    D10 -->|true| E2["Betty stänger grinden.\n'Go F**k yourself James.'"]
+    D10 -->|false| D11
+
+    D11{jamesDykerUppVidGrinden?}
+    D11 -->|true| E3["James dyker upp. Betty ler.\nDet finns inget att förlåta."]
+    D11 -->|false| E4["Betty väntar vid grinden.\nJames kommer aldrig."]
+```
+
+</details>
+
 <details><summary>Lösningsförslag</summary>
 
 ```csharp
