@@ -1,6 +1,6 @@
 # Modul 3 — Villkor och loopar
 
-**Tema:** if/else, switch, while, for, foreach
+**Tema:** if/else, switch, while, for, foreach, Random
 **Inlämning:** `assignment/dice_game.md`
 
 ## Vad du ska kunna när modulen är klar
@@ -10,6 +10,7 @@
 - Skriva while- och for-loopar utan att råka ut för oändliga loopar
 - Loopa igenom en samling med foreach
 - Kombinera villkor med `&&`, `||` och `!`
+- Använda `Random` för att simulera slump och ta fram slumpmässiga tal, tecken och val
 
 ## Material
 
@@ -26,6 +27,7 @@
 | `notes/if_else.md` | Fördjupad text om villkor och logiska operatorer |
 | `notes/switch.md` | switch i detalj, fall-through och switch expression |
 | `notes/loopar.md` | Alla tre looptyperna, jämförelsetabell och do-while |
+| `notes/random.md` | Random-objektet — slumpal, Next(), NextDouble(), tecken och konsolritning |
 
 ### Programmeringstermer
 | Fil | Termer |
@@ -54,6 +56,16 @@
 |-----|------|-----|
 | `exercises/loops/countdown.md` | 🟢 | for-loop bakåt + while-loop med jämna tal |
 | `exercises/loops/pirate_game.md` | 🟡 | while-loop med inmatning — leta skatt på fyra platser |
+
+### Random
+| Fil | Nivå | Vad |
+|-----|------|-----|
+| `exercises/random/ja_nej_kanske.md` | 🟢 | Magisk boll — Random + switch, tre möjliga svar |
+| `exercises/random/gissa_talet.md` | 🟡 | Gissa ett tal 1–100 — while-loop med för högt/lågt |
+| `exercises/random/gissa_bokstaven.md` | 🟡 | Gissa en bokstav A–Z — char-jämförelse och alfabetsordning |
+| `exercises/random/stjarnhimlen.md` | 🟡 | Stjärnhimmel i konsolen — SetCursorPosition, slumpade färger |
+| `exercises/random/monsterslagsmalet.md` | 🔴 | Monsterfight — välj karaktär, slå med tärning tills en vinner |
+| `exercises/random/fisken.md` | 🔴 | Fisk med sinus — Math.Sin() + konsolritning, ZX81-inspiration |
 
 ### Diskussioner
 | Fil | Vad |
