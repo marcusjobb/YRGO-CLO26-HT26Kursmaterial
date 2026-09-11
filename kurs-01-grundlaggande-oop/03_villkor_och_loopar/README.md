@@ -53,7 +53,6 @@
 | Fil | Nivå | Vad |
 |-----|------|-----|
 | `exercises/loops/countdown.md` | 🟢 | for-loop bakåt + while-loop med jämna tal |
-| `exercises/loops/pirate_game.md` | 🟡 | while-loop med inmatning — leta skatt på fyra platser |
 
 ### Diskussioner
 | Fil | Vad |
