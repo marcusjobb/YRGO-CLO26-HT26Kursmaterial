@@ -37,18 +37,6 @@ int roll = random.Next(1, 7); // ger ett tal mellan 1 och 6 (7 är exklusivt)
 
 ---
 
-## Krav för Godkänt (G)
-
-- [ ] Programmet skapar ett `Random`-objekt och använder det för att "kasta" tärningen
-- [ ] Spelet körs i **minst 5 omgångar** via en loop
-- [ ] Spelet håller reda på **båda spelarnas totalpoäng** med variabler
-- [ ] Varje omgång skriver ut vad respektive spelare slog
-- [ ] Efter alla omgångar skrivs totalpoängen ut och en vinnare presenteras (eller oavgjort)
-- [ ] Programmet innehåller **minst en metod**, till exempel `static int RollDice(Random random)`
-- [ ] Ingen `var` används
-
----
-
 ## Bonusutmaning 🔴
 
 - Extrahera tärningskastet till en tydlig metod som används konsekvent
