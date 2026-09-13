@@ -88,6 +88,15 @@ Du möter ett monster. Det anfaller.
 
 ---
 
+### Teknisk grund
+
+- [ ] Minst 3 klasser med privata fält (`private`) — data skyddas inuti klassen
+- [ ] Properties med `{ get; private set; }` — ingen utomstående ändrar data direkt
+- [ ] Konstruktorer med parametrar — objektet startar i korrekt tillstånd
+- [ ] Minst en `List<T>` i aktiv användning — ex: `List<Monster>` för tillgängliga monstertyper
+
+---
+
 ### Spelaren
 
 - [ ] En `Player`-klass med: namn, HP, maxHP, attack, försvar, level, XP, dagar överlevda

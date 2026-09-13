@@ -103,6 +103,15 @@ Spelaren kan förlora om de fastnar utan nyckel, löper ut ur tid, eller liknand
 
 ---
 
+### Teknisk grund
+
+- [ ] Minst 3 klasser med privata fält (`private`) — data skyddas inuti klassen
+- [ ] Properties med `{ get; private set; }` — ingen utomstående ändrar data direkt
+- [ ] Konstruktorer med parametrar — objektet startar i korrekt tillstånd
+- [ ] Minst en `List<T>` i aktiv användning — ex: `List<Föremål>` i rum och inventory
+
+---
+
 ### Rum-klassen
 
 - [ ] En `Rum`-klass med: namn, beskrivning

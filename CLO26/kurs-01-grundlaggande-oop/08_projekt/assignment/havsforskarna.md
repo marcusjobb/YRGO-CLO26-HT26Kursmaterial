@@ -85,9 +85,18 @@ Den som kartlägger alla motståndarens formationer först vinner.
 
 ## Krav för Godkänt (G)
 
+### Teknisk grund
+
+- [ ] Minst 3 klasser med privata fält (`private`) — data skyddas inuti klassen
+- [ ] Properties med `{ get; private set; }` — ingen utomstående ändrar data direkt
+- [ ] Konstruktorer med parametrar — objektet startar i korrekt tillstånd
+- [ ] Minst en `List<T>` i aktiv användning — ex: `List<Formation>` och `List<Position>`
+
+---
+
 ### Rutnätet
 
-- [ ] En `OceanGrid`-klass med ett 10×10-rutnät (`char[,]`)
+- [ ] En `OceanGrid`-klass med ett 10×10-rutnät (tips: `char[,]` fungerar bra, men välj den struktur som känns logisk för er)
 - [ ] Symboler: `~` okänt vatten, `F` din formation, `X` träff, `O` miss
 - [ ] Metod för att visa rutnätet med koordinater (A–J, 1–10)
 - [ ] Separata rutnät: ett som visar dina egna formationer, ett som visar vad du sett hos motståndaren

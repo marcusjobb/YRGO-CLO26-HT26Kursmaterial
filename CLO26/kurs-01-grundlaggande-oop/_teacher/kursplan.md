@@ -103,7 +103,7 @@ Föreläsning: `BankAccount` (tydlig, neutral)
 **Veckans nördiska:**  
 `klass` · `objekt` · `instans` · `konstruktor` · `property` · `private` · `public` · `encapsulation`
 
-### Inlämning 1 — Spellistan (individuell)
+### Inlämning 1 — Drömmatchen (grupp 2–4)
 
 **Tema:** Musikartister och låtar — Taylor Swift är exempel i föreläsningen, studerande väljer sin favoritartist
 
@@ -121,7 +121,7 @@ Föreläsning: `BankAccount` (tydlig, neutral)
 - [ ] `MusicArtist` har `List<Song>`, `AddSong()`, `ShowDiscography()`
 - [ ] Minst 3 låtar skapas och läggs till
 
-Se `05_klasser_och_oop/assignment/spellistan.md`
+Se `05_klasser_och_oop/assignment/klasser_samarbetar.md`
 
 **Deadline:** Söndag 20 sep 23:59
 
@@ -139,8 +139,8 @@ Se `05_klasser_och_oop/assignment/spellistan.md`
 | Tis em | **Skogsäventyret presenteras** — grupptilldelning, design-diskussion, UML på whiteboard |
 | Ons | Online handledning |
 
-**Notering:** Ingen individuell inlämning vecka 4. Skogsäventyret ÄR inlämningen.  
-Grupper sätts ihop tisdag — 2–3 studerande per grupp.
+**Notering:** Ingen individuell inlämning vecka 4. Slutprojektet ÄR inlämningen.  
+Grupper sätts ihop tisdag — 2–4 studerande per grupp. Studerande väljer mellan Skogsäventyret, Havsforskarna eller Dungeon Crawler.
 
 **Veckans nördiska:**  
 `List` · `Dictionary` · `enum` · `generics` · `collection` · `arv` · `subklass` · `basklass`
@@ -181,8 +181,8 @@ Se `08_projekt/assignment/skogsaventyret.md`
 
 | # | Namn | Typ | Deadline | Kursmoment |
 |---|------|-----|----------|-----------|
-| 1 | Spellistan | Individuell | Sön 20 sep | Klasser, properties, konstruktorer |
-| 2 | Skogsäventyret | Grupp 2–3 | Sön 27 sep | Arv, List, enum, game loop |
+| 1 | Drömmatchen | Grupp 2–4 | Sön 21 sep | Klasser, properties, konstruktorer |
+| 2 | Skogsäventyret | Grupp 2–4 | Sön 27 sep | Arv, List, enum, game loop |
 | — | Tenta | Individuell | Tis 29 sep | Alla moment |
 
 ---
