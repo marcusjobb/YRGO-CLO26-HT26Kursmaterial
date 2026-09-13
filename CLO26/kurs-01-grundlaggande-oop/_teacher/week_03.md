@@ -53,12 +53,12 @@ publish:
   - 05_klasser_och_oop/exercises/ovning_pets.md
   - 05_klasser_och_oop/exercises/training_vecka3.md
   - 05_klasser_och_oop/tentafragor/fragor.md
-  - 05_klasser_och_oop/assignment/spellistan.md
+  - 05_klasser_och_oop/assignment/klasser_samarbetar.md
 ```
 
 ## Inlämning denna vecka
 
-**Spellistan** — `assignment/spellistan.md`
+**Restaurangen** — `assignment/klasser_samarbetar.md`
 Deadline: Söndag 21 sep 2026, 23:59
 Förlängd: Fredag 25 sep 2026, 23:59
 Rättning: Veckan efter deadline

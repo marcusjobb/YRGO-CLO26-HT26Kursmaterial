@@ -110,6 +110,29 @@ bool lyckades = konto.TaUt(500);
 
 ---
 
+## Inkapsling — vad är det egentligen?
+
+**Inkapsling** = objektet äger sin data och bestämmer vem som får röra den
+
+```csharp
+class BankAccount
+{
+    private double _saldo;          // ingen utifrån kan röra detta direkt
+
+    public bool TaUt(double belopp) // klassen kontrollerar vad som händer
+    {
+        if (belopp > _saldo) return false;
+        _saldo -= belopp;
+        return true;
+    }
+}
+```
+
+> Tänk på en bil: du trycker på gaspedalen men når inte bränsleinsprutningen.  
+> Bilen exponerar ett gränssnitt — och skyddar det komplexa innanverket.
+
+---
+
 ## Konstruktorn — startpistolen
 
 ```csharp

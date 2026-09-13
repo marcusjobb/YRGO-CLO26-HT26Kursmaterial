@@ -128,6 +128,36 @@ Tumregeln är enkel: **data är privat, beteende är publikt**. Metoder är klas
 
 ---
 
+## Inkapsling
+
+Det finns ett namn på det vi precis pratade om: **inkapsling** (encapsulation).
+
+Inkapsling innebär att ett objekt äger sin data och bestämmer själv vem som får röra den — och hur. Ingenting utifrån kan komma åt interndetaljerna direkt. Istället exponerar klassen ett kontrollerat gränssnitt via properties och metoder.
+
+En bra analogi: tänk på en bil. Du kan trycka på gaspedalen, vrida på ratten, växla. Men du kan inte sträcka in handen och justera bränsleinsprutningen direkt. Bilen döljer det komplexa innanverket och ger dig ett enkelt gränssnitt. Det är inkapsling i verkligheten.
+
+I kod ser det ut så här:
+
+```csharp
+class BankAccount
+{
+    private double _saldo;  // ingen utifrån kan röra detta
+
+    public bool TaUt(double belopp)
+    {
+        if (belopp <= 0 || belopp > _saldo) return false;
+        _saldo -= belopp;
+        return true;
+    }
+}
+```
+
+`_saldo` är privat. Ingen kan skriva `konto._saldo = -999` utifrån. Den enda vägen in är via `TaUt()` — som validerar beloppet innan den gör något.
+
+> 📖 Se även: [Inkapsling — programmeringstermer](../termer/oop.md#inkapsling)
+
+---
+
 ## Properties
 
 I exemplet ovan används `{ get; private set; }` — det kallas en **property**. En property ser ut som en variabel utifrån men beter sig som en kontrollpunkt.

@@ -19,19 +19,32 @@ Vi dömer inte. Vi tittar på koden.
 
 ---
 
-## Vad gäller för den här inlämningen
+## Kursmål
 
-*Som utbildare vill jag att du...*
+Den här inlämningen examinerar följande kursmål ur kursplanen:
 
-- [ ] kan skriva en klass med privata fält och properties
-- [ ] förstår vad en konstruktor gör och varför man använder den
-- [ ] kan skilja på vad som är `private` och vad som är `public` — och förklara varför
-- [ ] kan skapa objekt och anropa metoder på dem
-- [ ] kan reflektera kring dina designval
-- [ ] använder Git med meningsfulla commits under arbetets gång
-- [ ] skriver kod med tydliga namn och kommentarer där de behövs
+- Redogöra för syntax, flöde och logik inom OOP i C#
+- Redogöra för arbetsmetodik och versionshantering med Git
+- Redogöra för namngivning och kodstruktur enligt clean code
+- Beskriva funktionen i kod
+- Redogöra för markdown-taggar och dess användning
+- Använda Git korrekt i utvecklingsprojekt
+- Skriva korta och relevanta kodkommentarer
+- Utveckla fristående OOP-applikationer med dokumentation
 
-*Bocka av dem själv innan du lämnar in.*
+---
+
+## Självcheck
+
+*Bocka av innan du lämnar in:*
+
+- [ ] Kan skriva en klass med privata fält och properties
+- [ ] Förstår vad en konstruktor gör och varför man använder den
+- [ ] Kan skilja på `private` och `public` — och förklara varför
+- [ ] Kan skapa objekt och anropa metoder på dem
+- [ ] Kan reflektera kring egna designval
+- [ ] Använder Git med meningsfulla commits under arbetets gång
+- [ ] Skriver kod med tydliga namn och kommentarer där de behövs
 
 ---
 
@@ -111,10 +124,10 @@ Land:      USA
 Aktiv:     Ja
 
 --- Artistinfo ---
-Namn:      Robyn
-Genre:     Synthpop / Electropop
-Debut:     1995
-Land:      Sverige
+Namn:      Enya
+Genre:     New Age / Celtic
+Debut:     1987
+Land:      Irland
 Aktiv:     Ja
 
 Taylor Swift spelar live på Tele2 Arena!

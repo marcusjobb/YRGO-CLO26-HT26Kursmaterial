@@ -189,3 +189,34 @@ _teacher/
 ## Scripts
 
 Se `_scripts/README.md` för dokumentation av alla scripts.
+
+---
+
+## Kika framåt — att ta upp mot slutet av kursen
+
+### Primary constructors (C# 12+)
+
+Mot slutet av kursen — när studerande är trygga med klassisk konstruktorsyntax — introducera primary constructors:
+
+```csharp
+// Klassiskt sätt (lär ut detta först):
+class Person
+{
+    private string _förnamn;
+    public string Förnamn { get; }
+
+    public Person(string förnamn)
+    {
+        _förnamn = förnamn;
+        Förnamn = förnamn;
+    }
+}
+
+// Nytt sätt — C# 12 primary constructor:
+class Person(string förnamn)
+{
+    public string Förnamn { get; } = förnamn;
+}
+```
+
+**Poängen med att vänta:** De måste förstå vad genvägen sparar — annars är det bara magic syntax utan förståelse. Visa det klassiska sättet först, låt det sjunka in, sedan "förresten — det finns ett kortare sätt att skriva exakt det här."
