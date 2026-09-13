@@ -118,3 +118,72 @@ D) Så att man har fler ställen att lägga in kommentarer om vad man åt till l
 </details>
 
 ---
+
+## Fråga 6 — namngivning av variabler
+
+Vilken namngivningskonvention används för lokala variabler i C#?
+
+A) PascalCase — `AntalSpelares`
+B) camelCase — `antalSpelare`
+C) snake_case — `antal_spelare`
+D) UPPERCASE — `ANTALSPELARE`, för att man ska märka dem på avstånd 😄
+
+<details>
+<summary>Visa svar och förklaring</summary>
+
+**Rätt svar: B**
+
+**A)** PascalCase används för klasser, metoder och properties — inte för lokala variabler.
+**B)** Rätt. Lokala variabler och parametrar skrivs med camelCase i C#: `int antalSpelare`, `string spelarNamn`.
+**C)** snake_case är Pythons konvention och används inte i C#.
+**D)** UPPERCASE är reserverat för konstanter (`const int MAX_SPELARE = 4`) i de sammanhang det används — och det ser man sällan ens då i C#.
+
+</details>
+
+---
+
+## Fråga 7 — Single Responsibility Principle
+
+Vad innebär Single Responsibility Principle (SRP)?
+
+A) En klass ska ha exakt en metod
+B) En klass ska ha ett och samma ansvarsområde — en enda anledning att ändras
+C) Varje metod får max ett metodanrop inuti sig
+D) Principen om att alltid byta namngivning en gång per sprint 😄
+
+<details>
+<summary>Visa svar och förklaring</summary>
+
+**Rätt svar: B**
+
+**A)** SRP handlar om ansvar, inte antalet metoder. En klass med ett ansvar kan ha många metoder.
+**B)** Rätt. En `BankAccount`-klass ska sköta kontologik — inte skriva ut kvitton, skicka mejl och räkna moms. Varje av de sakerna är ett separat ansvar som hör hemma i en separat klass.
+**C)** Ingen sådan regel finns — det vore ohållbart i praktiken.
+**D)** Det är inte SRP — det är en källa till kaos.
+
+</details>
+
+---
+
+## Fråga 8 — när skriver man kommentarer?
+
+När är det lämpligt att skriva en kommentar i koden?
+
+A) Alltid — varje rad ska ha en kommentar som förklarar vad den gör
+B) Aldrig — koden ska tala för sig själv utan kommentarer
+C) När något inte är uppenbart: en dold begränsning, ett knepigt val, eller en workaround för ett specifikt problem
+D) Bara på fredagar, så kommentarerna får vila över helgen 😄
+
+<details>
+<summary>Visa svar och förklaring</summary>
+
+**Rätt svar: C**
+
+**A)** En kommentar som förklarar *vad* tydlig kod gör är brus — den läggs ovanpå något som redan syns.
+**B)** Ibland är *varför* inte uppenbart från koden — det är precis det en kommentar ska förklara.
+**C)** Rätt. Skriv kommentarer för det som koden inte kan berätta själv: "Vi halverar beloppet här pga bankens API-begränsning på 500 kr/transaktion." Det är värdefull information.
+**D)** Kommentarer tar aldrig ledigt, men de behöver inte arbeta onödigt heller.
+
+</details>
+
+---

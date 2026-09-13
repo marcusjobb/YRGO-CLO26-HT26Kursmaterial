@@ -141,3 +141,72 @@ D) Att koden är så välskriven att den kan stängas in i en kapsel och skickas
 </details>
 
 ---
+
+## Fråga 7 — Arv
+
+Vad innebär arv i objektorienterad programmering?
+
+A) Att ett objekt kopierar ett annat objekts värden när det skapas
+B) Att en klass tar över egenskaper och beteenden från en annan klass och kan lägga till eller specialisera dem
+C) Att alla klasser i C# automatiskt delar samma konstruktor
+D) Att föräldrarna i familjen `Animal` äntligen får erkännande 😄
+
+<details>
+<summary>Visa svar och förklaring</summary>
+
+**Rätt svar: B**
+
+**A)** Det beskriver kopiering av värden — inte arv. Arv handlar om klassrelationer, inte objektvärden.
+**B)** Rätt. `class Hund : Djur` ärver allt `Djur` har — namn, ålder, `Andas()` — och kan lägga till `Skäll()` eller specialisera `Presentera()`.
+**C)** Klasser ärver inte konstruktorer automatiskt; du måste anropa basklassens konstruktor explicit med `base(...)`.
+**D)** Rätt erkänt, fel svar.
+
+</details>
+
+---
+
+## Fråga 8 — Nyckelordet för arv i C#
+
+Hur anger man att klassen `Goblin` ärver från klassen `Monster` i C#?
+
+A) `class Goblin extends Monster`
+B) `class Goblin inherits Monster`
+C) `class Goblin : Monster`
+D) `class Goblin(Monster)` — det är Python-syntax men det ser ändå fräckt ut 😄
+
+<details>
+<summary>Visa svar och förklaring</summary>
+
+**Rätt svar: C**
+
+**A)** `extends` är Java-syntax. C# använder kolon.
+**B)** `inherits` är Visual Basic. C# använder kolon.
+**C)** Rätt. `: Monster` efter klassnamnet anger basklassen. `class Goblin : Monster { }` är korrekt C#-syntax.
+**D)** Python-korrekt, C#-fel — men nästan poäng för stil.
+
+</details>
+
+---
+
+## Fråga 9 — override
+
+Vad gör `override` på en metod i en subklass?
+
+A) Det gör att metoden körs dubbelt snabbt
+B) Det ersätter basklassens implementation av metoden med subklassens egna version
+C) Det låser metoden så att inga fler subklasser kan ändra den
+D) Det tvingar alla programmers att jobba övertid 😄
+
+<details>
+<summary>Visa svar och förklaring</summary>
+
+**Rätt svar: B**
+
+**A)** `override` påverkar inte prestanda — det handlar om beteende.
+**B)** Rätt. Om `Monster` har `virtual string Presentera()`, kan `Goblin` skriva `override string Presentera()` och ge en helt annan implementation — utan att bryta mot basklassens kontrakt.
+**C)** Det är `sealed` som låser ytterligare överskrivning.
+**D)** Det är inget vi kan bekräfta.
+
+</details>
+
+---
