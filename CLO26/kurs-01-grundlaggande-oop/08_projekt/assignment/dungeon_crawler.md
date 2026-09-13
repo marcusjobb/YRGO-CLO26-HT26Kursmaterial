@@ -105,11 +105,9 @@ Spelaren kan förlora om de fastnar utan nyckel, löper ut ur tid, eller liknand
 
 ### Teknisk grund
 
-- [ ] Minst 3 klasser med privata fält (`private`) — data skyddas inuti klassen
-- [ ] Properties med `{ get; private set; }` — ingen utomstående ändrar data direkt
-- [ ] Konstruktorer med parametrar — objektet startar i korrekt tillstånd
 - [ ] Minst en `List<T>` i aktiv användning — ex: `List<Föremål>` i rum och inventory
-- [ ] Minst en basklass med minst **2 subklasser** som ärver från den
+
+> 💡 Föremål passar bra som basklass med subklasser (ex: `Nyckel`, `Vapen`) — inget krav, men om ni väljer det, beskriv varför i reflektionen.
 
 ---
 
@@ -120,11 +118,10 @@ Spelaren kan förlora om de fastnar utan nyckel, löper ut ur tid, eller liknand
 - [ ] `List<Föremål> Föremål` — föremål som finns i rummet
 - [ ] `string Beskriv()` — returnerar rummets namn, beskrivning, utgångar och föremål
 
-### Föremål-klassen och arv
+### Föremål-klassen
 
-- [ ] En `Föremål`-basklass med: namn, beskrivning
+- [ ] En `Föremål`-klass med: namn, beskrivning
 - [ ] Konstruktor som tar namn och beskrivning
-- [ ] Minst **2 subklasser** som ärver från `Föremål` (ex: `Nyckel`, `Vapen`, `Magisk`) — varje subklass har egna egenskaper eller beteenden (t.ex. en `Nyckel` har ett `LåserId`, ett `Vapen` har `AttackBonus`)
 
 ### Spelare-klassen
 
@@ -175,12 +172,15 @@ Spelaren kan förlora om de fastnar utan nyckel, löper ut ur tid, eller liknand
 
 > Tips: Använd [goblin.tools/ToDo](https://goblin.tools/Todo) för att bryta ner uppgiften i hanterbara steg.
 
-### Reflektion (`REFLEKTION.md` i repot)
+### Reflektion (`REFLEKTION.md` — individuell, en per person)
+
+Använd mallen `_templates/REFLEKTION.md`. Tre frågor — skriv kort och ärligt.
 
 - [ ] Vad var svårast att lösa?
-- [ ] Varför valde ni `Dictionary` för att koppla ihop rum — vad hade hänt med en `List`?
-- [ ] Vad hade ni gjort annorlunda om ni fick börja om?
-- [ ] Beskriv tre markdown-element ni använt i det här dokumentet och vad de gör
+- [ ] Hur fungerade samarbetet i gruppen?
+- [ ] Om du fick göra om det — vad hade du gjort annorlunda?
+
+*(Valfritt: varför valde ni `Dictionary` för utgångarna — vad hade hänt med en `List`?)*
 
 ---
 

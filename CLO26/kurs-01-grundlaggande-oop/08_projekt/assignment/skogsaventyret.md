@@ -90,11 +90,9 @@ Du möter ett monster. Det anfaller.
 
 ### Teknisk grund
 
-- [ ] Minst 3 klasser med privata fält (`private`) — data skyddas inuti klassen
-- [ ] Properties med `{ get; private set; }` — ingen utomstående ändrar data direkt
-- [ ] Konstruktorer med parametrar — objektet startar i korrekt tillstånd
 - [ ] Minst en `List<T>` i aktiv användning — ex: `List<Monster>` för tillgängliga monstertyper
-- [ ] Minst en basklass med minst **2 subklasser** som ärver från den
+
+> 💡 En Monster-hierarki med basklass och subklasser är ett naturligt sätt att strukturera det här projektet. Inget krav — men om ni väljer det, beskriv varför i reflektionen.
 
 ---
 
@@ -155,10 +153,13 @@ Du möter ett monster. Det anfaller.
 
 ### Reflektion (`REFLEKTION.md` — individuell, en per person)
 
+Använd mallen `_templates/REFLEKTION.md`. Tre frågor — skriv kort och ärligt.
+
 - [ ] Vad var svårast att lösa?
-- [ ] Varför ärver era monster från en basklass — vad tjänar ni på det?
-- [ ] Vad hade ni gjort annorlunda om ni fick börja om?
-- [ ] Beskriv tre markdown-element ni använt i det här dokumentet och vad de gör
+- [ ] Hur fungerade samarbetet i gruppen?
+- [ ] Om du fick göra om det — vad hade du gjort annorlunda?
+
+*(Valfritt: om ni använde arv — beskriv varför ni valde den strukturen.)*
 
 ---
 

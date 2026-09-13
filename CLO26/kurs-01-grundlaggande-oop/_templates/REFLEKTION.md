@@ -12,25 +12,9 @@
 
 ---
 
-## Vad gick bra?
+## Vad var svårast att lösa?
 
-*Vad är du nöjd med i det du lämnar in? Vad fungerade som du hade hoppats?*
-
-> 
-
----
-
-## Vad var svårt?
-
-*Var fastnade du? Vad tog längre tid än du trodde?*
-
-> 
-
----
-
-## Vad har du lärt dig?
-
-*Nämn minst en sak du faktiskt förstår nu som du inte förstod innan du började.*
+*Var fastnade du? Vad tog längre tid än du trodde — och hur kom du vidare?*
 
 > 
 
@@ -38,8 +22,8 @@
 
 ## Hur fungerade samarbetet i gruppen?
 
-*Om uppgiften gjordes individuellt — hoppa över den här frågan.*  
-*Vad fungerade i gruppen? Vad var svårt? Hur löste ni konflikter eller meningsskiljaktigheter?*
+*Vad fungerade bra? Vad var svårt? Hur delade ni upp arbetet?*  
+*(Individuell uppgift? Hoppa över den här.)*
 
 > 
 
@@ -47,12 +31,6 @@
 
 ## Om du fick göra om det — vad hade du gjort annorlunda?
 
-> 
-
----
-
-## Något annat du vill säga?
-
-*(Frivilligt)*
+*Tänk på din lösning, din struktur, eller hur ni jobbade. Vad skulle du ändra?*
 
 > 

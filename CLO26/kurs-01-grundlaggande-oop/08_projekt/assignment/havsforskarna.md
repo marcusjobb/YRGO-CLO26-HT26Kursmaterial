@@ -87,11 +87,9 @@ Den som kartlägger alla motståndarens formationer först vinner.
 
 ### Teknisk grund
 
-- [ ] Minst 3 klasser med privata fält (`private`) — data skyddas inuti klassen
-- [ ] Properties med `{ get; private set; }` — ingen utomstående ändrar data direkt
-- [ ] Konstruktorer med parametrar — objektet startar i korrekt tillstånd
 - [ ] Minst en `List<T>` i aktiv användning — ex: `List<Formation>` och `List<Position>`
-- [ ] Minst en basklass med minst **2 subklasser** som ärver från den
+
+> 💡 Formation-klassen passar bra som basklass med subklasser (ex: `Korallrev`, `Bergskedja`) — inget krav, men om ni väljer det, beskriv varför i reflektionen.
 
 ---
 
@@ -102,12 +100,11 @@ Den som kartlägger alla motståndarens formationer först vinner.
 - [ ] Metod för att visa rutnätet med koordinater (A–J, 1–10)
 - [ ] Separata rutnät: ett som visar dina egna formationer, ett som visar vad du sett hos motståndaren
 
-### Formationerna och arv
+### Formationerna
 
-- [ ] En `Formation`-basklass med: namn, storlek (antal rutor), `List<Position>` positioner
+- [ ] En `Formation`-klass med: namn, storlek (antal rutor), `List<Position>` positioner
 - [ ] Metod `ÄrKartlagd()` som returnerar `true` när alla positioner är träffade
 - [ ] En `Position`-klass (eller struct) med rad och kolumn
-- [ ] Minst **2 subklasser** som ärver från `Formation` (ex: `Korallrev`, `Bergskedja`, `Vrak`) — varje subklass har egna stats eller beteenden (t.ex. olika defaultstorlek, eller en override av `ÄrKartlagd()`)
 
 ### Placering
 
@@ -143,12 +140,15 @@ Den som kartlägger alla motståndarens formationer först vinner.
 - [ ] `.gitignore` som filtrerar bort `bin/`, `obj/` och `.vs/`
 - [ ] Saknas gitignore (eller filtrerar inte bort binärfiler) → **IG**
 
-### Reflektion (`REFLEKTION.md` i repot)
+### Reflektion (`REFLEKTION.md` — individuell, en per person)
+
+Använd mallen `_templates/REFLEKTION.md`. Tre frågor — skriv kort och ärligt.
 
 - [ ] Vad var svårast att implementera?
-- [ ] Hur valde ni att representera rutnätet — och varför?
-- [ ] Hur fungerade gruppdynamiken? Vad hade ni gjort annorlunda?
-- [ ] Beskriv tre markdown-element ni använt i det här dokumentet och vad de gör
+- [ ] Hur fungerade samarbetet i gruppen?
+- [ ] Om du fick göra om det — vad hade du gjort annorlunda?
+
+*(Valfritt: hur valde ni att representera rutnätet — och varför just den strukturen?)*
 
 ---
 
