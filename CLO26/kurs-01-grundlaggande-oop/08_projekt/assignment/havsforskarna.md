@@ -91,6 +91,7 @@ Den som kartlägger alla motståndarens formationer först vinner.
 - [ ] Properties med `{ get; private set; }` — ingen utomstående ändrar data direkt
 - [ ] Konstruktorer med parametrar — objektet startar i korrekt tillstånd
 - [ ] Minst en `List<T>` i aktiv användning — ex: `List<Formation>` och `List<Position>`
+- [ ] Minst en basklass med minst **2 subklasser** som ärver från den
 
 ---
 
@@ -101,11 +102,12 @@ Den som kartlägger alla motståndarens formationer först vinner.
 - [ ] Metod för att visa rutnätet med koordinater (A–J, 1–10)
 - [ ] Separata rutnät: ett som visar dina egna formationer, ett som visar vad du sett hos motståndaren
 
-### Formationerna
+### Formationerna och arv
 
-- [ ] En `Formation`-klass med: namn, storlek (antal rutor), `List<Position>` positioner
+- [ ] En `Formation`-basklass med: namn, storlek (antal rutor), `List<Position>` positioner
 - [ ] Metod `ÄrKartlagd()` som returnerar `true` när alla positioner är träffade
 - [ ] En `Position`-klass (eller struct) med rad och kolumn
+- [ ] Minst **2 subklasser** som ärver från `Formation` (ex: `Korallrev`, `Bergskedja`, `Vrak`) — varje subklass har egna stats eller beteenden (t.ex. olika defaultstorlek, eller en override av `ÄrKartlagd()`)
 
 ### Placering
 

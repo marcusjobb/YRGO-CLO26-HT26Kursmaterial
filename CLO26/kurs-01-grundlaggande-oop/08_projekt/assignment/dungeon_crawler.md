@@ -109,6 +109,7 @@ Spelaren kan förlora om de fastnar utan nyckel, löper ut ur tid, eller liknand
 - [ ] Properties med `{ get; private set; }` — ingen utomstående ändrar data direkt
 - [ ] Konstruktorer med parametrar — objektet startar i korrekt tillstånd
 - [ ] Minst en `List<T>` i aktiv användning — ex: `List<Föremål>` i rum och inventory
+- [ ] Minst en basklass med minst **2 subklasser** som ärver från den
 
 ---
 
@@ -119,10 +120,11 @@ Spelaren kan förlora om de fastnar utan nyckel, löper ut ur tid, eller liknand
 - [ ] `List<Föremål> Föremål` — föremål som finns i rummet
 - [ ] `string Beskriv()` — returnerar rummets namn, beskrivning, utgångar och föremål
 
-### Föremål-klassen
+### Föremål-klassen och arv
 
-- [ ] En `Föremål`-klass med: namn, beskrivning
+- [ ] En `Föremål`-basklass med: namn, beskrivning
 - [ ] Konstruktor som tar namn och beskrivning
+- [ ] Minst **2 subklasser** som ärver från `Föremål` (ex: `Nyckel`, `Vapen`, `Magisk`) — varje subklass har egna egenskaper eller beteenden (t.ex. en `Nyckel` har ett `LåserId`, ett `Vapen` har `AttackBonus`)
 
 ### Spelare-klassen
 

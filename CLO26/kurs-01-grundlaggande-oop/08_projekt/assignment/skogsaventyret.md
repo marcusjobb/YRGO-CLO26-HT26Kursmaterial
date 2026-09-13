@@ -94,6 +94,7 @@ Du möter ett monster. Det anfaller.
 - [ ] Properties med `{ get; private set; }` — ingen utomstående ändrar data direkt
 - [ ] Konstruktorer med parametrar — objektet startar i korrekt tillstånd
 - [ ] Minst en `List<T>` i aktiv användning — ex: `List<Monster>` för tillgängliga monstertyper
+- [ ] Minst en basklass med minst **2 subklasser** som ärver från den
 
 ---
 
