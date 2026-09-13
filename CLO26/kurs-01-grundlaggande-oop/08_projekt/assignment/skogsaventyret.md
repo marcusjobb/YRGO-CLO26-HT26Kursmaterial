@@ -5,7 +5,7 @@
 **Presentation:** Onsdag 30 sep 2026 — förmiddag tenta, eftermiddag redovisning  
 **Förlängd deadline:** Fredag 2 okt 2026, 23:59  
 **Gruppstorlek:** 2–4 studerande  
-**Inlämning:** Länk till er gemensamma fork i Google Classroom
+**Inlämning:** Zippad fil + GitHub-länk i Google Classroom
 
 ---
 
@@ -129,7 +129,21 @@ Du möter ett monster. Det anfaller.
 - [ ] Variabel-, klass- och metodnamn är självförklarande
 - [ ] Kommentarer där logiken inte är uppenbar — förklara *varför*, inte *vad*
 
-### Reflektion (`REFLEKTION.md` i repot)
+### Inlämning
+
+- [ ] Zippad fil från GitHub laddas upp i Google Classroom
+- [ ] GitHub-länk bifogas (bjud in `marcusjobb` om repot är privat)
+- [ ] En i gruppen lämnar in **RAPPORT.md** + sin **REFLEKTION.md**
+- [ ] Övriga i gruppen lämnar in **endast sin REFLEKTION.md**
+
+### gitignore
+
+- [ ] `.gitignore` som filtrerar bort `bin/`, `obj/` och `.vs/`
+- [ ] Saknas gitignore (eller filtrerar inte bort binärfiler) → **IG**
+
+> 💡 Tips: Använd [goblin.tools/ToDo](https://goblin.tools/Todo) för att bryta ner projektet i lagom stora delar.
+
+### Reflektion (`REFLEKTION.md` — individuell, en per person)
 
 - [ ] Vad var svårast att lösa?
 - [ ] Varför ärver era monster från en basklass — vad tjänar ni på det?
