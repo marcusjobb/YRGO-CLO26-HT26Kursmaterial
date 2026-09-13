@@ -3,6 +3,7 @@
 **Vecka:** 3 (v38)  
 **Deadline:** Söndag 21 sep 2026, 23:59  
 **Förlängd deadline:** Fredag 25 sep 2026, 23:59  
+**Gruppstorlek:** 2–4 studerande  
 
 ### Inlämning via Google Classroom
 
