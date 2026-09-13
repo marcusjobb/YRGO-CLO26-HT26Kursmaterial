@@ -4,7 +4,7 @@
 **Deadline:** Söndag 27 sep 2026, 23:59  
 **Presentation:** Onsdag 30 sep 2026 — förmiddag tenta, eftermiddag redovisning  
 **Förlängd deadline:** Fredag 2 okt 2026, 23:59  
-**Gruppstorlek:** 2–3 studerande  
+**Gruppstorlek:** 2–4 studerande  
 **Inlämning:** Länk till er gemensamma fork i Google Classroom
 
 ---
