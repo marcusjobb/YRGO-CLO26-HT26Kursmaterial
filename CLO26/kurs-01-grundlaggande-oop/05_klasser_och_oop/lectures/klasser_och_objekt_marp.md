@@ -150,7 +150,7 @@ De delar ritning — men inte data.
 
 - Glömmer `private` → allt är publikt → inkapsling försvinner
 - Sätter `this.ägare = ägare` i fel ordning → parametern skriver över sig själv
-- Gör properties som både `get` och `set` publika → ingen kontroll
+- Gör auto-properties med publik `set` → samma som ett publikt fält, ingen validering möjlig utan omskrivning
 
 ---
 

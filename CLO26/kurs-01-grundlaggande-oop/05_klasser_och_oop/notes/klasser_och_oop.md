@@ -177,6 +177,8 @@ konto.Saldo = 500;  // Kompileringsfel — set är private
 
 Det ger dig en tydlig kontroll: vem får läsa? Vem får skriva?
 
+En vanlig fälla: `{ get; set; }` med publik set ser ut som en property men beter sig som ett publikt fält — vem som helst kan skriva vilket värde som helst, ingen validering sker. Det är inte inkapsling, det är bara syntaxsocker. En full property med logik i `set` (se exemplet nedan) kan däremot ha kontroll även med publik set.
+
 <details>
 <summary>Djupare: property med logik</summary>
 

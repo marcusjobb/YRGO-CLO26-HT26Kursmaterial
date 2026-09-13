@@ -9,7 +9,7 @@ Det här är den viktigaste veckan i kursen. Allt som kommer efter (arv, polymor
 
 Börja med UML på tavlan (se `_teacher/uml_tavlan_guide.md`) innan du öppnar VS Code. Låt dem rita av. Det tar tre minuter och de minns det.
 
-Presentera `Spellistan` på tisdag — inte måndag. Ge dem tid att känna sig trygga med `BankAccount` och `Car` innan de möter en ny klass på egen hand.
+Presentera `Drömmatchen` på måndag. Ge dem hela veckan på sig.
 
 ### Dag 1 — Klasser och objekt
 
@@ -23,13 +23,13 @@ Presentera `Spellistan` på tisdag — inte måndag. Ge dem tid att känna sig t
 
 - Föreläsning: `inkapsling_marp.md`
 - Repetition av `BankAccount` — nu med properties och `private set`
-- Presentera `Spellistan` (`assignment/spellistan.md`) — rita `MusicArtist` på tavlan, låt dem rita med
+- Presentera `Drömmatchen` (`assignment/klasser_samarbetar.md`) — kör `inlamning_01_marp.md`, demo goblin.tools live
 - Övning 2: `ovning_02_spaceship.md`
 
 ### Dag 3 — Handledning
 
 - Online handledning via Discord/Meet
-- Fokus: `Spellistan` — de flesta har påbörjat, hjälp dem vidare
+- Fokus: `Drömmatchen` — de flesta har påbörjat, hjälp dem vidare
 
 ## Publicera
 

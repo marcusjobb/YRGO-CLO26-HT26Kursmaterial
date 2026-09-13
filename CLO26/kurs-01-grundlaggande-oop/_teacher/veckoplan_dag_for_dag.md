@@ -78,14 +78,14 @@
 | Dag | Pass | Innehåll | Ämne |
 |-----|------|----------|------|
 | Mån 15 sep | fm | UML-klassdiagram: rita INNAN vi kodar. Whiteboard + penna. Modell: BankAccount | UML |
-| Mån 15 sep | em | Klasser i C#: konstruktor, properties (private set), fält, metoder. Föreläsning: `BankAccount` | Klasser |
+| Mån 15 sep | em | Klasser i C#: konstruktor, properties (private set), fält, metoder. Föreläsning: `BankAccount`. Inlämning 1 (Drömmatchen) presenteras | Klasser |
 | Tis 16 sep | fm | Inkapsling: varför fält är privata. `private` vs `public` vs `protected`. Diskussion + kodsnuttar | Inkapsling |
-| Tis 16 sep | em | Övning 1 (Car) + Övning 2 (Spaceship). Inlämning 1 (Spellistan) presenteras | Övning |
+| Tis 16 sep | em | Övning 1 (Car) + Övning 2 (Spaceship) | Övning |
 | Ons 17 sep | online | Handledning: studerande kodar, Marcus tillgänglig för frågor | Handledning |
 
 **Nyckelord denna vecka:** `klass`, `objekt`, `instans`, `konstruktor`, `property`, `private`, `public`, `encapsulation`
 
-**Inlämning 1:** Spellistan — deadline sön 21 sep 23:59
+**Inlämning 1:** Drömmatchen — deadline sön 21 sep 23:59
 
 ---
 
