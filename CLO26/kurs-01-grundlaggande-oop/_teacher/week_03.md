@@ -51,6 +51,9 @@ publish:
   - 05_klasser_och_oop/exercises/ovning_person.md
   - 05_klasser_och_oop/exercises/ovning_person_datum.md
   - 05_klasser_och_oop/exercises/ovning_pets.md
+  - 05_klasser_och_oop/exercises/ovning_kaffemaskin.md
+  - 05_klasser_och_oop/exercises/ovning_rpg.md
+  - 05_klasser_och_oop/exercises/ovning_temperatur.md
   - 05_klasser_och_oop/exercises/training_vecka3.md
   - 05_klasser_och_oop/tentafragor/fragor.md
   - 05_klasser_och_oop/assignment/klasser_samarbetar.md
@@ -58,7 +61,7 @@ publish:
 
 ## Inlämning denna vecka
 
-**Restaurangen** — `assignment/klasser_samarbetar.md`
+**Drömmatchen** — `assignment/klasser_samarbetar.md`
 Deadline: Söndag 21 sep 2026, 23:59
 Förlängd: Fredag 25 sep 2026, 23:59
 Rättning: Veckan efter deadline
