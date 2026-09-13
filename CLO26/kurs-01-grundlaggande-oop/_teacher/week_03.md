@@ -41,11 +41,16 @@ publish:
   - 05_klasser_och_oop/notes/klasser_och_oop.md
   - 05_klasser_och_oop/examples/BankAccount.cs
   - 05_klasser_och_oop/examples/uml_tavlan.md
-  - 05_klasser_och_oop/programmeringstermer/klasser.md
-  - 05_klasser_och_oop/programmeringstermer/oop.md
+  - termer/klasser.md
+  - termer/oop.md
+  - 05_klasser_och_oop/notes/mslearn.md
   - 05_klasser_och_oop/exercises/intro_varfor_oop.md
   - 05_klasser_och_oop/exercises/ovning_01_car.md
   - 05_klasser_och_oop/exercises/ovning_02_spaceship.md
+  - 05_klasser_och_oop/exercises/ovning_tarning.md
+  - 05_klasser_och_oop/exercises/ovning_person.md
+  - 05_klasser_och_oop/exercises/ovning_person_datum.md
+  - 05_klasser_och_oop/exercises/ovning_pets.md
   - 05_klasser_och_oop/exercises/training_vecka3.md
   - 05_klasser_och_oop/tentafragor/fragor.md
   - 05_klasser_och_oop/assignment/spellistan.md
