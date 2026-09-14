@@ -1,71 +1,125 @@
-// BankAccount.cs
-// Föreläsningsexempel — Klasser och inkapsling
-// Används under vecka 3 för att visa private/public, properties och metoder
+// Vad gör det här programmet:
+//   Demonstrerar inkapsling med ett bankkonto — privata fält, properties
+//   med get/set-logik, och metoder som validerar indata innan de ändrar state.
+//
+// Koncept som visas:
+//   - Privat backing field + publik property (full get/set-syntax)
+//   - Varför vi inte ger direkt tillgång till fältet utifrån
+//   - 'value' — den magiska variabeln inuti set
+//   - Auto-property { get; set; } vs full get { } set { }
+//   - Varför metoderna kontrollerar negativt värde
+
+Console.WriteLine("Hello, World!");
+
+BankAccount acc = new BankAccount();
+acc.Insättning(4500);
+Console.WriteLine($"Mitt bankkonto har {acc.Saldo} spänn!");
+
+Console.WriteLine("Jag handlar elprylar för 2500");
+acc.Uttag(2500);
+Console.WriteLine($"Jag har nu {acc.Saldo} kvar.");
+
+acc.Uttag(-510);                                  // negativt uttag — ska ignoreras
+Console.WriteLine("Jag handlar koncertbiljetter för 3500");
+acc.Uttag(3500);                                  // mer än saldot — ska inte gå igenom
+Console.WriteLine($"Jag har nu {acc.Saldo} kvar.");
+
 
 class BankAccount
 {
-    // property med private set — läsbar utifrån, skrivbar bara inifrån klassen
-    public double Saldo { get; private set; }
-    public string Ägare { get; private set; }
-    public bool ÄrAktivt { get; private set; }
+    // ── FÄLT (field) ──────────────────────────────────────────────────────────
+    //
+    // 'saldo' är ett privat backing field — ett vanligt fält som lagrar det
+    // faktiska värdet i minnet. Det är märkt 'private', vilket betyder att
+    // ingen utanför klassen kan läsa eller skriva det direkt.
+    //
+    // Utan 'private' skulle vem som helst kunna göra:
+    //   acc.saldo = -99999;    ← ingen kontroll, inga regler
+    //
+    // Vi vill inte det. Så vi låter propertyn vara grinden.
+    private double saldo = 1000;
 
-    // konstruktor — körs när objektet skapas
-    public BankAccount(string ägare, double startSaldo)
-    {
-        Ägare = ägare;
-        Saldo = startSaldo;
-        ÄrAktivt = true;
-    }
 
-    // metod för att sätta in pengar
-    public void SättIn(double belopp)
+    // ── PROPERTY (full get/set-syntax) ────────────────────────────────────────
+    //
+    // En property ser ut som ett fält utifrån, men är egentligen två metoder:
+    // en get-metod (läsare) och en set-metod (skrivare).
+    //
+    // Full syntax används när du behöver LOGIK i get eller set.
+    // Jämför med auto-property längst ned i den här filen.
+    //
+    //   Utifrån klassen:
+    //     double x = acc.Saldo;      → anropar get
+    //     acc.Saldo = 500;           → anropar set  (fungerar INTE — private set)
+    //
+    public double Saldo
     {
-        if (belopp <= 0)
+        get
         {
-            Console.WriteLine("Beloppet måste vara positivt.");
-            return;
+            return saldo;           // get: returnera värdet av det privata fältet
         }
-        Saldo += belopp;
-        Console.WriteLine($"{Ägare} satte in {belopp} kr. Nytt saldo: {Saldo} kr.");
-    }
-
-    // metod för att ta ut pengar — returnerar true om det gick, false om inte
-    public bool TaUt(double belopp)
-    {
-        if (belopp <= 0 || belopp > Saldo)
+        private set
         {
-            Console.WriteLine("Uttag nekat — otillräckligt saldo.");
-            return false;
+            // 'value' är en inbyggd variabel som bara finns inuti set.
+            // Den innehåller det värde som försöker tilldelas.
+            //   Saldo = 3000  →  value är 3000
+            //   Saldo -= 500  →  value är (nuvarande Saldo - 500)
+            //
+            // Vi kollar att value > 0 för att förhindra att saldot
+            // sätts till ett negativt tal eller noll.
+            // Om villkoret inte uppfylls händer ingenting — tyst avvisning.
+            if (value > 0)
+                saldo = value;
         }
-        Saldo -= belopp;
-        Console.WriteLine($"{Ägare} tog ut {belopp} kr. Nytt saldo: {Saldo} kr.");
-        return true;
     }
 
-    // metod som beskriver kontot
-    public void Presentera()
+    // ── METODER ───────────────────────────────────────────────────────────────
+    //
+    // Metoderna är den enda vägen utifrån för att ÄNDRA saldot.
+    // Det är de som äger valideringslogiken — propertyn skyddar mot ogiltiga
+    // värden, men metoderna kommunicerar varför något avvisas.
+
+    public void Insättning(double belopp)
     {
-        string status = ÄrAktivt ? "Aktivt" : "Inaktivt";
-        Console.WriteLine($"Konto: {Ägare} | Saldo: {Saldo} kr | Status: {status}");
+        // Vi kontrollerar 'belopp', inte saldot.
+        // Negativt insättningsbelopp är ingen giltig transaktion.
+        if (belopp < 0)
+            Console.WriteLine("GTFO!");
+        else if (belopp > 20000)
+            Console.WriteLine("Du är en skummis!");  // flagga ovanligt stor insättning
+        else
+            Saldo += belopp;    // anropar private set — set-logiken avgör om det går igenom
     }
 
-    static void Main()
+    public void Uttag(double belopp)
     {
-        BankAccount konto1 = new BankAccount("Alex", 1000);
-        BankAccount konto2 = new BankAccount("Sam", 500);
-
-        konto1.Presentera();
-        konto2.Presentera();
-
-        Console.WriteLine();
-
-        konto1.SättIn(500);
-        konto1.TaUt(200);
-        konto2.TaUt(600);   // ska misslyckas
-
-        Console.WriteLine();
-
-        konto1.Presentera();
-        konto2.Presentera();
+        // Negativt uttag (t.ex. -510) är inte ett giltigt belopp — avvisa det.
+        // Om vi inte kollade detta skulle ett negativt uttag fungera som
+        // en insättning, vilket är ett säkerhetshål.
+        if (belopp < 0)
+            Console.WriteLine("GTFO!");
+        else
+            Saldo -= belopp;    // om resultatet blir ≤ 0 avvisar private set tyst
     }
 }
+
+
+// ── JÄMFÖRELSE: auto-property vs full get/set ─────────────────────────────────
+//
+// Auto-property — används när du INTE behöver logik i get eller set.
+// C# genererar backing field åt dig automatiskt, du ser det aldrig.
+//
+//   public double Saldo { get; private set; }
+//
+// Motsvarar exakt det här — men utan möjlighet att lägga in if-satsen:
+//
+//   private double saldo;
+//   public double Saldo
+//   {
+//       get { return saldo; }
+//       private set { saldo = value; }   // ingen validering
+//   }
+//
+// Tumregel:
+//   Behöver du validering eller beräkning i get/set? → full syntax
+//   Behöver du bara styra vem som får läsa/skriva?   → auto-property räcker
