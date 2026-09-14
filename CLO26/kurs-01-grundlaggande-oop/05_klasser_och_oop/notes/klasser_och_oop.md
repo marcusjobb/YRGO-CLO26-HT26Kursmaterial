@@ -177,12 +177,23 @@ konto.Saldo = 500;  // Kompileringsfel — set är private
 
 Det ger dig en tydlig kontroll: vem får läsa? Vem får skriva?
 
-En vanlig fälla: `{ get; set; }` med publik set ser ut som en property men beter sig som ett publikt fält — vem som helst kan skriva vilket värde som helst, ingen validering sker. Det är inte inkapsling, det är bara syntaxsocker. En full property med logik i `set` (se exemplet nedan) kan däremot ha kontroll även med publik set.
+En vanlig fälla: `{ get; set; }` med publik set ser ut som en property men beter sig som ett publikt fält — vem som helst kan skriva vilket värde som helst, ingen validering sker. Det är inte inkapsling, det är bara syntaxsocker.
 
-<details>
-<summary>Djupare: property med logik</summary>
+---
 
-En property kan också innehålla egen logik i `get` och `set`. Det är användbart när du vill validera eller beräkna ett värde:
+## Privata fält (backing fields)
+
+Auto-propertyn `{ get; private set; }` räcker i de flesta fall. Men ibland vill du ha ett **privat fält** som lagrar värdet — ett så kallat *backing field* — och en full property med logik i `get` eller `set`.
+
+Konventionen för privata fält i C# är `_camelCase` — understreck som prefix:
+
+```csharp
+private string _namn;
+private int _nummer;
+private double _saldo;
+```
+
+När behöver du det? När du vill validera eller transformera värdet vid tilldelning. Auto-propertyn `{ get; private set; }` ger dig noll koll på vad som skickas in — en full property kan stoppa ogiltiga värden:
 
 ```csharp
 private double _saldo;
@@ -202,9 +213,45 @@ public double Saldo
 }
 ```
 
-Här lagras det verkliga värdet i det privata fältet `_saldo`. Propertyn `Saldo` är gränssnittet utåt — och `set`-delen kan kontrollera vad som händer när värdet ändras. För de flesta enkla klasser räcker `{ get; private set; }`, men det är bra att veta att properties kan växa med behoven.
+Propertyn `Saldo` är gränssnittet utåt. `_saldo` är det privata lagret inuti. Ingen utifrån kan röra `_saldo` direkt.
 
-</details>
+**Drömmatchen-struktur** — exakt det du ska skriva i inlämningen:
+
+```csharp
+public class Spelare
+{
+    private string _namn;
+    private int _nummer;
+    private string _position;
+
+    public string Namn
+    {
+        get { return _namn; }
+        private set { _namn = value; }
+    }
+
+    public int Nummer
+    {
+        get { return _nummer; }
+        private set { _nummer = value; }
+    }
+
+    public string Position
+    {
+        get { return _position; }
+        private set { _position = value; }
+    }
+
+    public Spelare(string namn, int nummer, string position)
+    {
+        _namn = namn;
+        _nummer = nummer;
+        _position = position;
+    }
+}
+```
+
+Enkelt: konstruktorn sätter fälten direkt. Properties ger kontrollerad läsning utifrån.
 
 ---
 
@@ -308,6 +355,37 @@ konto1.Presentera();  // visar 1500 — inte 1000!
 `konto1` och `kopia` är två variabler men ett och samma objekt. Det är ett vanligt misstag att tro att man kopierat ett objekt när man egentligen bara kopierat referensen till det. Om du vill ha ett äkta nytt objekt med samma värden måste du skapa det med `new`.
 
 </details>
+
+---
+
+## static i klasser
+
+I en klass är metoder **icke-statiska som standard** — de tillhör objektet och har tillgång till dess data. Det är det normala läget när du skriver objektmetoder som `Presentera`, `SättIn` och `TaUt`.
+
+`static` i en klass används för saker som inte beror på ett specifikt objekt — till exempel en räknare som håller koll på hur många instanser som skapats:
+
+```csharp
+class BankAccount
+{
+    private static int _antalKonton = 0;
+
+    public static int AntalKonton => _antalKonton;
+
+    public BankAccount(string ägare, double startSaldo)
+    {
+        // ... sätt ägare och saldo ...
+        _antalKonton++;   // räknas upp för varje nytt konto
+    }
+}
+
+// Anropas på klassen, inte ett objekt:
+Console.WriteLine(BankAccount.AntalKonton);   // 0
+BankAccount k1 = new BankAccount("Alex", 1000);
+BankAccount k2 = new BankAccount("Sam", 500);
+Console.WriteLine(BankAccount.AntalKonton);   // 2
+```
+
+För era klasser i den här kursen — inga `static`-metoder i klasserna om ni inte har en specifik anledning. Håll er till objektmetoder.
 
 ---
 

@@ -311,4 +311,48 @@ Metodöverlagring är ett verktyg för när du vill erbjuda **flexibla anropssä
 
 ---
 
+## static och objektmetoder — vad är skillnaden?
+
+En `static`-metod tillhör **klassen** — inte ett specifikt objekt. Du kan anropa den utan att ha skapat något objekt överhuvudtaget.
+
+```csharp
+// static — anropas direkt, inget objekt behövs
+static int Add(int a, int b)
+{
+    return a + b;
+}
+
+int result = Add(3, 4);   // fungerar utan new
+```
+
+En **objektmetod** (icke-statisk) tillhör en instans. Den har automatiskt tillgång till objektets egna data — du behöver inte skicka in det som parameter.
+
+```csharp
+class Räknare
+{
+    private int _värde = 0;
+
+    public void Öka(int steg)
+    {
+        _värde += steg;   // _värde tillhör det här specifika objektet
+    }
+
+    public int HämtaVärde()
+    {
+        return _värde;
+    }
+}
+
+Räknare r = new Räknare();
+r.Öka(5);
+r.Öka(3);
+Console.WriteLine(r.HämtaVärde());   // 8
+```
+
+`Main` är `static`. Fristående verktygsmetoder som `Add`, `IsEven` och `CalculateTotal` är `static` — de behöver ingen objektdata för att göra sitt jobb. Men metoderna på ett `BankAccount` — `SättIn`, `TaUt`, `Presentera` — är objektmetoder, för de måste veta vilket konto de arbetar med.
+
+När du börjar bygga klasser nästa vecka gäller objektmetoder. Tills dess kör vi `static`.
+
+---
+
 **Se även:** [programmeringstermer/metoder.md](../programmeringstermer/metoder.md)
