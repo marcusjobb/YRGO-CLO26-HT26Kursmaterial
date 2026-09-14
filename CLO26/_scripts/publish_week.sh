@@ -12,7 +12,7 @@ set -e
 
 KURS="${1:?Ange kursmapp, ex: kurs-01-grundlaggande-oop}"
 MODUL="${2:?Ange modulmapp, ex: 02_syntax_och_variabler}"
-STUDENT_REPO="/home/nionit/git/YRGO/clo26/yrgo-studerande"
+STUDENT_REPO="/home/nionit/git/Skolor/YRGO/clo26/studerande"
 SRC_KURS="$(pwd)/${KURS}"
 SRC_MODUL="${SRC_KURS}/${MODUL}"
 DST_MODUL="${STUDENT_REPO}/${KURS}/${MODUL}"
