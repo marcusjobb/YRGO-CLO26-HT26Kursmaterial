@@ -9,7 +9,7 @@
 
 **En person per grupp** lämnar in:
 - Zippad fil av projektet (exporterad från GitHub — Marcus visar hur)
-- GitHub-länk till repot (bjud in `marcusjobb` om repot är privat)
+- GitHub-länk till repot (bjud in `marcusjobb` **och alla i gruppen** som collaborators om repot är privat)
 - `RAPPORT.md` (med allas namn ifyllda)
 - Sin egen `REFLEKTION.md`
 
@@ -123,6 +123,13 @@ Den här inlämningen examinerar följande kursmål ur kursplanen:
 - [ ] Repot innehåller en `.gitignore` som filtrerar bort `bin/`, `obj/`, `.vs/`
 - [ ] Minst **5 commits** med beskrivande meddelanden
 - [ ] Commit-historiken ska spegla att du arbetat stegvis
+- [ ] Alla i gruppen är inbjudna som collaborators
+
+### Samarbete
+
+Jobbar ni i grupp? Prata med varandra om **hur** ni löste varje del och **varför** ni valde att göra det så. Det räcker inte att dela upp koden och lämna in — ni ska kunna förklara hela lösningen, inte bara den del ni skrev själva.
+
+Visa det i reflektionen: beskriv ett val gruppen diskuterade och vad ni kom fram till.
 
 ---
 
