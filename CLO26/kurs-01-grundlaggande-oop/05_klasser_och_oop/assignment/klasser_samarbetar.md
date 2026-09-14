@@ -185,7 +185,17 @@ MÅÅÅL! #7 Thierry Henry (Forward)
 
 ---
 
-## Tips — kom igång
+## Kom igång — forka startrepot
+
+Forka repot nedan — det innehåller scaffoldade klasser, tomma metodkroppar och mallar för README, RAPPORT och REFLEKTION.
+
+**[github.com/marcusjobb/clo26-drommatchen](https://github.com/marcusjobb/clo26-drommatchen)**
+
+> Repot blir publikt efter genomgången på lektionen.
+
+---
+
+## Tips
 
 Vet du inte var du ska börja? Prova [goblin.tools/ToDo](https://goblin.tools/ToDo) — klistra in uppgiftsbeskrivningen och låt den bryta ner den i lagom stora steg. Sedan kodar du ett steg i taget.
 
