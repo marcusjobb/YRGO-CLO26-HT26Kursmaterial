@@ -66,6 +66,8 @@ github.com/marcusjobb/clo26-drommatchen
 
 **Gruppstorlek:** 1–3 personer. Du kan jobba ensam eller i grupp — ditt val.
 
+![grupparbete w:380](res/grupparbete.jpg)
+
 > Repot blir publikt efter genomgången på lektionen.
 
 ---
