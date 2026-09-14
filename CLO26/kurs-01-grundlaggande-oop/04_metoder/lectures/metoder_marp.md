@@ -62,6 +62,26 @@ static void SkrivHälsning(string namn)
 
 ---
 
+## Metodens flöde
+
+Indata in → metoden gör sitt jobb → utdata tillbaka
+
+```mermaid
+flowchart LR
+    A(["namn: string"]) --> B[SkrivHälsning] --> C(["void"])
+```
+
+```mermaid
+flowchart LR
+    A(["a: int · b: int"]) --> B[Addera] --> C(["int"])
+```
+
+- Stadionform `( )` = start och slut — **parametrar** och **returvärde**
+- Rektangel `[ ]` = vad metoden gör inuti
+- `void` = inget returvärde (metoden gör något men ger dig inget tillbaka)
+
+---
+
 ## void — gör något, returnerar inget
 
 `void` betyder att metoden utför en handling och sedan är klar.
