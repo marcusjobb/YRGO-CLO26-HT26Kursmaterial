@@ -64,6 +64,8 @@ github.com/marcusjobb/clo26-drommatchen
 3. Klona ditt forkade repo till din dator
 4. Öppna i Rider eller VS Code — kör igång! 🚀
 
+**Gruppstorlek:** 1–3 personer. Du kan jobba ensam eller i grupp — ditt val.
+
 > Repot blir publikt efter genomgången på lektionen.
 
 ---
