@@ -100,7 +100,7 @@ Konstruktorn tar emot parametrar precis som en vanlig metod. När du skriver `ne
 
 ```mermaid
 flowchart LR
-    A["new BankAccount(\"Alex\", 1000)"] --> B["Konstruktorn körs\nÄgare = \"Alex\"\nSaldo = 1000\nÄrAktivt = true"]
+    A["new BankAccount('Alex', 1000)"] --> B["Konstruktorn körs\nÄgare = 'Alex'\nSaldo = 1000\nÄrAktivt = true"]
     B --> C["Objektet är klart\noch kan användas"]
 ```
 
