@@ -7,11 +7,24 @@
 //   - Extract Method (Refactoring-menyn i Rider/VS Code)
 //   - DRY — kod som anropas på flera ställen ändras på ett
 
-// Prova själv:
-//   1. Skriv Console.Write("-") i en loop direkt i Main — tre gånger
-//   2. Markera ett av blocken
-//   3. Högerklicka → Refactoring → Extract Method
-//   4. Döp metoden till Linje — se hur IDE:n skapar metoden åt dig
+// ── Prova själv ──────────────────────────────────────────────────────────────
+//
+//   Steg 0: Skriv loopen direkt i Main tre gånger (utan metoden).
+//           Markera sedan ett av blocken och följ stegen för din IDE nedan.
+//
+//   JetBrains Rider
+//   ───────────────
+//   Markera koden → högerklicka → Refactor → Extract Method
+//   Kortkommando: Ctrl+Alt+M  (Windows/Linux)  |  ⌘⌥M  (Mac)
+//   Rider föreslår ett namn och skapar metoden automatiskt.
+//
+//   Visual Studio Code  (med C# Dev Kit / C# extension)
+//   ────────────────────────────────────────────────────
+//   Markera koden → klicka på den gula glödlampan (💡) som dyker upp
+//   eller tryck  Ctrl+.  (Windows/Linux)  |  ⌘.  (Mac)
+//   Välj "Extract method" i listan.
+//
+// ─────────────────────────────────────────────────────────────────────────────
 
 Linje();
 Console.WriteLine("Hello, Fulkod!");
