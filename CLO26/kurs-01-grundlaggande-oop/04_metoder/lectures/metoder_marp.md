@@ -46,19 +46,12 @@ static void SkrivHälsning(string namn)
 }
 ```
 
-```
-┌────────┬──────┬──────────────┬────────────────┐
-│ static │ void │ SkrivHälsning│ (string namn)  │
-│        │      │              │                │
-│ Tillhör│ Retur-│ Metodens    │ Parametrar —   │
-│ klassen│ typ   │ namn        │ indata         │
-└────────┴──────┴──────────────┴────────────────┘
-```
-
 - `static` — metoden tillhör klassen, inte ett objekt (mer om det vecka 5)
 - `void` — metoden returnerar **inget värde**
 - `SkrivHälsning` — metodens namn, alltid PascalCase
 - `string namn` — en parameter: namn och typ
+
+> 💡 Precis som i alla andra fall med måsvingar — variabler som skapas inuti metoden dör när metoden är klar. Det enda som lever vidare är det värde som returneras.
 
 ---
 
@@ -66,15 +59,9 @@ static void SkrivHälsning(string namn)
 
 Indata in → metoden gör sitt jobb → utdata tillbaka
 
-```mermaid
-flowchart LR
-    A(["namn: string"]) --> B[SkrivHälsning] --> C(["void"])
-```
+![void-metod](images/metod_flode_void.png)
 
-```mermaid
-flowchart LR
-    A(["a: int · b: int"]) --> B[Addera] --> C(["int"])
-```
+![int-returvärde](images/metod_flode_int.png)
 
 - Stadionform `( )` = start och slut — **parametrar** och **returvärde**
 - Rektangel `[ ]` = vad metoden gör inuti
@@ -115,16 +102,14 @@ static int Addera(int a, int b)
 {
     return a + b;
 }
-
-static void Main()
-{
-    int summa = Addera(3, 5);
-    Console.WriteLine("3 + 5 = " + summa);   // Utskrift: 3 + 5 = 8
-}
 ```
 
-`return` skickar tillbaka värdet till den som anropade metoden.
-Metoden stannar direkt när den når `return`.
+```csharp
+int summa = Addera(3, 5);
+Console.WriteLine("3 + 5 = " + summa);   // Utskrift: 3 + 5 = 8
+```
+
+`return` skickar tillbaka värdet till anroparen — metoden stannar direkt.
 
 > 💬 _"Om void är en skrivare, är en metod med returvärde en miniräknare — du ger den siffror, du får ett svar tillbaka."_
 
@@ -136,23 +121,9 @@ Parametrar är de **variabler** metoden tar emot som indata.
 Du kan ha noll, en eller flera — separera dem med komma.
 
 ```csharp
-// Ingen parameter
-static void SkriväUtDatum()
-{
-    Console.WriteLine("Datum: 2026-06-30");
-}
-
-// En parameter
-static void SkrivHälsning(string namn)
-{
-    Console.WriteLine("Hej, " + namn + "!");
-}
-
-// Två parametrar
-static double Beräkna(double pris, double moms)
-{
-    return pris * (1 + moms);
-}
+static void SkrivUtDatum()                        // ingen parameter
+static void SkrivHälsning(string namn)             // en parameter
+static double Beräkna(double pris, double moms)    // två parametrar
 ```
 
 Parametrar deklareras med **typ och namn** — precis som vanliga variabler.
@@ -194,17 +165,13 @@ static bool ÄrMyndig(int ålder)
 {
     return ålder >= 18;
 }
+```
 
-static void Main()
-{
-    bool resultat = ÄrMyndig(20);
-    Console.WriteLine("Myndig: " + resultat);   // Utskrift: Myndig: True
-
-    if (ÄrMyndig(15))
-        Console.WriteLine("Tillträde beviljat.");
-    else
-        Console.WriteLine("Tillträde nekas.");
-}
+```csharp
+if (ÄrMyndig(15))
+    Console.WriteLine("Tillträde beviljat.");
+else
+    Console.WriteLine("Tillträde nekas.");
 ```
 
 > 💬 _"En bool-metod läses som en fråga: ÄrMyndig(20) — ja eller nej?"_
@@ -238,16 +205,6 @@ Tre starka skäl:
 **3. DRY** — _Don't Repeat Yourself_. Upprepning är en buggkälla.
 Måste du ändra något? Ändra på ett ställe, inte tjugo.
 
-```csharp
-// Main läses som en berättelse
-static void Main()
-{
-    SkrivHälsning("Alex");
-    int summa = Addera(3, 5);
-    bool myndig = ÄrMyndig(20);
-}
-```
-
 > 💬 _"Om du copy-pastar kod — fundera på om det är dags för en metod."_
 
 ---
@@ -260,19 +217,16 @@ static void SkrivHälsning(string namn)
 {
     Console.WriteLine("Hej, " + namn + "!");
 }
-
 // int — räknar ut och returnerar ett värde
 static int Addera(int a, int b)
 {
     return a + b;
 }
-
 // bool — ställer en fråga, svarar sant eller falskt
 static bool ÄrMyndig(int ålder)
 {
     return ålder >= 18;
 }
-
 static void Main()
 {
     SkrivHälsning("Alex");
