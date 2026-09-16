@@ -1,6 +1,6 @@
 # Programmeringstermer — Console (fördjupning)
 
-Fortsättning på [grundläggande Console](../../01_verktyg_och_git/programmeringstermer/console.md) (`WriteLine`/`Write`/`Clear`/färger/cursor-position). Det här är verktygen du faktiskt behöver för att bygga spelet i sista veckans projekt — inläsning utan att låsa programmet, koll på terminalens storlek, och hur man bygger en uppdaterande vy istället för att spamma raden.
+Fortsättning på [grundläggande Console](console.md) (`WriteLine`/`Write`/`Clear`/färger/cursor-position). Det här är verktygen du faktiskt behöver för att bygga spelet i sista veckans projekt — inläsning utan att låsa programmet, koll på terminalens storlek, och hur man bygger en uppdaterande vy istället för att spamma raden.
 
 ---
 
