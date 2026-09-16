@@ -57,6 +57,15 @@ publish:
   - 05_klasser_och_oop/exercises/training_vecka3.md
   - 05_klasser_och_oop/tentafragor/fragor.md
   - 05_klasser_och_oop/assignment/klasser_samarbetar.md
+  - 05_klasser_och_oop/lectures/arv_marp.md
+  - 05_klasser_och_oop/lectures/arv_tips_marp.md
+  - 05_klasser_och_oop/exercises/ovning_arv_och_metoder.md
+  - 05_klasser_och_oop/exercises/ovning_arv_fordjupning.md
+  - 05_klasser_och_oop/exercises/ovning_lon.md
+  - 05_klasser_och_oop/exercises/traningspass_klasser.md
+  - 05_klasser_och_oop/exercises/traningspass_metoder.md
+  - 05_klasser_och_oop/exercises/traningspass_konstruktor_overlagring.md
+  - 05_klasser_och_oop/exercises/traningspass_arv.md
 ```
 
 ## Inlämning denna vecka
