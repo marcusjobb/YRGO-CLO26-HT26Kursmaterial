@@ -66,6 +66,8 @@ publish:
   - 05_klasser_och_oop/exercises/traningspass_metoder.md
   - 05_klasser_och_oop/exercises/traningspass_konstruktor_overlagring.md
   - 05_klasser_och_oop/exercises/traningspass_arv.md
+  - 05_klasser_och_oop/exercises/traningspass_klasser_extra.md
+  - 05_klasser_och_oop/exercises/traningspass_metoder_extra.md
 ```
 
 ## Inlämning denna vecka
