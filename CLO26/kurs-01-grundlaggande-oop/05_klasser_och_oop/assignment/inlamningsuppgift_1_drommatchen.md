@@ -179,22 +179,11 @@ Fyll i VG-avsnittet i `RAPPORT.md` — inklusive frågan om varför `ÄrMatchhj�
 
 ## Exempeloutput (G)
 
-Välj dina egna drömspelare — det kan se ut så här:
-
 ```
 Drömlagen FC vs Världselvan — 2026-09-14
 
 MÅÅÅL! #10 Zlatan Ibrahimović (Forward)
-MÅÅÅL! #7 Thierry Henry (Forward)
-```
-
-Eller med andra spelare:
-
-```
-Drömlagen FC vs Världselvan — 2026-09-14
-
-MÅÅÅL! #9 Sam Kerr (Forward)
-MÅÅÅL! #10 Marta (Forward)
+MÅÅÅL! #6 Aitana Bonmatí (Midfielder)
 ```
 
 ## Exempeloutput (VG-tillägg)
@@ -203,14 +192,7 @@ En spelare har gjort mål (satt i konstruktorn), den andre inte:
 
 ```
 ÄrMatchhjälte — Zlatan Ibrahimović: True
-ÄrMatchhjälte — Thierry Henry: False
-```
-
-Eller:
-
-```
-ÄrMatchhjälte — Sam Kerr: True
-ÄrMatchhjälte — Marta: False
+ÄrMatchhjälte — Aitana Bonmatí: False
 ```
 
 > **Tips på spelare — det är din drömuppställning:**
