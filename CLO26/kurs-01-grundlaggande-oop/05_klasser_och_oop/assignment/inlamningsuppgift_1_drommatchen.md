@@ -106,7 +106,7 @@ Den här inlämningen examinerar följande kursmål ur kursplanen:
 
 **Metoder:**
 - `Presentera()` — skriver ut matchens lag och datum
-- `AnnounceraMålskytt(Spelare spelare)` — skriver ut spelarens namn, nummer och position
+- `AnnounceraMålskytt(Spelare spelare)` — skriver ut spelarens namn, nummer och position (bara utskrift — den ändrar inga värden)
 
 ---
 
@@ -157,15 +157,18 @@ Visa det i reflektionen: beskriv ett val gruppen diskuterade och vad ni kom fram
 Lägg till:
 - Privat fält `_mål` (int) — antal mål i matchen
 - Property `Mål`
-- Uppdatera konstruktorn
+- Uppdatera konstruktorn så att `_mål` sätts direkt (t.ex. `new Spelare("Zlatan", 10, "Forward", 2)`)
 
 ### Utökat `Match`
 
 Lägg till metod:
 - `ÄrMatchhjälte(Spelare spelare)` — returnerar `true` om spelaren gjort minst ett mål, annars `false`
 
+> **Notera:** `AnnounceraMålskytt()` skriver bara ut — den förändrar inte spelarens målräkning. Det är konstruktorn som sätter hur många mål varje spelare gjort.
+
 ### I `Main()` (VG-tillägg)
 
+- Skapa spelarna med olika antal mål (t.ex. en med 1 mål och en med 0)
 - Skriv ut resultatet av `ÄrMatchhjälte()` för varje spelare
 
 ### VG-rapport
@@ -176,6 +179,8 @@ Fyll i VG-avsnittet i `RAPPORT.md` — inklusive frågan om varför `ÄrMatchhj�
 
 ## Exempeloutput (G)
 
+Välj dina egna drömspelare — det kan se ut så här:
+
 ```
 Drömlagen FC vs Världselvan — 2026-09-14
 
@@ -183,12 +188,32 @@ MÅÅÅL! #10 Zlatan Ibrahimović (Forward)
 MÅÅÅL! #7 Thierry Henry (Forward)
 ```
 
+Eller med andra spelare:
+
+```
+Drömlagen FC vs Världselvan — 2026-09-14
+
+MÅÅÅL! #9 Sam Kerr (Forward)
+MÅÅÅL! #10 Marta (Forward)
+```
+
 ## Exempeloutput (VG-tillägg)
+
+En spelare har gjort mål (satt i konstruktorn), den andre inte:
 
 ```
 ÄrMatchhjälte — Zlatan Ibrahimović: True
 ÄrMatchhjälte — Thierry Henry: False
 ```
+
+Eller:
+
+```
+ÄrMatchhjälte — Sam Kerr: True
+ÄrMatchhjälte — Marta: False
+```
+
+> **Tips på spelare:** Zlatan Ibrahimović, Thierry Henry, Ronaldo, Pelé, Zidane — eller varför inte Sam Kerr (Australien), Marta (Brasilien), Ada Hegerberg (Norge), Lotta Schelin (Sverige), Pernille Harder (Danmark). Det är din drömuppställning.
 
 ---
 
