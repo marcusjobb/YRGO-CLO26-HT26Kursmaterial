@@ -157,7 +157,7 @@ Visa det i reflektionen: beskriv ett val gruppen diskuterade och vad ni kom fram
 Lägg till:
 - Privat fält `_mål` (int) — antal mål i matchen
 - Property `Mål`
-- Uppdatera konstruktorn så att `_mål` sätts direkt (t.ex. `new Spelare("Zlatan", 10, "Forward", 2)`)
+- Uppdatera konstruktorn så att `_mål` sätts direkt (t.ex. `new Spelare("Aitana Bonmatí", "Midfielder", 6, 2)` — namn, position, nummer, mål)
 
 ### Utökat `Match`
 
@@ -213,7 +213,13 @@ Eller:
 ÄrMatchhjälte — Marta: False
 ```
 
-> **Tips på spelare:** Zlatan Ibrahimović, Thierry Henry, Ronaldo, Pelé, Zidane — eller varför inte Sam Kerr (Australien), Marta (Brasilien), Ada Hegerberg (Norge), Lotta Schelin (Sverige), Pernille Harder (Danmark). Det är din drömuppställning.
+> **Tips på spelare — det är din drömuppställning:**
+>
+> Herrar: Zlatan Ibrahimović, Thierry Henry, Ronaldo, Pelé, Zidane, Thomas Ravelli (målvakt och legend), Andreas Ravelli
+>
+> Damer: Alexia Putellas (Spanien), Aitana Bonmatí (Spanien), Marta (Brasilien), Ada Hegerberg (Norge), Lotta Schelin (Sverige), Pernille Harder (Danmark), Pia Sundhage (Sverige — spelare och förbundskapten)
+>
+> Svenska favoriter av båda könen välkomna — blanda fritt.
 
 ---
 
