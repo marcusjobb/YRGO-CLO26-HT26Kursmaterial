@@ -14,18 +14,6 @@ _Kurs 01 · Vecka 3–4 · Nion Education_
 
 ---
 
-
-## Grupparbete
-
-**Gruppstorlek:** 1–3 personer. Du kan jobba ensam eller i grupp — ditt val.
-
-![grupparbete w:500](res/grupparbete.jpg)
-
-> Repot blir publikt efter genomgången på lektionen.
-
----
-
-
 ## Det här är inte vilken uppgift som helst
 
 Inga kontrakt. Inga transferfönster.
@@ -75,6 +63,12 @@ github.com/marcusjobb/clo26-drommatchen
 2. Välj ditt eget konto som destination
 3. Klona ditt forkade repo till din dator
 4. Öppna i Rider eller VS Code — kör igång! 🚀
+
+**Gruppstorlek:** 1–3 personer. Du kan jobba ensam eller i grupp — ditt val.
+
+![grupparbete w:380](res/grupparbete.jpg)
+
+> Repot blir publikt efter genomgången på lektionen.
 
 ---
 
