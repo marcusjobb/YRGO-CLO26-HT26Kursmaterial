@@ -115,6 +115,79 @@ Skiljelinjen mellan DTO och Modell är flytande i vardagen, men modellen är mer
 
 ---
 
+## StringHelper — från Main till egen klass
+
+Under lektionen skrev vi `MyReplace` direkt i `Main`. Den tog tre rader kod som pjunkade ihop en sträng med ett ersatt tecken — och det var lite fult att ha det liggandes mitt i flödet.
+
+**Steg 1 — koden i Main:**
+
+```csharp
+// Direkt i Program.cs, bland all annan kod
+string newString = name.Substring(0, position - 1);
+newString += replacement;
+newString += name.Substring(position);
+```
+
+Det fungerar, men det är svårt att se vad som händer om man läser koden snabbt.
+
+**Steg 2 — bryt ut till en metod:**
+
+Istället för att ha logiken inline skapar vi en metod i samma fil. Nu kan vi skriva:
+
+```csharp
+name = MyReplace(name, 13, "k");
+```
+
+Läsbart. Tydligt. Lätt att testa för sig.
+
+**Steg 3 — flytta metoden till en Helper-klass:**
+
+Metoden hör inte hemma i `Program` — den är ett verktyg, inte programlogik. Vi skapade `StringHelper`:
+
+```csharp
+namespace recap_live;
+
+public class StringHelper
+{
+    public static string MyReplace(string input, int position, string replacement)
+    {
+        string newString = input.Substring(0, position - 1); // allt före positionen
+        newString += replacement;                            // ersättningen
+        newString += input.Substring(position);             // allt efter
+        return newString;
+    }
+}
+```
+
+Nu anropas den med klassnamnet som prefix:
+
+```csharp
+name = StringHelper.MyReplace(name, 13, "k");
+```
+
+### Varför static?
+
+`static` innebär att metoden tillhör **klassen**, inte ett objekt. Vi slipper instansiera:
+
+```csharp
+// Utan static — onödigt krångel
+StringHelper helper = new StringHelper();
+name = helper.MyReplace(name, 13, "k");
+
+// Med static — direkt och tydligt
+name = StringHelper.MyReplace(name, 13, "k");
+```
+
+En Helper-klass har inget eget tillstånd — den är bara ett paket med användbara metoder. Då är `static` rätt val.
+
+### Varför är det här ett bra mönster?
+
+- **Refactoring** — att flytta kod från Main till en metod är ett av de vanligaste sätten att städa upp "ful" kod
+- **Single Responsibility** — `Program.cs` styr flödet, `StringHelper` hanterar strängar
+- **Återanvändbarhet** — `MyReplace` kan nu användas var som helst i projektet, inte bara i Main
+
+---
+
 ## Hela koden från lektionen
 
 ```csharp
