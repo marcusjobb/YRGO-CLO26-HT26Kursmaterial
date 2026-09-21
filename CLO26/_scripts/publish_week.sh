@@ -1,7 +1,7 @@
 #!/bin/bash
 # Publicerar en modul till studerande-repot.
 # Publicerar: notes/, exercises/, examples/, tentafragor/, termer/ (kursnivå), README.md
-# Publicerar INTE: lectures/, _teacher/
+# Publicerar INTE: _teacher/
 #
 # Användning:
 #   bash _scripts/publish_week.sh kurs-01-grundlaggande-oop 02_syntax_och_variabler
@@ -29,6 +29,13 @@ if [ -f "${SRC_MODUL}/README.md" ]; then
   mkdir -p "$DST_MODUL"
   cp "${SRC_MODUL}/README.md" "$DST_MODUL/"
   echo "  ✅ ${MODUL}/README.md"
+fi
+
+# lectures/
+if [ -d "${SRC_MODUL}/lectures" ]; then
+  mkdir -p "${DST_MODUL}/lectures"
+  cp -r "${SRC_MODUL}/lectures/." "${DST_MODUL}/lectures/"
+  echo "  🎤 ${MODUL}/lectures/ ($(ls "${SRC_MODUL}/lectures" | wc -l) filer)"
 fi
 
 # notes/
