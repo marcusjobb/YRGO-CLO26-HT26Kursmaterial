@@ -1,5 +1,7 @@
 # Guide: Bygg en bra InputHandler
 
+När man upprepar en viss funktion många gånger, speciellt när man måste kontrollera resultatet, kan det vara bra att samla alla anrop på ett ställe. Tänk dig att du ska debugga din kod och undrar, var frågar spelet om detta? Om du har en klass som hanterar det, så har du också mycket lättare att hitta var frågan ställs.
+
 En `InputHandler` samlar all inläsning från användaren på ett ställe. Istället för att ha `Console.ReadLine()` utspritt i hela programmet anropar du bara `InputHandler.InputText("Vad heter du?")` — och klassen sköter resten.
 
 Det här är en bra OOP-vana: **ett ansvar per klass**, och `InputHandler` har ansvaret för all inmatning.
