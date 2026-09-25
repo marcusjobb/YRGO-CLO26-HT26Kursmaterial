@@ -1,0 +1,8 @@
+flowchart TD
+    A([Start]) --> B[summa = 0, rundor = 0]
+    B --> C[Läs in poäng]
+    C --> D{poäng == 0?}
+    D -->|Nej| E[summa += poäng, rundor++]
+    E --> C
+    D -->|Ja| F[Skriv ut summa och rundor]
+    F --> Z([Slut])

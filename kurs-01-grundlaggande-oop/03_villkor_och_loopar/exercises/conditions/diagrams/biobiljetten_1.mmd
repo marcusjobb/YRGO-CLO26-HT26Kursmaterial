@@ -1,0 +1,6 @@
+flowchart TD
+    A[Ålder] --> B{Under 15?}
+    B -- Ja --> C[Barnpris: 99 kr]
+    B -- Nej --> D{65 eller äldre?}
+    D -- Ja --> E[Pensionärspris: 119 kr]
+    D -- Nej --> F[Vuxenpris: 169 kr]

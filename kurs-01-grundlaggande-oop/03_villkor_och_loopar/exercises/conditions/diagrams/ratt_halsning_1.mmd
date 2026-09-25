@@ -1,0 +1,16 @@
+flowchart TD
+    A([Start]) --> B[Läs in timme 0-23]
+    B --> C{timme 6-11?}
+    C -->|Ja| D[God morgon!]
+    C -->|Nej| E{timme 12-17?}
+    E -->|Ja| F[God dag!]
+    E -->|Nej| G{timme 18-22?}
+    G -->|Ja| H[God kväll!]
+    G -->|Nej| I{timme 23 eller 0-5?}
+    I -->|Ja| J[God natt!]
+    I -->|Nej| K[Ogiltigt klockslag]
+    D --> Z([Slut])
+    F --> Z
+    H --> Z
+    J --> Z
+    K --> Z

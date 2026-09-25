@@ -1,0 +1,16 @@
+flowchart TD
+    A([Start]) --> B[inloggad = false, forsok = 3]
+    B --> C[Läs in lösenord]
+    C --> D{Korrekt lösenord?}
+    D -->|Ja| E[inloggad = true, break]
+    D -->|Nej| F[forsok--]
+    F --> G{forsok > 0?}
+    G -->|Ja| H[Visa: X försök kvar]
+    H --> C
+    G -->|Nej| I[Visa: 0 försök kvar]
+    E --> J{inloggad?}
+    I --> J
+    J -->|Ja| K[Välkommen in!]
+    J -->|Nej| L[Kontot är spärrat]
+    K --> Z([Slut])
+    L --> Z

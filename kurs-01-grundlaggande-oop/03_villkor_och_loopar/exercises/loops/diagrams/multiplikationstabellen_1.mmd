@@ -1,0 +1,8 @@
+flowchart TD
+    A([Start]) --> B[Läs in tal]
+    B --> C[i = 1]
+    C --> D{i <= 10?}
+    D -->|Ja| E[Skriv ut tal x i = tal*i]
+    E --> F[i++]
+    F --> D
+    D -->|Nej| Z([Slut])
