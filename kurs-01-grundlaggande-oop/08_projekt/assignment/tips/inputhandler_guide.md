@@ -31,6 +31,22 @@ static class InputHandler
 
 Lägg märke till att `int.Parse` kraschar om användaren skriver något som inte är ett tal. Det löser vi i nästa steg.
 
+### Användning
+
+```csharp
+string namn = InputHandler.InputText("Vad heter du?");
+int ålder = InputHandler.InputNumber("Hur gammal är du?");
+Console.WriteLine($"Hej {namn}, du är {ålder} år gammal.");
+```
+
+### Förväntad output
+
+```
+Vad heter du?> Marcus
+Hur gammal är du?> 32
+Hej Marcus, du är 32 år gammal.
+```
+
 ---
 
 ## Steg 1 — Loopa tills texten inte är tom
@@ -53,6 +69,24 @@ public static string InputText(string prompt)
 
 `IsNullOrWhiteSpace` fångar både tom sträng och bara mellanslag — användaren tvingas skriva något meningsfullt.
 
+### Användning
+
+```csharp
+string namn = InputHandler.InputText("Vad heter du?");
+Console.WriteLine($"Välkommen, {namn}!");
+```
+
+### Förväntad output
+
+```
+Vad heter du?>
+Vad heter du?>
+Vad heter du?> Marcus
+Välkommen, Marcus!
+```
+
+De två tomma raderna visar att loopen körde om — användaren tryckte Enter två gånger innan de skrev något.
+
 ---
 
 ## Steg 2 — Säker talhämtning med TryParse
@@ -73,6 +107,22 @@ public static int InputNumber(string prompt)
 ```
 
 `out result` fyller variabeln `result` direkt inuti `TryParse`. Om inmatningen inte är ett tal börjar loopen om.
+
+### Användning
+
+```csharp
+int poäng = InputHandler.InputNumber("Ange din poäng");
+Console.WriteLine($"Du fick {poäng} poäng!");
+```
+
+### Förväntad output
+
+```
+Ange din poäng> hej
+Ange din poäng> tolv
+Ange din poäng> 42
+Du fick 42 poäng!
+```
 
 ---
 
@@ -96,6 +146,23 @@ public static int InputNumber(string prompt, int min, int max)
 Anrop: `int val = InputHandler.InputNumber("Välj svårighetsgrad", 1, 3);`
 
 Loopen fortsätter om: inmatningen inte är ett tal **eller** talet är utanför intervallet.
+
+### Användning
+
+```csharp
+int svårighet = InputHandler.InputNumber("Välj svårighetsgrad", 1, 3);
+Console.WriteLine($"Du valde nivå {svårighet}.");
+```
+
+### Förväntad output
+
+```
+Välj svårighetsgrad (1–3)> 0
+Välj svårighetsgrad (1–3)> 5
+Välj svårighetsgrad (1–3)> abc
+Välj svårighetsgrad (1–3)> 2
+Du valde nivå 2.
+```
 
 ---
 
@@ -137,6 +204,29 @@ string svårighetsgrad = InputHandler.GetKeyText(
 
 `ConsoleKey.D1` är siffertangenten 1 — vi räknar ut indexet genom att subtrahera. Trycker användaren 2 blir `index` = 1, vilket pekar på `options[1]`.
 
+### Användning
+
+```csharp
+string val = InputHandler.GetKeyText(
+    "Välj svårighetsgrad:",
+    new[] { "Lätt", "Normal", "Svår" }
+);
+Console.WriteLine($"Du valde: {val}");
+```
+
+### Förväntad output
+
+```
+Välj svårighetsgrad:
+  1. Lätt
+  2. Normal
+  3. Svår
+> Tryck en siffra: Normal
+Du valde: Normal
+```
+
+Användaren tryckte tangenten `2` — inget visas förrän ett giltigt val görs. Sedan skrivs det valda alternativet ut på raden.
+
 ---
 
 ## Steg 5 — GetKeyNumber: returnera numret direkt
@@ -169,6 +259,23 @@ int val = InputHandler.GetKeyNumber("Välj menyalternativ:", 1, 4);
 ```
 
 `ConsoleKey.D0` är tangenten 0 — `number` räknas ut på samma sätt som i `GetKeyText`.
+
+### Användning
+
+```csharp
+int val = InputHandler.GetKeyNumber("Välj menyalternativ:", 1, 4);
+Console.WriteLine($"Du valde alternativ {val}.");
+```
+
+### Förväntad output
+
+```
+Välj menyalternativ:
+> Tryck 1–4: 3
+Du valde alternativ 3.
+```
+
+Siffran `3` visas på raden eftersom metoden anropar `Console.WriteLine(number)` efter att ett giltigt val gjorts.
 
 ---
 
