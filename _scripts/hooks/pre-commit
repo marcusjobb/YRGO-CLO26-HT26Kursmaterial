@@ -1,51 +1,34 @@
 #!/bin/bash
-BLOCKED=(
-  "\.env$"
-  "\.env\.local$"
-  "\.env\.production$"
-  "\.env\.staging$"
-  "id_rsa$"
-  "id_ed25519$"
-  "id_.*_jobb$"
-  "id_.*_personal$"
-  "\.pem$"
-  "secrets\.json$"
-  "credentials\.json$"
-)
+# ============================================================
+# STUDERANDE-REPO — DIREKTA COMMITS ÄR FÖRBJUDNA
+# ============================================================
+# Det enda godkända sättet att publicera hit är via:
+#   bash CLO26/_scripts/publish_week.sh <kurs> <modul>
+# ============================================================
 
-# Lärarmaterial — får aldrig nå studerande
-TEACHER_PATTERNS=(
-  "_teacher"
-  "solutions/"
-)
+if [ "$PUBLISH_WEEK_AUTHORIZED" != "1" ]; then
+  echo "" >&2
+  echo "╔══════════════════════════════════════════════════════╗" >&2
+  echo "║  COMMIT BLOCKERAD — STUDERANDE-REPO                 ║" >&2
+  echo "║                                                      ║" >&2
+  echo "║  Direkta commits till studerande-repot är förbjudna.║" >&2
+  echo "║                                                      ║" >&2
+  echo "║  Publicera via:                                      ║" >&2
+  echo "║    bash CLO26/_scripts/publish_week.sh <kurs> <modul>║" >&2
+  echo "║                                                      ║" >&2
+  echo "║  Kör aldrig git commit här direkt.                  ║" >&2
+  echo "╚══════════════════════════════════════════════════════╝" >&2
+  echo "" >&2
+  exit 1
+fi
 
-FILES=$(git diff --cached --name-only)
-
-for pattern in "${BLOCKED[@]}"; do
-  match=$(echo "$FILES" | grep -E "$pattern" || true)
-  if [ -n "$match" ]; then
-    echo ""
-    echo "COMMIT BLOCKERAT — känslig fil hittad:"
-    echo "   $match"
-    echo ""
-    echo "   Lägg till filen i .gitignore och kör: git rm --cached <fil>"
-    echo ""
-    exit 1
-  fi
-done
-
-for pattern in "${TEACHER_PATTERNS[@]}"; do
-  match=$(echo "$FILES" | grep "$pattern" || true)
-  if [ -n "$match" ]; then
-    echo ""
-    echo "COMMIT BLOCKERAT — lärarmaterial får inte nå studerande-repot:"
-    echo "   $match"
-    echo ""
-    echo "   Det här repot är studerandes repo. Lärarmaterial publiceras"
-    echo "   ENBART via publish_week.sh från lärarrepot."
-    echo ""
-    exit 1
-  fi
-done
+# Dubbelkolla att _teacher inte smugit sig in
+FORBIDDEN=$(git diff --cached --name-only | grep -E "_teacher|solutions/|/exam/|/facit/" || true)
+if [ -n "$FORBIDDEN" ]; then
+  echo "" >&2
+  echo "COMMIT BLOCKERAD: Lärarmaterial hittades i staged filer:" >&2
+  echo "$FORBIDDEN" >&2
+  exit 1
+fi
 
 exit 0
