@@ -1,0 +1,51 @@
+#!/bin/bash
+BLOCKED=(
+  "\.env$"
+  "\.env\.local$"
+  "\.env\.production$"
+  "\.env\.staging$"
+  "id_rsa$"
+  "id_ed25519$"
+  "id_.*_jobb$"
+  "id_.*_personal$"
+  "\.pem$"
+  "secrets\.json$"
+  "credentials\.json$"
+)
+
+# Lärarmaterial — får aldrig nå studerande
+TEACHER_PATTERNS=(
+  "_teacher"
+  "solutions/"
+)
+
+FILES=$(git diff --cached --name-only)
+
+for pattern in "${BLOCKED[@]}"; do
+  match=$(echo "$FILES" | grep -E "$pattern" || true)
+  if [ -n "$match" ]; then
+    echo ""
+    echo "COMMIT BLOCKERAT — känslig fil hittad:"
+    echo "   $match"
+    echo ""
+    echo "   Lägg till filen i .gitignore och kör: git rm --cached <fil>"
+    echo ""
+    exit 1
+  fi
+done
+
+for pattern in "${TEACHER_PATTERNS[@]}"; do
+  match=$(echo "$FILES" | grep "$pattern" || true)
+  if [ -n "$match" ]; then
+    echo ""
+    echo "COMMIT BLOCKERAT — lärarmaterial får inte nå studerande-repot:"
+    echo "   $match"
+    echo ""
+    echo "   Det här repot är studerandes repo. Lärarmaterial publiceras"
+    echo "   ENBART via publish_week.sh från lärarrepot."
+    echo ""
+    exit 1
+  fi
+done
+
+exit 0
