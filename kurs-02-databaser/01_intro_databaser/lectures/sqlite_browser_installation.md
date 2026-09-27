@@ -7,6 +7,8 @@ paginate: true
 # Installera DB Browser for SQLite
 ## Verktyget vi använder för att se och redigera databaser visuellt
 
+<!-- DB Browser for SQLite är det visuella komplement till kommandoraden. Det låter studerande se vad som faktiskt finns i deras .db-fil utan att skriva SQL — perfekt för felsökning och förståelse. -->
+
 ---
 
 # Vad är DB Browser for SQLite?
@@ -20,6 +22,8 @@ Ett gratis GUI-verktyg för SQLite-databaser.
 
 **Nedladdning:** [sqlitebrowser.org](https://sqlitebrowser.org)
 
+<!-- Visa webbplatsen på skärmen medan du pratar om det. Poängtera att det är gratis och öppen källkod — inget konto behövs. -->
+
 ---
 
 # Windows
@@ -30,6 +34,8 @@ Ett gratis GUI-verktyg för SQLite-databaser.
 4. Starta **DB Browser for SQLite** från startmenyn
 
 ✅ Klart
+
+<!-- Ge Windows-användare 5 minuter. Vanligaste problemet: studerande laddar ner fel version (32-bit). Påminn om att välja 64-bit. Gå runt och hjälp de som fastnar. -->
 
 ---
 
@@ -49,6 +55,8 @@ brew install --cask db-browser-for-sqlite
 4. Starta via Launchpad eller Spotlight
 
 ✅ Klart
+
+<!-- Om studerande säger att macOS blockerar appen: högerklicka → Öppna. Gatekeeper-varningen kräver detta första gången för appar utanför App Store. -->
 
 ---
 
@@ -75,6 +83,8 @@ Starta med: `sqlitebrowser` i terminalen, eller hitta den i app-menyn.
 
 ✅ Klart
 
+<!-- Linux-användare klarar sig oftast själva, men kolla att de faktiskt hittar programmet i menyn eller kör det från terminalen. -->
+
 ---
 
 # Verifiera installationen
@@ -90,6 +100,8 @@ SELECT * FROM sqlite_master;
 
 Om du ser ett resultat fungerar allt.
 
+<!-- Verifiera gemensamt i helklass. Fråga vem som har problem. De som är klara hjälper grannen — peer learning. -->
+
 ---
 
 # Nästa steg
@@ -102,3 +114,5 @@ Nu har du två sätt att arbeta med SQLite:
 | **DB Browser for SQLite** | Riktiga `.db`-filer, visuellt gränssnitt |
 
 I C# pratar vi mot samma `.db`-fil med kod — men DB Browser låter dig se vad som händer inuti.
+
+<!-- Betona kopplingen: koden och DB Browser tittar på samma fil. Det är ett kraftfullt debuggingverktyg — du kan öppna .db-filen och se exakt vad INSERT / UPDATE / DELETE gjort. -->
