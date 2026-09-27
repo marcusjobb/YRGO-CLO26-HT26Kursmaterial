@@ -116,3 +116,13 @@ Ta ställning till vart och ett — välj databas och motivera varför:
 3. **Ett API i Azure** som lagrar strukturerad data med en del JSON-fält, och som ska skala upp om ett år.
 
 Det räcker inte att svara vilket — du måste kunna motivera valet utifrån de tre frågorna ovan.
+
+---
+
+## Träna vidare
+
+| Resurs | Vad |
+|--------|-----|
+| [W3Schools SQL Tutorial](https://www.w3schools.com/sql/) | SQL-syntax som fungerar i alla tre motorer |
+| [SQLZoo](https://sqlzoo.net/) | Interaktiva övningar mot MySQL-liknande motor |
+| [DB-Engines Ranking](https://db-engines.com/en/ranking) | Aktuell popularitetsranking för databasmotorer |

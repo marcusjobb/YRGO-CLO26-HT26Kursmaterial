@@ -153,3 +153,12 @@ Du driver en pizzeria med 50 beställningar per dag. Efter ett år vill du veta 
 Hur hade du löst det *utan* databas? Vad hade du behövt ha sparat från dag ett?
 
 Fundera på det innan nästa lektion — du ska kunna sätta ord på det.
+
+---
+
+## Träna vidare
+
+| Resurs | Vad |
+|--------|-----|
+| [W3Schools SQL Intro](https://www.w3schools.com/sql/sql_intro.asp) | Introduktion till vad SQL är och varför det används |
+| [SQLZoo SELECT Basics](https://sqlzoo.net/wiki/SELECT_basics) | Interaktiva SELECT-övningar direkt i webbläsaren |

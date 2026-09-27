@@ -113,3 +113,12 @@ Skapa en tabell `bank_accounts` med kolumnerna `id`, `kontonummer` och `saldo`. 
 3. Rullar tillbaka om saldot på `'1001'` skulle bli negativt
 
 Verifiera i DB Browser att saldona stämmer efter körningen.
+
+---
+
+## Träna vidare
+
+| Resurs | Vad |
+|--------|-----|
+| [W3Schools SQL Transactions](https://www.w3schools.com/sql/sql_ref_transactions.asp) | BEGIN, COMMIT, ROLLBACK — syntax och exempel |
+| [SQLite WAL-dokumentation](https://www.sqlite.org/wal.html) | Hur SQLite implementerar durability |

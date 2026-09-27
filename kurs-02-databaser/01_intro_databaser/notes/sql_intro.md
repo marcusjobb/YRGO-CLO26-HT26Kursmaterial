@@ -134,3 +134,16 @@ Det ger antalet unika länder i tabellen — inte hur många kunder det finns to
 ## Nästa steg
 
 Nästa lektion skapar vi egna tabeller med `CREATE TABLE` och lägger in data med `INSERT`. Men innan dess — öva i Demo DB tills de sex nyckelorden sitter automatiskt.
+
+---
+
+## Träna vidare
+
+| Resurs | Vad |
+|--------|-----|
+| [sqliteonline.com](https://sqliteonline.com) | Kör SQL direkt i webbläsaren mot Demo DB — ingen installation |
+| [SQLZoo SELECT Basics](https://sqlzoo.net/wiki/SELECT_basics) | Interaktiva SELECT-övningar med facit |
+| [SQLZoo SELECT from WORLD](https://sqlzoo.net/wiki/SELECT_from_WORLD_Tutorial) | Träna WHERE och jämförelser mot världsdata |
+| [W3Schools SQL SELECT](https://www.w3schools.com/sql/sql_select.asp) | Snabbreferens för SELECT-syntax |
+| [W3Schools SQL WHERE](https://www.w3schools.com/sql/sql_where.asp) | WHERE med exempel och operatorer |
+| [W3Schools SQL ORDER BY](https://www.w3schools.com/sql/sql_orderby.asp) | Sortering och ASC/DESC |
