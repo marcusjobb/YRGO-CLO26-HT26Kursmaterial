@@ -1,0 +1,17 @@
+flowchart TD
+    A([Start]) --> B[fynd = 0, asteroid = 1]
+    B --> C{asteroid <= 4?}
+    C -->|Ja| D[Hämta asteroidnamn via switch]
+    D --> E[Slumpa 0 eller 1]
+    E --> F{== 1?}
+    F -->|Ja| G[Sensorn piper! fynd++]
+    F -->|Nej| H[Ingen reaktion]
+    G --> I[asteroid++]
+    H --> I
+    I --> C
+    C -->|Nej| J[Skriv ut: Fynd X av 4]
+    J --> K{fynd >= 2?}
+    K -->|Ja| L[Uppdraget lyckat!]
+    K -->|Nej| M[Uppdraget misslyckat]
+    L --> Z([Slut])
+    M --> Z

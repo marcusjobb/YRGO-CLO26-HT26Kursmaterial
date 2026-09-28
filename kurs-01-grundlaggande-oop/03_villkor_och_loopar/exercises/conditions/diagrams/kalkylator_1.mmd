@@ -1,0 +1,18 @@
+flowchart TD
+    A([Start]) --> B[Läs in tal1]
+    B --> C[Läs in operator]
+    C --> D[Läs in tal2]
+    D --> E{Vilken operator?}
+    E -->|+| F[tal1 + tal2]
+    E -->|-| G[tal1 - tal2]
+    E -->|*| H[tal1 * tal2]
+    E -->|/| I{tal2 == 0?}
+    I -->|Ja| J[Kan inte dela med noll]
+    I -->|Nej| K[tal1 / tal2]
+    E -->|annat| L[Okänd operator]
+    F --> Z([Skriv ut och Slut])
+    G --> Z
+    H --> Z
+    K --> Z
+    J --> Z
+    L --> Z
