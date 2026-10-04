@@ -68,3 +68,7 @@ Seniora utvecklare gör detta varje dag — ibland mot en anka, ibland mot en to
 > tills jag hörde mig själv försöka förklara det."
 
 Det är inte nybörjarhjälp. Det är ett professionellt verktyg.
+
+---
+
+# Quack!
