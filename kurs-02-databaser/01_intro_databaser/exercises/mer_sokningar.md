@@ -71,7 +71,7 @@ Använd SQL för att svara på frågorna. Diskutera gärna i grupp.
 6. Hur många som identifierar sig som kvinnor tycker om skräckfilmer?
 7. Hur många personer mellan 35 och 42 år har ett efternamn som börjar på S?
    - Hur många av dem identifierar sig som män?
-   - Och av dessa män, hur många är över 50 år?
+   - Släpp nu åldersgränsen: hur många män med ett efternamn på S är över 50 år?
 8. Hur många under 18 år tycker om både actionfilmer och BMW?
 9. Hur många personer tycker om Subaru?
    - Är det mest äldre eller yngre personer?
