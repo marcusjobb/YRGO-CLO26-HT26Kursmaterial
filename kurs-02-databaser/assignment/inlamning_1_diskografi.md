@@ -122,12 +122,16 @@ Allt i G, plus:
 
 ## Inlämning
 
-Lämna in en `.zip` eller länk till GitHub-repo som innehåller:
+1. Ladda ner inlämningsmallen som zip:  
+   **[github.com/marcusjobb/clo26-diskografi](https://github.com/marcusjobb/clo26-diskografi)**
 
-1. `schema.sql` — CREATE TABLE-satser
-2. `data.sql` — INSERT-satser med din data
-3. `queries.sql` — alla queries numrerade
-4. `er_diagram.png` (eller `.pdf`) — ditt relationsschema
+2. Fyll i `SQL-inlamning.md` med din SQL-kod
+
+3. Fyll i `reflektion.md`
+
+4. Zippa hela mappen och lämna in på Google Classroom
+
+Ingen rapport behövs.
 
 **Deadline:** Söndag 18 oktober 23:59
 
