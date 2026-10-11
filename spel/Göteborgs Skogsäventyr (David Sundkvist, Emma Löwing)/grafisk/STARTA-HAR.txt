@@ -1,0 +1,39 @@
+SLOTTSKOGENS ÄVENTYR – STARTINSTRUKTIONER
+
+VILKEN FIL SKA JAG ÖPPNA?
+Öppna Starta.bat i den uppackade mappen Skogsaventyr.
+
+1. Högerklicka på zip-filen och välj Extrahera alla.
+2. Öppna den uppackade mappen Skogsaventyr.
+3. Dubbelklicka på Starta.bat.
+4. Vänta medan spelet byggs och startas. Webbläsaren öppnas automatiskt
+   först när den nya spelservern är redo.
+5. Skriv ditt namn och välj Börja äventyret.
+
+Varje start använder en egen ledig lokal adress och börjar ett nytt spel.
+Använd fliken som Starta.bat öppnar. Äldre flikar kan visa äldre rundor.
+Om webbläsaren inte öppnas automatiskt, öppna adressen efter Speladress
+som visas i konsolfönstret. Den kan ha olika portnummer varje gång.
+
+Datorn behöver .NET 10 SDK.
+Håll konsolfönstret öppet medan du spelar. Stäng det när du är klar.
+Knappen Starta om spelet längst ner återgår till namnfrågan och nollställer
+rundan. Ingen sparfunktion finns.
+
+Öppna inte index.html direkt och kör inte spelet inifrån zip-filen.
+Packa alltid upp hela zip-filen först.
+
+ALTERNATIV START FRÅN TERMINAL
+Öppna en terminal i mappen Skogsaventyr och kör:
+  dotnet run --project Grafik/Grafik.csproj -- --OpenBrowser true
+
+INNEHÅLL
+Original: originalprojekt, källkod och rapporter, helt oförändrade.
+Grafik: separat grafiskt gränssnitt, lokal C#-server och bakgrundsbild.
+Starta.bat: Windows-startfil för det grafiska spelet.
+LAS-MIG.md: förklaring av hur gränssnittet är kopplat till originalkoden.
+
+Strid, slump, XP, guld, föremål och Valborg avgörs av originalkoden.
+Knapparna skickar originalets menyval. Ingen spellogik är kopierad till
+JavaScript. Omstart och automatisk webbläsaröppning hanteras av den
+separata grafikservern; originalfilerna är oförändrade.
