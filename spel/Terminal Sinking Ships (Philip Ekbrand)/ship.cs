@@ -4,7 +4,7 @@ class Ship
     public int hits {get; private set;}
     public string name {get; private set;}
     public Direction direction {get;private set;}
-    public List<(int x, int y)> positions = new List<(int x, int y)>();
+    public List<Position> positions = new List<Position>();
 
     public bool hit()
     {
@@ -21,7 +21,8 @@ class Ship
 
     public void ShipCordinats(int x, int y)
     {
-        positions.Add((x,y)); 
+        Position position = new Position(x, y);
+        positions.Add(position);
     }
     
 

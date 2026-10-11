@@ -23,18 +23,58 @@ class Game
         }
     }
 
+    public (int row,int column) GetPosition()
+    {
+        while (true)
+        {
+            Console.WriteLine("Please enter a position between A1 and J10.");
+
+            string input = Console.ReadLine();
+
+            if (string.IsNullOrEmpty(input))
+            {
+                Console.WriteLine("Your did not enter anything.");
+                continue;
+            }
+            
+            input = input.ToUpper();
+                
+            char rowLetter = input[0];
+            int row = rowLetter - 'A';
+            int column;
+            
+            string columnText = input.Substring(1);
+            
+            if(int.TryParse(columnText, out column))
+            { 
+                if (column >= 1 && column <= 10)
+                {
+                    column = column-1;
+                     if (row >= 0 && row <= 9)
+                    {
+                        return (row, column);
+                    }
+                }
+            } 
+            Console.WriteLine("You enterd an invaild possision!");
+        }
+
+    }
+
     public void startGame()
     {   
         List<(int x, int y)> botHits = new List<(int x, int y)>();
         List<(int x, int y)> botShots = new List<(int x, int y)>();
         List<(int x, int y)> botTargets = new List<(int x, int y)>();
         int turnCount = 0;
+        bool isMin = true;
         while(Status == GameState.Playing)
         {
             int playersTurn = turnCount % 2;
             int Enemy = (turnCount+1) % 2;
             bool ShotIsValid = false;
             (bool validShot, bool hit, bool sunk) Shot;
+            
 
             while (!ShotIsValid)
             {
@@ -49,11 +89,9 @@ class Game
                     );
 
                     AnsiConsole.Write(boards);
-                    Console.WriteLine($"{players[playersTurn].name} Enter row:" );
-                    int row = getValidNumber();
-                    Console.WriteLine("And Column:");
-                    int column = getValidNumber();
-                    Shot = players[Enemy].board.Missile(row-1,column-1);
+                    Console.WriteLine($"Turn :{players[playersTurn].name}" );
+                    var position = GetPosition();
+                    Shot = players[Enemy].board.Missile(position.row,position.column);
                     ShotIsValid = Shot.validShot;
                 }
 
@@ -62,17 +100,63 @@ class Game
                         Random random = new Random();
                         int row; 
                         int column;
-                       if (botTargets.Count == 0)
+                        if (botHits.Count >= 2)
+                        {
+                            int minX = botHits[0].x;
+                            int maxX = botHits[0].x;
+                            int minY = botHits[0].y;
+                            int maxY = botHits[0].y;
+
+                            for (int i = 1; i < botHits.Count; i++)
+                            {
+                                if (botHits[i].x < minX)
+                                    minX = botHits[i].x;
+
+                                if (botHits[i].x > maxX)
+                                    maxX = botHits[i].x;
+
+                                if (botHits[i].y < minY)
+                                    minY = botHits[i].y;
+
+                                if (botHits[i].y > maxY)
+                                    maxY = botHits[i].y;
+                            }
+                            if (minX == maxX)
+                            {
+                                if(isMin && minY != 0)
+                                {
+                                    row = maxX;
+                                    column=minY-1;
+                                }
+                                else
+                                {
+                                    row = maxX;
+                                    column=maxY +1;
+                                }
+                            }
+                            else
+                            {
+                                if(isMin && minX != 0)
+                                {
+                                    row = minX -1;
+                                    column=maxY;
+                                }
+                                else
+                                {
+                                    row = maxX +1;
+                                    column=maxY;
+                                }
+                            }
+                        }
+                        else if (botTargets.Count == 0)
                         {
                             row = random.Next(0, 10);
                             column = random.Next(0, 10);
                         }
-                        else
+                        else 
                         {
-   
                             row = botTargets[0].x;
                             column = botTargets[0].y;
-
                             botTargets.RemoveAt(0);
                         }
                         if (botShots.Contains((row, column)))
@@ -86,6 +170,7 @@ class Game
                         if (Shot.hit)
                         {
                             botHits.Add((row, column));
+                           
                             List<(int x, int y)> newTarges = GetBotTargets(row, column);
                             foreach (var target in newTarges)
                                 {
@@ -95,12 +180,15 @@ class Game
                                     }
                                 }
                         }
-
-                        
+                        else if(!Shot.hit && botHits.Count >= 2)
+                            {
+                                isMin = false;
+                            }
                         if (Shot.sunk)
                         {
                             botHits.Clear();
-                            botTargets.Clear(); 
+                            botTargets.Clear();
+                            isMin = true;
                         }
                         ShotIsValid = Shot.validShot;
                     }
@@ -109,6 +197,7 @@ class Game
                     if (noShips)
                     {
                         game_status(GameState.GameOver);
+                        Console.WriteLine($"The winner is {players[playersTurn].name}");
                         Console.WriteLine("All ships are discoverd, thanks for playing");
                     }
          turnCount++;
@@ -157,10 +246,7 @@ class Game
                     Table myBoard = player.board.BuildBoard(true);
                     AnsiConsole.Write(myBoard);
                     Console.WriteLine(player.board.ships[i].name);
-                    Console.WriteLine("Row:");
-                    int row = getValidNumber();
-                    Console.WriteLine("Column:");
-                    int column = getValidNumber();
+                    var position = GetPosition();
                     Console.WriteLine("Direction: \n 1 = Horizontal \n 2 =Vertical");
                     string directionInput = Console.ReadLine();
                     Direction direction;
@@ -168,7 +254,7 @@ class Game
                         direction = Direction.Horizontal;
                     else
                         direction = Direction.Vertical;
-                    placed = player.board.CheckBoard(row-1, column -1, player.board.ships[i], direction);
+                    placed = player.board.CheckBoard(position.row,position.column, player.board.ships[i], direction);
 
                 }
             }

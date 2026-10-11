@@ -28,10 +28,14 @@ class Board
             Console.WriteLine($"HIT at cordinats ({cordinats})");
             for (int i =0; i<ships.Count();i++)
             {
-                if(ships[i].positions.Contains( (x,y)))
+                for (int j =0; j<ships[i].positions.Count();j++)
                 {
-                    sunk = ships[i].hit();
+                    if(ships[i].positions[j].row == x && ships[i].positions[j].column == y)
+                    {
+                        sunk = ships[i].hit();
+                    }
                 }
+                
             }
             return (true,true,sunk);
         }
@@ -70,7 +74,9 @@ class Board
         {
             List<string> cells = new List<string>();
 
-            cells.Add($"[bold]{row + 1}[/]");
+            char rowLetter = (char)('A' + row);
+
+            cells.Add($"[bold]{rowLetter}[/]");
 
             for (int column = 0; column < 10; column++)
             {
