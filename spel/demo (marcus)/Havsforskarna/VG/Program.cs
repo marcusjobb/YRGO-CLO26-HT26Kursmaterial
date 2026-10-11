@@ -14,7 +14,7 @@ void PlaceraFormation(Formation f, char[,] hav)
     do
     {
         horisontell = rng.Next(2) == 0;
-        r = horisontell ? rng.Next(STORLEK)                : rng.Next(STORLEK - f.Storlek + 1);
+        r = horisontell ? rng.Next(STORLEK)               : rng.Next(STORLEK - f.Storlek + 1);
         k = horisontell ? rng.Next(STORLEK - f.Storlek + 1) : rng.Next(STORLEK);
 
         f.Pos.Clear();
@@ -26,10 +26,11 @@ void PlaceraFormation(Formation f, char[,] hav)
         }
     } while (f.Pos.Any(p => hav[p.r, p.k] != '\0'));
 
-    foreach (var p in f.Pos) hav[p.r, p.k] = 'F';
+    foreach (var p in f.Pos)
+        hav[p.r, p.k] = 'F';
 }
 
-void VisaHav(char[,] synlig, string rubrik)
+void VisaHav(char[,] dolt, char[,] synlig, string rubrik)
 {
     Console.WriteLine($"\n  {rubrik}");
     Console.Write("    ");
@@ -39,20 +40,32 @@ void VisaHav(char[,] synlig, string rubrik)
     {
         Console.Write($" {r,2} |");
         for (int k = 0; k < STORLEK; k++)
-            Console.Write(synlig[r, k] switch { 'X' => " X", 'O' => " ·", _ => " ~" });
+        {
+            char c = synlig[r, k];
+            Console.Write(c switch
+            {
+                'X' => " X",
+                'O' => " ·",
+                _   => " ~"
+            });
+        }
         Console.WriteLine();
     }
 }
 
-bool Träff(List<Formation> formationer, int r, int k, char[,] synlig)
+bool Träff(List<Formation> formationer, int r, int k, char[,] synlig, out bool sjönk)
 {
+    sjönk = false;
     foreach (var f in formationer)
     {
         if (f.RegistreraTräff((r, k)))
         {
             synlig[r, k] = 'X';
             if (f.ÄrKartlagd())
-                Console.WriteLine($"  ✅ {f.Namn} är kartlagd (sjunken)!");
+            {
+                Console.WriteLine($"  ✅ {f.Namn} är kartlagd!");
+                sjönk = true;
+            }
             return true;
         }
     }
@@ -60,49 +73,35 @@ bool Träff(List<Formation> formationer, int r, int k, char[,] synlig)
     return false;
 }
 
-// -------- smart AI-logik --------
+// -------- smart AI --------
+// AI:n håller koll på träffar och jagar runt dem tills formationen sjunker
 
-// Datorns AI: jagar runtom en träff tills formationen är kartlagd, sedan reset
-var aiKö        = new Queue<(int r, int k)>();
-var aiProbade   = new HashSet<(int, int)>();
-bool aiJägar    = false;
+var aiHits    = new List<(int r, int k)>();   // osänkta träffar
+var aiMissed  = new HashSet<(int, int)>();
 
-(int r, int k) AiVälj(char[,] spelareSynlig)
+(int r, int k) AiVäljRuta(char[,] synlig)
 {
-    // Ta nästa ur kön om vi jägar
-    while (aiKö.Count > 0)
+    // Jaga runt senaste träff om vi har en
+    if (aiHits.Count > 0)
     {
-        var kandidat = aiKö.Dequeue();
-        if (spelareSynlig[kandidat.r, kandidat.k] == '\0' && aiProbade.Add(kandidat))
-            return kandidat;
+        var (hr, hk) = aiHits[^1];
+        (int dr, int dk)[] riktningar = [(-1,0),(1,0),(0,-1),(0,1)];
+        foreach (var (dr, dk) in riktningar)
+        {
+            int nr = hr + dr, nk = hk + dk;
+            if (nr >= 0 && nr < STORLEK && nk >= 0 && nk < STORLEK && synlig[nr, nk] == '\0')
+                return (nr, nk);
+        }
+        // Alla grannar försökta — backa till tidigare träff
+        aiHits.RemoveAt(aiHits.Count - 1);
+        return AiVäljRuta(synlig);
     }
 
-    // Annars slumpa ett otarget ruta
+    // Slumpmässigt när inga aktiva träffar
     int r, k;
     do { r = rng.Next(STORLEK); k = rng.Next(STORLEK); }
-    while (spelareSynlig[r, k] != '\0' || !aiProbade.Add((r, k)));
+    while (synlig[r, k] != '\0');
     return (r, k);
-}
-
-void AiRegistreraResultat(int r, int k, bool träff, char[,] spelareSynlig)
-{
-    if (!träff) return;
-    // Lägg omgivande rutor i kön
-    (int dr, int dk)[] grannar = [(−1, 0), (1, 0), (0, −1), (0, 1)];
-    foreach (var (dr, dk) in grannar)
-    {
-        int nr = r + dr, nk = k + dk;
-        if (nr >= 0 && nr < STORLEK && nk >= 0 && nk < STORLEK
-            && spelareSynlig[nr, nk] == '\0')
-            aiKö.Enqueue((nr, nk));
-    }
-}
-
-void AiResetOmKartlagd(List<Formation> formationer)
-{
-    // Om en formation precis sjönk: töm kön och börja om
-    if (formationer.Any(f => f.ÄrKartlagd()))
-        aiKö.Clear();
 }
 
 // -------- spelbräde --------
@@ -119,6 +118,7 @@ var spelarFormationer = new List<Formation>
     new("Delfinflock", 3),
     new("Bläckfisk",   2),
 };
+
 var datornFormationer = new List<Formation>
 {
     new("Blåval",      5),
@@ -136,51 +136,55 @@ while (true)
 {
     Console.Clear();
     Console.WriteLine($"=== HAVSFORSKARNA [VG] — omgång {omgång} ===");
-    VisaHav(datornSynlig,  "Ditt mål (oceanens okända)");
-    VisaHav(spelareSynlig, "Din flotta");
+    VisaHav(datornHav,  datornSynlig,  "Ditt mål (oceanens okända)");
+    VisaHav(spelareHav, spelareSynlig, "Din flotta");
     Console.WriteLine();
 
     // ---- spelarens tur ----
-    (int r, int k) mål;
+    (int r, int k) spelareMål;
     while (true)
     {
         Console.Write("Kartlägg ruta (t.ex. B3): ");
-        var inn = Console.ReadLine()?.Trim().ToUpper() ?? "";
-        if (inn.Length >= 2
-            && inn[0] >= 'A' && inn[0] < 'A' + STORLEK
-            && int.TryParse(inn[1..], out int rad) && rad >= 0 && rad < STORLEK
-            && datornSynlig[rad, inn[0] - 'A'] == '\0')
+        var inmatning = Console.ReadLine()?.Trim().ToUpper() ?? "";
+        if (inmatning.Length >= 2
+            && inmatning[0] >= 'A' && inmatning[0] < 'A' + STORLEK
+            && int.TryParse(inmatning[1..], out int rad) && rad >= 0 && rad < STORLEK
+            && datornSynlig[rad, inmatning[0] - 'A'] == '\0')
         {
-            mål = (rad, inn[0] - 'A');
+            spelareMål = (rad, inmatning[0] - 'A');
             break;
         }
         Console.WriteLine("  Ogiltig ruta — försök igen.");
     }
 
-    bool sTräff = Träff(datornFormationer, mål.r, mål.k, datornSynlig);
-    Console.WriteLine(sTräff ? "  🎯 TRÄFF!" : "  💦 Miss.");
+    bool sträff = Träff(datornFormationer, spelareMål.r, spelareMål.k, datornSynlig, out _);
+    Console.WriteLine(sträff ? "  🎯 TRÄFF!" : "  💦 Miss.");
 
     if (datornFormationer.All(f => f.ÄrKartlagd()))
     {
         Console.Clear();
-        VisaHav(datornSynlig, "Ditt mål");
+        VisaHav(datornHav, datornSynlig, "Ditt mål");
         Console.WriteLine($"\n🏆 DU VANN på {omgång} omgångar! Alla formationer kartlagda.");
         break;
     }
 
-    // ---- datorns tur (smart AI) ----
-    var (dr, dk) = AiVälj(spelareSynlig);
-    bool dTräff  = Träff(spelarFormationer, dr, dk, spelareSynlig);
-    Console.WriteLine($"\n  Datorns sonar: {(char)('A' + dk)}{dr} — {(dTräff ? "🎯 TRÄFF!" : "💦 Miss.")}");
+    // ---- datorns smarta tur ----
+    var (dr, dk) = AiVäljRuta(spelareSynlig);
+    bool dträff  = Träff(spelarFormationer, dr, dk, spelareSynlig, out bool dSjönk);
 
-    AiRegistreraResultat(dr, dk, dTräff, spelareSynlig);
-    AiResetOmKartlagd(spelarFormationer);
+    if (dträff)
+    {
+        aiHits.Add((dr, dk));
+        if (dSjönk) aiHits.Clear();   // formation sjunken — börja om jakten
+    }
+
+    Console.WriteLine($"\n  Datorns sonar: {(char)('A' + dk)}{dr} — {(dträff ? "🎯 TRÄFF på din flotta!" : "💦 Miss.")}");
 
     if (spelarFormationer.All(f => f.ÄrKartlagd()))
     {
         Console.Clear();
-        VisaHav(spelareSynlig, "Din flotta");
-        Console.WriteLine($"\n💀 GAME OVER — datorns smarta sonar kartlade hela din flotta.");
+        VisaHav(spelareHav, spelareSynlig, "Din flotta");
+        Console.WriteLine($"\n💀 GAME OVER — datorns sonar kartlade hela din flotta.");
         break;
     }
 
