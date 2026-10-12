@@ -147,3 +147,8 @@ Nästa lektion skapar vi egna tabeller med `CREATE TABLE` och lägger in data me
 | [W3Schools SQL SELECT](https://www.w3schools.com/sql/sql_select.asp) | Snabbreferens för SELECT-syntax |
 | [W3Schools SQL WHERE](https://www.w3schools.com/sql/sql_where.asp) | WHERE med exempel och operatorer |
 | [W3Schools SQL ORDER BY](https://www.w3schools.com/sql/sql_orderby.asp) | Sortering och ASC/DESC |
+
+---
+
+📖 **Läs mer i C#-boken**  
+→ [SQL-intro](https://marcusjobb.github.io/programmering-csharp/sql/sql-intro/)

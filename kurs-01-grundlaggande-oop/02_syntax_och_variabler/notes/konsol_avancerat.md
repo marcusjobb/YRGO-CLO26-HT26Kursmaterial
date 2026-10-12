@@ -146,3 +146,8 @@ Varför gillar programmerare mörkt läge? För att ljuset lockar buggar!
 
 ---
 Nu vet du hur terminalen egentligen fungerar. Testa, experimentera och hitta ditt eget sätt att använda det.
+
+---
+
+📖 **Läs mer i C#-boken**  
+→ [Formatering och utskrift](https://marcusjobb.github.io/programmering-csharp/variabler/formatering-och-utskrift/)

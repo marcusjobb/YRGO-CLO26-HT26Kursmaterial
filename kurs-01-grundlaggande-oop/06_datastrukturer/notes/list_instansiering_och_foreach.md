@@ -168,3 +168,8 @@ class Hero
     public string Alias { get; set; }
 }
 ```
+
+---
+
+📖 **Läs mer i C#-boken**  
+→ [List<T>](https://marcusjobb.github.io/programmering-csharp/datastrukturer/list/)

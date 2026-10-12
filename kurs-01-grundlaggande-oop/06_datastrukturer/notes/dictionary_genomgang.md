@@ -201,3 +201,8 @@ void VisaPoäng(string namn)
     Console.ResetColor();
 }
 ```
+
+---
+
+📖 **Läs mer i C#-boken**  
+→ [Dictionary](https://marcusjobb.github.io/programmering-csharp/datastrukturer/dictionary/)

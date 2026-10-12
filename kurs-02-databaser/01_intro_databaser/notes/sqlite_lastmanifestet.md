@@ -294,3 +294,8 @@ Nudlarna fick id 2
 | Byter du plats på vikt och pris | märks det inte | går det inte, eftersom varje värde har ett namn |
 | Läsa tillbaka | lösa värden ur en reader | en `List<Cargo>` |
 | En rad i tabellen | blir ingenting särskilt i C# | blir ett objekt |
+
+---
+
+📖 **Läs mer i C#-boken**  
+→ [Lastmanifestet](https://marcusjobb.github.io/programmering-csharp/sql/sqlite-lastmanifestet/)

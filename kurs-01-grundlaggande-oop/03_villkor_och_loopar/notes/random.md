@@ -184,3 +184,8 @@ Kombinera med `Console.Clear()` för att börja på ett rent blad och rita någo
 ## Mer inspiration
 
 [marcusjobb/UsborneBooks](https://github.com/marcusjobb/UsborneBooks) — klassiska Usborne-datorspel från 1980-talet, övertatta till C#. Innehåller massor av slump-logik: gissningsspel, labyrintar, stridssystem. Bra att läsa igenom och förstå hur Random användes redan i BASIC-eran.
+
+---
+
+📖 **Läs mer i C#-boken**  
+→ [Random](https://marcusjobb.github.io/programmering-csharp/variabler/random/)

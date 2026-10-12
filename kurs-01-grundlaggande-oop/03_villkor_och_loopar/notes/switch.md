@@ -138,3 +138,8 @@ switch (betyg)
 Om `betyg` är `5` skriver det ut båda raderna. C# tillåter inte oavsiktlig fall-through — kompilatorn ger ett fel om du glömmer `break` i ett `case` som har kod i sig. Det skyddar dig från den klassiska fällan.
 
 **Se även:** [if_else.md](if_else.md) för en genomgång av villkorslogik med `if`, `else if` och logiska operatorer.
+
+---
+
+📖 **Läs mer i C#-boken**  
+→ [Switch](https://marcusjobb.github.io/programmering-csharp/if/switch/)

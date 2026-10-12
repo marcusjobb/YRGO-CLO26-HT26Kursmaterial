@@ -123,3 +123,9 @@ Använd det parallellt med koden — öppna `shop.db` i DB Browser och se exakt 
 3. Lägg till tre böcker med INSERT.
 4. Skriv ut alla böcker med SELECT och ExecuteReader.
 5. Öppna `bibliotek.db` i DB Browser och verifiera att datan stämmer.
+
+---
+
+📖 **Läs mer i C#-boken**  
+→ [SQLite](https://marcusjobb.github.io/programmering-csharp/sql/sqlite/)
+→ [Första databasen](https://marcusjobb.github.io/programmering-csharp/sql/forsta-databasen/)

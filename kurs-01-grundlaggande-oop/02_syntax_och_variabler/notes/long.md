@@ -23,3 +23,8 @@ long myLong = long.MinValue; // myLong är nu -9 223 372 036 854 775 808
 
 ---
 Sådärja. Nu har du koll på det här. Nästa steg — testa själv. Det är då det fastnar.
+
+---
+
+📖 **Läs mer i C#-boken**  
+→ [Heltal](https://marcusjobb.github.io/programmering-csharp/variabler/heltal/)

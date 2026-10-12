@@ -11,3 +11,9 @@ Variabler är en viktig del av programmering. En variabel är en behållare som 
 
 ---
 Sådärja. Nu har du koll på det här. Nästa steg — testa själv. Det är då det fastnar.
+
+---
+
+📖 **Läs mer i C#-boken**  
+→ [Variabler](https://marcusjobb.github.io/programmering-csharp/variabler/variabler-kurs/)
+→ [Typer](https://marcusjobb.github.io/programmering-csharp/variabler/typer/)

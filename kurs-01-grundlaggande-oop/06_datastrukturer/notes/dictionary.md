@@ -158,3 +158,8 @@ Några vanliga användningsfall för dictionary:
 - **Snabb uppslagning** — hämta en produkt via artikelnummer utan att loopa igenom hela listan
 
 **Se även:** [programmeringstermer/dictionary.md](../programmeringstermer/dictionary.md)
+
+---
+
+📖 **Läs mer i C#-boken**  
+→ [Dictionary](https://marcusjobb.github.io/programmering-csharp/datastrukturer/dictionary/)

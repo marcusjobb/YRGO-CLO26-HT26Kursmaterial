@@ -390,3 +390,12 @@ För era klasser i den här kursen — inga `static`-metoder i klasserna om ni i
 ---
 
 **Se även:** [programmeringstermer/klasser.md](../programmeringstermer/klasser.md), [programmeringstermer/oop.md](../programmeringstermer/oop.md)
+
+---
+
+📖 **Läs mer i C#-boken**  
+→ [Klasser](https://marcusjobb.github.io/programmering-csharp/oop/klasser/)
+→ [Arv](https://marcusjobb.github.io/programmering-csharp/oop/arv/)
+→ [Polymorfism](https://marcusjobb.github.io/programmering-csharp/oop/polymorfism/)
+→ [Properties](https://marcusjobb.github.io/programmering-csharp/oop/properties/)
+→ [Inkapsling](https://marcusjobb.github.io/programmering-csharp/oop/inkapsling/)

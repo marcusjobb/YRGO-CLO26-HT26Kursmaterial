@@ -183,3 +183,8 @@ Vanliga användningsfall för enum:
 Varje gång du ser dig själv skriva en sträng som ett av ett begränsat antal alternativ — fundera på om det är ett enum i förklädnad.
 
 **Se även:** [programmeringstermer/listor.md](../programmeringstermer/listor.md)
+
+---
+
+📖 **Läs mer i C#-boken**  
+→ [Enum](https://marcusjobb.github.io/programmering-csharp/variabler/enum/)

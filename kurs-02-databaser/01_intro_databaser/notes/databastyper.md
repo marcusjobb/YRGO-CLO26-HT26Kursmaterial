@@ -126,3 +126,8 @@ Det räcker inte att svara vilket — du måste kunna motivera valet utifrån de
 | [W3Schools SQL Tutorial](https://www.w3schools.com/sql/) | SQL-syntax som fungerar i alla tre motorer |
 | [SQLZoo](https://sqlzoo.net/) | Interaktiva övningar mot MySQL-liknande motor |
 | [DB-Engines Ranking](https://db-engines.com/en/ranking) | Aktuell popularitetsranking för databasmotorer |
+
+---
+
+📖 **Läs mer i C#-boken**  
+→ [Databastyper](https://marcusjobb.github.io/programmering-csharp/sql/databastyper/)

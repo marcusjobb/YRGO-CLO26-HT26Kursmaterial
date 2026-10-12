@@ -122,3 +122,8 @@ Verifiera i DB Browser att saldona stämmer efter körningen.
 |--------|-----|
 | [W3Schools SQL Transactions](https://www.w3schools.com/sql/sql_ref_transactions.asp) | BEGIN, COMMIT, ROLLBACK — syntax och exempel |
 | [SQLite WAL-dokumentation](https://www.sqlite.org/wal.html) | Hur SQLite implementerar durability |
+
+---
+
+📖 **Läs mer i C#-boken**  
+→ [Transaktioner](https://marcusjobb.github.io/programmering-csharp/sql/transaktioner/)

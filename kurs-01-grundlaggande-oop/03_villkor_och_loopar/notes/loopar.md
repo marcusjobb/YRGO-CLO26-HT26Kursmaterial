@@ -189,3 +189,8 @@ Console.WriteLine("Du valde: " + val);
 ---
 
 **Se även:** `arrayer.md` i `programmeringstermer/` under `06_datastrukturer` för en genomgång av arrays och hur `foreach` används tillsammans med dem.
+
+---
+
+📖 **Läs mer i C#-boken**  
+→ [Loopar](https://marcusjobb.github.io/programmering-csharp/loopar/grunder/)

@@ -34,3 +34,8 @@ I detta exempel har vi deklarerat fem variabler. Den första är en int, vilket 
 
 ---
 Nu har du verktygen. Använd dem, missbruka dem, lär dig av misstagen. Det är vägen.
+
+---
+
+📖 **Läs mer i C#-boken**  
+→ [Variabler](https://marcusjobb.github.io/programmering-csharp/variabler/variabler-kurs/)

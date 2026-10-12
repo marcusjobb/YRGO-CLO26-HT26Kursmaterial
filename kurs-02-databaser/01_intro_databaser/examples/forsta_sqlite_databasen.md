@@ -7,7 +7,7 @@ Vår allra första databas: en fil, en tabell, några rader och de första fråg
 Vi ska skapa en databas för hjältar.
 
 Vi börjar enkelt...
-men först behöver du installera DBBrowser från SQLite. 
+men först behöver du installera DBBrowser från SQLite. csharp_cmyh_c_sharp_databases_ado_net_sqlite.md
 
 
 ## 1. Skapa databasen

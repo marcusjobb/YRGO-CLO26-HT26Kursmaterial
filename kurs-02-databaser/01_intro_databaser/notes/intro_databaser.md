@@ -162,3 +162,9 @@ Fundera på det innan nästa lektion — du ska kunna sätta ord på det.
 |--------|-----|
 | [W3Schools SQL Intro](https://www.w3schools.com/sql/sql_intro.asp) | Introduktion till vad SQL är och varför det används |
 | [SQLZoo SELECT Basics](https://sqlzoo.net/wiki/SELECT_basics) | Interaktiva SELECT-övningar direkt i webbläsaren |
+
+---
+
+📖 **Läs mer i C#-boken**  
+→ [Varför databaser?](https://marcusjobb.github.io/programmering-csharp/sql/varfor-databaser/)
+→ [Databastyper](https://marcusjobb.github.io/programmering-csharp/sql/databastyper/)

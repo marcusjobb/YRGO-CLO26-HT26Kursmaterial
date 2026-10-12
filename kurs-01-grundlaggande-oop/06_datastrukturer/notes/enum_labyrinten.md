@@ -167,3 +167,8 @@ enum Riktning
     Väst,
 }
 ```
+
+---
+
+📖 **Läs mer i C#-boken**  
+→ [Enum](https://marcusjobb.github.io/programmering-csharp/variabler/enum/)

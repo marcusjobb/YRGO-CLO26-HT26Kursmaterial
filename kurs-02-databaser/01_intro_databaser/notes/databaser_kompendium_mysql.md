@@ -424,3 +424,8 @@ Du har nu lärt dig:
 
 ---
 Och kom ihåg: allt vi gått igenom här är grunden. Resten bygger på det. Så var inte rädd att experimentera.
+
+---
+
+📖 **Läs mer i C#-boken**  
+→ [Databastyper](https://marcusjobb.github.io/programmering-csharp/sql/databastyper/)

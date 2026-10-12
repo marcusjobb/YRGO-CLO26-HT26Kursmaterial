@@ -72,3 +72,8 @@ Så sammanfattningsvis, stacken är som en hög med pappersark där vi snabbt ka
 
 ---
 Sådärja. Nu har du koll på det här. Nästa steg — testa själv. Det är då det fastnar.
+
+---
+
+📖 **Läs mer i C#-boken**  
+→ [Typer](https://marcusjobb.github.io/programmering-csharp/variabler/typer/)

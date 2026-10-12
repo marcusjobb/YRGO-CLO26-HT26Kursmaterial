@@ -108,3 +108,8 @@ Vad kallar man en programmerare som inte kan sova?  En stack overflow!
 
 ---
 Nu har du verktygen. Använd dem, missbruka dem, lär dig av misstagen. Det är vägen.
+
+---
+
+📖 **Läs mer i C#-boken**  
+→ [Programstruktur](https://marcusjobb.github.io/programmering-csharp/grunder/programstruktur/)

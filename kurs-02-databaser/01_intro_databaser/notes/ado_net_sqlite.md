@@ -934,3 +934,9 @@ ADO.NET ger dig full kontroll över databasinteraktioner men kräver mer kod och
 
 ---
 Sådärja. Nu har du koll på det här. Nästa steg — testa själv. Det är då det fastnar.
+
+---
+
+📖 **Läs mer i C#-boken**  
+→ [SQLite i C#](https://marcusjobb.github.io/programmering-csharp/sql/sqlite-i-csharp/)
+→ [SQLite-handler](https://marcusjobb.github.io/programmering-csharp/sql/sqlite-handler/)

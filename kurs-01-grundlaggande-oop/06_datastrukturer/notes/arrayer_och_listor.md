@@ -182,3 +182,9 @@ frukter.RemoveAt(1);   // tar bort "Banan"
 I praktiken är `List<T>` det vanligaste valet. Du vet sällan i förväg exakt hur många element du behöver. Arrayer används när storleken verkligen är fast och känd — till exempel ett schackbräde som alltid är 8x8 — eller när prestanda är kritisk och storleken aldrig ändras.
 
 **Se även:** [programmeringstermer/arrayer.md](../programmeringstermer/arrayer.md), [programmeringstermer/listor.md](../programmeringstermer/listor.md)
+
+---
+
+📖 **Läs mer i C#-boken**  
+→ [Arrays](https://marcusjobb.github.io/programmering-csharp/datastrukturer/arrays/)
+→ [List<T>](https://marcusjobb.github.io/programmering-csharp/datastrukturer/list/)

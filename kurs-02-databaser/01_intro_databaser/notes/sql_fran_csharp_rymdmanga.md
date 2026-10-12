@@ -251,3 +251,8 @@ c.ExecuteNonQuery();
 ```
 
 Handlarmetoden ger då tre rader. Den sista är förstås ett gratisprov.
+
+---
+
+📖 **Läs mer i C#-boken**  
+→ [SQL från C# — rymdmangan](https://marcusjobb.github.io/programmering-csharp/sql/sql-fran-csharp-rymdmanga/)

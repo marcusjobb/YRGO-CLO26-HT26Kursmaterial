@@ -356,3 +356,8 @@ När du börjar bygga klasser nästa vecka gäller objektmetoder. Tills dess kö
 ---
 
 **Se även:** [programmeringstermer/metoder.md](../programmeringstermer/metoder.md)
+
+---
+
+📖 **Läs mer i C#-boken**  
+→ [Metoder](https://marcusjobb.github.io/programmering-csharp/metoder/metoder-kurs/)

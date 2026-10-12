@@ -82,3 +82,9 @@ string upper = city.ToUpper(); // "GÖTEBORG"
 
 ---
 Sådärja. Nu vet du vad du stoppar in i variablerna. Nästa steg — testa med fel typ och se vad kompilatorn säger. Det lär man sig bra av.
+
+---
+
+📖 **Läs mer i C#-boken**  
+→ [Typer](https://marcusjobb.github.io/programmering-csharp/variabler/typer/)
+→ [Datatyper](https://marcusjobb.github.io/programmering-csharp/variabler/datatyper/)

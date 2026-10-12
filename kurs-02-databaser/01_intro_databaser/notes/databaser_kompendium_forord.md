@@ -124,3 +124,8 @@ Om du läser detta längre fram kan versionsnummer ha ändrats, men koncepten ä
 
 ---
 Nu har du verktygen. Använd dem, missbruka dem, lär dig av misstagen. Det är vägen.
+
+---
+
+📖 **Läs mer i C#-boken**  
+→ [SQL — översikt](https://marcusjobb.github.io/programmering-csharp/sql/)

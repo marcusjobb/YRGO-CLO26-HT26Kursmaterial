@@ -89,3 +89,8 @@ Nu har du båda verktygen:
 | **DB Browser for SQLite** | Riktiga `.db`-filer, visuellt gränssnitt, sparas lokalt |
 
 I C# pratar applikationen mot samma `.db`-fil med kod. DB Browser låter dig öppna filen och se exakt vad som finns i databasen — perfekt för att felsöka och förstå vad din kod faktiskt gör.
+
+---
+
+📖 **Läs mer i C#-boken**  
+→ [SQLite Browser](https://marcusjobb.github.io/programmering-csharp/sql/sqlite-browser/)

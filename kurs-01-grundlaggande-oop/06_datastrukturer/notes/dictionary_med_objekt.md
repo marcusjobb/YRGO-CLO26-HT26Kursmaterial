@@ -147,3 +147,8 @@ class Hero
     public Hero Cousin { get; set; }
 }
 ```
+
+---
+
+📖 **Läs mer i C#-boken**  
+→ [Dictionary](https://marcusjobb.github.io/programmering-csharp/datastrukturer/dictionary/)
