@@ -84,14 +84,17 @@ Allt i G, plus:
 
 ## Inlämning
 
-1. Ladda ner inlämningsmallen som zip:  
+1. Forka mallen:  
    **[github.com/marcusjobb/clo26-diskografi](https://github.com/marcusjobb/clo26-diskografi)**
 
-2. Fyll i `SQL-inlamning.md` med din SQL-kod
+2. Döp din fork till: `förnamn-clo26-diskografi`  
+   Exempel: `anna-clo26-diskografi`, `erik-clo26-diskografi`
 
-3. Fyll i `reflektion.md`
+3. Fyll i `SQL-inlamning.md` med din SQL-kod
 
-4. Zippa hela mappen och lämna in på Google Classroom
+4. Fyll i `reflektion.md`
+
+5. Zippa hela mappen och lämna in på Google Classroom
 
 Ingen rapport behövs.
 
