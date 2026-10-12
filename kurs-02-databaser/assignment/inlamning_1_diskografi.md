@@ -29,72 +29,32 @@ En SQL-databas med artistens diskografi. Den ska innehålla:
 ## Föreslagna tabeller
 
 ```sql
-artists (id, name, genre, country, debut_year)
-albums  (id, title, release_year, artist_id)
-songs   (id, title, duration_seconds, track_number, album_id)
+artists (id, ...)
+albums  (id, ...)
+songs   (id, ...)
 ```
 
 Du får utöka med fler tabeller om du vill — till exempel `tours` eller `collaborations`.
 
 ---
 
-## Queries du ska kunna köra
+## Queries du ska skriva
 
-Skriv och spara alla queries i en `.sql`-fil som du lämnar in.
+Skriv alla queries i `SQL-inlamning.md` (i inlämningsmallen).
 
 ### G-krav
 
-```sql
--- 1. Lista alla album av artisten, sorterade efter år
-SELECT title, release_year
-FROM albums
-ORDER BY release_year;
-
--- 2. Lista alla låtar på ett specifikt album
-SELECT s.title, s.duration_seconds
-FROM songs s
-JOIN albums a ON s.album_id = a.id
-WHERE a.title = 'Folklore';
-
--- 3. Hur många låtar finns det på varje album?
-SELECT a.title, COUNT(s.id) AS antal_latar
-FROM albums a
-JOIN songs s ON s.album_id = a.id
-GROUP BY a.title;
-
--- 4. Vilken är den längsta låten?
-SELECT title, duration_seconds
-FROM songs
-ORDER BY duration_seconds DESC
-LIMIT 1;
-
--- 5. Lista alla låtar sorterade alfabetiskt
-SELECT title FROM songs ORDER BY title;
-```
+1. Lista alla album av artisten, sorterade efter utgivningsår
+2. Lista alla låtar på ett specifikt album (du väljer vilket)
+3. Visa hur många låtar varje album innehåller
+4. Hitta den längsta låten i hela databasen
+5. Lista alla låtar i alfabetisk ordning
 
 ### VG-krav (utöver G)
 
-```sql
--- 6. Snittlängd på låtar per album
-SELECT a.title, AVG(s.duration_seconds) AS snitt_sekunder
-FROM albums a
-JOIN songs s ON s.album_id = a.id
-GROUP BY a.title;
-
--- 7. Albumet med flest låtar
-SELECT a.title, COUNT(s.id) AS antal
-FROM albums a
-JOIN songs s ON s.album_id = a.id
-GROUP BY a.title
-ORDER BY antal DESC
-LIMIT 1;
-
--- 8. Alla låtar längre än 4 minuter (240 sekunder), med albumtitel
-SELECT s.title, a.title AS album, s.duration_seconds
-FROM songs s
-JOIN albums a ON s.album_id = a.id
-WHERE s.duration_seconds > 240;
-```
+6. Beräkna snittlängden på låtarna per album
+7. Vilket album har flest låtar?
+8. Lista alla låtar som är längre än 4 minuter (240 sekunder) — visa även albumtiteln
 
 ---
 
