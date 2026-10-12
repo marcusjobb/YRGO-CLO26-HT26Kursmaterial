@@ -43,12 +43,14 @@ Du får utöka med fler tabeller om du vill — till exempel `tours` eller `coll
 Skriv alla queries i `SQL-inlamning.md` (i inlämningsmallen).
 
 ### G-krav
-
-1. Lista alla album av artisten, sorterade efter utgivningsår
-2. Lista alla låtar på ett specifikt album (du väljer vilket)
-3. Visa hur många låtar varje album innehåller
-4. Hitta den längsta låten i hela databasen
-5. Lista alla låtar i alfabetisk ordning
+1. Klona repot 
+1. Skapa databasen och tabeller
+2. Populera databasen (seeda)
+3. Lista alla album av artisten, sorterade efter utgivningsår
+4. Lista alla låtar på ett specifikt album (du väljer vilket)
+5. Visa hur många låtar varje album innehåller
+6. Hitta den längsta låten i hela databasen
+7. Lista alla låtar i alfabetisk ordning
 
 ### VG-krav (utöver G)
 
