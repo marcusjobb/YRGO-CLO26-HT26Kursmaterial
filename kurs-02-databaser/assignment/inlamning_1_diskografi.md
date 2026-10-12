@@ -37,25 +37,35 @@ Du får utöka med fler tabeller om du vill — till exempel `tours` eller `coll
 
 ---
 
-## Queries du ska skriva
+## Vad du ska göra
 
-Skriv alla queries i `SQL-inlamning.md` (i inlämningsmallen).
+1. Forka mallen och döp forken rätt
+2. Skapa databasen och tabellerna (CREATE TABLE)
+3. Populera databasen med data (INSERT)
+4. Skriv queries 1–5 (G-krav)
+5. Skriv queries 6–8 om du siktar på VG
+6. Fyll i reflektionen
+7. Zippa och lämna in
 
-### G-krav
-1. Klona repot 
-1. Skapa databasen och tabeller
-2. Populera databasen (seeda)
-3. Lista alla album av artisten, sorterade efter utgivningsår
-4. Lista alla låtar på ett specifikt album (du väljer vilket)
-5. Visa hur många låtar varje album innehåller
-6. Hitta den längsta låten i hela databasen
-7. Lista alla låtar i alfabetisk ordning
+---
 
-### VG-krav (utöver G)
+## Queries
+
+Skriv alla queries i `SQL-inlamning.md`.
+
+### G — queries 1–5
+
+1. Lista alla album, sorterade efter utgivningsår
+2. Lista alla låtar på ett specifikt album (du väljer vilket)
+3. Visa hur många låtar varje album innehåller
+4. Hitta den längsta låten i hela databasen
+5. Lista alla låtar i alfabetisk ordning
+
+### VG — queries 6–8
 
 6. Beräkna snittlängden på låtarna per album
 7. Vilket album har flest låtar?
-8. Lista alla låtar som är längre än 4 minuter (240 sekunder) — visa även albumtiteln
+8. Lista alla låtar längre än 4 minuter (240 sekunder) — visa även albumtiteln
 
 ---
 
@@ -67,14 +77,16 @@ Skriv alla queries i `SQL-inlamning.md` (i inlämningsmallen).
 - [ ] Minst 3 album med minst 3 låtar vardera
 - [ ] Normaliserad till 3NF
 - [ ] ER-diagram finns med i inlämningen
-- [ ] Queries 1–5 körs och ger korrekt resultat
-- [ ] Koden är inlämnad som `.sql`-fil
+- [ ] Queries 1–5 skrivna och fungerar
+- [ ] Minst en ny rad tillagd med INSERT
+- [ ] Minst en rad borttagen med DELETE
+- [ ] Minst en rad uppdaterad med UPDATE
 
 ### VG — Väl godkänt
 
 Allt i G, plus:
 
-- [ ] Queries 6–8 körs och ger korrekt resultat
+- [ ] Queries 6–8 skrivna och fungerar
 - [ ] Du kan muntligt förklara varför du valde din tabellstruktur
 - [ ] Du kan förklara vad som händer i en JOIN
 - [ ] Databasen har minst ett many-to-many-förhållande (t.ex. låt ↔ genre, artist ↔ tour)
