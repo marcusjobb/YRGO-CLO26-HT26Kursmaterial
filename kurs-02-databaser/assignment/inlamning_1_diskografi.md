@@ -10,7 +10,6 @@ Du är ett obotligt musiknörd som bestämt dig för att katalogisera en artists
 
 Välj en artist du faktiskt gillar. Det spelar ingen roll vem — men du ska kunna rabbla albumtitlar och låtar utan att googla. Det märks om du bryr dig.
 
-*(Exempeldatan i det här dokumentet använder Taylor Swift. Du behöver inte följa exemplet.)*
 
 ---
 
@@ -88,7 +87,7 @@ Allt i G, plus:
    **[github.com/marcusjobb/clo26-diskografi](https://github.com/marcusjobb/clo26-diskografi)**
 
 2. Döp din fork till: `förnamn-clo26-diskografi`  
-   Exempel: `anna-clo26-diskografi`, `erik-clo26-diskografi`
+   Exempel: `betty-clo26-diskografi`, `erik-clo26-diskografi`
 
 3. Fyll i `SQL-inlamning.md` med din SQL-kod
 
