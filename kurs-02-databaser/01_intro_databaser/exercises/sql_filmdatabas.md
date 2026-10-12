@@ -25,7 +25,12 @@ Skriv en `SELECT`-sats som skriver ut namnen på alla filmer som kom ut på 2000
 
 Skriv en `SELECT`-sats som räknar hur många filmer som är på engelska.
 
-> **Tips:** `COUNT(Language)`
+<details>
+<summary>💡 Tips</summary>
+
+`COUNT(Language)`
+
+</details>
 
 ## Uppgift 4 — Ny Jönssonliga
 

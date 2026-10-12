@@ -71,7 +71,12 @@ Skriv en `SELECT`-sats som listar alla spelares namn och ålder, **sorterat frå
 
 Skriv en `SELECT`-sats som visar alla spelares namn och position som spelar i **Malmö FF**.
 
-> **Tips:** Du behöver en `JOIN` mellan `players` och `clubs`, och ett `WHERE`-villkor på klubbnamnet.
+<details>
+<summary>💡 Tips</summary>
+
+Du behöver en `JOIN` mellan `players` och `clubs`, och ett `WHERE`-villkor på klubbnamnet.
+
+</details>
 
 ---
 
@@ -79,7 +84,12 @@ Skriv en `SELECT`-sats som visar alla spelares namn och position som spelar i **
 
 Skriv en `SELECT`-sats som visar hur många spelare varje klubb har i sin trupp.
 
-> **Tips:** `COUNT` och `GROUP BY`
+<details>
+<summary>💡 Tips</summary>
+
+`COUNT` och `GROUP BY`
+
+</details>
 
 ---
 
@@ -87,7 +97,12 @@ Skriv en `SELECT`-sats som visar hur många spelare varje klubb har i sin trupp.
 
 Skriv en `SELECT`-sats som hittar den yngsta spelaren i hela ligan. Visa namn och ålder.
 
-> **Tips:** `ORDER BY age` + `LIMIT`
+<details>
+<summary>💡 Tips</summary>
+
+`ORDER BY age` + `LIMIT`
+
+</details>
 
 ---
 
@@ -115,7 +130,12 @@ Skriv sedan en `SELECT` som visar alla klubbar för att bekräfta att ändringen
 
 Beräkna medelåldern på spelarna i varje klubb. Visa klubbnamn och medelålder.
 
-> **Tips:** `AVG(age)` + `JOIN` + `GROUP BY`
+<details>
+<summary>💡 Tips</summary>
+
+`AVG(age)` + `JOIN` + `GROUP BY`
+
+</details>
 
 ---
 
@@ -123,7 +143,12 @@ Beräkna medelåldern på spelarna i varje klubb. Visa klubbnamn och medelålder
 
 Vilken klubb har flest spelare? Visa klubbnamn och antal.
 
-> **Tips:** Sortera på antal och ta den första raden.
+<details>
+<summary>💡 Tips</summary>
+
+Sortera på antal och ta den första raden.
+
+</details>
 
 ---
 
