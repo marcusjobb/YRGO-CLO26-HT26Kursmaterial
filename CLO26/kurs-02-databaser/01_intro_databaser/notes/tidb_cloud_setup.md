@@ -82,12 +82,14 @@ Clustret är klart på ~60 sekunder. Status blir **Active**.
 4. Kopiera connection string — den ser ut ungefär så här:
 
 ```
-Host: gateway01.eu-central-1.prod.aws.tidbcloud.com
-Port: 4000
-User: xxxxxxxxxx.root
-Password: (genereras — kopiera den nu, visas bara en gång)
+Host:     gateway01.eu-central-1.prod.aws.tidbcloud.com
+Port:     4000
+User:     <får du av läraren>
+Password: <får du av läraren>
 Database: test
 ```
+
+> Lösenordet visas bara en gång när clustret skapas — spara det direkt. Behöver du ett nytt: **Settings → Password → Reset**.
 
 > **Spara lösenordet direkt** — det visas bara en gång. Behöver du ett nytt kan du återställa det under Settings.
 
@@ -111,10 +113,12 @@ string connectionString =
     "Server=gateway01.eu-central-1.prod.aws.tidbcloud.com;" +
     "Port=4000;" +
     "Database=test;" +
-    "User=xxxxxxxxxx.root;" +
-    "Password=dittlösenord;" +
+    "User=<användarnamn från läraren>;" +
+    "Password=<lösenord från läraren>;" +
     "SslMode=Required;";
 ```
+
+> **Port 4000** — inte 3306 som lokal MySQL. TiDB Cloud använder alltid 4000 för publika endpoints.
 
 > `SslMode=Required` är obligatoriskt mot TiDB Cloud — molndatabaser kräver krypterad anslutning. Lokala Docker-databaser behöver det inte.
 
