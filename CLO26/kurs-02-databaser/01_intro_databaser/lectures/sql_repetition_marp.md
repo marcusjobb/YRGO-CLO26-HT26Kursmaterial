@@ -1,35 +1,9 @@
 ---
 marp: true
-theme: default
+theme: nion_dark
 paginate: true
 title: SQL Repetition — från CREATE till VIEW
 description: Genomgång av SQL från grunden: databaser, tabeller, CRUD och views
-style: |
-  section {
-    font-size: 26px;
-  }
-  section.lead {
-    text-align: center;
-    justify-content: center;
-  }
-  section.lead h1 {
-    font-size: 56px;
-  }
-  table {
-    font-size: 20px;
-  }
-  th {
-    background: #2d3e50;
-    color: #fff;
-  }
-  code {
-    font-size: 0.9em;
-  }
-  blockquote {
-    font-size: 22px;
-    border-left: 6px solid #e67e22;
-    color: #555;
-  }
 ---
 
 <!-- _class: lead -->
@@ -71,6 +45,8 @@ sqlite3 spelbutik.db
 
 > SQLite: ingen `CREATE DATABASE` — filen är databasen. Öppnar du `spelbutik.db` är du inne.
 
+📖 [sqlite_intro.md](https://github.com/marcusjobb/YRGO-CLO26-HT26Kursmaterial/blob/main/kurs-02-databaser/01_intro_databaser/notes/sqlite_intro.md) · [intro_databaser.md](https://github.com/marcusjobb/YRGO-CLO26-HT26Kursmaterial/blob/main/kurs-02-databaser/01_intro_databaser/notes/intro_databaser.md)
+
 ---
 
 ## Skapa tabell — Games
@@ -86,6 +62,8 @@ CREATE TABLE Games (
 ```
 
 Varje rad i `Games` är ett spel. `GameId` identifierar det unikt.
+
+📖 [sqlite_intro.md](https://github.com/marcusjobb/YRGO-CLO26-HT26Kursmaterial/blob/main/kurs-02-databaser/01_intro_databaser/notes/sqlite_intro.md)
 
 ---
 
@@ -164,6 +142,8 @@ VALUES
 
 > `GameId` anger vi inte — databasen sätter det automatiskt.
 
+📖 [sql_intro.md](https://github.com/marcusjobb/YRGO-CLO26-HT26Kursmaterial/blob/main/kurs-02-databaser/01_intro_databaser/notes/sql_intro.md)
+
 ---
 
 ## SELECT — hämta data
@@ -183,6 +163,8 @@ WHERE Genre = 'RPG';
 SELECT Title, Price FROM Games
 WHERE Genre = 'RPG' AND Price < 400;
 ```
+
+📖 [sql_intro.md](https://github.com/marcusjobb/YRGO-CLO26-HT26Kursmaterial/blob/main/kurs-02-databaser/01_intro_databaser/notes/sql_intro.md)
 
 ---
 
@@ -233,6 +215,8 @@ WHERE GameId = 3;
 > **⚠️ Aldrig UPDATE utan WHERE.**
 > `UPDATE Games SET Price = 0` nollställer priset på **alla** spel i butiken.
 
+📖 [sql_intro.md](https://github.com/marcusjobb/YRGO-CLO26-HT26Kursmaterial/blob/main/kurs-02-databaser/01_intro_databaser/notes/sql_intro.md)
+
 ---
 
 ## DELETE — ta bort data
@@ -251,6 +235,8 @@ WHERE Genre = 'Sandbox';
 
 > **⚠️ Aldrig DELETE utan WHERE.**
 > `DELETE FROM Games` raderar hela spelkatalogen. Ingen ångra-knapp.
+
+📖 [sql_intro.md](https://github.com/marcusjobb/YRGO-CLO26-HT26Kursmaterial/blob/main/kurs-02-databaser/01_intro_databaser/notes/sql_intro.md)
 
 ---
 
@@ -304,6 +290,8 @@ Varför använda views?
 - Ger ett "fönster" in i data utan att kopiera den
 
 > Data lagras **inte** i vyn — bara frågan sparas. Kör du mot vyn kör den frågan på nytt.
+
+📖 [sql_intro.md](https://github.com/marcusjobb/YRGO-CLO26-HT26Kursmaterial/blob/main/kurs-02-databaser/01_intro_databaser/notes/sql_intro.md)
 
 ---
 
@@ -378,3 +366,20 @@ Skapa spelbutiksdatabasen från grunden.
 Lägg in spel, lägg in ordrar, bygg en vy.
 
 Penna och whiteboard innan IDE:t. Rita schemat först. 🎮
+
+---
+
+## Allt du behöver — i repot
+
+**Notes — läs efter lektionen (eller under):**
+
+| Ämne | Fil |
+|------|-----|
+| Vad är en databas? | [intro_databaser.md](https://github.com/marcusjobb/YRGO-CLO26-HT26Kursmaterial/blob/main/kurs-02-databaser/01_intro_databaser/notes/intro_databaser.md) |
+| SQL-frågor: SELECT, WHERE, ORDER BY | [sql_intro.md](https://github.com/marcusjobb/YRGO-CLO26-HT26Kursmaterial/blob/main/kurs-02-databaser/01_intro_databaser/notes/sql_intro.md) |
+| SQLite — filbaserad databas | [sqlite_intro.md](https://github.com/marcusjobb/YRGO-CLO26-HT26Kursmaterial/blob/main/kurs-02-databaser/01_intro_databaser/notes/sqlite_intro.md) |
+| SQL från C# med ADO.NET | [ado_net_sqlite.md](https://github.com/marcusjobb/YRGO-CLO26-HT26Kursmaterial/blob/main/kurs-02-databaser/01_intro_databaser/notes/ado_net_sqlite.md) |
+| Transaktioner och ACID | [transaktioner.md](https://github.com/marcusjobb/YRGO-CLO26-HT26Kursmaterial/blob/main/kurs-02-databaser/01_intro_databaser/notes/transaktioner.md) |
+| SQLite, MySQL, PostgreSQL — vilket väljer du? | [databastyper.md](https://github.com/marcusjobb/YRGO-CLO26-HT26Kursmaterial/blob/main/kurs-02-databaser/01_intro_databaser/notes/databastyper.md) |
+
+> Alla notes finns under `kurs-02-databaser/01_intro_databaser/notes/` i GitHub-repot.
