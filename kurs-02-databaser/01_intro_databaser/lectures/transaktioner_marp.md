@@ -1,165 +1,284 @@
----
-marp: true
-theme: nion-dark
-paginate: true
----
-
-# Transaktioner och ACID
-## Allt eller ingenting
-
-<!-- Transaktioner är ett av de viktigaste koncepten i databaser — och ett som dyker upp på jobbet direkt. Bankexemplet är klassiskt av en anledning: det gör det omedelbart konkret vad som händer om man inte har transaktioner. -->
+Här är den omvandlade versionen för **C# och MySQL** i Visual Studio:
 
 ---
 
-# Problemet utan transaktioner
+# 2. Transaktioner och ACID-egenskaper (45 min)
 
-Du ska flytta 100 kr från konto A till konto B:
+🟢
 
-1. Dra 100 kr från konto A ✅
-2. *Strömavbrott* 💥
-3. Lägg till 100 kr på konto B ❌
 
-Pengarna är borta. Ingen av kontona stämmer.
+## Föreläsningsmaterial: Transaktioner och ACID-egenskaper i MySQL med C#
 
-<!-- Skriv detta på tavlan som ett flöde. Fråga klassen: "Vad hade hänt om banken inte hade transaktioner?" Låt dem svara innan du går vidare. -->
+Övergripande frågeställning: Hur säkerställer transaktioner och ACID-egenskaper dataintegritet och konsistens i MySQL-databaser?
 
----
+## 1. Introduktion till transaktioner
 
-# Lösningen: transaktionen
+### Vad är en transaktion?
 
-En transaktion grupperar operationer till **ett block**.
+- En sekvens av databasoperationer som behandlas som en enda enhet.
+- Antingen utförs alla operationer i en transaktion, eller ingen av dem.
+- Säkerställer databasintegritet vid komplexa operationer.
 
-- Antingen lyckas **alla** operationer → **COMMIT**
-- Eller misslyckas någon → **ROLLBACK** av allt
+### Varför behövs transaktioner?
 
-```
-BEGIN
-  dra 100 kr från konto A
-  lägg 100 kr på konto B
-COMMIT  ← eller ROLLBACK om något gick fel
-```
+- Hanterar samtidiga databasåtkomster.
+- Skyddar mot systemfel och strömavbrott.
+- Upprätthåller databasens konsistens.
 
-<!-- Poängtera: databasen garanterar att antingen händer båda sakerna, eller ingen av dem. Det är kärnan. -->
+<div class="mermaid" style="zoom: 1.4;">
 
----
-
-# ACID — fyra garantier
-
-**A** — Atomicity (Atomäritet)  
-**C** — Consistency (Konsistens)  
-**I** — Isolation (Isolering)  
-**D** — Durability (Hållbarhet)
-
-<!-- ACID är ett acronym som beskriver vad en databas lovar dig när du använder transaktioner. SQLite är ACID-kompatibel — det är en av anledningarna till att den är pålitlig trots att den är enkel. -->
-
----
-
-# A — Atomicity
-
-**Allt eller ingenting.**
-
-Om en operation i transaktionen misslyckas rullas hela transaktionen tillbaka — som om ingen av operationerna körts.
-
-```
-BEGIN
-  INSERT INTO order (...)       ✅
-  UPDATE lager SET antal = ...  ❌ — fel!
-ROLLBACK — ordern försvinner också
+```mermaid
+graph TD
+    A[Transaktion] --> B[Operation 1]
+    A --> C[Operation 2]
+    A --> D[Operation 3]
+    B --> E[Lyckas]
+    C --> E
+    D --> E
+    B --> F[Misslyckas]
+    C --> F
+    D --> F
+    E --> G[Commit]
+    F --> H[Rollback]
 ```
 
-<!-- Det är "atom" i fysikbemärkelsen — odelbart. Du kan inte ha halva en transaktion committad. -->
+</div>
 
----
+## 2. ACID-egenskaper
 
-# C — Consistency
+### Atomicity (Atomäritet)
 
-**Databasen förblir i ett giltigt tillstånd.**
+- Allt eller inget: antingen utförs alla operationer eller inga.
+- Säkerställer att databasen förblir konsistent även vid fel.
 
-Transaktionen får inte bryta mot regler i databasen — NOT NULL, UNIQUE, FOREIGN KEY — varken före eller efter.
+### Consistency (Konsistens)
 
-Om en regel bryts: automatisk rollback.
+- Databasen förblir i ett giltigt tillstånd före och efter transaktionen.
+- Alla regler och begränsningar i databasen upprätthålls.
 
-<!-- Consistency skyddar databasens integritet. Det är databasens lagar som aldrig får brytas. -->
+### Isolation (Isolering)
 
----
+- Transaktioner utförs oberoende av varandra.
+- Förhindrar att ofullständiga ändringar är synliga för andra transaktioner.
 
-# I — Isolation
+### Durability (Hållbarhet)
 
-**Transaktioner ser inte varandras halvfärdiga arbete.**
+- När en transaktion är slutförd (committad), är ändringarna permanenta.
+- Ändringar överlever systemkrascher och strömavbrott.
 
-Medan du håller på: andra transaktioner ser gamla värden, inte dina ändringar.
+<div class="mermaid" style="zoom: 1.4;">
 
-Utan isolation: person B läser ett halvfärdigt saldo medan person A håller på att flytta pengar.
-
-<!-- Isolation är det som gör att du kan ha tusentals parallella användare utan att de stör varandra. Det är också det komplicerade att implementera — men databasen hanterar det åt dig. -->
-
----
-
-# D — Durability
-
-**Committade ändringar överlever allt.**
-
-När `COMMIT` är klart: data är skriven till disk. Strömavbrott, krasch, omstart — ändringarna finns kvar.
-
-SQLite skriver till en `.db`-fil. Den filen är din garanti.
-
-<!-- Durability är det som skiljer en databas från ett program med variabler i minnet. En variabel försvinner vid krasch. En committad transaktion gör det inte. -->
-
----
-
-# SQLite och ACID
-
-SQLite är **fullt ACID-kompatibel** — trots att det bara är en fil.
-
-Den använder en journal-fil (`.db-journal` eller WAL) som säkerhetskopierar ändringar innan de skrivs permanent.
-
-```
-shop.db          ← din databas
-shop.db-journal  ← temporär, tas bort efter COMMIT
+```mermaid
+graph TD
+    A[ACID] --> B[Atomicity]
+    A --> C[Consistency]
+    A --> D[Isolation]
+    A --> E[Durability]
+    B --> F[Allt eller inget]
+    C --> G[Valid tillstånd]
+    D --> H[Oberoende transaktioner]
+    E --> I[Permanenta ändringar]
 ```
 
-<!-- Om en .db-journal-fil finns kvar efter en krasch: SQLite läser den vid uppstart och rullar tillbaka transaktionen automatiskt. Det är robust design. -->
+</div>
 
----
+## 3. Hantering av transaktioner i MySQL med C#
 
-# Transaktioner i C# med SQLite
+### BEGIN, COMMIT, och ROLLBACK i C#
+
+- Använd `MySqlTransaction` för att hantera transaktioner i MySQL med C#.
+- `Commit`: Slutför transaktionen och gör ändringarna permanenta.
+- `Rollback`: Ångrar alla ändringar gjorda i transaktionen.
+
+### Exempel på en transaktion i C#
 
 ```csharp
-using var connection = new SqliteConnection("Data Source=shop.db");
-connection.Open();
-
-using var transaction = connection.BeginTransaction();
-try
+using (var connection = new MySqlConnection(connectionString))
 {
-    var cmd1 = connection.CreateCommand();
-    cmd1.CommandText = "UPDATE konton SET saldo = saldo - 100 WHERE id = 1";
-    cmd1.ExecuteNonQuery();
+    connection.Open();
+    var transaction = connection.BeginTransaction();
 
-    var cmd2 = connection.CreateCommand();
-    cmd2.CommandText = "UPDATE konton SET saldo = saldo + 100 WHERE id = 2";
-    cmd2.ExecuteNonQuery();
+    try
+    {
+        var command1 = new MySqlCommand("UPDATE accounts SET balance = balance - 100 WHERE id = 1", connection, transaction);
+        command1.ExecuteNonQuery();
 
-    transaction.Commit();
-}
-catch
-{
-    transaction.Rollback();
+        var command2 = new MySqlCommand("UPDATE accounts SET balance = balance + 100 WHERE id = 2", connection, transaction);
+        command2.ExecuteNonQuery();
+
+        // Commit transaction
+        transaction.Commit();
+    }
+    catch (Exception)
+    {
+        // Rollback transaction on error
+        transaction.Rollback();
+    }
 }
 ```
 
-<!-- Gå igenom koden rad för rad. Fråga: "Var i den här koden händer atomiciteten?" Svaret: i try/catch-blocket — Commit() eller Rollback(). -->
+### Automatisk commit
+
+- MySQL använder som standard autocommit.
+- Varje enskild SQL-sats behandlas som en transaktion.
+- Stäng av autocommit om du vill hantera transaktioner manuellt.
+
+```sql
+SET autocommit = 0;
+```
+
+## 4. Isolationsnivåer
+
+### Vad är isolationsnivåer?
+
+- Definierar hur transaktioner påverkar varandra.
+- Balanserar mellan datakonsistens och prestanda.
+
+### Olika isolationsnivåer i MySQL
+
+1. READ UNCOMMITTED
+2. READ COMMITTED
+3. REPEATABLE READ (standard i MySQL)
+4. SERIALIZABLE
+
+### Exempel på att sätta isolationsnivå
+
+```sql
+SET TRANSACTION ISOLATION LEVEL READ COMMITTED;
+```
+
+## 5. Vanliga problem med samtidighet
+
+### Dirty Reads
+
+- En transaktion läser data som en annan transaktion har ändrat men inte committad.
+
+### Non-Repeatable Reads
+
+- En transaktion läser samma rad två gånger och får olika resultat.
+
+### Phantom Reads
+
+- En transaktion läser en uppsättning rader som uppfyller ett sökvillkor, men en annan transaktion infogar nya rader som uppfyller villkoret.
+
+<div class="mermaid" style="zoom: 1.4;">
+
+```mermaid
+graph TD
+    A[Samtidighetsproblem] --> B[Dirty Reads]
+    A --> C[Non-Repeatable Reads]
+    A --> D[Phantom Reads]
+    B --> E[Läser ocommittad data]
+    C --> F[Inkonsistenta läsningar]
+    D --> G[Nya rader dyker upp]
+```
+
+</div>
 
 ---
 
-# Sammanfattning
+# Övningsuppgifter
 
-| Bokstav | Egenskap | Garanti |
-|---------|----------|---------|
-| A | Atomicity | Allt eller ingenting |
-| C | Consistency | Regler bryts aldrig |
-| I | Isolation | Transaktioner stör inte varandra |
-| D | Durability | Committade data överlever krasch |
+## Uppgift 1: Skapa och använda en transaktion i MySQL med C#
 
-SQLite håller alla fyra löften — i en enda fil.
+1. Skapa en tabell `bank_accounts` med följande struktur:
 
-<!-- Avsluta med att låta dem repetera ACID utan att titta: "Stäng ner, förklara ACID för grannen med ett eget exempel." 2 minuter, sedan en frivillig redovisar. -->
+```sql
+
+**15-minutersregeln:** Fastnar du i mer än 15 minuter — fråga klassen, sen AI, sen mig. I den ordningen.
+CREATE TABLE bank_accounts (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    account_number VARCHAR(20) UNIQUE,
+    balance DECIMAL(10, 2)
+);
+```
+
+2. Infoga några exempel-konton:
+
+```sql
+INSERT INTO bank_accounts (account_number, balance) VALUES
+('1001', 1000),
+('1002', 500);
+```
+
+3. Skriv en transaktion i C# som överför 200 från konto '1001' till konto '1002':
+
+```csharp
+using (var connection = new MySqlConnection(connectionString))
+{
+    connection.Open();
+    var transaction = connection.BeginTransaction();
+
+    try
+    {
+        var command1 = new MySqlCommand("UPDATE bank_accounts SET balance = balance - 200 WHERE account_number = '1001'", connection, transaction);
+        command1.ExecuteNonQuery();
+
+        var command2 = new MySqlCommand("UPDATE bank_accounts SET balance = balance + 200 WHERE account_number = '1002'", connection, transaction);
+        command2.ExecuteNonQuery();
+
+        transaction.Commit();
+    }
+    catch (Exception)
+    {
+        transaction.Rollback();
+    }
+}
+```
+
+4. Verifiera att överföringen har skett korrekt genom att kontrollera båda kontona.
+
+5. Skriv en ny transaktion som försöker överföra mer pengar än vad som finns på kontot. Använd `ROLLBACK` om saldot blir negativt.
+
+## Uppgift 2: Undersöka isolationsnivåer
+
+1. Öppna två separata databasanslutningar (sessioner) i MySQL.
+
+2. I session 1, sätt isolationsnivån till `READ UNCOMMITTED`:
+
+```sql
+SET SESSION TRANSACTION ISOLATION LEVEL READ UNCOMMITTED;
+```
+
+3. I session 1, starta en transaktion och uppdatera ett konto:
+
+```sql
+START TRANSACTION;
+UPDATE bank_accounts SET balance = balance + 1000 WHERE account_number = '1001';
+```
+
+4. I session 2, läs saldot för konto '1001' utan att starta en transaktion.
+
+5. I session 1, gör `ROLLBACK`.
+
+6. Diskutera vad som hände och varför. Hur skulle resultatet skilja sig om isolationsnivån var `READ COMMITTED`?
+
+## Uppgift 3: Hantera samtidighetsproblem
+
+1. Sätt isolationsnivån till `REPEATABLE READ` i båda sessionerna:
+
+```sql
+SET SESSION TRANSACTION ISOLATION LEVEL REPEATABLE READ;
+```
+
+2. I session 1, starta en transaktion och läs saldot för konto '1001'.
+
+3. I session 2, starta en transaktion, uppdatera saldot för konto '1001' och commit.
+
+4. I session 1, läs saldot för konto '1001' igen och försök sedan uppdatera det.
+
+5. Vad händer? Diskutera konceptet "optimistisk låsning" och hur MySQL hanterar samtidiga uppdateringar.
+
+---
+
+## Reflektionsövning
+
+Reflektera över följande frågor:
+
+1. Hur säkerställer transaktioner dataintegritet i en databas?
+2. Vilka utmaningar kan uppstå när flera användare arbetar samtidigt i en databas?
+3. Hur påverkar valet av isolationsnivå prestanda och datakonsistens?
+4. I vilka situationer i verkliga applikationer är transaktioner särskilt viktiga?
+
+---
+Sådärja. Nu har du koll på det här. Nästa steg — testa själv. Det är då det fastnar.

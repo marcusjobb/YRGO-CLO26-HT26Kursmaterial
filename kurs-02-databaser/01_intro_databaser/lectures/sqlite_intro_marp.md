@@ -1,159 +1,127 @@
----
-marp: true
-theme: nion-dark
-paginate: true
----
+# 3. Introduktion till SQLite
 
-# SQLite
-## En hel databas i en enda fil
+🟢
 
-<!-- SQLite är starten för hela databaskursen. Det är enkelt att komma igång, kräver noll konfiguration, och är ändå en riktig, produktionsgodkänd databas. Firefox, Android, iOS — alla använder SQLite. -->
 
----
+## Föreläsningsmaterial (20 minuter)
 
-# Vad är SQLite?
+### 3.1 Vad är SQLite?
 
-En **relationsdatabas** — men utan server.
+SQLite är en lättviktig, filbaserad relationsdatabas som kräver minimal konfiguration och administration. Den är inbäddningsbar, vilket betyder att den kan integreras direkt i applikationer utan behov av en separat serverprocess.
 
-Hela databasen bor i **en fil** på disk: `shop.db`, `users.db`, `whatever.db`.
+#### 3.1.1 Huvudegenskaper
 
-Ingen installation. Ingen serverprocess. Ingen konfiguration.
+1. **Serverless:** Kräver ingen separat serverprocess eller konfiguration.
+2. **Självständig:** Hela databasen lagras i en enda fil.
+3. **Kompakt:** Mycket liten kodbas, perfekt för inbäddade system och mobila enheter.
+4. **Pålitlig:** Fullt ACID-kompatibel, vilket garanterar dataintegritet.
+5. **Plattformsoberoende:** Fungerar på olika operativsystem och enheter.
 
-```
-shop.db  ← det är hela databasen
-```
+### 3.2 Fördelar med SQLite
 
-<!-- Visa filen i filutforskaren eller terminalen. Det är ganska häftigt att hela databasen är en fil som du kan kopiera, flytta, och bifoga till ett mejl. -->
+<div class="mermaid" style="zoom: 1.4;">
 
----
-
-# Varför SQLite?
-
-- **Serverless** — inget att starta, inget att konfigurera
-- **Portabel** — databasen följer med appen
-- **Fullt ACID-kompatibel** — pålitlig även vid krasch
-- **Används överallt** — Firefox, Android, iOS, Raspberry Pi
-
-> SQLite är troligen den mest använda databasen i världen.
-
-<!-- Det brukar överraska folk. De tänker "MySQL är den riktiga", men SQLite körs på miljarder enheter. Det är inte en leksaksdatabas — det är ett genomtänkt verktyg för rätt situationer. -->
-
----
-
-# Rätt verktyg för rätt situation
-
-SQLite passar när:
-- En person (eller app) skriver åt gången
-- Databasen ska följa med koden — inte ligga på en server
-- Du utvecklar och testar — noll friktion att komma igång
-
-SQLite passar **inte** när:
-- Tusentals användare skriver **samtidigt**
-- Databasen ska nås från flera servrar
-
-<!-- Inga verktyg är universella. SQLite-begränsningarna är välkända och enkla att förstå — det är inte en svaghet, det är en designbeslut. -->
-
----
-
-# Skapa en databas
-
-```csharp
-// Filen skapas automatiskt om den inte finns
-var connectionString = "Data Source=shop.db";
-using var connection = new SqliteConnection(connectionString);
-connection.Open();
+```mermaid
+graph TD
+    A[SQLite] --> B[Enkel att använda]
+    A --> C[Kräver ingen konfiguration]
+    A --> D[Portabel - en enda fil]
+    A --> E[Snabb för de flesta operationer]
+    A --> F[Ingen separat serverprocess]
+    A --> G[Öppen källkod]
 ```
 
-Det är allt. Filen `shop.db` skapas i projektmappen.
+</div>
 
-Öppna den med **DB Browser for SQLite** och du ser databasen direkt.
+### 3.3 Användningsområden för SQLite
 
-<!-- Live-demo här: skapa en enkel konsollapp, kör den, visa att shop.db dyker upp. Öppna i DB Browser. Två fönster sida vid sida — kod och databas. -->
+1. **Mobila applikationer:** Lokal datalagring i Android och iOS-appar.
+2. **Inbäddade system:** Datalagring i IoT-enheter och andra inbäddade system.
+3. **Desktopapplikationer:** Lokal datalagring för mindre program.
+4. **Webbläsare:** Firefox använder SQLite för att lagra bokmärken och historik.
+5. **Prototyping:** Snabb utveckling och testning av databasdriven funktionalitet.
+
+### 3.4 Användning av SQLite i Visual Studio och Rider, eller DB Browser för SQLite
+
+För de som använder **Visual Studio**, finns det en inbyggd SQLite-integrering via **System.Data.SQLite**. Detta innebär att du kan skapa och hantera SQLite-databaser direkt från IDE:n utan att behöva några externa verktyg.
+
+- **Installation:**
+
+  - Installera **System.Data.SQLite** via NuGet-paketet i Visual Studio.
+  - Använd pakethanteraren för att lägga till referenser:
+
+  ```bash
+  Install-Package System.Data.SQLite
+  ```
+
+- **Skapa en ny databas i Visual Studio:**
+  1. Skapa en ny fil med ändelsen `.sqlite`.
+  2. Använd verktygslådan i Visual Studio för att lägga till och redigera tabeller.
+  3. Använd Entity Framework om du vill ha ett ORM-lager för att hantera din SQLite-databas.
+
+- **DB Browser för SQLite:**
+  - Ett enkelt verktyg för att skapa, redigera och visa SQLite-databaser.
+  - Ladda ner från [SQLite Browser](https://sqlitebrowser.org/).
+  - Användbart för att snabbt visa och redigera SQLite-databaser utan att behöva öppna Visual Studio.
+  - Skapa en ny databas, lägg till tabeller och data, och kör SQL-frågor direkt från gränssnittet. (Marcus favvo)
+
+För de som använder **Rider** eller andra IDE:er, kan **DataGrip** eller andra externa verktyg som **DB Browser för SQLite** vara användbara.
+
+### 3.5 Installation och användning av DataGrip för SQLite (för Rider-användare)
+
+1. Installera DataGrip via JetBrains Toolbox eller ladda ner från JetBrains webbplats.
+2. Skapa en ny databas genom att välja **New Database** och välja **SQLite**.
+3. Ange databasens namn och välj platsen för att skapa filen.
+4. Lägg till tabeller och data direkt från gränssnittet.
+
+#### 3.5.1 Exempel
+
+Skapa tabellen "Books" med följande kolumner:
+
+```sql
+CREATE TABLE Books (
+    ID INTEGER PRIMARY KEY AUTOINCREMENT,
+    Title TEXT NOT NULL,
+    Author TEXT NOT NULL,
+    PublicationYear INTEGER NOT NULL
+);
+```
 
 ---
 
-# Skapa en tabell
+## Övningsuppgifter
 
-```csharp
-var cmd = connection.CreateCommand();
-cmd.CommandText = """
-    CREATE TABLE IF NOT EXISTS böcker (
-        id      INTEGER PRIMARY KEY AUTOINCREMENT,
-        titel   TEXT    NOT NULL,
-        författare TEXT NOT NULL,
-        år      INTEGER
-    );
-""";
-cmd.ExecuteNonQuery();
-```
+### Övning 1: Skapa en SQLite-databas i Visual Studio (för Visual Studio-användare)
 
-`IF NOT EXISTS` — kör om igen utan att krascha.
+1. Skapa en ny SQLite-fil direkt i Visual Studio.
+2. Använd det inbyggda verktyget för att skapa en tabell "Böcker" med följande kolumner:
 
-<!-- Förklara PRIMARY KEY AUTOINCREMENT — id räknas upp automatiskt, du behöver inte tänka på det. TEXT och INTEGER är SQLites två vanligaste typer. -->
+   - ID (Integer, Primary Key)
+   - Titel (Text)
+   - Författare (Text)
+   - Utgivningsår (Integer)
 
----
+3. Lägg till några böcker genom att använda verktyget eller köra SQL-frågor.
 
-# Lägg till data
+### Övning 2: Använd DataGrip (för Rider-användare)
 
-```csharp
-var insert = connection.CreateCommand();
-insert.CommandText = """
-    INSERT INTO böcker (titel, författare, år)
-    VALUES ('Pragmatic Programmer', 'Hunt & Thomas', 1999);
-""";
-insert.ExecuteNonQuery();
-```
+1. Skapa en SQLite-databas i DataGrip med samma tabellstruktur som ovan.
+2. Lägg till några böcker via gränssnittet eller SQL-fliken.
 
-Kör i DB Browser efteråt — raden finns där.
+### Övning 3: Använd DB Browser för SQLite (för alla)
 
-<!-- Visa i DB Browser att raden dök upp. Fråga: "Vad händer om vi kör INSERT igen?" — ett till exemplar läggs till, med ett nytt id. AUTOINCREMENT garanterar unikhet. -->
+1. Skapa en ny SQLite-databas med tabellen "Kunder" och lägg till några kunder.
+   - Kolumner: 
+     - ID (Integer, Primary Key), 
+     - Namn (Text), 
+     - E-post (Text), 
+     - Telefon (Text).
+2. Utforska verktyget och bekanta dig med dess funktioner för att skapa och redigera databaser.
+
+### Avslutande reflektion (5 minuter)
+
+- Diskutera fördelarna med att använda SQLite direkt i Visual Studio eller med ett externt verktyg som DataGrip.
+- Fundera över när SQLite är lämpligt att använda jämfört med andra databashanterare som MySQL eller PostgreSQL.
 
 ---
-
-# Läs data
-
-```csharp
-var select = connection.CreateCommand();
-select.CommandText = "SELECT * FROM böcker";
-
-using var reader = select.ExecuteReader();
-while (reader.Read())
-{
-    Console.WriteLine($"{reader["id"]}: {reader["titel"]}");
-}
-```
-
-`ExecuteReader()` returnerar rader en i taget — `reader.Read()` stegar framåt.
-
-<!-- ExecuteReader är för SELECT, ExecuteNonQuery är för INSERT/UPDATE/DELETE. Poängtera att Reader måste stängas — därav using. -->
-
----
-
-# DB Browser for SQLite
-
-Ditt visuella fönster in i databasen.
-
-- Se tabeller och data utan att skriva SQL
-- Kör SQL-frågor och se resultat direkt
-- Perfekt för att felsöka — se vad din kod faktiskt gör
-
-```
-Kod → skriver till shop.db → DB Browser visar resultatet
-```
-
-Nedladdning: **sqlitebrowser.org**
-
-<!-- Öppna DB Browser parallellt med VS Code under hela kursen. Det är det snabbaste sättet att förstå vad koden gör mot databasen. -->
-
----
-
-# Sammanfattning
-
-- SQLite = en fil, ingen server, ACID-kompatibel
-- `SqliteConnection` + `CreateCommand()` + `ExecuteNonQuery()` / `ExecuteReader()`
-- DB Browser = visuellt felsökningsverktyg
-- Passar perfekt för den här kursen — och för många riktiga projekt
-
-Nästa steg: **Entity Framework** — C# pratar med databasen på riktigt.
-
-<!-- EF Core genererar SQL åt dig — men du förstår det bara om du vet hur SQL fungerar. Därför kör vi raw SQL först. -->
+Nu har du verktygen. Använd dem, missbruka dem, lär dig av misstagen. Det är vägen.
