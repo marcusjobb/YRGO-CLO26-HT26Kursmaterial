@@ -375,11 +375,11 @@ Penna och whiteboard innan IDE:t. Rita schemat först. 🎮
 
 | Ämne | Fil |
 |------|-----|
+| SQL — ett kommando i taget (hela serien) | [notes/sql/index.md](https://github.com/marcusjobb/YRGO-CLO26-HT26Kursmaterial/blob/main/kurs-02-databaser/01_intro_databaser/notes/sql/index.md) |
+| SELECT, WHERE, ORDER BY | [notes/sql/select.md](https://github.com/marcusjobb/YRGO-CLO26-HT26Kursmaterial/blob/main/kurs-02-databaser/01_intro_databaser/notes/sql/select.md) |
+| INSERT, UPDATE, DELETE | [notes/sql/insert.md](https://github.com/marcusjobb/YRGO-CLO26-HT26Kursmaterial/blob/main/kurs-02-databaser/01_intro_databaser/notes/sql/insert.md) |
 | Vad är en databas? | [intro_databaser.md](https://github.com/marcusjobb/YRGO-CLO26-HT26Kursmaterial/blob/main/kurs-02-databaser/01_intro_databaser/notes/intro_databaser.md) |
-| SQL-frågor: SELECT, WHERE, ORDER BY | [sql_intro.md](https://github.com/marcusjobb/YRGO-CLO26-HT26Kursmaterial/blob/main/kurs-02-databaser/01_intro_databaser/notes/sql_intro.md) |
 | SQLite — filbaserad databas | [sqlite_intro.md](https://github.com/marcusjobb/YRGO-CLO26-HT26Kursmaterial/blob/main/kurs-02-databaser/01_intro_databaser/notes/sqlite_intro.md) |
-| SQL från C# med ADO.NET | [ado_net_sqlite.md](https://github.com/marcusjobb/YRGO-CLO26-HT26Kursmaterial/blob/main/kurs-02-databaser/01_intro_databaser/notes/ado_net_sqlite.md) |
-| Transaktioner och ACID | [transaktioner.md](https://github.com/marcusjobb/YRGO-CLO26-HT26Kursmaterial/blob/main/kurs-02-databaser/01_intro_databaser/notes/transaktioner.md) |
 | SQLite, MySQL, PostgreSQL — vilket väljer du? | [databastyper.md](https://github.com/marcusjobb/YRGO-CLO26-HT26Kursmaterial/blob/main/kurs-02-databaser/01_intro_databaser/notes/databastyper.md) |
 
-> Alla notes finns under `kurs-02-databaser/01_intro_databaser/notes/` i GitHub-repot.
+> Börja med [SQL-serien](https://github.com/marcusjobb/YRGO-CLO26-HT26Kursmaterial/blob/main/kurs-02-databaser/01_intro_databaser/notes/sql/index.md) — varje kommando har en egen sida med diagram och övningar.

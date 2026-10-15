@@ -282,6 +282,26 @@ Ingen adress. Inget pris. Bara pekarna. Allt annat hämtas via JOIN.
 
 ---
 
+## JOIN — peka och hämta
+
+Nu ligger data på tre ställen. `JOIN` sätter ihop bitarna via nycklarna.
+
+```sql
+FROM Order_ o
+INNER JOIN Kund k ON o.KundId = k.KundId
+INNER JOIN Spel s ON o.SpelId = s.SpelId
+```
+
+- `INNER JOIN` tar bara rader som har en match i **båda** tabellerna
+- `ON` säger *hur* de hänger ihop — vilken nyckel som pekar på vad
+- En `JOIN` är också ett **filter**: ordrar utan giltig kund syns inte
+
+> **LEFT JOIN** — tar med **alla** rader från vänster tabell, `NULL` om ingen match:
+> `FROM Kund k LEFT JOIN Order_ o ON o.KundId = k.KundId`
+> — visar kunder som aldrig lagt en order
+
+---
+
 ## Hämta allt med JOIN
 
 ```sql
