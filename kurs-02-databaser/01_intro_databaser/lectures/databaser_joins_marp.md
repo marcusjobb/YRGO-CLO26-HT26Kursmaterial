@@ -51,7 +51,7 @@ Koppla ihop tabeller — och förstå varför det spelar roll
 
 ## Lösningen — JOIN
 
-![bg right:45%](../../01_intro_databaser/notes/sql/diagrams/sql_join.png)
+![bg right:45%](../notes/sql/diagrams/sql_join.png)
 
 **JOIN = limmet som binder tabeller**
 
@@ -68,7 +68,7 @@ INNER JOIN Enrollments AS e
 
 ## INNER JOIN
 
-![bg right:45%](../../01_intro_databaser/notes/sql/diagrams/sql_join.png)
+![bg right:45%](../notes/sql/diagrams/sql_join.png)
 
 **Visa bara rader som matchar i BÅDA tabellerna**
 
@@ -114,13 +114,13 @@ WHERE e.Grade >= 4
 ORDER BY s.LastName;
 ```
 
-**Resultat:** Bara studenter som HÅR kurser och fått betyg ≥ 4
+**Resultat:** Bara studenter som HAR kurser och fått betyg ≥ 4
 
 ---
 
 ## LEFT JOIN
 
-![bg right:45%](../../01_intro_databaser/notes/sql/diagrams/sql_left_join.png)
+![bg right:45%](../notes/sql/diagrams/sql_left_join.png)
 
 **Visa allt från vänster tabell + matchningar från höger**
 
@@ -176,7 +176,7 @@ Erik har inga kurser — men syns ändå! 👆
 
 ## INNER vs LEFT — sida vid sida
 
-![bg right:45%](../../01_intro_databaser/notes/sql/diagrams/sql_join_filter.png)
+![bg right:45%](../notes/sql/diagrams/sql_join_filter.png)
 
 ```sql
 -- INNER JOIN — bara studenter MED kurser
@@ -226,7 +226,7 @@ WHERE e.EnrollmentId IS NULL;
 
 ## JOIN + GROUP BY
 
-![bg right:45%](../../01_intro_databaser/notes/sql/diagrams/sql_join_group_by.png)
+![bg right:45%](../notes/sql/diagrams/sql_join_group_by.png)
 
 ```sql
 SELECT
