@@ -6,3 +6,4 @@ _teacher
 __pycache__/
 .DS_Store
 Thumbs.db
+joins_demo.db
