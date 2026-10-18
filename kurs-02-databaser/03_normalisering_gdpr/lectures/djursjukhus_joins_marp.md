@@ -125,12 +125,28 @@ BesokId | Datum      | Orsak       | DjurId (FK)
 
 ## ER-diagrammet
 
-```
-Agare (1) ──────< Djur (1) ──────< Besok
-  AgarId           DjurId           BesokId
-  Namn             Namn             Datum
-  Alder            Art              Orsak
-  Telefon          AgarId (FK) ─┘  DjurId (FK) ─┘
+```mermaid
+erDiagram
+    AGARE {
+        int AgarId PK
+        string Namn
+        int Alder
+        string Telefon
+    }
+    DJUR {
+        int DjurId PK
+        string Namn
+        string Art
+        int AgarId FK
+    }
+    BESOK {
+        int BesokId PK
+        date Datum
+        string Orsak
+        int DjurId FK
+    }
+    AGARE ||--o{ DJUR : "äger"
+    DJUR ||--o{ BESOK : "har"
 ```
 
 En ägare kan ha **många** djur.
