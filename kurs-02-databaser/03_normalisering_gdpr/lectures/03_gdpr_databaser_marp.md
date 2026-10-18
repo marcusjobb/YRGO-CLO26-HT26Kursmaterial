@@ -306,6 +306,46 @@ Jobba i par, 5 minuter. Inga facit — diskutera och ta ställning.
 
 ---
 
+## Fotoalbum med kompisar online
+
+**Publikt album — alla kan se det:**
+→ Nej, inte utan samtycke från alla i bilderna.
+Bilder är personuppgifter. Hushållsundantaget gäller inte vid offentlig publicering.
+
+**Privat album — bara kompisarna ser det:**
+→ Troligen OK, men du litar på plattformen.
+Plattformens servrar behandlar bilderna — de är inte längre bara "dina".
+Välj en tjänst med GDPR-avtal och tydlig datapolicy.
+
+**Tumregel:** Kan en okänd se det? → Samtycke krävs.
+
+---
+
+## GDPR i praktiken — snabbfrågor
+
+**En kund vill bli anonymiserad en vecka efter köpet. OK?**
+→ Delvis. Kontaktuppgifter: radera. Bokföringsdata: sparas 7 år (lag).
+Kunden kan inte kräva att du bryter mot bokföringslagen.
+
+**Anonymiserad kund vill ha garantireparation. Hur?**
+→ Kunden visar sitt kvitto. Du kan verifiera köpet utan personuppgifter i systemet.
+Anonymisering tar bort deras konto — inte deras rätt till garanti.
+
+**Kund anonymiserades, vill nu lämna tillbaka varan. Möjligt?**
+→ Ja, med kvitto. Men automatiken är borta — det hanteras manuellt.
+Informera kunden *innan* anonymisering att framtida ärenden kräver kvitto.
+
+**En okänd ringer och frågar vad du har sparat om kund X.**
+→ Utlämnas inte. Tredje part utan samtycke = brott mot Art. 5.
+
+**En kund vill ha utdrag över all data ni har om dem. Måste ni ge det?**
+→ Ja. Art. 15 — rätten till tillgång. 30 dagar på sig att leverera.
+Allt: namn, adress, orderhistorik, loggar, cookies — om det kan kopplas till personen.
+
+*Längre förklaringar: `notes/gdpr_praktik_scenarier.md`*
+
+---
+
 ## Sammanfattning
 
 | Krav | Lösning i databasen |
