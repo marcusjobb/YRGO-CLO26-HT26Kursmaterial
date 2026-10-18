@@ -207,6 +207,105 @@ Om du inte kan svara på frågorna — lagra inte uppgiften.
 
 ---
 
+## GDPR i vardagen — hushållsundantaget
+
+GDPR gäller **inte** för rent privat behandling (Art. 2.2c).
+
+```
+✅ Privat adressbok på din telefon
+✅ Anteckningar om familjen i ett privat dokument
+✅ Fotomapp på din dator som bara du ser
+
+❌ Dela datan med ett företag (Ancestry, Google, Apple)
+❌ Publicera på en öppen webbsida
+❌ Använda i en app du gör tillgänglig för andra
+```
+
+**Regeln:** Så fort något lämnar din privata sfär — gäller GDPR.
+
+---
+
+## Databas med familj och kompisar
+
+Får man bygga en databas med familjemedlemmar och vänner?
+
+**Privat (hushållsundantaget):**
+> "Ja, en kontaktlista som bara du ser — det är OK."
+
+**Men tänk på det här:**
+- Lagrar du hälsoinformation? → Känslig uppgift, Art. 9
+- Synkar den till molnet? → Datan lämnar din kontroll
+- Delar du med en app? → Appen behandlar andras uppgifter
+
+**Familjeträd:**
+- Deceased (döda) personer → GDPR skyddar bara **levande** personer
+- Levande släktingar → de kan kräva att du tar bort deras uppgifter
+- Publicerat online → hushållsundantaget gäller **inte** längre
+
+---
+
+## Foton på sociala medier — vad säger lagen?
+
+**IMY (Integritetsskyddsmyndigheten) är tydliga:**
+
+```
+Privat grupp eller direktmeddelande
+→ Troligen OK under hushållsundantaget
+
+Öppet Instagram-konto / Facebook utan sekretess
+→ Offentlig publicering = utanför hushållsundantaget
+→ Du behöver laglig grund för att publicera
+```
+
+De flesta använder **berättigat intresse** — men det måste vägas mot
+den fotograferades rätt till privatliv.
+
+**Vad krävs i praktiken:**
+- Samtycke från de i bilden, **eller**
+- Tydlig berättigad grund som väger tyngre än deras intresse
+
+*Källa: IMY — Personuppgifter på nätet (2023)*
+
+---
+
+## Google Photos — biometrisk data (Art. 9)
+
+När Google Photos grupperar bilder på samma person använder de
+**ansiktsigenkänning** — det är **biometrisk data**.
+
+Biometrisk data = känslig uppgift (Art. 9).
+
+```
+Du godkänner → Google får behandla DITT ansikte
+Men de andra i bilderna?
+→ De har inte samtyckt till att Google behandlar deras ansikten
+```
+
+**I EU/Sverige:**
+- "Ansiktsgrupperingen" är **opt-in** — Google frågar dig
+- IMY har fått klagomål om just detta (pågående utredningar)
+- Att ladda upp ett foto ≠ samtycke för ansiktsigenkänning av alla i bilden
+
+**Principen:** Du kan ge samtycke för din egen data — **inte** andras.
+
+---
+
+## Diskussionsfrågor — vad säger lagen egentligen?
+
+Jobba i par, 5 minuter. Inga facit — diskutera och ta ställning.
+
+1. **Kompisappen:** Du bygger en app som lagrar namn och födelsedag på dina vänner. Du synkar den till din privata iCloud. Gäller GDPR?
+
+2. **Familjeträdet:** Du publicerar ett familjeträd på en öppen webbsida. Din levande farmor finns med. Vad har hon för rättigheter?
+
+3. **Festfotot:** Du lägger upp ett foto från en fest på din öppna Instagram. Tre kompisar syns. Krävs deras samtycke?
+
+4. **Skolprojektet:** Du bygger en app med en databas över kursdeltagare som skoluppgift. Appen läggs upp på GitHub. Vad måste du tänka på?
+
+**Research-fråga:** Sök på IMY:s webbplats — vad är Dataskyddsombudet (DPO) och när krävs ett sådant?
+
+---
+
 ## Sammanfattning
 
 | Krav | Lösning i databasen |
