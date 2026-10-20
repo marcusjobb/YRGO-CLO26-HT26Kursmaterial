@@ -61,14 +61,16 @@ Bra. Nu vet du hur ett databasfel ser ut. `try-catch` fångar det utan att krasc
 
 ---
 
-## Steg 2 — Input-loopen med Console.Clear
+## Steg 2 — Input-loopen med strängkonkatenering (det farliga)
 
 Ta bort första testet (Steg 1b), då vi nu vet att den funkar.
 
 Nu bygger du loopen. För varje namn användaren matar in: INSERT → `Console.Clear()` → visa hela listan.
 
+Här bygger vi SQL:en med strängkonkatenering — precis som man **inte** ska göra.
+
 ```csharp
-// Steg 2: Input-loop
+// Steg 2: Input-loop MED strängkonkatenering — SÅRBAR VERSION
 while (true)
 {
     Console.Write("Ange namn (eller 'q' för att avsluta): ");
@@ -77,11 +79,19 @@ while (true)
     if (input.ToLower() == "q") break;
     if (string.IsNullOrWhiteSpace(input)) continue;
 
-    // INSERT med parameteriserad query
+    // ⚠️ SÅRBAR — input klistras rakt in i SQL-strängen
     var insert = connection.CreateCommand();
-    insert.CommandText = "INSERT INTO Studenter (Namn) VALUES (@namn)";
-    insert.Parameters.AddWithValue("@namn", input);
-    insert.ExecuteNonQuery();
+    insert.CommandText = "INSERT INTO Studenter (Namn) VALUES ('" + input + "')";
+
+    try
+    {
+        insert.ExecuteNonQuery();
+    }
+    catch (SqliteException ex)
+    {
+        Console.WriteLine($"Databasfel: {ex.Message}");
+        continue;
+    }
 
     // Rensa och visa uppdaterad lista
     Console.Clear();
@@ -100,7 +110,7 @@ while (true)
 }
 ```
 
-Mata in tre vanliga namn och se att listan uppdateras för varje.
+Mata in tre vanliga namn — Anna, Bo, Kalle — och se att listan uppdateras för varje.
 
 ---
 
@@ -120,33 +130,14 @@ Fundera en sekund innan du trycker Enter.
 
 ### Vad som faktiskt händer
 
-Listan uppdateras och du ser:
+Listan är tom. Alla studenter borta.
 
 ```
 === Lista på studenter ===
 
-    1. Anna
-    2. Bo
-    3. Kalle
-    4. Robert'); DELETE FROM Studenter; --
 ```
 
-Tabellen lever. Alla namn finns kvar. Bobby Tables är bara ett namn i databasen.
-
-**Varför?** Parametern `@namn` skickas som *data* till databasen — aldrig som SQL-kod. Databasen läser `'); DELETE FROM Studenter; --` som en textsträng, inte som kommandon.
-
----
-
-## Steg 4 — Se vad som hade hänt utan parametrar
-
-Ersätt INSERT-raden med strängkonkatenering (men kör det INTE):
-
-```csharp
-// ⚠️ KÖR INTE DET HÄR — bara för att läsa och förstå
-insert.CommandText = "INSERT INTO Studenter (Namn) VALUES ('" + input + "')";
-```
-
-Med Bobby Tables-inputen hade SQL:en blivit:
+**Varför?** SQL:en som körs mot databasen ser ut så här:
 
 ```sql
 INSERT INTO Studenter (Namn) VALUES ('Robert'); DELETE FROM Studenter; --')
@@ -158,7 +149,40 @@ Det är tre separata SQL-satser i ett enda anrop:
 2. `DELETE FROM Studenter` — raderar hela tabellen
 3. `--')` — kommenterar bort resten
 
-Alla studenter borta. Ingen backup. Trevlig måndag.
+Ingen backup. Trevlig måndag.
+
+---
+
+## Steg 4 — Fixa det med parametriserade queries
+
+Ersätt INSERT-raden med en parametriserad query:
+
+```csharp
+// Steg 4: Samma loop — nu med parametriserad query
+var insert = connection.CreateCommand();
+insert.CommandText = "INSERT INTO Studenter (Namn) VALUES (@namn)";
+insert.Parameters.AddWithValue("@namn", input);
+insert.ExecuteNonQuery();
+```
+
+Skapa en ny databas (byt namn i connection string till `skolan2.db`), kör loopen igen med Anna, Bo, Kalle — och testa sedan Bobby Tables-inputen en gång till.
+
+### Vad händer nu?
+
+Listan uppdateras och du ser:
+
+```
+=== Lista på studenter ===
+
+    1. Anna
+    2. Bo
+    3. Kalle
+    4. Robert'); DELETE FROM Studenter; --
+```
+
+Tabellen lever. Bobby Tables är bara ett namn i databasen.
+
+**Varför?** Parametern `@namn` skickas som *data* — aldrig som SQL-kod. Databasen läser `'); DELETE FROM Studenter; --` som en textsträng och inget annat.
 
 ---
 
