@@ -63,6 +63,8 @@ Bra. Nu vet du hur ett databasfel ser ut. `try-catch` fångar det utan att krasc
 
 ## Steg 2 — Input-loopen med Console.Clear
 
+Ta bort första testet (Steg 1b), då vi nu vet att den funkar.
+
 Nu bygger du loopen. För varje namn användaren matar in: INSERT → `Console.Clear()` → visa hela listan.
 
 ```csharp
