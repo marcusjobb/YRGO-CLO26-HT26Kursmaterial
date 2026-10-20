@@ -17,7 +17,7 @@ Du ska kunna läsa, förstå och skriva grundläggande SQL-frågor.
 
 📖 [SQL-genomgång](https://github.com/marcusjobb/YRGO-CLO26-HT26Kursmaterial/blob/main/kurs-02-databaser/01_intro_databaser/notes/sql_genomgang.md)  
 📖 [SQL från C# — rymdmanga](https://github.com/marcusjobb/YRGO-CLO26-HT26Kursmaterial/blob/main/kurs-02-databaser/01_intro_databaser/notes/sql_fran_csharp_rymdmanga.md)  
-📖 [Aggregering](https://github.com/marcusjobb/YRGO-CLO26-HT26Kursmaterial/blob/main/kurs-02-databaser/04_sql_avancerat/notes/sql_aggregation.md)
+📖 [Aggregering](https://github.com/marcusjobb/YRGO-CLO26-HT26Kursmaterial/blob/main/kurs-02-databaser/01_intro_databaser/notes/sql/aggregat.md)
 
 **Ändra data**
 - `INSERT INTO`, `UPDATE ... SET ... WHERE`, `DELETE FROM ... WHERE`
@@ -27,8 +27,8 @@ Du ska kunna läsa, förstå och skriva grundläggande SQL-frågor.
 - `ALTER TABLE` (lägga till/ändra kolumner)
 - `DROP TABLE`, `DROP DATABASE`
 
-📖 [CRUD-operationer](https://github.com/marcusjobb/YRGO-CLO26-HT26Kursmaterial/blob/main/kurs-02-databaser/02_sql_hardcore/notes/crud_operations.md)  
-📖 [SQL — tabeller](https://github.com/marcusjobb/YRGO-CLO26-HT26Kursmaterial/blob/main/kurs-02-databaser/02_sql_hardcore/notes/sql_tabeller.md)
+📖 [CRUD-kodexempel](https://github.com/marcusjobb/YRGO-CLO26-HT26Kursmaterial/blob/main/kurs-02-databaser/01_intro_databaser/notes/crud_kodexempel.md)  
+📖 [SQLite-grunder](https://github.com/marcusjobb/YRGO-CLO26-HT26Kursmaterial/blob/main/kurs-02-databaser/01_intro_databaser/notes/sqlite_grund.md)
 
 ---
 
@@ -49,7 +49,8 @@ Du ska kunna förklara vad de tre normalformerna innebär och identifiera proble
 
 Du ska kunna förklara vad SQL injection är, visa ett exempel på hur det kan utnyttjas, och förklara hur parametriserade frågor skyddar mot det.
 
-📖 [SQL-säkerhet](https://github.com/marcusjobb/YRGO-CLO26-HT26Kursmaterial/blob/main/kurs-02-databaser/07_sakerhet_och_backup/notes/sql_security.md)
+📖 [Övning — Bobby Tables (SQL injection)](https://github.com/marcusjobb/YRGO-CLO26-HT26Kursmaterial/blob/main/kurs-02-databaser/04_sql_avancerat/exercises/ovning_07_bobby_tables.md)  
+📖 [Övning — säkerhet i praktiken](https://github.com/marcusjobb/YRGO-CLO26-HT26Kursmaterial/blob/main/kurs-02-databaser/04_sql_avancerat/exercises/ovning_08_bt_security.md)
 
 ---
 
