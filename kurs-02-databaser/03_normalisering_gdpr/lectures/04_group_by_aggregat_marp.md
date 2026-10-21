@@ -162,11 +162,13 @@ Det är därför `WHERE` inte kan se aggregat — de finns inte än när `WHERE`
 
 ## Prova själv — djursjukhuset
 
-Kör mot `djursjukhus_seed.sql`:
+Kör mot `djursjukhus_seed_tidb.sql` i TiDB Cloud SQL Editor:
 
 1. Hur många besök av varje orsak finns det?
 2. Vilken ägare har flest besök totalt (via sina djur)?
 3. Visa bara de orsaker som förekommit mer än en gång
-4. Vilken månad hade flest besök? (`strftime('%m', Datum)`)
+4. Vilken månad hade flest besök? (`MONTH(Datum)`)
 
-*Onsdagens lektion fördjupar aggregat med subqueries och fensterfunktioner.*
+> TiDB är MySQL-kompatibelt — `strftime()` är SQLite-syntax och funkar inte här.
+
+*Onsdagens lektion fördjupar aggregat med handledning och hero-databasen.*
