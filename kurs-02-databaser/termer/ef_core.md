@@ -3,6 +3,41 @@
 ## Entity Framework Core (EF Core)
 Microsofts moderna, cross-platform ORM för .NET. Låter dig arbeta med databaser via C#-objekt istället för SQL. Open source (MIT).
 
+## Hur entiteter blir tabeller
+
+```mermaid
+erDiagram
+    Customer ||--o{ Order : "lägger"
+    Order ||--|{ OrderItem : "innehåller"
+    Product ||--o{ OrderItem : "ingår i"
+
+    Customer {
+        int Id PK
+        string Name
+        string Email
+    }
+    Order {
+        int Id PK
+        int CustomerId FK
+        date OrderDate
+    }
+    Product {
+        int Id PK
+        string Name
+        decimal Price
+    }
+    OrderItem {
+        int Id PK
+        int OrderId FK
+        int ProductId FK
+        int Quantity
+    }
+```
+
+Varje C#-klass = en tabell. Navigation properties = relationerna i diagrammet. FK-kolumnerna skapas automatiskt av EF Core via konvention.
+
+---
+
 ## Code First
 Strategi där du först skriver C#-klasser (entities) och sedan genererar databasen från dem. Mest kontroll, bäst för nya projekt.
 

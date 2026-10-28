@@ -132,13 +132,31 @@ id | kund_id | datum
 
 **Kardinalitet** beskriver hur många instanser av en entitet som kan kopplas till en annan.
 
+```mermaid
+erDiagram
+    Kund ||--o{ Order : "lägger"
+    Order ||--|{ OrderRad : "innehåller"
+    Produkt ||--o{ OrderRad : "ingår i"
+    Studerande }o--o{ Kurs : "läser"
+
+    Kund { int id PK }
+    Order { int id PK  int kund_id FK }
+    Produkt { int id PK }
+    OrderRad { int id PK  int order_id FK  int produkt_id FK }
+    Studerande { int id PK }
+    Kurs { int id PK }
+```
+
+| Symbol | Läses som | Exempel |
+|--------|-----------|---------|
+| `\|\|--\|\|` | En-till-en | Person har ett pass |
+| `\|\|--o{` | En-till-många | Kund lägger noll eller fler orders |
+| `\|\|--\|{` | En-till-många (obligatorisk) | Order har minst en orderrad |
+| `}o--o{` | Många-till-många | Studerande läser kurser |
+
 ### En-till-många (1:N) — vanligast
 
 En kund kan göra många ordrar. En order tillhör exakt en kund.
-
-```
-kunder 1 ──── N ordrar
-```
 
 ```sql
 -- kund_id i ordrar gör relationen 1:N
@@ -147,10 +165,6 @@ kunder 1 ──── N ordrar
 ### Många-till-många (M:N)
 
 En studerande kan ha många kurser. En kurs kan ha många studerande.
-
-```
-studerande M ──── N kurser
-```
 
 Löses med en **kopplingstabell**:
 
@@ -165,10 +179,6 @@ CREATE TABLE studerande_kurser (
 ### En-till-en (1:1) — ovanligast
 
 En person har ett pass. Ett pass tillhör en person.
-
-```
-person 1 ──── 1 pass
-```
 
 ---
 

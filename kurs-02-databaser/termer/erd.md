@@ -21,6 +21,41 @@ Anger antalet instanser i en relation:
 - **1:N (En-till-många)** — En post i Tabell A matchar många i Tabell B (vanligast)
 - **N:M (Många-till-många)** — Många poster i Tabell A matchar många i Tabell B (kräver kopplingstabell)
 
+### Exempel — webshop
+
+```mermaid
+erDiagram
+    Customer ||--o{ Order : "lägger"
+    Order ||--|{ OrderItem : "innehåller"
+    Product ||--o{ OrderItem : "ingår i"
+
+    Customer {
+        int Id PK
+        string Name
+        string Email
+    }
+    Order {
+        int Id PK
+        int CustomerId FK
+        date OrderDate
+    }
+    Product {
+        int Id PK
+        string Name
+        decimal Price
+    }
+    OrderItem {
+        int Id PK
+        int OrderId FK
+        int ProductId FK
+        int Quantity
+    }
+```
+
+`Customer ||--o{` = en kund kan ha noll eller fler orders (1:N).
+`Order ||--|{` = en order måste ha minst en orderrad (1:N, obligatorisk).
+`OrderItem` = kopplingstabellen som löser N:M mellan Order och Product.
+
 ## Kopplingstabell (Junction Table)
 En extra tabell som används för att lösa N:M-relationer. Innehåller FK:ar till båda originaltabellerna.
 
