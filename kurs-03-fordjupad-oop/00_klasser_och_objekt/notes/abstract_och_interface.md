@@ -1,6 +1,8 @@
 # Abstract, interface och att filtrera typer
 
-Läsversion av tredje passet. Förra delen: `arv.md`. Termer finns i `termer/oop_repetition.md`.
+Läsversion av tredje passet. Förra delen: `arv.md`. Övning på samma sak med ett nytt tema: `exercises/ovning_4_garaget.md`.
+
+Termer finns i `termer/oop_repetition.md`.
 
 ## Abstract
 
@@ -67,6 +69,18 @@ class Wizard : Character, IHealer
 | Hur många? | En enda | Hur många som helst |
 | Exempel | `Character` | `IHealer` |
 
+## Vad, när och hur
+
+| | `abstract class` | `interface` |
+|---|---|---|
+| **Vad** | En ritning som aldrig blir ett objekt | Ett löfte om vad en klass kan göra |
+| **När** | Alla barn är samma sorts sak och delar fält och kod | En förmåga som olika sorters saker kan dela |
+| **Hur** | `abstract class Character` + `abstract string Attack();` | `interface IHealer` + `void Heal(Character target);` |
+| **Barnet skriver** | `: Character` och `override` | `: Character, IHealer` (basklassen först) |
+| **Prova med meningen** | "Wizard **är en sorts** Character" | "Wizard **kan** läka" |
+
+Är du osäker: ställ båda meningarna. Den som låter naturlig visar vägen.
+
 ## Filtrera typer
 
 Både en klass och ett interface kan användas för att plocka ut det som passar ur en lista.
@@ -101,5 +115,7 @@ foreach (IHealer healer in scene.OfType<IHealer>())
 3. `abstract` hindrar att man skapar något som inte finns på riktigt.
 4. `interface` beskriver en förmåga som flera olika klasser kan dela.
 5. `OfType<T>()` filtrerar efter typ.
+
+Övning på samma sak med ett nytt tema: `exercises/ovning_4_garaget.md`.
 
 Termer finns i `termer/oop_repetition.md`.
