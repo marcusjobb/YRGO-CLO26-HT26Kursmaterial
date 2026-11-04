@@ -86,7 +86,15 @@ Varje rad i JSON är ett **key-value-par** — en nyckel och ett värde:
 - Tal ska inte ha citattecken: `100`
 - Sant/falskt ska inte ha citattecken: `true`, `false`
 
-Kolon `:` separerar nyckeln från värdet. Komma `,` separerar paren från varandra. Klamrarna `{ }` håller ihop ett objekt.
+### JSON-symbolerna
+
+| Symbol | Vad den betyder |
+|--------|-----------------|
+| `{ }` | Ett **objekt** — som en klass i C#. Allt innanför klamrarna är ett och samma objekt. |
+| `[ ]` | En **array/lista** — som `List<T>` i C#. Håller ihop flera objekt. |
+| `"text"` | **Text** — alla texter i JSON ska ha citattecken, både nycklar och textvärden. |
+| `:` | **Värdet definieras** — separerar nyckeln från värdet. Läs det som "heter". `"Name": "Mira"` = Name heter Mira. |
+| `,` | **Nästa** — separerar key-value-par från varandra, och objekt i en lista från varandra. |
 
 ### En lista i JSON
 
