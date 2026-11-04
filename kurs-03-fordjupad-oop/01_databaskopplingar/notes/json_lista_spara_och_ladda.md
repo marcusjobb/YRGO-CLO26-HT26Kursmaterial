@@ -5,6 +5,16 @@ Termerna `serialize` och `deserialize` dyker upp igen när vi arbetar med XML �
 
 ---
 
+## Problemet vi löser
+
+När programmet stängs töms minnet. Mira, Tobbe och Zelda är borta — som om de aldrig funnits.
+
+Det enda sättet att spara dem är att skriva ner värdena någonstans utanför programmet. En textfil duger bra. Men hur gör man ett C#-objekt till text, och sedan tillbaka till ett C#-objekt igen?
+
+Det är precis vad det här handlar om.
+
+---
+
 ## Vad vi ska åstadkomma
 
 Vi har tre hjältar i minnet. Vi vill:
@@ -29,13 +39,19 @@ var heroes = new List<Hero>()
 };
 ```
 
-Inget nytt här — vi skapar objekt och lägger dem i en lista precis som vanligt.
+Inget nytt här. Vi skapar tre hjältar precis som vanligt och samlar dem i en lista.
+
+Anledningen till att vi använder en lista och inte tre separata variabler är att listan är *ett enda objekt*. Det är enklare att spara ett sak än att hålla reda på tre separata. Om vi hade hundra hjältar hade vi inte velat ha hundra separata variabler heller.
 
 ---
 
 ## Vad JSON egentligen är
 
-JSON är bara text. En hjälte ser ut så här:
+Innan vi fortsätter med koden — vad är egentligen JSON?
+
+JSON är bara text. Vanlig text, som du kan öppna i Notepad. Det speciella är att texten är formaterad på ett bestämt sätt som datorer förstår. Tanken är att ta ett C#-objekt och skriva ner alla dess värden i den texten.
+
+En hjälte ser ut så här i JSON:
 
 ```json
 {
@@ -45,7 +61,17 @@ JSON är bara text. En hjälte ser ut så här:
 }
 ```
 
-Varje rad är ett **key-value-par** — en nyckel och ett värde:
+Jämför med C#:
+
+```csharp
+var mira = new Hero { Name = "Mira", Health = 100, Level = 3 };
+```
+
+Värdena är exakt desamma. Det enda som skiljer sig är *formatet* — hur texten är skriven.
+
+### Key och value
+
+Varje rad i JSON är ett **key-value-par** — en nyckel och ett värde:
 
 | Key (nyckel) | Value (värde) |
 |---|---|
@@ -53,10 +79,18 @@ Varje rad är ett **key-value-par** — en nyckel och ett värde:
 | `"Health"` | `100` |
 | `"Level"` | `3` |
 
-**Key** = namnet på egenskapen (alltid inom citattecken i JSON).  
-**Value** = värdet. Text får citattecken. Tal och `true`/`false` får inga citattecken.
+**Key** är namnet på egenskapen. I JSON skrivs den alltid inom citattecken — `"Name"`, `"Health"`, `"Level"`. Det är samma namn som property-namnet i din C#-klass.
 
-En lista av hjältar ser ut så här — hakparenteser `[ ]` betyder "lista":
+**Value** är värdet. Här gäller en enkel regel:
+- Text ska ha citattecken: `"Mira"`
+- Tal ska inte ha citattecken: `100`
+- Sant/falskt ska inte ha citattecken: `true`, `false`
+
+Kolon `:` separerar nyckeln från värdet. Komma `,` separerar paren från varandra. Klamrarna `{ }` håller ihop ett objekt.
+
+### En lista i JSON
+
+En lista av hjältar ser ut så här — hakparenteser `[ ]` betyder "detta är en lista":
 
 ```json
 [
@@ -78,6 +112,10 @@ En lista av hjältar ser ut så här — hakparenteser `[ ]` betyder "lista":
 ]
 ```
 
+Ytterst: `[ ]` — listan.
+Inuti varje `{ }` — ett objekt, en hjälte.
+Varje objekt separeras med komma.
+
 ---
 
 ## Steg 2 — Välj hur JSON-texten ska se ut
@@ -89,10 +127,17 @@ var options = new JsonSerializerOptions
 };
 ```
 
-`WriteIndented = true` gör att JSON-texten formateras med radbrytningar och indrag, som ovan.
-Utan den får du allt på en enda rad — korrekt men omöjlig att läsa.
+`JsonSerializerOptions` är en klass vars enda syfte är att hålla inställningar för hur JSON-texten ska formateras. Du skapar ett objekt av den och sätter de inställningar du vill ha.
 
-Du behöver inte ha med `options` om du inte bryr dig om hur texten ser ut.
+`WriteIndented = true` betyder "skriv med radbrytningar och indrag". Utan den ser JSON-texten ut så här:
+
+```json
+[{"Name":"Mira","Health":100,"Level":3},{"Name":"Tobbe","Health":80,"Level":2},{"Name":"Zelda","Health":70,"Level":5}]
+```
+
+Tekniskt korrekt, men omöjlig att läsa. Med `WriteIndented = true` får du den snygga versionen med en rad per key-value-par.
+
+Du behöver inte ha med `options` alls om du inte bryr dig om hur texten ser ut. Utan options-parametern fungerar koden, men JSON-texten blir en enda lång rad.
 
 ---
 
@@ -102,11 +147,15 @@ Du behöver inte ha med `options` om du inte bryr dig om hur texten ser ut.
 string json = JsonSerializer.Serialize(heroes, options);
 ```
 
-**Serialize** betyder "packa ihop". Vi tar listan med C#-objekt och packar ihop den till en vanlig textsträng.
+**Serialize** är engelska och kan översättas ungefär som "packa ihop". Vi tar listan med C#-objekt och packar ihop dem till en vanlig textsträng.
 
-Resultatet i `json` är precis det du ser i JSON-exemplet ovan — en lång textsträng.
+Tänk på det som att du ska skicka ett möbel-kit med posten. Stolen kan inte skickas som den är — du demonterar den, lägger bitarna platt i en kartong och skickar kartongen. JSON-texten är kartongen. C#-objekten är möbeln.
 
-Samma ord används för XML, YAML och andra format: serialize = packa ihop data till ett format som kan sparas eller skickas.
+`JsonSerializer.Serialize` är metoden som demonterar. Den går igenom varje property i varje objekt i listan och skriver ner värdena i JSON-format.
+
+Resultatet lagras i variabeln `json`, som är en vanlig `string`. Du kan skriva ut den, skicka den till en server, spara den i en fil — vad du vill.
+
+**Samma ord används för XML, YAML och andra format.** Serialize = packa ihop data till ett format som kan sparas eller skickas. Det spelar ingen roll vilket format.
 
 ---
 
@@ -119,8 +168,17 @@ Console.WriteLine($"Sparade {heroes.Count} hjältar i hjaltar.json");
 Console.WriteLine(json);
 ```
 
-`File.WriteAllText` tar ett filnamn och en sträng, och skriver strängen till filen.
-Filen hamnar bredvid programmet (`bin/Debug/net10.0/`). Du kan öppna den i Notepad och se exakt vad som sparades.
+`File.WriteAllText` tar två saker: ett filnamn och en textsträng. Den skapar filen om den inte finns, eller skriver över den om den redan finns, och stoppar in textsträngen.
+
+Filnamnet `"hjaltar.json"` är en relativ sökväg. Det betyder att filen hamnar bredvid det körande programmet, i mappen `bin/Debug/net10.0/`. Du kan navigera dit i Utforskaren och öppna filen i Notepad för att se att det faktiskt är JSON-texten som ligger där.
+
+Vill du se hela sökvägen kan du lägga till:
+
+```csharp
+Console.WriteLine(Path.GetFullPath("hjaltar.json"));
+```
+
+Viktigt att förstå: det är bara texten i `json`-strängen som sparas. `File.WriteAllText` vet ingenting om C#-klasser eller JSON — den tar en sträng och stoppar in den i en fil. Det är serialize-steget ovan som konverterade objekten till text.
 
 ---
 
@@ -131,25 +189,51 @@ string text = File.ReadAllText("hjaltar.json");
 List<Hero> loadedHeroes = JsonSerializer.Deserialize<List<Hero>>(text)!;
 ```
 
-Två saker händer:
+Här sker två saker i rad.
 
-1. `File.ReadAllText` läser hela filen och returnerar innehållet som en sträng — precis det `json` innehöll i steg 4.
-2. `JsonSerializer.Deserialize<List<Hero>>(text)` tar textsträngen och skapar C#-objekt av den.
+### Läs texten från filen
 
-**Deserialize** betyder "packa upp". Vi tar texten och gör om den till vanliga C#-objekt vi kan använda.
+```csharp
+string text = File.ReadAllText("hjaltar.json");
+```
 
-`<List<Hero>>` är typen vi förväntar oss. JSON-läsaren behöver veta *vad* den ska skapa.
+`File.ReadAllText` läser hela innehållet i filen och returnerar det som en sträng. Variabeln `text` innehåller nu exakt samma text som vi sparade i steg 4 — JSON-texten med alla hjältar.
 
-Utropstecknet `!` i slutet säger till C# "jag lovar att detta inte är null".
+### Gör om texten till C#-objekt
+
+```csharp
+List<Hero> loadedHeroes = JsonSerializer.Deserialize<List<Hero>>(text)!;
+```
+
+**Deserialize** är motsatsen till serialize — "packa upp". Vi tar textsträngen och gör om den till vanliga C#-objekt vi kan använda.
+
+Analogin med möbelkitet: det är som att öppna kartongen, läsa monteringsanvisningen och sätta ihop stolen igen. Samma stol, men den kom som text.
+
+`<List<Hero>>` är typen vi förväntar oss. JSON-läsaren behöver veta *vad* den ska skapa. Den kan inte gissa att `"Name"`, `"Health"` och `"Level"` tillhör klassen `Hero` — vi måste säga det. Hade vi haft en lista med `Product` istället hade vi skrivit `<List<Product>>`.
+
+Utropstecknet `!` i slutet är vår utfästelse till C#: "Jag lovar att det här inte är null". `Deserialize` kan teoretiskt returnera `null` om texten är tom eller ogiltig. Med `!` säger vi att vi är säkra på att det fungerade. (I verklig kod kontrollerar man det ordentligt, men för övning duger `!`.)
 
 ---
 
 ## Hela flödet i ett diagram
 
 ```
-C#-lista           →  Serialize  →  JSON-text  →  WriteAllText  →  fil på disk
-fil på disk  →  ReadAllText  →  JSON-text  →  Deserialize  →  C#-lista
+SPARA
+  C#-lista
+      ↓  Serialize
+  JSON-text
+      ↓  File.WriteAllText
+  fil på disk
+
+LADDA
+  fil på disk
+      ↓  File.ReadAllText
+  JSON-text
+      ↓  Deserialize
+  C#-lista
 ```
+
+Serialize och deserialize är de enda stegen som faktiskt *förstår* JSON. `WriteAllText` och `ReadAllText` vet bara om text och filer — de bryr sig inte om vad texten innehåller.
 
 ---
 
@@ -163,7 +247,17 @@ serializer.Serialize(stream, heroes);     // packa ihop
 serializer.Deserialize(stream);           // packa upp
 ```
 
-Namnen är identiska. Tanken är densamma. Bara formatet på texten skiljer sig åt.
+Namnen är identiska. Tanken är densamma — ta C#-objekt och gör om dem till text, och tillbaka. Det som skiljer sig är hur texten ser ut. JSON använder `{ }` och `[ ]`. XML använder taggar som HTML:
+
+```xml
+<Hero>
+  <Name>Mira</Name>
+  <Health>100</Health>
+  <Level>3</Level>
+</Hero>
+```
+
+Samma data, annat format. Samma termer.
 
 ---
 
@@ -216,7 +310,16 @@ Sparade 3 hjältar i hjaltar.json
     "Health": 100,
     "Level": 3
   },
-  ...
+  {
+    "Name": "Tobbe",
+    "Health": 80,
+    "Level": 2
+  },
+  {
+    "Name": "Zelda",
+    "Health": 70,
+    "Level": 5
+  }
 ]
 Laddade 3 hjältar:
 - Mira, nivå 3
