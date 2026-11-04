@@ -2,16 +2,15 @@
 
 **Lektion 4 nov 2026** · Kurs-03 Fördjupad OOP — Databaskopplingar
 
-Vi tog det vi lärde oss om klasser och arv och använde det för att bygga ett riktigt
-lagringsmönster. Samma kod, två helt olika databaser. Det är poängen med det vi kodade idag.
-
-Koden finns på GitHub: [CatJson](https://github.com/marcusjobb/CatJson)
+Vi tog det vi lärde oss om klasser och arv — och använde det för att bygga ett riktigt
+lagringsmönster. Samma applikation, två helt olika databaser, noll ändringar i resten av koden.
+Det är repository-mönstrets poäng.
 
 ---
 
-## Modellen: vad är en katt?
+## Modellen — vad är en katt?
 
-Innan vi lagrar något behöver vi veta *vad* vi lagrar. Vi börjar med en enkel dataklass.
+Först behöver vi definiera vad vi lagrar.
 
 ```csharp
 public class Cat
@@ -22,44 +21,44 @@ public class Cat
 }
 ```
 
-Det här är en POCO — Plain Old C# Object. En enkel klass utan logik, bara data.
-Den har tre properties med `{ get; set; }`.
+### Properties — varför `{ get; set; }` och inte bara ett vanligt fält?
 
-**Varför `{ get; set; }` och inte bara `public string Name;`?**
+Du kanske undrar varför vi inte skriver det enklare:
 
-`public string Name;` är ett publikt fält — vem som helst kan läsa och skriva till det,
-och du kan aldrig lägga till kontroll i efterhand utan att bryta alla som använder klassen.
+```csharp
+public string Name; // public fält — undvik detta
+```
 
-`public string Name { get; set; }` är en property. Det ser likadant ut utifrån, men ger dig:
-- Möjlighet att lägga till logik (validering, beräkning) i get eller set utan att ändra
-  anropskoden
-- `{ get; private set; }` = alla kan läsa, bara klassen själv kan skriva
-- Kompatibilitet med JSON-serialisering, databas-ramverk och UI-bindning — de flesta
-  ramverk kräver properties
+Skillnaden: ett public fält exponerar allt direkt. Vem som helst kan läsa och skriva fritt,
+och du kan inte lägga till logik senare utan att ändra alla som använder klassen.
 
-Tumregel: exponera aldrig data som publika fält. Använd alltid properties.
+Med `{ get; set; }` (en property) kontrollerar du tillgången:
 
----
+```csharp
+public string Name { get; set; }         // alla kan läsa och skriva
+public string Name { get; private set; } // alla kan läsa, bara klassen kan skriva
+public string Name { get; }              // bara konstruktorn kan sätta värdet
+```
 
-## Problemet: hur byter vi databas utan att skriva om allt?
+Praktiskt exempel: om du senare vill logga varje gång `Name` sätts, kan du göra det
+i settern utan att ändra ett enda anrop utanför klassen. Med ett public fält går det inte.
 
-Om vi skriver all fillogik direkt i `Program.cs`, vad händer när vi vill byta till SQLite?
-Vi måste leta igenom hela `Program.cs` och skriva om varje del som rör filer.
-
-Det bryter mot **SRP — Single Responsibility Principle**:
-> En klass ska ha ett enda ansvar. Ett enda skäl att förändras.
-
-`Program.cs` som hanterar UI *och* filer = två skäl att ändras = ett problem.
-
-Och det bryter mot **SoC — Separation of Concerns**:
-> Olika "bekymmer" — vad användaren ser, hur data lagras — ska hanteras av olika delar.
-
-Lösningen: en abstrakt basklass som definierar vad ett repository ska kunna göra,
-utan att bestämma hur det görs.
+Ramverk som `JsonSerializer` och Entity Framework kräver också properties — de kan inte
+jobba med public fält.
 
 ---
 
-## Basklassen: kontraktet
+## Problemet: vad händer när vi vill byta databas?
+
+Om vi skriver all fillogik direkt i `Program.cs` — hur byter vi till SQLite sen?
+Vi måste skriva om hela programmet. Det är dyrt och riskabelt.
+
+Lösning: en abstrakt basklass som definierar *vad* ett repository ska kunna göra,
+utan att bestämma *hur* det görs. Det kallas **Repository-mönstret**.
+
+---
+
+## Basklassen — kontraktet
 
 ```csharp
 public abstract class CatRepositoryBase
@@ -72,20 +71,52 @@ public abstract class CatRepositoryBase
 }
 ```
 
-Det här är bara ett löfte. `abstract` på metoderna betyder: ingen kropp här — den som
-ärver basklassen *måste* implementera dessa metoder, annars kompilerar inte koden.
+Det här är bara ett löfte: "den som ärver mig MÅSTE implementera dessa metoder."
+Basklassen vet ingenting om filer eller databaser — det är helt medvetet.
 
-`Cat?` på `GetCat` — frågetecknet berättar att metoden kan returnera null.
+### Vad betyder `Cat?` med frågetecknet?
 
-**Om `?` och null**
+`Cat?` betyder att metoden kan returnera antingen en `Cat` eller `null` — det vill säga inget alls.
+Det händer till exempel om vi söker efter en katt som inte finns.
 
-Null är frånvaron av ett värde. Den vanligaste orsaken till kraschar i C# är att försöka
-använda ett objekt som är null — `NullReferenceException`.
+Utan `?` lovar du att du alltid returnerar ett objekt. Lögner kraschar program.
+Med `?` tvingar C# dig att kolla innan du använder returvärdet:
 
-`Cat?` = "resultatet kan vara null — kolla innan du använder det."
+```csharp
+Cat? hittadKatt = repository.GetCat("Pelle");
+if (hittadKatt is not null)
+{
+    Console.WriteLine(hittadKatt.Name); // säkert — vi vet att den inte är null
+}
+```
 
-Det är kompilatorns sätt att tvinga dig att tänka på felfallet. Om du skriver `Cat` (utan `?`)
-lovar du att du *aldrig* returnerar null.
+**NullReferenceException** är den vanligaste kraschen i C#. `?` är ditt skyddsnät.
+
+### När vet man att det är dags att skapa en basklass?
+
+Code smell: du kopierar fält eller metoder mellan klasser.
+Om `HeroStorage` och en framtida `CatStorage` skulle ha samma `SavePath`-logik —
+då är det dags att flytta till en gemensam basklass.
+
+Regeln: **om förändringen ska synas på två ställen, flytta den.**
+
+**Hur man extraherar en basklass ur en befintlig klass i IDE:**
+
+*Visual Studio:*
+1. Klicka på klassnamnet (t.ex. `CatRepository`)
+2. Tryck `Ctrl+.` (eller klicka på glödlampan)
+3. Välj "Extract base class..."
+4. Namnge basklassen, välj vilka members som ska med
+
+*Rider (JetBrains):*
+1. Högerklicka på klassnamnet
+2. Refactor → Extract Superclass...
+3. Alternativt: `Ctrl+Alt+Shift+T` → Extract Superclass
+
+*VS Code (C# Dev Kit):*
+1. Högerklicka på klassnamnet → Quick Fix
+2. Om alternativet "Extract base class" syns — välj det
+3. Fungerar inte alltid — VS eller Rider är bättre för tung refaktorering
 
 ---
 
@@ -133,68 +164,97 @@ public class CatRepository : CatRepositoryBase
 }
 ```
 
-**Expression-bodied members: `=>`**
+### `=>` — expression-bodied members
 
-Du ser `=>` på `AddCat` och `GetCat`. Det är ett nytt syntax för er — expression-bodied members.
-
-```csharp
-public override void AddCat(Cat cat) => cats.Add(cat);
-```
-
-Det är exakt samma som:
+Du ser `=>` på flera ställen. Det är inte en ny sorts metod — det är bara en kortare skrivform:
 
 ```csharp
+// Lång form
 public override void AddCat(Cat cat)
 {
     cats.Add(cat);
 }
+
+// Kort form med =>
+public override void AddCat(Cat cat) => cats.Add(cat);
 ```
 
-Reglerna är enkla: använd `=>` när hela metoden är *ett enda uttryck*. Resultatet är
-renare kod — korta metoder ska se korta ut. Det är Clean Code i praktiken.
-
-**Listan som in-memory spegel**
-
-`cats`-listan är programmets "arbetsminne". Den speglar vad som finns i filen:
-
-1. `LoadCats()` vid start: läs filen, fyll listan
-2. `AddCat()` / `DeleteCat()` under körning: ändra bara listan i minnet
-3. `SaveCats()` vid avslut: skriv listan tillbaka till fil
-
-Utan steg 3 försvinner alla ändringar när programmet stängs.
-
-**`else cats = new()` — varför måste den finnas?**
+Exakt samma sak. Använd `=>` när hela metoden är ett enda uttryck.
+Det kallas *expression-bodied member* och är Clean Code — korta metoder ska se korta ut.
 
 ```csharp
-if (File.Exists(filename))
-{
-    string json = File.ReadAllText(filename);
-    cats = JsonSerializer.Deserialize<List<Cat>>(json);
-}
-else
-    cats = new(); // Filen finns inte än — skapa tom lista
-```
-
-`JsonSerializer.Deserialize` kan returnera null. Om vi inte hanterar det fallet och
-sedan försöker anropa `cats.Add(...)` — kraschar programmet med `NullReferenceException`.
-`else cats = new()` garanterar att listan alltid är initialiserad, oavsett om filen finns.
-
-**`FirstOrDefault` och null**
-
-```csharp
+// Längre exempel: returvärde
 public override Cat? GetCat(string name) =>
     cats.FirstOrDefault(c => c.Name == name);
+
+// Samma som:
+public override Cat? GetCat(string name)
+{
+    return cats.FirstOrDefault(c => c.Name == name);
+}
 ```
 
-`FirstOrDefault` returnerar den första katten vars namn matchar, eller null om ingen hittas.
-Returtypen är `Cat?` — vi lovar ingenting, kolla alltid resultatet.
+### Varför `else cats = new()`?
+
+Det här är ett klassiskt buggtillfälle:
+
+```csharp
+public override void LoadCats()
+{
+    string filename = Path.Combine(FilePath, "Catlist.json");
+    if (File.Exists(filename))
+    {
+        string json = File.ReadAllText(filename);
+        cats = JsonSerializer.Deserialize<List<Cat>>(json);
+    }
+    else
+        cats = new(); // <-- DEN HÄR RADEN ÄR KRITISK
+}
+```
+
+Utan `else`-grenen: om filen inte finns, förblir `cats` vad den var — eventuellt `null`.
+Nästa gång du anropar `cats.Add(...)` kraschar programmet med NullReferenceException.
+
+Med `else cats = new()`: ingen fil? Tomt lager. Programmet kan fortsätta utan att krascha.
+
+### Listan som spegel
+
+Listan `cats` är en in-memory spegel av det som finns i filen:
+- `LoadCats()` läser filen till listan vid start
+- `AddCat()` / `DeleteCat()` ändrar bara listan i minnet
+- `SaveCats()` skriver tillbaka listan till fil vid avslut
+
+Glömmer du `SaveCats()` i slutet försvinner alla ändringar när programmet stängs.
+
+---
+
+## SRP — Single Responsibility Principle
+
+`CatRepository` har ett ansvar: hantera katter i en JSON-fil.
+Den ändras bara om filformatet ändras.
+
+`Program.cs` har ett ansvar: hantera användarens val.
+Den ändras bara om menyn eller flödet förändras.
+
+Hade vi lagt fillogiken i `Program.cs` hade den haft *två* skäl att förändras —
+det är ett brott mot SRP. En klass, ett ansvar.
+
+## SoC — Separation of Concerns
+
+SoC och SRP hänger ihop men handlar om olika saker:
+- **SRP**: en klass har ett ansvar
+- **SoC**: olika *typer* av bekymmer sköts av olika delar av koden
+
+Bekymren i den här applikationen:
+- **UI-bekymret**: vad ska skrivas ut, vad vill användaren? → `Program.cs`
+- **Lagringsbekymret**: hur sparas katter, var, i vilket format? → `CatRepository`
+- **Datamodells-bekymret**: vad är en katt? → `Cat`
+
+Varje fil har sitt bekymmer. Blandar du dem blir koden svårare att testa, byta ut och förstå.
 
 ---
 
 ## Implementation 2: SQLite — samma kontrakt, ny motor
-
-Nu byter vi lagring från JSON-fil till SQLite-databas. Notera att vi inte rör basklassen
-eller `Program.cs` — vi skapar bara en ny implementation.
 
 ```csharp
 using Microsoft.Data.Sqlite;
@@ -202,7 +262,6 @@ using Microsoft.Data.Sqlite;
 public class CatSqliteRepository : CatRepositoryBase
 {
     public override List<Cat> cats { get; set; } = new();
-
     private readonly string _connectionString;
 
     public CatSqliteRepository(string dbPath)
@@ -273,47 +332,62 @@ public class CatSqliteRepository : CatRepositoryBase
 }
 ```
 
-**Parametrar i SQL: `$id`, `$name`, `$age`**
+### `using var connection` — varför?
 
-Skriv aldrig detta:
+En databasanslutning är en begränsad resurs. Om du inte stänger den finns det risk för
+anslutningsläckor — programmet håller kvar resurser i onödan.
 
-```csharp
-cmd.CommandText = "INSERT INTO Cats (Name) VALUES ('" + cat.Name + "')";
-```
-
-Om `cat.Name` innehåller `'` eller SQL-kommandon kan en angripare manipulera din databas —
-det kallas **SQL injection** och är ett av de vanligaste säkerhetshålen.
-
-Skriv alltid parametrar:
+`using var` garanterar att `connection.Dispose()` anropas automatiskt när kodblocket är slut,
+även om ett undantag kastas. Du behöver aldrig tänka på att stänga manuellt.
 
 ```csharp
-cmd.CommandText = "INSERT INTO Cats (Name) VALUES ($name)";
-cmd.Parameters.AddWithValue("$name", cat.Name);
+using var connection = new SqliteConnection(_connectionString);
+// connection.Dispose() anropas automatiskt när vi lämnar detta block
 ```
 
-Databasen behandlar då `$name` som data, aldrig som SQL-kod. Oavsett vad användaren skriver in.
+### `Guid.NewGuid()` — varför inte bara 1, 2, 3?
 
-**`using var connection`**
+```csharp
+cat.ID = Guid.NewGuid().ToString();
+// Exempel: "a3f5b2c1-4d8e-4f7a-9b1c-2e3d4f5a6b7c"
+```
 
-`using` ser till att databasanslutningen stängs och resurser frigörs automatiskt när
-blocket är klart — även om ett undantag kastas. Utan `using` kan du läcka anslutningar
-och låsa databasen.
+Räknare (1, 2, 3...) fungerar bra i ett system. Men vad händer om du har två system
+som skapar katter oberoende av varandra och sen ska slå ihop sina databaser?
+Båda har en katt med ID 1 — krock.
 
-**`Guid.NewGuid().ToString()`**
+`Guid` är ett globalt unikt ID — matematiskt garanterat unikt oavsett var och när det genereras.
+Används överallt i distribuerade system och API:er.
 
-Varje katt behöver ett unikt ID. `Guid` (Globally Unique Identifier) genererar ett
-slumpmässigt ID som är unikt med astronomisk sannolikhet — används globalt utan koordinering.
-Exempel: `"3f2504e0-4f89-11d3-9a0c-0305e82c3301"`.
+### SQL injection — varför `$param` och aldrig strängkonkatenering
+
+**Fel sätt** (gör aldrig detta):
+```csharp
+cmd.CommandText = "DELETE FROM Cats WHERE Name = '" + name + "'";
+```
+
+Om `name` är `'; DROP TABLE Cats; --` raderas hela tabellen.
+Det kallas SQL injection och är ett av de vanligaste säkerhetshålen (OWASP Top 10).
+
+**Rätt sätt** — parametrar:
+```csharp
+cmd.CommandText = "DELETE FROM Cats WHERE ID = $id";
+cmd.Parameters.AddWithValue("$id", cat.ID);
+```
+
+Parametrar skickas separat från SQL-texten. Databasen behandlar dem alltid som data,
+aldrig som kod. Ingen injection möjlig.
 
 ---
 
-## Program.cs: minimal och databas-agnostisk
+## Program.cs — minimalt
 
 ```csharp
 Console.WriteLine("Hello, CatJson!");
 
-// var cr = new CatSqliteRepository(@"c:\git\cats.db"); // <-- SQLite
-var cr = new CatRepository();                            // <-- JSON-fil
+// Byt kommentar för att byta databas — inget annat i koden behöver ändras
+// var cr = new CatSqliteRepository(@"c:\git\cats.db");
+var cr = new CatRepository();
 cr.FilePath = @"c:\git";
 cr.LoadCats();
 
@@ -337,59 +411,31 @@ switch (input)
 cr.SaveCats();
 ```
 
-`Program.cs` vet ingenting om JSON eller SQLite. Den pratar bara med repositoryt.
-
-Vill du byta till SQLite är det **en rad**:
+Vill vi byta från JSON-fil till SQLite är det **en rad**:
 
 ```csharp
-// Kommentera ut JSON:
-// var cr = new CatRepository();
-
-// Lägg till SQLite:
-var cr = new CatSqliteRepository(@"c:\git\cats.db");
+// var cr = new CatRepository();                          // JSON
+var cr = new CatSqliteRepository(@"c:\git\cats.db");   // SQLite
 ```
 
-Resten av programmet är oförändrat. Det är exakt vad SRP och SoC ger dig: möjligheten
-att byta ut en del utan att röra resten.
+Resten av programmet är oförändrat. Det är repository-mönstrets hela poäng.
 
 ---
 
-## Sammanfattning: hur man tänker
-
-**När skapar man en abstrakt basklass?**
-
-När du märker att du är på väg att kopiera metoder eller properties mellan klasser.
-"Jag ska skriva en `JsonRepository` och en `SqliteRepository` — de har exakt samma metoder
-men olika implementationer." Det är tecknet. Skapa basklassen först, implementera sedan.
-
-**SRP i ett stycke**
-
-Fråga dig: hur många skäl har den här klassen att ändras? Om svaret är mer än ett —
-dela upp klassen. `CatRepository` ändras om filformatet ändras. `Program.cs` ändras om
-UI-logiken ändras. De delar inte skäl, och ska inte dela klass.
-
-**SoC i ett stycke**
-
-Håll isär vad koden *gör* (UI, affärslogik) från *hur* den gör det (filer, databaser, nätverk).
-Det gör koden lättare att testa: du kan testa `CatRepository` utan att starta ett UI.
-Det gör koden lättare att underhålla: du vet var du ska leta när något går fel.
-
----
-
-## Begrepp på ett ställe
+## Hela resan i korthet
 
 | Begrepp | Förklaring |
 |---------|------------|
-| POCO | Plain Old C# Object — enkel dataklass utan logik |
-| `{ get; set; }` | Property — kontrollerad tillgång till data |
-| Abstract basklass | Definierar kontraktet, implementerar ingenting |
-| Konkret implementation | Bestämmer HUR det görs (JSON, SQLite, API...) |
-| `=>` | Expression-bodied member — kort metod på en rad |
-| `Cat?` | Returtypen kan vara null — kolla innan du använder |
-| `$param` i SQL | Parametriserade queries — skyddar mot SQL injection |
-| `using var connection` | Stänger resurser automatiskt |
-| `Guid.NewGuid()` | Globalt unikt ID utan koordinering |
-| SRP | En klass, ett ansvar, ett skäl att ändras |
-| SoC | Separata bekymmer hanteras av separata delar |
+| Properties `{ get; set; }` | Kontrollerad tillgång till data — inte bara ett fält |
+| `Cat?` | Nullable — metoden kan returnera null, kolla innan du använder |
+| `=>` | Expression-bodied — kort skrivform när metoden är ett uttryck |
+| `else cats = new()` | Skyddsnät — utan den kan listan vara null och krascha |
+| `using var` | Stänger resurser automatiskt — aldrig glömma att stänga |
+| `Guid.NewGuid()` | Globalt unikt ID — säkrare än räknare i distribuerade system |
+| `$param` i SQL | Skyddar mot SQL injection — alltid parametrar, aldrig string concat |
+| Repository-mönstret | Dölj lagringsdetaljerna bakom ett gemensamt gränssnitt |
+| SRP | En klass, ett ansvar, ett skäl att förändras |
+| SoC | UI, lagring och datamodell i separata delar av koden |
 
-Koden: [CatJson](https://github.com/marcusjobb/CatJson)
+Koden finns på GitHub:
+- [CatJson](https://github.com/marcusjobb/CatJson)
