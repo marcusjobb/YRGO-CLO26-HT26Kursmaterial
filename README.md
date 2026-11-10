@@ -7,24 +7,24 @@ Materialet publiceras löpande — följ din lärare på Google Classroom för n
 
 ## Kurser
 
-| # | Kurs | Status |
-|---|------|--------|
-| 01 | [Grundläggande programmering — C# och OOP](kurs-01-grundlaggande-oop/) | ✅ Klar |
-| 02 | [Databashantering och -design](kurs-02-databaser/) | 📖 Pågår |
-| 03 | Fördjupad OOP | 🔒 Kommande |
-| 04 | Test och kvalitetssäkring | 🔒 Kommande |
-| 05 | Introduktion till molnet | 🔒 Kommande |
-| 06 | Molndrift och driftsättning | 🔒 Kommande |
-| 07 | Yrkesrollen som Cloud Developer | 🔒 Kommande |
-| 08 | DevOps — avancerat | 🔒 Kommande |
-| 09 | Cloud Native-arkitektur | 🔒 Kommande |
-| 10 | Kubernetes | 🔒 Kommande |
-| 11 | Examensarbete | 🔒 Kommande |
-| 12 | LIA | 🔒 Kommande |
+| # | Kurs | Period | Status |
+|---|------|--------|--------|
+| 01 | [Grundläggande OOP i C#](kurs-01-grundlaggande-oop/) | v.36–40 | ✅ Klar |
+| 02 | [Databaser och SQL](kurs-02-databaser/) | v.41–44 | ✅ Klar |
+| 03 | [Fördjupad OOP i C#](kurs-03-fordjupad-oop/) | v.45–49 | 📖 Pågår |
+| 04 | Test och kvalitetssäkring | v.50– | 🔒 Kommande |
+| 05 | Introduktion till molnet | | 🔒 Kommande |
+| 06 | Molndrift och driftsättning | | 🔒 Kommande |
+| 07 | Yrkesrollen som Cloud Developer | | 🔒 Kommande |
+| 08 | DevOps — avancerat | | 🔒 Kommande |
+| 09 | Cloud Native-arkitektur | | 🔒 Kommande |
+| 10 | Kubernetes | | 🔒 Kommande |
+| 11 | Examensarbete | | 🔒 Kommande |
+| 12 | LIA | | 🔒 Kommande |
 
 ---
 
-## Kurs 01 — Grundläggande programmering
+## Kurs 01 — Grundläggande OOP i C#
 
 | Modul | Ämne |
 |-------|------|
@@ -39,7 +39,7 @@ Materialet publiceras löpande — följ din lärare på Google Classroom för n
 
 ---
 
-## Kurs 02 — Databashantering och -design
+## Kurs 02 — Databaser och SQL
 
 | Modul | Ämne |
 |-------|------|
@@ -48,8 +48,21 @@ Materialet publiceras löpande — följ din lärare på Google Classroom för n
 | [02](kurs-02-databaser/02_sql_hardcore/) | SQL — SELECT, JOIN, aggregering |
 | [03](kurs-02-databaser/03_normalisering_gdpr/) | Normalisering och GDPR |
 | [04](kurs-02-databaser/04_sql_avancerat/) | Avancerat SQL — subqueries, CTE, transaktioner |
+| [07](kurs-02-databaser/07_sakerhet_och_backup/) | Säkerhet och backup |
 
 📁 [Inlämningsuppgift](kurs-02-databaser/assignment/) · 📚 [Termer](kurs-02-databaser/termer/)
+
+---
+
+## Kurs 03 — Fördjupad OOP i C#
+
+| Modul | Ämne |
+|-------|------|
+| [00](kurs-03-fordjupad-oop/00_klasser_och_objekt/) | Klasser och objekt |
+| [01](kurs-03-fordjupad-oop/01_databaskopplingar/) | Databaskopplingar |
+| [02](kurs-03-fordjupad-oop/02_designmonster/) | Designmönster |
+
+📚 [Termer](kurs-03-fordjupad-oop/termer/)
 
 ---
 
