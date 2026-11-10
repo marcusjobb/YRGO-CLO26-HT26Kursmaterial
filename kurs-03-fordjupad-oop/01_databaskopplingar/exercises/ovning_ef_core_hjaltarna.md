@@ -20,6 +20,8 @@ dotnet add package Microsoft.EntityFrameworkCore.Design
 dotnet tool install --global dotnet-ef
 ```
 
+> ⚠️ Kör `dotnet add package`-raderna i mappen där `HeroDb.csproj` ligger (efter `cd HeroDb`). Står du i en annan mapp hittar de inte projektet.
+
 Den sista raden behövs bara en gång per dator. Står det att verktyget redan är installerat är allt som det ska.
 
 2. Lägg klasserna **under** koden i `Program.cs`. Överst i filen: `using Microsoft.EntityFrameworkCore;`

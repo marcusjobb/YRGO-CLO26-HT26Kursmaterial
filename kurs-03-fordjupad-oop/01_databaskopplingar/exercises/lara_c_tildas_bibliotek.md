@@ -42,6 +42,8 @@ dotnet add package Microsoft.EntityFrameworkCore.Sqlite
 dotnet add package Microsoft.EntityFrameworkCore.Design
 ```
 
+> ⚠️ Kör kommandona i mappen där `LibraryDb.csproj` ligger (efter `cd LibraryDb`). Står du i en annan mapp hittar `dotnet add package` och `dotnet ef` inte projektet.
+
 Verktyget `dotnet-ef` installerade du i måndags. Det behövs bara en gång per dator.
 
 Börja sedan med en enda klass och kontexten:
