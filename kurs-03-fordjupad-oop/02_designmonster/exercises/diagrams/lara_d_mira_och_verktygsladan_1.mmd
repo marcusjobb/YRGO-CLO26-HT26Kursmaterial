@@ -1,0 +1,19 @@
+classDiagram
+    class ISpell {
+        <<interface>>
+        +Cast(string casterName) string
+    }
+    class HealSpell {
+        +Cast(string casterName) string
+    }
+    class ShieldSpell {
+        +Cast(string casterName) string
+    }
+    class Wizard {
+        +string Name
+        +ISpell Spell
+        +Cast() string
+    }
+    ISpell <|.. HealSpell
+    ISpell <|.. ShieldSpell
+    Wizard "1" -- "1" ISpell : Spell

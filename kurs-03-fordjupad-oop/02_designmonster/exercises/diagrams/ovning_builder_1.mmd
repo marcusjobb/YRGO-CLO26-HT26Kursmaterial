@@ -1,0 +1,27 @@
+classDiagram
+    class CharacterKind {
+        <<enumeration>>
+        Hero
+        Ogre
+    }
+    class Character {
+        +string Name
+        +CharacterKind Kind
+        +bool IsEvil
+        +string Speech
+        +string Likes
+        +string WeaponOfChoice
+        +string Title
+    }
+    class CharacterBuilder {
+        +Named(name) CharacterBuilder
+        +IsA(kind) CharacterBuilder
+        +IsEvil() CharacterBuilder
+        +Speaks(speech) CharacterBuilder
+        +Likes(likes) CharacterBuilder
+        +WeaponOfChoice(weapon) CharacterBuilder
+        +Titled(title) CharacterBuilder
+        +Build() Character
+    }
+    Character --> CharacterKind : är
+    CharacterBuilder ..> Character : skapar

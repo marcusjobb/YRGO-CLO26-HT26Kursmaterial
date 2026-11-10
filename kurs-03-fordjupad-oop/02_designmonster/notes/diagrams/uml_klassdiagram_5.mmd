@@ -1,0 +1,16 @@
+classDiagram
+    direction LR
+    class Cat {
+        +string ID
+        +string Name
+        +int Age
+    }
+    class CatRepository {
+        +List~Cat~ cats
+        +string FilePath
+        +AddCat(Cat cat) void
+        +DeleteCat(Cat cat) void
+        +GetCat(string name) Cat
+        +LoadCats() void
+    }
+    CatRepository "1" -- "*" Cat : håller
