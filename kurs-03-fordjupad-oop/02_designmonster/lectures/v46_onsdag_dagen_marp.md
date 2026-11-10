@@ -15,63 +15,33 @@ Designmönster: snälla verktyg, inga regler.
 ## Agenda för dagen
 
 **Förmiddag**
-1. UML: en ritning av koden, och hur den skiljer sig från ett ERD
-2. Strategy: Mira byter vapen med en enda rad
+1. Missar i Inlämning 1: genomgång
+2. UML: en ritning av koden, och hur den skiljer sig från ett ERD
+3. Strategy och Factory: två mönster
+4. Övningar: minst två per mönster
 
 **Eftermiddag**
-3. Factory: objekten skapas på ett ställe
-4. Observer: någon ropar, andra lyssnar
-5. Mönster att känna igen: Iterator, Repository och Singleton
-6. Backspegel: vad gjorde vi i dag? (15 min)
+5. Observer och Builder: två mönster
+6. Övningen Builder
+7. Backspegel: quiz om mönstren (14:46)
 
-Läxa D (torsdag–fredag): Mira och verktygslådan.
+Läxa D (torsdag–fredag): Mira och verktygslådan. Där övar ni Observer igen.
 
 ---
 
-<!-- Här tar dagens föreläsningar vid: uml_klassdiagram, strategy, factory, observer. Backspegeln nedan visas sist på dagen. -->
+<!-- Här tar dagens föreläsningar vid: uml_klassdiagram, strategy, factory, observer, builder. Backspegeln är quizen sist på dagen. -->
 
 # Backspegel
 
-Vad gjorde vi i dag?
-
----
-
-## Din tur först (3 min)
-
-Skriv ner, för dig själv:
-
-1. **Ett mönster** du skulle kunna förklara för en kompis.
-2. **En sak** som fortfarande känns oklar.
-
-Den oklara saken tar du med till fredagens handledning.
-
----
-
-## Vilket mönster är det?
-
-1. Spelaren väljer svärd eller pilbåge, och hjälten slåss olika.
-2. Alla monster skapas av en och samma metod.
-3. När Mira tar skada uppdateras både livmätaren och ljudet.
-4. Allt databasprat ligger bakom ett interface.
-
----
-
-## Svar
-
-1. **Strategy:** byt beteende genom att byta objekt.
-2. **Factory:** skapandet samlat på ett ställe.
-3. **Observer:** någon ropar, andra lyssnar.
-4. **Repository:** som i Inlämning 1:s värld.
-
-Du behöver inte kunna dem utantill. Du ska känna igen dem när du ser dem.
+Quizen: `lectures/quiz_patterns_marp.md`. Först skriver ni själva, sedan frågorna.
 
 ---
 
 ## Det här gjorde vi i dag
 
 - ✅ UML: klassdiagram och ERD sida vid sida
-- ✅ Strategy, Factory och Observer, med Mira
-- ✅ Iterator, Repository och Singleton, att känna igen
+- ✅ Strategy och Factory, med Mira
+- ✅ Observer och Builder
 - ✅ Klassdiagram i varje övning
 
 ---

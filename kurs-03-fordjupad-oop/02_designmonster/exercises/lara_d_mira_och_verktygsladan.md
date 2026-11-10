@@ -47,27 +47,9 @@ Samma sorts diagram gör du i Inlämning 1. Det behöver inte vara perfekt. Det 
 <details markdown="1">
 <summary>Lösningsförslag</summary>
 
-```mermaid
-classDiagram
-    class ISpell {
-        <<interface>>
-        +Cast(string casterName) string
-    }
-    class HealSpell {
-        +Cast(string casterName) string
-    }
-    class ShieldSpell {
-        +Cast(string casterName) string
-    }
-    class Wizard {
-        +string Name
-        +ISpell Spell
-        +Cast() string
-    }
-    ISpell <|.. HealSpell
-    ISpell <|.. ShieldSpell
-    Wizard "1" -- "1" ISpell : Spell
-```
+<img src="diagrams/lara_d_mira_och_verktygsladan_1.png" alt="Diagram" width="480">
+
+<!-- mermaid: diagrams/lara_d_mira_och_verktygsladan_1.mmd -->
 
 `HealSpell` och `ShieldSpell` lovar att kunna `ISpell`. En `Wizard` har en `Spell`, och linjen går till interfacet. Jämför med diagrammet i Strategy-övningen: samma form, andra namn.
 

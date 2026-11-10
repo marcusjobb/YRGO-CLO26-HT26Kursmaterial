@@ -9,27 +9,9 @@ Skapa ett nytt konsolprojekt. Klasserna skrivs **efter** koden som körs i `Prog
 
 Så här hänger klasserna i uppgift 1 ihop:
 
-```mermaid
-classDiagram
-    class IAttackStrategy {
-        <<interface>>
-        +Attack(string attackerName) string
-    }
-    class SwordAttack {
-        +Attack(string attackerName) string
-    }
-    class BowAttack {
-        +Attack(string attackerName) string
-    }
-    class Hero {
-        +string Name
-        +IAttackStrategy Weapon
-        +Attack() string
-    }
-    IAttackStrategy <|.. SwordAttack
-    IAttackStrategy <|.. BowAttack
-    Hero "1" -- "1" IAttackStrategy : Weapon
-```
+<img src="diagrams/ovning_strategy_1.png" alt="Diagram" width="480">
+
+<!-- mermaid: diagrams/ovning_strategy_1.mmd -->
 
 `SwordAttack` och `BowAttack` lovar att kunna `IAttackStrategy`. Det är den streckade linjen. En `Hero` har ett `Weapon`, och linjen går till interfacet, inte till ett visst vapen.
 

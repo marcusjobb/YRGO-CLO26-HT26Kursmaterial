@@ -16,21 +16,9 @@ Kurs 3 · Fördjupad OOP i C#
 
 Mira och hennes uppdrag, som ett ERD:
 
-```mermaid
-erDiagram
-    Heroes ||--o{ Quests : "har"
-    Heroes {
-        int Id PK
-        string Name
-    }
-    Quests {
-        int Id PK
-        string Title
-        date Start
-        date End
-        int HeroId FK
-    }
-```
+<img src="diagrams/uml_klassdiagram_marp_1.png" alt="Diagram">
+
+<!-- mermaid: diagrams/uml_klassdiagram_marp_1.mmd -->
 
 Tabeller, kolumner, PK och FK. Det här kan ni.
 
@@ -38,23 +26,9 @@ Tabeller, kolumner, PK och FK. Det här kan ni.
 
 ## Samma sak, ritad som klasser
 
-```mermaid
-classDiagram
-    class Hero {
-        +int Id
-        +string Name
-        +List~Quest~ Quests
-    }
-    class Quest {
-        +int Id
-        +string Title
-        +DateOnly Start
-        +DateOnly End
-        +int HeroId
-        +Hero Hero
-    }
-    Hero "1" -- "*" Quest : har
-```
+<img src="diagrams/uml_klassdiagram_marp_2.png" alt="Diagram">
+
+<!-- mermaid: diagrams/uml_klassdiagram_marp_2.mmd -->
 
 Det här är ett **klassdiagram**. Det ritar klasserna i C#, inte tabellerna.
 
@@ -91,17 +65,9 @@ Databasen har bara data. En klass har data **och** beteende.
 
 Tänk om `Quest` själv räknar ut antal dagar:
 
-```mermaid
-classDiagram
-    class Quest {
-        +int Id
-        +string Title
-        +DateOnly Start
-        +DateOnly End
-        -string secretNote
-        +Days() int
-    }
-```
+<img src="diagrams/uml_klassdiagram_marp_3.png" alt="Diagram" height="200px">
+
+<!-- mermaid: diagrams/uml_klassdiagram_marp_3.mmd -->
 
 1. Överst: klassens namn
 2. Sedan: egenskaper (data)
@@ -116,22 +82,9 @@ classDiagram
 
 Hjältarna från första veckan:
 
-```mermaid
-classDiagram
-    class Character {
-        <<abstract>>
-        +string Name
-        +int Health
-        +Attack() string
-    }
-    class IHealer {
-        <<interface>>
-        +Heal(Character target) void
-    }
-    Character <|-- Hero
-    Character <|-- Wizard
-    IHealer <|.. Wizard
-```
+<img src="diagrams/uml_klassdiagram_marp_4.png" alt="Diagram">
+
+<!-- mermaid: diagrams/uml_klassdiagram_marp_4.mmd -->
 
 `Wizard` **är en** `Character` och **kan** läka.
 

@@ -123,19 +123,6 @@ En knapp med `Click` i en app fungerar exakt så.
 
 ---
 
-## Mönster ni kommer att känna igen
-
-| Mönster | Ni har sett det i |
-|---------|-------------------|
-| **Iterator** | `foreach`: gå igenom en lista utan att veta hur den är byggd |
-| **Repository** | i måndags: en klass som sköter allt mot databasen |
-| **Singleton** | bara *en* av något i hela appen, t.ex. en databasanslutning |
-| **Strategy, Factory, Observer** | idag |
-
-Ni behöver inte kunna skriva dem. Ni ska känna igen dem när ni ser dem.
-
----
-
 ## Vilket mönster passar?
 
 1. Spotify spelar en lista i ordning eller blandat.

@@ -8,21 +8,9 @@ Läsversion av passet om klassdiagram. Bilderna: `lectures/uml_klassdiagram_marp
 
 I databaskursen ritade ni ER-diagram. Här är Mira och hennes uppdrag från EF-övningen, som ett ERD:
 
-```mermaid
-erDiagram
-    Heroes ||--o{ Quests : "har"
-    Heroes {
-        int Id PK
-        string Name
-    }
-    Quests {
-        int Id PK
-        string Title
-        date Start
-        date End
-        int HeroId FK
-    }
-```
+<img src="diagrams/uml_klassdiagram_1.png" alt="Diagram" width="480">
+
+<!-- mermaid: diagrams/uml_klassdiagram_1.mmd -->
 
 Det här är tabeller. Varje rad i rutan är en kolumn. `PK` är primärnyckeln. `FK` är den främmande nyckeln: `HeroId` säger vilken hjälte uppdraget hör till.
 
@@ -53,23 +41,9 @@ class Quest
 
 Samma klasser som ett **klassdiagram**:
 
-```mermaid
-classDiagram
-    class Hero {
-        +int Id
-        +string Name
-        +List~Quest~ Quests
-    }
-    class Quest {
-        +int Id
-        +string Title
-        +DateOnly Start
-        +DateOnly End
-        +int HeroId
-        +Hero Hero
-    }
-    Hero "1" -- "*" Quest : har
-```
+<img src="diagrams/uml_klassdiagram_2.png" alt="Diagram" width="480">
+
+<!-- mermaid: diagrams/uml_klassdiagram_2.mmd -->
 
 Ett klassdiagram ritar klasserna i C#, inte tabellerna i databasen. Det är en del av **UML**, ett vanligt sätt att rita kod som alla utvecklare känner igen.
 
@@ -119,17 +93,9 @@ class Quest
 
 Så här ser det ut i ett klassdiagram:
 
-```mermaid
-classDiagram
-    class Quest {
-        +int Id
-        +string Title
-        +DateOnly Start
-        +DateOnly End
-        -string secretNote
-        +Days() int
-    }
-```
+<img src="diagrams/uml_klassdiagram_3.png" alt="Diagram" width="480">
+
+<!-- mermaid: diagrams/uml_klassdiagram_3.mmd -->
 
 Läs rutan uppifrån och ned:
 
@@ -163,22 +129,9 @@ class Wizard : Character, IHealer { /* ... */ }
 
 Som klassdiagram:
 
-```mermaid
-classDiagram
-    class Character {
-        <<abstract>>
-        +string Name
-        +int Health
-        +Attack() string
-    }
-    class IHealer {
-        <<interface>>
-        +Heal(Character target) void
-    }
-    Character <|-- Hero
-    Character <|-- Wizard
-    IHealer <|.. Wizard
-```
+<img src="diagrams/uml_klassdiagram_4.png" alt="Diagram" width="480">
+
+<!-- mermaid: diagrams/uml_klassdiagram_4.mmd -->
 
 `<<abstract>>` och `<<interface>>` står överst i rutan. De säger vilken sorts klass det är.
 
@@ -234,23 +187,9 @@ Papper, whiteboard eller Mermaid. Det spelar ingen roll.
 <details markdown="1">
 <summary>Lösningsförslag</summary>
 
-```mermaid
-classDiagram
-    class Cat {
-        +string ID
-        +string Name
-        +int Age
-    }
-    class CatRepository {
-        +List~Cat~ cats
-        +string FilePath
-        +AddCat(Cat cat) void
-        +DeleteCat(Cat cat) void
-        +GetCat(string name) Cat
-        +LoadCats() void
-    }
-    CatRepository "1" -- "*" Cat : håller
-```
+<img src="diagrams/uml_klassdiagram_5.png" alt="Diagram" width="480">
+
+<!-- mermaid: diagrams/uml_klassdiagram_5.mmd -->
 
 Ett repository håller många katter. Därför står `1` vid `CatRepository` och `*` vid `Cat`.
 
@@ -258,27 +197,9 @@ Har du fått med fler eller färre metoder? Det gör inget. Det viktiga är ruto
 
 **Vill du ha mer?** `CatRepository` ärvde från den abstrakta klassen `CatRepositoryBase`. Då blir det en arvspil också:
 
-```mermaid
-classDiagram
-    class CatRepositoryBase {
-        <<abstract>>
-        +List~Cat~ cats
-        +AddCat(Cat cat) void
-        +DeleteCat(Cat cat) void
-        +GetCat(string name) Cat
-        +LoadCats() void
-    }
-    class CatRepository {
-        +string FilePath
-    }
-    class Cat {
-        +string ID
-        +string Name
-        +int Age
-    }
-    CatRepositoryBase <|-- CatRepository
-    CatRepositoryBase "1" -- "*" Cat : håller
-```
+<img src="diagrams/uml_klassdiagram_6.png" alt="Diagram" width="480">
+
+<!-- mermaid: diagrams/uml_klassdiagram_6.mmd -->
 
 </details>
 

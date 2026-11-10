@@ -9,49 +9,17 @@ Nytt konsolprojekt. Klasserna skrivs **efter** koden som körs i `Program.cs`.
 
 Så här hänger klasserna i uppgift 1 ihop:
 
-```mermaid
-classDiagram
-    class Monster {
-        <<abstract>>
-        +string Name
-        +int Health
-        +Roar() string
-    }
-    class Goblin {
-        +Roar() string
-    }
-    class Troll {
-        +Roar() string
-    }
-    class MonsterFactory {
-        <<static>>
-        +Create(string type) Monster
-    }
-    Monster <|-- Goblin
-    Monster <|-- Troll
-    MonsterFactory -- Monster : skapar
-```
+<img src="diagrams/ovning_factory_1.png" alt="Diagram" width="480">
+
+<!-- mermaid: diagrams/ovning_factory_1.mmd -->
 
 En `Goblin` och ett `Troll` ärver från `Monster`. `MonsterFactory` skapar monster och lämnar tillbaka dem som `Monster`.
 
 I uppgift 4 gör du samma sak med vapnen från Strategy:
 
-```mermaid
-classDiagram
-    class IAttackStrategy {
-        <<interface>>
-        +Attack(string attackerName) string
-    }
-    class WeaponFactory {
-        <<static>>
-        +Create(string type) IAttackStrategy
-    }
-    IAttackStrategy <|.. SwordAttack
-    IAttackStrategy <|.. BowAttack
-    IAttackStrategy <|.. FireballAttack
-    Hero "1" -- "1" IAttackStrategy : Weapon
-    WeaponFactory -- IAttackStrategy : skapar
-```
+<img src="diagrams/ovning_factory_2.png" alt="Diagram" width="480">
+
+<!-- mermaid: diagrams/ovning_factory_2.mmd -->
 
 Fabriken lämnar tillbaka ett `IAttackStrategy`. Den streckade linjen visar vilka klasser som lovar att kunna det.
 
