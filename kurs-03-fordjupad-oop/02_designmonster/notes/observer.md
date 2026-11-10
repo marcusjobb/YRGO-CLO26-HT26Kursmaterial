@@ -93,7 +93,7 @@ Lägg märke till att `Hero` aldrig nämner `HealthBar` eller `SoundPlayer`. En 
 
 ## C# har Observer inbyggt: event
 
-Mönstret är så vanligt att C# har ett eget ord för det: `event`. Du har redan använt det om du har klickat på en knapp i en app.
+Mönstret är så vanligt att C# har ett eget ord för det: `event`. Vi såg det när vi tittade på Windows Forms: en knapp som skickar `Click` till alla som lyssnar.
 Vi skriver inte våra egna events i den här kursen. Det räcker att du känner igen dem.
 
 ```csharp

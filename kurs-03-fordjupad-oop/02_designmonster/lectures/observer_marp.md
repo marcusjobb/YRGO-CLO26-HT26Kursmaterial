@@ -6,7 +6,7 @@ paginate: true
 
 # Designmönster: snälla verktyg
 
-**Del 3 av 3: Observer, och mönster ni redan använt**
+**Del 3 av 3: Observer, och ett mönster ni sett i Windows Forms**
 
 ---
 
@@ -110,16 +110,16 @@ En ny lyssnare? En ny klass och en `Subscribe`. `Hero` rörs inte.
 
 ---
 
-## Ni har redan använt Observer
+## Ni har sett Observer i Windows Forms
 
-C# har mönstret inbyggt. Det heter `event`.
+Vi såg det när vi tittade på Windows Forms. C# har mönstret inbyggt, och det heter `event`.
 
 ```csharp
 mira.HealthChanged += health => Console.WriteLine($"Hälsostapeln visar {health}.");
 ```
 
 `+=` betyder "jag vill också veta när det händer".
-En knapp med `Click` i en app fungerar exakt så.
+En knapp med `Click` i ett Windows Forms-fönster fungerar exakt så.
 
 ---
 
