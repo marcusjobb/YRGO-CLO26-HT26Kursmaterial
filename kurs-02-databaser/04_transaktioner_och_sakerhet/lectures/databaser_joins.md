@@ -120,7 +120,7 @@ ORDER BY s.LastName;
 
 ## LEFT JOIN
 
-![bg right:45%](../../01_sql_boot/notes/sql/diagrams/sql_left_join.png)
+![bg right:45%](../../01_sql_boot/notes/diagrams/sql_left_join.png)
 
 **Visa allt från vänster tabell + matchningar från höger**
 

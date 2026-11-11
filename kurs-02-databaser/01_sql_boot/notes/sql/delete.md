@@ -15,7 +15,7 @@ VALUES ('Fia', 'baker', 100, 1);
 
 ## Vad gör DELETE?
 
-![DELETE WHERE id = 6: raden Fia stryks](diagrams/sql_delete_fore.png)
+![DELETE WHERE id = 6: raden Fia stryks](../diagrams/sql_delete_fore.png)
 
 ```sql
 DELETE FROM person

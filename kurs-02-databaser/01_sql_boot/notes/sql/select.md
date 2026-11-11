@@ -34,7 +34,7 @@ SELECT * FROM person;
 
 Räkna upp kolumnerna du vill ha, med kommatecken mellan:
 
-![SELECT name, gold: kolumnerna name och gold är markerade](diagrams/sql_select_kolumner_fore.png)
+![SELECT name, gold: kolumnerna name och gold är markerade](../diagrams/sql_select_kolumner.png)
 
 ```sql
 SELECT name, gold FROM person;

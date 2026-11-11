@@ -23,7 +23,7 @@ SELECT COUNT(*), SUM(gold), AVG(gold), MIN(gold), MAX(gold)
 FROM person;
 ```
 
-![Fem guldvärden blir ett värde per aggregatfunktion](diagrams/sql_aggregat.png)
+![Fem guldvärden blir ett värde per aggregatfunktion](../diagrams/sql_aggregat.png)
 
 | COUNT(\*) | SUM(gold) | AVG(gold) | MIN(gold) | MAX(gold) |
 |---|---|---|---|---|

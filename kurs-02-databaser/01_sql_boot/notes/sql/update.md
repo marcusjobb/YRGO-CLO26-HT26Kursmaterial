@@ -81,7 +81,7 @@ WHERE job = 'baker';
 
 ## ⚠️ Utan WHERE
 
-![UPDATE utan WHERE: alla får 0 guld](diagrams/sql_update_utan_where.png)
+![UPDATE utan WHERE: alla får 0 guld](../diagrams/sql_update_utan_where.png)
 
 ```sql
 UPDATE person

@@ -19,7 +19,7 @@ SELECT name, gold FROM person
 ORDER BY gold DESC;
 ```
 
-![ORDER BY gold DESC: före och efter sortering](diagrams/sql_order_by.png)
+![ORDER BY gold DESC: före och efter sortering](../diagrams/sql_order_by.png)
 
 | name | gold |
 |---|---|

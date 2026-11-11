@@ -58,7 +58,7 @@ De två `DROP TABLE IF EXISTS` i början gör att du kan köra skriptet igen nä
 
 ## Tabellen `village`
 
-![person.village_id pekar på village.id](diagrams/sql_village_tabell.png)
+![person.village_id pekar på village.id](../diagrams/sql_village_tabell.png)
 
 | id | name |
 |---|---|

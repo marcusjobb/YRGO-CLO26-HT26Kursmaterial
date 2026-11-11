@@ -23,7 +23,7 @@ SELECT * FROM person
 WHERE gold >= 250;
 ```
 
-![WHERE gold >= 250: Bertil, David och Eva är markerade](diagrams/sql_where_fore.png)
+![WHERE gold >= 250: Bertil, David och Eva är markerade](../diagrams/sql_where_fore.png)
 
 Dörrvakten frågar varje rad: "Har du minst 250 guld?"
 
@@ -65,7 +65,7 @@ Värdet måste matcha **exakt** det som står i tabellen. Om `'Baker'` och `'bak
 
 ### `AND`: båda måste stämma
 
-![AND: bara Anna uppfyller båda villkoren](diagrams/sql_and.png)
+![AND: bara Anna uppfyller båda villkoren](../diagrams/sql_and.png)
 
 ```sql
 SELECT * FROM person
@@ -76,7 +76,7 @@ Resultatet är bara Anna. Cissi är bagare, men har för lite guld.
 
 ### `OR`: minst ett måste stämma
 
-![OR: Anna, Cissi och David uppfyller minst ett villkor](diagrams/sql_or.png)
+![OR: Anna, Cissi och David uppfyller minst ett villkor](../diagrams/sql_or.png)
 
 ```sql
 SELECT * FROM person
@@ -120,7 +120,7 @@ SQL läser `AND` före `OR`, precis som gånger kommer före plus i matte. Datab
 WHERE job = 'baker' OR (job = 'pilot' AND gold > 100)
 ```
 
-![Fällan: utan parenteser smiter Cissi med 80 guld in](diagrams/sql_fallan_and_or.png)
+![Fällan: utan parenteser smiter Cissi med 80 guld in](../diagrams/sql_fallan_and_or.png)
 
 Alla bagare kommer med, oavsett guld, och därför smiter Cissi med sina 80 guld in. Lösningen är parenteser:
 
@@ -138,7 +138,7 @@ Det lömska med den här fällan är att den ofta ger rätt svar *av en slump*, 
 
 ## `LIKE`: när du bara vet en del
 
-![LIKE '%a': Anna och Eva är markerade](diagrams/sql_like.png)
+![LIKE '%a': Anna och Eva är markerade](../diagrams/sql_like.png)
 
 ```sql
 SELECT * FROM person
@@ -188,7 +188,7 @@ Det ger David. Och tvärtom: `IS NOT NULL` ger de fyra andra.
 
 ### ⚠️ Fällan: `= NULL`
 
-![WHERE village_id = NULL ger 0 rader](diagrams/sql_null_fallan.png)
+![WHERE village_id = NULL ger 0 rader](../diagrams/sql_null_fallan.png)
 
 ```sql
 -- ❌ Ger 0 rader. Inget felmeddelande, bara tomt.

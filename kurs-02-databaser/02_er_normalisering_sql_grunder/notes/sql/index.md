@@ -50,7 +50,7 @@ Sidorna här handlar om **DQL** och **DML**, alltså det du som utvecklare skriv
 
 Det här är bra att ha i bakhuvudet när du läser sidorna. Du **skriver** en fråga i en ordning, men databasen **kör** den i en annan:
 
-![Skrivordning och körordning för en SQL-fråga](../../../01_sql_boot/notes/sql/diagrams/sql_korordning.png)
+![Skrivordning och körordning för en SQL-fråga](../../../01_sql_boot/notes/diagrams/sql_korordning.png)
 
 | Du skriver | Databasen kör |
 |---|---|

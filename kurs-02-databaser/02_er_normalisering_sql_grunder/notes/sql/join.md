@@ -10,7 +10,7 @@ Men det betyder också att svaret på en enkel fråga, som "vilken by bor Anna i
 
 ## Två tabeller, en nyckel
 
-![person.village_id pekar på village.id](../../../01_sql_boot/notes/sql/diagrams/sql_village_tabell.png)
+![person.village_id pekar på village.id](../../../01_sql_boot/notes/diagrams/sql_village_tabell.png)
 
 `person.village_id` **pekar på** `village.id`. Det kallas en **främmande nyckel** (foreign key), och det är den som gör att tabellerna kan kopplas ihop.
 
@@ -56,7 +56,7 @@ Det här är en av de viktigaste sakerna att förstå om SQL. Tänk dig att du l
 
 ## `LEFT JOIN`: behåll alla till vänster
 
-![LEFT JOIN: David är med, med NULL som by](../../../01_sql_boot/notes/sql/diagrams/sql_left_join.png)
+![LEFT JOIN: David är med, med NULL som by](../../../01_sql_boot/notes/diagrams/sql_left_join.png)
 
 ```sql
 SELECT person.name, village.name

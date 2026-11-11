@@ -22,7 +22,7 @@ GROUP BY job;
 
 Först läggs raderna i högar, en per yrke:
 
-![GROUP BY job: raderna läggs i färgade högar](diagrams/sql_group_by_fore.png)
+![GROUP BY job: raderna läggs i färgade högar](../diagrams/sql_group_by_fore.png)
 
 | hög | name | job | gold |
 |---|---|---|---|
@@ -97,7 +97,7 @@ Nu blir det en hög för varje **kombination** av by och yrke. Bagarna i by 1 ha
 
 Vilka yrken har mer än en person?
 
-![HAVING COUNT(*) > 1: bara högen baker är kvar](diagrams/sql_having.png)
+![HAVING COUNT(*) > 1: bara högen baker är kvar](../diagrams/sql_having.png)
 
 ```sql
 SELECT job, COUNT(*)
@@ -136,7 +136,7 @@ Resultatet är `merchant | 250` och `smith | 300`.
 
 Titta på körordningen:
 
-![Skrivordning och körordning för en SQL-fråga](diagrams/sql_korordning.png)
+![Skrivordning och körordning för en SQL-fråga](../diagrams/sql_korordning.png)
 
 `WHERE` körs i steg 2. Högarna skapas i steg 3. När `WHERE` körs finns det alltså inga högar att räkna. `HAVING` körs i steg 4, när högarna redan finns.
 
