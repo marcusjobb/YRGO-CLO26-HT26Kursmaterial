@@ -10,6 +10,8 @@
 - `Microsoft.EntityFrameworkCore.Tools`
 - `Microsoft.Extensions.Logging.Console`
 
+> ⚠️ Paketen installeras i projektmappen, alltså där `.csproj`-filen ligger. Kör `dotnet add package` och `dotnet ef` därifrån.
+
 > Bonus: Aktivera loggning i `Program.cs` för att se genererade SQL-frågor under arbetet.
 
 ## Scenario

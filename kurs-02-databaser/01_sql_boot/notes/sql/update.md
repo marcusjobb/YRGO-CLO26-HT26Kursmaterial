@@ -123,7 +123,7 @@ COMMIT;                 -- ja, spara
 -- ROLLBACK;            -- nej, ångra allt sedan BEGIN
 ```
 
-Inuti en transaktion kan du titta på resultatet innan något sparas på riktigt. Mer om det i [Transaktioner](../transaktioner.md).
+Inuti en transaktion kan du titta på resultatet innan något sparas på riktigt. Mer om det i Transaktioner.
 
 ## UPDATE med en subquery
 
@@ -285,6 +285,6 @@ Här samlas allt: den gyllene regeln (`SELECT` först), en subquery som översä
 
 ---
 
-Föregående: [INSERT](insert.md) · [Tillbaka till översikten](index.md) · Nästa: [DELETE](delete.md)
+Föregående: [INSERT](insert.md) · [Tillbaka till översikten](../../../02_er_normalisering_sql_grunder/notes/sql/index.md) · Nästa: [DELETE](delete.md)
 
 *Av Marcus Ackre Medina · Nion Education · marcus.medina@nionit.com*

@@ -6,7 +6,7 @@ Du har skrivit klasser. Du har skapat objekt och lagt dem i listor.
 
 Då kan du redan mer om databaser än du tror. En tabell och en klass beskriver nämligen nästan samma sak: *hur en sak ser ut*. Den här sidan går igenom hur en tabell är uppbyggd, del för del, och visar sedan vad varje del motsvarar i C#.
 
-*Exemplen använder [övningsdatan](../../../01_intro_databaser/notes/sql/ovningsdata.md).*
+*Exemplen använder [övningsdatan](../../../01_sql_boot/notes/sql/ovningsdata.md).*
 
 ## Hur en tabell är uppbyggd
 
@@ -305,13 +305,13 @@ SELECT name FROM person WHERE village_id <> 1;
 
 Samma fråga, olika svar. David saknas i SQL!
 
-I C# är `null != 1` **sant**. I SQL är `NULL <> 1` **okänt**, eftersom `NULL` betyder "vi vet inte". Och `WHERE` släpper bara igenom det som är sant. Läs mer under `NULL` på sidan [WHERE](../../../01_intro_databaser/notes/sql/where.md).
+I C# är `null != 1` **sant**. I SQL är `NULL <> 1` **okänt**, eftersom `NULL` betyder "vi vet inte". Och `WHERE` släpper bara igenom det som är sant. Läs mer under `NULL` på sidan [WHERE](../../../01_sql_boot/notes/sql/where.md).
 
 Det här är värt att komma ihåg när du senare skriver LINQ mot en databas med Entity Framework. Där översätts din C# till SQL, och då är det SQL:s regler som gäller.
 
 ### En tabell har ingen ordning
 
-En `List<Person>` har en ordning: Anna är på index 0. En tabell har det inte. Raderna kommer i den ordning databasen vill, om du inte skriver [ORDER BY](../../../01_intro_databaser/notes/sql/order-by.md).
+En `List<Person>` har en ordning: Anna är på index 0. En tabell har det inte. Raderna kommer i den ordning databasen vill, om du inte skriver [ORDER BY](../../../01_sql_boot/notes/sql/order-by.md).
 
 ### En klass kan göra saker
 

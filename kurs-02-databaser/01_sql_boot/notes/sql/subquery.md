@@ -54,7 +54,7 @@ Resultatet är Anna och Cissi.
 1. Den inre frågan ger alla id för byar som börjar på L, alltså `1`
 2. Den yttre frågan blir `WHERE village_id IN (1)`
 
-Samma fråga kan skrivas med en [JOIN](join.md):
+Samma fråga kan skrivas med en [JOIN](../../../02_er_normalisering_sql_grunder/notes/sql/join.md):
 
 ```sql
 SELECT p.name
@@ -252,6 +252,6 @@ Det är bra att veta, men skriv gärna `AND p.village_id IS NOT NULL` ändå. D�
 
 ---
 
-Föregående: [JOIN](join.md) · [Tillbaka till översikten](index.md) · Nästa: [COALESCE](coalesce.md)
+Föregående: [JOIN](../../../02_er_normalisering_sql_grunder/notes/sql/join.md) · [Tillbaka till översikten](../../../02_er_normalisering_sql_grunder/notes/sql/index.md) · Nästa: [COALESCE](coalesce.md)
 
 *Av Marcus Ackre Medina · Nion Education · marcus.medina@nionit.com*

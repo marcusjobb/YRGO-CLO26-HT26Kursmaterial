@@ -8,7 +8,7 @@ Nu ska vi leka CSI med en databas full av påhittade personer. Först genererar 
 
 Gå in på [mockaroo.com](https://www.mockaroo.com/) och skapa en tabell med de här fälten:
 
-![Fälten i Mockaroo: id, first_name, last_name, email, gender, favoriteCar, favoriteMovieGenre, linkedInSkill](../../01_intro_databaser/exercises/bilder/mer_sokningar_mockaroo.png)
+![Fälten i Mockaroo: id, first_name, last_name, email, gender, favoriteCar, favoriteMovieGenre, linkedInSkill](bilder/mer_sokningar_mockaroo.png)
 
 | Field Name | Type |
 |---|---|

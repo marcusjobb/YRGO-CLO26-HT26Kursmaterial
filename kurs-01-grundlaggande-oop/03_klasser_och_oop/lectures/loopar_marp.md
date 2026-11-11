@@ -36,16 +36,6 @@ Eller 10 000?
 
 ## while — kör så länge villkoret är sant
 
-![w:480](res/netflix_while.png)
-
-```csharp
-// while (!trött) { titta(); }
-```
-
----
-
-## while — i kod
-
 ```csharp
 int nedräkning = 5;
 
@@ -106,29 +96,18 @@ while (nedräkning > 0) {
 }
 ```
 
-`nedräkning` ändras aldrig → villkoret alltid sant → programmet fastnar.
+`nedräkning` ändras aldrig → villkoret är alltid sant → programmet fastnar.
+
+**En infinite loop är ett av de vanligaste misstagen med while.**
 
 Kom ihåg: något **inuti loopen** måste förändra villkoret.
-
----
-
-## Infinite loop — känner du igen den?
-
-> 🎬 *Groundhog Day* (1993) — Bill Murray vaknar upp och lever exakt samma dag, om och om igen. Ingen avslutningsvillkor.
-> *Happy Death Day* (2017) — samma grej, men med en mördare.
-> Det är en infinite loop. Datorn är Bill Murray.
+Här är det `nedräkning--` som är nyckeln.
 
 > 💬 _"Om programmet verkar hänga — tryck Ctrl+C för att avbryta. Leta sedan efter vad som aldrig förändras."_
 
 ---
 
 ## for — när du vet exakt hur många gånger
-
-![w:300](res/the_count.jpg)
-
----
-
-## for — i kod
 
 ```csharp
 for (int i = 1; i <= 10; i++)
@@ -253,5 +232,6 @@ foreach (string frukt in frukter)
 ### Övningar finns i `exercises/`
 
 🟢 `loops/countdown.md` — bygg en nedräkning med while  
+🟡 `loops/pirate_game.md` — håll ett spel igång med loop och villkor
 
 _Ta det steg för steg. Använd tipsen om du fastnar._

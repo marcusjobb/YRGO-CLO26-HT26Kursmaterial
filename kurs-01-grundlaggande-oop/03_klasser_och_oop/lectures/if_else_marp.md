@@ -1,6 +1,5 @@
 ---
 marp: true
-html: true
 theme: nion-dark
 paginate: true
 ---
@@ -17,12 +16,18 @@ _Kurs 01 · Vecka 3 · Nion Education_
 
 ## Vad är ett villkor?
 
-![w:260](res/boolean_meme.jpg)
+Ett villkor är ett uttryck som antingen är **sant** eller **falskt**.
 
-Ett Ouija-bräde har bara två svar: **YES** eller **NO**.
-I C# kallas det `true` eller `false` — det är en `bool`.
+```csharp
+bool harRåd = true;
+bool ärVuxen = false;
+```
 
-> 💬 _"Allt i en if-sats kokar ner till ett enda bool-värde."_
+I C# kallas det ett `bool`-värde — kort för *boolean*.
+
+Villkor är grunden för all logik i kod. Utan dem gör programmet alltid samma sak, oavsett vad som händer.
+
+> 💬 _"Du har redan träffat bool. Nu börjar vi använda den för riktiga beslut."_
 
 ---
 
@@ -37,11 +42,14 @@ if (ålder >= 18)
 
 Koden inuti `if` körs **bara om villkoret är sant**.
 
-```mermaid
-flowchart TD
-    A([ålder = 20]) --> B{ålder >= 18?}
-    B -- Sant --> C[Du får rösta!]
-    B -- Falskt --> D[hoppa över]
+```
+Flöde:
+         [ålder >= 18?]
+               |
+        Sant ──┘── Falskt
+         |              |
+  Skriv ut "Du        (hoppa över)
+   får rösta!"
 ```
 
 Om `ålder` är 17 — händer ingenting.
@@ -50,25 +58,23 @@ Om `ålder` är 17 — händer ingenting.
 
 ## if / else
 
-> 🎵 *"If you've got a girlfriend, I'm jealous of her*
-> *But if you're single, that's honestly worse"*
-> — Taylor Swift, Gorgeous
-
 ```csharp
-bool hasGirlfriend = true;
+int ålder = 15;
 
-if (hasGirlfriend)
-    Console.WriteLine("I'm jealous of her.");
+if (ålder >= 18)
+    Console.WriteLine("Du får rösta!");
 else
-    Console.WriteLine("That's honestly worse.");
+    Console.WriteLine("Du är för ung.");
 ```
 
 `else` körs när villkoret är **falskt**.
 
-```mermaid
-flowchart TD
-    A{hasGirlfriend?} -- Sant --> B["I'm jealous of her."]
-    A -- Falskt --> C["That's honestly worse."]
+```
+[ålder >= 18?]
+      |
+  Sant │ Falskt
+      │       │
+ "rösta!"  "för ung."
 ```
 
 En av de två vägarna körs alltid — aldrig båda.
@@ -112,7 +118,7 @@ Obs: `=` tilldelar ett värde. `==` jämför två värden.
 
 ---
 
-## Logiska operatorer — `&&` `||` `!`
+## Logiska operatorer
 
 Kombinera villkor med `&&`, `||` och `!`:
 
@@ -135,12 +141,6 @@ if (!ärInloggad)
 ---
 
 ## Nästlade if — när det går snett
-
-![w:340](res/spaghetti_code.jpg)
-
----
-
-## Nästlade if — i kod
 
 ```csharp
 // Svårt att följa — undvik djup nästling

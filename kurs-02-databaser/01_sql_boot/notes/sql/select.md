@@ -257,6 +257,6 @@ Anna och Cissi är båda `baker` i by `1`, så deras kombination blir en enda ra
 
 ---
 
-[Tillbaka till översikten](index.md) · Nästa: [WHERE](where.md)
+[Tillbaka till översikten](../../../02_er_normalisering_sql_grunder/notes/sql/index.md) · Nästa: [WHERE](where.md)
 
 *Av Marcus Ackre Medina · Nion Education · marcus.medina@nionit.com*

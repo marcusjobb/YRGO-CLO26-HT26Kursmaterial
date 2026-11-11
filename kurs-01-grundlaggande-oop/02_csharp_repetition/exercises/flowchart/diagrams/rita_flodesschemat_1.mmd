@@ -1,0 +1,14 @@
+flowchart TD
+    A([Start]) --> B[Kunden väljer dryck]
+    B --> C{Drycken tillgänglig?}
+    C -->|Nej| D[Visa: Slut i lager]
+    D --> Z([Slut])
+    C -->|Ja| E[Kunden matar in mynt]
+    E --> F{Tillräckligt belopp?}
+    F -->|Nej| G[Visa: Sätt i mer pengar]
+    G --> E
+    F -->|Ja| H[Leverera dryck]
+    H --> I{Växel att ge tillbaka?}
+    I -->|Ja| J[Ge tillbaka växel]
+    I -->|Nej| K([Slut])
+    J --> K

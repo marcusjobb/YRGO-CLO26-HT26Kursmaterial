@@ -138,7 +138,7 @@ Console.WriteLine();
 Console.WriteLine($"Det motsvarar {antalBio} biobiljetter på Filmstaden.");
 ```
 
-![too damn high](../../res/memes/too_damn_high.jpg)
+![too damn high](../../../res/memes/too_damn_high.jpg)
 
 </details>
 

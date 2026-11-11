@@ -9,29 +9,9 @@ Nytt konsolprojekt. Klasserna skrivs **efter** koden som körs i `Program.cs`.
 
 Så här hänger klasserna i uppgift 1 ihop:
 
-```mermaid
-classDiagram
-    class IHealthObserver {
-        <<interface>>
-        +OnHealthChanged(string heroName, int health) void
-    }
-    class HealthBar {
-        +OnHealthChanged(string heroName, int health) void
-    }
-    class SoundPlayer {
-        +OnHealthChanged(string heroName, int health) void
-    }
-    class Hero {
-        +string Name
-        +int Health
-        -List~IHealthObserver~ observers
-        +Subscribe(IHealthObserver observer) void
-        +TakeDamage(int amount) void
-    }
-    IHealthObserver <|.. HealthBar
-    IHealthObserver <|.. SoundPlayer
-    Hero "1" -- "*" IHealthObserver : observers
-```
+<img src="diagrams/ovning_observer_1.png" alt="Diagram" width="480">
+
+<!-- mermaid: diagrams/ovning_observer_1.mmd -->
 
 `HealthBar` och `SoundPlayer` lovar att kunna `IHealthObserver`. En `Hero` har många observers i en lista. `-` betyder `private`. Linjen går till interfacet, så `Hero` vet inte vilka klasser som lyssnar.
 
@@ -300,7 +280,94 @@ class OrderSystem
 
 </details>
 
-## 🔴 Uppgift 4: sluta lyssna
+## 🟡 Uppgift 4: termostaten
+
+En termostat berättar när temperaturen ändras. En display och en fläkt lyssnar, och de reagerar olika.
+
+1. Skapa `interface ITemperatureObserver` med metoden `void OnTemperatureChanged(int temperature);`.
+2. Skapa `Thermostat` med egenskapen `Temperature`, metoden `Subscribe` och metoden `SetTemperature(int value)`. Den sätter temperaturen och säger till alla lyssnare.
+3. Skapa `Display` som skriver ut `Temperatur {temperature} grader`.
+4. Skapa `Fan` som skriver ut `Fläkt: på` när temperaturen är över 25, och `Fläkt: av` annars.
+5. Sätt temperaturen till 22, 27 och 20. Vad händer med fläkten vid 27?
+
+**Förväntad output:**
+```
+Temperatur 22 grader
+Fläkt: av
+Temperatur 27 grader
+Fläkt: på
+Temperatur 20 grader
+Fläkt: av
+```
+
+<details markdown="1">
+<summary>Tips</summary>
+
+`Thermostat` vet inte vilka som lyssnar, precis som `Hero` i uppgift 1. Den säger bara till.
+
+</details>
+
+<details markdown="1">
+<summary>Lösningsförslag</summary>
+
+```csharp
+// Hela programmet: övning Observer, uppgift 4
+Thermostat termostat = new Thermostat();
+termostat.Subscribe(new Display());
+termostat.Subscribe(new Fan());
+
+termostat.SetTemperature(22);
+termostat.SetTemperature(27);
+termostat.SetTemperature(20);
+
+interface ITemperatureObserver
+{
+    void OnTemperatureChanged(int temperature);
+}
+
+class Display : ITemperatureObserver
+{
+    public void OnTemperatureChanged(int temperature)
+    {
+        Console.WriteLine($"Temperatur {temperature} grader");
+    }
+}
+
+class Fan : ITemperatureObserver
+{
+    public void OnTemperatureChanged(int temperature)
+    {
+        Console.WriteLine(temperature > 25 ? "Fläkt: på" : "Fläkt: av");
+    }
+}
+
+class Thermostat
+{
+    private readonly List<ITemperatureObserver> observers = new();
+    public int Temperature { get; private set; }
+
+    public void Subscribe(ITemperatureObserver observer)
+    {
+        observers.Add(observer);
+    }
+
+    public void SetTemperature(int value)
+    {
+        Temperature = value;
+
+        foreach (ITemperatureObserver observer in observers)
+        {
+            observer.OnTemperatureChanged(Temperature);
+        }
+    }
+}
+```
+
+</details>
+
+---
+
+## 🔴 Uppgift 5: sluta lyssna
 
 Ljudet blir tjatigt. Spelaren stänger av det.
 
@@ -327,7 +394,7 @@ Ljudet är avstängt.
 <summary>Lösningsförslag</summary>
 
 ```csharp
-// Hela programmet: övning Observer, uppgift 4
+// Hela programmet: övning Observer, uppgift 5
 Hero mira = new Hero("Mira", 100);
 SoundPlayer sound = new SoundPlayer();   // Sparas så att vi kan ta bort just den sen
 

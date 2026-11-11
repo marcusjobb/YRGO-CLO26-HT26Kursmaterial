@@ -355,7 +355,7 @@ När du börjar bygga klasser nästa vecka gäller objektmetoder. Tills dess kö
 
 ---
 
-**Se även:** [programmeringstermer/metoder.md](../programmeringstermer/metoder.md)
+**Se även:** [programmeringstermer/metoder.md](../../03_klasser_och_oop/terms/metoder.md)
 
 ---
 

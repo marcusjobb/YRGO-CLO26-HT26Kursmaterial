@@ -1,0 +1,72 @@
+[
+  {
+    "nummer": 1,
+    "ämne": "Strategy",
+    "fråga": "Vad är poängen med Strategy-mönstret?",
+    "svar": {
+      "text": "Att byta beteende genom att byta objekt, utan att ändra klassen som använder det",
+      "förklaring": "Rätt. Mira byter vapen med en enda rad, och Hero ändras inte."
+    },
+    "felaktiga_alternativ": [
+      { "text": "Att se till att det bara finns ett enda objekt av en klass i hela programmet", "förklaring": "Det är Singleton. Strategy handlar om att byta beteende, inte om att begränsa antal objekt." },
+      { "text": "Att skapa objekt utan att anroparen vet vilken klass som används", "förklaring": "Det är Factory. Strategy handlar om vilket sätt något görs på, inte om att skapa objekt." },
+      { "text": "Att Mira bestämmer sig för att byta frisyr 💇 när hon blir tråkig", "förklaring": "Lika omväxlande som en Strategy, men inte samma sak." }
+    ]
+  },
+  {
+    "nummer": 2,
+    "ämne": "Factory",
+    "fråga": "Vad gör en Factory?",
+    "svar": {
+      "text": "Samlar skapandet av objekt på ett ställe, så att anroparen inte behöver veta vilken klass som används",
+      "förklaring": "Rätt. Monster skapas i en fabrik, och resten av programmet beställer dem."
+    },
+    "felaktiga_alternativ": [
+      { "text": "Låter ett objekt notifiera många andra när något ändras", "förklaring": "Det är Observer. Factory skapar objekt, den meddelar ingen." },
+      { "text": "Bygger ett komplext objekt steg för steg med en byggare", "förklaring": "Det är Builder. Factory väljer vilken klass som skapas, Builder bygger ihop ett objekt." },
+      { "text": "Serverar gröt åt hjältarna 🥣 på kvällen", "förklaring": "Gröt är en fabrik, men inte en Factory i programmeringsmening." }
+    ]
+  },
+  {
+    "nummer": 3,
+    "ämne": "Observer",
+    "fråga": "När används Observer?",
+    "svar": {
+      "text": "När ett objekt ska meddela flera andra objekt när något har hänt, utan att känna till dem i förväg",
+      "förklaring": "Rätt. Hero säger till, och varje lyssnare bestämmer själv vad den gör med det."
+    },
+    "felaktiga_alternativ": [
+      { "text": "När en klass ska byta beteende under körning", "förklaring": "Det är Strategy. Observer handlar om att meddela, inte om att byta beteende." },
+      { "text": "När ett objekt ska byggas steg för steg", "förklaring": "Det är Builder. Observer handlar om meddelanden, inte om att bygga objekt." },
+      { "text": "När din dator ska bli sur på dig 😠", "förklaring": "Datorer blir inte sura. Observer är bara ett mönster." }
+    ]
+  },
+  {
+    "nummer": 4,
+    "ämne": "Builder",
+    "fråga": "Vad är Builder bra för?",
+    "svar": {
+      "text": "Att bygga ett objekt med många egenskaper steg för steg, där steg kan utelämnas",
+      "förklaring": "Rätt. Mira får sina egenskaper en mening i taget, och det som inte sägs får ett rimligt värde."
+    },
+    "felaktiga_alternativ": [
+      { "text": "Att bestämma vilken klass som ska skapas utifrån ett värde", "förklaring": "Det är Factory. Builder bygger ett objekt, Factory väljer vilket objekt." },
+      { "text": "Att bara tillåta ett enda objekt av en klass", "förklaring": "Det är Singleton. Builder har inget med antal objekt att göra." },
+      { "text": "Att bygga sandslott på stranden 🏖️ och se hur länge de står", "förklaring": "Sandslott är en byggare, men inte ett designmönster." }
+    ]
+  },
+  {
+    "nummer": 5,
+    "ämne": "UML",
+    "fråga": "Vad visar ett klassdiagram som ett ERD inte visar?",
+    "svar": {
+      "text": "Metoder, alltså vad klassen kan göra",
+      "förklaring": "Rätt. En tabell har bara data, och ett ERD visar därför inga metoder."
+    },
+    "felaktiga_alternativ": [
+      { "text": "Vilka tabeller som finns i databasen", "förklaring": "Det visar ett ERD. Tabeller är det ett ERD är till för." },
+      { "text": "Hur många rader varje tabell har", "förklaring": "Varken klassdiagram eller ERD visar antal rader. Det är data, inte struktur." },
+      { "text": "Vilken färg klassen har när den är glad 🌈", "förklaring": "Klasser är inte glada, och färger ingår inte i UML-notationen." }
+    ]
+  }
+]

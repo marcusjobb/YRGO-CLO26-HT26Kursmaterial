@@ -83,7 +83,7 @@ ROLLBACK;               -- ångra allt sedan BEGIN
 -- COMMIT;              -- eller spara
 ```
 
-Det här är det närmaste en ångra-knapp du kommer i SQL. Mer om det i [Transaktioner](../transaktioner.md).
+Det här är det närmaste en ångra-knapp du kommer i SQL. Mer om det i Transaktioner.
 
 ## När databasen säger nej
 
@@ -256,7 +256,7 @@ Lägg gärna båda stegen i en transaktion. Då blir det aldrig ett läge där i
 
 ---
 
-Föregående: [UPDATE](update.md) · [Tillbaka till översikten](index.md)
+Föregående: [UPDATE](update.md) · [Tillbaka till översikten](../../../02_er_normalisering_sql_grunder/notes/sql/index.md)
 
 Vill du öva mer? Testa [SQL Island](https://sql-island.informatik.uni-kl.de/) och [SQL Murder Mystery](https://mystery.knightlab.com/), två spel som löses helt med SQL.
 

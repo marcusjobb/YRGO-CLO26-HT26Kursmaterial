@@ -8,23 +8,23 @@ Här får varje kommando en egen sida, med samma lilla tabell genom hela vägen.
 
 ## Börja här
 
-[Övningsdata](../../../01_intro_databaser/notes/sql/ovningsdata.md) har skriptet som skapar tabellerna som alla sidor använder. Kör det en gång, så kan du testa varje exempel själv.
+[Övningsdata](../../../01_sql_boot/notes/sql/ovningsdata.md) har skriptet som skapar tabellerna som alla sidor använder. Kör det en gång, så kan du testa varje exempel själv.
 
 ## Sidorna
 
 | Sida | Innehåll | Familj |
 |---|---|---|
-| [SELECT](../../../01_intro_databaser/notes/sql/select.md) | `SELECT`, `*`, kolumner, `AS`, `DISTINCT` | 🔍 DQL |
-| [WHERE](../../../01_intro_databaser/notes/sql/where.md) | jämförelser, `AND`/`OR`/`IN`, `LIKE`, `BETWEEN`, `IS NULL` | 🔍 DQL |
-| [ORDER BY](../../../01_intro_databaser/notes/sql/order-by.md) | `ORDER BY`, `LIMIT`/`TOP`, `OFFSET` | 🔍 DQL |
-| [Aggregatfunktioner](../../../01_intro_databaser/notes/sql/aggregat.md) | `COUNT`, `SUM`, `AVG`, `MIN`, `MAX` | 🔍 DQL |
-| [GROUP BY](../../../01_intro_databaser/notes/sql/group-by.md) | `GROUP BY`, `HAVING` | 🔍 DQL |
+| [SELECT](../../../01_sql_boot/notes/sql/select.md) | `SELECT`, `*`, kolumner, `AS`, `DISTINCT` | 🔍 DQL |
+| [WHERE](../../../01_sql_boot/notes/sql/where.md) | jämförelser, `AND`/`OR`/`IN`, `LIKE`, `BETWEEN`, `IS NULL` | 🔍 DQL |
+| [ORDER BY](../../../01_sql_boot/notes/sql/order-by.md) | `ORDER BY`, `LIMIT`/`TOP`, `OFFSET` | 🔍 DQL |
+| [Aggregatfunktioner](../../../01_sql_boot/notes/sql/aggregat.md) | `COUNT`, `SUM`, `AVG`, `MIN`, `MAX` | 🔍 DQL |
+| [GROUP BY](../../../01_sql_boot/notes/sql/group-by.md) | `GROUP BY`, `HAVING` | 🔍 DQL |
 | [JOIN](join.md) | `JOIN`, `LEFT JOIN`, alias, gammal och ny stil | 🔍 DQL |
-| [Subquery](../../../01_intro_databaser/notes/sql/subquery.md) | subquery och korrelerad subquery | 🔍 DQL |
-| [COALESCE](../../../01_intro_databaser/notes/sql/coalesce.md) | reservvärden för `NULL`, `COALESCE(SUM(...), 0)` och `NULLIF` | 🔍 DQL |
-| [INSERT](../../../01_intro_databaser/notes/sql/insert.md) | lägga till rader | ✏️ DML |
-| [UPDATE](../../../01_intro_databaser/notes/sql/update.md) | ändra rader | ✏️ DML |
-| [DELETE](../../../01_intro_databaser/notes/sql/delete.md) | ta bort rader | ✏️ DML |
+| [Subquery](../../../01_sql_boot/notes/sql/subquery.md) | subquery och korrelerad subquery | 🔍 DQL |
+| [COALESCE](../../../01_sql_boot/notes/sql/coalesce.md) | reservvärden för `NULL`, `COALESCE(SUM(...), 0)` och `NULLIF` | 🔍 DQL |
+| [INSERT](../../../01_sql_boot/notes/sql/insert.md) | lägga till rader | ✏️ DML |
+| [UPDATE](../../../01_sql_boot/notes/sql/update.md) | ändra rader | ✏️ DML |
+| [DELETE](../../../01_sql_boot/notes/sql/delete.md) | ta bort rader | ✏️ DML |
 
 Och när du vill knyta ihop SQL med C#:
 
@@ -34,7 +34,7 @@ Och när du vill knyta ihop SQL med C#:
 
 ## SQL:s fem familjer
 
-![SQL:s fem familjer: DQL, DML, DDL, DCL och TCL](../../../01_intro_databaser/notes/sql/diagrams/sql_fem_familjer.png)
+![SQL:s fem familjer: DQL, DML, DDL, DCL och TCL](../../../01_sql_boot/notes/sql/diagrams/sql_fem_familjer.png)
 
 | | Familj | Frågan den svarar på | Kommandon |
 |---|---|---|---|
@@ -50,7 +50,7 @@ Sidorna här handlar om **DQL** och **DML**, alltså det du som utvecklare skriv
 
 Det här är bra att ha i bakhuvudet när du läser sidorna. Du **skriver** en fråga i en ordning, men databasen **kör** den i en annan:
 
-![Skrivordning och körordning för en SQL-fråga](../../../01_intro_databaser/notes/sql/diagrams/sql_korordning.png)
+![Skrivordning och körordning för en SQL-fråga](../../../01_sql_boot/notes/sql/diagrams/sql_korordning.png)
 
 | Du skriver | Databasen kör |
 |---|---|

@@ -92,11 +92,11 @@ Nu vet du var filen finns, ifall du skulle behöva ta en backup av din databas. 
 
 På Mockaroo skapar vi en lista som vi laddar ner som CSV, så att vi kan hantera alla `INSERT` själva. Men den här tabellen kommer att innehålla många upprepade värden.
 
-![Fälten i Mockaroo: id, first_name, last_name, email, favoriteMovie, pet, city](../../01_intro_databaser/exercises/bilder/csharp_sql_mockaroo_falt.png)
+![Fälten i Mockaroo: id, first_name, last_name, email, favoriteMovie, pet, city](bilder/csharp_sql_mockaroo_falt.png)
 
 Vad är ett bra sätt att dela upp den? Diskutera gärna i grupp hur en sådan här tabell skulle kunna delas upp så att databasen blir så liten som möjligt.
 
-![Exempeldata från Mockaroo](../../01_intro_databaser/exercises/bilder/csharp_sql_mockaroo_data.png)
+![Exempeldata från Mockaroo](bilder/csharp_sql_mockaroo_data.png)
 
 - Hur många tabeller blir det ungefär?
 - Behöver alla en Primary Key?

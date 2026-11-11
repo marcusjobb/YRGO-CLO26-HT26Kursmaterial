@@ -7,14 +7,14 @@ Nytt material publiceras löpande under kursens gång.
 
 | # | Modul | Innehåll |
 |---|-------|----------|
-| 01 | [Verktyg och Git](01_verktyg_och_git/) | Installation, versionshantering, Git Bash |
-| 02 | [Syntax och variabler](02_syntax_och_variabler/) | Datatyper, variabler, operatorer, input/output |
-| 03 | [Villkor och loopar](03_villkor_och_loopar/) | if/else, switch, for, while, do-while |
-| 04 | [Metoder](04_metoder/) | Metoder, parametrar, returvärden, scope |
-| 05 | [Klasser och OOP](05_klasser_och_oop/) | Klasser, objekt, konstruktorer, inkapsling |
-| 06 | [Datastrukturer](06_datastrukturer/) | Arrayer, listor, dictionaries |
-| 07 | [Git och Markdown](07_git_och_markdown/) | Branches, merging, pull requests, Markdown |
-| 08 | [Projekt](08_projekt/) | Självständigt projekt — allt vi lärt oss |
+| 01 | [Verktyg och Git](01_git_och_verktyg/) | Installation, versionshantering, Git Bash |
+| 02 | [Syntax och variabler](02_csharp_repetition/) | Datatyper, variabler, operatorer, input/output |
+| 03 | [Villkor och loopar](03_klasser_och_oop/) | if/else, switch, for, while, do-while |
+| 04 | [Metoder](04_samlingar_och_datastrukturer/) | Metoder, parametrar, returvärden, scope |
+| 05 | Klasser och OOP | Klasser, objekt, konstruktorer, inkapsling |
+| 06 | Datastrukturer | Arrayer, listor, dictionaries |
+| 07 | Git och Markdown | Branches, merging, pull requests, Markdown |
+| 08 | Projekt | Självständigt projekt — allt vi lärt oss |
 
 ## Hur du arbetar med materialet
 

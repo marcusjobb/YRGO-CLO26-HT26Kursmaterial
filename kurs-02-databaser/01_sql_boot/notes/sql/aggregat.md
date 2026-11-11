@@ -74,7 +74,7 @@ FROM person;
 
 Samma sak gäller de andra funktionerna: `SUM`, `AVG`, `MIN` och `MAX` hoppar över `NULL`.
 
-Det här blir viktigt i [JOIN](join.md), där `NULL` dyker upp ofta.
+Det här blir viktigt i [JOIN](../../../02_er_normalisering_sql_grunder/notes/sql/join.md), där `NULL` dyker upp ofta.
 
 ## `COUNT(DISTINCT kolumn)`
 
@@ -232,6 +232,6 @@ Resultatet är 420 (500 − 80). Du kan räkna med aggregat precis som med vanli
 
 ---
 
-Föregående: [ORDER BY](order-by.md) · [Tillbaka till översikten](index.md) · Nästa: [GROUP BY](group-by.md)
+Föregående: [ORDER BY](order-by.md) · [Tillbaka till översikten](../../../02_er_normalisering_sql_grunder/notes/sql/index.md) · Nästa: [GROUP BY](group-by.md)
 
 *Av Marcus Ackre Medina · Nion Education · marcus.medina@nionit.com*

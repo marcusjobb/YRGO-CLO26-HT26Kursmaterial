@@ -257,7 +257,7 @@ ORDER BY snittguld DESC;
 | 2 | 275 |
 | 1 | 100 |
 
-David hamnar i en egen hög med `NULL`. Vill du ha bynamnen i stället för id behöver du [JOIN](join.md).
+David hamnar i en egen hög med `NULL`. Vill du ha bynamnen i stället för id behöver du [JOIN](../../../02_er_normalisering_sql_grunder/notes/sql/join.md).
 
 </details>
 
@@ -291,6 +291,6 @@ Jämför med övning 2. Där var piloten med, eftersom hans hög hade 500. Nu f�
 
 ---
 
-Föregående: [Aggregatfunktioner](aggregat.md) · [Tillbaka till översikten](index.md) · Nästa: [JOIN](join.md)
+Föregående: [Aggregatfunktioner](aggregat.md) · [Tillbaka till översikten](../../../02_er_normalisering_sql_grunder/notes/sql/index.md) · Nästa: [JOIN](../../../02_er_normalisering_sql_grunder/notes/sql/join.md)
 
 *Av Marcus Ackre Medina · Nion Education · marcus.medina@nionit.com*

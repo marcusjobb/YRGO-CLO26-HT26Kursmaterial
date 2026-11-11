@@ -43,6 +43,8 @@ cd Vattningslogg
 
 ### Steg 2: Lägg till EF Core
 
+> ⚠️ Kör kommandona i mappen där `Vattningslogg.csproj` ligger (efter `cd Vattningslogg`). Står du i en annan mapp hittar `dotnet add package` och `dotnet ef` inte projektet.
+
 ```bash
 dotnet add package Microsoft.EntityFrameworkCore.SqlServer
 dotnet add package Microsoft.EntityFrameworkCore.Tools

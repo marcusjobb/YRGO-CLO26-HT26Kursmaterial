@@ -22,7 +22,18 @@ cd HelloEF
 
 ## Steg 2 – Installera EF Core (3 min)
 
+Det finns två slags verktyg här:
+
+- **En gång per dator:** `dotnet-ef`, som ger dig kommandot `dotnet ef`
+- **En gång per projekt:** NuGet-paketen i ditt projekt
+
+> ⚠️ Kör kommandona i mappen där `HelloEF.csproj` ligger (efter `cd HelloEF`). Står du i en annan mapp hittar `dotnet add package` och `dotnet ef` inte projektet.
+
 ```bash
+# En gång per dator (hoppa över om du redan gjort det)
+dotnet tool install --global dotnet-ef
+
+# En gång per projekt
 dotnet add package Microsoft.EntityFrameworkCore.Sqlite
 dotnet add package Microsoft.EntityFrameworkCore.Tools
 ```
@@ -77,7 +88,7 @@ public class HelloContext : DbContext
 
 ## Steg 5 – Skapa databasen (3 min)
 
-Kör i terminalen:
+Kör i terminalen, i projektmappen där `HelloEF.csproj` ligger:
 
 ```bash
 dotnet ef migrations add Initial
@@ -209,9 +220,9 @@ Detta är grunden i all databashantering – resten bygger på detta!
 
 ## Nästa steg
 
-- Läs om [Entiteter](link-to-entiteter.md)
-- Prova [CRUD-övningen](link-to-crud.md)
-- Utforska [Relationer](link-to-relations.md)
+- Läs om Entiteter
+- Prova CRUD-övningen
+- Utforska Relationer
 
 ## Troubleshooting
 
@@ -219,10 +230,10 @@ Detta är grunden i all databashantering – resten bygger på detta!
 **Lösning:** Installera verktyget globalt:
 
 ```bash
-
-**15-minutersregeln:** Fastnar du i mer än 15 minuter — fråga klassen, sen AI, sen mig. I den ordningen.
 dotnet tool install --global dotnet-ef
 ```
+
+**15-minutersregeln:** Fastnar du i mer än 15 minuter — fråga klassen, sen AI, sen mig. I den ordningen.
 
 **Problem:** Migration skapar fel tabell
 **Lösning:** Ta bort migrationen och försök igen:

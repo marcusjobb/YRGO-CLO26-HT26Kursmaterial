@@ -47,6 +47,8 @@ cd Djursjukhus
 
 ### Steg 2: Lägg till EF Core-paket
 
+> ⚠️ Kör kommandona i mappen där `Djursjukhus.csproj` ligger (efter `cd Djursjukhus`). Står du i en annan mapp hittar `dotnet add package` och `dotnet ef` inte projektet.
+
 ```bash
 dotnet add package Microsoft.EntityFrameworkCore.SqlServer
 dotnet add package Microsoft.EntityFrameworkCore.Tools

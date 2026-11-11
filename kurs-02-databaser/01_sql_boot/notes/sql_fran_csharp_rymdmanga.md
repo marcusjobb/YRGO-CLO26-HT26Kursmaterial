@@ -6,18 +6,18 @@ Besättningen på fraktskeppet **Kometen** visar hur båda sätten fungerar.
 
 | | | |
 |---|---|---|
-| ![Sora](../../01_intro_databaser/notes/manga/sora.jpg) | **Kapten Sora** | fattar besluten |
-| ![Yuki](../../01_intro_databaser/notes/manga/yuki.jpg) | **Yuki** | kommunikation, öppnar och stänger kanaler |
-| ![Kenta](../../01_intro_databaser/notes/manga/kenta.jpg) | **Kenta** | ingenjör, bygger kommandona |
-| ![Hoshi](../../01_intro_databaser/notes/manga/hoshi.jpg) | **Doktor Hoshi** | analytiker, tar emot och kontrollerar data |
-| ![Raiko](../../01_intro_databaser/notes/manga/raiko.jpg) | **Raiko** | pirat, inte någon vän |
-| ![Mamo](../../01_intro_databaser/notes/manga/mamo.jpg) | **Mamo** | handlare med en kappa full av fickor |
+| ![Sora](manga/sora.jpg) | **Kapten Sora** | fattar besluten |
+| ![Yuki](manga/yuki.jpg) | **Yuki** | kommunikation, öppnar och stänger kanaler |
+| ![Kenta](manga/kenta.jpg) | **Kenta** | ingenjör, bygger kommandona |
+| ![Hoshi](manga/hoshi.jpg) | **Doktor Hoshi** | analytiker, tar emot och kontrollerar data |
+| ![Raiko](manga/raiko.jpg) | **Raiko** | pirat, inte någon vän |
+| ![Mamo](manga/mamo.jpg) | **Mamo** | handlare med en kappa full av fickor |
 
 > Kapitlen nedan använder SQLite som standardexempel. Vill du byta databas? Se [Välj din databas](#välj-din-databas) längst ner — API:et är detsamma, bara anslutningssträngen och klassnamnen skiljer sig.
 
 ## Kapitel 1 — Piratmetoden: kommunikation utan förväntat svar
 
-![Sora](../../01_intro_databaser/notes/manga/sora.jpg)
+![Sora](manga/sora.jpg)
 
 **Sora:** Ett skepp närmar sig! Yuki, anropa det!
 
@@ -25,7 +25,7 @@ Besättningen på fraktskeppet **Kometen** visar hur båda sätten fungerar.
 using var conn = new SqliteConnection("Data Source=Space.db");
 ```
 
-![Yuki](../../01_intro_databaser/notes/manga/yuki.jpg)
+![Yuki](manga/yuki.jpg)
 
 **Yuki:** Öppnar kommunikationskanalen!
 
@@ -33,7 +33,7 @@ using var conn = new SqliteConnection("Data Source=Space.db");
 conn.Open();
 ```
 
-![Raiko](../../01_intro_databaser/notes/manga/raiko.jpg)
+![Raiko](manga/raiko.jpg)
 
 **Raiko:** Hahaha! Lämna över lasten, annars blir ni rymdskrot!
 
@@ -41,7 +41,7 @@ conn.Open();
 // (Det här var ingen förhandling)
 ```
 
-![Sora](../../01_intro_databaser/notes/manga/sora.jpg)
+![Sora](manga/sora.jpg)
 
 **Sora:** Kenta, förbered för strid!
 
@@ -49,7 +49,7 @@ conn.Open();
 string sql = "DELETE FROM SpaceShips WHERE Ship = @ship";
 ```
 
-![Kenta](../../01_intro_databaser/notes/manga/kenta.jpg)
+![Kenta](manga/kenta.jpg)
 
 **Kenta:** Skölden uppe! Laddar kanonerna!
 
@@ -57,7 +57,7 @@ string sql = "DELETE FROM SpaceShips WHERE Ship = @ship";
 using var cmd = new SqliteCommand(sql, conn);
 ```
 
-![Sora](../../01_intro_databaser/notes/manga/sora.jpg)
+![Sora](manga/sora.jpg)
 
 **Sora:** Sikta på piratskeppet!
 
@@ -65,7 +65,7 @@ using var cmd = new SqliteCommand(sql, conn);
 cmd.Parameters.AddWithValue("@ship", "PirateShip");
 ```
 
-![Sora](../../01_intro_databaser/notes/manga/sora.jpg)
+![Sora](manga/sora.jpg)
 
 **Sora:** ELD!
 
@@ -73,7 +73,7 @@ cmd.Parameters.AddWithValue("@ship", "PirateShip");
 int rows = cmd.ExecuteNonQuery();
 ```
 
-![Hoshi](../../01_intro_databaser/notes/manga/hoshi.jpg)
+![Hoshi](manga/hoshi.jpg)
 
 **Hoshi:** *justerar glasögonen* Kontrollerar att piratskeppet är borta.
 
@@ -88,7 +88,7 @@ if (rows == 1)
 
 ## Kapitel 2 — Handlarmetoden: kommunikation som returnerar en DataTable
 
-![Hoshi](../../01_intro_databaser/notes/manga/hoshi.jpg)
+![Hoshi](manga/hoshi.jpg)
 
 **Hoshi:** Ett skepp närmar sig. Jag förbereder minnesplats för informationsutbyte.
 
@@ -96,7 +96,7 @@ if (rows == 1)
 DataTable dt = new DataTable(); // kräver using System.Data;
 ```
 
-![Sora](../../01_intro_databaser/notes/manga/sora.jpg)
+![Sora](manga/sora.jpg)
 
 **Sora:** Yuki, anropa skeppet!
 
@@ -104,7 +104,7 @@ DataTable dt = new DataTable(); // kräver using System.Data;
 using var conn = new SqliteConnection("Data Source=Space.db");
 ```
 
-![Yuki](../../01_intro_databaser/notes/manga/yuki.jpg)
+![Yuki](manga/yuki.jpg)
 
 **Yuki:** Öppnar kommunikationskanalen!
 
@@ -112,7 +112,7 @@ using var conn = new SqliteConnection("Data Source=Space.db");
 conn.Open();
 ```
 
-![Mamo](../../01_intro_databaser/notes/manga/mamo.jpg)
+![Mamo](manga/mamo.jpg)
 
 **Mamo:** Fufufu... jag har precis det ni söker, kapten.
 
@@ -120,7 +120,7 @@ conn.Open();
 // (Han har det alltid. Frågan är bara vad det kostar.)
 ```
 
-![Sora](../../01_intro_databaser/notes/manga/sora.jpg)
+![Sora](manga/sora.jpg)
 
 **Sora:** Visa vad du har.
 
@@ -128,7 +128,7 @@ conn.Open();
 string sql = "SELECT * FROM MerchantItems WHERE Merchant = @merchant";
 ```
 
-![Yuki](../../01_intro_databaser/notes/manga/yuki.jpg)
+![Yuki](manga/yuki.jpg)
 
 **Yuki:** Förbereder sökning av varor.
 
@@ -136,7 +136,7 @@ string sql = "SELECT * FROM MerchantItems WHERE Merchant = @merchant";
 using var cmd = new SqliteCommand(sql, conn);
 ```
 
-![Yuki](../../01_intro_databaser/notes/manga/yuki.jpg)
+![Yuki](manga/yuki.jpg)
 
 **Yuki:** Skickar över sökparametrar.
 
@@ -144,7 +144,7 @@ using var cmd = new SqliteCommand(sql, conn);
 cmd.Parameters.AddWithValue("@merchant", "Mamo");
 ```
 
-![Hoshi](../../01_intro_databaser/notes/manga/hoshi.jpg)
+![Hoshi](manga/hoshi.jpg)
 
 **Hoshi:** Förbereder överföring av hans data till oss.
 
@@ -152,7 +152,7 @@ cmd.Parameters.AddWithValue("@merchant", "Mamo");
 using var reader = cmd.ExecuteReader();
 ```
 
-![Hoshi](../../01_intro_databaser/notes/manga/hoshi.jpg)
+![Hoshi](manga/hoshi.jpg)
 
 **Hoshi:** Tar emot information.
 
@@ -160,7 +160,7 @@ using var reader = cmd.ExecuteReader();
 dt.Load(reader);
 ```
 
-![Yuki](../../01_intro_databaser/notes/manga/yuki.jpg)
+![Yuki](manga/yuki.jpg)
 
 **Yuki:** All data är mottagen. Stänger kanalen.
 
@@ -168,11 +168,11 @@ dt.Load(reader);
 return dt;
 ```
 
-![Kenta](../../01_intro_databaser/notes/manga/kenta.jpg)
+![Kenta](manga/kenta.jpg)
 
 **Kenta:** Eh... varför står det en låda med "GRATISPROV" i lastrummet?
 
-![Mamo](../../01_intro_databaser/notes/manga/mamo.jpg)
+![Mamo](manga/mamo.jpg)
 
 **Mamo:** *redan långt borta* Fufufu...
 
@@ -187,7 +187,7 @@ foreach (DataRow row in dt.Rows)
 
 ## Kapitel 3 — Parametern som hette fel
 
-![Kenta](../../01_intro_databaser/notes/manga/kenta.jpg)
+![Kenta](manga/kenta.jpg)
 
 **Kenta:** Kapten! Programmet kraschade!
 
@@ -201,7 +201,7 @@ cmd.Parameters.AddWithValue("@merchant", "Mamo");
 System.InvalidOperationException: Must add values for the following parameters: @name
 ```
 
-![Hoshi](../../01_intro_databaser/notes/manga/hoshi.jpg)
+![Hoshi](manga/hoshi.jpg)
 
 **Hoshi:** Logiskt. SQL-satsen frågar efter `@name`, men vi skickade `@merchant`. Namnen måste vara **exakt samma** på båda ställena.
 

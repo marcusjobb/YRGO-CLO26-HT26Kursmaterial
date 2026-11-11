@@ -68,7 +68,7 @@ De två `DROP TABLE IF EXISTS` i början gör att du kan köra skriptet igen nä
 
 `person.village_id` **pekar på** `village.id`. Det kallas en **främmande nyckel** (foreign key).
 
-Två saker är där med flit, och du kommer att få nytta av dem på [JOIN](join.md)-sidan:
+Två saker är där med flit, och du kommer att få nytta av dem på [JOIN](../../../02_er_normalisering_sql_grunder/notes/sql/join.md)-sidan:
 
 - **David bor ingenstans** (`village_id` är `NULL`)
 - **Ingen bor i Morotsby**
@@ -87,6 +87,6 @@ Skriptet är skrivet för SQLite. I SQL Server skriver du `INT IDENTITY(1,1) PRI
 
 ---
 
-[Tillbaka till översikten](index.md)
+[Tillbaka till översikten](../../../02_er_normalisering_sql_grunder/notes/sql/index.md)
 
 *Av Marcus Ackre Medina · Nion Education · marcus.medina@nionit.com*

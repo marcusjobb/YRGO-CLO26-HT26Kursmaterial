@@ -16,6 +16,8 @@ Vi börjar lätt med att skapa strukturen
 
 - Installera Entity Framework nugets
 
+> ⚠️ Paketen ska installeras i projektet som har `.csproj`-filen, inte i en annan lösning eller mapp.
+
 - install-package Microsoft.EntityFrameworkCore.SqlServer
 
 - install-package Microsoft.EntityFrameworkCore.Tools

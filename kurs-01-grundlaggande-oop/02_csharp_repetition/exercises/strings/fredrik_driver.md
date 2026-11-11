@@ -152,7 +152,7 @@ Det är hela poängen med variabler och string interpolation: koden som *produce
 
 **Spara den här övningen i bakhuvudet** — när vi kommer till arrays bygger vi listor av adjektiv, namn och reaktioner och låter koden slumpa fram en ny rad varje gång. Då blir det riktigt absurt skoj.
 
-Redan klar och sugen på mer? Kolla [`fredrik_akare_bonus.md`](fredrik_akare_bonus.md) — en 🥷 ninja-bonus där du gör exakt detta med arrays och `Random`.
+Redan klar och sugen på mer? Kolla `fredrik_akare_bonus.md` — en 🥷 ninja-bonus där du gör exakt detta med arrays och `Random`.
 
 </details>
 

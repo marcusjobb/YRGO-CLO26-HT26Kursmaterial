@@ -309,6 +309,6 @@ Utan `COALESCE` hade Davids hela mening blivit `NULL`.
 
 ---
 
-Föregående: [Subquery](subquery.md) · [Tillbaka till översikten](index.md) · Nästa: [INSERT](insert.md)
+Föregående: [Subquery](subquery.md) · [Tillbaka till översikten](../../../02_er_normalisering_sql_grunder/notes/sql/index.md) · Nästa: [INSERT](insert.md)
 
 *Av Marcus Ackre Medina · Nion Education · marcus.medina@nionit.com*

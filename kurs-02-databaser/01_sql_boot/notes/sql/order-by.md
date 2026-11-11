@@ -241,6 +241,6 @@ Tänk på vad som hade hänt om två personer hade haft lika mycket guld. Då ä
 
 ---
 
-Föregående: [WHERE](where.md) · [Tillbaka till översikten](index.md) · Nästa: [Aggregatfunktioner](aggregat.md)
+Föregående: [WHERE](where.md) · [Tillbaka till översikten](../../../02_er_normalisering_sql_grunder/notes/sql/index.md) · Nästa: [Aggregatfunktioner](aggregat.md)
 
 *Av Marcus Ackre Medina · Nion Education · marcus.medina@nionit.com*

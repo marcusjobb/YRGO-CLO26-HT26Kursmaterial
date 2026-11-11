@@ -233,6 +233,6 @@ Det är därför du ska låta databasen sätta `id` själv. Då kan det här ald
 
 ---
 
-Föregående: [COALESCE](coalesce.md) · [Tillbaka till översikten](index.md) · Nästa: [UPDATE](update.md)
+Föregående: [COALESCE](coalesce.md) · [Tillbaka till översikten](../../../02_er_normalisering_sql_grunder/notes/sql/index.md) · Nästa: [UPDATE](update.md)
 
 *Av Marcus Ackre Medina · Nion Education · marcus.medina@nionit.com*

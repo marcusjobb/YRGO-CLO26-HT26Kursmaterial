@@ -61,7 +61,7 @@ YRGO · Cloud Developer CLO26
 Klassens community — ställ frågor, dela kod, hjälp varandra
 
 <p style="text-align: center">
-<img src="./qr_discord.png" width="320">
+<img src="qr_discord.png" width="320">
 </p>
 
 ---
@@ -71,7 +71,7 @@ Klassens community — ställ frågor, dela kod, hjälp varandra
 Anslut till **goteborgfree** i första hand — öppet nät, ingen inloggning.
 
 <p style="text-align: center">
-<img src="./qr_wifi.png" width="320">
+<img src="qr_wifi.png" width="320">
 </p>
 
 ---
@@ -82,7 +82,7 @@ Funkar inte goteborgfree? Använd **GUEST-MOLNDAL** — även öppet,
 men du får klicka dig igenom en inloggningssida efter anslutning.
 
 <p style="text-align: center">
-<img src="./qr_wifi_guest_molndal.png" width="320">
+<img src="qr_wifi_guest_molndal.png" width="320">
 </p>
 
 ---
@@ -92,5 +92,5 @@ men du får klicka dig igenom en inloggningssida efter anslutning.
 Allt kursmaterial hittar du på webben — scanna QR-koden.
 
 <p style="text-align: center">
-<img src="./qr_kursmaterial.png" width="320">
+<img src="qr_kursmaterial.png" width="320">
 </p>

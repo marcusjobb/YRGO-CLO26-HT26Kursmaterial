@@ -520,7 +520,7 @@ Varje `JOIN` går över en bro. `event` står i mitten, och från den går vi ut
 
 Prova att byta `LEFT JOIN` mot en vanlig `JOIN`. Då blir det bara **fem** rader kvar: de händelser där någon tar emot något.
 
-En vanlig `JOIN` tar bara med rader som har en match på **båda** sidor om bron. Händelser med `NULL` som mottagare har ingen bro att gå över, och då försvinner de tyst. `LEFT JOIN` behåller dem ändå. Mer om det på sidan [JOIN](sql/join.md).
+En vanlig `JOIN` tar bara med rader som har en match på **båda** sidor om bron. Händelser med `NULL` som mottagare har ingen bro att gå över, och då försvinner de tyst. `LEFT JOIN` behåller dem ändå. Mer om det på sidan [JOIN](../../02_er_normalisering_sql_grunder/notes/sql/join.md).
 
 ### Varför COALESCE?
 

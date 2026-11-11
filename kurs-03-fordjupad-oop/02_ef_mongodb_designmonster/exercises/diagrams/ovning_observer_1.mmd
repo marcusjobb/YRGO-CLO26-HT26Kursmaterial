@@ -1,0 +1,21 @@
+classDiagram
+    class IHealthObserver {
+        <<interface>>
+        +OnHealthChanged(string heroName, int health) void
+    }
+    class HealthBar {
+        +OnHealthChanged(string heroName, int health) void
+    }
+    class SoundPlayer {
+        +OnHealthChanged(string heroName, int health) void
+    }
+    class Hero {
+        +string Name
+        +int Health
+        -List~IHealthObserver~ observers
+        +Subscribe(IHealthObserver observer) void
+        +TakeDamage(int amount) void
+    }
+    IHealthObserver <|.. HealthBar
+    IHealthObserver <|.. SoundPlayer
+    Hero "1" -- "*" IHealthObserver : observers

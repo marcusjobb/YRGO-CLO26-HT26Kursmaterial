@@ -8,25 +8,25 @@ Besättningen på **Kometen** är tillbaka. Den här gången får de lära sig v
 
 | | | |
 |---|---|---|
-| ![Tetsu](../../01_intro_databaser/notes/manga/tetsu.jpg) | **Inspektör Tetsu** | tullinspektör, har aldrig blivit imponerad |
-| ![Sora](../../01_intro_databaser/notes/manga/sora.jpg) | **Kapten Sora** | fattar besluten |
-| ![Kenta](../../01_intro_databaser/notes/manga/kenta.jpg) | **Kenta** | ingenjör, skriver koden |
-| ![Hoshi](../../01_intro_databaser/notes/manga/hoshi.jpg) | **Doktor Hoshi** | analytiker, ser felen först |
-| ![Mamo](../../01_intro_databaser/notes/manga/mamo.jpg) | **Mamo** | handlare, äger förvånansvärt mycket av lasten |
+| ![Tetsu](manga/tetsu.jpg) | **Inspektör Tetsu** | tullinspektör, har aldrig blivit imponerad |
+| ![Sora](manga/sora.jpg) | **Kapten Sora** | fattar besluten |
+| ![Kenta](manga/kenta.jpg) | **Kenta** | ingenjör, skriver koden |
+| ![Hoshi](manga/hoshi.jpg) | **Doktor Hoshi** | analytiker, ser felen först |
+| ![Mamo](manga/mamo.jpg) | **Mamo** | handlare, äger förvånansvärt mycket av lasten |
 
 ## Kapitel 1 — Tullen
 
-![Tetsu](../../01_intro_databaser/notes/manga/tetsu.jpg)
+![Tetsu](manga/tetsu.jpg)
 
 **Tetsu:** Fraktskeppet Kometen. Ert lastmanifest, tack. Varje låda: namn, vikt, ägare och pris.
 
-![Sora](../../01_intro_databaser/notes/manga/sora.jpg)
+![Sora](manga/sora.jpg)
 
 **Sora:** Kenta! Vi behöver ett lastmanifest. I en databas. Nu!
 
 ## Kapitel 2 — Projektet
 
-![Kenta](../../01_intro_databaser/notes/manga/kenta.jpg)
+![Kenta](manga/kenta.jpg)
 
 **Kenta:** Jag startar ett nytt projekt!
 
@@ -50,7 +50,7 @@ Projektfilen får samma `<ItemGroup>` med `Microsoft.Data.Sqlite` som förut. Va
 
 ## Kapitel 3 — Lösa värden
 
-![Kenta](../../01_intro_databaser/notes/manga/kenta.jpg)
+![Kenta](manga/kenta.jpg)
 
 **Kenta:** Lätt! Jag gör som i SQLite-handlern. En metod som tar namn, vikt, ägare och pris:
 
@@ -63,11 +63,11 @@ cargoHandler.AddCargo("Hyperdriftskristall", 12, "Mamo", 500);
 cargoHandler.AddCargo("Snabbnudlar (12-pack)", 8, "Mamo", 180);
 ```
 
-![Tetsu](../../01_intro_databaser/notes/manga/tetsu.jpg)
+![Tetsu](manga/tetsu.jpg)
 
 **Tetsu:** *höjer ett ögonbryn* Snabbnudlar som väger 8 kilo och kostar 180 credits?
 
-![Hoshi](../../01_intro_databaser/notes/manga/hoshi.jpg)
+![Hoshi](manga/hoshi.jpg)
 
 **Hoshi:** *justerar glasögonen* Kenta. Du har bytt plats på vikt och pris.
 
@@ -75,7 +75,7 @@ Både `weight` och `price` är `int`, så kompilatorn kan inte se att de har byt
 
 Ju fler parametrar en metod har, desto lättare är det att blanda ihop dem. Det blir också svårt att läsa anropet: vad betyder `8` och vad betyder `180`?
 
-![Hoshi](../../01_intro_databaser/notes/manga/hoshi.jpg)
+![Hoshi](manga/hoshi.jpg)
 
 **Hoshi:** Varje låda är en sak med egenskaper. Ge den en klass.
 
@@ -151,7 +151,7 @@ Jämför kolumnerna med klassen `Cargo`. Det är samma fem, i samma ordning.
 
 ### Spara ett objekt
 
-![Kenta](../../01_intro_databaser/notes/manga/kenta.jpg)
+![Kenta](manga/kenta.jpg)
 
 **Kenta:** Okej, okej. Metoden tar en hel låda i stället.
 
@@ -217,7 +217,7 @@ Det här är vägen tillbaka: **varje rad blir ett nytt `Cargo`-objekt**, och al
 
 ## Kapitel 6 — Det nya manifestet
 
-![Kenta](../../01_intro_databaser/notes/manga/kenta.jpg)
+![Kenta](manga/kenta.jpg)
 
 **Kenta:** Andra försöket!
 
@@ -272,15 +272,15 @@ Nudlarna fick id 2
 2: Snabbnudlar (12-pack), 180 kg, Mamo, 8 cr
 ```
 
-![Tetsu](../../01_intro_databaser/notes/manga/tetsu.jpg)
+![Tetsu](manga/tetsu.jpg)
 
 **Tetsu:** *läser* Rätt fält, rätt enheter. Manifestet är godkänt.
 
-![Tetsu](../../01_intro_databaser/notes/manga/tetsu.jpg)
+![Tetsu](manga/tetsu.jpg)
 
 **Tetsu:** ...men varför väger tolv paket snabbnudlar 180 kilo?
 
-![Mamo](../../01_intro_databaser/notes/manga/mamo.jpg)
+![Mamo](manga/mamo.jpg)
 
 **Mamo:** *redan på väg ut genom luftslussen* Fufufu...
 

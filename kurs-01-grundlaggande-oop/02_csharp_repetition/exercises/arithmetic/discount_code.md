@@ -167,6 +167,6 @@ Console.WriteLine($"Ditt saldo: {saldo} kr");
 Console.WriteLine($"Kvar efter köp: {kvar} kr");
 ```
 
-![hold on coupon](../../res/memes/hold_on_coupon.jpg)
+![hold on coupon](../../../res/memes/hold_on_coupon.jpg)
 
 </details>

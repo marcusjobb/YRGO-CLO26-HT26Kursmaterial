@@ -11,6 +11,8 @@
 
 > Tips: Kör `dotnet restore` efter varje paket för att dubbelkolla att allt löser sig.
 
+> ⚠️ Kör kommandona i mappen där `.csproj`-filen ligger. Står du i en annan mapp hittar `dotnet add package` och `dotnet ef` inte projektet.
+
 ## Database Provider (välj en!)
 
 ### SQLite (Rekommenderas för veckan)

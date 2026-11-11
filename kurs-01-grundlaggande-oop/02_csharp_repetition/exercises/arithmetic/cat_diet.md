@@ -8,7 +8,7 @@ En normalviktig katt väger 4–5 kg.
 Veterinären rekommenderar 40 gram torrfoder per kg kroppsvikt och dag.
 En påse torrfoder väger 2 kg och kostar 89 kr.
 
-![oh lawd he comin](../../res/memes/oh_lawd.webp)
+![oh lawd he comin](../../../res/memes/oh_lawd.webp)
 
 Din uppgift: räkna ut vad Mjukis kostar att mata — och hur lång tid dieten tar.
 

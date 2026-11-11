@@ -6,11 +6,11 @@ En bra databas sparar varje sak på **ett** ställe. Byns namn står i tabellen 
 
 Men det betyder också att svaret på en enkel fråga, som "vilken by bor Anna i?", ligger utspritt över två tabeller. `JOIN` sätter ihop bitarna igen.
 
-*Exemplen använder [övningsdatan](../../../01_intro_databaser/notes/sql/ovningsdata.md).*
+*Exemplen använder [övningsdatan](../../../01_sql_boot/notes/sql/ovningsdata.md).*
 
 ## Två tabeller, en nyckel
 
-![person.village_id pekar på village.id](../../../01_intro_databaser/notes/sql/diagrams/sql_village_tabell.png)
+![person.village_id pekar på village.id](../../../01_sql_boot/notes/sql/diagrams/sql_village_tabell.png)
 
 `person.village_id` **pekar på** `village.id`. Det kallas en **främmande nyckel** (foreign key), och det är den som gör att tabellerna kan kopplas ihop.
 
@@ -21,7 +21,7 @@ Lägg märke till två saker, för de blir viktiga strax:
 
 ## `JOIN ... ON`
 
-![JOIN kopplar ihop person och village](../../../01_intro_databaser/notes/sql/diagrams/sql_join.png)
+![JOIN kopplar ihop person och village](../../../01_sql_boot/notes/sql/diagrams/sql_join.png)
 
 ```sql
 SELECT person.name, village.name
@@ -44,7 +44,7 @@ På svenska:
 
 ## 💡 Vart tog David vägen?
 
-![INNER JOIN tar bara rader som har en match i båda tabellerna](../../../01_intro_databaser/notes/sql/diagrams/sql_join_filter.png)
+![INNER JOIN tar bara rader som har en match i båda tabellerna](../../../01_sql_boot/notes/sql/diagrams/sql_join_filter.png)
 
 Titta på resultatet igen. David är borta, och Morotsby också.
 
@@ -56,7 +56,7 @@ Det här är en av de viktigaste sakerna att förstå om SQL. Tänk dig att du l
 
 ## `LEFT JOIN`: behåll alla till vänster
 
-![LEFT JOIN: David är med, med NULL som by](../../../01_intro_databaser/notes/sql/diagrams/sql_left_join.png)
+![LEFT JOIN: David är med, med NULL som by](../../../01_sql_boot/notes/sql/diagrams/sql_left_join.png)
 
 ```sql
 SELECT person.name, village.name
@@ -72,7 +72,7 @@ LEFT JOIN village ON person.village_id = village.id;
 | David | NULL |
 | Eva | Gurkby |
 
-Alla rader från tabellen **till vänster** (den som står i `FROM`) följer med. Saknas en match fylls kolumnerna från den högra tabellen i med `NULL`. Vill du visa något annat än `NULL`, t.ex. texten "ingen by", använder du [COALESCE](../../../01_intro_databaser/notes/sql/coalesce.md).
+Alla rader från tabellen **till vänster** (den som står i `FROM`) följer med. Saknas en match fylls kolumnerna från den högra tabellen i med `NULL`. Vill du visa något annat än `NULL`, t.ex. texten "ingen by", använder du [COALESCE](../../../01_sql_boot/notes/sql/coalesce.md).
 
 Vill du i stället behålla alla **byar**, även de utan invånare, ställer du `village` till vänster:
 
@@ -95,7 +95,7 @@ Nu är Morotsby med, med `NULL` som invånare. David är däremot borta, efterso
 
 ## Alias
 
-![Alias: p och v är smeknamn för tabellerna](../../../01_intro_databaser/notes/sql/diagrams/sql_alias.png)
+![Alias: p och v är smeknamn för tabellerna](../../../01_sql_boot/notes/sql/diagrams/sql_alias.png)
 
 ```sql
 SELECT p.name, v.name AS village
@@ -115,7 +115,7 @@ Ordet `AS` är frivilligt för tabellalias, så `FROM person p` fungerar också.
 
 ## JOIN tillsammans med GROUP BY
 
-![JOIN + GROUP BY: invånare och guld per by](../../../01_intro_databaser/notes/sql/diagrams/sql_join_group_by.png)
+![JOIN + GROUP BY: invånare och guld per by](../../../01_sql_boot/notes/sql/diagrams/sql_join_group_by.png)
 
 ```sql
 SELECT v.name, COUNT(*) AS invanare, SUM(p.gold) AS guld
@@ -129,7 +129,7 @@ GROUP BY v.name;
 | Gurkby | 2 | 550 |
 | Lökby | 2 | 200 |
 
-Först kopplas tabellerna ihop, sedan läggs raderna i högar per by. Mer om högar på sidan [GROUP BY](../../../01_intro_databaser/notes/sql/group-by.md).
+Först kopplas tabellerna ihop, sedan läggs raderna i högar per by. Mer om högar på sidan [GROUP BY](../../../01_sql_boot/notes/sql/group-by.md).
 
 ## Gammal stil och ny stil
 
@@ -211,7 +211,7 @@ WHERE v.name = 'Lökby';
 
 ## Övningar
 
-Använd [övningsdatan](../../../01_intro_databaser/notes/sql/ovningsdata.md).
+Använd [övningsdatan](../../../01_sql_boot/notes/sql/ovningsdata.md).
 
 ### 🟢 Övning 1: Vem bor var?
 
@@ -302,7 +302,7 @@ GROUP BY v.name;
 
 Prova att byta `COUNT(p.id)` mot `COUNT(*)`. Då får Morotsby **1**, trots att ingen bor där!
 
-`COUNT(*)` räknar rader, och `LEFT JOIN` skapade faktiskt en rad för Morotsby, fylld med `NULL`. `COUNT(p.id)` räknar bara värden som inte är `NULL`, och det är därför den ger rätt svar. Mer om skillnaden på sidan [Aggregatfunktioner](../../../01_intro_databaser/notes/sql/aggregat.md). Gör du samma sak med `SUM` blir det `NULL` för Morotsby, och då behövs [COALESCE](../../../01_intro_databaser/notes/sql/coalesce.md).
+`COUNT(*)` räknar rader, och `LEFT JOIN` skapade faktiskt en rad för Morotsby, fylld med `NULL`. `COUNT(p.id)` räknar bara värden som inte är `NULL`, och det är därför den ger rätt svar. Mer om skillnaden på sidan [Aggregatfunktioner](../../../01_sql_boot/notes/sql/aggregat.md). Gör du samma sak med `SUM` blir det `NULL` för Morotsby, och då behövs [COALESCE](../../../01_sql_boot/notes/sql/coalesce.md).
 
 </details>
 
@@ -340,6 +340,6 @@ Någon gång kommer du att se en rapport där summorna är tre gånger för stor
 
 ---
 
-Föregående: [GROUP BY](../../../01_intro_databaser/notes/sql/group-by.md) · [Tillbaka till översikten](index.md) · Nästa: [Subquery](../../../01_intro_databaser/notes/sql/subquery.md)
+Föregående: [GROUP BY](../../../01_sql_boot/notes/sql/group-by.md) · [Tillbaka till översikten](index.md) · Nästa: [Subquery](../../../01_sql_boot/notes/sql/subquery.md)
 
 *Av Marcus Ackre Medina · Nion Education · marcus.medina@nionit.com*
