@@ -28,10 +28,10 @@ Materialet publiceras löpande — följ din lärare på Google Classroom för n
 
 | Vecka | Ämne |
 |-------|------|
-| [Vecka 1 (v.36)](kurs-01-grundlaggande-oop/01_git_och_verktyg/) | Git och verktyg |
-| [Vecka 2 (v.37)](kurs-01-grundlaggande-oop/02_csharp_repetition/) | C# repetition |
-| [Vecka 3 (v.38)](kurs-01-grundlaggande-oop/03_klasser_och_oop/) | Klasser och OOP |
-| [Vecka 4 (v.39)](kurs-01-grundlaggande-oop/04_samlingar_och_datastrukturer/) | Samlingar och datastrukturer |
+| [Vecka 1](kurs-01-grundlaggande-oop/01_git_och_verktyg/) | Git och verktyg |
+| [Vecka 2](kurs-01-grundlaggande-oop/02_csharp_repetition/) | C# repetition |
+| [Vecka 3](kurs-01-grundlaggande-oop/03_klasser_och_oop/) | Klasser och OOP |
+| [Vecka 4](kurs-01-grundlaggande-oop/04_samlingar_och_datastrukturer/) | Samlingar och datastrukturer |
 
 ---
 
@@ -39,10 +39,10 @@ Materialet publiceras löpande — följ din lärare på Google Classroom för n
 
 | Vecka | Ämne |
 |-------|------|
-| [Vecka 1 (v.41)](kurs-02-databaser/01_sql_boot/) | SQL-boot |
-| [Vecka 2 (v.42)](kurs-02-databaser/02_er_normalisering_sql_grunder/) | ER-diagram, normalisering och SQL-grunder |
-| [Vecka 3 (v.43)](kurs-02-databaser/03_sql_avancerat/) | SQL avancerat, normalisering och säkerhet |
-| [Vecka 4 (v.44)](kurs-02-databaser/04_transaktioner_och_sakerhet/) | Transaktioner och säkerhet |
+| [Vecka 1](kurs-02-databaser/01_sql_boot/) | SQL-boot |
+| [Vecka 2](kurs-02-databaser/02_er_normalisering_sql_grunder/) | ER-diagram, normalisering och SQL-grunder |
+| [Vecka 3](kurs-02-databaser/03_sql_avancerat/) | SQL avancerat, normalisering och säkerhet |
+| [Vecka 4](kurs-02-databaser/04_transaktioner_och_sakerhet/) | Transaktioner och säkerhet |
 
 
 📁 [Inlämningsuppgift 1](kurs-02-databaser/02_er_normalisering_sql_grunder/assignment/) ligger i v.42.
@@ -53,8 +53,8 @@ Materialet publiceras löpande — följ din lärare på Google Classroom för n
 
 | Vecka | Ämne |
 |-------|------|
-| [Vecka 1 (v.45)](kurs-03-fordjupad-oop/01_trygg_start_oop/) | Trygg start: klasser, arv, abstract och interface |
-| [Vecka 2 (v.46)](kurs-03-fordjupad-oop/02_ef_mongodb_designmonster/) | EF Core, MongoDB och designmönster |
+| [Vecka 1](kurs-03-fordjupad-oop/01_trygg_start_oop/) | Trygg start: klasser, arv, abstract och interface |
+| [Vecka 2](kurs-03-fordjupad-oop/02_ef_mongodb_designmonster/) | EF Core, MongoDB och designmönster |
 
 
 
