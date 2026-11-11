@@ -43,7 +43,7 @@ Ett flödesschema visar **vad programmet gör, steg för steg**.
 
 Fyra grundformer:
 
-![Diagram w:550px](diagrams/flödesscheman_marp_1.png)
+![Diagram w:550px](../../01_git_och_verktyg/lectures/diagrams/flödesscheman_marp_1.png)
 
 <!-- mermaid: diagrams/flödesscheman_marp_1.mmd -->
 
@@ -56,7 +56,7 @@ Fyra grundformer:
 
 ## Exempel: Ska jag ta med paraply?
 
-![Diagram h:380px](diagrams/flödesscheman_marp_2.png)
+![Diagram h:380px](../../01_git_och_verktyg/lectures/diagrams/flödesscheman_marp_2.png)
 
 <!-- mermaid: diagrams/flödesscheman_marp_2.mmd -->
 
@@ -142,7 +142,7 @@ _Det finns inget rätt svar på hur man ritar — bara tydliga och otydliga._
 
 En loop är en pil som **går tillbaka**.
 
-![Diagram h:380px](diagrams/flödesscheman_marp_3.png)
+![Diagram h:380px](../../01_git_och_verktyg/lectures/diagrams/flödesscheman_marp_3.png)
 
 <!-- mermaid: diagrams/flödesscheman_marp_3.mmd -->
 
