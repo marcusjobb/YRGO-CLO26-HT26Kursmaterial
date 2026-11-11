@@ -26,43 +26,37 @@ Materialet publiceras löpande — följ din lärare på Google Classroom för n
 
 ## Kurs 01 — Grundläggande OOP i C#
 
-| Modul | Ämne |
+| Vecka | Ämne |
 |-------|------|
-| [01](kurs-01-grundlaggande-oop/01_verktyg_och_git/) | Verktyg och Git |
-| [02](kurs-01-grundlaggande-oop/02_syntax_och_variabler/) | Syntax och variabler |
-| [03](kurs-01-grundlaggande-oop/03_villkor_och_loopar/) | Villkor och loopar |
-| [04](kurs-01-grundlaggande-oop/04_metoder/) | Metoder |
-| [05](kurs-01-grundlaggande-oop/05_klasser_och_oop/) | Klasser och OOP |
-| [06](kurs-01-grundlaggande-oop/06_datastrukturer/) | Datastrukturer |
-| [07](kurs-01-grundlaggande-oop/07_git_och_markdown/) | Git fördjupning och Markdown |
-| [08](kurs-01-grundlaggande-oop/08_projekt/) | Skogsäventyret (grupprojekt) |
+| [v.36](kurs-01-grundlaggande-oop/week_36/) | Git och verktyg |
+| [v.37](kurs-01-grundlaggande-oop/week_37/) | C# repetition |
+| [v.38](kurs-01-grundlaggande-oop/week_38/) | Klasser och OOP |
+| [v.39](kurs-01-grundlaggande-oop/week_39/) | Samlingar och datastrukturer |
 
 ---
 
 ## Kurs 02 — Databaser och SQL
 
-| Modul | Ämne |
+| Vecka | Ämne |
 |-------|------|
-| [00](kurs-02-databaser/00_sql_boot/) | SQL Boot — snabbstart |
-| [01](kurs-02-databaser/01_intro_databaser/) | Introduktion till databaser |
-| [02](kurs-02-databaser/02_sql_hardcore/) | SQL — SELECT, JOIN, aggregering |
-| [03](kurs-02-databaser/03_normalisering_gdpr/) | Normalisering och GDPR |
-| [04](kurs-02-databaser/04_sql_avancerat/) | Avancerat SQL — subqueries, CTE, transaktioner |
-| [07](kurs-02-databaser/07_sakerhet_och_backup/) | Säkerhet och backup |
+| [v.41](kurs-02-databaser/week_41/) | SQL-boot |
+| [v.42](kurs-02-databaser/week_42/) | ER-diagram, normalisering och SQL-grunder |
+| [v.43](kurs-02-databaser/week_43/) | SQL avancerat, normalisering och säkerhet |
+| [v.44](kurs-02-databaser/week_44/) | Transaktioner och säkerhet |
 
-📁 [Inlämningsuppgift](kurs-02-databaser/assignment/) · 📚 [Termer](kurs-02-databaser/termer/)
+
+📁 [Inlämningsuppgift 1](kurs-02-databaser/week_42/assignment/) ligger i v.42.
 
 ---
 
 ## Kurs 03 — Fördjupad OOP i C#
 
-| Modul | Ämne |
+| Vecka | Ämne |
 |-------|------|
-| [00](kurs-03-fordjupad-oop/00_klasser_och_objekt/) | Klasser och objekt |
-| [01](kurs-03-fordjupad-oop/01_databaskopplingar/) | Databaskopplingar |
-| [02](kurs-03-fordjupad-oop/02_designmonster/) | Designmönster |
+| [v.45](kurs-03-fordjupad-oop/week_45/) | Trygg start: klasser, arv, abstract och interface |
+| [v.46](kurs-03-fordjupad-oop/week_46/) | EF Core, MongoDB och designmönster |
 
-📚 [Termer](kurs-03-fordjupad-oop/termer/)
+
 
 ---
 
