@@ -9,7 +9,7 @@ I den här artikeln ska vi titta på hur man skapar en abstrakt klass med abstra
 
 En abstrakt klass kan innehålla vanliga metoder, abstrakta och virtuella metoder. Vi kommer att använda den här mallen för att skapa en abstrakt klass som hanterar webbskrapning för olika sidor. Vi använder även följande NuGet-paket:
 
-- SixLabors.ImageSharp för att hantera grafik eftersom .NET-biblioteket inte är kompatibelt med Mac.
+- SixLabors.ImageSharp för att hantera bilder. Biblioteket fungerar på Windows, Mac och Linux.
 - HtmlAgilityPack för att hantera HTML-dokument.
 
 ## Fördelar
@@ -55,9 +55,7 @@ public abstract class WebScraper
     public string Tags { get; private set; } = "";
 
     // HTML-dokumentet i råform
-    public HtmlDocument? HtmlDocument { get; private set;
-
- } = null;
+    public HtmlDocument? HtmlDocument { get; private set; } = null;
 
     // HTML-dokumentet i en sträng
     public string Html { get => HtmlDocument?.DocumentNode?.OuterHtml ?? ""; }
@@ -65,13 +63,15 @@ public abstract class WebScraper
     // All text utan HTML-taggar
     public string Text { get => HtmlDocument?.DocumentNode?.InnerText ?? ""; }
 
+    // En HttpClient räcker för hela programmet. Den skapas en gång och delas.
+    private static readonly HttpClient Client = new();
+
     // Öppna en webbsida
-    public virtual string GetHtmlDocument(string url)
+    public virtual async Task<string> GetHtmlDocumentAsync(string url)
     {
         Url = url;
-        var web = new HtmlWeb();
-        HtmlDocument = GetUrlAsync().Result;
-        Title = HtmlDocument.DocumentNode.SelectSingleNode("//title").InnerText;
+        HtmlDocument = await GetUrlAsync();
+        Title = HtmlDocument.DocumentNode.SelectSingleNode("//title")?.InnerText ?? "";
         Description = HtmlDocument?.DocumentNode?.SelectSingleNode("//meta[@name='description']")?.Attributes["content"]?.Value ?? "";
         Tags = HtmlDocument?.DocumentNode?.SelectSingleNode("//meta[@name='keywords']")?.Attributes["content"]?.Value ?? "";
         return Html;
@@ -79,8 +79,7 @@ public abstract class WebScraper
 
     private async Task<HtmlDocument> GetUrlAsync()
     {
-        var myClient = new HttpClient(new HttpClientHandler() { UseDefaultCredentials = true });
-        var response = await myClient.GetAsync(Url, HttpCompletionOption.ResponseContentRead);
+        var response = await Client.GetAsync(Url, HttpCompletionOption.ResponseContentRead);
         response.EnsureSuccessStatusCode();
         var streamResponse = await response.Content.ReadAsStreamAsync();
         var doc = new HtmlDocument();
@@ -105,7 +104,7 @@ public abstract class WebScraper
     // Hämtar innehållet i ett element med en specifik klass
     public virtual List<string> GetElementByClass(string element, string className)
     {
-        var divs = HtmlDocument?.DocumentNode.SelectNodes($"//{element}[@class='{className}'");
+        var divs = HtmlDocument?.DocumentNode.SelectNodes($"//{element}[@class='{className}']");
         return divs?.Select(x => x.OuterHtml).ToList() ?? new List<string>();
     }
 
@@ -137,11 +136,9 @@ public abstract class WebScraper
     }
 
     // Laddar ner bild från en URL: http://pictures.net/mypic.jpg returnerar en Image-objekt
-    public virtual Image GetImage(string imageUrl)
+    public virtual async Task<Image> GetImageAsync(string imageUrl)
     {
-        var web = new HtmlWeb();
-        var client = new HttpClient();
-        var imageBytes = client.GetByteArrayAsync(imageUrl).Result;
+        var imageBytes = await Client.GetByteArrayAsync(imageUrl);
         var imageStream = new MemoryStream(imageBytes);
         return Image.Load(imageStream);
     }
@@ -152,10 +149,8 @@ public abstract class WebScraper
         image.Save(filename);
     }
 
-
-
- // Scrapear en specifik sida
-    public abstract void Scrape(string url);
+    // Scrapear en specifik sida
+    public abstract Task ScrapeAsync(string url);
 }
 ```
 
@@ -164,9 +159,9 @@ Nu ska vi göra en implementation av denna klass för att hämta innehållet fr�
 ```csharp
 public class GetKittens : WebScraper
 {
-    public string DownloadKitten()
+    public async Task<string> DownloadKittenAsync()
     {
-        Scrape("https://www.pinterest.com/katesaidy/cute-kitten-pics/");
+        await ScrapeAsync("https://www.pinterest.com/katesaidy/cute-kitten-pics/");
         var imgFolder = Environment.GetFolderPath(Environment.SpecialFolder.MyPictures);
         var filename = Path.Combine(imgFolder, "Daily kitten.jpg");
         if (File.Exists(filename))
@@ -196,10 +191,10 @@ public class GetKittens : WebScraper
     }
 
     // Här är scrape-metoden som vi måste implementera
-    public override void Scrape(string url)
+    public override async Task ScrapeAsync(string url)
     {
         Console.WriteLine("Downloading page");
-        GetHtmlDocument(url);
+        await GetHtmlDocumentAsync(url);
         Console.WriteLine("Getting image list");
         var images = GetImages();
         Console.WriteLine("Removing crap images");
@@ -212,7 +207,7 @@ public class GetKittens : WebScraper
         var randomImage = images[random.Next(0, images.Count)];
         Console.WriteLine("Downloading image");
         Console.WriteLine(randomImage);
-        var image = GetImage(randomImage);
+        var image = await GetImageAsync(randomImage);
         Console.WriteLine("Saving image");
         var imgFolder = Environment.GetFolderPath(Environment.SpecialFolder.MyPictures);
         var filename = Path.Combine(imgFolder, "Daily kitten.jpg");

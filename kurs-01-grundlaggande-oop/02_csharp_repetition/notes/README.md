@@ -29,7 +29,7 @@
 ### Exempelkod
 | Fil | Vad |
 |-----|-----|
-| [VariableExamples.cs](../examples/VariableExamples.cs) | Variabler, typer och aritmetik i praktiken |
+| VariableExamples.cs (livekod) | Variabler, typer och aritmetik i praktiken |
 
 ## Övningar
 
