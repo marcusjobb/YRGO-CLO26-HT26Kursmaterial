@@ -59,57 +59,57 @@ Marcus Ackre Medina · YRGO · CLO26
 
 | Vecka | Datum | Tema |
 |---|---|---|
-| **1** · v45 | 2–7 nov | Databaskopplingar och ramverk + **UML** |
-| **2** · v46 | 9–14 nov | Designmönster |
-| **3** · v47 | 16–21 nov | Refactoring, clean code + **Kanban** |
-| **4** · v48 | 23–28 nov | 🔥 **Hellweek**: C# hidden gems |
-| **5** · v49 | 30 nov–6 dec | **Tenta** + grupppresentationer |
+| **1** · v45 | 2–6 nov | Klasser, arv, abstract och interface, JSON |
+| **2** · v46 | 9–13 nov | EF Core, MongoDB och designmönster + **Inlämning 1** |
+| **3** · v47 | 16–20 nov | Refactoring, clean code och **Kanban** |
+| **4** · v48 | 23–27 nov | 🔥 **Hellweek**: C# hidden gems + **Inlämning 2 delas ut** |
+| **5** · v49 | 30 nov–4 dec | **Tenta** + grupppresentationer |
 
 ---
 
-## Vecka 1 · Databaskopplingar
+## Vecka 1 · Trygg start: klasser, arv och interface
 
-*2–7 november · ingen inlämning*
+*2–6 november · ingen inlämning*
 
-- Tre sorters databaser: **fil** (SQLite), **minne** (InMemory), **server** (MySQL, SQL Server)
-- ADO.NET: det manuella sättet ni redan kan
-- **Entity Framework Core**: Code First, `DbContext`, CRUD
-- **Migrationer**: versionshantering för databasen
-- **Repository pattern**: ett lager mellan logik och data
-- 📐 **UML** introduceras första lektionen
+- Klasser och objekt, arv med `virtual` och `override`
+- `abstract` eller `interface`: när väljer man vilket?
+- Filtrera typer med `OfType`
+- 🍃 **Onsdag:** spara ett objekt som JSON
+
+*Repetition först, sedan nytt. Läxorna följer hjältens äventyr.*
 
 ---
 
-## Vecka 2 · Designmönster
+## Vecka 2 · EF Core, MongoDB och designmönster
 
-*9–14 november · inlämning, deadline **söndag 15 nov 23:59***
+*9–13 november · **Inlämning 1 presenteras måndag 9 nov, deadline söndag 22 nov 23:59***
 
-- Varför designmönster finns ("Gang of Four")
-- **Factory Method** · **Observer** · **Strategy** · **Builder** · **Repository**
-- Hur väljer man rätt mönster?
-- 📐 **UML ingår i inlämningen**
-- 🍃 **Onsdag:** **JSON** och **MongoDB**: samma Repository, ny databas
+- **Entity Framework Core**: spara, hämta och koppla ihop två tabeller
+- Migrationer för databasen
+- 🍃 **Måndag em:** MongoDB i lätt version
+- Designmönster: **Strategy**, **Factory** och **Observer**, plus **Builder**
+- 📐 **UML-klassdiagram** ingår i inlämningen
 
 *Ni har redan använt flera mönster utan att veta det.*
 
 ---
 
-## Vecka 3 · Refactoring och Kanban
+## Vecka 3 · Refactoring, clean code och Kanban
 
-*16–21 november · **gruppinlämning**, deadline **söndag 22 nov 23:59***
+*16–20 november · ingen inlämning*
 
 - **Code smells**: lång metod, God Class, magiska tal, duplicerad kod
 - **SOLID**, DRY och KISS
 - Refaktoreringstekniker: *Extract Method*, *Rename*
-- **Kodgranskning** med checklista
+- **Kodgranskning** med checklista, i par
 - 🔎 **Onsdag:** **Regex**: mönster i text, och när det blir oläsligt
-- 📋 **Kanban**: To Do / In Progress / Done, och grupparbetet startar
+- 📋 **Kanban**: Backlog, Working, Test och Done. Planera med AI och skapa kort i Trello
 
 ---
 
 ## Vecka 4 · 🔥 Hellweek
 
-*23–28 november · ingen inlämning · **inte tentastoff***
+*23–27 november · **Inlämning 2 (grupp) delas ut måndag 23 nov** · **inte tentastoff***
 
 C#-features som dyker upp överallt i riktig kod (och i AI-genererad kod):
 
@@ -123,11 +123,12 @@ Livekod, demos och "wow, kan man göra så?"
 
 ## Vecka 5 · Tenta och presentationer
 
-*30 november–6 december*
+*30 november–4 december*
 
+- **Måndag 30 november:** repetition av databaser och designmönster
 - **Onsdag 2 december, 09:00–12:00: tentan**
 - Grupppresentationer efter tentan
-- Repetition, handledning och tid att koda ikapp
+- **Inlämning 2: deadline söndag 6 december 23:59.** Sikta på att vara klar fredag 4 december, så finns tid kvar för buggar.
 
 ---
 
@@ -135,7 +136,8 @@ Livekod, demos och "wow, kan man göra så?"
 
 | Del | Vad |
 |---|---|
-| **Inlämningar** | En i vecka 2 och en **gruppinlämning** i vecka 3, med **UML** |
+| **Inlämning 1** | Hotel Grandioso, individuell, EF Core och UML. Deadline 22 nov |
+| **Inlämning 2** | Grupparbete, med UML. Deadline 6 dec |
 | **Tenta** | Skriftlig, onsdag 2 dec |
 | **Grupparbete** | Planering på Kanban-board + presentation |
 
@@ -150,13 +152,22 @@ Livekod, demos och "wow, kan man göra så?"
 
 | Dag | Upplägg |
 |---|---|
+| **Måndag** | Lektion 09–15, lunch 12–13 |
+| **Tisdag** | Eget arbete. Ingen undervisning |
+| **Onsdag** | Lektion 09–15, lunch 12–13 |
+| **Torsdag** | Eget arbete. Ingen undervisning |
+| **Fredag** | Handledning 09–11 (distans) |
+
+Varje lektionstimme är 45 minuter, med 15 minuters rast. Övningarna är tänkta att tränas **före** inlämningen.
+
+---|---|
 | **Måndag** | Repetition + nytt ämne: demo, läsning, övningar, genomgång |
 | **Tisdag** | Fördjupning, koda vilt, inlämnings-Q&A |
 | **Onsdag** | Fördjupning av måndagen |
 | **Torsdag** | Som tisdag |
 | **Fredag** | Som torsdag, och 10:00–12:00 finns **1:1-handledning** |
 
-Lektionerna är 45 minuter, rast emellan. Övningarna är tänkta att tränas **före** inlämningen.
+Övningarna är tänkta att tränas **före** inlämningen.
 
 ---
 
