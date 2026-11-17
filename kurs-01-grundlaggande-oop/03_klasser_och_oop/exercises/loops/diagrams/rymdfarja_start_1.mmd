@@ -1,0 +1,16 @@
+flowchart TD
+    A([Start]) --> B[antalFel = 0, i = 1]
+    B --> C{i <= 5?}
+    C -->|Ja| D[Hämta systemnamn via switch]
+    D --> E[Slumpa 1-10]
+    E --> F{>= 4?}
+    F -->|Ja| G[Skriv: OK]
+    F -->|Nej| H[Skriv: FEL, antalFel++]
+    G --> I[i++]
+    H --> I
+    I --> C
+    C -->|Nej| J{antalFel == 0?}
+    J -->|Ja| K[Uppskjutning godkänd!]
+    J -->|Nej| L[Uppskjutning avbruten. X fel.]
+    K --> Z([Slut])
+    L --> Z

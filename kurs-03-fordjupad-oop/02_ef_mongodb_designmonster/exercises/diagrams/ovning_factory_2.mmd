@@ -1,0 +1,14 @@
+classDiagram
+    class IAttackStrategy {
+        <<interface>>
+        +Attack(string attackerName) string
+    }
+    class WeaponFactory {
+        <<static>>
+        +Create(string type) IAttackStrategy
+    }
+    IAttackStrategy <|.. SwordAttack
+    IAttackStrategy <|.. BowAttack
+    IAttackStrategy <|.. FireballAttack
+    Hero "1" -- "1" IAttackStrategy : Weapon
+    WeaponFactory -- IAttackStrategy : skapar

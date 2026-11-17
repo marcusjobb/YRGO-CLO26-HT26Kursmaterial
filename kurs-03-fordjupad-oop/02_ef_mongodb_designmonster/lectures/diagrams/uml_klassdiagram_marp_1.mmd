@@ -1,0 +1,14 @@
+erDiagram
+    direction LR
+    Heroes ||--o{ Quests : "har"
+    Heroes {
+        int Id PK
+        string Name
+    }
+    Quests {
+        int Id PK
+        string Title
+        date Start
+        date End
+        int HeroId FK
+    }

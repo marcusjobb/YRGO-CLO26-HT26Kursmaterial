@@ -1,0 +1,16 @@
+classDiagram
+    direction LR
+    class Hero {
+        +int Id
+        +string Name
+        +List~Quest~ Quests
+    }
+    class Quest {
+        +int Id
+        +string Title
+        +DateOnly Start
+        +DateOnly End
+        +int HeroId
+        +Hero Hero
+    }
+    Hero "1" -- "*" Quest : har

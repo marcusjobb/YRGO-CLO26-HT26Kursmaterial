@@ -1,0 +1,14 @@
+classDiagram
+    class Character {
+        <<abstract>>
+        +string Name
+        +int Health
+        +Attack() string
+    }
+    class IHealer {
+        <<interface>>
+        +Heal(Character target) void
+    }
+    Character <|-- Hero
+    Character <|-- Wizard
+    IHealer <|.. Wizard
