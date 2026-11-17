@@ -10,6 +10,8 @@ Elin och Nils granskar varandras ändringar. De är inte alltid överens, och de
 
 ---
 
+<!-- _class: title -->
+
 # Kodgranskning med checklista
 
 **Vecka 47 · Måndag · Lektion 4 (14:00)**

@@ -4,6 +4,8 @@ theme: nion-dark
 paginate: true
 ---
 
+<!-- _class: title -->
+
 # Måndag vecka 47
 
 **Refactoring, clean code och Kanban**

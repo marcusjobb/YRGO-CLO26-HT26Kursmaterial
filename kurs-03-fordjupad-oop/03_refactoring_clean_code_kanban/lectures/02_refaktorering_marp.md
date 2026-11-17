@@ -10,6 +10,8 @@ Elin bryter ut en metod och byter namn på `x` till `hours`. Nils ser över axel
 
 ---
 
+<!-- _class: title -->
+
 # Refaktorering: Extract Method och Rename
 
 **Vecka 47 · Måndag · Lektion 2 (10:00)**

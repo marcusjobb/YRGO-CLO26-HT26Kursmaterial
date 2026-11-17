@@ -10,6 +10,8 @@ Klassen `BookingManager` gör tre jobb. Elin delar upp den. Nils undrar varför 
 
 ---
 
+<!-- _class: title -->
+
 # SOLID, DRY och KISS
 
 **Vecka 47 · Måndag · Lektion 3 (13:00)**

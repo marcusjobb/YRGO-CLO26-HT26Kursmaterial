@@ -10,6 +10,8 @@ Elin öppnar Nils kod för första gången. En metod, 200 rader. Hur många smel
 
 ---
 
+<!-- _class: title -->
+
 # Code smells
 
 **Vecka 47 · Måndag · Lektion 1 (09:00)**
