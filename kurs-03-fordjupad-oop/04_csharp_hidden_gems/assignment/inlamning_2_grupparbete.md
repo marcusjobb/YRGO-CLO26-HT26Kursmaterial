@@ -18,6 +18,17 @@ Uppgiften täcker kursens mål om databaskopplingar, designmönster, UML, refact
 
 ---
 
+## Beställningar
+
+Alla fyra projekt har samma beställare och samma typ av krav. Läs beställningen för det projekt ni väljer:
+
+- [Hushållsbudget](bestallning_hushallsbudget.md)
+- [Träningsbok](bestallning_traningsbok.md)
+- [Sportstatistik](bestallning_sportstatistik.md)
+- [Recept](bestallning_recept.md)
+
+---
+
 ## Så börjar ni
 
 Länken till startrepot står i Classroom-inlägget för Inlämning 2. Gör så här, i den här ordningen:
