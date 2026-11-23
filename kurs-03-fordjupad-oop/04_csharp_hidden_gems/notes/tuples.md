@@ -33,6 +33,14 @@ Console.WriteLine(person.Age);     // 36
 
 Nu är det tydligt vad varje värde betyder, både för dig och för den som läser koden efter dig. Namnen är också en kontroll: kompilatorn hjälper dig att skriva `person.Name` och inte `person.Nmae`.
 
+## Varför har vi nytta av detta?
+
+Vi slipper skapa en klass för två värden som bara används på ett ställe. Ett byte med en tuple är dessutom kortare och tydligare än med en tillfällig variabel.
+
+## När kan vi använda detta?
+
+Vi använder tuples när en metod behöver ge tillbaka två värden som hör ihop, och när vi vill byta två värden eller sätta flera variabler i en rad. Vi kan också ge fälten namn, så att den som läser koden förstår vad värdena betyder.
+
 ## När ska du inte använda tuples?
 
 Om värdena hör ihop och har egna regler, till exempel att en bokning måste sluta efter att den börjat, då är en klass eller en `record` bättre. En tuple kan inte säga nej till något.

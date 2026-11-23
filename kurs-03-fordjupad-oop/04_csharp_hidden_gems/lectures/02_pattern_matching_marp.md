@@ -38,6 +38,25 @@ Mönstret läses uppifrån och ned. Den första träffen vinner.
 
 ---
 
+## when: ett extra villkor på ett fall
+
+```csharp
+object value = 22;
+string text = value switch
+{
+    int tal when tal > 10 => $"Stort tal: {tal}",
+    int tal => $"Litet tal: {tal}",
+    string s when s.Length > 5 => "Lång text",
+    _ => "Okänt"
+};
+```
+
+`when` läses som "men bara om". Första raden säger: om value är en int **och** större än 10.
+
+Ordningen spelar roll. Ett tal på 5 hoppar över första raden och hamnar på `int tal =>`.
+
+---
+
 ## Wow: när du glömmer `_`
 
 Utan `_` får du en varning om att fallet inte täcks. Kompilatorn kontrollerar att du tänkt på alla fall.

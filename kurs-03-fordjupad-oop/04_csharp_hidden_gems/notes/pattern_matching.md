@@ -32,6 +32,14 @@ Om du skriver `< 20` före `< 13` får alla barn fel svar, eftersom de också ä
 
 Utan `_` varnar kompilatorn om att fallen inte täcker alla värden. Det är en hjälp: den ser när du har glömt ett fall. Låt inte varningen bli tyst med en tom standard. Fundera på vad det sista fallet ska betyda.
 
+## Varför har vi nytta av detta?
+
+Vi får en kontroll och ett värde i samma steg, så koden blir kortare och lättare att läsa. Med ett switch-uttryck tänker kompilatorn på alla fall åt dig. Saknas ett fall varnar den, och `_` gör det tydligt vad som händer med allt annat.
+
+## När kan vi använda detta?
+
+Vi använder det när ett värde kommer utifrån, från en databas, ett API eller en fil, och vi inte vet typen i förväg. Det passar också när svaret beror på värdets form, till exempel en ålder i olika intervall. Och när ett värde ska bli `null` om det inte passar, använder vi `as` i stället för cast.
+
 ## Sammanfattning
 
 - `is` kontrollerar typ och hämtar värdet i samma steg.
