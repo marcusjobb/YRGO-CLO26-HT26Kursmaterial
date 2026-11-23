@@ -4,6 +4,14 @@
 
 **Tid:** ca 20 minuter.
 
+## Varför vill man ha den här?
+
+Tänk dig hotellets bokningssystem. Det räknar procent hela tiden: 25 % moms, 10 % rabatt för stamgäster, 5 % i avgift vid kortbetalning. Utan en hjälpmetod skrivs `pris * 25 / 100m` på tjugo ställen. Förr eller senare blir ett av dem fel, till exempel när någon glömmer `m` eller delar med 10.
+
+Med `pris.Percent(25)` läses koden nästan som en mening, och formeln finns på ett enda ställe. Ska du avrunda till hela ören en dag, ändrar du på ett ställe.
+
+Varför en extension method? Du kan inte lägga till metoder i `decimal`, för den typen äger Microsoft. En extension method låter dig ändå skriva `pris.Percent(25)`, som om metoden alltid hade funnits där.
+
 ## Uppgifter
 
 1. Skriv en extension method `Percent(this decimal value, int percent)` som returnerar procenten av värdet.

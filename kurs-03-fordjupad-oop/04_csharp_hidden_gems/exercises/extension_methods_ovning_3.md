@@ -4,6 +4,12 @@
 
 **Tid:** ca 20 minuter.
 
+## Varför vill man ha den här?
+
+Hotellet tar helgpris på lördagar och söndagar. Spat har andra öppettider på helgen. Påminnelsemejlet ska inte skickas en söndag. Överallt behövs samma fråga: är det här datumet en helgdag?
+
+Villkoret `date.DayOfWeek == DayOfWeek.Saturday || date.DayOfWeek == DayOfWeek.Sunday` är långt, och det kopieras lätt runt med små fel. `if (date.IsWeekend())` säger precis vad du menar. Och den dagen hotellet vill räkna med röda dagar också, ändrar du på ett ställe.
+
 ## Uppgift
 
 Skriv en extension method `IsWeekend(this DateTime date)` som returnerar `true` för lördag och söndag. Använd den på några datum du själv väljer.

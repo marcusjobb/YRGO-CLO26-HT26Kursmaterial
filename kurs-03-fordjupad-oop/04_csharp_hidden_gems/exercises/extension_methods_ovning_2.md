@@ -4,6 +4,12 @@
 
 **Tid:** ca 20 minuter.
 
+## Varför vill man ha den här?
+
+Ett kommentarsfält tillåter högst 200 ord. En ansökan ska vara minst 50 ord. En blogg visar "Lästid: 3 min", och det räknas fram från antalet ord. Alla de här behöver räkna ord.
+
+`string` har `Length`, men den räknar tecken, inte ord. Med `text.WordCount()` känns det som att `string` alltid har kunnat räkna ord. Metoden dyker också upp i IntelliSense när du skriver en punkt efter en sträng, så att den som kommer efter dig hittar den.
+
 ## Uppgift
 
 Skriv en extension method `WordCount(this string text)` som returnerar antalet ord. Tom sträng ger 0. Testa med "hej där världen" och med en tom sträng.

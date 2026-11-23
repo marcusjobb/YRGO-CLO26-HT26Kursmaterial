@@ -8,6 +8,12 @@
 
 Skriv två extension methods på `TimeOnly`: en som hälsar utifrån klockslaget, och en som skriver klockslaget som svensk text.
 
+## Varför vill man ha den här?
+
+En app som hälsar "God morgon, Kim" när du loggar in. En väckarklocka för barn som säger "kvart över sju" i stället för 07:15. En skärmläsare som läser upp tiden för någon som inte ser skärmen. Alla behöver göra om ett klockslag till vanlig svenska.
+
+`TimeOnly` vet vad klockan är, men inte hur man säger det på svenska. Med `nu.Greeting()` och `nu.ToSwedishText()` får typen de förmågorna, utan att du behöver ändra i den.
+
 ## Uppgifter
 
 1. **🟢 Hälsning.** Skriv `Greeting(this TimeOnly time)`. Den returnerar "God morgon" (05–11), "God eftermiddag" (12–17), "God kväll" (18–22) eller "Godnatt" (23–04).

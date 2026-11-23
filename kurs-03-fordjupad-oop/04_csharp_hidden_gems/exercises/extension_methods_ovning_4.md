@@ -8,6 +8,14 @@
 
 Skriv en extension method som tar ett datum och returnerar stjärntecknet.
 
+## Varför vill man ha den här?
+
+Föreställ dig en horoskop-app, eller ett välkomstmejl från hotellet som skriver "Grattis på födelsedagen, kära Vädur!". Datumgränserna för stjärntecknen är knepiga. Ett tecken börjar i en månad och slutar i nästa, och Stenbocken går dessutom över nyår. Den logiken vill du skriva och testa en gång, inte kopiera.
+
+När den finns som `födelsedag.ZodiacSign()` kan samma kod användas i konsolprogrammet, på en webbsida och i ett test.
+
+Stjärntecknet är något ett datum *har*, inte något det *gör*. Därför passar det också bra som en **extension property** i C# 14: `födelsedag.ZodiacSign`, utan parenteser. Det provar du i varianten längst ner.
+
 ## Uppgift
 
 1. Skriv en extension method `ZodiacSign(this DateOnly date)` som returnerar ett stjärntecken på svenska, till exempel "Vädur".
@@ -139,11 +147,47 @@ Från C# 14 (.NET 10) kan en extension också vara en **egenskap** (property), i
 2. Använd den som `date.ZodiacSign` (utan parenteser).
 3. Försök att tilldela egenskapen. Vad säger kompilatorn?
 
+Fyll i det som står `/* din kod */`.
+
+```csharp
+var date = new DateOnly(1990, 5, 1);
+Console.WriteLine(date.ZodiacSign);
+
+public static class DateOnlyExtensions
+{
+    /* din kod:
+       skapa ett extension-block för DateOnly
+       lägg en egenskap ZodiacSign i blocket, som bara går att läsa
+       låt den ge samma svar som din metod ZodiacSign() */
+}
+```
+
 Exempeloutput:
 
 ```text
 Oxen
 ```
+
+<details markdown="1">
+<summary>Tips 1: hur ett extension-block ser ut</summary>
+
+Blocket står inne i den statiska klassen och skrivs `extension(DateOnly date) { ... }`. Parametern `date` i parentesen gäller för allt i blocket. Därför behövs inget `this` längre.
+
+</details>
+
+<details markdown="1">
+<summary>Tips 2: en egenskap som bara går att läsa</summary>
+
+Skriv egenskapen med en pil: `public string ZodiacSign => ...;`. Då får den bara `get`, och ingen kan sätta den.
+
+</details>
+
+<details markdown="1">
+<summary>Tips 3: återanvänd switchen</summary>
+
+Switch-uttrycket på `(date.Month, date.Day)` från din metod kan flyttas in efter pilen nästan oförändrat. Det enda som skiljer är att `date` nu kommer från blocket, inte från metodens parameter.
+
+</details>
 
 <details markdown="1">
 <summary>Lösningsförslag: egenskap</summary>
