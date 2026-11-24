@@ -63,7 +63,7 @@ Utan `_` får du en varning om att fallet inte täcks. Kompilatorn kontrollerar 
 
 ---
 
-## Sammanfattning
+## Summan av kardemumman
 
 - `is` kontrollerar typ och hämtar värdet.
 - `switch`-uttryck gör en beslutstabell på några rader.

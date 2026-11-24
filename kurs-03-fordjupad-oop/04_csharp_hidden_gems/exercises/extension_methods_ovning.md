@@ -2,6 +2,8 @@
 
 **Frivillig.** Gör den om du vill träna mer. Den är inte obligatorisk, och den ingår inte i bedömningen.
 
+**Nivå:** 🟢
+
 **Tid:** ca 20 minuter.
 
 ## Varför vill man ha den här?

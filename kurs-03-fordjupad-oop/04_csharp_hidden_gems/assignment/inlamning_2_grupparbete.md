@@ -75,6 +75,7 @@ Länken till startrepot står i Classroom-inlägget för Inlämning 2. Gör så 
 - **Repository** finns (obligatoriskt). Gränssnittet och menyn känner bara till repositoryt.
 - **Minst ett** av mönstren **Factory**, **Builder** eller **Observer** används, och det ska gå att peka ut i koden.
 - **Klasser med tydliga ansvar** (SRP), och **minst ett interface**.
+- **Er egen kod räknas.** Startrepot innehåller ett färdigt gränssnitt, en låtsasdatabas (`InMemory…Repository`) och några interface. Det som fanns från början räknas inte när ni pekar ut Repository, designmönster och interface. Det ska finnas i kod som ni själva har skrivit.
 - **Språk i koden:** namn på klasser, metoder, variabler och tabeller eller collections är på **engelska**. Utskrifter och text till användaren är på **svenska**, och kommentarerna är på **svenska**.
 - **Underhållbar, återanvändbar och välkommenterad kod:** ingen kopierad logik (DRY), tydliga namn, och kommentarer på svenska som förklarar *varför*, inte vad.
 - **Fält och data:** utvärdera fälten i den datamodell ni fått. Vilka behöver programmet, och vilka behövs inte? Skriv en tabell i `README.md` (avsnittet "Fält och data") med varje fält, om ni behåller eller tar bort det, och varför.

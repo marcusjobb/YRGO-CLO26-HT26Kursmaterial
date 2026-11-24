@@ -55,7 +55,7 @@ int b = 2;
 
 ---
 
-## Sammanfattning
+## Summan av kardemumman
 
 - Tuples är lätta sätt att skicka tillbaka flera värden.
 - Deconstruction plockar isär dem i variabler.

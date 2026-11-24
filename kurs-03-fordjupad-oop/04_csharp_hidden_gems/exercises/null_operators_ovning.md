@@ -2,16 +2,33 @@
 
 **Frivillig.** Gör den om du vill träna mer. Den är inte obligatorisk, och den ingår inte i bedömningen.
 
+**Nivå:** 🟢
+
 **Tid:** ca 20 minuter.
 
 ## Uppgifter
+
+Anders kund har en adress med en stad. Båda får saknas:
+
+```csharp
+class Address
+{
+    public string? City { get; set; }
+}
+
+class Customer
+{
+    public string? Name { get; set; }
+    public Address? Address { get; set; }
+}
+```
 
 Skriv om den här metoden med `?.` och `??`:
 
 ```csharp
 string GetCity(Customer? customer)
 {
-    if (customer != null && customer.Address != null)
+    if (customer != null && customer.Address != null && customer.Address.City != null)
         return customer.Address.City;
     return "okänd";
 }

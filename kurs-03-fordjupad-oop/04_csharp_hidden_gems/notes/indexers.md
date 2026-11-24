@@ -1,8 +1,16 @@
 # Indexers
 
-En array och en lista används med hakparenteser: `list[0]`. En indexer gör att din egen klass kan användas på samma sätt. Det ger en klass som känns naturlig för den som använder den.
+## Anders bokhylla
 
-## En hylla med böcker
+Anders har en liten bokhylla i kiosken, och en klass `Shelf` med fem platser. Han vill skriva `shelf[0]`, precis som med en array. Men han får skriva `shelf.GetBook(0)`. Varför får arrayer vara coola och inte hans klass?
+
+Vad behöver klassen kunna för att `shelf[0]` ska fungera? Fundera lite på det innan du läser vidare.
+
+## Ett kartotek
+
+En indexer är registret till din klass. Du slår upp med en nyckel i `[ ]`, och klassen bestämmer vad som händer bakom lådan.
+
+## Använd objektet som en array
 
 ```csharp
 class Shelf
@@ -21,40 +29,68 @@ shelf[0] = "Clean Code";
 Console.WriteLine(shelf[0]);
 ```
 
-`this[int index]` är själva indexern. `get` och `set` fungerar som en property, och koden som använder klassen behöver inte veta att det finns en array inuti.
+`this[int index]` är själva indexern. `get` körs när du läser `shelf[0]` och `set` körs när du skriver `shelf[0] = ...`.
 
-## Varför inte bara göra arrayen public?
+## Varför?
 
-Om arrayen är `public` kan vem som helst ändra vilken plats som helst, och den enda kontrollen sitter hos anroparen. Med en indexer bestämmer klassen själv vad som får hända.
+Koden som använder klassen blir lika kort som om det vore en lista. Men klassen bestämmer själv vad som händer.
 
-## Kontrollen sitter i klassen
+## Kontrollen i get
 
 ```csharp
-public string this[int index]
-{
-    get => books[CheckIndex(index)];
-    set => books[CheckIndex(index)] = value;
-}
-
-private int CheckIndex(int index)
+get
 {
     if (index < 0 || index >= books.Length)
-        throw new ArgumentOutOfRangeException(nameof(index));
-    return index;
+        return "Ingen hylla här";
+    return books[index];
 }
 ```
 
-Nu gäller kontrollen oavsett var i programmet som hyllan används. Det är en av de största fördelarna med att kapsla in data.
+`books.Length` är 5. Platserna är 0 till 4. Allt annat stoppas innan det kraschar.
 
-## Indexers med nycklar
+## Kontrollen i set
 
-Indexern behöver inte ta ett tal. Den kan ta en text, och då är den ett sätt att slå upp värden efter namn. Det liknar en `Dictionary`, men du bestämmer själv vad som händer om nyckeln saknas.
+```csharp
+set
+{
+    if (index < 0 || index >= books.Length)
+        Console.WriteLine("Ingen plats med det numret");
+    else
+        books[index] = value;
+}
+```
 
-## Sammanfattning
+Samma kontroll, men när någon försöker lägga in en bok.
+
+## Prova att krascha hyllan
+
+```csharp
+var shelf = new Shelf();
+shelf[0] = "Clean Code";
+shelf[7] = "Pragmatic Programmer";   // utanför hyllan
+
+Console.WriteLine(shelf[0]);         // Clean Code
+Console.WriteLine(shelf[7]);         // Ingen hylla här
+```
+
+Utan `if` hade `shelf[7]` kraschat programmet. Nu sitter kontrollen i klassen, så ingen kan krascha den, oavsett var i programmet de försöker.
+
+## Summan av kardemumman
 
 - En indexer är `this[...]` i en klass.
-- Den gör ett objekt användbart med hakparenteser.
-- Lägg kontrollerna i klassen, inte hos den som använder den.
+- Den gör ett objekt indexerbart, precis som en array.
+- Lägg kontroller i klassen, inte i anroparen.
+
+## Proffsens tips: sista platsen är Length - 1
+
+En bokhylla med fem hyllplan. De heter 0, 1, 2, 3 och 4. Det finns inget hyllplan 5, fast hyllan har fem platser.
+
+```csharp
+books[books.Length - 1]   // sista platsen
+books[books.Length]       // IndexOutOfRangeException
+```
+
+`Length` är **antalet** platser, inte numret på den sista. Och kladdkakan igen: fråga först om platsen finns, använd den sen.
 
 ## Prova själv
 

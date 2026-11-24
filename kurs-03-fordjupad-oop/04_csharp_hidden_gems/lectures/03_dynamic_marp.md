@@ -45,7 +45,7 @@ Inga röda streck. Inget IntelliSense. Felet syns först i körningen.
 
 ---
 
-## Sammanfattning
+## Summan av kardemumman
 
 - `dynamic` kontrolleras först i körningen.
 - Det ger inga kompileringsfel men kraschar när något är fel.

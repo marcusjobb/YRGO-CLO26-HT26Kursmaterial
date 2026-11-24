@@ -2,6 +2,8 @@
 
 **Frivillig.** Gör den om du vill träna mer. Den ingår inte i bedömningen.
 
+**Nivå:** 🟡
+
 **Tid:** ca 20 minuter.
 
 ## Uppgift
