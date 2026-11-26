@@ -94,3 +94,6 @@ I C# pratar applikationen mot samma `.db`-fil med kod. DB Browser låter dig öp
 
 📖 **Läs mer i C#-boken**  
 → [SQLite Browser](https://marcusjobb.github.io/programmering-csharp/sql/sqlite-browser/)
+
+<!-- nion-copyright -->
+<sub>© 2025–2026 Nion Education. Alla rättigheter förbehållna. Fritt att läsa, men får inte användas av andra skolor eller utbildningsanordnare utan skriftligt tillstånd från Nion Education. Delar bygger på källor som anges i respektive dokument.</sub>

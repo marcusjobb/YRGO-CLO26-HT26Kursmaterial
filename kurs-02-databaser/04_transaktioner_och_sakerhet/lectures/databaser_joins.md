@@ -4,6 +4,7 @@ theme: nion_dark
 paginate: true
 title: SQL JOINs — INNER JOIN och LEFT JOIN
 description: Extraföreläsning — koppla ihop tabeller och förstå skillnaden mellan INNER och LEFT JOIN
+footer: "© 2025–2026 Nion Education. Får inte användas av andra skolor utan tillstånd."
 ---
 
 <!-- _class: lead -->

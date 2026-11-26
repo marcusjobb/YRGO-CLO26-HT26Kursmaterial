@@ -81,3 +81,6 @@ https://www.tutorialspoint.com/sqlite/sqlite_delete_query.htm
 Samma sak som #4 men denna gång kan användaren välja att ändra värdet inne i någon av
 kolumnerna på en rad som matchar namn, årtal och plattform.
 https://www.tutorialspoint.com/sqlite/sqlite_update_query.htm
+
+<!-- nion-copyright -->
+<sub>© 2025–2026 Nion Education. Alla rättigheter förbehållna. Fritt att läsa, men får inte användas av andra skolor eller utbildningsanordnare utan skriftligt tillstånd från Nion Education. Delar bygger på källor som anges i respektive dokument.</sub>

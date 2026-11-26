@@ -177,3 +177,6 @@ Console.WriteLine("Laddar... Klart!");
 ## Nästa steg
 
 Allt ovan räcker gott och väl för ett enkelt terminalspel — en spelplan ritad med `WriteLine`/cursor-position, input via `ReadKey`/`KeyAvailable`, och en loop som håller allt vid liv. Vill ni senare bygga något snyggare (riktiga färgteman, menyer med piltangentnavigering, smidigare rendering) finns externa bibliotek som `Spectre.Console` — men det är frivilligt överkurs, inte ett krav för projektveckan.
+
+<!-- nion-copyright -->
+<sub>© 2025–2026 Nion Education. Alla rättigheter förbehållna. Fritt att läsa, men får inte användas av andra skolor eller utbildningsanordnare utan skriftligt tillstånd från Nion Education. Delar bygger på källor som anges i respektive dokument.</sub>

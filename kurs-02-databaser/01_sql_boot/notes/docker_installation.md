@@ -225,3 +225,6 @@ docker rm postgres-dev
 | `docker rm <namn>` | Tar bort containern helt |
 | `docker ps` | Visar alla körande containers |
 | `docker ps -a` | Visar alla containers, även stoppade |
+
+<!-- nion-copyright -->
+<sub>© 2025–2026 Nion Education. Alla rättigheter förbehållna. Fritt att läsa, men får inte användas av andra skolor eller utbildningsanordnare utan skriftligt tillstånd från Nion Education. Delar bygger på källor som anges i respektive dokument.</sub>

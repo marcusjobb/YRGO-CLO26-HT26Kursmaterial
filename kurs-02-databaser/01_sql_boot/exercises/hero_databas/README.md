@@ -47,3 +47,6 @@ dotnet add package Npgsql                                     # labb 7 (PostgreS
 ```
 
 Kopiera `appsettings.example.json` till `appsettings.json` och fyll i dina värden. Filen finns aldrig i git.
+
+<!-- nion-copyright -->
+<sub>© 2025–2026 Nion Education. Alla rättigheter förbehållna. Fritt att läsa, men får inte användas av andra skolor eller utbildningsanordnare utan skriftligt tillstånd från Nion Education. Delar bygger på källor som anges i respektive dokument.</sub>

@@ -69,3 +69,6 @@ Kan det vara så att Daniel blev mördad? Och att spöket försöker peka ut den
 
 3. **Vem i gruppen felsöker problemet metodiskt?**  
    Vem flyr till försvarsläge? Vad säger det om hur folk hanterar oväntade situationer -- och hur tror ni att ni själva hade reagerat?
+
+<!-- nion-copyright -->
+<sub>© 2025–2026 Nion Education. Alla rättigheter förbehållna. Fritt att läsa, men får inte användas av andra skolor eller utbildningsanordnare utan skriftligt tillstånd från Nion Education. Delar bygger på källor som anges i respektive dokument.</sub>

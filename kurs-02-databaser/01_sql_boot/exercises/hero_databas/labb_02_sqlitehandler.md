@@ -79,3 +79,6 @@ Hittade: ingen hero med det namnet
 - Tabellnamn kontrolleras innan de byggs in i SQL, och värden skickas som parametrar
 - Du kan förklara varför det är bättre att samla SQL-logiken i en klass
 - Överlagring av `Delete` och `Update` används korrekt
+
+<!-- nion-copyright -->
+<sub>© 2025–2026 Nion Education. Alla rättigheter förbehållna. Fritt att läsa, men får inte användas av andra skolor eller utbildningsanordnare utan skriftligt tillstånd från Nion Education. Delar bygger på källor som anges i respektive dokument.</sub>

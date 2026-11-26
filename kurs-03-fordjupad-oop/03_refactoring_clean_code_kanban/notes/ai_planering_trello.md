@@ -34,3 +34,6 @@ Trello är ett verktyg som använder just Kanban-tavlor. Om du inte har ett kont
 ## Övning
 
 Gå till `exercises/ai_planering_trello.md`. Ni har ungefär 60 minuter. Gör stegen i ordning, och skriv tre meningar i reflektionen när ni är klara.
+
+<!-- nion-copyright -->
+<sub>© 2025–2026 Nion Education. Alla rättigheter förbehållna. Fritt att läsa, men får inte användas av andra skolor eller utbildningsanordnare utan skriftligt tillstånd från Nion Education. Delar bygger på källor som anges i respektive dokument.</sub>

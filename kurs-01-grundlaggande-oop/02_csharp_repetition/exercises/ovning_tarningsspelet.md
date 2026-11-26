@@ -69,3 +69,6 @@ Det finns inga startfiler. Du bygger detta från scratch.
 
 Börja med att skriva pseudokod på papper — vad ska hända i varje steg — innan du öppnar VS Code.  
 Om du fastnar i mer än 15 minuter: fråga klassen → AI → Marcus. I den ordningen.
+
+<!-- nion-copyright -->
+<sub>© 2025–2026 Nion Education. Alla rättigheter förbehållna. Fritt att läsa, men får inte användas av andra skolor eller utbildningsanordnare utan skriftligt tillstånd från Nion Education. Delar bygger på källor som anges i respektive dokument.</sub>

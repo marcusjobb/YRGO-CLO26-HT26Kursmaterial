@@ -281,3 +281,6 @@ låter loopen göra jobbet åt dig! _Har jag nämnt att programmerare är lata?_
 
 Vår hjältetroll fick leva lycklig i alla sina dagar. Människorna lärde sig att respektera
 skogen och Grlub fick vara ifred.
+
+<!-- nion-copyright -->
+<sub>© 2025–2026 Nion Education. Alla rättigheter förbehållna. Fritt att läsa, men får inte användas av andra skolor eller utbildningsanordnare utan skriftligt tillstånd från Nion Education. Delar bygger på källor som anges i respektive dokument.</sub>

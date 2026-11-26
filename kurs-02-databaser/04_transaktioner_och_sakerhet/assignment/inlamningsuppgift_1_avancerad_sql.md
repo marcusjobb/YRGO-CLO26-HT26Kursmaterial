@@ -73,3 +73,6 @@ Scenario: Ett företag som hyr ut film ska ha en databas om kunderna. Förslag p
 - I tredje filen skall beskrivningen av databasen samt relational schema finnas (text dokument)
 
 - Den zippade filen skall namnges med namn, vilken inlämnningsuppgift och betygsönskan. Ex Eva_Hegnar_inlämning1_VG.zip
+
+<!-- nion-copyright -->
+<sub>© 2025–2026 Nion Education. Alla rättigheter förbehållna. Fritt att läsa, men får inte användas av andra skolor eller utbildningsanordnare utan skriftligt tillstånd från Nion Education. Delar bygger på källor som anges i respektive dokument.</sub>

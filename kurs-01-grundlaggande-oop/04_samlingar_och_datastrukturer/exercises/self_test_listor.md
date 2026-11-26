@@ -127,3 +127,6 @@ a. `List<int> tal = new List<int>(1, 2, 3);`<br>b. `List<int> tal = new List<int
   - ✅ **c) Klammerparentes** - **RÄTT**: Klammerparentes `{ 1, 2, 3 }` är *collection initializer* — det funkar för alla samlingar i C#
   - ❌ **d) List.Of** - FEL: `List.Of` finns i Java, inte i C#
 </details>
+
+<!-- nion-copyright -->
+<sub>© 2025–2026 Nion Education. Alla rättigheter förbehållna. Fritt att läsa, men får inte användas av andra skolor eller utbildningsanordnare utan skriftligt tillstånd från Nion Education. Delar bygger på källor som anges i respektive dokument.</sub>

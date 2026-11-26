@@ -151,3 +151,6 @@ Nu vet du hur terminalen egentligen fungerar. Testa, experimentera och hitta dit
 
 📖 **Läs mer i C#-boken**  
 → [Formatering och utskrift](https://marcusjobb.github.io/programmering-csharp/variabler/formatering-och-utskrift/)
+
+<!-- nion-copyright -->
+<sub>© 2025–2026 Nion Education. Alla rättigheter förbehållna. Fritt att läsa, men får inte användas av andra skolor eller utbildningsanordnare utan skriftligt tillstånd från Nion Education. Delar bygger på källor som anges i respektive dokument.</sub>

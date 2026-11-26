@@ -115,3 +115,6 @@ Upprepa för p2 till p12. Notera hur tröttsamt det blir — och varför du vill
 Kan du räkna ut hur många som fick VG, G respektive underkänt — och skriva ut det som en summering i slutet?
 
 (Ledning: du behöver räknarvariablerna `int antalVG = 0;`, `int antalG = 0;` etc. och plussar på dem inne i varje if-gren.)
+
+<!-- nion-copyright -->
+<sub>© 2025–2026 Nion Education. Alla rättigheter förbehållna. Fritt att läsa, men får inte användas av andra skolor eller utbildningsanordnare utan skriftligt tillstånd från Nion Education. Delar bygger på källor som anges i respektive dokument.</sub>

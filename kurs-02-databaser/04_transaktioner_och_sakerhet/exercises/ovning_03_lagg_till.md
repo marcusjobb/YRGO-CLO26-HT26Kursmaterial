@@ -71,3 +71,6 @@ if (!int.TryParse(Console.ReadLine(), out int langd))
 - 💡 Varför är parameteriserade queries viktigare när användaren skriver in data?
 - 💡 Vad händer om användaren skriver en tom titel? Borde du kontrollera det?
 - 💡 Hur skulle du kontrollera att en låt med exakt samma titel inte redan finns?
+
+<!-- nion-copyright -->
+<sub>© 2025–2026 Nion Education. Alla rättigheter förbehållna. Fritt att läsa, men får inte användas av andra skolor eller utbildningsanordnare utan skriftligt tillstånd från Nion Education. Delar bygger på källor som anges i respektive dokument.</sub>

@@ -141,3 +141,6 @@ a. `"Gas"`<br>b. `0`<br>c. `2`<br>d. Det är ett kompileringsfel
   - ✅ **c) 2** - **RÄTT**: Enum-värden börjar på 0 som standard. `Solid=0`, `Flytande=1`, `Gas=2`. Casten `(int)Fas.Gas` ger `2`
   - ❌ **d) Kompileringsfel** - FEL: Det är giltig C# — enum kan alltid castas till `int` och tillbaka
 </details>
+
+<!-- nion-copyright -->
+<sub>© 2025–2026 Nion Education. Alla rättigheter förbehållna. Fritt att läsa, men får inte användas av andra skolor eller utbildningsanordnare utan skriftligt tillstånd från Nion Education. Delar bygger på källor som anges i respektive dokument.</sub>

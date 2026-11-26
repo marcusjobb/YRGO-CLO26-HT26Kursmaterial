@@ -115,3 +115,6 @@ Ta offertkoden från del 1, och byt namn på allt som inte är tydligt. Lägg ti
 ## Reflektion
 
 Skriv tre meningar: Vilket steg kändes säkrast? Var det svårt att hitta bra namn? När skulle du *inte* göra Extract Method?
+
+<!-- nion-copyright -->
+<sub>© 2025–2026 Nion Education. Alla rättigheter förbehållna. Fritt att läsa, men får inte användas av andra skolor eller utbildningsanordnare utan skriftligt tillstånd från Nion Education. Delar bygger på källor som anges i respektive dokument.</sub>

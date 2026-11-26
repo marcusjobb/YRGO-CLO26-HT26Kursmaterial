@@ -268,3 +268,6 @@ string Category = age switch
 - **`int.TryParse`** är oftast rätt verktyg för text från användaren, eftersom den inte kraschar.
 - **Switch-uttrycket** tar ett värde och ger ett annat tillbaka. Mönstren läses uppifrån och ned, och den första träffen vinner.
 - **Tankesättet:** OOP lägger beteendet i objektet. Funktionellt tänkande låter mönstret avgöra, och resultatet är ett värde.
+
+<!-- nion-copyright -->
+<sub>© 2025–2026 Nion Education. Alla rättigheter förbehållna. Fritt att läsa, men får inte användas av andra skolor eller utbildningsanordnare utan skriftligt tillstånd från Nion Education. Delar bygger på källor som anges i respektive dokument.</sub>

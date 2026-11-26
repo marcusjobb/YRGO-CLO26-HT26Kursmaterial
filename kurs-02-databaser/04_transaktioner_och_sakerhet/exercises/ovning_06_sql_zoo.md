@@ -53,3 +53,6 @@ Fortsättning på JOIN med fler tabeller inblandade.
 När du känner att JOIN och subquery sitter — gå tillbaka till din musiklistapp och lägg in ett av dem i koden. Det är VG-kravet.
 
 Det är samma SQL, bara i C# istället för i webbläsaren.
+
+<!-- nion-copyright -->
+<sub>© 2025–2026 Nion Education. Alla rättigheter förbehållna. Fritt att läsa, men får inte användas av andra skolor eller utbildningsanordnare utan skriftligt tillstånd från Nion Education. Delar bygger på källor som anges i respektive dokument.</sub>

@@ -75,3 +75,6 @@ if (svar == "j")
 - 💡 Vad händer om användaren skriver "J" med stor bokstav? Hanteras det?
 - 💡 Varför visar vi titeln för bekräftelse istället för att radera direkt på ID?
 - 💡 Hur gör du om du vill tillåta att skriva vilket ID som helst utan att det kraschar?
+
+<!-- nion-copyright -->
+<sub>© 2025–2026 Nion Education. Alla rättigheter förbehållna. Fritt att läsa, men får inte användas av andra skolor eller utbildningsanordnare utan skriftligt tillstånd från Nion Education. Delar bygger på källor som anges i respektive dokument.</sub>

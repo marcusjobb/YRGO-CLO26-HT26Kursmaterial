@@ -122,3 +122,6 @@ Console.WriteLine($"Efter 3 år har gymmet kostat {skillnad3År} kr mer totalt."
 Gymkortet ger tillgång till utrustning, duschar och socialt sällskap. Hemmaträning är billigare men kräver disciplin. Hur skulle du väga in dessa faktorer i en beräkning?
 
 (Inget rätt svar — tänk högt med en kompis.)
+
+<!-- nion-copyright -->
+<sub>© 2025–2026 Nion Education. Alla rättigheter förbehållna. Fritt att läsa, men får inte användas av andra skolor eller utbildningsanordnare utan skriftligt tillstånd från Nion Education. Delar bygger på källor som anges i respektive dokument.</sub>

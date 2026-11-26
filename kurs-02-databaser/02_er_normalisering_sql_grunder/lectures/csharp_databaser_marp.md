@@ -4,6 +4,7 @@ theme: nion_dark
 paginate: true
 title: C# och databaser — från SQL till kod
 description: Koppla SQLite till C# med ADO.NET — connection, parametrar och Execute-metoderna
+footer: "© 2025–2026 Nion Education. Får inte användas av andra skolor utan tillstånd."
 ---
 
 <!-- _class: lead -->

@@ -212,3 +212,6 @@ Den här mappen innehåller bara `IRouteStrategy`, de tre reseformerna, `TripPla
 **Vad händer:** Samma kod som i avsnitt 1.7 till 1.10.
 
 **Stil:** Samma som i avsnitt 2: en mapp per övning gör det lätt att se just den övningens kod.
+
+<!-- nion-copyright -->
+<sub>© 2025–2026 Nion Education. Alla rättigheter förbehållna. Fritt att läsa, men får inte användas av andra skolor eller utbildningsanordnare utan skriftligt tillstånd från Nion Education. Delar bygger på källor som anges i respektive dokument.</sub>

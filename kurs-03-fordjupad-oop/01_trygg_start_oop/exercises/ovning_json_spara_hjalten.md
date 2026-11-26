@@ -111,3 +111,6 @@ Du serialiserar listan precis som du serialiserade en enda hjälte. Skriv `JsonS
 - Vad står det i `hjaltar.json` runt hjältarna? Vad betyder tecknen?
 
 Läxan till torsdag fortsätter där ni slutar.
+
+<!-- nion-copyright -->
+<sub>© 2025–2026 Nion Education. Alla rättigheter förbehållna. Fritt att läsa, men får inte användas av andra skolor eller utbildningsanordnare utan skriftligt tillstånd från Nion Education. Delar bygger på källor som anges i respektive dokument.</sub>

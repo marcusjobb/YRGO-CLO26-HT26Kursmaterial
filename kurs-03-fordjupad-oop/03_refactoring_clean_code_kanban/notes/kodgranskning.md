@@ -37,3 +37,6 @@ Punkt 4 är viktigast. Ett fel utan konsekvens är bara en åsikt. Om du kan sä
 ## Övning
 
 Gå till `exercises/kodgranskning_checklista.md`. Startrepona är `clo26-kodgranskning-biblioteket` och `clo26-kodgranskning-parkering`. Kravspecifikationen och de kända varningarna står i respektive README.
+
+<!-- nion-copyright -->
+<sub>© 2025–2026 Nion Education. Alla rättigheter förbehållna. Fritt att läsa, men får inte användas av andra skolor eller utbildningsanordnare utan skriftligt tillstånd från Nion Education. Delar bygger på källor som anges i respektive dokument.</sub>

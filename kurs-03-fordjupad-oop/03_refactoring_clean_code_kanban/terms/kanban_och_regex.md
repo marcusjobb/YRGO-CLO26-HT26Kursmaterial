@@ -9,3 +9,6 @@
 - **Regex (regular expression, regulärt uttryck):** Ett kort mönster som beskriver en typ av text, till exempel ett postnummer.
 - **Grupp (regex):** En del av mönstret inom parentes, som kan hämtas ut separat.
 - **Ankare (`^` och `$`):** Mönstret måste matcha från början till slut, annars kan det hitta en del av en längre text.
+
+<!-- nion-copyright -->
+<sub>© 2025–2026 Nion Education. Alla rättigheter förbehållna. Fritt att läsa, men får inte användas av andra skolor eller utbildningsanordnare utan skriftligt tillstånd från Nion Education. Delar bygger på källor som anges i respektive dokument.</sub>

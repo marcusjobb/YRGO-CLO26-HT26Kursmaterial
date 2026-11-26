@@ -26,3 +26,6 @@ En inställning (`JsonSerializerOptions`) som ger JSON med radbrytningar och ind
 
 ## Fil
 Data som sparas på disken och finns kvar när programmet stängts. `File.WriteAllText` skriver, `File.ReadAllText` läser.
+
+<!-- nion-copyright -->
+<sub>© 2025–2026 Nion Education. Alla rättigheter förbehållna. Fritt att läsa, men får inte användas av andra skolor eller utbildningsanordnare utan skriftligt tillstånd från Nion Education. Delar bygger på källor som anges i respektive dokument.</sub>

@@ -192,3 +192,6 @@ Tabellen lever. Bobby Tables är bara ett namn i databasen.
 - 💡 Vad är `--` i SQL?
 - 💡 Förutom DELETE — vad annat kan en angripare göra med SQL injection?
 - 💡 Varför räcker det inte att "kontrollera att inputen ser okej ut" som skydd?
+
+<!-- nion-copyright -->
+<sub>© 2025–2026 Nion Education. Alla rättigheter förbehållna. Fritt att läsa, men får inte användas av andra skolor eller utbildningsanordnare utan skriftligt tillstånd från Nion Education. Delar bygger på källor som anges i respektive dokument.</sub>

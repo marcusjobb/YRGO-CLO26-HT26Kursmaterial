@@ -137,3 +137,6 @@ GitHub-repo med:
 ---
 
 *Tips: Börja med entiteterna och UML-diagrammet innan du skriver en rad kod. Fem minuter med papper och penna sparar tre timmar av omskrivning.*
+
+<!-- nion-copyright -->
+<sub>© 2025–2026 Nion Education. Alla rättigheter förbehållna. Fritt att läsa, men får inte användas av andra skolor eller utbildningsanordnare utan skriftligt tillstånd från Nion Education. Delar bygger på källor som anges i respektive dokument.</sub>

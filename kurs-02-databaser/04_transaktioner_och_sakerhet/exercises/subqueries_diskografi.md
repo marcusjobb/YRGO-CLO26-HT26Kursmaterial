@@ -100,3 +100,6 @@ Skriv om uppgift 2 (artister utan album efter 2020) så att den använder `NOT E
 ---
 
 *Facit finns hos läraren.*
+
+<!-- nion-copyright -->
+<sub>© 2025–2026 Nion Education. Alla rättigheter förbehållna. Fritt att läsa, men får inte användas av andra skolor eller utbildningsanordnare utan skriftligt tillstånd från Nion Education. Delar bygger på källor som anges i respektive dokument.</sub>

@@ -266,3 +266,6 @@ Använd ett reflektionsverktyg som Obsidian (Markdown), Journey eller Day One f�
 
 ---
 Det här är grunden. Öva på den, lek med koden, gör misstag. Det är så du lär dig.
+
+<!-- nion-copyright -->
+<sub>© 2025–2026 Nion Education. Alla rättigheter förbehållna. Fritt att läsa, men får inte användas av andra skolor eller utbildningsanordnare utan skriftligt tillstånd från Nion Education. Delar bygger på källor som anges i respektive dokument.</sub>

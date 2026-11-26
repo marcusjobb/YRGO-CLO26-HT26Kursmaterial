@@ -107,3 +107,6 @@ Under klassdiagrammet en **Läsning:**-lista med en rad per klass.
 - Spara resultatet som `UML.md` i projektets rot — kan du inte skriva filer,
   visa hela innehållet i ett enda kodblock som går att kopiera
 ````
+
+<!-- nion-copyright -->
+<sub>© 2025–2026 Nion Education. Alla rättigheter förbehållna. Fritt att läsa, men får inte användas av andra skolor eller utbildningsanordnare utan skriftligt tillstånd från Nion Education. Delar bygger på källor som anges i respektive dokument.</sub>

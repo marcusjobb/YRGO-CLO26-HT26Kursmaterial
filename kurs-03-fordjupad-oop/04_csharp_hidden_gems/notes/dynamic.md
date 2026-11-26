@@ -38,3 +38,6 @@ I alla tre fallen finns det en orsak till att typen är okänd. Om orsaken inte 
 ## Prova själv
 
 Gör de frivilliga övningarna `dynamic_ovning.md`, `dynamic_ovning_2.md` och `dynamic_ovning_3.md`.
+
+<!-- nion-copyright -->
+<sub>© 2025–2026 Nion Education. Alla rättigheter förbehållna. Fritt att läsa, men får inte användas av andra skolor eller utbildningsanordnare utan skriftligt tillstånd från Nion Education. Delar bygger på källor som anges i respektive dokument.</sub>

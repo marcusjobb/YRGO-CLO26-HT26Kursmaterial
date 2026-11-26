@@ -153,3 +153,6 @@ Laddar: 50%
 ## Nästa steg: mer avancerat
 
 `Console.ReadKey()`/`Console.ReadLine()` (läsa in från användaren), `Console.WindowWidth`/`WindowHeight` (känna till terminalens storlek), och riktiga progressbarer/menyer byggda med cursor-positionering hör hemma i en framtida, mer avancerad kategorifil — när vi är där i kursen.
+
+<!-- nion-copyright -->
+<sub>© 2025–2026 Nion Education. Alla rättigheter förbehållna. Fritt att läsa, men får inte användas av andra skolor eller utbildningsanordnare utan skriftligt tillstånd från Nion Education. Delar bygger på källor som anges i respektive dokument.</sub>

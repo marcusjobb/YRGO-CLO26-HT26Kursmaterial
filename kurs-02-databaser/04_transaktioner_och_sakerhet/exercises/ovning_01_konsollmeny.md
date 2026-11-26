@@ -64,3 +64,6 @@ Hejdå!
 - 💡 Vad händer om du skriver ett nummer som inte finns i menyn, t.ex. `99`? Hanteras det av din kod?
 - 💡 Varför använder man `int.TryParse` istället för `int.Parse` när man läser från konsolen?
 - 💡 Hur skulle du lägga till ett femte menyalternativ utan att ändra loop-logiken?
+
+<!-- nion-copyright -->
+<sub>© 2025–2026 Nion Education. Alla rättigheter förbehållna. Fritt att läsa, men får inte användas av andra skolor eller utbildningsanordnare utan skriftligt tillstånd från Nion Education. Delar bygger på källor som anges i respektive dokument.</sub>

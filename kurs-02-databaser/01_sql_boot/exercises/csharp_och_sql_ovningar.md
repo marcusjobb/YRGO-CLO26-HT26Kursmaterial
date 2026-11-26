@@ -226,3 +226,6 @@ I övningarna har du lärt dig:
 Har du fått ordning på allt det här har du allt du behöver för de kommande inlämningarna 😉
 
 Huvudsaken är att du nu kan kommunicera med databasen via din klass. Då slipper du hantera databasen överallt i koden och kan fokusera på C#.
+
+<!-- nion-copyright -->
+<sub>© 2025–2026 Nion Education. Alla rättigheter förbehållna. Fritt att läsa, men får inte användas av andra skolor eller utbildningsanordnare utan skriftligt tillstånd från Nion Education. Delar bygger på källor som anges i respektive dokument.</sub>

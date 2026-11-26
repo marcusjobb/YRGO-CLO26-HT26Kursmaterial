@@ -101,3 +101,6 @@ Vad du ska kunna: läsa ett enkelt regex och säga vad det används till. Vad be
 ## Måndag 30 november
 
 Då repeterar vi databaser och designmönster tillsammans. Kom med frågor om det som känns kluddigt. Det är precis det vi är till för.
+
+<!-- nion-copyright -->
+<sub>© 2025–2026 Nion Education. Alla rättigheter förbehållna. Fritt att läsa, men får inte användas av andra skolor eller utbildningsanordnare utan skriftligt tillstånd från Nion Education. Delar bygger på källor som anges i respektive dokument.</sub>

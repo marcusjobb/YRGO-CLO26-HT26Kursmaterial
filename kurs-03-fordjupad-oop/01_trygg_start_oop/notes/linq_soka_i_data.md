@@ -154,3 +154,6 @@ Console.WriteLine(string.Join(", ", names)); // P4, P6
 // Typer som record läggs sist i filen: all kod som körs måste stå före dem
 record ParkingSpot(string Number, int? ResidentId);
 ```
+
+<!-- nion-copyright -->
+<sub>© 2025–2026 Nion Education. Alla rättigheter förbehållna. Fritt att läsa, men får inte användas av andra skolor eller utbildningsanordnare utan skriftligt tillstånd från Nion Education. Delar bygger på källor som anges i respektive dokument.</sub>

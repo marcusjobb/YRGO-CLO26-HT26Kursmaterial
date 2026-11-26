@@ -41,3 +41,6 @@ Nils version är en enda metod, `CalculateEverything`, med 200 rader och en del 
 - Varje bildspel börjar med en scen från verkstan.
 - Övningarna använder samma kod och samma kunder.
 - Lösningarna visar hur Elin tänkte, inte bara vad hon skrev.
+
+<!-- nion-copyright -->
+<sub>© 2025–2026 Nion Education. Alla rättigheter förbehållna. Fritt att läsa, men får inte användas av andra skolor eller utbildningsanordnare utan skriftligt tillstånd från Nion Education. Delar bygger på källor som anges i respektive dokument.</sub>

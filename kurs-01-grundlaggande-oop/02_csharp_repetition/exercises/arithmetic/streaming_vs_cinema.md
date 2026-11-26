@@ -207,4 +207,7 @@ Streamingkostnad per år: ###
 Du sparar: ### kr på streaming");
 ```
 
-Bläh! Även om jag hade velat gå på bio till sådana priser, så många bra skräckfilmer släpps inte per år... ack. 
+Bläh! Även om jag hade velat gå på bio till sådana priser, så många bra skräckfilmer släpps inte per år... ack.
+
+<!-- nion-copyright -->
+<sub>© 2025–2026 Nion Education. Alla rättigheter förbehållna. Fritt att läsa, men får inte användas av andra skolor eller utbildningsanordnare utan skriftligt tillstånd från Nion Education. Delar bygger på källor som anges i respektive dokument.</sub>

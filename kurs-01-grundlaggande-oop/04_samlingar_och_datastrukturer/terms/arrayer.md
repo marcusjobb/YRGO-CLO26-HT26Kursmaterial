@@ -160,3 +160,6 @@ Alla tre sätten skapar en array med fast storlek. Välj det som är tydligast f
 </details>
 
 **Se även:** [List<T>](listor.md) — om du behöver en samling som kan växa.
+
+<!-- nion-copyright -->
+<sub>© 2025–2026 Nion Education. Alla rättigheter förbehållna. Fritt att läsa, men får inte användas av andra skolor eller utbildningsanordnare utan skriftligt tillstånd från Nion Education. Delar bygger på källor som anges i respektive dokument.</sub>

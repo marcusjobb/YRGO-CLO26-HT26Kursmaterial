@@ -120,3 +120,6 @@ class Customer
 **Proffsens tips (Marcus):** den här sortens kod hittar du i ramverk, till exempel när ett bibliotek fyller dina objekt med data från en databas eller från JSON. Du skriver den sällan själv, men nu vet du vad som händer under huven.
 
 </details>
+
+<!-- nion-copyright -->
+<sub>© 2025–2026 Nion Education. Alla rättigheter förbehållna. Fritt att läsa, men får inte användas av andra skolor eller utbildningsanordnare utan skriftligt tillstånd från Nion Education. Delar bygger på källor som anges i respektive dokument.</sub>

@@ -120,3 +120,6 @@ void PrintConsonants(string name, string lastname)
 - Testa med ditt eget namn — stämmer vokalerna?
 - Lägg till en femte metod `PrintReversed(name, lastname)` som skriver ut hela namnet baklänges.
 - Vad händer om du byter ut `result += c` mot en `StringBuilder`? Är det snabbare?
+
+<!-- nion-copyright -->
+<sub>© 2025–2026 Nion Education. Alla rättigheter förbehållna. Fritt att läsa, men får inte användas av andra skolor eller utbildningsanordnare utan skriftligt tillstånd från Nion Education. Delar bygger på källor som anges i respektive dokument.</sub>

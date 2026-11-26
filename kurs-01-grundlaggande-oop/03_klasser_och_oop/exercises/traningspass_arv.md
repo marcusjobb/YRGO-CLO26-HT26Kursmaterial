@@ -170,3 +170,6 @@ Sätt ihop alla subklasser i en `List<[Basklass]>` och skriv ut med `Console.Wri
 Verifiera att rätt `ToString()` anropas för varje subklass.
 
 ---
+
+<!-- nion-copyright -->
+<sub>© 2025–2026 Nion Education. Alla rättigheter förbehållna. Fritt att läsa, men får inte användas av andra skolor eller utbildningsanordnare utan skriftligt tillstånd från Nion Education. Delar bygger på källor som anges i respektive dokument.</sub>

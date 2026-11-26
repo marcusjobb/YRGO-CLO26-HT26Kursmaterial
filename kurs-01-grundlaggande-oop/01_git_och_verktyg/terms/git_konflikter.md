@@ -139,3 +139,6 @@ Unmerged paths:
 `both modified` = du och någon annan har båda ändrat filen. Git väntar på att du löser konflikten och kör `git add`.
 
 **Se även:** [Lösa en konflikt](#lösa-en-konflikt-ritualen).
+
+<!-- nion-copyright -->
+<sub>© 2025–2026 Nion Education. Alla rättigheter förbehållna. Fritt att läsa, men får inte användas av andra skolor eller utbildningsanordnare utan skriftligt tillstånd från Nion Education. Delar bygger på källor som anges i respektive dokument.</sub>

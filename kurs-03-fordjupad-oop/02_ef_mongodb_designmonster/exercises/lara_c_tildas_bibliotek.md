@@ -401,3 +401,6 @@ Lånet 10–20 december går bra, eftersom det förra lämnas tillbaka den 10:e.
 ---
 
 Tilda stänger den sista boken och ler. "Nu vet jag var allt är."
+
+<!-- nion-copyright -->
+<sub>© 2025–2026 Nion Education. Alla rättigheter förbehållna. Fritt att läsa, men får inte användas av andra skolor eller utbildningsanordnare utan skriftligt tillstånd från Nion Education. Delar bygger på källor som anges i respektive dokument.</sub>

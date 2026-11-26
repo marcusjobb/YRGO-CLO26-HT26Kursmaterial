@@ -97,3 +97,6 @@ Använd en `record` för data som inte ska ändras: en beställning, ett kvitto,
 ## Prova själv
 
 Gör `records_ovning.md`, `records_ovning_2.md` och `records_ovning_3.md`.
+
+<!-- nion-copyright -->
+<sub>© 2025–2026 Nion Education. Alla rättigheter förbehållna. Fritt att läsa, men får inte användas av andra skolor eller utbildningsanordnare utan skriftligt tillstånd från Nion Education. Delar bygger på källor som anges i respektive dokument.</sub>

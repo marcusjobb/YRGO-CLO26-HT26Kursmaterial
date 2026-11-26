@@ -236,3 +236,6 @@ Klassisk `switch` med `case`/`break` är tydligare för nybörjare och fungerar 
 ## Nästa steg
 
 Switch hanterar ett värde mot kända fall. När du behöver upprepa kod ett visst antal gånger eller tills ett villkor uppfylls — se [loopar.md](loopar.md).
+
+<!-- nion-copyright -->
+<sub>© 2025–2026 Nion Education. Alla rättigheter förbehållna. Fritt att läsa, men får inte användas av andra skolor eller utbildningsanordnare utan skriftligt tillstånd från Nion Education. Delar bygger på källor som anges i respektive dokument.</sub>

@@ -204,3 +204,6 @@ Console.WriteLine(ålder);
 Det gamla värdet skrivs över — C# minns inte att ålder var 25 innan. För att jämföra om två saker är lika används `==` (dubbelt likhetstecken), inte `=`.
 
 **Se även:** [bool.md](bool.md) — där `==` som jämförelseoperator tas upp.
+
+<!-- nion-copyright -->
+<sub>© 2025–2026 Nion Education. Alla rättigheter förbehållna. Fritt att läsa, men får inte användas av andra skolor eller utbildningsanordnare utan skriftligt tillstånd från Nion Education. Delar bygger på källor som anges i respektive dokument.</sub>

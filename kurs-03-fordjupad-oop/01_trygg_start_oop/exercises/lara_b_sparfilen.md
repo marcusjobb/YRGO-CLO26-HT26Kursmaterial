@@ -349,3 +349,6 @@ Ta med ett svar eller en fråga på var och en:
 
 1. Varför blev filen tom (`{}`) när `Hero` hade vanliga fält i stället för properties?
 2. Vad tror du händer om du lägger till en ny property i `Hero` och laddar en gammal sparfil som saknar den?
+
+<!-- nion-copyright -->
+<sub>© 2025–2026 Nion Education. Alla rättigheter förbehållna. Fritt att läsa, men får inte användas av andra skolor eller utbildningsanordnare utan skriftligt tillstånd från Nion Education. Delar bygger på källor som anges i respektive dokument.</sub>

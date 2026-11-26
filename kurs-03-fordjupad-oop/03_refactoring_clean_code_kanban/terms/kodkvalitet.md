@@ -13,3 +13,6 @@
 - **MVP (Minimum Viable Product):** Den minsta version som fungerar och gör nytta.
 - **Kill your darlings:** Ta bort kod du är stolt över, om den inte behövs.
 - **WTF per minut:** Ett enkelt mått på kodgranskning. Hur ofta tänker du "vad gör den här?"
+
+<!-- nion-copyright -->
+<sub>© 2025–2026 Nion Education. Alla rättigheter förbehållna. Fritt att läsa, men får inte användas av andra skolor eller utbildningsanordnare utan skriftligt tillstånd från Nion Education. Delar bygger på källor som anges i respektive dokument.</sub>

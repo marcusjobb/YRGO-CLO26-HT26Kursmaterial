@@ -241,3 +241,6 @@ P4 går till Emil
 1. I uppgift 7: varför hamnar `false` före `true` när vi sorterar?
 2. Kan du skriva uppgift 1 både med en loop och med LINQ? Vilken av dem är lättast att läsa?
 3. I uppgift 6: vad hände när du sorterade två gånger efter varandra med `OrderBy`, och varför?
+
+<!-- nion-copyright -->
+<sub>© 2025–2026 Nion Education. Alla rättigheter förbehållna. Fritt att läsa, men får inte användas av andra skolor eller utbildningsanordnare utan skriftligt tillstånd från Nion Education. Delar bygger på källor som anges i respektive dokument.</sub>

@@ -75,3 +75,6 @@ Tänk på vad som händer med deras bokningar.
 Gymmet vill börja lagra om en person kom till passet eller inte — och varför de uteblev om de inte kom.
 
 Är det lagligt? Vilken laglig grund krävs? Vad behöver de göra innan de kan lagra det?
+
+<!-- nion-copyright -->
+<sub>© 2025–2026 Nion Education. Alla rättigheter förbehållna. Fritt att läsa, men får inte användas av andra skolor eller utbildningsanordnare utan skriftligt tillstånd från Nion Education. Delar bygger på källor som anges i respektive dokument.</sub>

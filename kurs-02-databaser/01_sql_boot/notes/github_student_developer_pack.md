@@ -106,3 +106,6 @@ Hör av dig till din lärare. Vi kan hjälpa till att få fram ett intyg på sko
 ## Integritet
 
 Ladda bara upp ditt underlag direkt till GitHub, inte i klassens repo eller i chatten. Intyg och skärmbilder kan innehålla personuppgifter (till exempel personnummer). **Dölj det som inte behövs** innan du laddar upp, men låt namn, skola, status och datum synas.
+
+<!-- nion-copyright -->
+<sub>© 2025–2026 Nion Education. Alla rättigheter förbehållna. Fritt att läsa, men får inte användas av andra skolor eller utbildningsanordnare utan skriftligt tillstånd från Nion Education. Delar bygger på källor som anges i respektive dokument.</sub>

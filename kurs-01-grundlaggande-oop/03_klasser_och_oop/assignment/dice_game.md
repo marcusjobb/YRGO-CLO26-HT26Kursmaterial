@@ -96,3 +96,6 @@ Om du fastnar i mer än 15 minuter: fråga klassen → AI → Marcus. I den ordn
 Rättning sker veckan efter deadline.  
 Feedback per mail och i Google Classroom.  
 Commits efter deadline beaktas inte — spara commit-hashen du lämnar in på.
+
+<!-- nion-copyright -->
+<sub>© 2025–2026 Nion Education. Alla rättigheter förbehållna. Fritt att läsa, men får inte användas av andra skolor eller utbildningsanordnare utan skriftligt tillstånd från Nion Education. Delar bygger på källor som anges i respektive dokument.</sub>

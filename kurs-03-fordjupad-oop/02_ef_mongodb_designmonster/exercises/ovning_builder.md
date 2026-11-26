@@ -311,3 +311,6 @@ class PizzaBuilder
 - Förklara varför varje metod i byggaren returnerar `this`.
 - Förklara vad som händer när en mening utelämnas.
 - Peka ut i klassdiagrammet vilken klass som skapar vilken.
+
+<!-- nion-copyright -->
+<sub>© 2025–2026 Nion Education. Alla rättigheter förbehållna. Fritt att läsa, men får inte användas av andra skolor eller utbildningsanordnare utan skriftligt tillstånd från Nion Education. Delar bygger på källor som anges i respektive dokument.</sub>

@@ -178,3 +178,6 @@ Skickar en Swish-förfrågan på 249 kr.
 Exempel: monster från en nivåfil, betalsätt från en knapp, export som PDF, Word eller text.
 
 Det passar **inte** när det bara finns en sort och den skapas på ett ställe. Då räcker `new`.
+
+<!-- nion-copyright -->
+<sub>© 2025–2026 Nion Education. Alla rättigheter förbehållna. Fritt att läsa, men får inte användas av andra skolor eller utbildningsanordnare utan skriftligt tillstånd från Nion Education. Delar bygger på källor som anges i respektive dokument.</sub>

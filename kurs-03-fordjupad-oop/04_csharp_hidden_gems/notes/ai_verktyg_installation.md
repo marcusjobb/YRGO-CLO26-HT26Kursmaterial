@@ -15,3 +15,6 @@ OpenCode är ett AI-verktyg som körs i terminalen och kan läsa era filer i pro
 3. Kör sedan kodkontrollen i `KODKONTROLL_PROMPT.md` i startrepot. Gå igenom `GATES.md` i samma repo innan ni lämnar in.
 
 Har ni problem med installationen tar ni det på lektionen på måndag, inte på inlämningsdagen.
+
+<!-- nion-copyright -->
+<sub>© 2025–2026 Nion Education. Alla rättigheter förbehållna. Fritt att läsa, men får inte användas av andra skolor eller utbildningsanordnare utan skriftligt tillstånd från Nion Education. Delar bygger på källor som anges i respektive dokument.</sub>

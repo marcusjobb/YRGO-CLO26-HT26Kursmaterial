@@ -211,3 +211,6 @@ You have built a bear:
 - Vad händer om du anropar `bear.PrintBear()` innan du lagt till alla delar? Saknade delar ska inte synas i utskriften.
 - Lägg till en `LeftEar` och `RightEar` — vad behöver du ändra i `BuildABear`?
 - Bygg en andra varelse — ett monster, en robot, en alien — med andra kroppsdelar och färger.
+
+<!-- nion-copyright -->
+<sub>© 2025–2026 Nion Education. Alla rättigheter förbehållna. Fritt att läsa, men får inte användas av andra skolor eller utbildningsanordnare utan skriftligt tillstånd från Nion Education. Delar bygger på källor som anges i respektive dokument.</sub>

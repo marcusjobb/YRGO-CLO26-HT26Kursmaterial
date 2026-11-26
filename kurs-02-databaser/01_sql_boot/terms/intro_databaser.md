@@ -204,3 +204,6 @@ Tänk på det som ett riktigt bageri med en bakerikök (server) som kan hantera 
 MySQL används av WordPress, Airbnb, Twitter (historiskt), och oräkneliga webbtjänster. Det du lär dig i MySQL gäller i stort sett direkt i PostgreSQL och SQL Server.
 
 > 🖼️ **Bild:** Meme — "SQLite är som att laga mat hemma. MySQL är som att driva en restaurang."
+
+<!-- nion-copyright -->
+<sub>© 2025–2026 Nion Education. Alla rättigheter förbehållna. Fritt att läsa, men får inte användas av andra skolor eller utbildningsanordnare utan skriftligt tillstånd från Nion Education. Delar bygger på källor som anges i respektive dokument.</sub>

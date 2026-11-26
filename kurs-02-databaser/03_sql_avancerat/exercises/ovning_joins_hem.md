@@ -81,3 +81,6 @@ Svara i kommentarer i din SQL-fil:
 1. Vilken laglig grund har djursjukhuset för att lagra ägaruppgifter?
 2. Vad händer om en ägare kräver att bli raderad — men deras djur fortfarande är aktiva patienter?
 3. Hur länge bör besökshistoriken sparas?
+
+<!-- nion-copyright -->
+<sub>© 2025–2026 Nion Education. Alla rättigheter förbehållna. Fritt att läsa, men får inte användas av andra skolor eller utbildningsanordnare utan skriftligt tillstånd från Nion Education. Delar bygger på källor som anges i respektive dokument.</sub>

@@ -119,3 +119,6 @@ Utskriften ska vara samma som i startkoden. Kontrollera det innan du går vidare
 ## Reflektion
 
 Skriv tre meningar: Vilket steg gav mest i läsbarhet? Vilket namn var svårast att hitta? Hur lång tid tog det att ändra momsen i början, jämfört med nu?
+
+<!-- nion-copyright -->
+<sub>© 2025–2026 Nion Education. Alla rättigheter förbehållna. Fritt att läsa, men får inte användas av andra skolor eller utbildningsanordnare utan skriftligt tillstånd från Nion Education. Delar bygger på källor som anges i respektive dokument.</sub>

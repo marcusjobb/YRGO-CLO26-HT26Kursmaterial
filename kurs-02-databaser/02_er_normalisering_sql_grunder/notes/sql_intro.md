@@ -152,3 +152,6 @@ Nästa lektion skapar vi egna tabeller med `CREATE TABLE` och lägger in data me
 
 📖 **Läs mer i C#-boken**  
 → [SQL-intro](https://marcusjobb.github.io/programmering-csharp/sql/sql-intro/)
+
+<!-- nion-copyright -->
+<sub>© 2025–2026 Nion Education. Alla rättigheter förbehållna. Fritt att läsa, men får inte användas av andra skolor eller utbildningsanordnare utan skriftligt tillstånd från Nion Education. Delar bygger på källor som anges i respektive dokument.</sub>

@@ -173,3 +173,6 @@ Nu lagras staden på ett enda ställe. Byter 41103 stad? En uppdatering räcker.
 | 3NF | Inga transitiva beroenden mellan kolumner |
 
 I praktiken räcker det oftast att nå 3NF. Högre normalformer (BCNF, 4NF) är specialfall som du kan läsa om när du stöter på dem i verkligheten.
+
+<!-- nion-copyright -->
+<sub>© 2025–2026 Nion Education. Alla rättigheter förbehållna. Fritt att läsa, men får inte användas av andra skolor eller utbildningsanordnare utan skriftligt tillstånd från Nion Education. Delar bygger på källor som anges i respektive dokument.</sub>

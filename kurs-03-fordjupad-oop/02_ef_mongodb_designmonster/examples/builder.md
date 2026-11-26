@@ -262,3 +262,6 @@ public static void Run()
 **Vad händer:** Två karaktärer byggs på samma sätt, en med titel och en utan. Titelraden syns bara för Mira.
 
 **Stil:** Demoklassen har en `Run()`-metod, och en XML-kommentar som säger vilken uppgift den hör till.
+
+<!-- nion-copyright -->
+<sub>© 2025–2026 Nion Education. Alla rättigheter förbehållna. Fritt att läsa, men får inte användas av andra skolor eller utbildningsanordnare utan skriftligt tillstånd från Nion Education. Delar bygger på källor som anges i respektive dokument.</sub>

@@ -185,3 +185,6 @@ Ny klass, men samma tre steg: `Serialize`, `File.WriteAllText`, `Deserialize`.
 5. Samma tre steg fungerar för vilken klass som helst.
 
 Termer finns i `termer/json_spara_objekt.md`.
+
+<!-- nion-copyright -->
+<sub>© 2025–2026 Nion Education. Alla rättigheter förbehållna. Fritt att läsa, men får inte användas av andra skolor eller utbildningsanordnare utan skriftligt tillstånd från Nion Education. Delar bygger på källor som anges i respektive dokument.</sub>

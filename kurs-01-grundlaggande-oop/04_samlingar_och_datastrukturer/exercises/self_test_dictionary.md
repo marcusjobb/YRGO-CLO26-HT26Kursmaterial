@@ -127,3 +127,6 @@ a. Ja, men bara om värdena är olika<br>b. Ja, Dictionary hanterar duplikat aut
   - ✅ **c) Nycklar måste vara unika** - **RÄTT**: Det är hela poängen med ett Dictionary — en nyckel pekar på exakt ett värde. Vill du ha flera värden per nyckel, använd `Dictionary<string, List<int>>`
   - ❌ **d) Beror på typ** - FEL: Kravet på unika nycklar gäller för alla nyckeltyper
 </details>
+
+<!-- nion-copyright -->
+<sub>© 2025–2026 Nion Education. Alla rättigheter förbehållna. Fritt att läsa, men får inte användas av andra skolor eller utbildningsanordnare utan skriftligt tillstånd från Nion Education. Delar bygger på källor som anges i respektive dokument.</sub>

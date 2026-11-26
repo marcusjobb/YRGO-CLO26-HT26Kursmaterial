@@ -4,6 +4,7 @@ theme: nion_dark
 paginate: true
 title: SQL Repetition — från CREATE till VIEW
 description: Genomgång av SQL från grunden: databaser, tabeller, CRUD och views
+footer: "© 2025–2026 Nion Education. Får inte användas av andra skolor utan tillstånd."
 ---
 
 <!-- _class: lead -->

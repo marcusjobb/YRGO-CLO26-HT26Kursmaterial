@@ -166,3 +166,6 @@ Hela veckor får du med heltalsdivision (`/ 7`). Överblivna dagar får du med r
 1. I uppgift 4: vad händer med `TimeOnly` när klockan går förbi midnatt, och varför är det ett problem om du också vill veta datumet?
 2. Varför ändrar `AddDays` inte originalet `today`?
 3. Tänk på inlämningen: en bokning har en incheckning och en utcheckning. Vilken typ skulle du välja, `DateOnly`, `DateTime` eller något annat? Vad är viktigast att kunna räkna ut?
+
+<!-- nion-copyright -->
+<sub>© 2025–2026 Nion Education. Alla rättigheter förbehållna. Fritt att läsa, men får inte användas av andra skolor eller utbildningsanordnare utan skriftligt tillstånd från Nion Education. Delar bygger på källor som anges i respektive dokument.</sub>

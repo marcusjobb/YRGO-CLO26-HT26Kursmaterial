@@ -95,3 +95,6 @@ Factory väljer. Builder bygger steg för steg.
 1. Varför måste varje metod i byggaren returnera `this`?
 2. Vad händer med Nisse om du bygger honom med `new CharacterBuilder().Named("Nisse").Build()`?
 3. Vilket av de två är lättare att läsa efter ett halvår, konstruktorn med sex parametrar eller byggaren? Varför?
+
+<!-- nion-copyright -->
+<sub>© 2025–2026 Nion Education. Alla rättigheter förbehållna. Fritt att läsa, men får inte användas av andra skolor eller utbildningsanordnare utan skriftligt tillstånd från Nion Education. Delar bygger på källor som anges i respektive dokument.</sub>

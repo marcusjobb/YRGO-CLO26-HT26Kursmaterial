@@ -139,3 +139,6 @@ Console.WriteLine($"Per person: {perPerson} kr");
 En av dina kompisar är vegetarian och vill ha en egen pizza för 120 kr extra. En annan dricker inte läsk och betalar bara pizza och snacks. Hur ändrar du beräkningen?
 
 (Ledning: du behöver inte en if-sats — bara fler variabler.)
+
+<!-- nion-copyright -->
+<sub>© 2025–2026 Nion Education. Alla rättigheter förbehållna. Fritt att läsa, men får inte användas av andra skolor eller utbildningsanordnare utan skriftligt tillstånd från Nion Education. Delar bygger på källor som anges i respektive dokument.</sub>

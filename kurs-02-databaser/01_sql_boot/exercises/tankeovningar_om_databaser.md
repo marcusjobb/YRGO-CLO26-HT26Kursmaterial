@@ -179,3 +179,6 @@ Ort för giftermål
 Det blir många LEFT JOIN och AS att använda här… Men det klarar sig i alla fall med bara två tabeller
 Vill man köra överkurs kan man splittra ut Namn, Tilltalsnamn och Efternamn och få två tabeller till men
 det är att ta i lite.
+
+<!-- nion-copyright -->
+<sub>© 2025–2026 Nion Education. Alla rättigheter förbehållna. Fritt att läsa, men får inte användas av andra skolor eller utbildningsanordnare utan skriftligt tillstånd från Nion Education. Delar bygger på källor som anges i respektive dokument.</sub>

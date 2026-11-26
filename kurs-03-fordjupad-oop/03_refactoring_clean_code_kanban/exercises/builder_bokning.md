@@ -155,3 +155,6 @@ Lägg till en kontroll i `Build()` så att `Hours` aldrig kan vara 0 eller mindr
 ## Reflektion
 
 Skriv tre meningar: Vilket anrop är lättast att läsa, builder eller konstruktor? När skulle du *inte* använda en builder? Vad blev svårast?
+
+<!-- nion-copyright -->
+<sub>© 2025–2026 Nion Education. Alla rättigheter förbehållna. Fritt att läsa, men får inte användas av andra skolor eller utbildningsanordnare utan skriftligt tillstånd från Nion Education. Delar bygger på källor som anges i respektive dokument.</sub>

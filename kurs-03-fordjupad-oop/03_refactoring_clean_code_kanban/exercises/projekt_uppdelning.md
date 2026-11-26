@@ -114,3 +114,6 @@ Det här är ett exempel. Din uppdelning kan se annorlunda ut, så länge varje 
 **Varför så här?** Om momsen ändras påverkas bara `PriceCalculator`. Om vi byter från fil till databas ändras bara `BookingRepository`. Om vi byter från konsol till webb ändras bara `ConsoleMenu`. Det är SoC i praktiken.
 
 </details>
+
+<!-- nion-copyright -->
+<sub>© 2025–2026 Nion Education. Alla rättigheter förbehållna. Fritt att läsa, men får inte användas av andra skolor eller utbildningsanordnare utan skriftligt tillstånd från Nion Education. Delar bygger på källor som anges i respektive dokument.</sub>

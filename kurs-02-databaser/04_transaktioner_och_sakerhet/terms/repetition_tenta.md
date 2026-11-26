@@ -262,3 +262,6 @@ Ta bort dokument: `db.heroes.deleteOne({ name: "Thanos" })`
 
 ## Schema-less
 MongoDB kräver inget fast schema — dokument i samma collection kan ha olika fält. Flexibelt men riskerar inkonsistens.
+
+<!-- nion-copyright -->
+<sub>© 2025–2026 Nion Education. Alla rättigheter förbehållna. Fritt att läsa, men får inte användas av andra skolor eller utbildningsanordnare utan skriftligt tillstånd från Nion Education. Delar bygger på källor som anges i respektive dokument.</sub>

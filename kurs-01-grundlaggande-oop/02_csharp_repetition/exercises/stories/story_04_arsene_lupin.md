@@ -409,3 +409,6 @@ Fortsätt med resten av koden:
 - **Real-world applications**: Hur matematik används i säkerhetssystem
 
 Arsène Lupin visar att programmering är som att lösa en serie sammankopplade gåtor - varje del byggs på den föregående, och precision är avgörande för framgång! 🎩✨
+
+<!-- nion-copyright -->
+<sub>© 2025–2026 Nion Education. Alla rättigheter förbehållna. Fritt att läsa, men får inte användas av andra skolor eller utbildningsanordnare utan skriftligt tillstånd från Nion Education. Delar bygger på källor som anges i respektive dokument.</sub>

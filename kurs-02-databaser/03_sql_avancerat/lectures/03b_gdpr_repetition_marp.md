@@ -4,6 +4,7 @@ theme: nion-dark
 paginate: true
 title: GDPR — snabbrepetition
 description: 10-minutersrepetition av GDPR inför onsdagens fördjupning
+footer: "© 2025–2026 Nion Education. Får inte användas av andra skolor utan tillstånd."
 ---
 
 <!-- _class: lead -->

@@ -233,3 +233,6 @@ namespace IlumCrystalCave
 - **Scientific**: Mätningar, beräkningar, resultatsrapporter
 
 Anakin visar att variabler är som Force - osynliga kraftfält som lagrar information och kan kombineras för att skapa något större än summan av sina delar! ⚔️🌟
+
+<!-- nion-copyright -->
+<sub>© 2025–2026 Nion Education. Alla rättigheter förbehållna. Fritt att läsa, men får inte användas av andra skolor eller utbildningsanordnare utan skriftligt tillstånd från Nion Education. Delar bygger på källor som anges i respektive dokument.</sub>

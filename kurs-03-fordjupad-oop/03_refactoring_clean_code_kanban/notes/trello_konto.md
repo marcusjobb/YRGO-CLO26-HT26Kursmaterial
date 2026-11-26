@@ -60,3 +60,6 @@ Flytta kort genom att dra dem mellan kolumnerna. Skriv inte om kortet när du fl
 ## Kom ihåg
 
 Ett Trello-konto är ditt eget verktyg. Det är inte en plats för känsliga uppgifter om andra personer. Skriv inte in personnummer, betyg eller andras personuppgifter på korten.
+
+<!-- nion-copyright -->
+<sub>© 2025–2026 Nion Education. Alla rättigheter förbehållna. Fritt att läsa, men får inte användas av andra skolor eller utbildningsanordnare utan skriftligt tillstånd från Nion Education. Delar bygger på källor som anges i respektive dokument.</sub>

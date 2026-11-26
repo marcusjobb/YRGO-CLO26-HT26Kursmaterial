@@ -115,3 +115,6 @@ Hittade inget husdjur med det namnet.
   1. **Dialektskillnader du stötte på:** autoinkrement, typnamn, citering av identifierare, `LIKE` mot `ILIKE`, `TOP` mot `LIMIT`
   2. **Var abstraktionen läcker:** till exempel `CreateDB` och connectionstring-formatet
   3. **Varför MongoDB inte passar `IDbHandler<T>` rakt av:** den är inte relationell, och `CreateTable` blir meningslös
+
+<!-- nion-copyright -->
+<sub>© 2025–2026 Nion Education. Alla rättigheter förbehållna. Fritt att läsa, men får inte användas av andra skolor eller utbildningsanordnare utan skriftligt tillstånd från Nion Education. Delar bygger på källor som anges i respektive dokument.</sub>

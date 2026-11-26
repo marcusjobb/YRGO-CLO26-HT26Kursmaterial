@@ -189,3 +189,6 @@ Sock-Is-Us!
 ```
 
 Det kallas ofta **mail merge** eller mallbaserad textgenerering, och bygger på exakt samma princip som `adjektiv`, `namn` och `reaktion` ovan — bara i mycket större skala. Nästa gång du får ett sådant mail vet du precis vad som händer under huven: en sträng med `{}`-platshållare och en rad variabler som fyller i dem, en gång per mottagare.
+
+<!-- nion-copyright -->
+<sub>© 2025–2026 Nion Education. Alla rättigheter förbehållna. Fritt att läsa, men får inte användas av andra skolor eller utbildningsanordnare utan skriftligt tillstånd från Nion Education. Delar bygger på källor som anges i respektive dokument.</sub>

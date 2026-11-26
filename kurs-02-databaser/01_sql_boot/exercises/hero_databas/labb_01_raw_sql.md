@@ -159,3 +159,6 @@ Zara, 22 år, Stockholm
 - Du kan förklara varför connectionstring inte ska ligga i koden, även för en lokal SQLite-fil
 - Du kan svara på: *"Vad gör du om du råkat pusha ett lösenord till GitHub?"*  
   *(Svar: rotera/byt lösenordet direkt. Att ta bort filen i nästa commit räcker inte.)*
+
+<!-- nion-copyright -->
+<sub>© 2025–2026 Nion Education. Alla rättigheter förbehållna. Fritt att läsa, men får inte användas av andra skolor eller utbildningsanordnare utan skriftligt tillstånd från Nion Education. Delar bygger på källor som anges i respektive dokument.</sub>

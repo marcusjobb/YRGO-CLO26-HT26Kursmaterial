@@ -95,3 +95,6 @@ Kladdkakan igen: kolla inputen först, använd den sen. Nu ger `"".ToTitle()` ti
 ## Prova själv
 
 Gör `extension_methods_ovning.md`, `extension_methods_ovning_2.md`, `extension_methods_ovning_3.md`, `extension_methods_ovning_4.md` och `time_only_ovning.md`.
+
+<!-- nion-copyright -->
+<sub>© 2025–2026 Nion Education. Alla rättigheter förbehållna. Fritt att läsa, men får inte användas av andra skolor eller utbildningsanordnare utan skriftligt tillstånd från Nion Education. Delar bygger på källor som anges i respektive dokument.</sub>

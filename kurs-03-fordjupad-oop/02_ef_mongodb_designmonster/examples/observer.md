@@ -369,3 +369,6 @@ account.Withdraw(50);
 | Misslyckade uttag | Syns bara i utskrift | Egen händelse, med anledning | Egen händelse, med anledning |
 | Typ för lyssnaren | Interface | Interface | Vanlig klass med metoder |
 | Händelsedata | Två värden | Separata parametrar | Ett `BankEventArgs`-objekt |
+
+<!-- nion-copyright -->
+<sub>© 2025–2026 Nion Education. Alla rättigheter förbehållna. Fritt att läsa, men får inte användas av andra skolor eller utbildningsanordnare utan skriftligt tillstånd från Nion Education. Delar bygger på källor som anges i respektive dokument.</sub>

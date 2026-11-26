@@ -49,3 +49,6 @@ Ditt diagram ska ha:
 - 3 relationer med tydlig kardinalitet
 - Primärnyckel markerad i varje entitet
 - Utländska nycklar där de behövs (`art_id` i Djur, `hagn_id` i Djur, `skotare_id` i Hägn eller mellantabell)
+
+<!-- nion-copyright -->
+<sub>© 2025–2026 Nion Education. Alla rättigheter förbehållna. Fritt att läsa, men får inte användas av andra skolor eller utbildningsanordnare utan skriftligt tillstånd från Nion Education. Delar bygger på källor som anges i respektive dokument.</sub>

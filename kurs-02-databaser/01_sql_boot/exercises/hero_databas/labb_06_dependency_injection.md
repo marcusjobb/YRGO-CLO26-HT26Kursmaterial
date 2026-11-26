@@ -105,3 +105,6 @@ Hittade inget husdjur med det namnet.
 - Du kan förklara varför `HeroService` inte vet, och inte ska veta, vilken databas som används
 - Du kan förklara varför `HeroService` behöver *två* handlers, och vad det säger om serviceklassens ansvar
 - Du kan sätta ett namn på mönstret: *"Detta kallas Dependency Injection. Så här fungerar ASP.NET Core."*
+
+<!-- nion-copyright -->
+<sub>© 2025–2026 Nion Education. Alla rättigheter förbehållna. Fritt att läsa, men får inte användas av andra skolor eller utbildningsanordnare utan skriftligt tillstånd från Nion Education. Delar bygger på källor som anges i respektive dokument.</sub>

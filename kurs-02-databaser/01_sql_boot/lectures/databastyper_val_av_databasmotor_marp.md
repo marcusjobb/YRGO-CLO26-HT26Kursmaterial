@@ -3,6 +3,7 @@ marp: true
 theme: default
 class: invert
 paginate: true
+footer: "© 2025–2026 Nion Education. Får inte användas av andra skolor utan tillstånd."
 ---
 
 # Vilken databas väljer du? — SQLite, MySQL och PostgreSQL

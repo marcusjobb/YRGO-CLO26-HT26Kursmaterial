@@ -33,3 +33,6 @@ Flödesschemat för vilket mönster som passar finns i [../notes/flodesschema_de
 
 - Projekten är skrivna och granskade, men de är inte körda i den här genomgången. Kör dem i Visual Studio för att se utskrifterna.
 - Två ställen är värda att titta extra på: `Observer_Live` skriver ut "Tar ut" även när uttaget misslyckas, och `WeaponFactory` i `Designmonster_Factory_Vapen` använder samma klass för `"sword"` och `"rusty sword"`, men med andra värden. Det är ett exempel på att fabriken kan styra egenskaper, inte bara vilken klass som skapas.
+
+<!-- nion-copyright -->
+<sub>© 2025–2026 Nion Education. Alla rättigheter förbehållna. Fritt att läsa, men får inte användas av andra skolor eller utbildningsanordnare utan skriftligt tillstånd från Nion Education. Delar bygger på källor som anges i respektive dokument.</sub>

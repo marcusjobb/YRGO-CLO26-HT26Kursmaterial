@@ -290,3 +290,6 @@ Skriv tre meningar:
 1. När skulle du välja en abstrakt klass, och när ett interface?
 2. Vilket projekt var svårast att se "är ett" kontra "kan göra"?
 3. Vad skulle du ha gjort annorlunda om du bara hade haft arv och inget interface?
+
+<!-- nion-copyright -->
+<sub>© 2025–2026 Nion Education. Alla rättigheter förbehållna. Fritt att läsa, men får inte användas av andra skolor eller utbildningsanordnare utan skriftligt tillstånd från Nion Education. Delar bygger på källor som anges i respektive dokument.</sub>

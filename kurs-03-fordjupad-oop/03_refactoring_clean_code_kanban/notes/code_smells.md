@@ -96,3 +96,6 @@ Koden kommer att ändras. Den som ändrar den är ofta du själv, om sex månade
 ## Nästa steg
 
 Nästa lektion lär vi oss två säkra sätt att fixa smells: **Extract Method** och **Rename**. Då blir det konkret.
+
+<!-- nion-copyright -->
+<sub>© 2025–2026 Nion Education. Alla rättigheter förbehållna. Fritt att läsa, men får inte användas av andra skolor eller utbildningsanordnare utan skriftligt tillstånd från Nion Education. Delar bygger på källor som anges i respektive dokument.</sub>

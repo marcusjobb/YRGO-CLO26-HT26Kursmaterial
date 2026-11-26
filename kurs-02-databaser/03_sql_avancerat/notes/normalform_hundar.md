@@ -505,3 +505,6 @@ WHERE h.Namn = 'Bella';
 Varje steg hade samma drivkraft: data ska lagras på ett ställe och refereras därifrån. Aldrig upprepas.
 
 Den enkel tumregeln som håller: **om du behöver ändra ett faktum på mer än ett ställe i databasen, är något inte normaliserat.**
+
+<!-- nion-copyright -->
+<sub>© 2025–2026 Nion Education. Alla rättigheter förbehållna. Fritt att läsa, men får inte användas av andra skolor eller utbildningsanordnare utan skriftligt tillstånd från Nion Education. Delar bygger på källor som anges i respektive dokument.</sub>

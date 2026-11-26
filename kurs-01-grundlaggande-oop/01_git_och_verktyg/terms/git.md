@@ -263,3 +263,6 @@ Uppstår när Git inte kan avgöra automatiskt vilken av två ändringar som ska
 Det är inte ett misstag, det är Git som ber dig fatta ett beslut den inte kan fatta själv.
 
 **Se även:** Fullständig genomgång med exempel i `git_konflikter.md`.
+
+<!-- nion-copyright -->
+<sub>© 2025–2026 Nion Education. Alla rättigheter förbehållna. Fritt att läsa, men får inte användas av andra skolor eller utbildningsanordnare utan skriftligt tillstånd från Nion Education. Delar bygger på källor som anges i respektive dokument.</sub>

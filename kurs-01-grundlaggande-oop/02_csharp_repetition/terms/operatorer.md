@@ -267,3 +267,6 @@ Användbart när höger sida är dyr (t.ex. ett databasanrop) eller kan orsaka f
 ## Nästa steg
 
 Operatorer sätts ihop till villkor som styr if-satser och loopar. Se [if_else.md](if_else.md) för hur villkor används i praktiken, och [loopar.md](loopar.md) för hur de styr repetition.
+
+<!-- nion-copyright -->
+<sub>© 2025–2026 Nion Education. Alla rättigheter förbehållna. Fritt att läsa, men får inte användas av andra skolor eller utbildningsanordnare utan skriftligt tillstånd från Nion Education. Delar bygger på källor som anges i respektive dokument.</sub>

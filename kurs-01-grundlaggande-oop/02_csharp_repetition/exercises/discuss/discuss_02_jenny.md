@@ -105,3 +105,6 @@ Fraga: *"Vad hade behovts for att Jenny skulle ha vagat saga nej?"*
 - Vanta med bakgrundsmaterialet tills gruppen har diskuterat klart — det ska landa, inte presenteras
 - Om ingen andrade asikt: "Varfor tror ni att 65 % av vanliga manniskor fortsatte ge stotar i Milgrams experiment?"
 </details>
+
+<!-- nion-copyright -->
+<sub>© 2025–2026 Nion Education. Alla rättigheter förbehållna. Fritt att läsa, men får inte användas av andra skolor eller utbildningsanordnare utan skriftligt tillstånd från Nion Education. Delar bygger på källor som anges i respektive dokument.</sub>

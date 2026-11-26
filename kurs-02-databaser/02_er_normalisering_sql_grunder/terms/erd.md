@@ -73,3 +73,6 @@ Process för att strukturera data för att minimera redundans och beroenden. 1NF
 
 ## Reverse Engineering
 Process att generera ett ERD från en befintlig databas. MySQL Workbench stödjer detta.
+
+<!-- nion-copyright -->
+<sub>© 2025–2026 Nion Education. Alla rättigheter förbehållna. Fritt att läsa, men får inte användas av andra skolor eller utbildningsanordnare utan skriftligt tillstånd från Nion Education. Delar bygger på källor som anges i respektive dokument.</sub>

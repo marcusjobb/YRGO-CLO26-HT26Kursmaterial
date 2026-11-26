@@ -25,3 +25,6 @@
 - **GetType():** Ger typen (ritningen) för ett objekt, till exempel `ada.GetType().Name` ger `Customer`.
 - **PropertyInfo:** Beskriver en property. Du får den från `GetProperties()` och använder `Name`, `GetValue` och `SetValue`.
 - **Activator.CreateInstance:** Skapar ett objekt av en typ utan att skriva `new`, till exempel `Activator.CreateInstance(typeof(Customer))`.
+
+<!-- nion-copyright -->
+<sub>© 2025–2026 Nion Education. Alla rättigheter förbehållna. Fritt att läsa, men får inte användas av andra skolor eller utbildningsanordnare utan skriftligt tillstånd från Nion Education. Delar bygger på källor som anges i respektive dokument.</sub>

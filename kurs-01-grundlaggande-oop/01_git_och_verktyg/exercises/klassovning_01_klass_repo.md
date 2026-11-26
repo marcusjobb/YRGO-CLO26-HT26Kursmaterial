@@ -116,3 +116,6 @@ Det är därför `git pull` alltid är första steget innan du börjar jobba på
 ---
 
 *Läraren leder genomgången efter att alla pushat.*
+
+<!-- nion-copyright -->
+<sub>© 2025–2026 Nion Education. Alla rättigheter förbehållna. Fritt att läsa, men får inte användas av andra skolor eller utbildningsanordnare utan skriftligt tillstånd från Nion Education. Delar bygger på källor som anges i respektive dokument.</sub>

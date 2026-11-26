@@ -40,3 +40,6 @@ Uppdatera sedan alla rader så att filmerna får olika betyg, och skriv en `SELE
 ## Uppgift 6 — Bra engelska filmer
 
 Skriv en `SELECT`-sats som skriver ut namnen på alla filmer som har ett betyg över 2 och är på engelska, sorterade efter namn.
+
+<!-- nion-copyright -->
+<sub>© 2025–2026 Nion Education. Alla rättigheter förbehållna. Fritt att läsa, men får inte användas av andra skolor eller utbildningsanordnare utan skriftligt tillstånd från Nion Education. Delar bygger på källor som anges i respektive dokument.</sub>

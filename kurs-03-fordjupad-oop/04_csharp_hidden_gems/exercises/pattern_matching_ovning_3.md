@@ -85,3 +85,6 @@ record Order(string Status, int ItemCount);
 `record Order` står sist. I ett program med top-level statements måste typer deklareras efter koden som körs.
 
 </details>
+
+<!-- nion-copyright -->
+<sub>© 2025–2026 Nion Education. Alla rättigheter förbehållna. Fritt att läsa, men får inte användas av andra skolor eller utbildningsanordnare utan skriftligt tillstånd från Nion Education. Delar bygger på källor som anges i respektive dokument.</sub>

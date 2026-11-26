@@ -359,3 +359,6 @@ Om du vet priset per miljon tokens för din modell (leverantörens prislista), r
 - **Verktyg** gör att modellen kan göra saker, men vi bestämmer vad den får göra.
 
 Du klarar det här. Kom ihåg att titta i `data/`. Där ser du allt som händer, och det är den bästa lärare du har. 🎉
+
+<!-- nion-copyright -->
+<sub>© 2025–2026 Nion Education. Alla rättigheter förbehållna. Fritt att läsa, men får inte användas av andra skolor eller utbildningsanordnare utan skriftligt tillstånd från Nion Education. Delar bygger på källor som anges i respektive dokument.</sub>

@@ -196,3 +196,6 @@ Om du inte använde AI: skriv det, och hoppa över frågorna ovan. Att köra kod
 - **G** kräver att alla G-krav i Del 1 till Del 5 är uppfyllda, och att lärandemålen som examineras i inlämningen är uppnådda.
 - **VG** kräver att G är uppfyllt, och att VG-kriterierna i Del 4 och Del 5 är uppfyllda. VG bedöms enbart i inlämningsuppgifterna.
 - Tentan examinerar bara G-nivå.
+
+<!-- nion-copyright -->
+<sub>© 2025–2026 Nion Education. Alla rättigheter förbehållna. Fritt att läsa, men får inte användas av andra skolor eller utbildningsanordnare utan skriftligt tillstånd från Nion Education. Delar bygger på källor som anges i respektive dokument.</sub>

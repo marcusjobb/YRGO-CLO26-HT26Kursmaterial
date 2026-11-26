@@ -303,3 +303,6 @@ flowchart TD
     style F fill:#1565c0,stroke:#0d47a1,color:#fff
     style G fill:#e8f5e9,stroke:#2e7d32,color:#111
 ```
+
+<!-- nion-copyright -->
+<sub>© 2025–2026 Nion Education. Alla rättigheter förbehållna. Fritt att läsa, men får inte användas av andra skolor eller utbildningsanordnare utan skriftligt tillstånd från Nion Education. Delar bygger på källor som anges i respektive dokument.</sub>

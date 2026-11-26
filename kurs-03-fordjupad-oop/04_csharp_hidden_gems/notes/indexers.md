@@ -95,3 +95,6 @@ books[books.Length]       // IndexOutOfRangeException
 ## Prova själv
 
 Gör `indexers_ovning.md`, `indexers_ovning_2.md` och `indexers_ovning_3.md`.
+
+<!-- nion-copyright -->
+<sub>© 2025–2026 Nion Education. Alla rättigheter förbehållna. Fritt att läsa, men får inte användas av andra skolor eller utbildningsanordnare utan skriftligt tillstånd från Nion Education. Delar bygger på källor som anges i respektive dokument.</sub>

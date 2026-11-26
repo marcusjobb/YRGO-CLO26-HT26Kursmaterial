@@ -68,3 +68,6 @@ Console.WriteLine($"{reader["Id"],-4}{reader["Titel"],-25}{reader["Längd"],5}")
 - 💡 Vad händer om du kör programmet två gånger utan att kolla `COUNT(*)`?
 - 💡 Vad är skillnaden mellan `ExecuteNonQuery`, `ExecuteScalar` och `ExecuteReader`?
 - 💡 Var hamnar filen `musik.db` på din dator?
+
+<!-- nion-copyright -->
+<sub>© 2025–2026 Nion Education. Alla rättigheter förbehållna. Fritt att läsa, men får inte användas av andra skolor eller utbildningsanordnare utan skriftligt tillstånd från Nion Education. Delar bygger på källor som anges i respektive dokument.</sub>

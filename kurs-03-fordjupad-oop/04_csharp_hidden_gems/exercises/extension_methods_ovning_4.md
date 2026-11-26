@@ -222,3 +222,6 @@ public static class DateOnlyExtensions
 Steg 3: Att tilldela `date.ZodiacSign = "Vädur";` ger ett kompileringsfel (CS0200). Egenskapen saknar `set`, och det är meningen: stjärntecknet följer av datumet.
 
 </details>
+
+<!-- nion-copyright -->
+<sub>© 2025–2026 Nion Education. Alla rättigheter förbehållna. Fritt att läsa, men får inte användas av andra skolor eller utbildningsanordnare utan skriftligt tillstånd från Nion Education. Delar bygger på källor som anges i respektive dokument.</sub>

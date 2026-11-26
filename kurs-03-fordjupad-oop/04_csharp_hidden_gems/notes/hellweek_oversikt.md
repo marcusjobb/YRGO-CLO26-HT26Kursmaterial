@@ -24,3 +24,6 @@ Den här veckan är inte tentastoff. Det är funktioner som dyker upp överallt 
 ## Ett råd
 
 När du ser en funktion du inte känner igen, fråga dig: vilket problem löser det här? Om du inte kan svara, är det troligen ett tecken på att koden kan bli enklare.
+
+<!-- nion-copyright -->
+<sub>© 2025–2026 Nion Education. Alla rättigheter förbehållna. Fritt att läsa, men får inte användas av andra skolor eller utbildningsanordnare utan skriftligt tillstånd från Nion Education. Delar bygger på källor som anges i respektive dokument.</sub>

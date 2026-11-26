@@ -4,6 +4,7 @@ theme: nion_dark
 paginate: true
 title: Djursjukhuset — normalisering och JOINs
 description: Repetition av normalisering och relationer via ett djursjukhusscenario. Tränar JOIN, GROUP BY och aggregatfunktioner.
+footer: "© 2025–2026 Nion Education. Får inte användas av andra skolor utan tillstånd."
 ---
 
 <!-- _class: lead -->

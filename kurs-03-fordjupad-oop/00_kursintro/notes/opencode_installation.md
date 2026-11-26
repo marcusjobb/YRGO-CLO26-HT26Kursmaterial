@@ -87,3 +87,6 @@ Om en modell inte längre finns i listan, välj en annan. Det är vanligt att gr
 
 - Skriv en enkel fråga, till exempel "Vad gör filen Program.cs?", och kontrollera att svaret stämmer med koden.
 - Om svaret är tomt eller ett felmeddelande visas, kontrollera nyckeln och att rätt modell är vald.
+
+<!-- nion-copyright -->
+<sub>© 2025–2026 Nion Education. Alla rättigheter förbehållna. Fritt att läsa, men får inte användas av andra skolor eller utbildningsanordnare utan skriftligt tillstånd från Nion Education. Delar bygger på källor som anges i respektive dokument.</sub>

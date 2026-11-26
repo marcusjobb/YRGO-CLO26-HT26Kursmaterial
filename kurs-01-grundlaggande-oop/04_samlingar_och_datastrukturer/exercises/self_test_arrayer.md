@@ -132,3 +132,6 @@ a. `foreach` är snabbare än `for`<br>b. `for` ger dig index och kan ändra ele
   - ❌ **c) Bara strängar** - FEL: `foreach` fungerar med alla typer: `int[]`, `string[]`, `List<T>`, etc.
   - ❌ **d) Samma sak** - FEL: De beter sig lika vid läsning, men skiljer sig vid skrivning och när du behöver index
 </details>
+
+<!-- nion-copyright -->
+<sub>© 2025–2026 Nion Education. Alla rättigheter förbehållna. Fritt att läsa, men får inte användas av andra skolor eller utbildningsanordnare utan skriftligt tillstånd från Nion Education. Delar bygger på källor som anges i respektive dokument.</sub>

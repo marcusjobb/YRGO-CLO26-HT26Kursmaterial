@@ -104,3 +104,6 @@ public class MainClass
 I facit-lösningen ovan skapar vi först en array med 10 heltal. Sedan skriver vi ut den ursprungliga arrayen genom att använda hjälpmetoden `PrintArray`. Därefter skapar vi en ny array `femForsta` med en storlek på 5 och kopierar de fem första talen från den ursprungliga arrayen till den nya arrayen med hjälp av `Array.Copy`-metoden. Slutligen skriver vi ut den nya arrayen genom att använda `PrintArray` igen.
 
 Det här är ett av flera sätt att lösa uppgiften — `Array.Copy` är bekvämt, men du kan också lösa det med en vanlig for-loop. Prova gärna båda.
+
+<!-- nion-copyright -->
+<sub>© 2025–2026 Nion Education. Alla rättigheter förbehållna. Fritt att läsa, men får inte användas av andra skolor eller utbildningsanordnare utan skriftligt tillstånd från Nion Education. Delar bygger på källor som anges i respektive dokument.</sub>

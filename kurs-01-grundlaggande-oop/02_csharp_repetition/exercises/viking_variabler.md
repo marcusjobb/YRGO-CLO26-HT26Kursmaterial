@@ -96,3 +96,6 @@ Välj ett av dessa teman istället för vikingen och gör om hela övningen:
 | **Star Wars** | namn, sida ("Ljussidan" / "Mörkersidan"), midiklorianCount, harLjussabel, rank |
 
 Samma struktur, annat tema. Välj det du tycker är roligast.
+
+<!-- nion-copyright -->
+<sub>© 2025–2026 Nion Education. Alla rättigheter förbehållna. Fritt att läsa, men får inte användas av andra skolor eller utbildningsanordnare utan skriftligt tillstånd från Nion Education. Delar bygger på källor som anges i respektive dokument.</sub>

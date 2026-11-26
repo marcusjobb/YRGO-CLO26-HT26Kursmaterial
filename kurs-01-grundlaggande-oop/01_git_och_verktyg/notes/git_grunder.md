@@ -275,3 +275,6 @@ Ingenting har ändrats sedan senaste commit. Det är inte ett fel — det är br
 - **Pro Git** (gratis bok): git-scm.com/book — den bästa resursen som finns
 - **Interaktiv övning**: learngitbranching.js.org — lär dig branching visuellt
 - **GitHub Docs**: docs.github.com — officiell dokumentation
+
+<!-- nion-copyright -->
+<sub>© 2025–2026 Nion Education. Alla rättigheter förbehållna. Fritt att läsa, men får inte användas av andra skolor eller utbildningsanordnare utan skriftligt tillstånd från Nion Education. Delar bygger på källor som anges i respektive dokument.</sub>

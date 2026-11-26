@@ -300,3 +300,6 @@ a. 20<br>b. True<br>c. 18<br>d. Myndig
 </details>
 
 <div style="text-align: center; margin: 2em 0;"><!-- bild saknas: separator_cool.png --></div>
+
+<!-- nion-copyright -->
+<sub>© 2025–2026 Nion Education. Alla rättigheter förbehållna. Fritt att läsa, men får inte användas av andra skolor eller utbildningsanordnare utan skriftligt tillstånd från Nion Education. Delar bygger på källor som anges i respektive dokument.</sub>

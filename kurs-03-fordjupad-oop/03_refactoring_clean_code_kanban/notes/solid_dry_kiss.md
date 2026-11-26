@@ -148,3 +148,6 @@ Ett enkelt test under kodgranskning: hur många gånger per minut tänker du "va
 Ibland blir koden längre när du följer DRY och SRP. Det är okej, om den blir lättare att ändra. Om du delar upp allt i tio klasser för en enkel uppgift har du gått för långt. Det är KISS som säger stopp.
 
 Fråga dig: **vilket problem löser det här?** Om svaret är "inget konkret", ta bort det.
+
+<!-- nion-copyright -->
+<sub>© 2025–2026 Nion Education. Alla rättigheter förbehållna. Fritt att läsa, men får inte användas av andra skolor eller utbildningsanordnare utan skriftligt tillstånd från Nion Education. Delar bygger på källor som anges i respektive dokument.</sub>

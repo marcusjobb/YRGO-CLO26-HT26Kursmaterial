@@ -146,3 +146,6 @@ Du behöver sällan skriva reflection själv. Det är motorn under EF Core (Enti
 - Du kan skapa objekt och sätta värden utan att känna till klassen i förväg.
 - Med en extension method blir det en metod du kan använda överallt.
 - Inte tentastoff. Nu vet du vad det är när du ser `GetType()` i andras kod.
+
+<!-- nion-copyright -->
+<sub>© 2025–2026 Nion Education. Alla rättigheter förbehållna. Fritt att läsa, men får inte användas av andra skolor eller utbildningsanordnare utan skriftligt tillstånd från Nion Education. Delar bygger på källor som anges i respektive dokument.</sub>

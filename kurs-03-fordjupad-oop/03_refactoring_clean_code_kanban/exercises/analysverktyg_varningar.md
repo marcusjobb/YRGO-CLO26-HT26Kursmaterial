@@ -107,3 +107,6 @@ class Program
 Det kan finnas fler varningar i din editor, till exempel om formatering eller om en variabel kan skrivas om. Det är bra att förstå dem, men alla behöver inte åtgärdas. Det viktiga är att du kan säga varför.
 
 </details>
+
+<!-- nion-copyright -->
+<sub>© 2025–2026 Nion Education. Alla rättigheter förbehållna. Fritt att läsa, men får inte användas av andra skolor eller utbildningsanordnare utan skriftligt tillstånd från Nion Education. Delar bygger på källor som anges i respektive dokument.</sub>

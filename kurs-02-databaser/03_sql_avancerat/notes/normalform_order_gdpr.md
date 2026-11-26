@@ -427,3 +427,6 @@ WHERE kat.Namn = 'Bok'
 | 5 | Anonymisering av kvitton vid GDPR-radering | Personuppgifter rensas, transaktionsdata bevaras för bokföring |
 
 **Det centrala insikten:** Normalisering och historik är inte samma problem. Normalisering håller aktuell data konsekvent och utan upprepning. Historisk data behöver frysas vid skapelsetillfället — normalisering är fel verktyg för det. Kvittotabellen är lösningen på det andra problemet, inte ett undantag från det första.
+
+<!-- nion-copyright -->
+<sub>© 2025–2026 Nion Education. Alla rättigheter förbehållna. Fritt att läsa, men får inte användas av andra skolor eller utbildningsanordnare utan skriftligt tillstånd från Nion Education. Delar bygger på källor som anges i respektive dokument.</sub>

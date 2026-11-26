@@ -62,3 +62,6 @@ Ditt diagram ska ha:
 - 4 relationer med tydlig kardinalitet
 - 2 mellantabeller för N:M-relationerna: `SpelGenre` och `OrderSpel`
 - Primär- och utländska nycklar markerade överallt
+
+<!-- nion-copyright -->
+<sub>© 2025–2026 Nion Education. Alla rättigheter förbehållna. Fritt att läsa, men får inte användas av andra skolor eller utbildningsanordnare utan skriftligt tillstånd från Nion Education. Delar bygger på källor som anges i respektive dokument.</sub>

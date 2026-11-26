@@ -2,6 +2,7 @@
 marp: true
 theme: nion-dark
 paginate: true
+footer: "© 2025–2026 Nion Education. Får inte användas av andra skolor utan tillstånd."
 ---
 
 # Databaser

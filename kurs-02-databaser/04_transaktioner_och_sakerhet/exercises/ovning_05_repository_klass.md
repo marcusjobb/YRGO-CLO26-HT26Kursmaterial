@@ -78,3 +78,6 @@ while (kör)
 - 💡 Varför är det bra att hålla databaskoden i en separat klass?
 - 💡 Vad händer om du i framtiden vill byta från SQLite till en annan databas — var behöver du ändra?
 - 💡 Vad är fördelen med att `HämtaAlla()` returnerar `List<Låt>` istället för att skriva ut direkt till konsolen?
+
+<!-- nion-copyright -->
+<sub>© 2025–2026 Nion Education. Alla rättigheter förbehållna. Fritt att läsa, men får inte användas av andra skolor eller utbildningsanordnare utan skriftligt tillstånd från Nion Education. Delar bygger på källor som anges i respektive dokument.</sub>

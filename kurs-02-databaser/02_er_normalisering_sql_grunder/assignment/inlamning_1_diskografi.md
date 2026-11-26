@@ -114,3 +114,6 @@ Ingen rapport behövs.
 ---
 
 *Lycka till. Och om du väljer Taylor Swift — All Too Well (10 minute version) är 621 sekunder.*
+
+<!-- nion-copyright -->
+<sub>© 2025–2026 Nion Education. Alla rättigheter förbehållna. Fritt att läsa, men får inte användas av andra skolor eller utbildningsanordnare utan skriftligt tillstånd från Nion Education. Delar bygger på källor som anges i respektive dokument.</sub>

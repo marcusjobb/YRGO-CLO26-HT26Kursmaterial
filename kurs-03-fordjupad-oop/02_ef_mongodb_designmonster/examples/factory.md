@@ -329,3 +329,6 @@ public static class WeaponDemo
 **Vad händer:** Mira får ett svärd från fabriken, byter till ett rostigt svärd, och sedan till eldklotet. Det rostiga svärdet är samma klass som vanliga svärdet, med andra värden. Hon byter vapen på samma sätt som i Strategy-exemplet, men vapnen skapas nu av fabriken.
 
 **Stil:** Demon innehåller ingen `new` för vapnen, bara anrop till `WeaponFactory.Create`. Det är det som visar att fabriken används.
+
+<!-- nion-copyright -->
+<sub>© 2025–2026 Nion Education. Alla rättigheter förbehållna. Fritt att läsa, men får inte användas av andra skolor eller utbildningsanordnare utan skriftligt tillstånd från Nion Education. Delar bygger på källor som anges i respektive dokument.</sub>

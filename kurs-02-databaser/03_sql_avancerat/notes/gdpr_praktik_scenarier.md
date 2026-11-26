@@ -143,3 +143,6 @@ Kunden X har inte gett samtycke till att deras uppgifter lämnas ut till den som
 3. Logga samtalet (internt)
 
 **Undantag:** Polisen med ett domstolsbeslut, eller kunden själv som ringer och identifierar sig. I båda fallen — följ er interna process, inte magkänslan.
+
+<!-- nion-copyright -->
+<sub>© 2025–2026 Nion Education. Alla rättigheter förbehållna. Fritt att läsa, men får inte användas av andra skolor eller utbildningsanordnare utan skriftligt tillstånd från Nion Education. Delar bygger på källor som anges i respektive dokument.</sub>

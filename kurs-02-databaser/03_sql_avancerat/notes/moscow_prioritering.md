@@ -61,3 +61,6 @@ Det är bättre att ha en välnormaliserad liten databas än ett halvfärdigt st
 - Allt kan inte vara Must. Om allt är Must har ni inte prioriterat — ni har kopierat listan.
 - Won't have är inte "nej för alltid". Det är ett ärat, dokumenterat icke-beslut.
 - Prioriteringen ska göras i teamet, inte av en person ensam.
+
+<!-- nion-copyright -->
+<sub>© 2025–2026 Nion Education. Alla rättigheter förbehållna. Fritt att läsa, men får inte användas av andra skolor eller utbildningsanordnare utan skriftligt tillstånd från Nion Education. Delar bygger på källor som anges i respektive dokument.</sub>

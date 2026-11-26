@@ -210,3 +210,6 @@ Har du fått med fler eller färre metoder? Det gör inget. Det viktiga är ruto
 3. I databasen sitter relationen i kolumnen `HeroId`. I C# sitter den i listan `List<Quest> Quests`.
 4. Metoder och `+`/`-` finns bara i klassdiagrammet.
 5. Tre linjer räcker: association, arv och interface (streckad).
+
+<!-- nion-copyright -->
+<sub>© 2025–2026 Nion Education. Alla rättigheter förbehållna. Fritt att läsa, men får inte användas av andra skolor eller utbildningsanordnare utan skriftligt tillstånd från Nion Education. Delar bygger på källor som anges i respektive dokument.</sub>

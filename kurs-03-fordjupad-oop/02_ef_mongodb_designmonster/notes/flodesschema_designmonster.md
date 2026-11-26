@@ -313,3 +313,6 @@ Det är en checklista, inte ett val. Frågan du ska ställa är därför inte "�
 | vill lägga till beteende utan att ändra klassen | Decorator | Ska originalet vara orört? |
 | har en förfrågan som passerar flera kontroller | Chain of Responsibility | Kan varje steg stoppa eller skicka vidare? |
 | behöver skapa, läsa, uppdatera och ta bort data | CRUD (inget mönster) | Vilket mönster lägger metoderna i? |
+
+<!-- nion-copyright -->
+<sub>© 2025–2026 Nion Education. Alla rättigheter förbehållna. Fritt att läsa, men får inte användas av andra skolor eller utbildningsanordnare utan skriftligt tillstånd från Nion Education. Delar bygger på källor som anges i respektive dokument.</sub>

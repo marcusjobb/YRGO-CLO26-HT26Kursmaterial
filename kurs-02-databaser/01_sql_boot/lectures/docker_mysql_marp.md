@@ -39,6 +39,7 @@ style: |
     border-left: 6px solid #e67e22;
     color: #555;
   }
+footer: "© 2025–2026 Nion Education. Får inte användas av andra skolor utan tillstånd."
 ---
 
 <!-- _class: lead -->

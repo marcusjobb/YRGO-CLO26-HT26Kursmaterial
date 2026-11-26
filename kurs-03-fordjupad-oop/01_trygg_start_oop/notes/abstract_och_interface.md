@@ -119,3 +119,6 @@ foreach (IHealer healer in scene.OfType<IHealer>())
 Övning på samma sak med ett nytt tema: `exercises/ovning_4_garaget.md`.
 
 Termer finns i `termer/oop_repetition.md`.
+
+<!-- nion-copyright -->
+<sub>© 2025–2026 Nion Education. Alla rättigheter förbehållna. Fritt att läsa, men får inte användas av andra skolor eller utbildningsanordnare utan skriftligt tillstånd från Nion Education. Delar bygger på källor som anges i respektive dokument.</sub>

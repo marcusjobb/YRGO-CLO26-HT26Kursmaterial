@@ -4,6 +4,7 @@ theme: nion_dark
 paginate: true
 title: GROUP BY och aggregatfunktioner
 description: Räkna, summera och gruppera data med GROUP BY, COUNT, SUM, AVG, MAX och MIN. Intro inför onsdagens fördjupning.
+footer: "© 2025–2026 Nion Education. Får inte användas av andra skolor utan tillstånd."
 ---
 
 <!-- _class: lead -->

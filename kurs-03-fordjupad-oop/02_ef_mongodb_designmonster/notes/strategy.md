@@ -206,3 +206,6 @@ Exempel: vapen i ett spel, betalsätt, fraktsätt, rabatter, sätt att sortera.
 Ser du en lång `if`/`else if` som väljer *hur* något ska göras? Där kan Strategy passa.
 
 Det passar **inte** om det bara finns ett sätt och inget tyder på att det kommer fler. Då är en vanlig metod enklast.
+
+<!-- nion-copyright -->
+<sub>© 2025–2026 Nion Education. Alla rättigheter förbehållna. Fritt att läsa, men får inte användas av andra skolor eller utbildningsanordnare utan skriftligt tillstånd från Nion Education. Delar bygger på källor som anges i respektive dokument.</sub>

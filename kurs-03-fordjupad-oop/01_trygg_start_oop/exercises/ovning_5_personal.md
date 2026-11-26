@@ -242,3 +242,6 @@ Det räcker att säga "tack".
 
 **Att tänka på när du ger:** tala om koden, inte om personen ("koden gör ..." i stället för "du gör ..."),
 och var konkret. Det som går att peka på går också att använda.
+
+<!-- nion-copyright -->
+<sub>© 2025–2026 Nion Education. Alla rättigheter förbehållna. Fritt att läsa, men får inte användas av andra skolor eller utbildningsanordnare utan skriftligt tillstånd från Nion Education. Delar bygger på källor som anges i respektive dokument.</sub>

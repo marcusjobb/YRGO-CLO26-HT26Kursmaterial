@@ -61,3 +61,6 @@ Läraren samlar svaren på tavlan.
 En lista med krav kan verka längre än den är. En person kan uppfylla flera roller — precis som ett objekt kan implementera flera interface, eller en funktion kan returnera olika saker beroende på context.
 
 Nästa gång du läser en kravspec: räkna entiteter, inte ord.
+
+<!-- nion-copyright -->
+<sub>© 2025–2026 Nion Education. Alla rättigheter förbehållna. Fritt att läsa, men får inte användas av andra skolor eller utbildningsanordnare utan skriftligt tillstånd från Nion Education. Delar bygger på källor som anges i respektive dokument.</sub>

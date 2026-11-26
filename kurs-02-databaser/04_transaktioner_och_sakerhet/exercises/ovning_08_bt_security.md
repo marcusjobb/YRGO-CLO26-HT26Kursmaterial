@@ -175,3 +175,5 @@ Testa nu med `' OR '1'='1` som lösenord igen.
 - 💡 Räcker det att "filtrera bort citattecken" som säkerhetsåtgärd? Varför inte?
 - 💡 Hur hanteras lösenord i riktiga system? (Tips: läs om hashing och `bcrypt`)
 
+<!-- nion-copyright -->
+<sub>© 2025–2026 Nion Education. Alla rättigheter förbehållna. Fritt att läsa, men får inte användas av andra skolor eller utbildningsanordnare utan skriftligt tillstånd från Nion Education. Delar bygger på källor som anges i respektive dokument.</sub>

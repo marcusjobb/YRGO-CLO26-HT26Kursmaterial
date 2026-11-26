@@ -188,3 +188,6 @@ Varje gång du ser dig själv skriva en sträng som ett av ett begränsat antal 
 
 📖 **Läs mer i C#-boken**  
 → [Enum](https://marcusjobb.github.io/programmering-csharp/variabler/enum/)
+
+<!-- nion-copyright -->
+<sub>© 2025–2026 Nion Education. Alla rättigheter förbehållna. Fritt att läsa, men får inte användas av andra skolor eller utbildningsanordnare utan skriftligt tillstånd från Nion Education. Delar bygger på källor som anges i respektive dokument.</sub>

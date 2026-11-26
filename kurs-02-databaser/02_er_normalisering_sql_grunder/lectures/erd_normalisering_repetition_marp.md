@@ -4,6 +4,7 @@ theme: nion_dark
 paginate: true
 title: ERD & Normalisering — från kaos till tabeller
 description: Visuell genomgång av hur man går från platt data till normaliserade tabeller och ERD
+footer: "© 2025–2026 Nion Education. Får inte användas av andra skolor utan tillstånd."
 ---
 
 <!-- _class: lead -->

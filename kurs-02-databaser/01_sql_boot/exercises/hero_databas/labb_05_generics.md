@@ -97,3 +97,6 @@ Sökningen `o` matchar bara husdjurens *namn*: Mjao och Woff innehåller ett `o`
 - Du kan förklara varför generics är bättre än att skriva `HeroHandler` och `PetHandler` separat
 - Du kan beskriva vad `<T>` innebär och vad som händer vid kompilering
 - Du kan peka på vad som fortfarande är kopierat mellan `SQLiteHandler<T>` och `TiDBHandler<T>`, och föreslå hur man kunde minska det
+
+<!-- nion-copyright -->
+<sub>© 2025–2026 Nion Education. Alla rättigheter förbehållna. Fritt att läsa, men får inte användas av andra skolor eller utbildningsanordnare utan skriftligt tillstånd från Nion Education. Delar bygger på källor som anges i respektive dokument.</sub>

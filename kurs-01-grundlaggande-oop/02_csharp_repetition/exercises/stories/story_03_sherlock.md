@@ -302,3 +302,6 @@ namespace HolmesMystery
 - **Report Generation**: Producera rapporter baserat på samlad data
 
 Sherlock Holmes visar att for-loops är som systematisk detektivarbete - varje iteration bygger på den föregående tills du har hela bilden! 🕵️‍♂️🔍
+
+<!-- nion-copyright -->
+<sub>© 2025–2026 Nion Education. Alla rättigheter förbehållna. Fritt att läsa, men får inte användas av andra skolor eller utbildningsanordnare utan skriftligt tillstånd från Nion Education. Delar bygger på källor som anges i respektive dokument.</sub>

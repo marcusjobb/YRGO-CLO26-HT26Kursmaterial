@@ -2,6 +2,7 @@
 marp: true
 theme: nion-dark
 paginate: true
+footer: "© 2025–2026 Nion Education. Får inte användas av andra skolor utan tillstånd."
 ---
 
 <!-- WOW-MOMENT: string är sealed, du kan inte ärva från den, men du kan ändå lägga till en metod. Dagens sista wow: en metod som skriver ut alla fält på vilket objekt som helst. -->

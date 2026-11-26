@@ -143,3 +143,6 @@ Console.WriteLine("Billigast per månad: Comviq");
 Du streamar video och förbrukar i snitt 3 GB per dag. Räkna ut hur många dagar varje abonnemang räcker — och hur mycket extradatan kostar om du kör slut.
 
 (Tips: Comviq tar 5 kr/GB extra. Halebop 3 kr/GB. Telia 0 kr — de bara stryper hastigheten.)
+
+<!-- nion-copyright -->
+<sub>© 2025–2026 Nion Education. Alla rättigheter förbehållna. Fritt att läsa, men får inte användas av andra skolor eller utbildningsanordnare utan skriftligt tillstånd från Nion Education. Delar bygger på källor som anges i respektive dokument.</sub>

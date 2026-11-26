@@ -67,3 +67,6 @@ Titt på den stulna boken: Harry Potter och De vises sten, Antal stulna böcker:
 
 ## 💡 Lärdomar
 Idag har du lärt dig hur man skapar och använder variabler i C#! Genom att lagra boktitlar och räkna stulna böcker kan du lättare organisera information för magiska uppdrag. Variabler är grunden i programmering och hjälper oss att göra koden mer flexibel och lättläst. Tänk på att alltid namnge variabler som beskriver deras syfte, så som "stolenBookTitle", för att följa god programmeringspraxis.
+
+<!-- nion-copyright -->
+<sub>© 2025–2026 Nion Education. Alla rättigheter förbehållna. Fritt att läsa, men får inte användas av andra skolor eller utbildningsanordnare utan skriftligt tillstånd från Nion Education. Delar bygger på källor som anges i respektive dokument.</sub>

@@ -442,3 +442,6 @@ I ny kod gör du det sällan — `$"{}"` är kortare och lättare att läsa, eft
 Alla metoder ovan har en dold kostnad — `string` i C# är **immutable** (oföränderlig). Varje gång du kör `Replace`, `Trim` eller `+` på en sträng skapas en helt **ny** sträng i minnet, originalet rörs aldrig. För en enstaka strängoperation märks det inte. Bygger du en sträng bit för bit i en loop, hundratals eller tusentals gånger, börjar det kosta — varje steg skapar en ny kopia av allt som redan byggts.
 
 `StringBuilder` löser det genom att jobba med en muterbar buffert istället. Det är en egen kategorifil, `stringbuilder.md`, när den finns.
+
+<!-- nion-copyright -->
+<sub>© 2025–2026 Nion Education. Alla rättigheter förbehållna. Fritt att läsa, men får inte användas av andra skolor eller utbildningsanordnare utan skriftligt tillstånd från Nion Education. Delar bygger på källor som anges i respektive dokument.</sub>

@@ -607,3 +607,6 @@ Ta med ett svar eller en fråga på var och en:
 2. Vilken uppgift gjorde dig mest osäker, och vad var det som var oklart?
 
 Du har kommit långt. Det du inte hann är inget misslyckande. Det är fredagens fråga.
+
+<!-- nion-copyright -->
+<sub>© 2025–2026 Nion Education. Alla rättigheter förbehållna. Fritt att läsa, men får inte användas av andra skolor eller utbildningsanordnare utan skriftligt tillstånd från Nion Education. Delar bygger på källor som anges i respektive dokument.</sub>

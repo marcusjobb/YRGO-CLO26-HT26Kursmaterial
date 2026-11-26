@@ -124,3 +124,6 @@ Kör programmet flera gånger i rad — varje körning ger en ny slumpad visa. L
 **Senare i kursen, när vi lärt oss loopar**, kommer du kunna skriva ut flera slumpade visor i en och samma körning istället för att starta om programmet varje gång — spara den tanken.
 
 </details>
+
+<!-- nion-copyright -->
+<sub>© 2025–2026 Nion Education. Alla rättigheter förbehållna. Fritt att läsa, men får inte användas av andra skolor eller utbildningsanordnare utan skriftligt tillstånd från Nion Education. Delar bygger på källor som anges i respektive dokument.</sub>

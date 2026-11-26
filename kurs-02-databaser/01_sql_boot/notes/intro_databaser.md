@@ -168,3 +168,6 @@ Fundera på det innan nästa lektion — du ska kunna sätta ord på det.
 📖 **Läs mer i C#-boken**  
 → [Varför databaser?](https://marcusjobb.github.io/programmering-csharp/sql/varfor-databaser/)
 → [Databastyper](https://marcusjobb.github.io/programmering-csharp/sql/databastyper/)
+
+<!-- nion-copyright -->
+<sub>© 2025–2026 Nion Education. Alla rättigheter förbehållna. Fritt att läsa, men får inte användas av andra skolor eller utbildningsanordnare utan skriftligt tillstånd från Nion Education. Delar bygger på källor som anges i respektive dokument.</sub>

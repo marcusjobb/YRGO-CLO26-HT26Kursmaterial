@@ -4,6 +4,7 @@ theme: nion_dark
 paginate: true
 title: GDPR och databaser
 description: Vad GDPR kräver av oss som bygger system med personuppgifter — och hur databasdesign och normalisering hänger ihop med lagen.
+footer: "© 2025–2026 Nion Education. Får inte användas av andra skolor utan tillstånd."
 ---
 
 <!-- _class: lead -->
